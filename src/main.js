@@ -12,7 +12,9 @@ import pinboard from '@phila/pinboard/src/main.js';
 import greeting from './general/greeting';
 
 // data-sources
-import freeMeals from './data-sources/free-meals';
+import seniorSites from './data-sources/senior-sites';
+import distributionSites from './data-sources/distribution-sites';
+import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 pinboard({
@@ -34,7 +36,9 @@ pinboard({
   },
   greeting,
   dataSources: {
-    freeMeals,
+    seniorSites,
+    distributionSites,
+    compiled,
   },
   router: {
     enabled: false,
@@ -42,9 +46,10 @@ pinboard({
   app: {
     title: 'Free meals resource finder',
     tagLine: 'Find free meals in the City',
-    // logoAlt: 'Office of Immigrant Affairs, City of Philadelphia',
-    type: 'freeMeals',
+    logoAlt: 'City of Philadelphia',
+    type: 'compiled',
   },
+  projection: '3857',
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
