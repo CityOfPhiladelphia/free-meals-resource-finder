@@ -24,6 +24,22 @@ pinboard({
       return item.organization_name;
     },
   },
+  i18n: {
+    header: 'i18nBanner',
+    data: {
+      locale: 'en-US',
+      messages: {
+        'en-US': {
+          language: 'English',
+          title: 'Free meals resource finder',
+        },
+        'es': {
+          language: 'Espanol',
+          title: 'Free Spanish meals resource finder',
+        },
+      },
+    },
+  },
   baseConfig: BASE_CONFIG_URL,
   cyclomedia: {
     enabled: false,
