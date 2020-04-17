@@ -104,8 +104,8 @@ pinboard({
   circleColors: {
     'feat-seniorSites': 'yellow',
     'feat-distributionSites': 'orange',
-    'feat-schoolMealSites': 'red',
-    'feat-youthActivitySites': 'purple',
+    'feat-schoolMealSites': 'purple',
+    'feat-youthActivitySites': 'red',
   },
   i18n: {
     header: 'i18nBanner',
