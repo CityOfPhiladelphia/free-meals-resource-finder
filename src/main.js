@@ -24,7 +24,20 @@ pinboard({
   markerType: 'circle-marker',
   locationSlots: {
     title: function(state, item) {
-      return item.site_name;
+      let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
+      if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
+        return item.site_name;
+      } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
+        return item.Location;
+      } else if ([ 'feat-schoolMealSites', 'feat-youthActivitySites' ].includes(item._featureId.slice(0, indexVal))) {
+        return item.SCHOOL_NAME;
+      }
+
+      // : 'yellow',
+      // 'feat-distributionSites': 'red',
+      // 'feat-schoolMealSites': 'orange',
+      // 'feat-youthActivitySites': 'purple',
+      // return item.site_name;
     },
   },
   baseConfig: BASE_CONFIG_URL,
