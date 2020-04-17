@@ -29,15 +29,12 @@ pinboard({
         return item.site_name;
       } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
         return item.Location;
-      } else if ([ 'feat-schoolMealSites', 'feat-youthActivitySites' ].includes(item._featureId.slice(0, indexVal))) {
+      } else if ([ 'feat-schoolMealSites' ].includes(item._featureId.slice(0, indexVal))) {
         return item.SCHOOL_NAME;
+      } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
+        return item.ASSET_NAME;
       }
 
-      // : 'yellow',
-      // 'feat-distributionSites': 'red',
-      // 'feat-schoolMealSites': 'orange',
-      // 'feat-youthActivitySites': 'purple',
-      // return item.site_name;
     },
   },
   baseConfig: BASE_CONFIG_URL,
@@ -106,8 +103,8 @@ pinboard({
   },
   circleColors: {
     'feat-seniorSites': 'yellow',
-    'feat-distributionSites': 'red',
-    'feat-schoolMealSites': 'orange',
+    'feat-distributionSites': 'orange',
+    'feat-schoolMealSites': 'red',
     'feat-youthActivitySites': 'purple',
   },
   i18n: {
