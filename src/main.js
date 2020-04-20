@@ -22,6 +22,7 @@ var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-d
 
 pinboard({
   // baseConfig: null,
+  refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
   markerType: 'circle-marker',
   legendControls,
   locationSlots: {
