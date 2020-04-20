@@ -10,6 +10,7 @@
 import pinboard from '@phila/pinboard/src/main.js';
 
 // import greeting from './general/greeting';
+import legendControls from './general/legendControls';
 
 // data-sources
 import seniorSites from './data-sources/senior-sites';
@@ -22,6 +23,7 @@ var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-d
 pinboard({
   // baseConfig: null,
   markerType: 'circle-marker',
+  legendControls,
   locationSlots: {
     title: function(state, item) {
       let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
@@ -29,12 +31,11 @@ pinboard({
         return item.site_name;
       } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
         return item.Location;
-      } else if ([ 'feat-schoolMealSites' ].includes(item._featureId.slice(0, indexVal))) {
+      } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
         return item.SCHOOL_NAME;
       } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
         return item.ASSET_NAME;
       }
-
     },
   },
   baseConfig: BASE_CONFIG_URL,
