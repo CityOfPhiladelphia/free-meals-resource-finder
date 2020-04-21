@@ -17,12 +17,19 @@ import seniorSites from './data-sources/senior-sites';
 import distributionSites from './data-sources/distribution-sites';
 import schoolMealSites from './data-sources/school-meal-sites';
 import youthActivitySites from './data-sources/youth-activity-sites';
+import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
+import expandCollapseContent from './components/ExpandCollapseContent.vue';
+const customComps = {
+  'expandCollapseContent': expandCollapseContent,
+};
+
 pinboard({
   // baseConfig: null,
-  refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
+  customComps,
+  // refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
   markerType: 'circle-marker',
   legendControls,
   locationSlots: {
@@ -36,6 +43,8 @@ pinboard({
         return item.SCHOOL_NAME;
       } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
         return item.ASSET_NAME;
+      } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
+        return item.attributes.site_name;
       }
     },
   },
@@ -51,11 +60,12 @@ pinboard({
   },
   // greeting,
   dataSources: {
-    seniorSites,
-    distributionSites,
-    schoolMealSites,
-    youthActivitySites,
-    compiled,
+    covidFreeMealSites,
+    // seniorSites,
+    // distributionSites,
+    // schoolMealSites,
+    // youthActivitySites,
+    // compiled,
   },
   router: {
     enabled: false,
@@ -64,7 +74,8 @@ pinboard({
     title: 'Free meals resource finder',
     tagLine: 'Find free meals in the City',
     logoAlt: 'City of Philadelphia',
-    type: 'compiled',
+    type: 'covidFreeMealSites',
+    // type: 'compiled',
   },
   projection: '3857',
   geocoder: {
@@ -104,10 +115,19 @@ pinboard({
     },
   },
   circleColors: {
+    'feat-covidFreeMealSites': 'purple',
     'feat-seniorSites': 'yellow',
+    'SENIOR SITE': 'yellow',
     'feat-distributionSites': 'orange',
+    'PPR': 'green',
+    'PHILABUNDANCE': 'orange',
     'feat-schoolMealSites': 'purple',
+    'PSD': 'purple',
+    'CHARTER': 'red',
     'feat-youthActivitySites': 'red',
+    'SHARE FOOD PROGRAM': 'blue',
+    'PHA': 'gray',
+    'PHILABUNDANCE/SHARE FOOD PROGRAM': 'pink',
   },
   i18n: {
     header: 'i18nBanner',

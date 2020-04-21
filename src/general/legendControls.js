@@ -21,7 +21,25 @@ export default {
     },
     data: {
       // TODO give these an id instead of using the label as a key
-      'Distribution Sites': {
+      'Charter': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '1px',
+        'width': '12px',
+        'height': '12px',
+        'font-size': '10px',
+        'background-color': 'red',
+      },
+      'PHA': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '1px',
+        'width': '12px',
+        'height': '12px',
+        'font-size': '10px',
+        'background-color': 'gray',
+      },
+      'Philabundance': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '1px',
@@ -30,7 +48,25 @@ export default {
         'font-size': '10px',
         'background-color': 'orange',
       },
-      'School Meal Sites': {
+      'Philabundance/Share Food Program': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '1px',
+        'width': '12px',
+        'height': '12px',
+        'font-size': '10px',
+        'background-color': 'pink',
+      },
+      'PPR': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '1px',
+        'width': '12px',
+        'height': '12px',
+        'font-size': '10px',
+        'background-color': 'green',
+      },
+      'PSD': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '1px',
@@ -39,7 +75,7 @@ export default {
         'font-size': '10px',
         'background-color': 'purple',
       },
-      'Senior Sites': {
+      'Senior Site': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '1px',
@@ -48,14 +84,14 @@ export default {
         'font-size': '10px',
         'background-color': 'yellow',
       },
-      'Youth Activity Sites': {
+      'Share Food Program': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '1px',
         'width': '12px',
         'height': '12px',
         'font-size': '10px',
-        'background-color': 'red',
+        'background-color': 'blue',
       },
     },
   },
