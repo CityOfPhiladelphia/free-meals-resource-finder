@@ -28,26 +28,39 @@ const customComps = {
 
 pinboard({
   // baseConfig: null,
+  comboSearch: {
+    dropdown: [ 'address' ],
+    position: 'right',
+    placeholderText: 'Search by address',
+  },
+  // addressInput: {
+  //   type: 'address',
+  //   width: 465,
+  //   position: 'right',
+  //   autocompleteEnabled: false,
+  //   autocompleteMax: 15,
+  //   placeholder: ' ',
+  // },
   customComps,
   // refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
   markerType: 'circle-marker',
   legendControls,
-  locationSlots: {
-    title: function(state, item) {
-      let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
-      if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
-        return item.site_name;
-      } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
-        return item.Location;
-      } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
-        return item.SCHOOL_NAME;
-      } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
-        return item.ASSET_NAME;
-      } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
-        return item.attributes.site_name;
-      }
-    },
-  },
+  // locationSlots: {
+  //   title: function(state, item) {
+  //     let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
+  //     if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
+  //       return item.site_name;
+  //     } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
+  //       return item.Location;
+  //     } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
+  //       return item.SCHOOL_NAME;
+  //     } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
+  //       return item.ASSET_NAME;
+  //     } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
+  //       return item.attributes.site_name;
+  //     }
+  //   },
+  // },
   baseConfig: BASE_CONFIG_URL,
   cyclomedia: {
     enabled: false,
@@ -61,11 +74,6 @@ pinboard({
   // greeting,
   dataSources: {
     covidFreeMealSites,
-    // seniorSites,
-    // distributionSites,
-    // schoolMealSites,
-    // youthActivitySites,
-    // compiled,
   },
   router: {
     enabled: false,
@@ -114,20 +122,15 @@ pinboard({
       },
     },
   },
-  circleColors: {
-    'feat-covidFreeMealSites': 'purple',
-    'feat-seniorSites': 'yellow',
-    'SENIOR SITE': 'yellow',
-    'feat-distributionSites': 'orange',
-    'PPR': 'green',
-    'PHILABUNDANCE': 'orange',
-    'feat-schoolMealSites': 'purple',
-    'PSD': 'purple',
-    'CHARTER': 'red',
-    'feat-youthActivitySites': 'red',
-    'SHARE FOOD PROGRAM': 'blue',
-    'PHA': 'gray',
-    'PHILABUNDANCE/SHARE FOOD PROGRAM': 'pink',
+  circleMarkers:{
+    circleColors: {
+      'Family Meal Site': '#0F4D90',
+      'Senior Meal Site': '#D67D00',
+      'Youth Meal Site': '#721817',
+      'Outdoor Meal Site': '#506D0A',
+    },
+    weight: 0,
+    radius: 8,
   },
   i18n: {
     header: 'i18nBanner',
@@ -169,7 +172,7 @@ pinboard({
           ',
         },
         'es': {
-          language: 'Espanol',
+          language: 'Español',
           title: 'Free Spanish meals resource finder',
           greeting: '\
             <h2>\
@@ -196,42 +199,64 @@ pinboard({
             </p>\
           ',
         },
-        'fr': {
-          language: 'Francais',
-          title: 'French Free meals resource finder',
+        'ch': {
+          language: '中文',
+          title: 'Free Chinese meals resource finder',
           greeting: '\
             <h2>\
-              À propos des sites de restauration:\
+              有关食物领取点信息：\
             </h2>\
             <div class="callout">\
               <ul>\
                 <li>\
-                  Les sites sont ouverts les lundis et jeudis de 10h à 12h.\
+                  领取点的开放时间为每周一和周四的上午10点至下午12点。\
                 </li>\
                 <li>\
-                  Les résidents peuvent prendre une boîte par ménage. Les provisions dureront jusqu’à cinq jours.\
+                  每户居民可领取一箱食物。食物最长可以维持居民五天生活。\
                 </li>\
                 <li>\
-                  Les boîtes contiennent des produits non périssables les lundis et des produits frais les jeudis.\
+                  居民无需出示身份证或收入证明即可领取食物。\
                 </li>\
                 <li>\
-                  Les résidents n’ont pas besoin de présenter une pièce d’identité ou une preuve de revenu pour être admissible.\
-                </li>\
-                <li>\
-                  Les sites de restauration sont soutenus par la Ville, le Share Food Program et Philabundance.\
-                </li>\
-                <li>\
-                  Ces sites de restauration complètent le réseau existant de garde-manger. Pour trouver un garde-manger près de chez vous, composez le 311.\
+                  费城市、共享食品计划（Share Food Program）及Philabundance慈善组织负责食物领取点的运营。\
                 </li>\
               </ul>\
             </div>\
             <p>\
-              Veuillez noter que- la Ville s’efforce d’élargir cette liste de sites. Revenez souvent.\
+              请注意——费城市正在努力增加食物领取点数量。请经常回来查看信息。\
+            </p>\
+          ',
+        },
+        'vi': {
+          language: 'Tiếng Việt',
+          title: 'Free Vienamise meals resource finder',
+          greeting: '\
+            <h2>\
+              Về địa điểm thực phẩm:\
+            </h2>\
+            <div class="callout">\
+              <ul>\
+                <li>\
+                  Địa điểm mở cửa những ngày thứ hai và những ngày thứ năm từ 10 giờ sáng đến 12 giờ trưa.\
+                </li>\
+                <li>\
+                  Cư dân có thể đến lấy một hộp mỗi một hộ gia đình. Thực phẩm sẽ có kéo dài đến 5 ngày.\
+                </li>\
+                <li>\
+                  Cư dân không cần trình ID hoặc bằng chứng thu nhập để có đủ điều kiện.\
+                </li>\
+                <li>\
+                  Địa điểm thực phẩm được chính quyền thành phố, chương trình Shared Food, và Philabundance ủng hộ.\
+                </li>\
+              </ul>\
+            </div>\
+            <p>\
+              Xin ghi chú – chính quyền thành phố đang làm việc để mở rộng danh sách của tất cả địa điểm. Xin trở lại xét thường xuyên.\
             </p>\
           ',
         },
         'ru': {
-          language: 'Russian',
+          language: 'Pусский',
           title: 'Free Russian meals resource finder',
           greeting: '\
             <h2>\
@@ -264,59 +289,37 @@ pinboard({
             </p>\
           ',
         },
-        'vi': {
-          language: 'Vienamise',
-          title: 'Free Vienamise meals resource finder',
+        'fr': {
+          language: 'Français',
+          title: 'French Free meals resource finder',
           greeting: '\
             <h2>\
-              Về địa điểm thực phẩm:\
+              À propos des sites de restauration:\
             </h2>\
             <div class="callout">\
               <ul>\
                 <li>\
-                  Địa điểm mở cửa những ngày thứ hai và những ngày thứ năm từ 10 giờ sáng đến 12 giờ trưa.\
+                  Les sites sont ouverts les lundis et jeudis de 10h à 12h.\
                 </li>\
                 <li>\
-                  Cư dân có thể đến lấy một hộp mỗi một hộ gia đình. Thực phẩm sẽ có kéo dài đến 5 ngày.\
+                  Les résidents peuvent prendre une boîte par ménage. Les provisions dureront jusqu’à cinq jours.\
                 </li>\
                 <li>\
-                  Cư dân không cần trình ID hoặc bằng chứng thu nhập để có đủ điều kiện.\
+                  Les boîtes contiennent des produits non périssables les lundis et des produits frais les jeudis.\
                 </li>\
                 <li>\
-                  Địa điểm thực phẩm được chính quyền thành phố, chương trình Shared Food, và Philabundance ủng hộ.\
+                  Les résidents n’ont pas besoin de présenter une pièce d’identité ou une preuve de revenu pour être admissible.\
+                </li>\
+                <li>\
+                  Les sites de restauration sont soutenus par la Ville, le Share Food Program et Philabundance.\
+                </li>\
+                <li>\
+                  Ces sites de restauration complètent le réseau existant de garde-manger. Pour trouver un garde-manger près de chez vous, composez le 311.\
                 </li>\
               </ul>\
             </div>\
             <p>\
-              Xin ghi chú – chính quyền thành phố đang làm việc để mở rộng danh sách của tất cả địa điểm. Xin trở lại xét thường xuyên.\
-            </p>\
-          ',
-        },
-        'ch': {
-          language: 'Chinese',
-          title: 'Free Chinese meals resource finder',
-          greeting: '\
-            <h2>\
-              有关食物领取点信息：\
-            </h2>\
-            <div class="callout">\
-              <ul>\
-                <li>\
-                  领取点的开放时间为每周一和周四的上午10点至下午12点。\
-                </li>\
-                <li>\
-                  每户居民可领取一箱食物。食物最长可以维持居民五天生活。\
-                </li>\
-                <li>\
-                  居民无需出示身份证或收入证明即可领取食物。\
-                </li>\
-                <li>\
-                  费城市、共享食品计划（Share Food Program）及Philabundance慈善组织负责食物领取点的运营。\
-                </li>\
-              </ul>\
-            </div>\
-            <p>\
-              请注意——费城市正在努力增加食物领取点数量。请经常回来查看信息。\
+              Veuillez noter que- la Ville s’efforce d’élargir cette liste de sites. Revenez souvent.\
             </p>\
           ',
         },
