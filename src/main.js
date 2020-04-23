@@ -45,22 +45,22 @@ pinboard({
   // refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
   markerType: 'circle-marker',
   legendControls,
-  // locationSlots: {
-  //   title: function(state, item) {
-  //     let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
-  //     if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
-  //       return item.site_name;
-  //     } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
-  //       return item.Location;
-  //     } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
-  //       return item.SCHOOL_NAME;
-  //     } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
-  //       return item.ASSET_NAME;
-  //     } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
-  //       return item.attributes.site_name;
-  //     }
-  //   },
-  // },
+  locationSlots: {
+    title: function(state, item) {
+      // let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
+      // if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
+      //   return item.site_name;
+      // } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
+      //   return item.Location;
+      // } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
+      //   return item.SCHOOL_NAME;
+      // } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
+      //   return item.ASSET_NAME;
+      // } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
+      return item.attributes.site_name;
+      // }
+    },
+  },
   baseConfig: BASE_CONFIG_URL,
   cyclomedia: {
     enabled: false,
