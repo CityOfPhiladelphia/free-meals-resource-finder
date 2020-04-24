@@ -48,7 +48,7 @@ export default {
         'font-size': '10px',
         'background-color': '#721817',
       },
-      'Outdoor Food Sites': {
+      'Outdoor Meal Sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',

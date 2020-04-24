@@ -127,7 +127,7 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      'Outdoor Food Site': '#506D0A',
+      'Outdoor Meal Site': '#506D0A',
     },
     weight: 0,
     radius: 8,
