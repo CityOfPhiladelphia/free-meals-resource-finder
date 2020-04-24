@@ -21,7 +21,7 @@ export default {
     },
     data: {
       // TODO give these an id instead of using the label as a key
-      'Family Meal Sites': {
+      'Food Sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -39,7 +39,7 @@ export default {
         'font-size': '10px',
         'background-color': '#D67D00',
       },
-      'Youth Meal Sites': {
+      'Student Meal Sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -48,7 +48,7 @@ export default {
         'font-size': '10px',
         'background-color': '#721817',
       },
-      'Outdoor Meal Sites': {
+      'Outdoor Food Sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
