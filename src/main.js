@@ -139,7 +139,8 @@ pinboard({
       messages: {
         'en-US': {
           language: 'English',
-          title: 'Free meals resource finder',
+          title: 'Food resource finder',
+          subtitle: 'Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               About the food sites:\
@@ -173,7 +174,8 @@ pinboard({
         },
         'es': {
           language: 'Español',
-          title: 'Free Spanish meals resource finder',
+          title: 'Spanish food resource finder',
+          subtitle: 'Spanish Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               Acerca de los centros de distribución de alimentos:\
@@ -201,7 +203,8 @@ pinboard({
         },
         'ch': {
           language: '中文',
-          title: 'Free Chinese meals resource finder',
+          title: 'Chinese food resource finder',
+          subtitle: 'Chinese Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               有关食物领取点信息：\
@@ -229,7 +232,8 @@ pinboard({
         },
         'vi': {
           language: 'Tiếng Việt',
-          title: 'Free Vienamise meals resource finder',
+          title: 'Vienamise food resource finder',
+          subtitle: 'Vienamise Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               Về địa điểm thực phẩm:\
@@ -257,7 +261,8 @@ pinboard({
         },
         'ru': {
           language: 'Pусский',
-          title: 'Free Russian meals resource finder',
+          title: 'Russian food resource finder',
+          subtitle: 'Russian Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               Продовольственные участки (food sites):\
@@ -291,7 +296,8 @@ pinboard({
         },
         'fr': {
           language: 'Français',
-          title: 'French Free meals resource finder',
+          title: 'French food resource finder',
+          subtitle: 'French Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
               À propos des sites de restauration:\
