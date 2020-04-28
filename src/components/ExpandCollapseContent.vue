@@ -68,6 +68,9 @@ export default {
     },
     item: {
       type: Object,
+      default: function(){
+        return {};
+      },
     },
   },
   data() {
@@ -174,9 +177,9 @@ export default {
       // console.log('itemTitle:', itemTitle);
       if (itemTitle) {
         return itemTitle.replace(/\s+/g, '-').toLowerCase();
-      } 
+      }
       return '';
-      
+
     },
   },
 };
