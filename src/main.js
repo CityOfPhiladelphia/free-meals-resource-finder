@@ -5,6 +5,10 @@
 // (we might not need to use axios with new vue async tools)
 // if that is not needed, we can move this info to main.js
 
+// Font Awesome Icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
+library.add(faExclamationTriangle);
 
 // import pinboard
 import pinboard from '@phila/pinboard/src/main.js';
@@ -22,8 +26,10 @@ import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
+import customGreeting from './components/customGreeting.vue';
 const customComps = {
   'expandCollapseContent': expandCollapseContent,
+  'customGreeting': customGreeting,
 };
 
 pinboard({
@@ -132,6 +138,24 @@ pinboard({
     weight: 0,
     radius: 8,
   },
+  sections: {
+    foodSites: {
+      title: 'Food sites',
+      color: '#0F4D90',
+    },
+    outdoorMealSites: {
+      title: 'Outdoor meal sites',
+      color: '#506D0A',
+    },
+    seniorMealSites: {
+      title: 'Senior meal sites',
+      color: '#D67D00',
+    },
+    studentMealSites: {
+      title: 'Student meal sites',
+      color: '#721817',
+    },
+  },
   i18n: {
     header: 'i18nBanner',
     data: {
@@ -140,6 +164,28 @@ pinboard({
         'en-US': {
           language: 'English',
           title: 'Food resource finder',
+          sections: {
+            foodSites: {
+              header: 'Food sites',
+              eligibility: 'Any resident is eligible. No ID or proof of income is required',
+            },
+            outdoorMealSites: {
+              header:  'Outdoor meal sites',
+              eligibility: 'Any resident is eligible. No ID or proof of income is required',
+            },
+            seniorMealSites: {
+              header: 'Senior meal sites',
+              eligibility: '\
+                Adults 60 and over are eligible at sites supported by the Philadelphia\
+                Corporation for Aging (PCA). \
+                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i>\
+              ',
+            },
+            studentMealSites: {
+              header: 'Student meal sites',
+              eligibility: 'All children and youth are eligible. No ID is required.',
+            },
+          },
           subtitle: 'Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
@@ -175,6 +221,12 @@ pinboard({
         'es': {
           language: 'Español',
           title: 'Spanish food resource finder',
+          sections: {
+            foodSites: 'Spanish Food sites',
+            outdoorMealSites: 'Spanish Outdoor meal sites',
+            seniorMealSites: 'Spanish Senior meal sites',
+            studentMealSites: 'Spanish Student meal sites',
+          },
           subtitle: 'Spanish Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
@@ -204,6 +256,12 @@ pinboard({
         'ch': {
           language: '中文',
           title: 'Chinese food resource finder',
+          sections: {
+            foodSites: 'Chinese Food sites',
+            outdoorMealSites: 'Chinese Outdoor meal sites',
+            seniorMealSites: 'Chinese Senior meal sites',
+            studentMealSites: 'Chinese Student meal sites',
+          },
           subtitle: 'Chinese Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
@@ -233,6 +291,12 @@ pinboard({
         'vi': {
           language: 'Tiếng Việt',
           title: 'Vienamise food resource finder',
+          sections: {
+            foodSites: 'Vienamise Food sites',
+            outdoorMealSites: 'Vienamise Outdoor meal sites',
+            seniorMealSites: 'Vienamise Senior meal sites',
+            studentMealSites: 'Vienamise Student meal sites',
+          },
           subtitle: 'Vienamise Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
@@ -262,6 +326,12 @@ pinboard({
         'ru': {
           language: 'Pусский',
           title: 'Russian food resource finder',
+          sections: {
+            foodSites: 'Russian Food sites',
+            outdoorMealSites: 'Russian Outdoor meal sites',
+            seniorMealSites: 'Russian Senior meal sites',
+            studentMealSites: 'Russian Student meal sites',
+          },
           subtitle: 'Russian Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
@@ -297,6 +367,12 @@ pinboard({
         'fr': {
           language: 'Français',
           title: 'French food resource finder',
+          sections: {
+            foodSites: 'French Food sites',
+            outdoorMealSites: 'French Outdoor meal sites',
+            seniorMealSites: 'French Senior meal sites',
+            studentMealSites: 'French Student meal sites',
+          },
           subtitle: 'French Find free food and meals during COVID-19',
           greeting: '\
             <h2>\
