@@ -2,13 +2,13 @@
   <div
     class="grid-y custom-greeting"
   >
-    <div class="grid-x exclamation-holder">
+    <div class="exclamation-holder">
       <font-awesome-icon
         icon="exclamation-triangle"
-        class="fa-3x inline-block-class"
+        class="fa-3x fa-icon-class"
       />
       <div
-        class="grid-y exclamation-details"
+        class="grid-y exclamation-details small-19 medium-20"
       >
         <div><b>Before you go:</b></div>
         <div>Check the specific site information. Hours are subject to change.</div>
@@ -22,6 +22,41 @@
       :section="$config.sections[key]"
       :color="$config.sections[key].color"
     />
+
+    <div
+      class="grid-y"
+    >
+      <div
+        class="section-header"
+        :style="{ 'background-color': '#F0F0F0', 'color': 'black' }"
+      >
+        <b>Food Pantries</b>
+      </div>
+      <div class="custom-section">
+        These sites supplement the existing food pantry network. To find a food pantry near you:
+        <ul class="custom-ul">
+          <li>
+            Call <b><a
+              class="underlined"
+              href="tel:+311"
+            >311</a></b>. Make sure to call the pantry in advance to confirm their hours.
+          </li>
+          <li>
+            Call the WhyHunger hotline at <b><a
+              class="underlined"
+              href="tel:+18005486479"
+            >1-800-5HUNGRY</a></b> or text your ZIP code to <b><a
+              class="underlined"
+              href="tel:+18005486479"
+            >1-800-548-6479</a></b> to
+            receive a list of nearby food pantries.
+          </li>
+          <li>
+            Visit the <b><a class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -164,12 +199,20 @@ export default {
   }
 
   .exclamation-holder {
+    display: flex;
+    align-items: center;
     margin-top: 6px;
     margin-bottom: 14px;
   }
 
+  .fa-icon-class {
+    margin: 0 auto;
+    display: block;
+  }
+
   .exclamation-details {
     margin-left: 14px;
+    font-size: 15px;
   }
 
   .mb-panel-topics-greeting {
@@ -184,6 +227,16 @@ export default {
 
   .greeting-error {
     border-left-color: #ff0000;
+  }
+
+  .custom-section {
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+
+  .custom-ul {
+    margin-left: 4rem;
+    font-size: 14px;
   }
 
   /*medium*/

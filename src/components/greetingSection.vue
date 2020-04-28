@@ -12,6 +12,7 @@
     <vertical-table-light
       class="print-padding"
       :slots="mainVerticalTableSlots"
+      :options="mainVerticalTableOptions"
     >
       <div class="table-slot">
         <!-- subsections -->
@@ -118,11 +119,15 @@ export default {
     },
     mainVerticalTableOptions() {
       return {
-        components: [
-          {
-            type: '',
+        styles: {
+          th: {
+            'vertical-align': 'top',
+            'font-size': '14px',
           },
-        ],
+          td: {
+            'font-size': '14px',
+          },
+        },
       };
     },
     mainVerticalTableSlots() {
@@ -221,6 +226,7 @@ export default {
 
   .section-header {
     background-color: #0f4d90;
+    font-size: 16px;
     color: white;
     margin-top: 4px;
     margin-bottom: 4px;

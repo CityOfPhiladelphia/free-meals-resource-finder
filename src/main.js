@@ -208,7 +208,9 @@ pinboard({
               eligibility: '\
                 Adults 60 and over are eligible at sites supported by the Philadelphia\
                 Corporation for Aging (PCA). \
-                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i>\
+                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+                Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
+                <i><b>No reservation necessary</b></i>\
               ',
               pickupDetails: '',
               subsections: {
@@ -287,8 +289,10 @@ pinboard({
               header: 'Spanish Senior meal sites',
               eligibility: '\
                 Spanish Adults 60 and over are eligible at sites supported by the Philadelphia\
-                Corporation for Aging (PCA). \
-                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i>\
+                Corporation for Aging (PCA).\
+                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+                Adults 55 and over are eligible at the Parks & Recreation older adult center.<br>\
+                <i><b>No reservation necessary</b></i>\
               ',
               pickupDetails: '',
               subsections: {
