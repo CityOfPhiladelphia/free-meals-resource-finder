@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="grid-y"
-  >
+  <div>
     <div
       class="section-header"
       :style="{ 'background-color': color }"
@@ -47,6 +45,7 @@
           {{ $t('sections.' + header + '.pickupDetails') }}
         </div>
       </div>
+
       <!-- <horizontal-table-light
         class="print-padding"
         :options="insideHorizontalTableOptions"

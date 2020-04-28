@@ -245,6 +245,13 @@ pinboard({
                 },
               },
             },
+            foodPantries: {
+              header:  'Food pantries',
+              intro: 'These sites supplement the existing food pantry network. To find a food pantry near you:',
+              li1: 'Call <b><a class="underlined" href="tel:+311">311</a></b>. Make sure to call the pantry in advance to confirm their hours.',
+              li2: 'Call the WhyHunger hotline at <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> or text your ZIP code to <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> to receive a list of nearby food pantries.',
+              li3: 'Visit the <b><a class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.',
+            },
           },
         },
         'es': {
@@ -326,6 +333,13 @@ pinboard({
                   pickupDetails: 'Spanish Days and times vary by site. One meal per resident.',
                 },
               },
+            },
+            foodPantries: {
+              header:  'Spanish Food pantries',
+              intro: 'Spanish These sites supplement the existing food pantry network. To find a food pantry near you:',
+              li1: 'Spanish Call <b><a class="underlined" href="tel:+311">311</a></b>. Make sure to call the pantry in advance to confirm their hours.',
+              li2: 'Spanish Call the WhyHunger hotline at <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> or text your ZIP code to <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> to receive a list of nearby food pantries.',
+              li3: 'Spanish Visit the <b><a class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.',
             },
           },
         },

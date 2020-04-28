@@ -23,40 +23,24 @@
       :color="$config.sections[key].color"
     />
 
-    <div
+    <!-- <div
       class="grid-y"
+    > -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': '#F0F0F0', 'color': 'black' }"
     >
-      <div
-        class="section-header"
-        :style="{ 'background-color': '#F0F0F0', 'color': 'black' }"
-      >
-        <b>Food Pantries</b>
-      </div>
-      <div class="custom-section">
-        These sites supplement the existing food pantry network. To find a food pantry near you:
-        <ul class="custom-ul">
-          <li>
-            Call <b><a
-              class="underlined"
-              href="tel:+311"
-            >311</a></b>. Make sure to call the pantry in advance to confirm their hours.
-          </li>
-          <li>
-            Call the WhyHunger hotline at <b><a
-              class="underlined"
-              href="tel:+18005486479"
-            >1-800-5HUNGRY</a></b> or text your ZIP code to <b><a
-              class="underlined"
-              href="tel:+18005486479"
-            >1-800-548-6479</a></b> to
-            receive a list of nearby food pantries.
-          </li>
-          <li>
-            Visit the <b><a class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.
-          </li>
-        </ul>
-      </div>
+      <b>{{ $t('sections.foodPantries.header') }}</b>
     </div>
+    <div class="custom-section">
+      {{ $t('sections.foodPantries.intro') }}
+      <ul class="custom-ul">
+        <li v-html="$t('sections.foodPantries.li1')" />
+        <li v-html="$t('sections.foodPantries.li2')" />
+        <li v-html="$t('sections.foodPantries.li3')" />
+      </ul>
+    </div>
+    <!-- </div> -->
   </div>
 </template>
 
