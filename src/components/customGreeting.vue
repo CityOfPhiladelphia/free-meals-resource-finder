@@ -10,11 +10,12 @@
       <div
         class="grid-y exclamation-details small-19 medium-20"
       >
-        <div><b>Before you go:</b></div>
-        <div>Check the specific site information. Hours are subject to change.</div>
+        <div><b>{{ $t('randomWords.beforeYouGo') }}:</b></div>
+        <div>{{ $t('randomWords.checkSite') }}</div>
       </div>
     </div>
 
+    <!-- sections that rely on data -->
     <greeting-section
       v-for="(section, key) in sections"
       :key="key"
@@ -23,9 +24,7 @@
       :color="$config.sections[key].color"
     />
 
-    <!-- <div
-      class="grid-y"
-    > -->
+    <!-- food pantries section -->
     <div
       class="section-header"
       :style="{ 'background-color': '#F0F0F0', 'color': 'black' }"
@@ -40,7 +39,6 @@
         <li v-html="$t('sections.foodPantries.li3')" />
       </ul>
     </div>
-    <!-- </div> -->
   </div>
 </template>
 

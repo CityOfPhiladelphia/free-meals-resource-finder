@@ -172,6 +172,8 @@ pinboard({
           randomWords: {
             eligibility: 'Eligibility',
             pickupDetails: 'Pickup Details',
+            beforeYouGo: 'Before you go',
+            checkSite: 'Check the specific site information. Hours are subject to change.',
           },
           sections: {
             foodSites: {
@@ -261,6 +263,8 @@ pinboard({
           randomWords: {
             eligibility: 'Spanish eligibility',
             pickupDetails: 'Spanish pickup details',
+            beforeYouGo: 'Spanish Before you go',
+            checkSite: 'Spanish Check the specific site information. Hours are subject to change.',
           },
           sections: {
             foodSites: {
