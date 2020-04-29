@@ -130,7 +130,7 @@ export default {
   },
   methods: {
     getCounts() {
-      console.log('customGreeting.vue getCounts is running');
+      // console.log('customGreeting.vue getCounts is running');
       const refineData = this.database;
       // const refineData = this.sources[this.$appType].data.rows;
 
