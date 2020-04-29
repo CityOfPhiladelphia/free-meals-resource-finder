@@ -12,39 +12,53 @@
       :slots="mainVerticalTableSlots"
       :options="mainVerticalTableOptions"
     >
-      <div class="table-slot">
-        <!-- subsections -->
-        <div
-          v-for="(subsection, key) in section.subsections"
-          :key="key"
-          class="subsection-content"
-        >
-          <!-- subsections that are written out -->
+      <!-- <template v-slot:component1>
+        <div class="table-slot">
           <div
-            v-if="subsectionCountsFromProps[subsection]"
+            v-for="(subsection, key) in section.subsections"
+            :key="key"
+            class="subsection-content"
           >
-            <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
-            <div
-              v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
-            />
-          </div>
-
-          <!-- subsections that are compiled (because multiple subsubsections make 1 subsection) -->
-          <div
-            v-if="subsectionCountsFromProps.compiled"
-          >
-            <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
-            <div
-              v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
-            />
+            {{ $t('sections.' + header + '.subsection.' + subsection + '.eligibility') }}
           </div>
         </div>
+      </template> -->
 
-        <!-- pickupDetails if there are no subsections -->
-        <div>
-          {{ $t('sections.' + header + '.pickupDetails') }}
+      <template>
+        <div class="table-slot">
+          <!-- subsections -->
+          <div
+            v-for="(subsection, key) in section.subsections"
+            :key="key"
+            class="subsection-content"
+          >
+            <!-- subsections that are written out -->
+            <div
+              v-if="subsectionCountsFromProps[subsection]"
+            >
+              <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
+              <div
+                v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
+              />
+            </div>
+
+            <!-- subsections that are compiled (because multiple subsubsections make 1 subsection) -->
+            <div
+              v-if="subsectionCountsFromProps.compiled"
+            >
+              <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
+              <div
+                v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
+              />
+            </div>
+          </div>
+
+          <!-- pickupDetails if there are no subsections -->
+          <div>
+            {{ $t('sections.' + header + '.pickupDetails') }}
+          </div>
         </div>
-      </div>
+      </template>
 
       <!-- <horizontal-table-light
         class="print-padding"
@@ -138,6 +152,8 @@ export default {
             labelType: 'i18n',
             value: 'sections.' + this.$props.header + '.eligibility',
             type: 'i18n',
+            // type: 'component1',
+            // value: 'component value',
           },
           {
             label: 'randomWords.pickupDetails',
@@ -247,10 +263,10 @@ export default {
     margin-left: 0px !important;
   }
 
-  .table-light th {
+  /* .table-light th {
     max-width: 50px !important;
     width: 10% !important;
-  }
+  } */
 
   .table-slot {
     margin-left: 8px;
