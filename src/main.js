@@ -314,6 +314,11 @@ pinboard({
             FRIDAY: 'Viernes',
             SATURDAY: 'Sabado',
             SUNDAY: 'Domingo',
+            nonPerish: 'spanish non-perishable items only',
+            freshOnly: 'spanish fresh produce only',
+            breakfastLunch: 'spanish Breakfast and lunch',
+            tenMeals: 'spanish 10 meals per child',
+            oneMeal: 'spanish one meal per resident',
           },
           sections: {
             foodSites: {

@@ -136,6 +136,9 @@ export default {
           th: {
             'vertical-align': 'top',
             'font-size': '14px',
+            'min-width': '45px !important',
+            'max-width': '50px !important',
+            'width': '10% !important',
           },
           td: {
             'font-size': '14px',
@@ -151,14 +154,14 @@ export default {
             label: 'randomWords.eligibility',
             labelType: 'i18n',
             value: 'sections.' + this.$props.header + '.eligibility',
-            type: 'i18n',
-            // type: 'component1',
+            valueType: 'i18n',
+            // valueType: 'component1',
             // value: 'component value',
           },
           {
             label: 'randomWords.pickupDetails',
             labelType: 'i18n',
-            type: 'component',
+            valueType: 'component',
             value: 'component value',
           },
         ],
@@ -179,7 +182,7 @@ export default {
     //       },
     //       {
     //         label: 'Tuesday',
-    //         // type: 'i18n',
+    //         // valueType: 'i18n',
     //         value: function(state) {
     //           return state.sources.covidFreeMealSites.data.features[0].attributes.TUESDAY;
     //         },

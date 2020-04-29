@@ -56,13 +56,13 @@ export default {
             label: 'randomWords.eligibility',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.subsections.PCA.eligibility',
-            type: 'i18n',
+            valueType: 'i18n',
           },
           {
             label: 'randomWords.pickupDetails',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.subsections.PCA.pickupDetails',
-            type: 'i18n',
+            valueType: 'i18n',
           },
         ],
       };

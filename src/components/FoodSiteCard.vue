@@ -73,13 +73,13 @@ export default {
             label: 'randomWords.eligibility',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.eligibility',
-            type: 'i18n',
+            valueType: 'i18n',
           },
           {
             label: 'randomWords.pickupDetails',
             labelType: 'i18n',
             // value: 'sections.' + this.section + '.pickupDetails',
-            type: 'component',
+            valueType: 'component',
           },
         ],
       };
@@ -109,41 +109,25 @@ export default {
         if (this.item.attributes[day] != null){
           let details;
           if (day === 'MONDAY') {
-            details = 'non-perishable items only';
+            details = 'randomWords.nonPerish';
           } else {
-            details = 'fresh produce only';
+            details = 'randomWords.freshOnly';
           }
           let dayObject = {
             label: 'randomWords.' + day,
             labelType: 'i18n',
             value: this.item.attributes[day],
-            // type: 'i18n',
+            // valueType: 'i18n',
             value1: details,
+            value1Type: 'i18n',
           };
-          // days[day] = this.item.attributes[day]
           theFields.push(dayObject);
         }
       }
-      // console.log('days:', days);
-      console.log('theFields:', theFields);
 
       return {
         id: 'mainTable',
         fields: theFields,
-        // fields: [
-        //   {
-        //     label: 'randomWords.eligibility',
-        //     labelType: 'i18n',
-        //     value: 'sections.' + this.section + '.eligibility',
-        //     type: 'i18n',
-        //   },
-        //   {
-        //     label: 'randomWords.pickupDetails',
-        //     labelType: 'i18n',
-        //     type: 'component',
-        //     value: 'component value',
-        //   },
-        // ],
       };
     },
   },
