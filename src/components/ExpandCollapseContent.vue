@@ -25,31 +25,56 @@
     </div>
     <section class="services grid-x grid-padding-x">
       <div class="cell">
-        <h3 class="h4">
+        <!-- <h3 class="h4">
           {{ item.attributes.CATEGORY }}
-        </h3>
-        <h3 class="h4">
-          Hours of Operation
-        </h3>
-        <div class="grid-y">
-          <div>Hours: {{ item.attributes.HOURS }}</div>
-          <div>Monday: {{ item.attributes.MONDAY }}</div>
-          <div>Tuesday: {{ item.attributes.TUESDAY }}</div>
-          <div>Wednesday: {{ item.attributes.WEDNESDAY }}</div>
-          <div>Thursday: {{ item.attributes.THURSDAY }}</div>
-          <div>Friday: {{ item.attributes.FRIDAY }}</div>
-          <div>Saturday: {{ item.attributes.SATURDAY }}</div>
-          <div>Sunday: {{ item.attributes.SUNDAY }}</div>
+        </h3> -->
 
+        <vertical-table-light
+          class="print-padding"
+          :slots="mainVerticalTableSlots"
+          :options="mainVerticalTableOptions"
+        >
+          <!-- <div class="table-slot">
+            <div
+              v-for="(subsection, key) in section.subsections"
+              :key="key"
+              class="subsection-content"
+            >
+              <div
+                v-if="subsectionCountsFromProps[subsection]"
+              >
+                <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
+                <div
+                  v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
+                />
+              </div>
 
-          <!-- <div
-            v-for="i in parseServiceList(item.services_offered)"
-            :key="i"
-            class="cell medium-12 service-item"
-          >
-            {{ i }}
+              <div
+                v-if="subsectionCountsFromProps.compiled"
+              >
+                <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
+                <div
+                  v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
+                />
+              </div>
+            </div>
+
+            <div>
+              {{ $t('sections.' + header + '.pickupDetails') }}
+            </div>
           </div> -->
-        </div>
+
+          <!-- <horizontal-table-light
+            class="print-padding"
+            :options="insideHorizontalTableOptions"
+            :slots="insideHorizontalTableSlots"
+          /> -->
+
+          <!-- <vertical-table-light
+            class="print-padding"
+            :slots="insideVerticalTableSlots"
+          /> -->
+        </vertical-table-light>
       </div>
     </section>
   </div>
@@ -61,6 +86,10 @@
 
 export default {
   // mixins: [ TopicComponent ],
+  name: 'ExpandCollapseContent',
+  components: {
+    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTableLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
+  },
   props: {
     isMapVisible: {
       type: Boolean,
@@ -72,6 +101,12 @@ export default {
         return {};
       },
     },
+    // section: {
+    //   type: Object,
+    //   default: function(){
+    //     return {};
+    //   },
+    // },
   },
   data() {
     return {
@@ -79,6 +114,44 @@ export default {
     };
   },
   computed: {
+    subsections() {
+      return this.$config.subsections;
+    },
+    section() {
+      return this.subsections[this.$props.item.attributes['CATEGORY']];
+    },
+    mainVerticalTableOptions() {
+      return {
+        styles: {
+          th: {
+            'vertical-align': 'top',
+            'font-size': '14px',
+          },
+          td: {
+            'font-size': '14px',
+          },
+        },
+      };
+    },
+    mainVerticalTableSlots() {
+      return {
+        id: 'mainTable',
+        fields: [
+          {
+            label: 'randomWords.eligibility',
+            labelType: 'i18n',
+            value: 'sections.' + this.section + '.eligibility',
+            type: 'i18n',
+          },
+          {
+            label: 'randomWords.pickupDetails',
+            labelType: 'i18n',
+            type: 'component',
+            value: 'component value',
+          },
+        ],
+      };
+    },
     servicesOffered() {
       return this.$props.item.services_offered.split(',');
     },
@@ -89,33 +162,33 @@ export default {
       return this.$store.state.map.latestSelectedResourceFromMap;
     },
   },
-  watch: {
-    selectedResources(nextSelectedResources) {
-      if (this.locationOpen || nextSelectedResources.includes(this.$props.item._featureId)) {
-        if (this.locationOpen === false) {
-          this.openLocation();
-        } else if (this.locationOpen && !nextSelectedResources.includes(this.$props.item._featureId)) {
-          this.locationOpen = false;
-        }
-      } else {
-        this.locationOpen = false;
-      }
-    },
-    isMapVisible(nextIsMapVisible) {
-      if (!nextIsMapVisible) {
-        if (this.latestSelectedResourceFromMap) {
-          console.log('ExpandCollapse is reporting map is invisible and there is a this.latestSelectedResourceFromMap:', this.latestSelectedResourceFromMap);
-          if (this.latestSelectedResourceFromMap === this.item._featureId) {
-            const el = this.$el;
-            const visible = this.isElementInViewport(el);
-            if (!visible) {
-              el.scrollIntoView();
-            }
-          }
-        }
-      }
-    },
-  },
+  // watch: {
+  //   selectedResources(nextSelectedResources) {
+  //     if (this.locationOpen || nextSelectedResources.includes(this.$props.item._featureId)) {
+  //       if (this.locationOpen === false) {
+  //         this.openLocation();
+  //       } else if (this.locationOpen && !nextSelectedResources.includes(this.$props.item._featureId)) {
+  //         this.locationOpen = false;
+  //       }
+  //     } else {
+  //       this.locationOpen = false;
+  //     }
+  //   },
+  //   isMapVisible(nextIsMapVisible) {
+  //     if (!nextIsMapVisible) {
+  //       if (this.latestSelectedResourceFromMap) {
+  //         console.log('ExpandCollapse is reporting map is invisible and there is a this.latestSelectedResourceFromMap:', this.latestSelectedResourceFromMap);
+  //         if (this.latestSelectedResourceFromMap === this.item._featureId) {
+  //           const el = this.$el;
+  //           const visible = this.isElementInViewport(el);
+  //           if (!visible) {
+  //             el.scrollIntoView();
+  //           }
+  //         }
+  //       }
+  //     }
+  //   },
+  // },
   mounted() {
     if (this.selectedResources.includes(this.item._featureId)) {
       this.locationOpen = true;
@@ -126,36 +199,36 @@ export default {
       const formattedAddress = address.replace(/(Phila.+)/g, city => `<div>${city}</div>`).replace(/^\d+\s[A-z]+\s[A-z]+/g, lineOne => `<div>${lineOne}</div>`).replace(/,/, '');
       return formattedAddress;
     },
-    openLocation() {
-      this.locationOpen = true;
-      const el = this.$el;
-      const visible = this.isElementInViewport(el);
-      if (!visible) {
-        el.scrollIntoView();
-      }
-    },
-    isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      // console.log('bounding box', rect);
-      const visibility = {
-        // TODO the 108 below is account for the combined height of the
-        // app header and address header. this is not a good long-term
-        // solution - instead, use the `bottom` value of the address header's
-        // bounding rect. however, this should only fire on small devices,
-        // which would require again hard-coding screen breakpoints from
-        // standards or some other magic, which might not a huge
-        // improvement in terms of decoupling logic and presentation. hmm.
-        top: rect.top >= 108,
-        left: rect.left >= 0,
-        bottom: rect.bottom <= (window.innerHeight || document.documentElement.clientHeight),
-        right: rect.right <= (window.innerWidth || document.documentElement.clientWidth),
-      };
+    // openLocation() {
+    //   this.locationOpen = true;
+    //   const el = this.$el;
+    //   const visible = this.isElementInViewport(el);
+    //   if (!visible) {
+    //     el.scrollIntoView();
+    //   }
+    // },
+    // isElementInViewport(el) {
+    //   const rect = el.getBoundingClientRect();
+    //   // console.log('bounding box', rect);
+    //   const visibility = {
+    //     // TODO the 108 below is account for the combined height of the
+    //     // app header and address header. this is not a good long-term
+    //     // solution - instead, use the `bottom` value of the address header's
+    //     // bounding rect. however, this should only fire on small devices,
+    //     // which would require again hard-coding screen breakpoints from
+    //     // standards or some other magic, which might not a huge
+    //     // improvement in terms of decoupling logic and presentation. hmm.
+    //     top: rect.top >= 108,
+    //     left: rect.left >= 0,
+    //     bottom: rect.bottom <= (window.innerHeight || document.documentElement.clientHeight),
+    //     right: rect.right <= (window.innerWidth || document.documentElement.clientWidth),
+    //   };
 
-      // console.log('visibility', visibility);
+    // console.log('visibility', visibility);
 
-      // return if all sides are visible
-      return Object.values(visibility).every(val => val);
-    },
+    // return if all sides are visible
+    //   return Object.values(visibility).every(val => val);
+    // },
     expandLocation() {
       // console.log('ExpandCollapse expandLocation is starting');
       this.locationOpen = !this.locationOpen;
