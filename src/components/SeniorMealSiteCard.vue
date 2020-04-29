@@ -73,6 +73,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.services {
+  width: 100%;
+}
+
 .location-item {
   position: relative;
   border-bottom: 1px solid black;

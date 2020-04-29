@@ -13,6 +13,7 @@
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
+            :options="componentVerticalTableOptions"
           />
         </div>
       </vertical-table-light>
@@ -52,9 +53,14 @@ export default {
           th: {
             'vertical-align': 'top',
             'font-size': '14px',
+            // 'width': '30%',
+            'min-width': '40px !important',
+            'max-width': '50px !important',
+            'width': '10% !important',
           },
           td: {
             'font-size': '14px',
+            // 'width': '90%',
           },
         },
       };
@@ -76,6 +82,23 @@ export default {
             type: 'component',
           },
         ],
+      };
+    },
+    componentVerticalTableOptions() {
+      return {
+        styles: {
+          th: {
+            // 'vertical-align': 'top',
+            'font-size': '14px',
+            'min-width': '45px !important',
+            'max-width': '50px !important',
+            'width': '25% !important',
+          },
+          td: {
+            'font-size': '14px',
+            // 'width': '90%',
+          },
+        },
       };
     },
     componentVerticalTableSlots() {
@@ -129,6 +152,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.services {
+  width: 100%;
+}
+
 .location-item {
   position: relative;
   border-bottom: 1px solid black;
