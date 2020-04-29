@@ -202,6 +202,11 @@ pinboard({
             FRIDAY: 'Friday',
             SATURDAY: 'Saturday',
             SUNDAY: 'Sunday',
+            nonPerish: 'non-perishable items only',
+            freshOnly: 'fresh produce only',
+            breakfastLunch: 'Breakfast and lunch',
+            tenMeals: '10 meals per child',
+            oneMeal: 'one meal per resident',
           },
           sections: {
             foodSites: {
