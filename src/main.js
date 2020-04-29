@@ -278,92 +278,82 @@ pinboard({
         },
         'es': {
           language: 'Español',
-          title: 'Spanish food resource finder',
-          subtitle: 'Spanish Find free food and meals during COVID-19',
+          title: 'Lugares de distribución de alimentos',
+          subtitle: 'Obtenga alimentos y comidas gratis durante la epidemia de la COVID-19',
           randomWords: {
-            eligibility: 'Spanish eligibility',
-            pickupDetails: 'Spanish pickup details',
-            beforeYouGo: 'Spanish Before you go',
-            checkSite: 'Spanish Check the specific site information. Hours are subject to change.',
+            eligibility: 'Elegibilidad',
+            pickupDetails: 'Detalles y horarios de retiro',
+            beforeYouGo: 'Antes de ir',
+            checkSite: 'Verifique la información específica del lugar. Los horarios pueden cambiar.',
           },
           sections: {
             foodSites: {
-              header: 'Spanish Food sites',
-              eligibility: 'Spanish Any resident is eligible. No ID or proof of income is required',
-              pickupDetails: 'Spanish Residents can get one box per household',
+              header: 'Lugar de alimentos',
+              eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
+              pickupDetails: 'Los residentes pueden obtener una caja por hogar.',
               subsections: {},
             },
             studentMealSites: {
-              header: 'Spanish Student meal sites',
-              eligibility: 'Spanish All children and youth are eligible. No ID is required.',
+              header: 'Lugar de comidas para estudiantes',
+              eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
               pickupDetails: '',
               subsections: {
                 'PSD': {
-                  name: 'Spanish Philadelphia School District schools',
+                  name: 'escuelas del Distrito Escolar de Filadelfia',
                   pickupDetails: '',
                 },
                 'PHA': {
-                  name: 'Spanish Philadelphia Housing Authority (PHA) community centers',
+                  name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
                   pickupDetails: '',
                 },
                 'PPR': {
-                  name: 'Spanish Philadelphia Parks & Recreation centers',
+                  name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
                 },
                 'CHARTER': {
-                  name: 'Spanish Charter schools',
+                  name: 'escuelas charter',
                   pickupDetails: '',
                 },
               },
             },
             seniorMealSites: {
-              header: 'Spanish Senior meal sites',
-              eligibility: '\
-                Spanish Adults 60 and over are eligible at sites supported by the Philadelphia\
-                Corporation for Aging (PCA).\
-                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
-                Adults 55 and over are eligible at the Parks & Recreation older adult center.<br>\
-                <i><b>No reservation necessary</b></i>\
-              ',
+              header: 'Lugares de comidas para adultos mayores',
+              eligibility: 'Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA). <b><i>Los adultos mayores deben llamar para reservar la comida con anticipación antes de retirarla.</i></b>',
               pickupDetails: '',
               subsections: {
                 'PCA': {
-                  name: 'Spanish PCA-supported sites',
+                  name: 'Lugares patrocinados por la PCA',
                   pickupDetails: "\
-                    Seniors can reserve 5 to 7 meals per week.<br>\
-                    Pickup dates and times vary by site.\
-                    For more information and to reserve meals, contact a specfic site.<br>\
-                    A senior's family may pick up meals, with prior arrangement.\
-                    Meals may also be home delivered if needed.<br>\
-                    To get help in languages other than English, call the PCA helpline at\
-                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
-                  ",
+                  Los adultos mayores pueden llamar con anticipación y reservar de 5 a 7 comidas por semana. \
+                  Los horarios de retiro varían según el lugar. Para obtener más información o reservar comidas, comuníquese con el lugar específico. \
+                  Un familiar del adulto mayor puede retirar las comidas con previo acuerdo. Las comidas también se pueden enviar a domicilio si es necesario. \
+                  Para recibir ayuda en otro idioma que no sea inglés, llame a la línea de ayuda de la PCA al <a class=\"underlined\" href=\"tel:+1 (215) 765-9040\">(215) 765-9040</a>.",
                 },
                 'PPR_Senior': {
-                  name: 'Spanish Philadelphia Parks & Recreation older adult centers',
+                  name: 'centros para adultos mayores de Parques y Recreación',
                   pickupDetails: '\
-                    Seniors can pick up five meals per week at most sites.\
+                  Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.\
                   ',
                 },
               },
             },
             outdoorMealSites: {
-              header:  'Spanish Outdoor meal sites',
-              eligibility: 'Spanish Any resident is eligible. No ID or proof of income is required',
+              header:  'Lugares de comidas al aire libre',
+              eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Spanish temporary outdoor sites',
-                  pickupDetails: 'Spanish Days and times vary by site. One meal per resident.',
+                  name: 'Lugares temporales al aire libre',
+                  pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
             },
             foodPantries: {
-              header:  'Spanish Food pantries',
-              intro: 'Spanish These sites supplement the existing food pantry network. To find a food pantry near you:',
-              li1: 'Spanish Call <b><a class="underlined" href="tel:+311">311</a></b>. Make sure to call the pantry in advance to confirm their hours.',
-              li2: 'Spanish Call the WhyHunger hotline at <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> or text your ZIP code to <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> to receive a list of nearby food pantries.',
-              li3: 'Spanish Visit the <b><a class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.',
+              header:  'Bancos de alimentos',
+              intro: 'Estos lugares complementan la red de bancos de alimentos existente. Para encontrar un banco de alimentos cerca de su ubicación:',
+              li1: 'Llame al <b><a class="underlined" href="tel:+311">311</a></b>. Asegúrese de llamar al banco de alimentos con anticipación para confirmar sus horarios.',
+              li2: 'Llame a la línea directa de WhyHunger al <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> o envíe un mensaje de texto con su código postal al <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> para recibir una lista de los bancos de alimentos cercanos a su ubicación.',
+              li3: 'Visite el sitio web <a class="underlined" href="https://communityresourceconnects.org/">Community Resource Connects</a> para encontrar alimentos y otros recursos en su zona.',
             },
           },
         },
