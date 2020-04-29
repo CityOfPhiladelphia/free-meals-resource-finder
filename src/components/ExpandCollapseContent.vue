@@ -16,6 +16,13 @@
     </div>
     <div class="cell medium-12">
       <div
+        v-if="item.attributes.CATEGORY"
+        class="detail"
+      >
+        <font-awesome-icon icon="hand-holding-heart" />
+        <span>{{ item.attributes.CATEGORY }}</span>
+      </div>
+      <div
         v-if="item.attributes.phone_number"
         class="detail"
       >
@@ -23,95 +30,37 @@
         <span>{{ item.attributes.phone_number }}</span>
       </div>
     </div>
-    <section class="services grid-x grid-padding-x">
-      <div class="cell">
-        <!-- <h3 class="h4">
-          {{ item.attributes.CATEGORY }}
-        </h3> -->
 
-        <vertical-table-light
-          class="print-padding"
-          :slots="mainVerticalTableSlots"
-          :options="mainVerticalTableOptions"
-        >
-          <!-- <div class="table-slot">
-            <div
-              v-for="(subsection, key) in section.subsections"
-              :key="key"
-              class="subsection-content"
-            >
-              <div
-                v-if="subsectionCountsFromProps[subsection]"
-              >
-                <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
-                <div
-                  v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
-                />
-              </div>
+    <senior-meal-site-card
+      v-if="section === 'seniorMealSites'"
+      :item="item"
+    />
 
-              <div
-                v-if="subsectionCountsFromProps.compiled"
-              >
-                <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
-                <div
-                  v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
-                />
-              </div>
-            </div>
-
-            <div>
-              {{ $t('sections.' + header + '.pickupDetails') }}
-            </div>
-          </div> -->
-
-          <!-- <horizontal-table-light
-            class="print-padding"
-            :options="insideHorizontalTableOptions"
-            :slots="insideHorizontalTableSlots"
-          /> -->
-
-          <!-- <vertical-table-light
-            class="print-padding"
-            :slots="insideVerticalTableSlots"
-          /> -->
-        </vertical-table-light>
-      </div>
-    </section>
+    <food-site-card
+      v-if="section === 'foodSites'"
+      :item="item"
+    />
   </div>
 </template>
 
 <script>
 
-// import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
+import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
+import FoodSiteCard from './FoodSiteCard.vue';
 
 export default {
-  // mixins: [ TopicComponent ],
   name: 'ExpandCollapseContent',
   components: {
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTableLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
+    SeniorMealSiteCard,
+    FoodSiteCard,
   },
   props: {
-    isMapVisible: {
-      type: Boolean,
-      default: true,
-    },
     item: {
       type: Object,
       default: function(){
         return {};
       },
     },
-    // section: {
-    //   type: Object,
-    //   default: function(){
-    //     return {};
-    //   },
-    // },
-  },
-  data() {
-    return {
-      locationOpen: false,
-    };
   },
   computed: {
     subsections() {
@@ -120,143 +69,20 @@ export default {
     section() {
       return this.subsections[this.$props.item.attributes['CATEGORY']];
     },
-    mainVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            'vertical-align': 'top',
-            'font-size': '14px',
-          },
-          td: {
-            'font-size': '14px',
-          },
-        },
-      };
+    subsection() {
+      return this.$props.item.attributes.CATEGORY;
     },
-    mainVerticalTableSlots() {
-      return {
-        id: 'mainTable',
-        fields: [
-          {
-            label: 'randomWords.eligibility',
-            labelType: 'i18n',
-            value: 'sections.' + this.section + '.eligibility',
-            type: 'i18n',
-          },
-          {
-            label: 'randomWords.pickupDetails',
-            labelType: 'i18n',
-            type: 'component',
-            value: 'component value',
-          },
-        ],
-      };
-    },
-    servicesOffered() {
-      return this.$props.item.services_offered.split(',');
-    },
-    selectedResources() {
-      return this.$store.state.selectedResources;
-    },
-    latestSelectedResourceFromMap() {
-      return this.$store.state.map.latestSelectedResourceFromMap;
-    },
-  },
-  // watch: {
-  //   selectedResources(nextSelectedResources) {
-  //     if (this.locationOpen || nextSelectedResources.includes(this.$props.item._featureId)) {
-  //       if (this.locationOpen === false) {
-  //         this.openLocation();
-  //       } else if (this.locationOpen && !nextSelectedResources.includes(this.$props.item._featureId)) {
-  //         this.locationOpen = false;
-  //       }
-  //     } else {
-  //       this.locationOpen = false;
-  //     }
-  //   },
-  //   isMapVisible(nextIsMapVisible) {
-  //     if (!nextIsMapVisible) {
-  //       if (this.latestSelectedResourceFromMap) {
-  //         console.log('ExpandCollapse is reporting map is invisible and there is a this.latestSelectedResourceFromMap:', this.latestSelectedResourceFromMap);
-  //         if (this.latestSelectedResourceFromMap === this.item._featureId) {
-  //           const el = this.$el;
-  //           const visible = this.isElementInViewport(el);
-  //           if (!visible) {
-  //             el.scrollIntoView();
-  //           }
-  //         }
-  //       }
-  //     }
-  //   },
-  // },
-  mounted() {
-    if (this.selectedResources.includes(this.item._featureId)) {
-      this.locationOpen = true;
-    }
   },
   methods: {
     parseAddress(address) {
       const formattedAddress = address.replace(/(Phila.+)/g, city => `<div>${city}</div>`).replace(/^\d+\s[A-z]+\s[A-z]+/g, lineOne => `<div>${lineOne}</div>`).replace(/,/, '');
       return formattedAddress;
     },
-    // openLocation() {
-    //   this.locationOpen = true;
-    //   const el = this.$el;
-    //   const visible = this.isElementInViewport(el);
-    //   if (!visible) {
-    //     el.scrollIntoView();
-    //   }
-    // },
-    // isElementInViewport(el) {
-    //   const rect = el.getBoundingClientRect();
-    //   // console.log('bounding box', rect);
-    //   const visibility = {
-    //     // TODO the 108 below is account for the combined height of the
-    //     // app header and address header. this is not a good long-term
-    //     // solution - instead, use the `bottom` value of the address header's
-    //     // bounding rect. however, this should only fire on small devices,
-    //     // which would require again hard-coding screen breakpoints from
-    //     // standards or some other magic, which might not a huge
-    //     // improvement in terms of decoupling logic and presentation. hmm.
-    //     top: rect.top >= 108,
-    //     left: rect.left >= 0,
-    //     bottom: rect.bottom <= (window.innerHeight || document.documentElement.clientHeight),
-    //     right: rect.right <= (window.innerWidth || document.documentElement.clientWidth),
-    //   };
-
-    // console.log('visibility', visibility);
-
-    // return if all sides are visible
-    //   return Object.values(visibility).every(val => val);
-    // },
-    expandLocation() {
-      // console.log('ExpandCollapse expandLocation is starting');
-      this.locationOpen = !this.locationOpen;
-      const selectedResource = this.$props.item._featureId;
-      const selectedResources = [ ...this.selectedResources ];
-      let latestSelectedResourceFromExpand = null;
-      if (this.locationOpen) {
-        selectedResources.push(selectedResource);
-        latestSelectedResourceFromExpand = selectedResource;
-      } else {
-        selectedResources.splice(selectedResources.indexOf(selectedResource), 1);
-      }
-      // this.locationOpen ? selectedResources.push(selectedResource) : selectedResources.splice(selectedResources.indexOf(selectedResource), 1);
-      // console.log('ExpandCollapse expandLocation after selectedResources is defined');
-      this.$store.commit('setSelectedResources', selectedResources);
-      this.$store.commit('setLatestSelectedResourceFromExpand', latestSelectedResourceFromExpand);
-    },
-    makeID( itemTitle ){
-      // console.log('itemTitle:', itemTitle);
-      if (itemTitle) {
-        return itemTitle.replace(/\s+/g, '-').toLowerCase();
-      }
-      return '';
-
-    },
   },
 };
+
 </script>
+
 <style lang="scss">
 .location-item {
   position: relative;

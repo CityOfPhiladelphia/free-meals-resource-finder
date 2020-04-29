@@ -8,7 +8,8 @@
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
-library.add(faExclamationTriangle);
+import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons/faHandHoldingHeart';
+library.add(faExclamationTriangle, faHandHoldingHeart);
 
 // import pinboard
 import pinboard from '@phila/pinboard/src/main.js';
@@ -194,6 +195,13 @@ pinboard({
             pickupDetails: 'Pickup Details',
             beforeYouGo: 'Before you go',
             checkSite: 'Check the specific site information. Hours are subject to change.',
+            MONDAY: 'Monday',
+            TUESDAY: 'Tuesday',
+            WEDNESDAY: 'Wednesday',
+            THURSDAY: 'Thursday',
+            FRIDAY: 'Friday',
+            SATURDAY: 'Saturday',
+            SUNDAY: 'Sunday',
           },
           sections: {
             foodSites: {
@@ -238,6 +246,11 @@ pinboard({
               subsections: {
                 'PCA': {
                   name: 'PCA-supported sites',
+                  eligibility: '\
+                    Adults 60 and over are eligible at sites supported by the Philadelphia\
+                    Corporation for Aging (PCA). \
+                    <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+                  ',
                   pickupDetails: "\
                     Seniors can reserve 5 to 7 meals per week.<br>\
                     Pickup dates and times vary by site.\
@@ -250,6 +263,10 @@ pinboard({
                 },
                 'PPR_Senior': {
                   name: 'Philadelphia Parks & Recreation older adult centers',
+                  eligibility: '\
+                    Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
+                    <i><b>No reservation necessary</b></i>\
+                  ',
                   pickupDetails: '\
                     Seniors can pick up five meals per week at most sites.\
                   ',
@@ -285,6 +302,13 @@ pinboard({
             pickupDetails: 'Spanish pickup details',
             beforeYouGo: 'Spanish Before you go',
             checkSite: 'Spanish Check the specific site information. Hours are subject to change.',
+            MONDAY: 'Lunes',
+            TUESDAY: 'Martes',
+            WEDNESDAY: 'Miercoles',
+            THURSDAY: 'Spanish Thursday',
+            FRIDAY: 'Viernes',
+            SATURDAY: 'Sabado',
+            SUNDAY: 'Domingo',
           },
           sections: {
             foodSites: {
