@@ -183,6 +183,7 @@ pinboard({
     'SHARE FOOD PROGRAM': 'foodSites',
     'PCA': 'seniorMealSites',
     'PPR_Senior': 'seniorMealSites',
+    'PPR_StudentMeals': 'studentMealSites',
   },
   i18n: {
     header: 'i18nBanner',
@@ -267,6 +268,10 @@ pinboard({
                 },
                 'CHARTER': {
                   name: 'Charter schools',
+                  pickupDetails: '',
+                },
+                'PPR_StudentMeals': {
+                  name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },
               },
@@ -387,7 +392,12 @@ pinboard({
               header: 'Lugar de alimentos',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
               pickupDetails: 'Los residentes pueden obtener una caja por hogar.',
-              subsections: {},
+              subsections: {
+                'PPR': {
+                  name: 'centros de Parques y Recreación de Filadelfia',
+                  pickupDetails: '',
+                },
+              },
             },
             studentMealSites: {
               header: 'Lugar de comidas para estudiantes',
@@ -406,7 +416,7 @@ pinboard({
                   name: 'escuelas charter',
                   pickupDetails: '',
                 },
-                'PPR': {
+                'PPR_StudentMeals': {
                   name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
                 },
@@ -524,6 +534,10 @@ pinboard({
                 },
                 'CHARTER': {
                   name: '特许学校',
+                  pickupDetails: '',
+                },
+                'PPR_StudentMeals': {
+                  name: '费城公园和娱乐中心',
                   pickupDetails: '',
                 },
               },
@@ -651,6 +665,10 @@ pinboard({
                   name: 'Các trường công đặc quyền',
                   pickupDetails: '',
                 },
+                'PPR_StudentMeals': {
+                  name: 'Các trung tâm của Philadelphia Parks & Recreation',
+                  pickupDetails: '',
+                },
               },
             },
             seniorMealSites: {
@@ -776,6 +794,10 @@ pinboard({
                   name: 'Чартерные школы',
                   pickupDetails: '',
                 },
+                'PPR_StudentMeals': {
+                  name: 'Парки и центры отдыха и развлечений Филадельфии',
+                  pickupDetails: '',
+                },
               },
             },
             seniorMealSites: {
@@ -899,6 +921,10 @@ pinboard({
                 },
                 'CHARTER': {
                   name: 'Écoles à charte',
+                  pickupDetails: '',
+                },
+                'PPR_StudentMeals': {
+                  name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: '',
                 },
               },
