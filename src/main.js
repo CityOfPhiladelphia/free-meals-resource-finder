@@ -220,10 +220,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 meals per child',
             oneMeal: '1 meal per resident',
-            'Outdoor Meal Site': 'Outdoor meal site',
-            'Food Site': 'Food site',
-            'Student Meal Site': 'Student meal site',
-            'Senior Meal Site': 'Senior meal site',
+            'Outdoor meal site': 'Outdoor meal site',
+            'Food site': 'Food site',
+            'Student seal site': 'Student meal site',
+            'Senior meal site': 'Senior meal site',
           },
           sections: {
             foodSites: {
@@ -370,11 +370,11 @@ pinboard({
             freshOnly: 'únicamente productos frescos',
             breakfastLunch: 'desayuno y almuerzo',
             tenMeals: '10 comidas por niño',
-            oneMeal: 'comida por residente',
-            'Lugar de comidas al aire libre': 'Lugar de comidas al aire libre',
-            'Lugar de alimentos': 'Lugar de alimentos',
-            'Lugar de comidas para estudiantes': 'Lugar de comidas para estudiantes',
-            'Lugar de comidas para adultos mayores': 'Lugar de comidas para adultos mayores',
+            'oneMeal': 'comida por residente',
+            'Outdoor meal site': 'Lugar de comidas al aire libre',
+            'Food site': 'Lugar de alimentos',
+            'Student meal site': 'Lugar de comidas para estudiantes',
+            'Senior meal site': 'Lugar de comidas para adultos mayores',
           },
           sections: {
             foodSites: {
@@ -486,10 +486,10 @@ pinboard({
             breakfastLunch: '早餐和午餐',
             tenMeals: '10 每个儿童的用餐',
             oneMeal: '1 每个居民用餐',
-            '户外用餐场所': '户外用餐场所',
-            '食品地点': '食品地点',
-            '学生用餐场所': '学生用餐场所',
-            '年长者用餐场所': '年长者用餐场所',
+            'Outdoor meal site': '户外用餐场所',
+            'Food site': 'Food site',
+            'Student meal site': '学生用餐场所',
+            'Senior meal site': '年长者用餐场所',
           },
           sections: {
             foodSites: {
@@ -610,10 +610,10 @@ pinboard({
             breakfastLunch: 'bữa sáng và bữa trưa',
             tenMeals: '10 bữa ăn mỗi trẻ',
             oneMeal: '1 bữa ăn mỗi cư dân',
-            'Điểm phát bữa ăn ngoài trời': 'Điểm phát bữa ăn ngoài trời',
-            'Điểm phát thực phẩm': 'Điểm phát thực phẩm',
-            'Điểm phát bữa ăn học sinh': 'Điểm phát bữa ăn học sinh',
-            'Điểm phát bữa ăn cho người già': 'Điểm phát bữa ăn cho người già',
+            'Outdoor meal site': 'Điểm phát bữa ăn ngoài trời',
+            'Food site': 'Food site',
+            'Student meal site': 'Điểm phát bữa ăn học sinh',
+            'Senior meal site': 'Điểm phát bữa ăn cho người già',
           },
           sections: {
             foodSites: {
@@ -734,10 +734,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 количество порций на ребенка',
             oneMeal: '1 количество порций на жителя',
-            'Пункт выдачи питания под открытым небом': 'Пункт выдачи питания под открытым небом',
-            'Пункт выдачи питания': 'Пункт выдачи питания',
-            'Пункт выдачи питания для учащихся': 'Пункт выдачи питания для учащихся',
-            'Пункт выдачи питания для пожилых людей': 'Пункт выдачи питания для пожилых людей',
+            'Outdoor meal site': 'Пункт выдачи питания под открытым небом',
+            'Food site': 'Пункт выдачи питания',
+            'Student meal site': 'Пункт выдачи питания для учащихся',
+            'Senior meal site': 'Пункт выдачи питания для пожилых людей',
           },
           sections: {
             foodSites: {
@@ -858,10 +858,10 @@ pinboard({
             breakfastLunch: 'petit déjeuner et déjeuner',
             tenMeals: '10 repas par enfant',
             oneMeal: '1 repas par habitant',
-            'Site extérieur de distribution de repas': 'Site extérieur de distribution de repas',
-            'Site de distribution alimentaire': 'Site de distribution alimentaire',
-            'Site de distribution de repas pour élèves': 'Site de distribution de repas pour élèves',
-            'Site de distribution de repas pour personnes âgées': 'Site de distribution de repas pour personnes âgées',
+            'Outdoor meal site': 'Site extérieur de distribution de repas',
+            'Food site': 'Food site',
+            'Student meal site': 'Site de distribution de repas pour élèves',
+            'Senior meal site': 'Site de distribution de repas pour personnes âgées',
           },
           sections: {
             foodSites: {
