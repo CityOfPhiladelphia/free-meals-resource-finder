@@ -107,18 +107,12 @@ export default {
       let days = {};
       for (let day of allDays) {
         if (this.item.attributes[day] != null){
-          let details;
-          if (day === 'MONDAY') {
-            details = 'randomWords.nonPerish';
-          } else {
-            details = 'randomWords.freshOnly';
-          }
           let dayObject = {
             label: 'randomWords.' + day,
             labelType: 'i18n',
             value: this.item.attributes[day],
             // valueType: 'i18n',
-            value1: details,
+            value1: 'randomWords.breakfastLunch',
             value1Type: 'i18n',
           };
           theFields.push(dayObject);

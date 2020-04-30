@@ -78,7 +78,7 @@ export default {
           {
             label: 'randomWords.pickupDetails',
             labelType: 'i18n',
-            value: 'randomWords.' + this.section + '.pickupDetails',
+            value: 'randomWords.hoursVary',
             valueType: 'i18n',
           },
         ],

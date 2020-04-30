@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: 'PprSchoolCard',
+  name: 'OutdoorSiteCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
@@ -112,7 +112,7 @@ export default {
             labelType: 'i18n',
             value: this.item.attributes[day],
             // valueType: 'i18n',
-            value1: 'randomWords.breakfastLunch',
+            value1: 'randomWords.oneMeal',
             value1Type: 'i18n',
           };
           theFields.push(dayObject);

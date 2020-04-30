@@ -193,10 +193,10 @@ pinboard({
           refine: 'Refine',
           clearAll: 'Clear all',
           about: 'About this finder',
-          feedback: 'Feedback', 
-          searchPlaceholder: 'Search by address', 
-          viewMap: 'View map', 
-          viewList: 'View list', 
+          feedback: 'Feedback',
+          searchPlaceholder: 'Search by address',
+          viewMap: 'View map',
+          viewList: 'View list',
           applyFilters: 'Apply filters',
           randomWords: {
             betaTag: 'Beta',
@@ -206,6 +206,7 @@ pinboard({
             change: 'ScheduleChange',
             closure: 'Temporary closure',
             checkSite: 'Check the specific site information. Hours are subject to change.',
+            hoursVary: 'Hours and availability varies.',
             MONDAY: 'Monday',
             TUESDAY: 'Tuesday',
             WEDNESDAY: 'Wednesday',
@@ -219,7 +220,7 @@ pinboard({
             tenMeals: '10 meals per child',
             oneMeal: 'one meal per resident',
             tagOutdoor: 'Outdoor meal site',
-            tagFood: 'Food site', 
+            tagFood: 'Food site',
             tagStudent: 'Student meal site',
             tagSenior: 'Senior meal site',
           },
@@ -386,12 +387,12 @@ pinboard({
                   name: 'centros para adultos mayores de Parques y Recreación',
                   eligibility: '\
                   Los adultos de 55 años o más son elegibles en los centros para adultos mayores de Parques y Recreación. <br>\
-                  <i><b>No es necesario reservar.</b></i>', 
+                  <i><b>No es necesario reservar.</b></i>',
                   pickupDetails: 'Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.',
                 },
               },
             },
-            
+
             outdoorMealSites: {
               header:  'Lugares de comidas al aire libre',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',

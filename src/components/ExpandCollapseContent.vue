@@ -31,6 +31,22 @@
       </div>
     </div>
 
+    <!-- v-if="item.attributes.TEMPCLOSE !== null" -->
+    <div
+      class="grid-x temp-close-section"
+    >
+      <div class="card-exclamation-holder small-5">
+        <font-awesome-icon
+          icon="exclamation-triangle"
+          class="fa-2x fa-icon-class"
+        />
+      </div>
+      <div class="grid-y card-exclamation-details small-19">
+        <div><b>{{ $t('randomWords.change') }}:</b></div>
+        <div>{{ $t('randomWords.closure') }}: {{ item.attributes.TEMPCLOSE }}</div>
+      </div>
+    </div>
+
     <senior-meal-site-card
       v-if="section === 'seniorMealSites'"
       :item="item"
@@ -60,6 +76,11 @@
       v-if="subsection === 'PHA'"
       :item="item"
     />
+
+    <outdoor-site-card
+      v-if="section === 'outdoorMealSites'"
+      :item="item"
+    />
   </div>
 </template>
 
@@ -71,6 +92,7 @@ import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
 import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
+import OutdoorSiteCard from './OutdoorSiteCard.vue';
 
 export default {
   name: 'ExpandCollapseContent',
@@ -81,6 +103,7 @@ export default {
     PprSchoolCard,
     PsdSchoolCard,
     PhaSchoolCard,
+    OutdoorSiteCard,
   },
   props: {
     item: {
@@ -119,6 +142,26 @@ export default {
 
   &:hover::after {
     color: white;
+  }
+
+  .temp-close-section {
+    width: 100%;
+  }
+
+  .card-exclamation-holder {
+    padding: 20px;
+    background-color: #CC3000;
+    text-align: center;
+  }
+
+  .fa-icon-class {
+    color: white;
+    text-align: center;
+  }
+
+  .card-exclamation-details {
+    padding: 10px;
+    background-color: #F5D6CC;
   }
 
   .location-title {
