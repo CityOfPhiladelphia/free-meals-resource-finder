@@ -49,7 +49,7 @@ pinboard({
   //   placeholder: ' ',
   // },
   customComps,
-  // refineCategories: [ 'hotdogs', 'ice cream', 'ding dongs', 'chicken tenders', 'tofu', 'rice noodles', 'chili beans', 'jelly beans', 'taffy' ],
+  // refineCategories: [ 'tagFood', 'tagOutdoor', 'tagSenior', 'tagStudent'],
   markerType: 'circle-marker',
   legendControls,
   locationSlots: {
@@ -183,6 +183,7 @@ pinboard({
   },
   i18n: {
     header: 'i18nBanner',
+    refinePanel: true,
     data: {
       locale: 'en-US',
       messages: {
@@ -219,10 +220,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 meals per child',
             oneMeal: '1 meal per resident',
-            tagOutdoor: 'Outdoor meal site',
-            tagFood: 'Food site',
-            tagStudent: 'Student meal site',
-            tagSenior: 'Senior meal site',
+            'Outdoor Meal Site': 'Outdoor meal site',
+            'Food Site': 'Food site',
+            'Student Meal Site': 'Student meal site',
+            'Senior Meal Site': 'Senior meal site',
           },
           sections: {
             foodSites: {
@@ -371,7 +372,7 @@ pinboard({
             tenMeals: '10 comidas por niño',
             oneMeal: 'comida por residente', //not sure where this is in the doc
             tagOutdoor: 'Lugar de comidas al aire libre',
-            tagFood: 'Lugar de alimentos',
+            'Food Site': 'Lugar de alimentos',
             tagStudent: 'Lugar de comidas para estudiantes',
             tagSenior: 'Lugar de comidas para adultos mayores',
           },
