@@ -31,8 +31,8 @@
       </div>
     </div>
 
-    <!-- v-if="item.attributes.TEMPCLOSE !== null" -->
     <div
+      v-if="item.attributes.TEMPCLOSE !== null"
       class="grid-x temp-close-section"
     >
       <div class="card-exclamation-holder small-5">
