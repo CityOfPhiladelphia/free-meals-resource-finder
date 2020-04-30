@@ -188,7 +188,7 @@ pinboard({
       messages: {
         'en-US': {
           language: 'English',
-          title: 'Food resource finder',
+          title: 'Food distribution sites',
           subtitle: 'Find free food and meals during COVID-19',
           refine: 'Refine',
           clearAll: 'Clear all',
@@ -201,7 +201,7 @@ pinboard({
           randomWords: {
             betaTag: 'Beta',
             eligibility: 'Eligibility',
-            pickupDetails: 'Pickup Details',
+            pickupDetails: 'Pickup details',
             beforeYouGo: 'Before you go',
             change: 'Schedule change',
             closure: 'Temporary closure',
@@ -555,14 +555,127 @@ pinboard({
         },
         'vi': {
           language: 'Tiếng Việt',
-          title: 'Vienamise food resource finder',
-          sections: {
-            foodSites: 'Vienamise Food sites',
-            outdoorMealSites: 'Vienamise Outdoor meal sites',
-            seniorMealSites: 'Vienamise Senior meal sites',
-            studentMealSites: 'Vienamise Student meal sites',
+          title: 'Các điểm phân phát thực phẩm',
+          subtitle: 'Tìm thực phẩm và bữa ăn miễn phí trong dịch COVID-19',
+          refine: 'Tinh chỉnh',
+          clearAll: 'Xóa hết',
+          about: 'Giới thiệu công cụ tìm kiếm này',
+          feedback: 'Ý kiến phản hồi',
+          searchPlaceholder: 'Tìm kiểm theo địa chỉ',
+          viewMap: 'Xem bản đồ',
+          viewList: 'Xem danh sách',
+          applyFilters: 'Áp dụng bộ lọc',
+          randomWords: {
+            betaTag: 'Bản Beta',
+            eligibility: 'Điều kiện hội đủ',
+            pickupDetails: 'Chi tiết',
+            beforeYouGo: 'Trước khi đi',
+            change: 'Đổi lịch',
+            closure: 'Đóng cửa tạm thời',
+            checkSite: 'Kiểm tra thông tin địa điểm cụ thể. Giờ hoạt động có thể thay đổi.',
+            hoursVary: 'Giờ hoạt động và mức sẵn có khác nhau.',
+            MONDAY: 'Thứ Hai',
+            TUESDAY: 'Thứ Ba',
+            WEDNESDAY: 'Thứ Tư',
+            THURSDAY: 'Thứ Năm',
+            FRIDAY: 'Thứ Sáu',
+            SATURDAY: 'Thứ Bảy',
+            SUNDAY: 'Chủ Nhật',
+            nonPerish: 'chỉ có đồ ăn không dễ ôi thiu',
+            freshOnly: 'chỉ có nông sản tươi',
+            breakfastLunch: 'bữa sáng và bữa trưa',
+            tenMeals: '10 bữa ăn mỗi trẻ',
+            oneMeal: '1 bữa ăn mỗi cư dân',
+            tagOutdoor: 'Điểm phát bữa ăn ngoài trời',
+            tagFood: 'Food site',
+            tagStudent: 'Điểm phát bữa ăn học sinh',
+            tagSenior: 'Điểm phát bữa ăn cho người già',
           },
-          subtitle: 'Vienamise Find free food and meals during COVID-19',
+          sections: {
+            foodSites: {
+              header: 'Các điểm phát thực phẩm',
+              eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
+              pickupDetails: 'Các cư dân có thể nhận một hộp cho mỗi hộ gia đình.',
+              subsections: {},
+            },
+            studentMealSites: {
+              header: 'Các điểm phát bữa ăn học sinh',
+              eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+              pickupDetails: '',
+              subsections: {
+                'PSD': {
+                  name: 'Các trường của Học khu Philadelphia',
+                  pickupDetails: '',
+                },
+                'PHA': {
+                  name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
+                  pickupDetails: '',
+                },
+                'PPR': {
+                  name: 'Các trung tâm của Philadelphia Parks & Recreation',
+                  pickupDetails: '',
+                },
+                'CHARTER': {
+                  name: 'Các trường công đặc quyền',
+                  pickupDetails: '',
+                },
+              },
+            },
+            seniorMealSites: {
+              header: 'Các điểm phát bữa ăn cho người già',
+              eligibility: '\
+              Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
+                <i><b>Người già phải gọi điện trước để đặt bữa ăn trước khi đến nhận.</b></i><br><br>\
+                Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
+                <i><b>Không cần đặt trước.</b></i>\
+              ',
+              pickupDetails: '',
+              subsections: {
+                'PCA': {
+                  name: 'Các điểm do PCA hỗ trợ',
+                  eligibility: '\
+                  Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
+                    <i><b>Người già phải gọi điện trước để đặt bữa ăn trước khi đến nhận.</b></i><br><br>\
+                  ',
+                  pickupDetails: "\
+                  Người già có thể gọi điện trước và đặt trước 5 đến 7 bữa ăn mỗi tuần.\
+                  Giờ nhận khác nhau giữa các điểm. Để biết thêm thông tin và đặt trước bữa ăn, hãy liên hệ địa điểm cụ thể.<br>\
+                  Người nhà của người già có thể nhận bữa ăn hộ, nếu bố trí từ trước. Các bữa ăn cũng có thể được chuyển tận nhà nếu cần.<br>\
+                  Để nhận trợ giúp ngôn ngữ ngoài Tiếng Anh, hãy gọi cho đường dây trợ giúp của PCA theo số \
+                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+                  ",
+                },
+                'PPR_Senior': {
+                  name: 'Các trung tâm dành cho người già của Parks & Recreation',
+                  eligibility: '\
+                  Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
+                    <i><b>Không cần đặt trước.</b></i>\
+                  ',
+                  pickupDetails: '\
+                  Người già có thể nhận năm bữa ăn mỗi tuần tại hầu hết các điểm.\
+                  ',
+                },
+              },
+            },
+            outdoorMealSites: {
+              header:  'Các điểm phát bữa ăn ngoài trời',
+              eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
+              pickupDetails: '',
+              subsections: {
+                'compiled': {
+                  name: 'Các điểm ngoài trời tạm thời',
+                  pickupDetails: 'Ngày và giờ khác nhau giữa các điểm. 1 bữa ăn mỗi cư dân.',
+                },
+              },
+            },
+            foodPantries: {
+              header: 'Kho thực phẩm',
+              intro: 'Các điểm này bổ sung cho mạng lưới kho thực phẩm hiện có. Để tìm kho thực phẩm gần chỗ quý vị:',
+              li1: 'Gọi <b><a class="underlined" href="tel:+311">311</a></b>. Hãy nhớ gọi điện cho kho thực phẩm trước để xác nhận giờ làm việc của họ.',
+              li2: 'Hãy gọi đường dây nóng WhyHunger theo số <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> hoặc nhắn tin mã ZIP của quý vị cho <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a> để nhận một danh sách các kho thực phẩm gần đó.',
+              li3: '<b><a href="https://communityresourceconnects.org/" class="underlined">Truy cập trang web Community Resource Connects để tìm thực phẩm và các nguồn trợ giúp khác trong khu vực của quý vị.</a></b>',
+            },
+          },
         },
         'ru': {
           language: 'Pусский',
