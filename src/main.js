@@ -292,9 +292,9 @@ pinboard({
                   pickupDetails: "\
                     Seniors can reserve 5 to 7 meals per week.<br>\
                     Pickup dates and times vary by site.\
-                    For more information and to reserve meals, contact a specfic site.<br>\
+                    For more information and to reserve meals, contact a specific site.\
                     A senior's family may pick up meals, with prior arrangement.\
-                    Meals may also be home delivered if needed.<br>\
+                    Meals may also be home delivered if needed.\
                     To get help in languages other than English, call the PCA helpline at\
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
@@ -670,7 +670,7 @@ pinboard({
                   pickupDetails: "\
                   Người già có thể gọi điện trước và đặt trước 5 đến 7 bữa ăn mỗi tuần.\
                   Giờ nhận khác nhau giữa các điểm. Để biết thêm thông tin và đặt trước bữa ăn, hãy liên hệ địa điểm cụ thể.<br>\
-                  Người nhà của người già có thể nhận bữa ăn hộ, nếu bố trí từ trước. Các bữa ăn cũng có thể được chuyển tận nhà nếu cần.<br>\
+                  Người nhà của người già có thể nhận bữa ăn hộ, nếu bố trí từ trước. Các bữa ăn cũng có thể được chuyển tận nhà nếu cần.\
                   Để nhận trợ giúp ngôn ngữ ngoài Tiếng Anh, hãy gọi cho đường dây trợ giúp của PCA theo số \
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
@@ -794,7 +794,7 @@ pinboard({
                   pickupDetails: "\
                   Лица пожилого возраста могут позвонить заранее и заказать 5-7 порций на неделю.<br>\
                   В каждом пункте питания свое время выдачи. Чтобы получить дополнительную информацию или заказать питание, обращайтесь в конкретный пункт.<br>\
-                  По предварительной договоренности питание могут забрать родственники пожилого лица. В случае необходимости возможна доставка питания на дом.<br>\
+                  По предварительной договоренности питание могут забрать родственники пожилого лица. В случае необходимости возможна доставка питания на дом.\
                   Чтобы получить помощь не на английском языке, позвоните на горячую линию PCA по номеру \
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
@@ -917,8 +917,8 @@ pinboard({
                   ',
                   pickupDetails: "\
                   Les personnes âgées peuvent appeler au préalable pour réserver 5 à 7 repas par semaine.<br>\
-                  Les horaires de collecte varient en fonction du site. Pour obtenir de plus amples informations et réserver des repas, prière d’appeler un site particulier.<br>\
-                  Un membre de la famille de la personne âgée peut venir chercher les repas en ayant préalablement pris des dispositions. Les repas peuvent aussi être livrés à domicile si besoin est.<br>\
+                  Les horaires de collecte varient en fonction du site. Pour obtenir de plus amples informations et réserver des repas, prière d’appeler un site particulier.\
+                  Un membre de la famille de la personne âgée peut venir chercher les repas en ayant préalablement pris des dispositions. Les repas peuvent aussi être livrés à domicile si besoin est.\
                   Pour obtenir de l’aide dans des langues autres que l’anglais, prière d’appeler la ligne d’assistance de la PCA au \
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
