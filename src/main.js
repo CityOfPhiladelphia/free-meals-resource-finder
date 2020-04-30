@@ -246,6 +246,10 @@ pinboard({
                 'SHARE FOOD PROGRAM': {
                   name: 'Share Food Program',
                 },
+                'PPR': {
+                  name: 'Philadelphia Parks & Recreation centers',
+                  pickupDetails: '',
+                },
               },
             },
             studentMealSites: {
@@ -259,10 +263,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },
                 'CHARTER': {
@@ -402,12 +402,12 @@ pinboard({
                   name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
                   pickupDetails: '',
                 },
-                'PPR': {
-                  name: 'centros de Parques y Recreación de Filadelfia',
-                  pickupDetails: '',
-                },
                 'CHARTER': {
                   name: 'escuelas charter',
+                  pickupDetails: '',
+                },
+                'PPR': {
+                  name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
                 },
               },
@@ -502,7 +502,12 @@ pinboard({
               header: '食品地点',
               eligibility: '所有居民都合格。 不需身份证或收入证明。',
               pickupDetails: '凡是居民每户都可以得到一盒食品。',
-              subsections: {},
+              subsections: {
+                'PPR': {
+                  name: '费城公园和娱乐中心',
+                  pickupDetails: '',
+                },
+              },
             },
             studentMealSites: {
               header: '学生用餐场所',
@@ -515,10 +520,6 @@ pinboard({
                 },
                 'PHA': {
                   name: '费城住房管理局(PHA)社区中心',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: '费城公园和娱乐中心',
                   pickupDetails: '',
                 },
                 'CHARTER': {
@@ -626,7 +627,12 @@ pinboard({
               header: 'Các điểm phát thực phẩm',
               eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
               pickupDetails: 'Các cư dân có thể nhận một hộp cho mỗi hộ gia đình.',
-              subsections: {},
+              subsections: {
+                'PPR': {
+                  name: 'Các trung tâm của Philadelphia Parks & Recreation',
+                  pickupDetails: '',
+                },
+              },
             },
             studentMealSites: {
               header: 'Các điểm phát bữa ăn học sinh',
@@ -639,10 +645,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: 'Các trung tâm của Philadelphia Parks & Recreation',
                   pickupDetails: '',
                 },
                 'CHARTER': {
@@ -750,7 +752,12 @@ pinboard({
               header: 'Пункты выдачи продуктов',
               eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
               pickupDetails: 'Местные жители могут получить один продуктовый набор на семью.',
-              subsections: {},
+              subsections: {
+                'PPR': {
+                  name: 'Парки и центры отдыха и развлечений Филадельфии',
+                  pickupDetails: '',
+                },
+              },
             },
             studentMealSites: {
               header: 'Пункты выдачи питания для учащихся',
@@ -763,10 +770,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: 'Парки и центры отдыха и развлечений Филадельфии',
                   pickupDetails: '',
                 },
                 'CHARTER': {
@@ -874,7 +877,12 @@ pinboard({
               header: 'Sites de distribution alimentaire',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
               pickupDetails: 'Les habitants peuvent recevoir une boîte par foyer.',
-              subsections: {},
+              subsections: {
+                'PPR': {
+                  name: 'Centres du service des parcs et loisirs de Philadelphie',
+                  pickupDetails: '',
+                },
+              },
             },
             studentMealSites: {
               header: 'Sites de distribution de repas pour élèves',
@@ -887,10 +895,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: '',
                 },
                 'CHARTER': {
