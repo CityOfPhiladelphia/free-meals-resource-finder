@@ -153,7 +153,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'PPR', 'CHARTER' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -177,7 +177,7 @@ pinboard({
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
-    'PPR': 'studentMealSites',
+    'PPR': 'foodSites',
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'seniorMealSites',
     'SHARE FOOD PROGRAM': 'foodSites',
@@ -246,6 +246,10 @@ pinboard({
                 'SHARE FOOD PROGRAM': {
                   name: 'Share Food Program',
                 },
+                'PPR': {
+                  name: 'Philadelphia Parks & Recreation centers',
+                  pickupDetails: '',
+                },
               },
             },
             studentMealSites: {
@@ -259,10 +263,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
-                  pickupDetails: '',
-                },
-                'PPR': {
-                  name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },
                 'CHARTER': {

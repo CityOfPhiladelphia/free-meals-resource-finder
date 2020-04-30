@@ -74,7 +74,7 @@
     />
 
     <ppr-school-card
-      v-if="subsection === 'PPR'"
+      v-if="section === 'studentMealSites' && subsection === 'PPR'"
       :item="item"
     />
 
