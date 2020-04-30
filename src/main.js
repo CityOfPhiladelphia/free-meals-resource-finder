@@ -141,26 +141,26 @@ pinboard({
   },
   sections: {
     foodSites: {
-      title: 'Food sites',
-      titleSingular: 'FOOD SITE',
+      title: 'Food Sites',
+      titleSingular: 'Food Site',
       color: '#0F4D90',
       subsections: [ 'none' ],
     },
     studentMealSites: {
-      title: 'Student meal sites',
-      titleSingular: 'STUDENT MEAL SITE',
+      title: 'Student Meal Sites',
+      titleSingular: 'Student Meal Site',
       color: '#721817',
       subsections: [ 'PSD', 'PHA', 'PPR', 'CHARTER' ],
     },
     seniorMealSites: {
-      title: 'Senior meal sites',
-      titleSingular: 'SENIOR MEAL SITE',
+      title: 'Senior Meal Sites',
+      titleSingular: 'Senior Meal Site',
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
     outdoorMealSites: {
-      title: 'Outdoor meal sites',
-      titleSingular: 'OUTDOOR MEAL SITE',
+      title: 'Outdoor Meal Sites',
+      titleSingular: 'Outdoor Meal Site',
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners' ]],
     },
@@ -220,14 +220,14 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 meals per child',
             oneMeal: '1 meal per resident',
-            'Outdoor meal site': 'Outdoor meal site',
-            'Food site': 'Food site',
+            'Outdoor Meal Site': 'Outdoor meal site',
+            'Food Site': 'Food site',
             'Student seal site': 'Student meal site',
-            'Senior meal site': 'Senior meal site',
+            'Senior Meal Site': 'Senior meal site',
           },
           sections: {
             foodSites: {
-              header: 'Food sites',
+              header: 'Food Sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required',
               pickupDetails: 'Residents can get one box per household',
               subsections: {
@@ -243,7 +243,7 @@ pinboard({
               },
             },
             studentMealSites: {
-              header: 'Student meal sites',
+              header: 'Student Meal Sites',
               eligibility: 'All children and youth are eligible. No ID is required.',
               pickupDetails: 'Days and times vary by site',
               subsections: {
@@ -266,7 +266,7 @@ pinboard({
               },
             },
             seniorMealSites: {
-              header: 'Senior meal sites',
+              header: 'Senior Meal Sites',
               eligibility: '\
                 Adults 60 and over are eligible at sites supported by the Philadelphia\
                 Corporation for Aging (PCA). \
@@ -310,7 +310,7 @@ pinboard({
               },
             },
             outdoorMealSites: {
-              header:  'Outdoor meal sites',
+              header:  'Outdoor Meal Sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required.',
               pickupDetails: '',
               subsections: {
@@ -371,10 +371,10 @@ pinboard({
             breakfastLunch: 'desayuno y almuerzo',
             tenMeals: '10 comidas por niño',
             'oneMeal': 'comida por residente',
-            'Outdoor meal site': 'Lugar de comidas al aire libre',
-            'Food site': 'Lugar de alimentos',
-            'Student meal site': 'Lugar de comidas para estudiantes',
-            'Senior meal site': 'Lugar de comidas para adultos mayores',
+            'Outdoor Meal Site': 'Lugar de comidas al aire libre',
+            'Food Site': 'Lugar de alimentos',
+            'Student Meal Site': 'Lugar de comidas para estudiantes',
+            'Senior Meal Site': 'Lugar de comidas para adultos mayores',
           },
           sections: {
             foodSites: {
@@ -486,10 +486,10 @@ pinboard({
             breakfastLunch: '早餐和午餐',
             tenMeals: '10 每个儿童的用餐',
             oneMeal: '1 每个居民用餐',
-            'Outdoor meal site': '户外用餐场所',
-            'Food site': 'Food site',
-            'Student meal site': '学生用餐场所',
-            'Senior meal site': '年长者用餐场所',
+            'Outdoor Meal Site': '户外用餐场所',
+            'Food Site': 'Food Site',
+            'Student Meal Site': '学生用餐场所',
+            'Senior Meal Site': '年长者用餐场所',
           },
           sections: {
             foodSites: {
@@ -610,10 +610,10 @@ pinboard({
             breakfastLunch: 'bữa sáng và bữa trưa',
             tenMeals: '10 bữa ăn mỗi trẻ',
             oneMeal: '1 bữa ăn mỗi cư dân',
-            'Outdoor meal site': 'Điểm phát bữa ăn ngoài trời',
-            'Food site': 'Food site',
-            'Student meal site': 'Điểm phát bữa ăn học sinh',
-            'Senior meal site': 'Điểm phát bữa ăn cho người già',
+            'Outdoor Meal Site': 'Điểm phát bữa ăn ngoài trời',
+            'Food Site': 'Food Site',
+            'Student Meal Site': 'Điểm phát bữa ăn học sinh',
+            'Senior Meal Site': 'Điểm phát bữa ăn cho người già',
           },
           sections: {
             foodSites: {
@@ -734,10 +734,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 количество порций на ребенка',
             oneMeal: '1 количество порций на жителя',
-            'Outdoor meal site': 'Пункт выдачи питания под открытым небом',
-            'Food site': 'Пункт выдачи питания',
-            'Student meal site': 'Пункт выдачи питания для учащихся',
-            'Senior meal site': 'Пункт выдачи питания для пожилых людей',
+            'Outdoor Meal Site': 'Пункт выдачи питания под открытым небом',
+            'Food Site': 'Пункт выдачи питания',
+            'Student Meal Site': 'Пункт выдачи питания для учащихся',
+            'Senior Meal Site': 'Пункт выдачи питания для пожилых людей',
           },
           sections: {
             foodSites: {
@@ -858,10 +858,10 @@ pinboard({
             breakfastLunch: 'petit déjeuner et déjeuner',
             tenMeals: '10 repas par enfant',
             oneMeal: '1 repas par habitant',
-            'Outdoor meal site': 'Site extérieur de distribution de repas',
-            'Food site': 'Food site',
-            'Student meal site': 'Site de distribution de repas pour élèves',
-            'Senior meal site': 'Site de distribution de repas pour personnes âgées',
+            'Outdoor Meal Site': 'Site extérieur de distribution de repas',
+            'Food Site': 'Food Site',
+            'Student Meal Site': 'Site de distribution de repas pour élèves',
+            'Senior Meal Site': 'Site de distribution de repas pour personnes âgées',
           },
           sections: {
             foodSites: {
