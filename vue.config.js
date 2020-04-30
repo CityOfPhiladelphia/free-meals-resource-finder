@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: '/free-meals/prod/',
+  filenameHashing: false,
+  publicPath: "/food/",
+  // publicPath: '/free-meals/prod/',
   chainWebpack: (config) => {
     config.resolve.symlinks(false);
   },
