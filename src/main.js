@@ -371,11 +371,11 @@ pinboard({
             freshOnly: 'únicamente productos frescos',
             breakfastLunch: 'desayuno y almuerzo',
             tenMeals: '10 comidas por niño',
-            oneMeal: 'comida por residente', //not sure where this is in the doc
-            tagOutdoor: 'Lugar de comidas al aire libre',
-            'Food Site': 'Lugar de alimentos',
-            tagStudent: 'Lugar de comidas para estudiantes',
-            tagSenior: 'Lugar de comidas para adultos mayores',
+            oneMeal: 'comida por residente',
+            'Lugar de comidas al aire libre': 'Lugar de comidas al aire libre',
+            'Lugar de alimentos': 'Lugar de alimentos',
+            'Lugar de comidas para estudiantes': 'Lugar de comidas para estudiantes',
+            'Lugar de comidas para adultos mayores': 'Lugar de comidas para adultos mayores',
           },
           sections: {
             foodSites: {
@@ -487,10 +487,10 @@ pinboard({
             breakfastLunch: '早餐和午餐',
             tenMeals: '10 每个儿童的用餐',
             oneMeal: '1 每个居民用餐',
-            tagOutdoor: '户外用餐场所',
-            tagFood: 'Food site',
-            tagStudent: '学生用餐场所',
-            tagSenior: '年长者用餐场所',
+            '户外用餐场所': '户外用餐场所',
+            '食品地点': '食品地点',
+            '学生用餐场所': '学生用餐场所',
+            '年长者用餐场所': '年长者用餐场所',
           },
           sections: {
             foodSites: {
@@ -611,10 +611,10 @@ pinboard({
             breakfastLunch: 'bữa sáng và bữa trưa',
             tenMeals: '10 bữa ăn mỗi trẻ',
             oneMeal: '1 bữa ăn mỗi cư dân',
-            tagOutdoor: 'Điểm phát bữa ăn ngoài trời',
-            tagFood: 'Food site',
-            tagStudent: 'Điểm phát bữa ăn học sinh',
-            tagSenior: 'Điểm phát bữa ăn cho người già',
+            'Điểm phát bữa ăn ngoài trời': 'Điểm phát bữa ăn ngoài trời',
+            'Điểm phát thực phẩm': 'Điểm phát thực phẩm',
+            'Điểm phát bữa ăn học sinh': 'Điểm phát bữa ăn học sinh',
+            'Điểm phát bữa ăn cho người già': 'Điểm phát bữa ăn cho người già',
           },
           sections: {
             foodSites: {
@@ -704,25 +704,251 @@ pinboard({
         },
         'ru': {
           language: 'Pусский',
-          title: 'Russian food resource finder',
-          sections: {
-            foodSites: 'Russian Food sites',
-            outdoorMealSites: 'Russian Outdoor meal sites',
-            seniorMealSites: 'Russian Senior meal sites',
-            studentMealSites: 'Russian Student meal sites',
+          title: 'Пункты выдачи продуктов',
+          subtitle: 'Поиск пунктов бесплатного продовольствия и питания во время пандемии COVID-19',
+          refine: 'Уточнить параметры поиска',
+          clearAll: 'Очистить все',
+          about: 'Об этом средстве поиска ',
+          feedback: 'Обратная связь',
+          searchPlaceholder: 'Поиск по адресу',
+          viewMap: 'Посмотреть на карте',
+          viewList: 'Посмотреть список',
+          applyFilters: 'Применить фильтры',
+          randomWords: {
+            betaTag: 'Бета-версия',
+            eligibility: 'Критерии получения помощи',
+            pickupDetails: 'Информация о получении и время получения',
+            beforeYouGo: 'Прежде чем идти',
+            change: 'Изменение графика работы',
+            closure: 'Временное закрытие',
+            checkSite: 'уточните информацию по конкретному пункту. Часы работы могут меняться.',
+            hoursVary: 'Время выдачи и имеющееся в наличии питание могут меняться.',
+            MONDAY: 'Понедельник',
+            TUESDAY: 'Вторник',
+            WEDNESDAY: 'Среда',
+            THURSDAY: 'Четверг',
+            FRIDAY: 'Пятница',
+            SATURDAY: 'Суббота',
+            SUNDAY: 'Воскресенье',
+            nonPerish: 'non-perishable items only',
+            freshOnly: 'fresh produce only',
+            breakfastLunch: 'Breakfast and lunch',
+            tenMeals: '10 количество порций на ребенка',
+            oneMeal: '1 количество порций на жителя',
+            'Пункт выдачи питания под открытым небом': 'Пункт выдачи питания под открытым небом',
+            'Пункт выдачи питания': 'Пункт выдачи питания',
+            'Пункт выдачи питания для учащихся': 'Пункт выдачи питания для учащихся',
+            'Пункт выдачи питания для пожилых людей': 'Пункт выдачи питания для пожилых людей',
           },
-          subtitle: 'Russian Find free food and meals during COVID-19',
+          sections: {
+            foodSites: {
+              header: 'Пункты выдачи продуктов',
+              eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
+              pickupDetails: 'Местные жители могут получить один продуктовый набор на семью.',
+              subsections: {},
+            },
+            studentMealSites: {
+              header: 'Пункты выдачи питания для учащихся',
+              eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+              pickupDetails: '',
+              subsections: {
+                'PSD': {
+                  name: 'Школы школьного округа Филадельфии',
+                  pickupDetails: '',
+                },
+                'PHA': {
+                  name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
+                  pickupDetails: '',
+                },
+                'PPR': {
+                  name: 'Парки и центры отдыха и развлечений Филадельфии',
+                  pickupDetails: '',
+                },
+                'CHARTER': {
+                  name: 'Чартерные школы',
+                  pickupDetails: '',
+                },
+              },
+            },
+            seniorMealSites: {
+              header: 'Пункты выдачи питания для пожилых людей',
+              eligibility: '\
+              Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA). \
+                <i><b>Лица пожилого возраста должны позвонить заранее и заказать питание, прежде чем идти за ним.</b></i><br><br>\
+                Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
+                <i><b>Предварительный заказ не требуется.</b></i>\
+              ',
+              pickupDetails: '',
+              subsections: {
+                'PCA': {
+                  name: 'Пункты выдачи продуктов, поддерживаемые PCA',
+                  eligibility: '\
+                  Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA).  \
+                    <i><b>Лица пожилого возраста должны позвонить заранее и заказать питание, прежде чем идти за ним.</b></i><br><br>\
+                  ',
+                  pickupDetails: "\
+                  Лица пожилого возраста могут позвонить заранее и заказать 5-7 порций на неделю.<br>\
+                  В каждом пункте питания свое время выдачи. Чтобы получить дополнительную информацию или заказать питание, обращайтесь в конкретный пункт.<br>\
+                  По предварительной договоренности питание могут забрать родственники пожилого лица. В случае необходимости возможна доставка питания на дом.<br>\
+                  Чтобы получить помощь не на английском языке, позвоните на горячую линию PCA по номеру \
+                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+                  ",
+                },
+                'PPR_Senior': {
+                  name: 'Парки и центры отдыха и развлечений для пожилых людей',
+                  eligibility: '\
+                  Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
+                    <i><b>Предварительный заказ не требуется.</b></i>\
+                  ',
+                  pickupDetails: '\
+                  Лица пожилого возраста могут получить пять порций в неделю в большинстве пунктов. \
+                  ',
+                },
+              },
+            },
+            outdoorMealSites: {
+              header:  'Пункты выдачи питания под открытым небом',
+              eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
+              pickupDetails: '',
+              subsections: {
+                'compiled': {
+                  name: 'Временные пункты выдачи питания под открытым небом',
+                  pickupDetails: 'У каждого пункта свой график работы',
+                },
+              },
+            },
+            foodPantries: {
+              header: 'Бесплатные столовые',
+              intro: 'Эти пункты выдачи питания дополняют существующую сеть бесплатных столовых. Чтобы найти бесплатную столовую в вашем районе проживания:',
+              li1: 'позвоните по номеру <b><a class="underlined" href="tel:+311">311</a></b>. Обязательно позвоните в бесплатную столовую заранее, чтобы уточнить график ее работы.',
+              li2: 'Позвоните по телефону горячей линии WhyHunger (<b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b>) или отправьте свой почтовый индекс (zip code) на номер <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b>, чтобы получить список ближайших бесплатных столовых.',
+              li3: 'Посетите веб-сайт <b><a href="https://communityresourceconnects.org/" class="underlined">Community Resource Connects</a></b> чтобы узнать, где можно взять продукты, и получить информацию о прочих ресурсах в вашем районе.',
+            },
+          },
         },
         'fr': {
           language: 'Français',
-          title: 'French food resource finder',
-          sections: {
-            foodSites: 'French Food sites',
-            outdoorMealSites: 'French Outdoor meal sites',
-            seniorMealSites: 'French Senior meal sites',
-            studentMealSites: 'French Student meal sites',
+          title: 'Sites de distribution alimentaire',
+          subtitle: 'Trouver de la nourriture et des repas gratuits pendant le COVID-19',
+          refine: 'Raffiner',
+          clearAll: 'Tout effacer',
+          about: 'À propos de cet outil de recherche',
+          feedback: 'Commentaires',
+          searchPlaceholder: 'Recherche à partir de l’adresse',
+          viewMap: 'Voir la carte',
+          viewList: 'Voir la liste',
+          applyFilters: 'Appliquer les filtres',
+          randomWords: {
+            betaTag: 'Bêta',
+            eligibility: 'Admissibilité au programme',
+            pickupDetails: 'Détails de collecte',
+            beforeYouGo: 'Avant de vous déplacer ',
+            change: 'Changement d’horaire',
+            closure: 'Fermeture temporaire',
+            checkSite: 'Consulter les informations concernant le site donné. Les horaires peuvent changers.',
+            hoursVary: 'Les horaires et la disponibilité varient.',
+            MONDAY: 'Lundi',
+            TUESDAY: 'Mardi',
+            WEDNESDAY: 'Mercredi',
+            THURSDAY: 'Jeudi',
+            FRIDAY: 'Vendredi',
+            SATURDAY: 'Samedi',
+            SUNDAY: 'Dimanche',
+            nonPerish: 'articles non périssables seulement',
+            freshOnly: 'produits frais seulement',
+            breakfastLunch: 'petit déjeuner et déjeuner',
+            tenMeals: '10 repas par enfant',
+            oneMeal: '1 repas par habitant',
+            'Site extérieur de distribution de repas': 'Site extérieur de distribution de repas',
+            'Site de distribution alimentaire': 'Site de distribution alimentaire',
+            'Site de distribution de repas pour élèves': 'Site de distribution de repas pour élèves',
+            'Site de distribution de repas pour personnes âgées': 'Site de distribution de repas pour personnes âgées',
           },
-          subtitle: 'French Find free food and meals during COVID-19',
+          sections: {
+            foodSites: {
+              header: 'Sites de distribution alimentaire',
+              eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
+              pickupDetails: 'Les habitants peuvent recevoir une boîte par foyer.',
+              subsections: {},
+            },
+            studentMealSites: {
+              header: 'Sites de distribution de repas pour élèves',
+              eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+              pickupDetails: '',
+              subsections: {
+                'PSD': {
+                  name: 'Écoles du district scolaire de Philadelphie',
+                  pickupDetails: '',
+                },
+                'PHA': {
+                  name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
+                  pickupDetails: '',
+                },
+                'PPR': {
+                  name: 'Centres du service des parcs et loisirs de Philadelphie',
+                  pickupDetails: '',
+                },
+                'CHARTER': {
+                  name: 'Écoles à charte',
+                  pickupDetails: '',
+                },
+              },
+            },
+            seniorMealSites: {
+              header: 'Sites de distribution de repas pour personnes âgées',
+              eligibility: '\
+              Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging).\
+                <i><b>Les personnes âgées doivent appeler au préalable pour réserver les repas avant de venir les chercher.</b></i><br><br>\
+                Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
+                <i><b>Aucune réservation exigée.</b></i>\
+              ',
+              pickupDetails: '',
+              subsections: {
+                'PCA': {
+                  name: 'sites parrainés par la PCA',
+                  eligibility: '\
+                  Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging). \
+                    <i><b>Les personnes âgées doivent appeler au préalable pour réserver les repas avant de venir les chercher.</b></i><br><br>\
+                  ',
+                  pickupDetails: "\
+                  Les personnes âgées peuvent appeler au préalable pour réserver 5 à 7 repas par semaine.<br>\
+                  Les horaires de collecte varient en fonction du site. Pour obtenir de plus amples informations et réserver des repas, prière d’appeler un site particulier.<br>\
+                  Un membre de la famille de la personne âgée peut venir chercher les repas en ayant préalablement pris des dispositions. Les repas peuvent aussi être livrés à domicile si besoin est.<br>\
+                  Pour obtenir de l’aide dans des langues autres que l’anglais, prière d’appeler la ligne d’assistance de la PCA au \
+                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+                  ",
+                },
+                'PPR_Senior': {
+                  name: 'Centres des aînés du service des parcs et loisirs',
+                  eligibility: '\
+                  Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
+                    <i><b>Aucune réservation exigée.</b></i>\
+                  ',
+                  pickupDetails: '\
+                  Les personnes âgées peuvent recevoir jusqu’à 5 repas par semaine à la plupart des sites.\
+                  ',
+                },
+              },
+            },
+            outdoorMealSites: {
+              header:  'Sites extérieurs de distribution de repas',
+              eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
+              pickupDetails: '',
+              subsections: {
+                'compiled': {
+                  name: 'Sites extérieurs temporaires',
+                  pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
+                },
+              },
+            },
+            foodPantries: {
+              header: 'Banques alimentaires',
+              intro: 'Ces sites viennent compléter le réseau existant de banques alimentaires. Pour trouver une banque alimentaire près de chez vous :',
+              li1: 'appeler le <b><a class="underlined" href="tel:+311">311</a></b>. Assurez-vous d’appeler la banque alimentaire avant de vous y rendre afin de confirmer les heures d’ouverture.',
+              li2: '- Appelez la ligne d’assistance WhyHunger au <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> ou envoyez votre code postal par SMS au <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> pour recevoir une liste des banques alimentaires à proximité.',
+              li3: 'Consultez le site Web de <b><a href="https://communityresourceconnects.org/" class="underlined">Community Resource Connects</a></b> pour trouver de la nourriture et d’autres ressources dans votre quartier.',
+            },
+          },
         },
       },
     },
