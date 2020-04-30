@@ -190,10 +190,21 @@ pinboard({
           language: 'English',
           title: 'Food resource finder',
           subtitle: 'Find free food and meals during COVID-19',
+          refine: 'Refine',
+          clearAll: 'Clear all',
+          about: 'About this finder',
+          feedback: 'Feedback', 
+          searchPlaceholder: 'Search by address', 
+          viewMap: 'View map', 
+          viewList: 'View list', 
+          applyFilters: 'Apply filters',
           randomWords: {
+            betaTag: 'Beta',
             eligibility: 'Eligibility',
             pickupDetails: 'Pickup Details',
             beforeYouGo: 'Before you go',
+            change: 'ScheduleChange',
+            closure: 'Temporary closure',
             checkSite: 'Check the specific site information. Hours are subject to change.',
             MONDAY: 'Monday',
             TUESDAY: 'Tuesday',
@@ -207,6 +218,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 meals per child',
             oneMeal: 'one meal per resident',
+            tagOutdoor: 'Outdoor meal site',
+            tagFood: 'Food site', 
+            tagStudent: 'Student meal site',
+            tagSenior: 'Senior meal site',
           },
           sections: {
             foodSites: {
@@ -270,10 +285,10 @@ pinboard({
                   name: 'Philadelphia Parks & Recreation older adult centers',
                   eligibility: '\
                     Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
-                    <i><b>No reservation necessary</b></i>\
+                    <i><b>No reservation necessary.</b></i>\
                   ',
                   pickupDetails: '\
-                    Seniors can pick up five meals per week at most sites.\
+                    Seniors can pick up 5 meals per week at most sites.\
                   ',
                 },
               },
@@ -290,7 +305,7 @@ pinboard({
               },
             },
             foodPantries: {
-              header:  'Food pantries',
+              header: 'Food pantries',
               intro: 'These sites supplement the existing food pantry network. To find a food pantry near you:',
               li1: 'Call <b><a class="underlined" href="tel:+311">311</a></b>. Make sure to call the pantry in advance to confirm their hours.',
               li2: 'Call the WhyHunger hotline at <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> or text your ZIP code to <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> to receive a list of nearby food pantries.',
@@ -309,16 +324,16 @@ pinboard({
             checkSite: 'Verifique la información específica del lugar. Los horarios pueden cambiar.',
             MONDAY: 'Lunes',
             TUESDAY: 'Martes',
-            WEDNESDAY: 'Miercoles',
-            THURSDAY: 'Spanish Thursday',
+            WEDNESDAY: 'Miércoles',
+            THURSDAY: 'Jueves',
             FRIDAY: 'Viernes',
-            SATURDAY: 'Sabado',
+            SATURDAY: 'Sábado',
             SUNDAY: 'Domingo',
-            nonPerish: 'spanish non-perishable items only',
-            freshOnly: 'spanish fresh produce only',
-            breakfastLunch: 'spanish Breakfast and lunch',
-            tenMeals: 'spanish 10 meals per child',
-            oneMeal: 'spanish one meal per resident',
+            nonPerish: 'únicamente alimentos no perecederos',
+            freshOnly: 'únicamente productos frescos',
+            breakfastLunch: 'desayuno y almuerzo',
+            tenMeals: '10 comidas por niño',
+            oneMeal: 'comida por residente', //not sure where this is in the doc
           },
           sections: {
             foodSites: {
@@ -357,20 +372,26 @@ pinboard({
               subsections: {
                 'PCA': {
                   name: 'Lugares patrocinados por la PCA',
+                  eligibility: '\
+                  Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA).\
+                  <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de retirarla.</b></i><br><br>\
+                ',
                   pickupDetails: "\
-                  Los adultos mayores pueden llamar con anticipación y reservar de 5 a 7 comidas por semana. \
-                  Los horarios de retiro varían según el lugar. Para obtener más información o reservar comidas, comuníquese con el lugar específico. \
-                  Un familiar del adulto mayor puede retirar las comidas con previo acuerdo. Las comidas también se pueden enviar a domicilio si es necesario. \
+                  Los adultos mayores pueden llamar con anticipación y reservar de 5 a 7 comidas por semana. <br>\
+                  Los horarios de retiro varían según el lugar. Para obtener más información o reservar comidas, comuníquese con el lugar específico. <br>\
+                  Un familiar del adulto mayor puede retirar las comidas con previo acuerdo. Las comidas también se pueden enviar a domicilio si es necesario. <br>\
                   Para recibir ayuda en otro idioma que no sea inglés, llame a la línea de ayuda de la PCA al <a class=\"underlined\" href=\"tel:+1 (215) 765-9040\">(215) 765-9040</a>.",
                 },
                 'PPR_Senior': {
                   name: 'centros para adultos mayores de Parques y Recreación',
-                  pickupDetails: '\
-                  Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.\
-                  ',
+                  eligibility: '\
+                  Los adultos de 55 años o más son elegibles en los centros para adultos mayores de Parques y Recreación. <br>\
+                  <i><b>No es necesario reservar.</b></i>', 
+                  pickupDetails: 'Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.',
                 },
               },
             },
+            
             outdoorMealSites: {
               header:  'Lugares de comidas al aire libre',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
