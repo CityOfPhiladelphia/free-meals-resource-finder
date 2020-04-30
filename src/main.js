@@ -186,6 +186,7 @@ pinboard({
   },
   i18n: {
     header: 'i18nBanner',
+    app: true,
     refinePanel: true,
     expandCollapseTitle: true,
     footer: true,
