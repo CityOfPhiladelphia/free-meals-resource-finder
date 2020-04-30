@@ -233,7 +233,7 @@ pinboard({
           },
           sections: {
             foodSites: {
-              header: 'Food Sites',
+              header: 'Food sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required',
               pickupDetails: 'Residents can get one box per household',
               subsections: {
@@ -249,9 +249,9 @@ pinboard({
               },
             },
             studentMealSites: {
-              header: 'Student Meal Sites',
+              header: 'Student meal sites',
               eligibility: 'All children and youth are eligible. No ID is required.',
-              pickupDetails: 'Days and times vary by site',
+              pickupDetails: 'Days and times vary by site.',
               subsections: {
                 'PSD': {
                   name: 'Philadelphia School District schools',
@@ -272,13 +272,13 @@ pinboard({
               },
             },
             seniorMealSites: {
-              header: 'Senior Meal Sites',
+              header: 'Senior meal sites',
               eligibility: '\
                 Adults 60 and over are eligible at sites supported by the Philadelphia\
                 Corporation for Aging (PCA). \
                 <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
                 Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
-                <i><b>No reservation necessary</b></i>\
+                No reservation necessary.\
               ',
               pickupDetails: '',
               subsections: {
@@ -303,20 +303,20 @@ pinboard({
                   name: 'Philadelphia Parks & Recreation older adult centers',
                   eligibility: '\
                     Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
-                    <i><b>No reservation necessary.</b></i>\
+                    No reservation necessary.\
                   ',
                   pickupDetails: '\
                     Seniors can pick up 5 meals per week at most sites.\
                   ',
                 },
                 'SENIOR SITE': {
-                  name: 'Senior Site that still needs a subsection',
+                  name: 'Senior site',
                 },
 
               },
             },
             outdoorMealSites: {
-              header:  'Outdoor Meal Sites',
+              header:  'Outdoor meal sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required.',
               pickupDetails: '',
               subsections: {
@@ -392,7 +392,7 @@ pinboard({
             studentMealSites: {
               header: 'Lugar de comidas para estudiantes',
               eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
-              pickupDetails: '',
+              pickupDetails: 'Los días y horarios varían según el lugar.',
               subsections: {
                 'PSD': {
                   name: 'escuelas del Distrito Escolar de Filadelfia',
@@ -433,7 +433,7 @@ pinboard({
                   name: 'centros para adultos mayores de Parques y Recreación',
                   eligibility: '\
                   Los adultos de 55 años o más son elegibles en los centros para adultos mayores de Parques y Recreación. <br>\
-                  <i><b>No es necesario reservar.</b></i>',
+                  No es necesario reservar.',
                   pickupDetails: 'Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.',
                 },
               },
@@ -507,7 +507,7 @@ pinboard({
             studentMealSites: {
               header: '学生用餐场所',
               eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
-              pickupDetails: '',
+              pickupDetails: '日期和时间会根据场所而有所不同。',
               subsections: {
                 'PSD': {
                   name: '费城学区',
@@ -533,7 +533,7 @@ pinboard({
               60岁及60岁以上的成年人可去费城老龄者公司（PCA）支持的场所。\
                 <i><b>老年人需事先打电话预定餐点然后去取餐。</b></i><br><br>\
                 55岁和55岁以上的成年人可去公园和娱乐中心的成人中心。 <br>\
-                <i><b>不需事先预订。</b></i>\
+                不需事先预订。\
               ',
               pickupDetails: '',
               subsections: {
@@ -555,7 +555,7 @@ pinboard({
                   name: '公园和娱乐中心的成人中心',
                   eligibility: '\
                   55岁和55岁以上的成年人可去公园和娱乐中心的成人中心。 <br>\
-                    <i><b>不需事先预订。</b></i>\
+                    不需事先预订。\
                   ',
                   pickupDetails: '\
                   在多数场所，老龄者每周可去取5餐。\
@@ -631,7 +631,7 @@ pinboard({
             studentMealSites: {
               header: 'Các điểm phát bữa ăn học sinh',
               eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
-              pickupDetails: '',
+              pickupDetails: 'Ngày và giờ khác nhau giữa các điểm',
               subsections: {
                 'PSD': {
                   name: 'Các trường của Học khu Philadelphia',
@@ -657,7 +657,7 @@ pinboard({
               Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
                 <i><b>Người già phải gọi điện trước để đặt bữa ăn trước khi đến nhận.</b></i><br><br>\
                 Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
-                <i><b>Không cần đặt trước.</b></i>\
+                Không cần đặt trước.\
               ',
               pickupDetails: '',
               subsections: {
@@ -679,7 +679,7 @@ pinboard({
                   name: 'Các trung tâm dành cho người già của Parks & Recreation',
                   eligibility: '\
                   Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
-                    <i><b>Không cần đặt trước.</b></i>\
+                  Không cần đặt trước.\
                   ',
                   pickupDetails: '\
                   Người già có thể nhận năm bữa ăn mỗi tuần tại hầu hết các điểm.\
@@ -755,7 +755,7 @@ pinboard({
             studentMealSites: {
               header: 'Пункты выдачи питания для учащихся',
               eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
-              pickupDetails: '',
+              pickupDetails: 'У каждого пункта свой график работы.',
               subsections: {
                 'PSD': {
                   name: 'Школы школьного округа Филадельфии',
@@ -781,7 +781,7 @@ pinboard({
               Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA). \
                 <i><b>Лица пожилого возраста должны позвонить заранее и заказать питание, прежде чем идти за ним.</b></i><br><br>\
                 Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
-                <i><b>Предварительный заказ не требуется.</b></i>\
+                Предварительный заказ не требуется.\
               ',
               pickupDetails: '',
               subsections: {
@@ -803,7 +803,7 @@ pinboard({
                   name: 'Парки и центры отдыха и развлечений для пожилых людей',
                   eligibility: '\
                   Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
-                    <i><b>Предварительный заказ не требуется.</b></i>\
+                  Предварительный заказ не требуется.\
                   ',
                   pickupDetails: '\
                   Лица пожилого возраста могут получить пять порций в неделю в большинстве пунктов. \
@@ -879,7 +879,7 @@ pinboard({
             studentMealSites: {
               header: 'Sites de distribution de repas pour élèves',
               eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
-              pickupDetails: '',
+              pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
               subsections: {
                 'PSD': {
                   name: 'Écoles du district scolaire de Philadelphie',
@@ -905,7 +905,7 @@ pinboard({
               Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging).\
                 <i><b>Les personnes âgées doivent appeler au préalable pour réserver les repas avant de venir les chercher.</b></i><br><br>\
                 Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
-                <i><b>Aucune réservation exigée.</b></i>\
+                Aucune réservation exigée.\
               ',
               pickupDetails: '',
               subsections: {
@@ -927,7 +927,7 @@ pinboard({
                   name: 'Centres des aînés du service des parcs et loisirs',
                   eligibility: '\
                   Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
-                    <i><b>Aucune réservation exigée.</b></i>\
+                  Aucune réservation exigée.\
                   ',
                   pickupDetails: '\
                   Les personnes âgées peuvent recevoir jusqu’à 5 repas par semaine à la plupart des sites.\
