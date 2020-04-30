@@ -26,6 +26,11 @@
 
       <template>
         <div class="table-slot">
+          <!-- pickupDetails if there are no subsections -->
+          <div>
+            {{ $t('sections.' + header + '.pickupDetails') }}
+          </div>
+
           <!-- subsections -->
           <div
             v-for="(subsection, key) in section.subsections"
@@ -54,9 +59,9 @@
           </div>
 
           <!-- pickupDetails if there are no subsections -->
-          <div>
+          <!-- <div>
             {{ $t('sections.' + header + '.pickupDetails') }}
-          </div>
+          </div> -->
         </div>
       </template>
 

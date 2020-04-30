@@ -229,12 +229,22 @@ pinboard({
               header: 'Food sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required',
               pickupDetails: 'Residents can get one box per household',
-              subsections: {},
+              subsections: {
+                'PHILABUNDANCE': {
+                  name: 'Philabundance',
+                },
+                'PHILABUNDANCE/SHARE FOOD PROGRAM': {
+                  name: 'Philabundance/Share Food Program',
+                },
+                'SHARE FOOD PROGRAM': {
+                  name: 'Share Food Program',
+                },
+              },
             },
             studentMealSites: {
               header: 'Student meal sites',
               eligibility: 'All children and youth are eligible. No ID is required.',
-              pickupDetails: '',
+              pickupDetails: 'Days and times vary by site',
               subsections: {
                 'PSD': {
                   name: 'Philadelphia School District schools',
@@ -292,6 +302,10 @@ pinboard({
                     Seniors can pick up 5 meals per week at most sites.\
                   ',
                 },
+                'SENIOR SITE': {
+                  name: 'Senior Site that still needs a subsection',
+                },
+
               },
             },
             outdoorMealSites: {
@@ -302,6 +316,15 @@ pinboard({
                 'compiled': {
                   name: 'temporary outdoor sites',
                   pickupDetails: 'Days and times vary by site. One meal per resident.',
+                },
+                'Broad Street Ministry': {
+                  name: 'Broad Street Ministry',
+                },
+                'Kensington Meal Partners': {
+                  name: 'Kensington Meal Partners',
+                },
+                'Muslims Serve': {
+                  name: 'Muslims Serve',
                 },
               },
             },
