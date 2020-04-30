@@ -370,11 +370,11 @@ pinboard({
             freshOnly: 'únicamente productos frescos',
             breakfastLunch: 'desayuno y almuerzo',
             tenMeals: '10 comidas por niño',
-            oneMeal: 'comida por residente', //not sure where this is in the doc
-            tagOutdoor: 'Lugar de comidas al aire libre',
-            'Food Site': 'Lugar de alimentos',
-            tagStudent: 'Lugar de comidas para estudiantes',
-            tagSenior: 'Lugar de comidas para adultos mayores',
+            oneMeal: 'comida por residente',
+            'Lugar de comidas al aire libre': 'Lugar de comidas al aire libre',
+            'Lugar de alimentos': 'Lugar de alimentos',
+            'Lugar de comidas para estudiantes': 'Lugar de comidas para estudiantes',
+            'Lugar de comidas para adultos mayores': 'Lugar de comidas para adultos mayores',
           },
           sections: {
             foodSites: {
@@ -486,10 +486,10 @@ pinboard({
             breakfastLunch: '早餐和午餐',
             tenMeals: '10 每个儿童的用餐',
             oneMeal: '1 每个居民用餐',
-            tagOutdoor: '户外用餐场所',
-            tagFood: 'Food site',
-            tagStudent: '学生用餐场所',
-            tagSenior: '年长者用餐场所',
+            '户外用餐场所': '户外用餐场所',
+            '食品地点': '食品地点',
+            '学生用餐场所': '学生用餐场所',
+            '年长者用餐场所': '年长者用餐场所',
           },
           sections: {
             foodSites: {
@@ -610,10 +610,10 @@ pinboard({
             breakfastLunch: 'bữa sáng và bữa trưa',
             tenMeals: '10 bữa ăn mỗi trẻ',
             oneMeal: '1 bữa ăn mỗi cư dân',
-            tagOutdoor: 'Điểm phát bữa ăn ngoài trời',
-            tagFood: 'Food site',
-            tagStudent: 'Điểm phát bữa ăn học sinh',
-            tagSenior: 'Điểm phát bữa ăn cho người già',
+            'Điểm phát bữa ăn ngoài trời': 'Điểm phát bữa ăn ngoài trời',
+            'Điểm phát thực phẩm': 'Điểm phát thực phẩm',
+            'Điểm phát bữa ăn học sinh': 'Điểm phát bữa ăn học sinh',
+            'Điểm phát bữa ăn cho người già': 'Điểm phát bữa ăn cho người già',
           },
           sections: {
             foodSites: {
@@ -734,10 +734,10 @@ pinboard({
             breakfastLunch: 'Breakfast and lunch',
             tenMeals: '10 количество порций на ребенка',
             oneMeal: '1 количество порций на жителя',
-            tagOutdoor: 'Пункт выдачи питания под открытым небом',
-            tagFood: 'Пункт выдачи питания',
-            tagStudent: 'Пункт выдачи питания для учащихся',
-            tagSenior: 'Пункт выдачи питания для пожилых людей',
+            'Пункт выдачи питания под открытым небом': 'Пункт выдачи питания под открытым небом',
+            'Пункт выдачи питания': 'Пункт выдачи питания',
+            'Пункт выдачи питания для учащихся': 'Пункт выдачи питания для учащихся',
+            'Пункт выдачи питания для пожилых людей': 'Пункт выдачи питания для пожилых людей',
           },
           sections: {
             foodSites: {
@@ -858,10 +858,10 @@ pinboard({
             breakfastLunch: 'petit déjeuner et déjeuner',
             tenMeals: '10 repas par enfant',
             oneMeal: '1 repas par habitant',
-            tagOutdoor: 'Site extérieur de distribution de repas',
-            tagFood: 'Food site',
-            tagStudent: 'Site de distribution de repas pour élèves',
-            tagSenior: 'Site de distribution de repas pour personnes âgées',
+            'Site extérieur de distribution de repas': 'Site extérieur de distribution de repas',
+            'Site de distribution alimentaire': 'Site de distribution alimentaire',
+            'Site de distribution de repas pour élèves': 'Site de distribution de repas pour élèves',
+            'Site de distribution de repas pour personnes âgées': 'Site de distribution de repas pour personnes âgées',
           },
           sections: {
             foodSites: {
