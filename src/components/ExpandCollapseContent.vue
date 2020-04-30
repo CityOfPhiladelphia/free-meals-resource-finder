@@ -40,6 +40,26 @@
       v-if="section === 'foodSites'"
       :item="item"
     />
+
+    <charter-school-card
+      v-if="subsection === 'CHARTER'"
+      :item="item"
+    />
+
+    <ppr-school-card
+      v-if="subsection === 'PPR'"
+      :item="item"
+    />
+
+    <psd-school-card
+      v-if="subsection === 'PSD'"
+      :item="item"
+    />
+
+    <pha-school-card
+      v-if="subsection === 'PHA'"
+      :item="item"
+    />
   </div>
 </template>
 
@@ -47,12 +67,20 @@
 
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
+import CharterSchoolCard from './CharterSchoolCard.vue';
+import PprSchoolCard from './PprSchoolCard.vue';
+import PsdSchoolCard from './PsdSchoolCard.vue';
+import PhaSchoolCard from './PhaSchoolCard.vue';
 
 export default {
   name: 'ExpandCollapseContent',
   components: {
     SeniorMealSiteCard,
     FoodSiteCard,
+    CharterSchoolCard,
+    PprSchoolCard,
+    PsdSchoolCard,
+    PhaSchoolCard,
   },
   props: {
     item: {

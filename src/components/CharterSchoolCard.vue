@@ -6,16 +6,16 @@
         :slots="mainVerticalTableSlots"
         :options="mainVerticalTableOptions"
       >
-        <div class="table-slot">
+        <!-- <div class="table-slot">
           <div>
-            {{ $t('sections.' + section + '.pickupDetails') }}
+            {{ $t('sections.' + this.section + '.pickupDetails') }}
           </div>
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
             :options="componentVerticalTableOptions"
           />
-        </div>
+        </div> -->
       </vertical-table-light>
     </div>
   </section>
@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: 'FoodSiteCard',
+  name: 'CharterSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
@@ -78,8 +78,8 @@ export default {
           {
             label: 'randomWords.pickupDetails',
             labelType: 'i18n',
-            // value: 'sections.' + this.section + '.pickupDetails',
-            valueType: 'component',
+            value: 'randomWords.' + this.section + '.pickupDetails',
+            valueType: 'i18n',
           },
         ],
       };
