@@ -7,9 +7,9 @@
         :options="mainVerticalTableOptions"
       >
         <div class="table-slot">
-          <div>
+          <!-- <div>
             {{ $t('sections.' + section + '.pickupDetails') }}
-          </div>
+          </div> -->
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"

@@ -118,8 +118,6 @@ export default {
   watch: {
     database(nextDatabase) {
       let subsections = this.getCounts();
-      subsections.PCA = 5;
-      subsections.PPR_Senior = 4;
       this.subsections = subsections;
       this.$store.commit('setSubsections', subsections);
     },
