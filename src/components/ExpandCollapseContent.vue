@@ -3,31 +3,42 @@
     <div class="cell medium-12">
       <div
         v-if="item.attributes.address"
-        class="detail"
+        class="grid-x detail"
       >
-        <font-awesome-icon icon="map-marker-alt" />
-        <!-- <span v-html="parseAddress(item.attributes.address)"> -->
-        <span>
-          <!-- {{ parseAddress(item.attributes.address) }} -->
+        <div class="small-2">
+          <font-awesome-icon icon="map-marker-alt" />
+        </div>
+        <div class="small-22">
           {{ item.attributes.address }}<br>
           Philadelphila, PA {{ item.attributes.ZIP2 }}
-        </span>
+        </div>
       </div>
     </div>
+
     <div class="cell medium-12">
       <div
         v-if="item.attributes.CATEGORY"
-        class="detail"
+        class="grid-x detail"
       >
-        <font-awesome-icon icon="hand-holding-heart" />
-        <span>{{ item.attributes.CATEGORY }}</span>
+        <div class="small-2">
+          <font-awesome-icon icon="hand-holding-heart" />
+        </div>
+        <div
+          class="small-22"
+          v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+        />
       </div>
+
       <div
         v-if="item.attributes.phone_number"
-        class="detail"
+        class="grid-x detail"
       >
-        <font-awesome-icon icon="phone" />
-        <span>{{ item.attributes.phone_number }}</span>
+        <div class="small-2">
+          <font-awesome-icon icon="phone" />
+        </div>
+        <div class="small-22">
+          {{ item.attributes.phone_number }}
+        </div>
       </div>
     </div>
 
