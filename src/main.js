@@ -142,25 +142,25 @@ pinboard({
   sections: {
     foodSites: {
       title: 'Food sites',
-      titleSingular: 'FOOD SITE',
+      titleSingular: 'Food Site',
       color: '#0F4D90',
       subsections: [ 'none' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
-      titleSingular: 'STUDENT MEAL SITE',
+      titleSingular: 'Student Meal Site',
       color: '#721817',
       subsections: [ 'PSD', 'PHA', 'PPR', 'CHARTER' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
-      titleSingular: 'SENIOR MEAL SITE',
+      titleSingular: 'Senior Meal Site',
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
     outdoorMealSites: {
       title: 'Outdoor meal sites',
-      titleSingular: 'OUTDOOR MEAL SITE',
+      titleSingular: 'Outdoor Meal Site',
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners' ]],
     },
@@ -184,6 +184,7 @@ pinboard({
   i18n: {
     header: 'i18nBanner',
     refinePanel: true,
+    expandCollapseTitle: true,
     data: {
       locale: 'en-US',
       messages: {
