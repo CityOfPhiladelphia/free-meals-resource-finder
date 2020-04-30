@@ -40,6 +40,9 @@ pinboard({
     position: 'right',
     placeholderText: 'Search by address',
   },
+  footer: {
+    'HowToUse': false,
+  },
   // addressInput: {
   //   type: 'address',
   //   width: 465,
@@ -185,6 +188,7 @@ pinboard({
     header: 'i18nBanner',
     refinePanel: true,
     expandCollapseTitle: true,
+    footer: true,
     data: {
       locale: 'en-US',
       messages: {
