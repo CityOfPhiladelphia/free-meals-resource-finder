@@ -15,6 +15,15 @@
       </div>
     </div>
 
+    <div class="open-list-div">
+      <!-- class="button open-list-button hide-for-medium" -->
+      <phila-button
+        class="button open-list-button"
+        @click.native="$emit('view-list')"
+        v-html="$t('viewList')"
+      />
+    </div>
+
     <!-- sections that rely on data -->
     <greeting-section
       v-for="(section, key) in sections"
@@ -45,12 +54,14 @@
 <script>
 
 import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
+import PhilaButton from '@phila/pinboard/src/components/PhilaButton.vue';
 import greetingSection from './greetingSection.vue';
 
 export default {
   name: 'CustomGreeting',
   components: {
     greetingSection,
+    PhilaButton,
   },
   mixins: [ TopicComponent ],
   props: {
@@ -173,6 +184,16 @@ export default {
 </script>
 
 <style scoped>
+
+  .open-list-div {
+    margin: 0 auto;
+  }
+
+  .open-list-button {
+    margin-top: 6px;
+    margin-bottom: 14px;
+    width: 200px;
+  }
 
   .custom-greeting {
     padding: 12px;
