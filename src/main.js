@@ -141,6 +141,7 @@ pinboard({
     },
     weight: 0,
     radius: 8,
+    mobileRadius: 12,
   },
   sections: {
     foodSites: {
