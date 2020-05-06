@@ -99,10 +99,9 @@ pinboard({
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
-      return `//api.phila.gov/ais/v1/search/${inputEncoded}`;
+      return `//api.phila.gov/finder/v1/search/${inputEncoded}`;
     },
     params: {
-      gatekeeperKey: process.env.VUE_APP_GATEKEEPER_KEY,
       include_units: true,
     },
   },
