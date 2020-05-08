@@ -99,10 +99,9 @@ pinboard({
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
-      return `//api.phila.gov/ais/v1/search/${inputEncoded}`;
+      return `//api.phila.gov/finder/v1/search/${inputEncoded}`;
     },
     params: {
-      gatekeeperKey: process.env.VUE_APP_GATEKEEPER_KEY,
       include_units: true,
     },
   },
@@ -166,7 +165,7 @@ pinboard({
       title: 'Outdoor meal sites',
       titleSingular: 'Outdoor Meal Site',
       color: '#506D0A',
-      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners' ]],
+      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly' ]],
     },
   },
   subsections: {
@@ -175,6 +174,7 @@ pinboard({
     'CHARTER': 'studentMealSites',
     'Kensington Meal Partners': 'outdoorMealSites',
     'Muslims Serve': 'outdoorMealSites',
+    'SEAMAAC South Philly': 'outdoorMealSites',
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
@@ -338,6 +338,9 @@ pinboard({
                 },
                 'Muslims Serve': {
                   name: 'Muslims Serve',
+                },
+                'SEAMAAC South Philly': {
+                  name: 'SEAMAAC South Philly',
                 },
               },
             },
