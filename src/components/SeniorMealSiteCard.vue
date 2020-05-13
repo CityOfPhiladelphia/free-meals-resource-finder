@@ -53,13 +53,13 @@ export default {
         id: 'mainTable',
         fields: [
           {
-            label: 'randomWords.eligibility',
+            label: 'eligibility',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY + '.eligibility',
             valueType: 'i18n',
           },
           {
-            label: 'randomWords.pickupDetails',
+            label: 'pickupDetails',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY + '.pickupDetails',
             valueType: 'i18n',

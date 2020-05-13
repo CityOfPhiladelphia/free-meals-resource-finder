@@ -53,8 +53,8 @@
         />
       </div>
       <div class="grid-y card-exclamation-details small-19">
-        <div><b>{{ $t('randomWords.change') }}:</b></div>
-        <div>{{ $t('randomWords.closure') }}: {{ item.attributes.TEMPCLOSE }}</div>
+        <div><b>{{ $t('change') }}:</b></div>
+        <div>{{ $t('closure') }}: {{ item.attributes.TEMPCLOSE }}</div>
       </div>
     </div>
 
