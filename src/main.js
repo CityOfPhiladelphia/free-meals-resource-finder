@@ -52,7 +52,6 @@ pinboard({
   //   placeholder: ' ',
   // },
   customComps,
-  // refineCategories: [ 'tagFood', 'tagOutdoor', 'tagSenior', 'tagStudent'],
   refine: {
     type: 'categoryField',
     categoryField: function(item) {
@@ -61,20 +60,9 @@ pinboard({
   },
   markerType: 'circle-marker',
   legendControls,
-  locationSlots: {
-    title: function(state, item) {
-      // let indexVal = item._featureId.indexOf('-', item._featureId.indexOf('-') + 1);
-      // if (item._featureId.slice(0, indexVal) === 'feat-seniorSites') {
-      //   return item.site_name;
-      // } else if (item._featureId.slice(0, indexVal) === 'feat-distributionSites') {
-      //   return item.Location;
-      // } else if (item._featureId.slice(0, indexVal) === 'feat-schoolMealSites') {
-      //   return item.SCHOOL_NAME;
-      // } else if (item._featureId.slice(0, indexVal) === 'feat-youthActivitySites') {
-      //   return item.ASSET_NAME;
-      // } else if (item._featureId.slice(0, indexVal) === 'feat-covidFreeMealSites') {
+  locationInfo: {
+    siteName: function(state, item) {
       return item.attributes.site_name;
-      // }
     },
   },
   baseConfig: BASE_CONFIG_URL,
@@ -87,7 +75,6 @@ pinboard({
     password: process.env.VUE_APP_CYCLOMEDIA_PASSWORD,
     apiKey: process.env.VUE_APP_CYCLOMEDIA_API_KEY,
   },
-  // greeting,
   dataSources: {
     covidFreeMealSites,
   },
@@ -95,11 +82,8 @@ pinboard({
     enabled: false,
   },
   app: {
-    title: 'Free meals resource finder',
-    tagLine: 'Find free meals in the City',
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
-    // type: 'compiled',
   },
   projection: '3857',
   geocoder: {
