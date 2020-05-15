@@ -10,8 +10,8 @@
       <div
         class="grid-y exclamation-details small-19 medium-20"
       >
-        <div><b>{{ $t('randomWords.beforeYouGo') }}:</b></div>
-        <div>{{ $t('randomWords.checkSite') }}</div>
+        <div><b>{{ $t('beforeYouGo') }}:</b></div>
+        <div>{{ $t('checkSite') }}</div>
       </div>
     </div>
 

@@ -70,13 +70,13 @@ export default {
         id: 'mainTable',
         fields: [
           {
-            label: 'randomWords.eligibility',
+            label: 'eligibility',
             labelType: 'i18n',
             value: 'sections.' + this.section + '.eligibility',
             valueType: 'i18n',
           },
           {
-            label: 'randomWords.pickupDetails',
+            label: 'pickupDetails',
             labelType: 'i18n',
             // value: 'sections.' + this.section + '.pickupDetails',
             valueType: 'component',
@@ -109,12 +109,12 @@ export default {
         if (this.item.attributes[day] != null){
           let details;
           if (day === 'MONDAY') {
-            details = 'randomWords.nonPerish';
+            details = 'nonPerish';
           } else {
-            details = 'randomWords.freshOnly';
+            details = 'freshOnly';
           }
           let dayObject = {
-            label: 'randomWords.' + day,
+            label: day,
             labelType: 'i18n',
             value: this.item.attributes[day],
             // valueType: 'i18n',

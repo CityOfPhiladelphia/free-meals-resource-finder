@@ -22,6 +22,6 @@ deploy:
     bucket: 'phila-resource-finder'
     upload-dir: 'free-meals/dev'
     on:
-      branch: listButton
+      branch: pinboard-covid-app-changes
     local_dir: dist
     skip_cleanup: true
