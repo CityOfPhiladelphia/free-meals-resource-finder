@@ -38,19 +38,11 @@ pinboard({
   comboSearch: {
     dropdown: [ 'address' ],
     position: 'right',
-    placeholderText: 'Search by address',
+    // placeholderText: 'app.searchPlaceholder',
   },
   footer: {
     'HowToUse': false,
   },
-  // addressInput: {
-  //   type: 'address',
-  //   width: 465,
-  //   position: 'right',
-  //   autocompleteEnabled: false,
-  //   autocompleteMax: 15,
-  //   placeholder: ' ',
-  // },
   customComps,
   refine: {
     type: 'categoryField',
