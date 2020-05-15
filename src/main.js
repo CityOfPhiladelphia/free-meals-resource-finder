@@ -183,6 +183,7 @@ pinboard({
           app: {
             title: 'Food distribution sites',
             subtitle: 'Find free food and meals during COVID-19',
+            noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
           'Outdoor Meal Site': 'Outdoor meal site',
           'Food Site': 'Food site',
