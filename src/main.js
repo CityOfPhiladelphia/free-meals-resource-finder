@@ -55,7 +55,7 @@ pinboard({
     },
   },
   holidays: {
-    days: [ 'Monday' ],
+    days: [ 'MONDAY' ],
     exceptions: [
       'Richard Allen Preparatory Charter School',
       'Westpark Apartments',
