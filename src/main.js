@@ -11,6 +11,7 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExcla
 import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons/faHandHoldingHeart';
 library.add(faExclamationTriangle, faHandHoldingHeart);
 
+
 // import pinboard
 import pinboard from '@phila/pinboard/src/main.js';
 
@@ -34,29 +35,48 @@ const customComps = {
 };
 
 pinboard({
-  // baseConfig: null,
+  app: {
+    logoAlt: 'City of Philadelphia',
+    type: 'covidFreeMealSites',
+  },
   comboSearch: {
     dropdown: [ 'address' ],
-    position: 'right',
-    // placeholderText: 'app.searchPlaceholder',
   },
-  footer: {
-    'HowToUse': false,
-  },
-  customComps,
-  refine: {
-    type: 'categoryField',
-    categoryField: function(item) {
-      return item.attributes.category_type;
-    },
-  },
-  markerType: 'circle-marker',
-  legendControls,
   locationInfo: {
-    siteName: function(state, item) {
+    siteName: function(item) {
       return item.attributes.site_name;
     },
   },
+  customComps,
+  refine: {
+    type: 'categoryField_value',
+    value: function(item) {
+      return item.attributes.category_type;
+    },
+  },
+  holidays: {
+    days: [ 'Monday' ],
+    exceptions: [
+      'Richard Allen Preparatory Charter School',
+      'Westpark Apartments',
+      'Raymond Rosen Manor',
+      'Thomas Paine Plaza',
+      'Philadephila Parking Authority lot',
+    ],
+  },
+  markerType: 'circle-marker',
+  circleMarkers:{
+    circleColors: {
+      'Food Site': '#0F4D90',
+      'Senior Meal Site': '#D67D00',
+      'Student Meal Site': '#721817',
+      'Outdoor Meal Site': '#506D0A',
+    },
+    weight: 0,
+    radius: 8,
+    mobileRadius: 12,
+  },
+  legendControls,
   baseConfig: BASE_CONFIG_URL,
   cyclomedia: {
     enabled: false,
@@ -73,10 +93,6 @@ pinboard({
   router: {
     enabled: false,
   },
-  app: {
-    logoAlt: 'City of Philadelphia',
-    type: 'covidFreeMealSites',
-  },
   projection: '3857',
   geocoder: {
     url(input) {
@@ -87,7 +103,9 @@ pinboard({
       include_units: true,
     },
   },
-  infoCircles: {},
+  footer: {
+    'HowToUse': false,
+  },
   map: {
     defaultBasemap: 'pwd',
     center: [ -75.163471, 39.953338 ],
@@ -112,17 +130,6 @@ pinboard({
         zIndex: '3',
       },
     },
-  },
-  circleMarkers:{
-    circleColors: {
-      'Food Site': '#0F4D90',
-      'Senior Meal Site': '#D67D00',
-      'Student Meal Site': '#721817',
-      'Outdoor Meal Site': '#506D0A',
-    },
-    weight: 0,
-    radius: 8,
-    mobileRadius: 12,
   },
   sections: {
     foodSites: {
@@ -169,12 +176,7 @@ pinboard({
     'PPR_StudentMeals': 'studentMealSites',
   },
   i18n: {
-    header: 'i18nBanner',
     enabled: true,
-    app: true,
-    refinePanel: true,
-    expandCollapseTitle: true,
-    footer: true,
     data: {
       locale: 'en-US',
       messages: {

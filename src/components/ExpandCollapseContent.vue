@@ -54,7 +54,7 @@
       </div>
       <div class="grid-y card-exclamation-details small-19">
         <div><b>{{ $t('change') }}:</b></div>
-        <div>{{ $t('closure') }}: {{ item.attributes.TEMPCLOSE }}</div>
+        <div>{{ $t('closure') }}: {{ transforms.toLocaleDateString.transform(item.attributes.TEMPCLOSE) }}</div>
       </div>
     </div>
 
@@ -97,6 +97,8 @@
 
 <script>
 
+import transforms from '../general/transforms.js';
+
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
 import CharterSchoolCard from './CharterSchoolCard.vue';
@@ -125,6 +127,9 @@ export default {
     },
   },
   computed: {
+    transforms() {
+      return transforms;
+    },
     subsections() {
       return this.$config.subsections;
     },
