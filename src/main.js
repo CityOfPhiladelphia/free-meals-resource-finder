@@ -35,6 +35,24 @@ const customComps = {
 };
 
 pinboard({
+  // alerts: {
+  //   header: {
+  //     type: 'alertBanner',
+  //     enabled: function(state) { return state.alertResponse === 'alertHours'},
+  //   },
+  //   alertChecks: [
+  //     {
+  //       type: 'alertHours',
+  //       condition: [
+  //         {
+  //           'day': 4,
+  //           'startTime': '12:00',
+  //           'endTime': '15:00',
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   app: {
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
