@@ -23,12 +23,15 @@
 
 <script>
 
+import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
+
 export default {
   name: 'PprSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
   },
+  mixins: [ SharedFunctions ],
   props: {
     item: {
       type: Object,
