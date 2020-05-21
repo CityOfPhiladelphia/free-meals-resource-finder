@@ -963,9 +963,21 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@phila/pinboard@https://github.com/CityOfPhiladelphia/pinboard#a07e9b6e644299966f6382eb30b136d89f580757":
+"@phila/pinboard@https://github.com/CityOfPhiladelphia/pinboard#bfdfd2875150809f7cdee927bbb7348eaa48adef":
   version "0.3.3"
-  resolved "https://github.com/CityOfPhiladelphia/pinboard#a07e9b6e644299966f6382eb30b136d89f580757"
+  resolved "https://github.com/CityOfPhiladelphia/pinboard#bfdfd2875150809f7cdee927bbb7348eaa48adef"
+  dependencies:
+    "@fortawesome/free-brands-svg-icons" "^5.11.2"
+    "@phila/vue-comps" "2.1.2"
+    "@phila/vue-datafetch" "1.2.0"
+    "@phila/vue-mapping" "2.1.1"
+    axios "^0.19.0"
+    core-js "^3.3.3"
+    foundation-sites "^6.5.3"
+    vue "^2.6.10"
+    vue-i18n "^8.17.1"
+    vue-router "^3.0.6"
+    vuex "^3.1.2"
 
 "@phila/vue-comps@2.1.2":
   version "2.1.2"
