@@ -23,12 +23,15 @@
 
 <script>
 
+import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
+
 export default {
   name: 'PsdSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
   },
+  mixins: [ SharedFunctions ],
   props: {
     item: {
       type: Object,
@@ -105,12 +108,39 @@ export default {
       let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
       let theFields = [];
       let days = {};
-      for (let day of allDays) {
-        if (this.item.attributes[day] != null){
+
+      let item = this.item;
+      let holidays = [];
+      let exceptions = [];
+      if (this.$config.holidays && this.$config.holidays.days) {
+        holidays = this.$config.holidays.days;
+      }
+      if (this.$config.holidays && this.$config.holidays.exceptions) {
+        exceptions = this.$config.holidays.exceptions;
+      }
+      let siteName = this.getSiteName(this.item);
+
+      for (let [ index, day ] of allDays.entries()) {
+        let normallyOpen = item.attributes[day] != null;
+        let holidayToday = holidays.includes(day);
+        let yesterday = allDays[index-1];
+        let normallyOpenYesterday = item.attributes[yesterday] != null;
+        let holidayYesterday = holidays.includes(yesterday);
+        let siteIsException = exceptions.includes(this.getSiteName(this.item));
+
+        if ((normallyOpen || (!siteIsException && holidayYesterday && normallyOpenYesterday)) && (!holidayToday || siteIsException)) {
+
+          let hours;
+          if ((normallyOpen && !holidayToday) || (normallyOpen && siteIsException)) {
+            hours = item.attributes[day];
+          } else if (!normallyOpen && holidayYesterday) {
+            hours = item.attributes[yesterday];
+          }
+
           let dayObject = {
             label: day,
             labelType: 'i18n',
-            value: this.item.attributes[day],
+            value: hours,
             // valueType: 'i18n',
             value1: 'tenMeals',
             value1Type: 'i18n',
