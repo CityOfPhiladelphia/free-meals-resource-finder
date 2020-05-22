@@ -55,22 +55,25 @@ pinboard({
         <p><b>Sites that normally distribute on Mondays will distribute on Tuesday, May 26 instead.</b></p>\
       ',
     },
-  //   header: {
-  //     type: 'alertBanner',
-  //     enabled: function(state) { return state.alertResponse === 'alertHours'},
-  //   },
-  //   alertChecks: [
-  //     {
-  //       type: 'alertHours',
-  //       condition: [
-  //         {
-  //           'day': 4,
-  //           'startTime': '12:00',
-  //           'endTime': '15:00',
-  //         },
-  //       ],
-  //     },
-  //   ],
+    header: {
+      type: 'alertBanner',
+      enabled: function(state) {
+        return state.alertResponse === 'alertHours';
+      },
+      content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
+    },
+    alertChecks: [
+      {
+        type: 'alertHours',
+        condition: [
+          {
+            'day': 5,
+            'startTime': '9:00',
+            'endTime': '17:00',
+          },
+        ],
+      },
+    ],
   },
   app: {
     logoAlt: 'City of Philadelphia',
@@ -222,6 +225,7 @@ pinboard({
           app: {
             title: 'Food distribution sites',
             subtitle: 'Find free food and meals during COVID-19',
+            bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
           'Outdoor Meal Site': 'Outdoor meal site',
@@ -373,6 +377,7 @@ pinboard({
           app: {
             title: 'Lugares de distribución de alimentos',
             subtitle: 'Obtenga alimentos y comidas gratis durante la epidemia de la COVID-19',
+            bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
           },
           'Outdoor Meal Site': 'Lugar de comidas al aire libre',
           'Food Site': 'Lugar de alimentos',
@@ -484,6 +489,7 @@ pinboard({
           app: {
             title: '食品分发地点',
             subtitle: '在冠状病毒-19期间查找免费食物和餐点',
+            bannerAlert: '今天很多地点均关闭。有关更多信息，请查看具体地点详细信息。',
           },
           'Outdoor Meal Site': '户外用餐场所',
           'Food Site': '食品地点',
@@ -604,6 +610,7 @@ pinboard({
           app: {
             title: 'Các điểm phân phát thực phẩm',
             subtitle: 'Tìm thực phẩm và bữa ăn miễn phí trong dịch COVID-19',
+            bannerAlert: 'Hôm nay, nhiều địa điểm đóng cửa. Hãy kiểm tra các chi tiết về địa điểm cụ thể để biết thêm thông tin.',
           },
           'Outdoor Meal Site': 'Điểm phát bữa ăn ngoài trời',
           'Food Site': 'Điểm phát thực phẩm',
@@ -724,6 +731,7 @@ pinboard({
           app: {
             title: 'Пункты выдачи продуктов',
             subtitle: 'Поиск пунктов бесплатного продовольствия и питания во время пандемии COVID-19',
+            bannerAlert: 'Многие места сегодня закрыты. Для получения более подробной информации о месте отдыха просмотрите дополнительные сведения.',
           },
           'Outdoor Meal Site': 'Пункт выдачи питания под открытым небом',
           'Food Site': 'Пункт выдачи питания',
@@ -844,6 +852,7 @@ pinboard({
           app: {
             title: 'Sites de distribution alimentaire',
             subtitle: 'Trouver de la nourriture et des repas gratuits pendant le COVID-19',
+            bannerAlert: 'De nombreux sites sont fermés aujourd’hui. Consultez les détails spécifiques au site pour obtenir de plus amples informations.',
           },
           'Outdoor Meal Site': 'Site extérieur de distribution de repas',
           'Food Site': 'Sites de distribution alimentaire',
