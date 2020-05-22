@@ -145,6 +145,12 @@ pinboard({
   },
   footer: {
     'HowToUse': false,
+    'OtherLinks': {
+      locations: {
+        text: 'View accessible list of site locations',
+        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+      },
+    },
   },
   map: {
     defaultBasemap: 'pwd',
