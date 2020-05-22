@@ -20,7 +20,7 @@
       <phila-button
         class="button open-list-button"
         @click.native="$emit('view-list')"
-        v-html="$t('viewList')"
+        v-html="$t('app.viewList')"
       />
     </div>
 
