@@ -9,7 +9,7 @@
     "lintFix": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "@phila/pinboard": "https://github.com/CityOfPhiladelphia/pinboard#4c8bee68dbcf336d4e57009ab5f1b130f95544a2",
+    "@phila/pinboard": "https://github.com/CityOfPhiladelphia/pinboard#1d3710426c8f7340a2fc4f258b457223f9526368",
     "core-js": "^3.3.3",
     "vue": "^2.6.10"
   },

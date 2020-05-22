@@ -67,9 +67,9 @@ pinboard({
         type: 'alertHours',
         condition: [
           {
-            'day': 5,
-            'startTime': '9:00',
-            'endTime': '17:00',
+            'day': 1,
+            'startTime': '1:00',
+            'endTime': '23:59',
           },
         ],
       },
