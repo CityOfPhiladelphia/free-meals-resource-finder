@@ -155,6 +155,7 @@ pinboard({
   map: {
     // type: 'leaflet',
     type: 'mapbox',
+    containerClass: 'map-container',
     defaultBasemap: 'pwd',
     center: [ -75.163471, 39.953338 ],
     minZoom: 11,
