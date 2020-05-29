@@ -115,7 +115,7 @@ pinboard({
     weight: 0,
     radius: 8,
     mobileRadius: 12,
-    size: 14,
+    size: 16,
     mobileSize: 20,
   },
   legendControls,
