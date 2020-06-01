@@ -48,7 +48,7 @@ pinboard({
       },
       content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
     },
-    // alertChecks: [
+    alertChecks: [
     //   {
     //     type: 'alertHours',
     //     condition: [
@@ -59,7 +59,7 @@ pinboard({
     //       },
     //     ],
     //   },
-    // ],
+    ],
   },
   app: {
     logoAlt: 'City of Philadelphia',
