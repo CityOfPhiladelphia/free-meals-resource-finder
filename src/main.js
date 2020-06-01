@@ -36,25 +36,11 @@ const customComps = {
 
 pinboard({
   alerts: {
-    // modal: {
-    //   enabled: true,
-    //   header: 'Memorial Day Closures',
-    //   body: '\
-    //     <p><b>Food sites are closed on Monday, May 25 with exception of these 5 locations:</b></p>\
-    //     <p><b>Open student meal sites:</b>\
-    //       <ul>\
-    //     <li>Richard Allen Preparatory Charter School, 10-noon</li>\
-    //     <li>Westpark Apartments, 9-noon</li>\
-    //     <li>Raymond Rosen Manor, 9-noon</li>\
-    //       </ul></p>\
-    //     <p><b>Open outdoor meal sites:</b>\
-    //       <ul>\
-    //     <li>Thomas Paine Plaza, 4-5:30 p.m.</li>\
-    //     <li>Philadelphia Parking Authority Lot, 1-3 p.m.</li>\
-    //       </ul></p>\
-    //     <p><b>Sites that normally distribute on Mondays will distribute on Tuesday, May 26 instead.</b></p>\
-    //   ',
-    // },
+    modal: {
+      enabled: true,
+      header: 'Closures',
+      body: '<p><b>To ensure everyone\'s safety at this time, all food and meal sites will be closed on Monday, June 1.</b></p>',
+    },
     header: {
       type: 'alertBanner',
       enabled: function(state) {
@@ -63,16 +49,16 @@ pinboard({
       content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
     },
     alertChecks: [
-      // {
-      //   type: 'alertHours',
-      //   condition: [
-      //     {
-      //       'day': 1,
-      //       'startTime': '1:00',
-      //       'endTime': '23:59',
-      //     },
-      //   ],
-      // },
+    //   {
+    //     type: 'alertHours',
+    //     condition: [
+    //       {
+    //         'day': 1,
+    //         'startTime': '1:00',
+    //         'endTime': '23:59',
+    //       },
+    //     ],
+    //   },
     ],
   },
   app: {
@@ -95,7 +81,7 @@ pinboard({
     },
   },
   holidays: {
-    // days: [ 'MONDAY' ],
+    days: [ 'MONDAY' ],
     // exceptions: [
     //   'Richard Allen Preparatory Charter School',
     //   'Westpark Apartments',
