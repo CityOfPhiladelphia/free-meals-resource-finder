@@ -38,8 +38,9 @@ pinboard({
   alerts: {
     modal: {
       enabled: true,
-      header: 'Closures',
-      body: '<p><b>To ensure everyone\'s safety at this time, all food and meal sites will be closed on Monday, June 1.</b></p>',
+      header: 'Free food site updates',
+      body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
+            <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
     },
     header: {
       type: 'alertBanner',
