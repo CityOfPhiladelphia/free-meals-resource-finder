@@ -216,7 +216,7 @@ pinboard({
       }
       return value;
     },
-    value: 'Drive-thru.',
+    value: 'dt',
   },
   i18n: {
     enabled: true,
@@ -255,6 +255,11 @@ pinboard({
           breakfastLunch: 'Breakfast and lunch',
           tenMeals: '10 meals per child',
           oneMeal: '1 meal per resident',
+          driveThrough: {
+            dt: 'Drive-thru',
+            wu: 'Walk-up',
+            both: 'Drive-thru & walk-up',
+          },
           sections: {
             foodSites: {
               header: 'Food sites',
@@ -405,6 +410,11 @@ pinboard({
           breakfastLunch: 'desayuno y almuerzo',
           tenMeals: '10 comidas por niño',
           oneMeal: 'comida por residente',
+          driveThrough: {
+            dt: 'En vehículo',
+            wu: 'A pie',
+            both: 'En vehículo y a pie',
+          },
           sections: {
             foodSites: {
               header: 'Lugar de alimentos',
@@ -517,6 +527,11 @@ pinboard({
           breakfastLunch: '早餐和午餐',
           tenMeals: '10 每个儿童的用餐',
           oneMeal: '1 每个居民用餐',
+          driveThrough: {
+            dt: '免下车',
+            wu: '步行',
+            both: '免下车和步行',
+          },
           sections: {
             foodSites: {
               header: '食品地点',
@@ -638,6 +653,11 @@ pinboard({
           breakfastLunch: 'bữa sáng và bữa trưa',
           tenMeals: '10 bữa ăn mỗi trẻ',
           oneMeal: '1 bữa ăn mỗi cư dân',
+          driveThrough: {
+            dt: 'Lái xe qua',
+            wu: 'Đi bộ vào',
+            both: 'Lái xe qua & đi bộ vào',
+          },
           sections: {
             foodSites: {
               header: 'Các điểm phát thực phẩm',
@@ -759,6 +779,11 @@ pinboard({
           breakfastLunch: 'завтрак и обед',
           tenMeals: '10 количество порций на ребенка',
           oneMeal: '1 количество порций на жителя',
+          driveThrough: {
+            dt: 'Без выхода из машины',
+            wu: 'Пункт внутри помещения',
+            both: 'Обслуживание как без выхода из машины, так и внутри помещения',
+          },
           sections: {
             foodSites: {
               header: 'Пункты выдачи продуктов',
@@ -880,6 +905,11 @@ pinboard({
           breakfastLunch: 'petit déjeuner et déjeuner',
           tenMeals: '10 repas par enfant',
           oneMeal: '1 repas par habitant',
+          driveThrough:{
+            dt: 'Drive',
+            wu: 'Guichet',
+            both: 'Drive et guichet',
+          },
           sections: {
             foodSites: {
               header: 'Sites de distribution alimentaire',

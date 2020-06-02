@@ -7,9 +7,12 @@
         :options="mainVerticalTableOptions"
       >
         <div class="table-slot">
-          <div>
-            {{ getPickupDetails(item) }} {{ $t('sections.' + section + '.pickupDetails') }}
-          </div>
+          <span v-if="getPickupDetails(item)">
+            {{ $t('driveThrough.' + getPickupDetails(item)) + '. ' }}
+          </span>
+          <span>
+            {{ $t('sections.' + section + '.pickupDetails') }}
+          </span>
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
