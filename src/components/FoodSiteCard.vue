@@ -8,7 +8,7 @@
       >
         <div class="table-slot">
           <div>
-            {{ $t('sections.' + section + '.pickupDetails') }}
+            {{ getPickupDetails(item) }} {{ $t('sections.' + section + '.pickupDetails') }}
           </div>
           <vertical-table-3-cells-light
             class="print-padding"
@@ -160,6 +160,17 @@ export default {
         id: 'mainTable',
         fields: theFields,
       };
+    },
+  },
+  methods: {
+    getPickupDetails(item) {
+      let value;
+      if (this.$config.pickupDetailsExceptions) {
+        if (this.$config.pickupDetailsExceptions.condition(item)) {
+          value = this.$config.pickupDetailsExceptions.value;
+        }
+      }
+      return value;
     },
   },
 };

@@ -208,6 +208,16 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
   },
+  pickupDetailsExceptions: {
+    condition: function(item) {
+      let value = false;
+      if (item.attributes.Site_Key === 163) {
+        value = true;
+      }
+      return value;
+    },
+    value: 'Drive-thru.',
+  },
   i18n: {
     enabled: true,
     data: {
