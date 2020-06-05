@@ -36,12 +36,12 @@ const customComps = {
 
 pinboard({
   alerts: {
-    modal: {
-      enabled: true,
-      header: 'Free food site updates',
-      body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
-            <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
-    },
+    // modal: {
+    //   enabled: true,
+    //   header: 'Free food site updates',
+    //   body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
+    //         <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
+    // },
     header: {
       type: 'alertBanner',
       enabled: function(state) {
