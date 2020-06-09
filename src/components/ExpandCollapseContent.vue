@@ -16,6 +16,7 @@
     </div>
 
     <div class="cell medium-12">
+      <!-- v-if="getCategory(item)" -->
       <div
         v-if="item.attributes.CATEGORY"
         class="grid-x detail"
@@ -27,6 +28,7 @@
           class="small-22"
           v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
         />
+        <!-- v-html="$t('sections.' + section + '.subsections[\'' + getCategory(item) + '\'].name')" -->
       </div>
 
       <div
@@ -144,6 +146,20 @@ export default {
     parseAddress(address) {
       const formattedAddress = address.replace(/(Phila.+)/g, city => `<div>${city}</div>`).replace(/^\d+\s[A-z]+\s[A-z]+/g, lineOne => `<div>${lineOne}</div>`).replace(/,/, '');
       return formattedAddress;
+    },
+    getCategory(item) {
+      let value;
+      if (this.$config.categoryExceptions) {
+        if (this.$config.categoryExceptions.condition(item)) {
+          value = this.$config.categoryExceptions.value;
+          // console.log('getCategory is running, item:', item, 'value:', value);
+        } else {
+          value = item.attributes.CATEGORY;
+        }
+      } else {
+        value = item.attributes.CATEGORY;
+      }
+      return value;
     },
   },
 };

@@ -67,22 +67,9 @@ pinboard({
   alerts: {
     // modal: {
     //   enabled: true,
-    //   header: 'Memorial Day Closures',
-    //   body: '\
-    //     <p><b>Food sites are closed on Monday, May 25 with exception of these 5 locations:</b></p>\
-    //     <p><b>Open student meal sites:</b>\
-    //       <ul>\
-    //     <li>Richard Allen Preparatory Charter School, 10-noon</li>\
-    //     <li>Westpark Apartments, 9-noon</li>\
-    //     <li>Raymond Rosen Manor, 9-noon</li>\
-    //       </ul></p>\
-    //     <p><b>Open outdoor meal sites:</b>\
-    //       <ul>\
-    //     <li>Thomas Paine Plaza, 4-5:30 p.m.</li>\
-    //     <li>Philadelphia Parking Authority Lot, 1-3 p.m.</li>\
-    //       </ul></p>\
-    //     <p><b>Sites that normally distribute on Mondays will distribute on Tuesday, May 26 instead.</b></p>\
-    //   ',
+    //   header: 'Free food site updates',
+    //   body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
+    //         <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
     // },
     header: {
       type: 'alertBanner',
@@ -92,16 +79,16 @@ pinboard({
       content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
     },
     alertChecks: [
-      // {
-      //   type: 'alertHours',
-      //   condition: [
-      //     {
-      //       'day': 1,
-      //       'startTime': '1:00',
-      //       'endTime': '23:59',
-      //     },
-      //   ],
-      // },
+    //   {
+    //     type: 'alertHours',
+    //     condition: [
+    //       {
+    //         'day': 1,
+    //         'startTime': '1:00',
+    //         'endTime': '23:59',
+    //       },
+    //     ],
+    //   },
     ],
   },
   markerType: 'circle-marker',
@@ -303,6 +290,16 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
   },
+  pickupDetailsExceptions: {
+    condition: function(item) {
+      let value = false;
+      if (item.attributes.Site_Key === 163) {
+        value = true;
+      }
+      return value;
+    },
+    value: 'dt',
+  },
   i18n: {
     enabled: true,
     data: {
@@ -340,6 +337,11 @@ pinboard({
           breakfastLunch: 'Breakfast and lunch',
           tenMeals: '10 meals per child',
           oneMeal: '1 meal per resident',
+          driveThrough: {
+            dt: 'Drive-thru',
+            wu: 'Walk-up',
+            both: 'Drive-thru & walk-up',
+          },
           sections: {
             foodSites: {
               header: 'Food sites',
@@ -490,6 +492,11 @@ pinboard({
           breakfastLunch: 'desayuno y almuerzo',
           tenMeals: '10 comidas por niño',
           oneMeal: 'comida por residente',
+          driveThrough: {
+            dt: 'En vehículo',
+            wu: 'A pie',
+            both: 'En vehículo y a pie',
+          },
           sections: {
             foodSites: {
               header: 'Lugar de alimentos',
@@ -602,6 +609,11 @@ pinboard({
           breakfastLunch: '早餐和午餐',
           tenMeals: '10 每个儿童的用餐',
           oneMeal: '1 每个居民用餐',
+          driveThrough: {
+            dt: '免下车',
+            wu: '步行',
+            both: '免下车和步行',
+          },
           sections: {
             foodSites: {
               header: '食品地点',
@@ -723,6 +735,11 @@ pinboard({
           breakfastLunch: 'bữa sáng và bữa trưa',
           tenMeals: '10 bữa ăn mỗi trẻ',
           oneMeal: '1 bữa ăn mỗi cư dân',
+          driveThrough: {
+            dt: 'Lái xe qua',
+            wu: 'Đi bộ vào',
+            both: 'Lái xe qua & đi bộ vào',
+          },
           sections: {
             foodSites: {
               header: 'Các điểm phát thực phẩm',
@@ -844,6 +861,11 @@ pinboard({
           breakfastLunch: 'завтрак и обед',
           tenMeals: '10 количество порций на ребенка',
           oneMeal: '1 количество порций на жителя',
+          driveThrough: {
+            dt: 'Без выхода из машины',
+            wu: 'Пункт внутри помещения',
+            both: 'Обслуживание как без выхода из машины, так и внутри помещения',
+          },
           sections: {
             foodSites: {
               header: 'Пункты выдачи продуктов',
@@ -965,6 +987,11 @@ pinboard({
           breakfastLunch: 'petit déjeuner et déjeuner',
           tenMeals: '10 repas par enfant',
           oneMeal: '1 repas par habitant',
+          driveThrough:{
+            dt: 'Drive',
+            wu: 'Guichet',
+            both: 'Drive et guichet',
+          },
           sections: {
             foodSites: {
               header: 'Sites de distribution alimentaire',

@@ -7,9 +7,12 @@
         :options="mainVerticalTableOptions"
       >
         <div class="table-slot">
-          <div>
+          <span v-if="getPickupDetails(item)">
+            {{ $t('driveThrough.' + getPickupDetails(item)) + '. ' }}
+          </span>
+          <span>
             {{ $t('sections.' + section + '.pickupDetails') }}
-          </div>
+          </span>
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
@@ -160,6 +163,17 @@ export default {
         id: 'mainTable',
         fields: theFields,
       };
+    },
+  },
+  methods: {
+    getPickupDetails(item) {
+      let value;
+      if (this.$config.pickupDetailsExceptions) {
+        if (this.$config.pickupDetailsExceptions.condition(item)) {
+          value = this.$config.pickupDetailsExceptions.value;
+        }
+      }
+      return value;
     },
   },
 };
