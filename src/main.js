@@ -35,6 +35,35 @@ const customComps = {
 };
 
 pinboard({
+  app: {
+    logoAlt: 'City of Philadelphia',
+    type: 'covidFreeMealSites',
+  },
+  comboSearch: {
+    dropdown: [ 'address' ],
+  },
+  locationInfo: {
+    siteName: function(item) {
+      return item.attributes.site_name;
+    },
+  },
+  customComps,
+  refine: {
+    type: 'categoryField_value',
+    value: function(item) {
+      return item.attributes.category_type;
+    },
+  },
+  holidays: {
+    // days: [ 'MONDAY' ],
+    // exceptions: [
+    //   'Richard Allen Preparatory Charter School',
+    //   'Westpark Apartments',
+    //   'Raymond Rosen Manor',
+    //   'Thomas Paine Plaza',
+    //   'Philadephila Parking Authority lot',
+    // ],
+  },
   alerts: {
     // modal: {
     //   enabled: true,
@@ -62,35 +91,6 @@ pinboard({
     //   },
     ],
   },
-  app: {
-    logoAlt: 'City of Philadelphia',
-    type: 'covidFreeMealSites',
-  },
-  comboSearch: {
-    dropdown: [ 'address' ],
-  },
-  locationInfo: {
-    siteName: function(item) {
-      return item.attributes.site_name;
-    },
-  },
-  customComps,
-  refine: {
-    type: 'categoryField_value',
-    value: function(item) {
-      return item.attributes.category_type;
-    },
-  },
-  holidays: {
-    days: [ 'MONDAY' ],
-    // exceptions: [
-    //   'Richard Allen Preparatory Charter School',
-    //   'Westpark Apartments',
-    //   'Raymond Rosen Manor',
-    //   'Thomas Paine Plaza',
-    //   'Philadephila Parking Authority lot',
-    // ],
-  },
   markerType: 'circle-marker',
   circleMarkers:{
     circleColors: {
@@ -102,6 +102,8 @@ pinboard({
     weight: 0,
     radius: 8,
     mobileRadius: 12,
+    size: 16,
+    mobileSize: 20,
   },
   legendControls,
   baseConfig: BASE_CONFIG_URL,
@@ -140,8 +142,15 @@ pinboard({
     },
   },
   map: {
+    // type: 'leaflet',
+    type: 'mapbox',
+    containerClass: 'map-container',
     defaultBasemap: 'pwd',
     center: [ -75.163471, 39.953338 ],
+    minZoom: 11,
+    maxZoom: 25,
+    shouldInitialize: true,
+
     zoom: 12,
     geocodeZoom: 15,
     imagery: {
@@ -161,6 +170,79 @@ pinboard({
       cityBasemapLabels: {
         url: 'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels/MapServer',
         zIndex: '3',
+      },
+    },
+  },
+  mbStyle: {
+    version: 8,
+    sources: {
+      pwd: {
+        tiles: [
+          'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap/MapServer/tile/{z}/{y}/{x}',
+        ],
+        type: 'raster',
+        tileSize: 256,
+      },
+    },
+    layers: [
+      {
+        id: 'pwd',
+        type: 'raster',
+        source: 'pwd',
+      },
+    ],
+  },
+  basemapSources: {
+    pwd: {
+      source: {
+        tiles: [
+          'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap/MapServer/tile/{z}/{y}/{x}',
+          // '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels/MapServer/tile/{z}/{y}/{x}'
+        ],
+        type: 'raster',
+        tileSize: 256,
+      },
+      layer: {
+        id: 'pwd',
+        type: 'raster',
+      },
+    },
+    imagery2019: {
+      source: {
+        tiles: [
+          'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2019_3in/MapServer/tile/{z}/{y}/{x}',
+          // '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels/MapServer/tile/{z}/{y}/{x}'
+        ],
+        type: 'raster',
+        tileSize: 256,
+      },
+      layer: {
+        id: 'imagery2019',
+        type: 'raster',
+      },
+    },
+  },
+  basemapLabelSources:{
+    cityBasemapLabels: {
+      source: {
+        tiles: [ 'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels/MapServer/tile/{z}/{y}/{x}' ],
+        type: 'raster',
+        tileSize: 256,
+      },
+      layer: {
+        id: 'cityBasemapLabels',
+        type: 'raster',
+      },
+    },
+    imageryBasemapLabels: {
+      source: {
+        tiles: [ 'https://tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_Labels/MapServer/tile/{z}/{y}/{x}' ],
+        type: 'raster',
+        tileSize: 256,
+      },
+      layer: {
+        id: 'imageryBasemapLabels',
+        type: 'raster',
       },
     },
   },
