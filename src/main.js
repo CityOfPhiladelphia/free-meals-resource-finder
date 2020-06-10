@@ -19,11 +19,12 @@ import pinboard from '@phila/pinboard/src/main.js';
 import legendControls from './general/legendControls';
 
 // data-sources
-import seniorSites from './data-sources/senior-sites';
-import distributionSites from './data-sources/distribution-sites';
-import schoolMealSites from './data-sources/school-meal-sites';
-import youthActivitySites from './data-sources/youth-activity-sites';
+// import seniorSites from './data-sources/senior-sites';
+// import distributionSites from './data-sources/distribution-sites';
+// import schoolMealSites from './data-sources/school-meal-sites';
+// import youthActivitySites from './data-sources/youth-activity-sites';
 import covidFreeMealSites from './data-sources/covid-free-meal-sites';
+import parksSites from './data-sources/parks-sites.js';
 import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
@@ -37,21 +38,40 @@ const customComps = {
 pinboard({
   app: {
     logoAlt: 'City of Philadelphia',
-    type: 'covidFreeMealSites',
+    // type: 'covidFreeMealSites',
+    type: 'compiled',
   },
   comboSearch: {
     dropdown: [ 'address' ],
   },
   locationInfo: {
     siteName: function(item) {
-      return item.attributes.site_name;
+      let value;
+      if (item.attributes.site_name) {
+        value = item.attributes.site_name;
+      } else if (item.attributes.SITE_NAME) {
+        value = item.attributes.SITE_NAME;
+      }
+      return value;
     },
   },
   customComps,
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      return item.attributes.category_type;
+      // console.log('value is running, item:', item);
+      let value;
+      // if (item.category_type) {
+      //   value = item.category_type;
+      // } else if (item.CATEGORY_TYPE) {
+      //   value = item.CATEGORY_TYPE;
+      // }
+      if (item.attributes.category_type) {
+        value = item.attributes.category_type;
+      } else if (item.attributes.CATEGORY_TYPE) {
+        value = item.attributes.CATEGORY_TYPE;
+      }
+      return value;
     },
   },
   holidays: {
@@ -118,11 +138,19 @@ pinboard({
   },
   dataSources: {
     covidFreeMealSites,
+    parksSites,
+    compiled,
   },
   router: {
     enabled: false,
   },
-  projection: '3857',
+  projection: function(item) {
+    if (item._featureId.includes('covidFreeMealSites')) {
+      return '3857';
+    } else if (item._featureId.includes('parksSites')) {
+      return '2272';
+    }
+  },
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
@@ -257,7 +285,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'Play Streets' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -289,6 +317,7 @@ pinboard({
     'PCA': 'seniorMealSites',
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
+    'Play Streets': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
@@ -381,6 +410,10 @@ pinboard({
                   pickupDetails: '',
                 },
                 'PPR_StudentMeals': {
+                  name: 'Philadelphia Parks & Recreation centers',
+                  pickupDetails: '',
+                },
+                'Play Streets': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },
