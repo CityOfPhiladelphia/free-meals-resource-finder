@@ -72,7 +72,15 @@ pinboard({
             <ul>\
             <li>John B. Kelly School. </li>\
             <li>Russell Conwell Middle School.</li>\
-            </ul>',
+            </ul>\
+            <p>July 2 is the last day for free meal distribution at: </p>\
+            <ul><li>William L. Sayre High School. </li>\
+            <li>Thomas K. Finletter School. </li>\
+            <li>Overbrook Educational Center. </li>\
+            <li>Roxborough High School. </li>\
+            <li>Tanner Duckrey School. </li>\
+            <li>Mary McLeod Bethune School. </li></ul>',
+
     },
     header: {
       type: 'alertBanner',
