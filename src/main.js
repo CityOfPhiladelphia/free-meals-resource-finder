@@ -285,7 +285,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'Play Streets' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -317,7 +317,7 @@ pinboard({
     'PCA': 'seniorMealSites',
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
-    'Play Streets': 'studentMealSites',
+    'playstreets': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
@@ -413,7 +413,7 @@ pinboard({
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },
-                'Play Streets': {
+                'playstreets': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                 },

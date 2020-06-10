@@ -1,16 +1,19 @@
 <template>
   <div class="grid-x grid-padding-x">
     <div class="cell medium-12">
+      <!-- v-if="item.attributes.address" -->
       <div
-        v-if="item.attributes.address"
+        v-if="address"
         class="grid-x detail"
       >
         <div class="small-2">
           <font-awesome-icon icon="map-marker-alt" />
         </div>
         <div class="small-22">
-          {{ item.attributes.address }}<br>
-          Philadelphila, PA {{ item.attributes.ZIP2 }}
+          <!-- {{ item.attributes.address }}<br> -->
+          {{ address }}<br>
+          <!-- Philadelphila, PA {{ item.attributes.ZIP2 }} -->
+          Philadelphila, PA {{ zipcode }}
         </div>
       </div>
     </div>
@@ -140,6 +143,24 @@ export default {
     },
     subsection() {
       return this.$props.item.attributes.CATEGORY;
+    },
+    address() {
+      let value;
+      if (this.$props.item.attributes.address) {
+        value = this.$props.item.attributes.address;
+      } else if (this.$props.item.attributes.ADDRESS) {
+        value = this.$props.item.attributes.ADDRESS;
+      }
+      return value;
+    },
+    zipcode() {
+      let value;
+      if (this.$props.item.attributes.ZIP2) {
+        value = this.$props.item.attributes.ZIP2;
+      } else if (this.$props.item.attributes.ZIP_CODE) {
+        value = this.$props.item.attributes.ZIP_CODE;
+      }
+      return value;
     },
   },
   methods: {
