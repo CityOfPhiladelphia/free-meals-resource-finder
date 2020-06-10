@@ -65,12 +65,15 @@ pinboard({
     // ],
   },
   alerts: {
-    // modal: {
-    //   enabled: true,
-    //   header: 'Free food site updates',
-    //   body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
-    //         <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
-    // },
+    modal: {
+      enabled: true,
+      header: 'School meal site closures ',
+      body: '<p>June 11 is the last day of free meal distribution at: </p>\
+            <ul>\
+            <li>John B. Kelly School. </li>\
+            <li>Russell Conwell Middle School.</li>\
+            </ul>',
+    },
     header: {
       type: 'alertBanner',
       enabled: function(state) {
