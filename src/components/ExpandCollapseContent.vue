@@ -149,7 +149,7 @@ export default {
       if (this.$props.item._featureId.includes('covidFreeMealSites')) {
         value = this.$props.item.attributes.address;
       } else if (this.$props.item._featureId.includes('parksSites')) {
-        value = transforms.titleCase.transform(this.$props.item.attributes.SITE_NAME);
+        value = transforms.titleCase.transform(this.$props.item.attributes.site_name);
       }
       return value;
     },

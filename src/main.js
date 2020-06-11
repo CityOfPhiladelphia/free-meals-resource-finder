@@ -51,7 +51,7 @@ pinboard({
       if (item._featureId.includes('covidFreeMealSites')) {
         value = item.attributes.site_name;
       } else if (item._featureId.includes('parksSites')) {
-        value = transforms.titleCase.transform(item.attributes.SITE_NAME);
+        value = transforms.titleCase.transform(item.attributes.site_name);
       }
       return value;
     },
@@ -415,7 +415,7 @@ pinboard({
                   pickupDetails: '',
                 },
                 'playstreets': {
-                  name: 'Philadelphia Parks & Recreation centers',
+                  name: 'Playstreets',
                   pickupDetails: '',
                 },
               },
