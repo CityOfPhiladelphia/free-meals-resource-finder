@@ -93,6 +93,11 @@
       :item="item"
     />
 
+    <playstreets-school-card
+      v-if="subsection === 'playstreets'"
+      :item="item"
+    />
+
     <outdoor-site-card
       v-if="section === 'outdoorMealSites'"
       :item="item"
@@ -110,6 +115,7 @@ import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
 import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
+import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import OutdoorSiteCard from './OutdoorSiteCard.vue';
 
 export default {
@@ -121,6 +127,7 @@ export default {
     PprSchoolCard,
     PsdSchoolCard,
     PhaSchoolCard,
+    PlaystreetsSchoolCard,
     OutdoorSiteCard,
   },
   props: {
