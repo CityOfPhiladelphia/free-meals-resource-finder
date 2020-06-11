@@ -146,10 +146,10 @@ export default {
     },
     address() {
       let value;
-      if (this.$props.item.attributes.address) {
+      if (this.$props.item._featureId.includes('covidFreeMealSites')) {
         value = this.$props.item.attributes.address;
-      } else if (this.$props.item.attributes.ADDRESS) {
-        value = this.$props.item.attributes.ADDRESS;
+      } else if (this.$props.item._featureId.includes('parksSites')) {
+        value = transforms.titleCase.transform(this.$props.item.attributes.SITE_NAME);
       }
       return value;
     },

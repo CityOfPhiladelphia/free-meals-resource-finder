@@ -45,12 +45,13 @@ pinboard({
     dropdown: [ 'address' ],
   },
   locationInfo: {
-    siteName: function(item) {
+    siteName: function(item, transforms) {
+      // console.log('in locationInfo.siteName, transforms:', transforms);
       let value;
-      if (item.attributes.site_name) {
+      if (item._featureId.includes('covidFreeMealSites')) {
         value = item.attributes.site_name;
-      } else if (item.attributes.SITE_NAME) {
-        value = item.attributes.SITE_NAME;
+      } else if (item._featureId.includes('parksSites')) {
+        value = transforms.titleCase.transform(item.attributes.SITE_NAME);
       }
       return value;
     },
