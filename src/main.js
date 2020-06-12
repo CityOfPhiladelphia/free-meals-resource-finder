@@ -416,7 +416,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: '',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                 },
               },
             },
@@ -564,6 +564,10 @@ pinboard({
                   name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                },
               },
             },
             seniorMealSites: {
@@ -680,6 +684,10 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: '费城公园和娱乐中心',
                   pickupDetails: '',
+                },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                 },
               },
             },
@@ -807,6 +815,10 @@ pinboard({
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                },
               },
             },
             seniorMealSites: {
@@ -933,6 +945,10 @@ pinboard({
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                },
               },
             },
             seniorMealSites: {
@@ -1058,6 +1074,10 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: '',
+                },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                 },
               },
             },
