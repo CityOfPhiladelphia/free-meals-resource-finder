@@ -67,13 +67,8 @@ pinboard({
   alerts: {
     modal: {
       enabled: true,
-      header: 'School meal site closures ',
-      body: '<p>June 11 is the last day of free meal distribution at: </p>\
-            <ul>\
-            <li>John B. Kelly School. </li>\
-            <li>Russell Conwell Middle School.</li>\
-            </ul>\
-            <p>July 2 is the last day for free meal distribution at: </p>\
+      header: 'Student meal site closures ',
+      body: '<p>July 2 is the last day for free meal distribution at: </p>\
             <ul><li>William L. Sayre High School. </li>\
             <li>Thomas K. Finletter School. </li>\
             <li>Overbrook Educational Center. </li>\
