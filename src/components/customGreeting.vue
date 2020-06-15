@@ -97,11 +97,12 @@ export default {
 
     },
     database() {
-      if (this.$store.state.sources[this.$appType].data) {
-        return this.$store.state.sources[this.$appType].data.rows || this.$store.state.sources[this.$appType].data.features || this.$store.state.sources[this.$appType].data;
+      if (this.$store.state.sources[this.$appType]) {
+        if (this.$store.state.sources[this.$appType].data) {
+          return this.$store.state.sources[this.$appType].data.rows || this.$store.state.sources[this.$appType].data.features || this.$store.state.sources[this.$appType].data;
+        }
       }
       return [];
-
     },
     hasError() {
       return this.$store.state.geocode.status === 'error';
@@ -153,6 +154,9 @@ export default {
         } else if (arrayElem.attributes.CATEGORY) {
           service += `${arrayElem.attributes.CATEGORY},`;
         }
+        // } else if (arrayElem.CATEGORY) {
+        //   service += `${arrayElem.CATEGORY},`;
+        // }
       });
 
       // TODO: break this into smaller chunks

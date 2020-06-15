@@ -5,6 +5,12 @@
 // (we might not need to use axios with new vue async tools)
 // if that is not needed, we can move this info to main.js
 
+// turn off console logging in production
+const { hostname='' } = location;
+if (hostname !== 'localhost' && !hostname.match(/(\d+\.){3}\d+/)) {
+  console.log = console.info = console.debug = console.error = function () {};
+}
+
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
@@ -19,11 +25,12 @@ import pinboard from '@phila/pinboard/src/main.js';
 import legendControls from './general/legendControls';
 
 // data-sources
-import seniorSites from './data-sources/senior-sites';
-import distributionSites from './data-sources/distribution-sites';
-import schoolMealSites from './data-sources/school-meal-sites';
-import youthActivitySites from './data-sources/youth-activity-sites';
+// import seniorSites from './data-sources/senior-sites';
+// import distributionSites from './data-sources/distribution-sites';
+// import schoolMealSites from './data-sources/school-meal-sites';
+// import youthActivitySites from './data-sources/youth-activity-sites';
 import covidFreeMealSites from './data-sources/covid-free-meal-sites';
+import parksSites from './data-sources/parks-sites.js';
 import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
@@ -37,21 +44,41 @@ const customComps = {
 pinboard({
   app: {
     logoAlt: 'City of Philadelphia',
-    type: 'covidFreeMealSites',
+    // type: 'covidFreeMealSites',
+    type: 'compiled',
   },
   comboSearch: {
     dropdown: [ 'address' ],
   },
   locationInfo: {
-    siteName: function(item) {
-      return item.attributes.site_name;
+    siteName: function(item, transforms) {
+      // console.log('in locationInfo.siteName, transforms:', transforms);
+      let value;
+      if (item._featureId.includes('covidFreeMealSites')) {
+        value = item.attributes.site_name;
+      } else if (item._featureId.includes('parksSites')) {
+        value = transforms.titleCase.transform(item.attributes.site_name);
+      }
+      return value;
     },
   },
   customComps,
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      return item.attributes.category_type;
+      // console.log('value is running, item:', item);
+      let value;
+      // if (item.category_type) {
+      //   value = item.category_type;
+      // } else if (item.CATEGORY_TYPE) {
+      //   value = item.CATEGORY_TYPE;
+      // }
+      if (item.attributes.category_type) {
+        value = item.attributes.category_type;
+      } else if (item.attributes.CATEGORY_TYPE) {
+        value = item.attributes.CATEGORY_TYPE;
+      }
+      return value;
     },
   },
   holidays: {
@@ -124,11 +151,19 @@ pinboard({
   },
   dataSources: {
     covidFreeMealSites,
+    parksSites,
+    compiled,
   },
   router: {
     enabled: false,
   },
-  projection: '3857',
+  projection: function(item) {
+    if (item._featureId.includes('covidFreeMealSites')) {
+      return '3857';
+    } else if (item._featureId.includes('parksSites')) {
+      return '2272';
+    }
+  },
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
@@ -263,7 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -295,6 +330,7 @@ pinboard({
     'PCA': 'seniorMealSites',
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
+    'playstreets': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
@@ -389,6 +425,11 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
+                },
+                'playstreets': {
+                  name: 'Playstreets',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                 },
               },
             },
@@ -536,6 +577,10 @@ pinboard({
                   name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
+                },
               },
             },
             seniorMealSites: {
@@ -652,6 +697,10 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: '费城公园和娱乐中心',
                   pickupDetails: '',
+                },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
                 },
               },
             },
@@ -779,6 +828,10 @@ pinboard({
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
+                },
               },
             },
             seniorMealSites: {
@@ -905,6 +958,10 @@ pinboard({
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
                   pickupDetails: '',
                 },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
+                },
               },
             },
             seniorMealSites: {
@@ -1030,6 +1087,10 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: '',
+                },
+                'playstreets': {
+                  name: 'Playstreets',
+                  pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
                 },
               },
             },

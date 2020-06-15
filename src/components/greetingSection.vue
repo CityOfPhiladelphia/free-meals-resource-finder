@@ -42,7 +42,9 @@
               v-if="subsectionCountsFromProps[subsection]"
             >
               <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
+              <!-- v-if="$t('sections.' + header + '.subsections.' + subsection + '.showPickupDetailsInGreeting')" -->
               <div
+                v-if="!$config.i18n.data.messages['en-US'].sections[header].subsections[subsection].hidePickupDetailsInGreeting"
                 v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
               />
             </div>

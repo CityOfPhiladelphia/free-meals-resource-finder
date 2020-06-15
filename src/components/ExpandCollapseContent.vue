@@ -1,16 +1,19 @@
 <template>
   <div class="grid-x grid-padding-x">
     <div class="cell medium-12">
+      <!-- v-if="item.attributes.address" -->
       <div
-        v-if="item.attributes.address"
+        v-if="address"
         class="grid-x detail"
       >
         <div class="small-2">
           <font-awesome-icon icon="map-marker-alt" />
         </div>
         <div class="small-22">
-          {{ item.attributes.address }}<br>
-          Philadelphila, PA {{ item.attributes.ZIP2 }}
+          <!-- {{ item.attributes.address }}<br> -->
+          {{ address }}<br>
+          <!-- Philadelphila, PA {{ item.attributes.ZIP2 }} -->
+          Philadelphila, PA {{ zipcode }}
         </div>
       </div>
     </div>
@@ -90,6 +93,11 @@
       :item="item"
     />
 
+    <playstreets-school-card
+      v-if="subsection === 'playstreets'"
+      :item="item"
+    />
+
     <outdoor-site-card
       v-if="section === 'outdoorMealSites'"
       :item="item"
@@ -107,6 +115,7 @@ import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
 import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
+import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import OutdoorSiteCard from './OutdoorSiteCard.vue';
 
 export default {
@@ -118,6 +127,7 @@ export default {
     PprSchoolCard,
     PsdSchoolCard,
     PhaSchoolCard,
+    PlaystreetsSchoolCard,
     OutdoorSiteCard,
   },
   props: {
@@ -140,6 +150,24 @@ export default {
     },
     subsection() {
       return this.$props.item.attributes.CATEGORY;
+    },
+    address() {
+      let value;
+      if (this.$props.item._featureId.includes('covidFreeMealSites')) {
+        value = this.$props.item.attributes.address;
+      } else if (this.$props.item._featureId.includes('parksSites')) {
+        value = transforms.titleCase.transform(this.$props.item.attributes.site_name);
+      }
+      return value;
+    },
+    zipcode() {
+      let value;
+      if (this.$props.item.attributes.ZIP2) {
+        value = this.$props.item.attributes.ZIP2;
+      } else if (this.$props.item.attributes.ZIP_CODE) {
+        value = this.$props.item.attributes.ZIP_CODE;
+      }
+      return value;
     },
   },
   methods: {
