@@ -5,6 +5,12 @@
 // (we might not need to use axios with new vue async tools)
 // if that is not needed, we can move this info to main.js
 
+// turn off console logging in production
+const { hostname='' } = location;
+if (hostname !== 'localhost' && !hostname.match(/(\d+\.){3}\d+/)) {
+  console.log = console.info = console.debug = console.error = function () {};
+}
+
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
@@ -86,12 +92,18 @@ pinboard({
     // ],
   },
   alerts: {
-    // modal: {
-    //   enabled: true,
-    //   header: 'Free food site updates',
-    //   body: '<p>City-supported food sites will be open 10 a.m. – noon on Tuesday, June 2, and Thursday, June 4.</p>\
-    //         <p>Student and senior meal sites, as well as deliveries, will resume regular schedules.</p>',
-    // },
+    modal: {
+      enabled: true,
+      header: 'Student meal site closures ',
+      body: '<p>July 2 is the last day for free meal distribution at: </p>\
+            <ul><li>William L. Sayre High School. </li>\
+            <li>Thomas K. Finletter School. </li>\
+            <li>Overbrook Educational Center. </li>\
+            <li>Roxborough High School. </li>\
+            <li>Tanner Duckrey School. </li>\
+            <li>Mary McLeod Bethune School. </li></ul>',
+
+    },
     header: {
       type: 'alertBanner',
       enabled: function(state) {
@@ -416,6 +428,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                 },
               },
@@ -566,7 +579,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a. m. a 4:00 p. m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
                 },
               },
             },
@@ -687,7 +700,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
                 },
               },
             },
@@ -817,7 +830,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
                 },
               },
             },
@@ -947,7 +960,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
                 },
               },
             },
@@ -1077,7 +1090,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
                 },
               },
             },
