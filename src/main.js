@@ -579,7 +579,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a. m. a 4:00 p. m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
+                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
                 },
               },
             },
