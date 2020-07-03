@@ -94,14 +94,9 @@ pinboard({
   alerts: {
     modal: {
       enabled: true,
-      header: 'Student meal site closures ',
-      body: '<p>July 2 is the last day for free meal distribution at: </p>\
-            <ul><li>William L. Sayre High School. </li>\
-            <li>Thomas K. Finletter School. </li>\
-            <li>Overbrook Educational Center. </li>\
-            <li>Roxborough High School. </li>\
-            <li>Tanner Duckrey School. </li>\
-            <li>Mary McLeod Bethune School. </li></ul>',
+      header: 'Student meal sites',
+      body: '<ul><li>To find a children and youth lunch site near you, text “FOOD” or “COMIDA” to 877-877.</li>\
+            <li>Additional summer meals for children and youth can also be found at the <a target="_blank" href="http://www.hungercoalition.org/summermeals">Coalition Against Hunger.</a></li></ul>',
 
     },
     header: {
