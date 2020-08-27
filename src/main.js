@@ -399,32 +399,45 @@ pinboard({
             },
             studentMealSites: {
               header: 'Student meal sites',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
-              pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map. \
-              Students who attend the following charter schools may also pick up from any district school on the map:\
-                <ul><li> KIPP West Philadelphia Preparatory Charter School </li> \
-                <li>Philadelphia Electrical and Technology Charter School</li> \
-                <li>Mathematics, Civics and Sciences Charter School </li> \
-                <li>Preparatory Charter School of Mathematics, Science, Technology and Careers </li> \
-                <li>Multicultural Academy Charter School </li></ul>All other students must contact their school for information on meal distribution.\
-              ',
+              eligibility: 'Check the specific site information.',
+              pickupDetails: '',
               subsections: {
                 'PSD': {
                   name: 'Philadelphia School District schools',
-                  pickupDetails: '',
+                  pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map. \
+                  Students who attend the following charter schools may also pick up from any district school on the map:\
+                    <ul><li> KIPP West Philadelphia Preparatory Charter School </li> \
+                    <li>Philadelphia Electrical and Technology Charter School</li> \
+                    <li>Mathematics, Civics and Sciences Charter School </li> \
+                    <li>Preparatory Charter School of Mathematics, Science, Technology and Careers </li> \
+                    <li>Multicultural Academy Charter School </li></ul>All other students must contact their school for information on meal distribution.\
+                  ',        
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+          
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
                   pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+
                 },
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+
+                },
+                'CHARTER': {
+                  name: 'Charter schools',
+                  pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
                 },
               },
             },
@@ -553,28 +566,38 @@ pinboard({
             },
             studentMealSites: {
               header: 'Lugar de comidas para estudiantes',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              eligibility: 'Verifique la información específica del lugar.',
               pickupDetails: 'Los días y horarios varían según el lugar.',
               subsections: {
                 'PSD': {
                   name: 'escuelas del Distrito Escolar de Filadelfia',
                   pickupDetails: '',
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+                  
                 },
                 'PHA': {
                   name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
                   pickupDetails: '',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+
                 },
                 'CHARTER': {
                   name: 'escuelas charter',
                   pickupDetails: '',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+
                 },
                 'PPR_StudentMeals': {
                   name: 'centros de Parques y Recreación de Filadelfia',
                   pickupDetails: '',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+
                 },
               },
             },
@@ -674,28 +697,37 @@ pinboard({
             },
             studentMealSites: {
               header: '学生用餐场所',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              eligibility: '查看特定场所的信息。',
               pickupDetails: '日期和时间会根据场所而有所不同。',
               subsections: {
                 'PSD': {
                   name: '费城学区',
-                  pickupDetails: '',
+                  pickupDetails: '',                  
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',                  
                 },
                 'PHA': {
                   name: '费城住房管理局(PHA)社区中心',
                   pickupDetails: '',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+
                 },
                 'CHARTER': {
                   name: '特许学校',
                   pickupDetails: '',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+
                 },
                 'PPR_StudentMeals': {
                   name: '费城公园和娱乐中心',
                   pickupDetails: '',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+
                 },
               },
             },
@@ -793,7 +825,7 @@ pinboard({
           sections: {
             foodSites: {
               header: 'Các điểm phát thực phẩm',
-              eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
+              eligibility: 'Kiểm tra thông tin địa điểm cụ thể. ',
               pickupDetails: 'Các cư dân có thể nhận một hộp cho mỗi hộ gia đình.',
               subsections: {
                 'PPR': {
@@ -804,28 +836,38 @@ pinboard({
             },
             studentMealSites: {
               header: 'Các điểm phát bữa ăn học sinh',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              eligibility: 'Kiểm tra thông tin địa điểm cụ thể.',
               pickupDetails: 'Ngày và giờ khác nhau giữa các điểm',
               subsections: {
                 'PSD': {
                   name: 'Các trường của Học khu Philadelphia',
                   pickupDetails: '',
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
                 },
                 'PHA': {
                   name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
                   pickupDetails: '',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+
                 },
                 'CHARTER': {
                   name: 'Các trường công đặc quyền',
                   pickupDetails: '',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+
                 },
                 'PPR_StudentMeals': {
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
                   pickupDetails: '',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+
                 },
+                
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+
                 },
               },
             },
@@ -923,7 +965,7 @@ pinboard({
           sections: {
             foodSites: {
               header: 'Пункты выдачи продуктов',
-              eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
+              eligibility: 'уточните информацию по конкретному пункту..',
               pickupDetails: 'Местные жители могут получить один продуктовый набор на семью.',
               subsections: {
                 'PPR': {
@@ -940,22 +982,32 @@ pinboard({
                 'PSD': {
                   name: 'Школы школьного округа Филадельфии',
                   pickupDetails: '',
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
                 },
                 'PHA': {
                   name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
                   pickupDetails: '',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+
                 },
                 'CHARTER': {
                   name: 'Чартерные школы',
                   pickupDetails: '',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+
                 },
                 'PPR_StudentMeals': {
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
                   pickupDetails: '',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
+                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',                  
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+
+
                 },
               },
             },
@@ -1064,28 +1116,37 @@ pinboard({
             },
             studentMealSites: {
               header: 'Sites de distribution de repas pour élèves',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              eligibility: 'Consulter les informations concernant le site donné.',
               pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
               subsections: {
                 'PSD': {
                   name: 'Écoles du district scolaire de Philadelphie',
                   pickupDetails: '',
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
                 },
                 'PHA': {
                   name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
                   pickupDetails: '',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+
                 },
                 'CHARTER': {
                   name: 'Écoles à charte',
                   pickupDetails: '',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+
                 },
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: '',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+
                 },
               },
             },
