@@ -400,14 +400,13 @@ pinboard({
             studentMealSites: {
               header: 'Student meal sites',
               eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
-              pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map.\
+              pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map. \
               Students who attend the following charter schools may also pick up from any district school on the map:\
-              KIPP West Philadelphia Preparatory Charter School\
-              Philadelphia Electrical and Technology Charter School\
-              Mathematics, Civics and Sciences Charter School\
-              Preparatory Charter School of Mathematics, Science, Technology and Careers\
-              Multicultural Academy Charter School\
-              All other students must contact their school for information on meal distribution.\
+                <ul><li> KIPP West Philadelphia Preparatory Charter School </li> \
+                <li>Philadelphia Electrical and Technology Charter School</li> \
+                <li>Mathematics, Civics and Sciences Charter School </li> \
+                <li>Preparatory Charter School of Mathematics, Science, Technology and Careers </li> \
+                <li>Multicultural Academy Charter School </li></ul>All other students must contact their school for information on meal distribution.\
               ',
               subsections: {
                 'PSD': {
@@ -554,7 +553,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Lugar de comidas para estudiantes',
-              eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
               pickupDetails: 'Los días y horarios varían según el lugar.',
               subsections: {
                 'PSD': {
@@ -675,7 +674,7 @@ pinboard({
             },
             studentMealSites: {
               header: '学生用餐场所',
-              eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
               pickupDetails: '日期和时间会根据场所而有所不同。',
               subsections: {
                 'PSD': {
@@ -805,7 +804,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Các điểm phát bữa ăn học sinh',
-              eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
               pickupDetails: 'Ngày và giờ khác nhau giữa các điểm',
               subsections: {
                 'PSD': {
@@ -935,7 +934,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Пункты выдачи питания для учащихся',
-              eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
               pickupDetails: 'У каждого пункта свой график работы.',
               subsections: {
                 'PSD': {
@@ -1065,7 +1064,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Sites de distribution de repas pour élèves',
-              eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
               pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
               subsections: {
                 'PSD': {
