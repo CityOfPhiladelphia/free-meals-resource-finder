@@ -58,7 +58,7 @@ export default {
           {
             label: 'eligibility',
             labelType: 'i18n',
-            value: 'sections.' + this.section + '.eligibility',
+            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
             valueType: 'i18n',
           },
           {
