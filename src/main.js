@@ -95,8 +95,7 @@ pinboard({
     modal: {
       enabled: true,
       header: 'Student meal sites',
-      body: '<ul><li>To find a children and youth lunch site near you, text “FOOD” or “COMIDA” to 877-877.</li>\
-            <li>Additional summer meals for children and youth can also be found at the <a target="_blank" href="http://www.hungercoalition.org/summermeals">Coalition Against Hunger.</a></li></ul>',
+      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find a children and youth lunch site near you, text “FOOD” or “COMIDA” to 877-877.</li><li>Additional summer meals for children and youth can also be found at the <a target="_blank" href="http://www.hungercoalition.org/summermeals">Coalition Against Hunger.</a></li></ul>',
 
     },
     header: {
@@ -400,8 +399,16 @@ pinboard({
             },
             studentMealSites: {
               header: 'Student meal sites',
-              eligibility: 'All children and youth are eligible. No ID is required.',
-              pickupDetails: 'Days and times vary by site.',
+              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map.\
+              Students who attend the following charter schools may also pick up from any district school on the map:\
+              KIPP West Philadelphia Preparatory Charter School\
+              Philadelphia Electrical and Technology Charter School\
+              Mathematics, Civics and Sciences Charter School\
+              Preparatory Charter School of Mathematics, Science, Technology and Careers\
+              Multicultural Academy Charter School\
+              All other students must contact their school for information on meal distribution.\
+              ',
               subsections: {
                 'PSD': {
                   name: 'Philadelphia School District schools',
@@ -409,10 +416,6 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
-                  pickupDetails: '',
-                },
-                'CHARTER': {
-                  name: 'Charter schools',
                   pickupDetails: '',
                 },
                 'PPR_StudentMeals': {
