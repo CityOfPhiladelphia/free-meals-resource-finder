@@ -27,9 +27,9 @@
       <template>
         <div class="table-slot">
           <!-- pickupDetails if there are no subsections -->
-          <div>
-            {{ $t('sections.' + header + '.pickupDetails') }}
-          </div>
+          <div
+            v-html="$t('sections.' + header + '.pickupDetails')"
+          />
 
           <!-- subsections -->
           <div
