@@ -148,14 +148,27 @@ export default {
             details = 'freshOnly';
           }
 
-          let dayObject = {
-            label: day,
-            labelType: 'i18n',
-            value: hours,
-            value1: details,
-            value1Type: 'i18n',
-          };
-          theFields.push(dayObject);
+          // let dayObject = {
+          //   label: day,
+          //   labelType: 'i18n',
+          //   value: hours,
+          //   value1: details,
+          //   value1Type: 'i18n',
+          // };
+          //TODO: remove this temporary hack
+
+          if (day === 'THURSDAY') {
+            let dayObject = {
+              label: "THURSDAY", 
+              labelType: "i18n",
+              value: "10AM - 12PM",
+              value1: "",
+              value1Type: "i18n",
+            };
+            theFields.push(dayObject);
+          }
+
+
         }
       }
 
