@@ -156,15 +156,18 @@ export default {
           //   value1Type: 'i18n',
           // };
           //TODO: remove this temporary hack
-          let dayObject = {
-            label: "THURSDAY", 
-            labelType: "i18n",
-            value: "10AM - 12PM",
-            value1: "",
-            value1Type: "i18n",
-          };
 
-          theFields.push(dayObject);
+          if (day === 'THURSDAY') {
+            let dayObject = {
+              label: "THURSDAY", 
+              labelType: "i18n",
+              value: "10AM - 12PM",
+              value1: "",
+              value1Type: "i18n",
+            };
+            theFields.push(dayObject);
+          }
+
 
         }
       }
