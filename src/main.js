@@ -95,7 +95,7 @@ pinboard({
     modal: {
       enabled: true,
       header: 'Student meal sites',
-      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find a children and youth lunch site near you, text “FOOD” or “COMIDA” to 877-877.</li><li>Additional summer meals for children and youth can also be found at the <a target="_blank" href="http://www.hungercoalition.org/summermeals">Coalition Against Hunger.</a></li></ul>',
+      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
     },
     header: {
