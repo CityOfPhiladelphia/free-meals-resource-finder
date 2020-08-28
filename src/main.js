@@ -30,8 +30,8 @@ import legendControls from './general/legendControls';
 // import schoolMealSites from './data-sources/school-meal-sites';
 // import youthActivitySites from './data-sources/youth-activity-sites';
 import covidFreeMealSites from './data-sources/covid-free-meal-sites';
-import parksSites from './data-sources/parks-sites.js';
-import compiled from './data-sources/compiled';
+// import parksSites from './data-sources/parks-sites.js';
+// import compiled from './data-sources/compiled';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
@@ -44,8 +44,8 @@ const customComps = {
 pinboard({
   app: {
     logoAlt: 'City of Philadelphia',
-    // type: 'covidFreeMealSites',
-    type: 'compiled',
+    type: 'covidFreeMealSites',
+    // type: 'compiled',
   },
   comboSearch: {
     dropdown: [ 'address' ],
@@ -143,8 +143,8 @@ pinboard({
   },
   dataSources: {
     covidFreeMealSites,
-    parksSites,
-    compiled,
+    // parksSites,
+    // compiled,
   },
   router: {
     enabled: false,
@@ -411,9 +411,9 @@ pinboard({
                     <li>Mathematics, Civics and Sciences Charter School </li> \
                     <li>Preparatory Charter School of Mathematics, Science, Technology and Careers </li> \
                     <li>Multicultural Academy Charter School </li></ul>All other students must contact their school for information on meal distribution.\
-                  ',        
+                  ',
                   eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
-          
+
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
@@ -573,7 +573,7 @@ pinboard({
                   name: 'escuelas del Distrito Escolar de Filadelfia',
                   pickupDetails: '',
                   eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
-                  
+
                 },
                 'PHA': {
                   name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
@@ -702,8 +702,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: '费城学区',
-                  pickupDetails: '',                  
-                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',                  
+                  pickupDetails: '',
+                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
                 },
                 'PHA': {
                   name: '费城住房管理局(PHA)社区中心',
@@ -862,7 +862,7 @@ pinboard({
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
 
                 },
-                
+
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
@@ -1004,7 +1004,7 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',                  
+                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
 
 
