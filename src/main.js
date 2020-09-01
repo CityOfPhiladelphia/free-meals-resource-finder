@@ -93,7 +93,7 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: true,
+      enabled: false,
       header: 'Student meal sites',
       body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
@@ -404,16 +404,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: 'Philadelphia School District schools',
-                  pickupDetails: 'School District of Philadelphia pre-K–12th grade students may pick up from any district school on the map. \
-                  Students who attend the following charter schools may also pick up from any district school on the map:\
-                    <ul><li>KIPP West Philadelphia Preparatory Charter School</li> \
-                    <li>Philadelphia Electrical and Technology Charter School</li> \
-                    <li>Mathematics, Civics and Sciences Charter School</li> \
-                    <li>Preparatory Charter School of Mathematics, Science, Technology and Careers</li> \
-                    <li>Multicultural Academy Charter School</li></ul> \
-                    All other students must contact their school for information on meal distribution.\
-                  ',
-                  eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+                  pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
 
                 },
                 'PHA': {
@@ -572,16 +564,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: 'escuelas del Distrito Escolar de Filadelfia',
-                  pickupDetails: 'Los estudiantes de preescolar hasta 12.º grado del Distrito Escolar de Filadelfia pueden recogerlo en cualquier escuela del distrito que se encuentre en el mapa.\
-                  Los estudiantes que asistan a alguna de las siguientes escuelas subvencionadas también pueden recogerlo en cualquier escuela del distrito que se encuentre en el mapa: \
-                    <ul><li> KIPP West Philadelphia Preparatory Charter School </li> \
-                    <li>Philadelphia Electrical and Technology Charter School</li> \
-                    <li>Mathematics, Civics and Sciences Charter School </li> \
-                    <li>Preparatory Charter School of Mathematics, Science, Technology and Careers </li> \
-                    <li>Multicultural Academy Charter School </li></ul> \
-                    Los demás estudiantes deben contactarse con su escuela para obtener más información sobre la distribución de comidas.\
-                  ',
-                  eligibility: 'Preescolar hasta 12.º grado. Deben contar con un número de identificación estudiantil del Distrito Escolar de Filadelfia. Los estudiantes no necesitan hacerse presentes.',
+                  pickupDetails: '',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
                 },
                 'PHA': {
@@ -711,16 +695,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: '费城学区',
-                  pickupDetails: '可以从地图上的任意学区学校接送费城学区学前班至 12 年级的学生。\
-                  也可以从地图上的任意学区学校接送就读于以下特许学校的学生：\
-                    <ul><li>知识就是力量计划 (KIPP) 西费城预备特许学校 (West Philadelphia Preparatory Charter School)</li> \
-                    <li>费城电气与技术特许学校 (Philadelphia Electrical and Technology Charter School)</li> \
-                    <li>数学、公民和科学特许学校 (Mathematics, Civics and Sciences Charter School)</li> \
-                    <li>数学、科学、技术和职业预备特许学校 (Preparatory Charter School of Mathematics, Science, Technology and Careers)</li> \
-                    <li>多元文化学院特许学校 (Multicultural Academy Charter School)</li></ul> \
-                    所有其他学生必须与其学校联系以获取有关餐食发放的信息。\
-                  ',
-                  eligibility: '学前班至 12 年级。必须持有费城学区学生 ID 号码。学生无需出示。',
+                  pickupDetails: '',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'PHA': {
                   name: '费城住房管理局(PHA)社区中心',
@@ -858,16 +834,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: 'Các trường của Học khu Philadelphia',
-                  pickupDetails: 'Các học sinh từ mẫu giáo đến lớp 12 thuộc Học khu Philadelphia có thể chọn từ bất kỳ học khu nào trên bản đồ.\
-                  Học sinh nào theo học các trường công đặc quyền sau đây cũng có thể chọn bất kỳ học khu nào trên bản đồ:\
-                    <ul><li>Trường công đặc quyền dự bị KIPP West Philadelphia</li> \
-                    <li>Trương công đặc quyền Kỹ thuật và Công nghệ Philadelphia</li> \
-                    <li>Trường công đặc quyền chuyên toán, công dân và khoa học</li> \
-                    <li>Trường công đặc quyền dự bị chuyên toán, khoa học, kỹ thuật và nghề nghiệp</li> \
-                    <li>Trường công đặc quyền học viện đa văn hóa</li></ul> \
-                    Tất cả các học sinh khác phải liên hệ trường của mình để biết thông tin về việc phân phối bữa ăn.\
-                  ',
-                  eligibility: 'Từ mẫu giáo đến lớp 12. Phải có số ID học sinh của Học khu Philadelphia. Học sinh không cần có mặt.',
+                  pickupDetails: '',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'PHA': {
                   name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
@@ -1006,16 +974,8 @@ pinboard({
               subsections: {
                 'PSD': {
                   name: 'Школы школьного округа Филадельфии',
-                  pickupDetails: 'Учащиеся школьного округа Филадельфии от дошкольного до старшего школьного возраста имеют право забирать питание с территории любой школы округа, которая есть на карте.\
-                  Кроме того, забирать питание из любой школы округа на карте могут школьники, посещающие следующие чартерные школы:\
-                  <ul><li>KIPP West Philadelphia Preparatory Charter School (Подготовительная чартерная школа Западной Филадельфии, являющаяся членом сети KIPP (Knowledge is Power Program — программа «Знание — сила»)</li> \
-                  <li>Philadelphia Electrical and Technology Charter School (Чартерная школа электротехники и технологии Филадельфии)</li> \
-                  <li>Mathematics, Civics and Sciences Charter School (Чартерная школа математики, гражданского права и естественных наук)</li> \
-                  <li>Preparatory Charter School of Mathematics, Science, Technology and Careers (Подготовительная чартерная школа математики, естественных наук, технологии и профориентации)</li> \
-                  <li>Multicultural Academy Charter School (Мультикультурная академическая чартерная школа)</li></ul> \
-                  Всем остальным школьникам для получения информации о распределении питания следует связаться с администрацией своей школы.\
-                  ',
-                  eligibility: 'Требования к учащимся от дошкольного до старшего школьного возраста. Нужно обязательно иметь идентификационный номер учащегося школьного округа Филадельфии. Личное присутствие школьников не обязательно.',
+                  pickupDetails: '',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
                 'PHA': {
                   name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
@@ -1163,7 +1123,7 @@ pinboard({
                     <li>Multicultural Academy Charter School</li></ul> \
                     Tous les autres élèves devront contacter leur école pour en savoir plus sur la distribution des repas.\
                   ',
-                  eligibility: 'Élèves de la maternelle à la 12e année. Numéro d’élève du district scolaire de Philadelphie requis. La présence de l’élève n’est pas obligatoire.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
                 'PHA': {
                   name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
