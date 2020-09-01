@@ -369,7 +369,7 @@ pinboard({
           nonPerish: 'non-perishable items only',
           freshOnly: 'fresh produce only',
           breakfastLunch: 'Breakfast and lunch',
-          tenMeals: '10 meals per child',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: '1 meal per resident',
           driveThrough: {
             dt: 'Drive-thru',
@@ -538,7 +538,7 @@ pinboard({
           nonPerish: 'únicamente alimentos no perecederos',
           freshOnly: 'únicamente productos frescos',
           breakfastLunch: 'desayuno y almuerzo',
-          tenMeals: '10 comidas por niño',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: 'comida por residente',
           driveThrough: {
             dt: 'En vehículo',
@@ -669,7 +669,7 @@ pinboard({
           nonPerish: '仅为非易腐物品',
           freshOnly: '仅为新鲜农产品',
           breakfastLunch: '早餐和午餐',
-          tenMeals: '10 每个儿童的用餐',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: '1 每个居民用餐',
           driveThrough: {
             dt: '免下车',
@@ -808,7 +808,7 @@ pinboard({
           nonPerish: 'chỉ có đồ ăn không dễ ôi thiu',
           freshOnly: 'chỉ có nông sản tươi',
           breakfastLunch: 'bữa sáng và bữa trưa',
-          tenMeals: '10 bữa ăn mỗi trẻ',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: '1 bữa ăn mỗi cư dân',
           driveThrough: {
             dt: 'Lái xe qua',
@@ -948,7 +948,7 @@ pinboard({
           nonPerish: 'только продукты длительного хранения',
           freshOnly: 'только свежие продукты',
           breakfastLunch: 'завтрак и обед',
-          tenMeals: '10 количество порций на ребенка',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: '1 количество порций на жителя',
           driveThrough: {
             dt: 'Без выхода из машины',
@@ -1088,7 +1088,7 @@ pinboard({
           nonPerish: 'articles non périssables seulement',
           freshOnly: 'produits frais seulement',
           breakfastLunch: 'petit déjeuner et déjeuner',
-          tenMeals: '10 repas par enfant',
+          tenMeals: 'Meals provided for the school week.',
           oneMeal: '1 repas par habitant',
           driveThrough:{
             dt: 'Drive',
