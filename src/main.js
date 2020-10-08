@@ -47,6 +47,9 @@ pinboard({
     type: 'covidFreeMealSites',
     // type: 'compiled',
   },
+  gtag: {
+    category: 'rf-food',
+  },
   comboSearch: {
     dropdown: [ 'address' ],
   },
@@ -169,7 +172,7 @@ pinboard({
     'HowToUse': false,
     'OtherLinks': {
       locations: {
-        text: 'View accessible list of site locations',
+        text: 'viewAccessible',
         link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
       },
     },
@@ -347,6 +350,7 @@ pinboard({
             bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
+          viewAccessible: 'View accessible list of site locations',
           'Outdoor Meal Site': 'Outdoor meal site',
           'Food Site': 'Food site',
           'Student Meal Site': 'Student meal site',
