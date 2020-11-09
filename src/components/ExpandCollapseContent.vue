@@ -12,8 +12,8 @@
         <div class="small-22">
           <!-- {{ item.attributes.address }}<br> -->
           {{ address }}<br>
-          <!-- Philadelphila, PA {{ item.attributes.ZIP2 }} -->
-          Philadelphila, PA {{ zipcode }}
+          <!-- Philadelphia, PA {{ item.attributes.ZIP2 }} -->
+          Philadelphia, PA {{ zipcode }}
         </div>
       </div>
     </div>
