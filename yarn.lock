@@ -1046,14 +1046,14 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@phila/pinboard@0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@phila/pinboard/-/pinboard-0.5.6.tgz#657d6b64a148601312cc84d577e96c0dda1bd2d4"
-  integrity sha512-yp+fA54mVp0be+oeTYtmvgRmOboYqt/GEAbuW9LJRrV6Rjm5GS5LNmVOkl0JKDXfgf6WES//7rtFKg3J1J4Mpw==
+"@phila/pinboard@0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@phila/pinboard/-/pinboard-0.5.9.tgz#496c18e679fc34bc2b25873c6715431540c3089a"
+  integrity sha512-G+BtNFqlfjFVtT6Vs+0GuODSkioX2mdyXeNerJs9OJ1e5XwLDJUG4fQAmty7nLzrwCeOGswNWf3QajOqd5hrWA==
   dependencies:
     "@fortawesome/free-brands-svg-icons" "^5.11.2"
-    "@phila/vue-comps" "2.1.15"
-    "@phila/vue-datafetch" "1.4.3"
+    "@phila/vue-comps" "2.1.19"
+    "@phila/vue-datafetch" "1.4.4"
     "@phila/vue-mapping" "2.2.9"
     axios "^0.19.0"
     core-js "^3.3.3"
@@ -1065,10 +1065,10 @@
     vue-router "^3.0.6"
     vuex "^3.1.2"
 
-"@phila/vue-comps@2.1.15":
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/@phila/vue-comps/-/vue-comps-2.1.15.tgz#9105adddaaf7099d7965860bb81e87f98a674dff"
-  integrity sha512-FmMdOTEkV4D0mF3JXSG5OJ3UXC1e8lfeCVn9uJn1/1ZyQpe5yrgdYTR2A1ZmNydcm4ptt0RFDFCSscFj6fijcw==
+"@phila/vue-comps@2.1.19":
+  version "2.1.19"
+  resolved "https://registry.yarnpkg.com/@phila/vue-comps/-/vue-comps-2.1.19.tgz#94621b55b755eb5dc50c8a8acfbe8e007568c9b3"
+  integrity sha512-D9VO4hrb83+a3vLN2ws2EpEsyMmC25YDYXiM36sMjqUTQS4ezJ2RQGanPQYstBiL4vW2CLXi1EcSNygam9fj5w==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.15"
     "@fortawesome/free-regular-svg-icons" "^5.7.2"
@@ -1084,10 +1084,10 @@
     vue "^2.6.11"
     vuex "^3.1.2"
 
-"@phila/vue-datafetch@1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@phila/vue-datafetch/-/vue-datafetch-1.4.3.tgz#8bfa2d8893534c0e070f907b6a2d120f0d0b10f8"
-  integrity sha512-Z6DpFb69fP6GsphernIm/Bz3EizOWhwC3MEbGvAOeMc8o71j3a/WuEGMElw+ASxz7GfyLn/zIGK5huqPoV0fqQ==
+"@phila/vue-datafetch@1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@phila/vue-datafetch/-/vue-datafetch-1.4.4.tgz#a93bf1c89b4df22d8d8e6f82c6c8945bb0349806"
+  integrity sha512-axQvi843v31KIBXkdsCXuJB3YUHZdu27g5dtDhGoCWhk2tQ9lEe9WajwvhZ6vHz4wMkVarOYEPMeBpY7x7AO+w==
   dependencies:
     "@turf/turf" "^5.1.6"
     airtable "^0.8.1"
