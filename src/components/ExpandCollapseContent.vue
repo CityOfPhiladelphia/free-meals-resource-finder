@@ -48,7 +48,7 @@
     </div>
 
     <div
-      v-if="item.attributes.TEMPCLOSE !== null"
+      v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE > currentUnixDate"
       class="grid-x temp-close-section"
     >
       <div class="card-exclamation-holder small-5">
@@ -108,6 +108,7 @@
 <script>
 
 import transforms from '../general/transforms.js';
+import { format } from 'date-fns';
 
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
@@ -139,6 +140,9 @@ export default {
     },
   },
   computed: {
+    currentUnixDate() {
+      return parseInt(format(new Date(), 'T'));
+    },
     transforms() {
       return transforms;
     },
