@@ -96,9 +96,11 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: false,
-      header: 'Student meal sites',
-      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
+      enabled: true,
+      header: 'Winter storm and site closures',
+      body: '<p>Several food sites will be closed on Thursday, December 17 due to the forecasted storm. Check your preferred location to see if it will be closed. Please note that last-minute closures may occur.</p>',
+      // header: 'Student meal sites',
+      // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
     },
     header: {
