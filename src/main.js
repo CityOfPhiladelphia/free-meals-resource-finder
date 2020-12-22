@@ -96,7 +96,7 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: true,
+      enabled: false,
       header: 'Winter storm and site closures',
       body: '<p>Several food sites will be closed on Thursday, December 17 due to the forecasted storm. Check your preferred location to see if it will be closed. Please note that last-minute closures may occur.</p>',
       // header: 'Student meal sites',
