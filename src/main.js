@@ -375,7 +375,7 @@ pinboard({
           nonPerish: 'non-perishable items only',
           freshOnly: 'fresh produce only',
           breakfastLunch: 'Breakfast and lunch',
-          tenMeals: 'Fresh food and meals provided for the week.',
+          tenMeals: 'Sites provide 7 breakfast and 7 lunch meals and fresh fruit each week.',
           oneMeal: '1 meal per resident',
           driveThrough: {
             dt: 'Drive-thru',
