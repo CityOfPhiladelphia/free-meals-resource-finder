@@ -47,6 +47,9 @@ pinboard({
     type: 'covidFreeMealSites',
     // type: 'compiled',
   },
+  gtag: {
+    category: 'rf-food',
+  },
   comboSearch: {
     dropdown: [ 'address' ],
   },
@@ -94,8 +97,10 @@ pinboard({
   alerts: {
     modal: {
       enabled: false,
-      header: 'Student meal sites',
-      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
+      header: 'Winter storm and site closures',
+      body: '<p>Several food sites will be closed on Thursday, December 17 due to the forecasted storm. Check your preferred location to see if it will be closed. Please note that last-minute closures may occur.</p>',
+      // header: 'Student meal sites',
+      // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
     },
     header: {
@@ -169,7 +174,7 @@ pinboard({
     'HowToUse': false,
     'OtherLinks': {
       locations: {
-        text: 'View accessible list of site locations',
+        text: 'viewAccessible',
         link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
       },
     },
@@ -347,6 +352,7 @@ pinboard({
             bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
+          viewAccessible: 'View accessible list of site locations',
           'Outdoor Meal Site': 'Outdoor meal site',
           'Food Site': 'Food site',
           'Student Meal Site': 'Student meal site',
@@ -369,7 +375,7 @@ pinboard({
           nonPerish: 'non-perishable items only',
           freshOnly: 'fresh produce only',
           breakfastLunch: 'Breakfast and lunch',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: 'Sites provide 7 breakfast and 7 lunch meals and fresh fruit each week.',
           oneMeal: '1 meal per resident',
           driveThrough: {
             dt: 'Drive-thru',
@@ -538,7 +544,7 @@ pinboard({
           nonPerish: 'únicamente alimentos no perecederos',
           freshOnly: 'únicamente productos frescos',
           breakfastLunch: 'desayuno y almuerzo',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: 'Alimentos frescos y comidas para la semana.',
           oneMeal: 'comida por residente',
           driveThrough: {
             dt: 'En vehículo',
@@ -669,7 +675,7 @@ pinboard({
           nonPerish: '仅为非易腐物品',
           freshOnly: '仅为新鲜农产品',
           breakfastLunch: '早餐和午餐',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: '本周提供新鲜的食物和膳食。',
           oneMeal: '1 每个居民用餐',
           driveThrough: {
             dt: '免下车',
@@ -808,7 +814,7 @@ pinboard({
           nonPerish: 'chỉ có đồ ăn không dễ ôi thiu',
           freshOnly: 'chỉ có nông sản tươi',
           breakfastLunch: 'bữa sáng và bữa trưa',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: 'Thực phẩm tươi sống và các bữa ăn được cung cấp trong tuần.',
           oneMeal: '1 bữa ăn mỗi cư dân',
           driveThrough: {
             dt: 'Lái xe qua',
@@ -948,7 +954,7 @@ pinboard({
           nonPerish: 'только продукты длительного хранения',
           freshOnly: 'только свежие продукты',
           breakfastLunch: 'завтрак и обед',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: 'Свежее питание и обеды на неделю.',
           oneMeal: '1 количество порций на жителя',
           driveThrough: {
             dt: 'Без выхода из машины',
@@ -1088,7 +1094,7 @@ pinboard({
           nonPerish: 'articles non périssables seulement',
           freshOnly: 'produits frais seulement',
           breakfastLunch: 'petit déjeuner et déjeuner',
-          tenMeals: 'Meals provided for the school week.',
+          tenMeals: 'Nourriture et repas frais fournis pour la semaine.',
           oneMeal: '1 repas par habitant',
           driveThrough:{
             dt: 'Drive',
