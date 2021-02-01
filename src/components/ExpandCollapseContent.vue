@@ -47,8 +47,9 @@
       </div>
     </div>
 
+    <!-- v-if="item.attributes.TEMPCLOSE !== null" -->
     <div
-      v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE > currentUnixDate"
+      v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE >= currentUnixDate"
       class="grid-x temp-close-section"
     >
       <div class="card-exclamation-holder small-5">
@@ -141,7 +142,11 @@ export default {
   },
   computed: {
     currentUnixDate() {
-      return parseInt(format(new Date(), 'T'));
+      let currentYear = format(new Date(), 'yyyy');
+      let currentMonth = format(new Date(), 'MM');
+      let currentDay = format(new Date(), 'dd');
+      let dateStart = new Date(currentYear, currentMonth-1, currentDay);
+      return parseInt(format(dateStart, 'T'));
     },
     transforms() {
       return transforms;

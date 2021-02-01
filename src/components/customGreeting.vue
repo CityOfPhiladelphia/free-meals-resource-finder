@@ -53,6 +53,8 @@
 
 <script>
 
+import { parse, format } from 'date-fns';
+
 import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
 import PhilaButton from '@phila/pinboard/src/components/PhilaButton.vue';
 import greetingSection from './greetingSection.vue';
@@ -135,6 +137,13 @@ export default {
     },
   },
   mounted() {
+    // let currentYear = format(new Date(), 'yyyy');
+    // let currentMonth = format(new Date(), 'MM');
+    // let currentDay = format(new Date(), 'dd');
+    // // console.log('currentDate(yyyy)', currentDate('yyyy'));
+    // let dateStart = new Date(currentYear, currentMonth-1, currentDay);
+    // let testDate = new Date(2021, 1, 1);
+    // console.log('mounted, currentDate', currentYear, 'currentMonth:', currentMonth, 'currentDay:', currentDay, 'dateStart', dateStart, 'testDate:', testDate);
     this.sections = this.$config.sections;
     // this.subsections = this.getCounts();
   },
