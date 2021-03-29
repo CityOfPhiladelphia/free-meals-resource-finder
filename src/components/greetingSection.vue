@@ -96,7 +96,7 @@
 
 <script>
 
-import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
+// import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
 
 export default {
   name: 'GreetingSection',
@@ -104,7 +104,7 @@ export default {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTableLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     // HorizontalTableLight: () => import(/* webpackChunkName: "pvc_HorizontalTableLight" */'@phila/vue-comps/src/components/HorizontalTableLight.vue'),
   },
-  mixins: [ TopicComponent ],
+  // mixins: [ TopicComponent ],
   props: {
     'header': {
       type: String,

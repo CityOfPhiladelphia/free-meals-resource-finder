@@ -55,7 +55,7 @@
 
 import { parse, format } from 'date-fns';
 
-import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
+// import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
 import PhilaButton from '@phila/pinboard/src/components/PhilaButton.vue';
 import greetingSection from './greetingSection.vue';
 
@@ -65,7 +65,7 @@ export default {
     greetingSection,
     PhilaButton,
   },
-  mixins: [ TopicComponent ],
+  // mixins: [ TopicComponent ],
   props: {
     'message': {
       type: String,
