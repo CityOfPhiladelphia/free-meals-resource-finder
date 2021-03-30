@@ -385,8 +385,8 @@ pinboard({
           sections: {
             foodSites: {
               header: 'Food sites',
-              eligibility: 'Any resident is eligible. No ID or proof of income is required',
-              pickupDetails: 'Residents can get one box per household',
+              eligibility: 'Any resident is eligible. No ID or proof of income is required.',
+              pickupDetails: 'Residents can up pick supplemental food for their household.',
               subsections: {
                 'PHILABUNDANCE': {
                   name: 'Philabundance',
@@ -555,7 +555,7 @@ pinboard({
             foodSites: {
               header: 'Lugar de alimentos',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
-              pickupDetails: 'Los residentes pueden obtener una caja por hogar.',
+              pickupDetails: 'Residents can up pick supplemental food for their household.',
               subsections: {
                 'PPR': {
                   name: 'centros de Parques y Recreación de Filadelfia',
@@ -686,7 +686,7 @@ pinboard({
             foodSites: {
               header: '食品地点',
               eligibility: '所有居民都合格。 不需身份证或收入证明。',
-              pickupDetails: '凡是居民每户都可以得到一盒食品。',
+              pickupDetails: '居民可以为他们的家庭领取补充食物。',
               subsections: {
                 'PPR': {
                   name: '费城公园和娱乐中心',
@@ -825,7 +825,7 @@ pinboard({
             foodSites: {
               header: 'Các điểm phát thực phẩm',
               eligibility: 'Kiểm tra thông tin địa điểm cụ thể. ',
-              pickupDetails: 'Các cư dân có thể nhận một hộp cho mỗi hộ gia đình.',
+              pickupDetails: 'Cư dân có thể nhận thực phẩm bổ sung cho hộ gia đình của mình.',
               subsections: {
                 'PPR': {
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
@@ -965,7 +965,7 @@ pinboard({
             foodSites: {
               header: 'Пункты выдачи продуктов',
               eligibility: 'уточните информацию по конкретному пункту..',
-              pickupDetails: 'Местные жители могут получить один продуктовый набор на семью.',
+              pickupDetails: 'Жители могут получить дополнительное питание для своих семей.',
               subsections: {
                 'PPR': {
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
@@ -1105,7 +1105,7 @@ pinboard({
             foodSites: {
               header: 'Sites de distribution alimentaire',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
-              pickupDetails: 'Les habitants peuvent recevoir une boîte par foyer.',
+              pickupDetails: 'Les résidents peuvent se procurer de la nourriture supplémentaire pour leur foyer.',
               subsections: {
                 'PPR': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
