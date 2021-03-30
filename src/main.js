@@ -555,7 +555,7 @@ pinboard({
             foodSites: {
               header: 'Lugar de alimentos',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
-              pickupDetails: 'Residents can up pick supplemental food for their household.',
+              pickupDetails: 'Los residentes pueden recoger alimentos complementarios para su hogar.',
               subsections: {
                 'PPR': {
                   name: 'centros de Parques y Recreación de Filadelfia',
