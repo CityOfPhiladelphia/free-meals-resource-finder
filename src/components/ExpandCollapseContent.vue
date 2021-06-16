@@ -99,6 +99,11 @@
       :item="item"
     />
 
+    <nds-school-card
+      v-if="subsection === 'NDS'"
+      :item="item"
+    />
+
     <outdoor-site-card
       v-if="section === 'outdoorMealSites'"
       :item="item"
@@ -118,6 +123,7 @@ import PprSchoolCard from './PprSchoolCard.vue';
 import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
+import NdsSchoolCard from './NdsSchoolCard.vue';
 import OutdoorSiteCard from './OutdoorSiteCard.vue';
 
 export default {
@@ -130,6 +136,7 @@ export default {
     PsdSchoolCard,
     PhaSchoolCard,
     PlaystreetsSchoolCard,
+    NdsSchoolCard,
     OutdoorSiteCard,
   },
   props: {

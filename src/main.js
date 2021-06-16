@@ -66,6 +66,9 @@ pinboard({
     },
   },
   customComps,
+  // hiddenRefine: {
+  //
+  // },
   refine: {
     type: 'categoryField_value',
     value: function(item) {
@@ -295,7 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -316,6 +319,7 @@ pinboard({
     'CHARTER': 'studentMealSites',
     'Kensington Meal Partners': 'outdoorMealSites',
     'Muslims Serve': 'outdoorMealSites',
+    'NDS': 'studentMealSites',
     'SEAMAAC South Philly': 'outdoorMealSites',
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
@@ -375,6 +379,7 @@ pinboard({
           nonPerish: 'non-perishable items only',
           freshOnly: 'fresh produce only',
           breakfastLunch: 'Breakfast and lunch',
+          ndsMeals: 'Sites may provide daily meals or 7-day breakfast and lunch boxes. Contact NDS for more details.',
           tenMeals: 'Sites provide 7 breakfast and 7 lunch meals and fresh fruit each week.',
           oneMeal: '1 meal per resident',
           driveThrough: {
@@ -412,31 +417,39 @@ pinboard({
                   name: 'Philadelphia School District schools',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'CHARTER': {
                   name: 'Charter schools',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'NDS': {
+                  name: 'Nutritional Development Services',
+                  pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+              },
+              custom: {
+                info: 'To find more free summer meal sites for children and youth:',
+                list: {
+                  li1: 'Text “FOOD” or “COMIDA” to 877-877 to receive a list of nearby meal sites.',
+                  li2: 'Visit <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> to find free summer meals for kids.',
                 },
               },
             },
@@ -596,7 +609,18 @@ pinboard({
                   name: 'Playstreets',
                   pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
-
+                },
+                'NDS': {
+                  name: 'Servicios de desarrollo nutricional',
+                  pickupDetails: '',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se requiere identificación.',
+                },
+              },
+              custom: {
+                info: 'Para encontrar más sitios de comidas de verano gratuitas para niños y jóvenes:',
+                list: {
+                  li1: 'Envíe un mensaje de texto con las palabras "FOOD" o "COMIDA" al 877-877 para recibir una lista de sitios de comida cercanos.',
+                  li2: 'Visite <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> para encontrar comidas de verano gratuitas para niños.',
                 },
               },
             },
@@ -726,7 +750,18 @@ pinboard({
                   name: 'Playstreets',
                   pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
-
+                },
+                'NDS': {
+                  name: '营养发展服务',
+                  pickupDetails: '',
+                  eligibility: '所有儿童和青年均有资格领取。不需要学生证号。',
+                },
+              },
+              custom: {
+                info: '如需查找更多针对儿童和青年的免费夏季餐食供应点：',
+                list: {
+                  li1: '请编辑短信“FOOD”或“COMIDA”发送至 877-877，获取附近餐食供应点的列表。',
+                  li2: '请浏览 <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> 查找免费的夏季儿童餐。',
                 },
               },
             },
@@ -866,7 +901,18 @@ pinboard({
                   name: 'Playstreets',
                   pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
-
+                },
+                'NDS': {
+                  name: 'Dịch vụ Phát triển Dinh dưỡng',
+                  pickupDetails: '',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+              },
+              custom: {
+                info: 'Để tìm thêm về các địa điểm cung cấp bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên:',
+                list: {
+                  li1: 'Soạn tin “FOOD” hoặc “COMIDA” gửi tới số 877-877 để nhận danh sách các địa điểm cung cấp bữa ăn gần đó.',
+                  li2: 'Truy cập <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> để tìm bữa ăn mùa hè miễn phí cho trẻ em.',
                 },
               },
             },
@@ -1005,8 +1051,18 @@ pinboard({
                   name: 'Playstreets',
                   pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
-
-
+                },
+                'NDS': {
+                  name: 'Центры Nutritional Development Services',
+                  pickupDetails: '',
+                  eligibility: 'Участвовать могут все дети и подростки. Удостоверение личности не требуется.',
+                },
+              },
+              custom: {
+                info: 'Чтобы найти другие центры раздачи летнего питания для детей и подростков:',
+                list: {
+                  li1: 'Отправьте текстовое сообщение «FOOD» или «COMIDA» на номер 877-877 и получите список ближайших пунктов раздачи питания.',
+                  li2: 'Чтобы найти бесплатное летнее питание для детей, посетите сайт <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b>.',
                 },
               },
             },
@@ -1153,7 +1209,18 @@ pinboard({
                   name: 'Playstreets',
                   pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
-
+                },
+                'NDS': {
+                  name: 'Services de développement nutritionnel',
+                  pickupDetails: '',
+                  eligibility: 'Tous les enfants et adolescents sont éligibles. Aucune pièce d’identité n\'est requise.',
+                },
+              },
+              custom: {
+                info: 'Pour en savoir plus sur les repas d’été gratuits pour les enfants et adolescents :',
+                list: {
+                  li1: 'Envoyez le SMS « « FOOD » » ou « « COMIDA » » au 877-877 pour recevoir une liste des pôles repas les plus proches.',
+                  li2: 'Consultez <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> pour trouver des repas d’été gratuits pour les enfants.',
                 },
               },
             },
