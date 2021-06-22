@@ -298,7 +298,8 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS' ],
+      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'recCenters', 'Other' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -332,6 +333,8 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
+    // 'recCenters': 'studentMealSites',
+    'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
@@ -436,12 +439,18 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets',
                   hidePickupDetailsInGreeting: true,
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br><br>Playstreets serve lunch and a snack.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'NDS': {
                   name: 'Nutritional Development Services',
                   pickupDetails: '',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Other': {
+                  name: 'Other Summer Meal Sites',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
               },

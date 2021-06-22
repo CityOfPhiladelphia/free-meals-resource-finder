@@ -121,7 +121,7 @@ export default {
       let siteName = this.getSiteName(this.item);
 
       for (let [ index, day ] of allDays.entries()) {
-        let normallyOpen = item.attributes[day] != null;
+        let normallyOpen = item.attributes[day] != null && item.attributes[day] != 'NA';
         let holidayToday = holidays.includes(day);
         let yesterday = allDays[index-1];
         let normallyOpenYesterday = item.attributes[yesterday] != null;
