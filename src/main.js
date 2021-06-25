@@ -333,7 +333,7 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
-    'Recreation Centers': 'studentMealSites',
+    'RecreationCenters': 'studentMealSites',
     'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
@@ -454,7 +454,7 @@ pinboard({
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: 'Recreation Centers',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Recreation Centers are open Monday to Friday between 9 a.m. to 3 p.m. Meal times vary by site. For more information, call or visit the Recreation Center.',
@@ -637,7 +637,7 @@ pinboard({
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: 'Centros recreativos',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Los centros recreativos estarán abiertos de lunes a viernes de 9:00 a. m. a 3:00 p. m. Los horarios de comida varían según el lugar. Para obtener más información, llame o visite el centro recreativo.',
@@ -789,7 +789,7 @@ pinboard({
                   pickupDetails: '各个场所的供餐时间可能不同。如需更多信息，请访问夏季餐饮场所。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: '康乐中心',
                   pickupDetails: '娱乐中心的开放时间为周一至周五上午 9 点至下午 3 点。各个场所的供餐时间可能不同。如需更多信息，请致电或访问康乐中心。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
@@ -949,7 +949,7 @@ pinboard({
                   pickupDetails: 'Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm các địa điểm bữa ăn mùa hè.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: 'Trung tâm Giải trí',
                   pickupDetails: 'Các Trung tâm Giải trí hoạt động từ thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 3 giờ chiều. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy gọi hoặc ghé thăm Trung tâm Giải trí.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
@@ -1109,7 +1109,7 @@ pinboard({
                   pickupDetails: 'Время раздачи питания различается в зависимости от конкретного адреса. Подробную информацию можно узнать в соответствующем центре летнего питания.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: 'Центры отдыха',
                   pickupDetails: 'Центры отдыха открыты с понедельника по пятницу с 9:00 до 15:00. Время раздачи питания различается в зависимости от конкретного адреса. Чтобы получить подробную информацию, позвоните или зайдите в центр отдыха.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
@@ -1277,7 +1277,7 @@ pinboard({
                   pickupDetails: 'Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, rendez-vous au pôle repas d\'été.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
-                'Recreation Centers': {
+                'RecreationCenters': {
                   name: 'Centres aérés',
                   pickupDetails: 'Les centres aérés sont ouverts du lundi au vendredi, entre 9h et 15h. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, appelez ou rendez-vous au centre aéré.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
