@@ -299,7 +299,7 @@ pinboard({
       titleSingular: 'Student Meal Site',
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'recCenters', 'Other' ],
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other', 'Recreation_Centers' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -333,7 +333,7 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
-    // 'recCenters': 'studentMealSites',
+    'RecreationCenters': 'studentMealSites',
     'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
@@ -444,13 +444,20 @@ pinboard({
                 },
                 'NDS': {
                   name: 'Nutritional Development Services',
-                  pickupDetails: '',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Sites may provide daily meals or 7-day breakfast and lunch boxes. Contact Nutritional Development Services for more details.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'Other': {
                   name: 'Other Summer Meal Sites',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'RecreationCenters': {
+                  name: 'Recreation Centers',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Recreation Centers are open Monday to Friday between 9 a.m. to 3 p.m. Meal times vary by site. For more information, call or visit the Recreation Center.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
               },
@@ -616,13 +623,25 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
+                  pickupDetails: 'Playstreets estarán abiertas de lunes a viernes de 10:00 a. m. a 4:00 p. m. Las calles permanecerán cerradas para la circulación de automóviles. Los horarios de comida variarán de acuerdo con el lugar. Para obtener más información, visite Playstreets.<br><br>En Playstreets se servirán almuerzos y meriendas.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
                 'NDS': {
-                  name: 'Servicios de desarrollo nutricional',
+                  name: 'Servicios de Desarrollo Nutricional',
                   pickupDetails: '',
-                  eligibility: 'Todos los niños y jóvenes son elegibles. No se requiere identificación.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+                },
+                'Other': {
+                  name: 'Otros sitios para comer durante el verano',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+                },
+                'RecreationCenters': {
+                  name: 'Centros recreativos',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Los centros recreativos estarán abiertos de lunes a viernes de 9:00 a. m. a 3:00 p. m. Los horarios de comida varían según el lugar. Para obtener más información, llame o visite el centro recreativo.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
               },
               custom: {
@@ -757,13 +776,23 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
+                  pickupDetails: 'Playstreets 的开放时间为周一至周五上午 10 点至下午 4 点。在此期间，街道将禁行车辆。各个场所的供餐时间可能不同。如需更多信息，请访问 Playstreet。<br><br>Playstreets 供应午餐和小吃。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'NDS': {
-                  name: '营养发展服务',
-                  pickupDetails: '',
-                  eligibility: '所有儿童和青年均有资格领取。不需要学生证号。',
+                  name: '营养发育服务',
+                  pickupDetails: '餐饮场所可能供应一日三餐或一周七天的早餐和午餐餐盒。联系营养发育服务了解更多详情。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+                },
+                'Other': {
+                  name: '其他夏季餐饮场所',
+                  pickupDetails: '各个场所的供餐时间可能不同。如需更多信息，请访问夏季餐饮场所。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+                },
+                'RecreationCenters': {
+                  name: '康乐中心',
+                  pickupDetails: '娱乐中心的开放时间为周一至周五上午 9 点至下午 3 点。各个场所的供餐时间可能不同。如需更多信息，请致电或访问康乐中心。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
               },
               custom: {
@@ -905,15 +934,24 @@ pinboard({
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
 
                 },
-
                 'playstreets': {
-                  name: 'Playstreets',
-                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
+                  name: 'Playstreets (Chơi trên đường phố)',
+                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.Playstreets hoạt động từ thứ Hai đến thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Đường phố cấm xe cộ lưu thông. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm Playstreet.<br><br>Playstreets phục vụ bữa trưa và bữa ăn nhẹ.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'NDS': {
                   name: 'Dịch vụ Phát triển Dinh dưỡng',
-                  pickupDetails: '',
+                  pickupDetails: 'Các địa điểm có thể cung cấp bữa ăn hàng ngày hoặc bữa sáng và hộp ăn trưa 7 ngày. Liên hệ với Dịch vụ Phát triển Dinh dưỡng để biết thêm thông tin chi tiết.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+                'Other': {
+                  name: 'Các Địa điểm Bữa ăn Mùa hè Khác',
+                  pickupDetails: 'Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm các địa điểm bữa ăn mùa hè.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+                'RecreationCenters': {
+                  name: 'Trung tâm Giải trí',
+                  pickupDetails: 'Các Trung tâm Giải trí hoạt động từ thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 3 giờ chiều. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy gọi hoặc ghé thăm Trung tâm Giải trí.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
               },
@@ -1057,14 +1095,24 @@ pinboard({
 
                 },
                 'playstreets': {
-                  name: 'Playstreets',
-                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
+                  name: 'Улицы Playstreet',
+                  pickupDetails: 'Улицы Playstreet открыты с понедельника по пятницу с 10:00 до 16:00. Улицы закрыты для движения транспорта. Время раздачи питания различается в зависимости от конкретного адреса. Подробнее см. на сайте Playstreet.<br><br>На улицах Playstreet выдаются обеды и снеки.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
                 'NDS': {
                   name: 'Центры Nutritional Development Services',
-                  pickupDetails: '',
-                  eligibility: 'Участвовать могут все дети и подростки. Удостоверение личности не требуется.',
+                  pickupDetails: 'В центрах можно получить ежедневное питание или наборы для завтрака и обеда на 7 дней. Подробную информацию можно получить в организации Nutritional Development Services.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+                },
+                'Other': {
+                  name: 'Другие центры раздачи летнего питания',
+                  pickupDetails: 'Время раздачи питания различается в зависимости от конкретного адреса. Подробную информацию можно узнать в соответствующем центре летнего питания.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+                },
+                'RecreationCenters': {
+                  name: 'Центры отдыха',
+                  pickupDetails: 'Центры отдыха открыты с понедельника по пятницу с 9:00 до 15:00. Время раздачи питания различается в зависимости от конкретного адреса. Чтобы получить подробную информацию, позвоните или зайдите в центр отдыха.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
               },
               custom: {
@@ -1216,13 +1264,23 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
+                  pickupDetails: 'Playstreets se déroule du lundi au vendredi, entre 10h et 16h. Les rues sont piétonnes. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, consultez Playstreets.<br><br>Playstreets offre le déjeuner et un goûter.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
                 'NDS': {
                   name: 'Services de développement nutritionnel',
-                  pickupDetails: '',
-                  eligibility: 'Tous les enfants et adolescents sont éligibles. Aucune pièce d’identité n\'est requise.',
+                  pickupDetails: 'Ces pôles peuvent fournir des repas quotidiens ou des boîtes petit déjeuner et déjeuner pendant 7 jours. Contactez les services de développement nutritionnel pour obtenir des détails supplémentaires.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+                },
+                'Other': {
+                  name: 'Autres pôles repas d\'été',
+                  pickupDetails: 'Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, rendez-vous au pôle repas d\'été.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+                },
+                'RecreationCenters': {
+                  name: 'Centres aérés',
+                  pickupDetails: 'Les centres aérés sont ouverts du lundi au vendredi, entre 9h et 15h. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, appelez ou rendez-vous au centre aéré.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
               },
               custom: {
