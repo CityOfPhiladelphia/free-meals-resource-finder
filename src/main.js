@@ -298,8 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'recCenters', 'Other' ],
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other', 'Recreation Center' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Recreation Center', 'Other' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
