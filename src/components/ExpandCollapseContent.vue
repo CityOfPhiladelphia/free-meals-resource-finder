@@ -100,7 +100,7 @@
     />
 
     <recreation-centers-school-card
-      v-if="subsection === 'RecreationCenters'"
+      v-if="subsection === 'Recreation Center'"
       :item="item"
     />
 

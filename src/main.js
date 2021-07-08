@@ -298,8 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'recCenters', 'Other' ],
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other', 'Recreation_Centers' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Recreation Center', 'Other' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -333,7 +332,7 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
-    'RecreationCenters': 'studentMealSites',
+    'Recreation Center': 'studentMealSites',
     'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
@@ -355,7 +354,7 @@ pinboard({
           language: 'English',
           app: {
             title: 'Food distribution sites',
-            subtitle: 'Find free food and meals during COVID-19',
+            subtitle: 'Find free food and meals',
             bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
@@ -454,7 +453,7 @@ pinboard({
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: 'Recreation Centers',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Recreation Centers are open Monday to Friday between 9 a.m. to 3 p.m. Meal times vary by site. For more information, call or visit the Recreation Center.',
@@ -549,7 +548,7 @@ pinboard({
           language: 'Español',
           app: {
             title: 'Lugares de distribución de alimentos',
-            subtitle: 'Obtenga alimentos y comidas gratis durante la epidemia de la COVID-19',
+            subtitle: 'Encuentre alimentos y comidas gratuitas',
             bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
           },
           'Outdoor Meal Site': 'Lugar de comidas al aire libre',
@@ -628,7 +627,7 @@ pinboard({
                 },
                 'NDS': {
                   name: 'Servicios de Desarrollo Nutricional',
-                  pickupDetails: '',
+                  pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
                 'Other': {
@@ -637,7 +636,7 @@ pinboard({
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: 'Centros recreativos',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Los centros recreativos estarán abiertos de lunes a viernes de 9:00 a. m. a 3:00 p. m. Los horarios de comida varían según el lugar. Para obtener más información, llame o visite el centro recreativo.',
@@ -703,7 +702,7 @@ pinboard({
           language: '中文',
           app: {
             title: '食品分发地点',
-            subtitle: '在冠状病毒-19期间查找免费食物和餐点',
+            subtitle: '查找免费的食品和用餐服务',
             bannerAlert: '今天很多地点均关闭。有关更多信息，请查看具体地点详细信息。',
           },
           'Outdoor Meal Site': '户外用餐场所',
@@ -789,7 +788,7 @@ pinboard({
                   pickupDetails: '各个场所的供餐时间可能不同。如需更多信息，请访问夏季餐饮场所。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: '康乐中心',
                   pickupDetails: '娱乐中心的开放时间为周一至周五上午 9 点至下午 3 点。各个场所的供餐时间可能不同。如需更多信息，请致电或访问康乐中心。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
@@ -863,7 +862,7 @@ pinboard({
           language: 'Tiếng Việt',
           app: {
             title: 'Các điểm phân phát thực phẩm',
-            subtitle: 'Tìm thực phẩm và bữa ăn miễn phí trong dịch COVID-19',
+            subtitle: 'Tìm Thực Phẩm và Bữa Ăn Miễn Phí',
             bannerAlert: 'Hôm nay, nhiều địa điểm đóng cửa. Hãy kiểm tra các chi tiết về địa điểm cụ thể để biết thêm thông tin.',
           },
           'Outdoor Meal Site': 'Điểm phát bữa ăn ngoài trời',
@@ -949,7 +948,7 @@ pinboard({
                   pickupDetails: 'Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm các địa điểm bữa ăn mùa hè.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: 'Trung tâm Giải trí',
                   pickupDetails: 'Các Trung tâm Giải trí hoạt động từ thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 3 giờ chiều. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy gọi hoặc ghé thăm Trung tâm Giải trí.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
@@ -1023,7 +1022,7 @@ pinboard({
           language: 'Pусский',
           app: {
             title: 'Пункты выдачи продуктов',
-            subtitle: 'Поиск пунктов бесплатного продовольствия и питания во время пандемии COVID-19',
+            subtitle: 'Найдите бесплатное продовольствие и питание',
             bannerAlert: 'Многие места сегодня закрыты. Для получения более подробной информации о месте отдыха просмотрите дополнительные сведения.',
           },
           'Outdoor Meal Site': 'Пункт выдачи питания под открытым небом',
@@ -1109,7 +1108,7 @@ pinboard({
                   pickupDetails: 'Время раздачи питания различается в зависимости от конкретного адреса. Подробную информацию можно узнать в соответствующем центре летнего питания.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: 'Центры отдыха',
                   pickupDetails: 'Центры отдыха открыты с понедельника по пятницу с 9:00 до 15:00. Время раздачи питания различается в зависимости от конкретного адреса. Чтобы получить подробную информацию, позвоните или зайдите в центр отдыха.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
@@ -1183,7 +1182,7 @@ pinboard({
           language: 'Français',
           app: {
             title: 'Sites de distribution alimentaire',
-            subtitle: 'Trouver de la nourriture et des repas gratuits pendant le COVID-19',
+            subtitle: 'Trouver un repas gratuit',
             bannerAlert: 'De nombreux sites sont fermés aujourd’hui. Consultez les détails spécifiques au site pour obtenir de plus amples informations.',
           },
           'Outdoor Meal Site': 'Site extérieur de distribution de repas',
@@ -1269,7 +1268,7 @@ pinboard({
                 },
                 'NDS': {
                   name: 'Services de développement nutritionnel',
-                  pickupDetails: 'Ces pôles peuvent fournir des repas quotidiens ou des boîtes petit déjeuner et déjeuner pendant 7 jours. Contactez les services de développement nutritionnel pour obtenir des détails supplémentaires.',
+                  pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
                 'Other': {
@@ -1277,7 +1276,7 @@ pinboard({
                   pickupDetails: 'Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, rendez-vous au pôle repas d\'été.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
-                'RecreationCenters': {
+                'Recreation Center': {
                   name: 'Centres aérés',
                   pickupDetails: 'Les centres aérés sont ouverts du lundi au vendredi, entre 9h et 15h. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, appelez ou rendez-vous au centre aéré.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
