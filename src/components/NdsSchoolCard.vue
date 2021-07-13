@@ -6,13 +6,13 @@
         :slots="mainVerticalTableSlots"
         :options="mainVerticalTableOptions"
       >
-        <!-- <div class="table-slot">
-          <vertical-table-3-cells-light
+        <div class="table-slot">
+          <vertical-table-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
             :options="componentVerticalTableOptions"
           />
-        </div> -->
+        </div>
       </vertical-table-light>
     </div>
   </section>
@@ -26,7 +26,7 @@ export default {
   name: 'NdsSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
-    VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
+    // VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
   },
   mixins: [ SharedFunctions ],
   props: {
@@ -40,6 +40,9 @@ export default {
   computed: {
     subsections() {
       return this.$config.subsections;
+    },
+    i18nLocale() {
+      return this.$i18n.locale;
     },
     section() {
       return this.subsections[this.$props.item.attributes['CATEGORY']];
@@ -78,8 +81,8 @@ export default {
           {
             label: 'pickupDetails',
             labelType: 'i18n',
-            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY + '.pickupDetails',
-            valueType: 'i18n',
+            // value: 'sections.' + this.section + '.pickupDetails',
+            valueType: 'component',
           },
         ],
       };
@@ -139,16 +142,20 @@ export default {
             labelType: 'i18n',
             value: hours,
             // valueType: 'i18n',
-            value1: 'tenMeals',
-            value1Type: 'i18n',
+            // value1: 'tenMeals',
+            // value1Type: 'i18n',
           };
           theFields.push(dayObject);
         }
       }
 
+      let summary = this.$config.i18n.data.messages[this.i18nLocale].sections[this.section].subsections[this.item.attributes.CATEGORY].pickupDetails;
+      // console.log('componentVerticalTableSlots, summary:', summary);
+
       return {
         id: 'mainTable',
         fields: theFields,
+        subtitle: summary,
       };
     },
   },
