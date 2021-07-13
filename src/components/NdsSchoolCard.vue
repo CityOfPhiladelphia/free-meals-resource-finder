@@ -7,10 +7,7 @@
         :options="mainVerticalTableOptions"
       >
         <div class="table-slot">
-          <!-- <div>
-            {{ $t('sections.' + section + '.pickupDetails') }}
-          </div> -->
-          <vertical-table-3-cells-light
+          <vertical-table-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
             :options="componentVerticalTableOptions"
@@ -29,7 +26,7 @@ export default {
   name: 'NdsSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
-    VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
+    // VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
   },
   mixins: [ SharedFunctions ],
   props: {
@@ -43,6 +40,9 @@ export default {
   computed: {
     subsections() {
       return this.$config.subsections;
+    },
+    i18nLocale() {
+      return this.$i18n.locale;
     },
     section() {
       return this.subsections[this.$props.item.attributes['CATEGORY']];
@@ -142,16 +142,20 @@ export default {
             labelType: 'i18n',
             value: hours,
             // valueType: 'i18n',
-            value1: 'tenMeals',
-            value1Type: 'i18n',
+            // value1: 'tenMeals',
+            // value1Type: 'i18n',
           };
           theFields.push(dayObject);
         }
       }
 
+      let summary = this.$config.i18n.data.messages[this.i18nLocale].sections[this.section].subsections[this.item.attributes.CATEGORY].pickupDetails;
+      // console.log('componentVerticalTableSlots, summary:', summary);
+
       return {
         id: 'mainTable',
         fields: theFields,
+        subtitle: summary,
       };
     },
   },
