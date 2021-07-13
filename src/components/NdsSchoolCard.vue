@@ -6,16 +6,13 @@
         :slots="mainVerticalTableSlots"
         :options="mainVerticalTableOptions"
       >
-        <div class="table-slot">
-          <!-- <div>
-            {{ $t('sections.' + section + '.pickupDetails') }}
-          </div> -->
+        <!-- <div class="table-slot">
           <vertical-table-3-cells-light
             class="print-padding"
             :slots="componentVerticalTableSlots"
             :options="componentVerticalTableOptions"
           />
-        </div>
+        </div> -->
       </vertical-table-light>
     </div>
   </section>
@@ -81,8 +78,8 @@ export default {
           {
             label: 'pickupDetails',
             labelType: 'i18n',
-            // value: 'sections.' + this.section + '.pickupDetails',
-            valueType: 'component',
+            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY + '.pickupDetails',
+            valueType: 'i18n',
           },
         ],
       };
