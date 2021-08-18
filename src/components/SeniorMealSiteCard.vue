@@ -15,7 +15,7 @@
 export default {
   name: 'SeniorMealSiteCard',
   components: {
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTableLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
+    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTableLight" */'../pvc/VerticalTableLight.vue'),
   },
   props: {
     item: {

@@ -53,6 +53,9 @@ pinboard({
   comboSearch: {
     dropdown: [ 'address' ],
   },
+  searchBar: {
+    dropdown: [ 'address' ],
+  },
   locationInfo: {
     siteName: function(item, transforms) {
       // console.log('in locationInfo.siteName, transforms:', transforms);
@@ -80,7 +83,7 @@ pinboard({
       // } else if (item.CATEGORY_TYPE) {
       //   value = item.CATEGORY_TYPE;
       // }
-     
+
       if (item.attributes.category_type == "Senior Meal Site") {
         value = "Older adult meal site";
       } else
@@ -180,15 +183,43 @@ pinboard({
       include_units: true,
     },
   },
-  footer: {
-    'HowToUse': false,
-    'OtherLinks': {
-      locations: {
-        text: 'viewAccessible',
-        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
+  footer: [
+    {
+      type: "native",
+      href: "https://www.phila.gov/",
+      attrs: {
+        target: "_blank",
       },
+      text: "cityOfPhiladelphia",
     },
-  },
+    {
+      type: "native",
+      href: "#",
+      text: "about",
+    },
+    {
+      type: "native",
+      href: "https://www.phila.gov/feedback/",
+      attrs: {
+        target: "_blank",
+      },
+      text: "feedback",
+    },
+    {
+      type: "native",
+      href: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+      text: "viewAccessible",
+    },
+  ],
+  // footer: {
+  //   'HowToUse': false,
+  //   'OtherLinks': {
+  //     locations: {
+  //       text: 'viewAccessible',
+  //       link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+  //     },
+  //   },
+  // },
   map: {
     // type: 'leaflet',
     type: 'mapbox',
