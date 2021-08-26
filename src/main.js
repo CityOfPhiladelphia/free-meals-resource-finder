@@ -178,7 +178,7 @@ pinboard({
     'OtherLinks': {
       locations: {
         text: 'viewAccessible',
-        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
       },
     },
   },
