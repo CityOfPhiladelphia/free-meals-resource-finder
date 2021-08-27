@@ -82,7 +82,7 @@
       v-if="$config.i18n.data.messages['en-US'].sections[header].custom"
       class="custom-section"
     >
-      {{ $t('sections.' + this.$props.header + '.custom.info') }}
+      <div v-html="$t('sections.' + this.$props.header + '.custom.info')" />
       <ul class="custom-ul">
         <li
           v-for="item of $config.i18n.data.messages[i18nLocale].sections[header].custom.list"
