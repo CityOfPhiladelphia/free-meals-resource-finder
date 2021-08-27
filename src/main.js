@@ -463,7 +463,7 @@ pinboard({
               custom: {
                 info: '\
                 Check back for updates on food distribution during school breaks.\
-                Visit the School District of Philadelphia\'s \
+                <br>Visit the School District of Philadelphia\'s \
                 <a href="https://www.philasd.org/foodservices">Food Services page</a>\
                 for information about in-school meal service for students.\
                 ',
