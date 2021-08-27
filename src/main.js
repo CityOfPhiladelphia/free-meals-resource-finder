@@ -461,11 +461,12 @@ pinboard({
                 },
               },
               custom: {
-                info: 'To find more free summer meal sites for children and youth:',
-                list: {
-                  li1: 'Text “FOOD” or “COMIDA” to 877-877 to receive a list of nearby meal sites.',
-                  li2: 'Visit <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> to find free summer meals for kids.',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
