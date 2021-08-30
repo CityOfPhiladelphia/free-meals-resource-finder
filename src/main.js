@@ -645,11 +645,12 @@ pinboard({
                 },
               },
               custom: {
-                info: 'Para encontrar más sitios de comidas de verano gratuitas para niños y jóvenes:',
-                list: {
-                  li1: 'Envíe un mensaje de texto con las palabras "FOOD" o "COMIDA" al 877-877 para recibir una lista de sitios de comida cercanos.',
-                  li2: 'Visite <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> para encontrar comidas de verano gratuitas para niños.',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
@@ -796,11 +797,12 @@ pinboard({
                 },
               },
               custom: {
-                info: '如需查找更多针对儿童和青年的免费夏季餐食供应点：',
-                list: {
-                  li1: '请编辑短信“FOOD”或“COMIDA”发送至 877-877，获取附近餐食供应点的列表。',
-                  li2: '请浏览 <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> 查找免费的夏季儿童餐。',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
@@ -956,11 +958,12 @@ pinboard({
                 },
               },
               custom: {
-                info: 'Để tìm thêm về các địa điểm cung cấp bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên:',
-                list: {
-                  li1: 'Soạn tin “FOOD” hoặc “COMIDA” gửi tới số 877-877 để nhận danh sách các địa điểm cung cấp bữa ăn gần đó.',
-                  li2: 'Truy cập <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> để tìm bữa ăn mùa hè miễn phí cho trẻ em.',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
@@ -1116,11 +1119,12 @@ pinboard({
                 },
               },
               custom: {
-                info: 'Чтобы найти другие центры раздачи летнего питания для детей и подростков:',
-                list: {
-                  li1: 'Отправьте текстовое сообщение «FOOD» или «COMIDA» на номер 877-877 и получите список ближайших пунктов раздачи питания.',
-                  li2: 'Чтобы найти бесплатное летнее питание для детей, посетите сайт <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b>.',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
@@ -1284,11 +1288,12 @@ pinboard({
                 },
               },
               custom: {
-                info: 'Pour en savoir plus sur les repas d’été gratuits pour les enfants et adolescents :',
-                list: {
-                  li1: 'Envoyez le SMS « « FOOD » » ou « « COMIDA » » au 877-877 pour recevoir une liste des pôles repas les plus proches.',
-                  li2: 'Consultez <b><a href="www.phillysummermeals.org" class="underlined">www.phillysummermeals.org</a></b> pour trouver des repas d’été gratuits pour les enfants.',
-                },
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
