@@ -646,10 +646,10 @@ pinboard({
               },
               custom: {
                 info: '\
-                Check back for updates on food distribution during school breaks.\
-                <br>Visit the School District of Philadelphia\'s \
-                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
-                for information about in-school meal service for students.\
+                Vuelva a consultar las actualizaciones sobre la distribución de comida durante los recreos. \
+                <br>Visite la \
+                <a href="https://www.philasd.org/foodservices">página del Servicio de Comida</a>\
+                del Distrito Escolar de Filadelfia y obtenga información sobre el servicio de comidas en la escuela para los estudiantes.\
                 ',
               },
             },
@@ -798,10 +798,11 @@ pinboard({
               },
               custom: {
                 info: '\
-                Check back for updates on food distribution during school breaks.\
+                请在学校放假期间，再次查看关于食物分配的最新信息。 \
                 <br>Visit the School District of Philadelphia\'s \
-                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
-                for information about in-school meal service for students.\
+                访问 School District of Philadelphia（费城教育局）的 \
+                <a href="https://www.philasd.org/foodservices">Food Services（食品服务）页面</a>，\
+                了解关于学生在校用餐服务的信息。\
                 ',
               },
             },
@@ -959,10 +960,10 @@ pinboard({
               },
               custom: {
                 info: '\
-                Check back for updates on food distribution during school breaks.\
-                <br>Visit the School District of Philadelphia\'s \
-                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
-                for information about in-school meal service for students.\
+                Kiểm tra lại để biết thông tin cập nhật về hoạt động phân phối thực phẩm trong thời gian nghỉ ở trường. \
+                <br>Truy cập trang\
+                <a href="https://www.philasd.org/foodservices">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> \
+                để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh. \
                 ',
               },
             },
@@ -1120,10 +1121,9 @@ pinboard({
               },
               custom: {
                 info: '\
-                Check back for updates on food distribution during school breaks.\
-                <br>Visit the School District of Philadelphia\'s \
-                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
-                for information about in-school meal service for students.\
+                Следите за обновлениями о раздаче еды во время школьных каникул.\
+                <br>Для получения информации об организации питания в школе для учащихся посетите \
+                <a href="https://www.philasd.org/foodservices">страницу службы питания школьного округа Филадельфии.</a>\
                 ',
               },
             },
@@ -1289,10 +1289,10 @@ pinboard({
               },
               custom: {
                 info: '\
-                Check back for updates on food distribution during school breaks.\
-                <br>Visit the School District of Philadelphia\'s \
-                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
-                for information about in-school meal service for students.\
+                Vérifiez les actualités concernant la distribution de repas pendant les vacances scolaires. \
+                <br>Visitez \
+                <a href="https://www.philasd.org/foodservices">la page des services de restauration<a> \
+                du district scolaire de Philadelphie pour obtenir des informations sur le service de cantine scolaire pour les élèves. \
                 ',
               },
             },
