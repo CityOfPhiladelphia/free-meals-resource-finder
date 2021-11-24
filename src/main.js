@@ -312,6 +312,12 @@ pinboard({
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly' ]],
     },
+    recCenterMealSites: {
+      title: 'Recreation centers',
+      titleSingular: 'Recreation center',
+      color: '#FF0000',
+      subsections: [],
+    },
   },
   subsections: {
     '': 'foodSites',
@@ -533,6 +539,19 @@ pinboard({
                 },
                 'SEAMAAC South Philly': {
                   name: 'SEAMAAC South Philly',
+                },
+              },
+            },
+            recCenterMealSites: {
+              header:  'Recreation centers',
+              eligibility: 'All children and youth are eligible. No ID is required. ',
+              pickupDetails: 'Meals are available:\
+              Dec 28 - 30, Jan 3, Feb 1, April 11-14.\
+              Recreation Center hours and meal times vary by site. All meals must be eaten on site. For more information, call or visit the Recreation Center.',
+              subsections: {
+                'compiled': {
+                  name: 'Temporary recreation centers',
+                  pickupDetails: 'Days and times vary by site. One meal per resident.',
                 },
               },
             },
