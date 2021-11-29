@@ -412,7 +412,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Student meal sites',
-              eligibility: 'All children and youth are eligible. No ID is required.',
+              eligibility: 'Check the specific site information.',
               pickupDetails: '',
               subsections: {
                 'PSD': {
