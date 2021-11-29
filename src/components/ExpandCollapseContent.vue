@@ -99,10 +99,10 @@
       :item="item"
     />
 
-    <recreation-centers-school-card
+    <!-- <recreation-centers-school-card
       v-if="subsection === 'Recreation Center'"
       :item="item"
-    />
+    /> -->
 
     <playstreets-school-card
       v-if="subsection === 'playstreets'"

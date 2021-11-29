@@ -298,7 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Recreation Center', 'Other' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -1273,7 +1273,7 @@ pinboard({
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
                   pickupDetails: 'Des repas sont disponibles les jours suivants :<br>\
-                  28 - 30 décembre, 3 janvier, 1erer février, 11 - 14 avril.<br>\
+                  28 - 30 décembre, 3 janvier, 1erer février, 11 - 14 avril.<br>\
                   Les horaires des centres de loisirs et leurs heures de repas varient selon les sites. Tous les repas doivent être consommés sur place. Pour plus d\'informations, appelez le centre de loisirs ou rendez-vous sur place.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
 
