@@ -427,7 +427,9 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
-                  pickupDetails: '',
+                  pickupDetails: 'Meals are available:<br>\
+                  Dec 28 - 30, Jan 3, Feb 1, April 11-14.<br>\
+                  Recreation Center hours and meal times vary by site. All meals must be eaten on site. For more information, call or visit the Recreation Center.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'CHARTER': {
@@ -536,6 +538,7 @@ pinboard({
                 },
               },
             },
+           
             foodPantries: {
               header: 'Food pantries',
               intro: 'These sites supplement the existing food pantry network. To find a food pantry near you:',
@@ -616,8 +619,10 @@ pinboard({
 
                 },
                 'PPR_StudentMeals': {
-                  name: 'centros de Parques y Recreación de Filadelfia',
-                  pickupDetails: '',
+                  name: 'Centros de Recreación',
+                  pickupDetails: 'Las comidas están disponibles:<br>\
+                  Del 28 al 30 de dic, 3 de ene, 1 de feb, del 11 al 14 de abr.<br>\
+                  Los horarios de los Centros de Recreación y de las comida varían según el sitio. Todas las comidas se deben consumir en el lugar. Para obtener más información, llame o visite el Centro de Recreación.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
                 },
@@ -771,7 +776,8 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: '费城公园和娱乐中心',
-                  pickupDetails: '',
+                  pickupDetails: '提供餐食： 12月28日-30日、1月3日、2月1日、4月11日-14日 <br>\
+                  娱乐中心的开放时间和用餐时间因地点而异。 所用餐食须在现场食用。 欲了解更多信息，请联系或访问娱乐中心。 ',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
 
                 },
@@ -933,7 +939,9 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
-                  pickupDetails: '',
+                  pickupDetails: 'Các bữa ăn có sẵn:<br>\
+                   28 - 30 tháng 12, 3 tháng 1, 1 tháng 2, 11 - 14 tháng 4. <br>\
+                   Giờ ăn và giờ của Trung tâm Giải trí thay đổi tùy theo địa điểm. Tất cả các bữa ăn phải được ăn tại chỗ. Để biết thêm thông tin, vui lòng gọi hoặc truy cập Trung tâm Giải trí. ',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
 
                 },
@@ -1094,7 +1102,9 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
-                  pickupDetails: '',
+                  pickupDetails: 'Питание предоставляется:<br>\
+                  С 28 по 30 декабря, 3 января, 1 февраля, с 11 по 14 апреля. <br>\
+                  Часы работы и время приема пищи в рекреационном центре зависят от конкретного места. Прием пищи должен осуществляться на месте. Для получения дополнительной информации звоните или приходите в рекреационный центр.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
 
                 },
@@ -1262,7 +1272,9 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
-                  pickupDetails: '',
+                  pickupDetails: 'Des repas sont disponibles les jours suivants :<br>\
+                  28 - 30 décembre, 3 janvier, 1erer février, 11 - 14 avril.<br>\
+                  Les horaires des centres de loisirs et leurs heures de repas varient selon les sites. Tous les repas doivent être consommés sur place. Pour plus d\'informations, appelez le centre de loisirs ou rendez-vous sur place.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
 
                 },
