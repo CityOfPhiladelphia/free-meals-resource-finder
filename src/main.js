@@ -57,6 +57,7 @@ pinboard({
     siteName: function(item, transforms) {
       // console.log('in locationInfo.siteName, transforms:', transforms);
       let value;
+      
       if (item._featureId.includes('covidFreeMealSites')) {
         value = item.attributes.site_name;
       } else if (item._featureId.includes('parksSites')) {
@@ -79,6 +80,10 @@ pinboard({
       // } else if (item.CATEGORY_TYPE) {
       //   value = item.CATEGORY_TYPE;
       // }
+      
+      if (item.attributes.category_type == "Outdoor Meal Site") {
+        value = "General meal site";
+      } else
       if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -132,7 +137,7 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      'General Meal Site': '#506D0A',
+      'Outdoor Meal Site': '#506D0A', //This is being rendered as General meal sites, but the dataset has not yet been updated
     },
     weight: 0,
     size: 16,
