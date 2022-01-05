@@ -686,7 +686,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Lugares de comidas generales',
+                  name: 'Lugares temporales generales',
                   pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
@@ -1338,7 +1338,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Sites de restauration générale',
+                  name: 'Sites de restauration générale temporaires',
                   pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
                 },
               },
