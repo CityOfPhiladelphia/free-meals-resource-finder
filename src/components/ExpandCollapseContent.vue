@@ -114,8 +114,8 @@
       :item="item"
     />
 
-    <outdoor-site-card
-      v-if="section === 'outdoorMealSites'"
+    <General-site-card
+      v-if="section === 'GeneralMealSites'"
       :item="item"
     />
   </div>
@@ -136,7 +136,7 @@ import OtherSchoolCard from './OtherSchoolCard.vue';
 import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import NdsSchoolCard from './NdsSchoolCard.vue';
-import OutdoorSiteCard from './OutdoorSiteCard.vue';
+import GeneralSiteCard from './GeneralSiteCard.vue';
 
 export default {
   name: 'ExpandCollapseContent',
@@ -151,7 +151,7 @@ export default {
     RecreationCentersSchoolCard,
     PlaystreetsSchoolCard,
     NdsSchoolCard,
-    OutdoorSiteCard,
+    GeneralSiteCard,
   },
   props: {
     item: {
