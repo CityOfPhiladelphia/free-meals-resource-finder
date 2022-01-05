@@ -114,8 +114,8 @@
       :item="item"
     />
 
-    <General-site-card
-      v-if="section === 'GeneralMealSites'"
+    <general-site-card
+      v-if="section === 'generalMealSites'"
       :item="item"
     />
   </div>

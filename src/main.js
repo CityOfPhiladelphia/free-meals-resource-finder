@@ -306,7 +306,7 @@ pinboard({
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
-    GeneralMealSites: {
+    generalMealSites: {
       title: 'General meal sites',
       titleSingular: 'General Meal Site',
       color: '#506D0A',
@@ -315,12 +315,12 @@ pinboard({
   },
   subsections: {
     '': 'foodSites',
-    'Broad Street Ministry': 'GeneralMealSites',
+    'Broad Street Ministry': 'generalMealSites',
     'CHARTER': 'studentMealSites',
-    'Kensington Meal Partners': 'GeneralMealSites',
-    'Muslims Serve': 'GeneralMealSites',
+    'Kensington Meal Partners': 'generalMealSites',
+    'Muslims Serve': 'generalMealSites',
     'NDS': 'studentMealSites',
-    'SEAMAAC South Philly': 'GeneralMealSites',
+    'SEAMAAC South Philly': 'generalMealSites',
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
@@ -513,7 +513,7 @@ pinboard({
 
               },
             },
-            GeneralMealSites: {
+            generalMealSites: {
               header:  'General meal sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required.',
               pickupDetails: '',
@@ -680,13 +680,13 @@ pinboard({
               },
             },
 
-            GeneralMealSites: {
+            generalMealSites: {
               header:  'Lugares de comidas generales',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Lugares de comidas generales',
+                  name: 'Lugares temporales generales',
                   pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
@@ -842,7 +842,7 @@ pinboard({
                 },
               },
             },
-            GeneralMealSites: {
+            generalMealSites: {
               header:  '常规餐食供应场所',
               eligibility: '任何居民均合格。 不需身份证或收入证明。',
               pickupDetails: '',
@@ -1003,7 +1003,7 @@ pinboard({
                 },
               },
             },
-            GeneralMealSites: {
+            generalMealSites: {
               header:  'Các Các địa điểm cung cấp suất ăn theo bữa',
               eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
               pickupDetails: '',
@@ -1163,7 +1163,7 @@ pinboard({
                 },
               },
             },
-            GeneralMealSites: {
+            generalMealSites: {
               header:  'Пункты выдачи еды',
               eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
               pickupDetails: '',
@@ -1332,13 +1332,13 @@ pinboard({
                 },
               },
             },
-            GeneralMealSites: {
+            generalMealSites: {
               header:  'Sites de restauration générale',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Sites de restauration générale',
+                  name: 'Sites de restauration générale temporaires',
                   pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
                 },
               },
