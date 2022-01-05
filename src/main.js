@@ -57,6 +57,7 @@ pinboard({
     siteName: function(item, transforms) {
       // console.log('in locationInfo.siteName, transforms:', transforms);
       let value;
+      
       if (item._featureId.includes('covidFreeMealSites')) {
         value = item.attributes.site_name;
       } else if (item._featureId.includes('parksSites')) {
@@ -79,6 +80,10 @@ pinboard({
       // } else if (item.CATEGORY_TYPE) {
       //   value = item.CATEGORY_TYPE;
       // }
+      
+      if (item.attributes.category_type == "Outdoor Meal Site") {
+        value = "General meal site";
+      } else
       if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -132,7 +137,7 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      'Outdoor Meal Site': '#506D0A',
+      'Outdoor Meal Site': '#506D0A', //This is being rendered as General meal sites, but the dataset has not yet been updated
     },
     weight: 0,
     size: 16,
@@ -306,21 +311,21 @@ pinboard({
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
-    outdoorMealSites: {
-      title: 'Outdoor meal sites',
-      titleSingular: 'Outdoor Meal Site',
+    generalMealSites: {
+      title: 'General meal sites',
+      titleSingular: 'General Meal Site',
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly' ]],
     },
   },
   subsections: {
     '': 'foodSites',
-    'Broad Street Ministry': 'outdoorMealSites',
+    'Broad Street Ministry': 'generalMealSites',
     'CHARTER': 'studentMealSites',
-    'Kensington Meal Partners': 'outdoorMealSites',
-    'Muslims Serve': 'outdoorMealSites',
+    'Kensington Meal Partners': 'generalMealSites',
+    'Muslims Serve': 'generalMealSites',
     'NDS': 'studentMealSites',
-    'SEAMAAC South Philly': 'outdoorMealSites',
+    'SEAMAAC South Philly': 'generalMealSites',
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
@@ -359,7 +364,7 @@ pinboard({
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
           viewAccessible: 'View accessible list of site locations',
-          'Outdoor Meal Site': 'Outdoor meal site',
+          'General Meal Site': 'General meal site',
           'Food Site': 'Food site',
           'Student Meal Site': 'Student meal site',
           'Senior Meal Site': 'Senior meal site',
@@ -515,13 +520,13 @@ pinboard({
 
               },
             },
-            outdoorMealSites: {
-              header:  'Outdoor meal sites',
+            generalMealSites: {
+              header:  'General meal sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Temporary outdoor sites',
+                  name: 'Temporary General sites',
                   pickupDetails: 'Days and times vary by site. One meal per resident.',
                 },
                 'Broad Street Ministry': {
@@ -555,7 +560,7 @@ pinboard({
             subtitle: 'Encuentre alimentos y comidas gratuitas',
             bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
           },
-          'Outdoor Meal Site': 'Lugar de comidas al aire libre',
+          'General Meal Site': 'Lugares de comidas generales',
           'Food Site': 'Lugar de alimentos',
           'Student Meal Site': 'Lugar de comidas para estudiantes',
           'Senior Meal Site': 'Lugar de comidas para adultos mayores',
@@ -685,13 +690,13 @@ pinboard({
               },
             },
 
-            outdoorMealSites: {
-              header:  'Lugares de comidas al aire libre',
+            generalMealSites: {
+              header:  'Lugares de comidas generales',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Lugares temporales al aire libre',
+                  name: 'Lugares temporales generales',
                   pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
@@ -712,7 +717,7 @@ pinboard({
             subtitle: '查找免费的食品和用餐服务',
             bannerAlert: '今天很多地点均关闭。有关更多信息，请查看具体地点详细信息。',
           },
-          'Outdoor Meal Site': '户外用餐场所',
+          'General Meal Site': '常规餐食供应场所',
           'Food Site': '食品地点',
           'Student Meal Site': '学生用餐场所',
           'Senior Meal Site': '年长者用餐场所',
@@ -848,13 +853,13 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  '户外用餐场所',
+            generalMealSites: {
+              header:  '常规餐食供应场所',
               eligibility: '任何居民均合格。 不需身份证或收入证明。',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: '临时的户外场所',
+                  name: '常规餐食供应场所',
                   pickupDetails: '日期和时间会根据场所而有所不同。1 每个居民用餐',
                 },
               },
@@ -875,7 +880,7 @@ pinboard({
             subtitle: 'Tìm Thực Phẩm và Bữa Ăn Miễn Phí',
             bannerAlert: 'Hôm nay, nhiều địa điểm đóng cửa. Hãy kiểm tra các chi tiết về địa điểm cụ thể để biết thêm thông tin.',
           },
-          'Outdoor Meal Site': 'Điểm phát bữa ăn ngoài trời',
+          'General Meal Site': 'Các địa điểm cung cấp suất ăn theo bữa',
           'Food Site': 'Điểm phát thực phẩm',
           'Student Meal Site': 'Điểm phát bữa ăn học sinh',
           'Senior Meal Site': 'Điểm phát bữa ăn cho người già',
@@ -1011,8 +1016,8 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Các điểm phát bữa ăn ngoài trời',
+            generalMealSites: {
+              header:  'Các Các địa điểm cung cấp suất ăn theo bữa',
               eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
               pickupDetails: '',
               subsections: {
@@ -1038,7 +1043,7 @@ pinboard({
             subtitle: 'Найдите бесплатное продовольствие и питание',
             bannerAlert: 'Многие места сегодня закрыты. Для получения более подробной информации о месте отдыха просмотрите дополнительные сведения.',
           },
-          'Outdoor Meal Site': 'Пункт выдачи питания под открытым небом',
+          'General Meal Site': 'Пункты выдачи еды',
           'Food Site': 'Пункт выдачи питания',
           'Student Meal Site': 'Пункт выдачи питания для учащихся',
           'Senior Meal Site': 'Пункт выдачи питания для пожилых людей',
@@ -1173,8 +1178,8 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Пункты выдачи питания под открытым небом',
+            generalMealSites: {
+              header:  'Пункты выдачи еды',
               eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
               pickupDetails: '',
               subsections: {
@@ -1200,7 +1205,7 @@ pinboard({
             subtitle: 'Trouver un repas gratuit',
             bannerAlert: 'De nombreux sites sont fermés aujourd’hui. Consultez les détails spécifiques au site pour obtenir de plus amples informations.',
           },
-          'Outdoor Meal Site': 'Site extérieur de distribution de repas',
+          'General Meal Site': 'Sites de restauration générale',
           'Food Site': 'Sites de distribution alimentaire',
           'Student Meal Site': 'Site de distribution de repas pour élèves',
           'Senior Meal Site': 'Site de distribution de repas pour personnes âgées',
@@ -1344,13 +1349,13 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Sites extérieurs de distribution de repas',
+            generalMealSites: {
+              header:  'Sites de restauration générale',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Sites extérieurs temporaires',
+                  name: 'Sites de restauration générale temporaires',
                   pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
                 },
               },

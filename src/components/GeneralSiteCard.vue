@@ -26,7 +26,7 @@
 import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
 
 export default {
-  name: 'OutdoorSiteCard',
+  name: 'GeneralSiteCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTableLight.vue'),
     VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'@phila/vue-comps/src/components/VerticalTable3CellsLight.vue'),
