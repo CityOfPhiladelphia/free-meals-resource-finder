@@ -66,6 +66,9 @@ pinboard({
     },
   },
   customComps,
+  // hiddenRefine: {
+  //
+  // },
   refine: {
     type: 'categoryField_value',
     value: function(item) {
@@ -129,7 +132,7 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      'Outdoor Meal Site': '#506D0A',
+      'General Meal Site': '#506D0A',
     },
     weight: 0,
     size: 16,
@@ -175,7 +178,7 @@ pinboard({
     'OtherLinks': {
       locations: {
         text: 'viewAccessible',
-        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+        link: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
       },
     },
   },
@@ -295,7 +298,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student Meal Site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Recreation Center', 'Other' ],
     },
     seniorMealSites: {
       title: 'Senior meal sites',
@@ -303,20 +306,21 @@ pinboard({
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
-    outdoorMealSites: {
-      title: 'Outdoor meal sites',
-      titleSingular: 'Outdoor Meal Site',
+    GeneralMealSites: {
+      title: 'General meal sites',
+      titleSingular: 'General Meal Site',
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly' ]],
     },
   },
   subsections: {
     '': 'foodSites',
-    'Broad Street Ministry': 'outdoorMealSites',
+    'Broad Street Ministry': 'GeneralMealSites',
     'CHARTER': 'studentMealSites',
-    'Kensington Meal Partners': 'outdoorMealSites',
-    'Muslims Serve': 'outdoorMealSites',
-    'SEAMAAC South Philly': 'outdoorMealSites',
+    'Kensington Meal Partners': 'GeneralMealSites',
+    'Muslims Serve': 'GeneralMealSites',
+    'NDS': 'studentMealSites',
+    'SEAMAAC South Philly': 'GeneralMealSites',
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
@@ -328,6 +332,8 @@ pinboard({
     'PPR_Senior': 'seniorMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
+    'Recreation Center': 'studentMealSites',
+    'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
@@ -348,12 +354,12 @@ pinboard({
           language: 'English',
           app: {
             title: 'Food distribution sites',
-            subtitle: 'Find free food and meals during COVID-19',
+            subtitle: 'Find free food and meals',
             bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
           viewAccessible: 'View accessible list of site locations',
-          'Outdoor Meal Site': 'Outdoor meal site',
+          'General Meal Site': 'General meal site',
           'Food Site': 'Food site',
           'Student Meal Site': 'Student meal site',
           'Senior Meal Site': 'Senior meal site',
@@ -375,6 +381,7 @@ pinboard({
           nonPerish: 'non-perishable items only',
           freshOnly: 'fresh produce only',
           breakfastLunch: 'Breakfast and lunch',
+          ndsMeals: 'Sites may provide daily meals or 7-day breakfast and lunch boxes. Contact NDS for more details.',
           tenMeals: 'Sites provide 7 breakfast and 7 lunch meals and fresh fruit each week.',
           oneMeal: '1 meal per resident',
           driveThrough: {
@@ -385,8 +392,8 @@ pinboard({
           sections: {
             foodSites: {
               header: 'Food sites',
-              eligibility: 'Any resident is eligible. No ID or proof of income is required',
-              pickupDetails: 'Residents can get one box per household',
+              eligibility: 'Any resident is eligible. No ID or proof of income is required.',
+              pickupDetails: 'Residents can up pick supplemental food for their household.',
               subsections: {
                 'PHILABUNDANCE': {
                   name: 'Philabundance',
@@ -412,32 +419,54 @@ pinboard({
                   name: 'Philadelphia School District schools',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'CHARTER': {
                   name: 'Charter schools',
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
-
                 },
                 'playstreets': {
                   name: 'Playstreets',
                   hidePickupDetailsInGreeting: true,
-                  pickupDetails: 'Open Monday through Friday from 10 a.m. to 4 p.m. Lunch and afternoon snack provided. Meal distribution times vary by site.',
+                  pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br><br>Playstreets serve lunch and a snack.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
+                'NDS': {
+                  name: 'Nutritional Development Services',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Sites may provide daily meals or 7-day breakfast and lunch boxes. Contact Nutritional Development Services for more details.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Other': {
+                  name: 'Other Summer Meal Sites',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Recreation Center': {
+                  name: 'Recreation Centers',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Recreation Centers are open Monday to Friday between 9 a.m. to 3 p.m. Meal times vary by site. For more information, call or visit the Recreation Center.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+              },
+              custom: {
+                info: '\
+                Check back for updates on food distribution during school breaks.\
+                <br>Visit the School District of Philadelphia\'s \
+                <a href="https://www.philasd.org/foodservices">Food Services page</a>\
+                for information about in-school meal service for students.\
+                ',
               },
             },
             seniorMealSites: {
@@ -484,13 +513,13 @@ pinboard({
 
               },
             },
-            outdoorMealSites: {
-              header:  'Outdoor meal sites',
+            GeneralMealSites: {
+              header:  'General meal sites',
               eligibility: 'Any resident is eligible. No ID or proof of income is required.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Temporary outdoor sites',
+                  name: 'Temporary General sites',
                   pickupDetails: 'Days and times vary by site. One meal per resident.',
                 },
                 'Broad Street Ministry': {
@@ -520,10 +549,10 @@ pinboard({
           language: 'Español',
           app: {
             title: 'Lugares de distribución de alimentos',
-            subtitle: 'Obtenga alimentos y comidas gratis durante la epidemia de la COVID-19',
+            subtitle: 'Encuentre alimentos y comidas gratuitas',
             bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
           },
-          'Outdoor Meal Site': 'Lugar de comidas al aire libre',
+          'General Meal Site': 'Lugares de comidas generales',
           'Food Site': 'Lugar de alimentos',
           'Student Meal Site': 'Lugar de comidas para estudiantes',
           'Senior Meal Site': 'Lugar de comidas para adultos mayores',
@@ -555,7 +584,7 @@ pinboard({
             foodSites: {
               header: 'Lugar de alimentos',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
-              pickupDetails: 'Los residentes pueden obtener una caja por hogar.',
+              pickupDetails: 'Los residentes pueden recoger alimentos complementarios para su hogar.',
               subsections: {
                 'PPR': {
                   name: 'centros de Parques y Recreación de Filadelfia',
@@ -594,10 +623,34 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Abierto de lunes a viernes, de 10:00 a.m. a 4:00 p.m. Se sirve el almuerzo y un bocadillo por la tarde. Los horarios de distribución de comidas varían según el lugar.',
+                  pickupDetails: 'Playstreets estarán abiertas de lunes a viernes de 10:00 a. m. a 4:00 p. m. Las calles permanecerán cerradas para la circulación de automóviles. Los horarios de comida variarán de acuerdo con el lugar. Para obtener más información, visite Playstreets.<br><br>En Playstreets se servirán almuerzos y meriendas.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
-
                 },
+                'NDS': {
+                  name: 'Servicios de Desarrollo Nutricional',
+                  pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+                },
+                'Other': {
+                  name: 'Otros sitios para comer durante el verano',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+                },
+                'Recreation Center': {
+                  name: 'Centros recreativos',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Los centros recreativos estarán abiertos de lunes a viernes de 9:00 a. m. a 3:00 p. m. Los horarios de comida varían según el lugar. Para obtener más información, llame o visite el centro recreativo.',
+                  eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
+                },
+              },
+              custom: {
+                info: '\
+                Vuelva a consultar las actualizaciones sobre la distribución de comida durante los recreos. \
+                <br>Visite la \
+                <a href="https://www.philasd.org/foodservices">página del Servicio de Comida</a>\
+                del Distrito Escolar de Filadelfia y obtenga información sobre el servicio de comidas en la escuela para los estudiantes.\
+                ',
               },
             },
             seniorMealSites: {
@@ -627,13 +680,13 @@ pinboard({
               },
             },
 
-            outdoorMealSites: {
-              header:  'Lugares de comidas al aire libre',
+            GeneralMealSites: {
+              header:  'Lugares de comidas generales',
               eligibility: 'Cualquier residente es elegible. No se necesita identificación ni prueba de ingresos.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Lugares temporales al aire libre',
+                  name: 'Lugares de comidas generales',
                   pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
@@ -651,10 +704,10 @@ pinboard({
           language: '中文',
           app: {
             title: '食品分发地点',
-            subtitle: '在冠状病毒-19期间查找免费食物和餐点',
+            subtitle: '查找免费的食品和用餐服务',
             bannerAlert: '今天很多地点均关闭。有关更多信息，请查看具体地点详细信息。',
           },
-          'Outdoor Meal Site': '户外用餐场所',
+          'General Meal Site': '常规餐食供应场所',
           'Food Site': '食品地点',
           'Student Meal Site': '学生用餐场所',
           'Senior Meal Site': '年长者用餐场所',
@@ -686,7 +739,7 @@ pinboard({
             foodSites: {
               header: '食品地点',
               eligibility: '所有居民都合格。 不需身份证或收入证明。',
-              pickupDetails: '凡是居民每户都可以得到一盒食品。',
+              pickupDetails: '居民可以为他们的家庭领取补充食物。',
               subsections: {
                 'PPR': {
                   name: '费城公园和娱乐中心',
@@ -724,10 +777,33 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: '从周一至周五上午 10 点至下午 4 点开放。 提供午餐和午后零食。 各个场所的餐食分发时间不尽相同。',
+                  pickupDetails: 'Playstreets 的开放时间为周一至周五上午 10 点至下午 4 点。在此期间，街道将禁行车辆。各个场所的供餐时间可能不同。如需更多信息，请访问 Playstreet。<br><br>Playstreets 供应午餐和小吃。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
-
                 },
+                'NDS': {
+                  name: '营养发育服务',
+                  pickupDetails: '餐饮场所可能供应一日三餐或一周七天的早餐和午餐餐盒。联系营养发育服务了解更多详情。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+                },
+                'Other': {
+                  name: '其他夏季餐饮场所',
+                  pickupDetails: '各个场所的供餐时间可能不同。如需更多信息，请访问夏季餐饮场所。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+                },
+                'Recreation Center': {
+                  name: '康乐中心',
+                  pickupDetails: '娱乐中心的开放时间为周一至周五上午 9 点至下午 3 点。各个场所的供餐时间可能不同。如需更多信息，请致电或访问康乐中心。',
+                  eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
+                },
+              },
+              custom: {
+                info: '\
+                请在学校放假期间，再次查看关于食物分配的最新信息。 \
+                <br>Visit the School District of Philadelphia\'s \
+                访问 School District of Philadelphia（费城教育局）的 \
+                <a href="https://www.philasd.org/foodservices">Food Services（食品服务）页面</a>，\
+                了解关于学生在校用餐服务的信息。\
+                ',
               },
             },
             seniorMealSites: {
@@ -766,13 +842,13 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  '户外用餐场所',
+            GeneralMealSites: {
+              header:  '常规餐食供应场所',
               eligibility: '任何居民均合格。 不需身份证或收入证明。',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: '临时的户外场所',
+                  name: '常规餐食供应场所',
                   pickupDetails: '日期和时间会根据场所而有所不同。1 每个居民用餐',
                 },
               },
@@ -790,10 +866,10 @@ pinboard({
           language: 'Tiếng Việt',
           app: {
             title: 'Các điểm phân phát thực phẩm',
-            subtitle: 'Tìm thực phẩm và bữa ăn miễn phí trong dịch COVID-19',
+            subtitle: 'Tìm Thực Phẩm và Bữa Ăn Miễn Phí',
             bannerAlert: 'Hôm nay, nhiều địa điểm đóng cửa. Hãy kiểm tra các chi tiết về địa điểm cụ thể để biết thêm thông tin.',
           },
-          'Outdoor Meal Site': 'Điểm phát bữa ăn ngoài trời',
+          'General Meal Site': 'Các địa điểm cung cấp suất ăn theo bữa',
           'Food Site': 'Điểm phát thực phẩm',
           'Student Meal Site': 'Điểm phát bữa ăn học sinh',
           'Senior Meal Site': 'Điểm phát bữa ăn cho người già',
@@ -825,7 +901,7 @@ pinboard({
             foodSites: {
               header: 'Các điểm phát thực phẩm',
               eligibility: 'Kiểm tra thông tin địa điểm cụ thể. ',
-              pickupDetails: 'Các cư dân có thể nhận một hộp cho mỗi hộ gia đình.',
+              pickupDetails: 'Cư dân có thể nhận thực phẩm bổ sung cho hộ gia đình của mình.',
               subsections: {
                 'PPR': {
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
@@ -861,13 +937,34 @@ pinboard({
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
 
                 },
-
                 'playstreets': {
-                  name: 'Playstreets',
-                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.',
+                  name: 'Playstreets (Chơi trên đường phố)',
+                  pickupDetails: 'Mở từ Thứ Hai đến Thứ Sáu, từ 10 a.m. đến 4 p.m. Có bữa trưa và bữa điểm tâm chiều. Giờ phân phát bữa ăn khác nhau giữa các địa điểm.Playstreets hoạt động từ thứ Hai đến thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Đường phố cấm xe cộ lưu thông. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm Playstreet.<br><br>Playstreets phục vụ bữa trưa và bữa ăn nhẹ.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
-
                 },
+                'NDS': {
+                  name: 'Dịch vụ Phát triển Dinh dưỡng',
+                  pickupDetails: 'Các địa điểm có thể cung cấp bữa ăn hàng ngày hoặc bữa sáng và hộp ăn trưa 7 ngày. Liên hệ với Dịch vụ Phát triển Dinh dưỡng để biết thêm thông tin chi tiết.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+                'Other': {
+                  name: 'Các Địa điểm Bữa ăn Mùa hè Khác',
+                  pickupDetails: 'Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm các địa điểm bữa ăn mùa hè.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+                'Recreation Center': {
+                  name: 'Trung tâm Giải trí',
+                  pickupDetails: 'Các Trung tâm Giải trí hoạt động từ thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 3 giờ chiều. Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy gọi hoặc ghé thăm Trung tâm Giải trí.',
+                  eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
+                },
+              },
+              custom: {
+                info: '\
+                Kiểm tra lại để biết thông tin cập nhật về hoạt động phân phối thực phẩm trong thời gian nghỉ ở trường. \
+                <br>Truy cập trang\
+                <a href="https://www.philasd.org/foodservices">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> \
+                để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh. \
+                ',
               },
             },
             seniorMealSites: {
@@ -906,8 +1003,8 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Các điểm phát bữa ăn ngoài trời',
+            GeneralMealSites: {
+              header:  'Các Các địa điểm cung cấp suất ăn theo bữa',
               eligibility: 'Bất cứ cư dân nào cũng đều đủ điều kiện. Không cần ID hay bằng chứng thu nhập.',
               pickupDetails: '',
               subsections: {
@@ -930,10 +1027,10 @@ pinboard({
           language: 'Pусский',
           app: {
             title: 'Пункты выдачи продуктов',
-            subtitle: 'Поиск пунктов бесплатного продовольствия и питания во время пандемии COVID-19',
+            subtitle: 'Найдите бесплатное продовольствие и питание',
             bannerAlert: 'Многие места сегодня закрыты. Для получения более подробной информации о месте отдыха просмотрите дополнительные сведения.',
           },
-          'Outdoor Meal Site': 'Пункт выдачи питания под открытым небом',
+          'General Meal Site': 'Пункты выдачи еды',
           'Food Site': 'Пункт выдачи питания',
           'Student Meal Site': 'Пункт выдачи питания для учащихся',
           'Senior Meal Site': 'Пункт выдачи питания для пожилых людей',
@@ -965,7 +1062,7 @@ pinboard({
             foodSites: {
               header: 'Пункты выдачи продуктов',
               eligibility: 'уточните информацию по конкретному пункту..',
-              pickupDetails: 'Местные жители могут получить один продуктовый набор на семью.',
+              pickupDetails: 'Жители могут получить дополнительное питание для своих семей.',
               subsections: {
                 'PPR': {
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
@@ -1002,12 +1099,32 @@ pinboard({
 
                 },
                 'playstreets': {
-                  name: 'Playstreets',
-                  pickupDetails: 'Открыто с понедельника по пятницу, с 10:00 до 16:00. Предоставляется обед и полдник. Время выдачи питания определяется пунктом.',
+                  name: 'Улицы Playstreet',
+                  pickupDetails: 'Улицы Playstreet открыты с понедельника по пятницу с 10:00 до 16:00. Улицы закрыты для движения транспорта. Время раздачи питания различается в зависимости от конкретного адреса. Подробнее см. на сайте Playstreet.<br><br>На улицах Playstreet выдаются обеды и снеки.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
-
-
                 },
+                'NDS': {
+                  name: 'Центры Nutritional Development Services',
+                  pickupDetails: 'В центрах можно получить ежедневное питание или наборы для завтрака и обеда на 7 дней. Подробную информацию можно получить в организации Nutritional Development Services.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+                },
+                'Other': {
+                  name: 'Другие центры раздачи летнего питания',
+                  pickupDetails: 'Время раздачи питания различается в зависимости от конкретного адреса. Подробную информацию можно узнать в соответствующем центре летнего питания.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+                },
+                'Recreation Center': {
+                  name: 'Центры отдыха',
+                  pickupDetails: 'Центры отдыха открыты с понедельника по пятницу с 9:00 до 15:00. Время раздачи питания различается в зависимости от конкретного адреса. Чтобы получить подробную информацию, позвоните или зайдите в центр отдыха.',
+                  eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
+                },
+              },
+              custom: {
+                info: '\
+                Следите за обновлениями о раздаче еды во время школьных каникул.\
+                <br>Для получения информации об организации питания в школе для учащихся посетите \
+                <a href="https://www.philasd.org/foodservices">страницу службы питания школьного округа Филадельфии.</a>\
+                ',
               },
             },
             seniorMealSites: {
@@ -1046,8 +1163,8 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Пункты выдачи питания под открытым небом',
+            GeneralMealSites: {
+              header:  'Пункты выдачи еды',
               eligibility: 'Право на получение помощи есть у каждого местного жителя. Удостоверение личности или справка о доходах не требуется.',
               pickupDetails: '',
               subsections: {
@@ -1070,10 +1187,10 @@ pinboard({
           language: 'Français',
           app: {
             title: 'Sites de distribution alimentaire',
-            subtitle: 'Trouver de la nourriture et des repas gratuits pendant le COVID-19',
+            subtitle: 'Trouver un repas gratuit',
             bannerAlert: 'De nombreux sites sont fermés aujourd’hui. Consultez les détails spécifiques au site pour obtenir de plus amples informations.',
           },
-          'Outdoor Meal Site': 'Site extérieur de distribution de repas',
+          'General Meal Site': 'Sites de restauration générale',
           'Food Site': 'Sites de distribution alimentaire',
           'Student Meal Site': 'Site de distribution de repas pour élèves',
           'Senior Meal Site': 'Site de distribution de repas pour personnes âgées',
@@ -1105,7 +1222,7 @@ pinboard({
             foodSites: {
               header: 'Sites de distribution alimentaire',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
-              pickupDetails: 'Les habitants peuvent recevoir une boîte par foyer.',
+              pickupDetails: 'Les résidents peuvent se procurer de la nourriture supplémentaire pour leur foyer.',
               subsections: {
                 'PPR': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
@@ -1151,10 +1268,32 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Ouvert du lundi au vendredi, de 10h00 à 16h00. Déjeuner et goûter offerts. Les horaires de distribution varient en fonction des sites.',
+                  pickupDetails: 'Playstreets se déroule du lundi au vendredi, entre 10h et 16h. Les rues sont piétonnes. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, consultez Playstreets.<br><br>Playstreets offre le déjeuner et un goûter.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
-
                 },
+                'NDS': {
+                  name: 'Services de développement nutritionnel',
+                  pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+                },
+                'Other': {
+                  name: 'Autres pôles repas d\'été',
+                  pickupDetails: 'Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, rendez-vous au pôle repas d\'été.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+                },
+                'Recreation Center': {
+                  name: 'Centres aérés',
+                  pickupDetails: 'Les centres aérés sont ouverts du lundi au vendredi, entre 9h et 15h. Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, appelez ou rendez-vous au centre aéré.',
+                  eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
+                },
+              },
+              custom: {
+                info: '\
+                Vérifiez les actualités concernant la distribution de repas pendant les vacances scolaires. \
+                <br>Visitez \
+                <a href="https://www.philasd.org/foodservices">la page des services de restauration<a> \
+                du district scolaire de Philadelphie pour obtenir des informations sur le service de cantine scolaire pour les élèves. \
+                ',
               },
             },
             seniorMealSites: {
@@ -1193,13 +1332,13 @@ pinboard({
                 },
               },
             },
-            outdoorMealSites: {
-              header:  'Sites extérieurs de distribution de repas',
+            GeneralMealSites: {
+              header:  'Sites de restauration générale',
               eligibility: 'Tous les habitants peuvent en bénéficier. Aucune pièce d’identité ni preuve de revenus n’est demandée.',
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Sites extérieurs temporaires',
+                  name: 'Sites de restauration générale',
                   pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
                 },
               },

@@ -94,13 +94,28 @@
       :item="item"
     />
 
+    <other-school-card
+      v-if="subsection === 'Other'"
+      :item="item"
+    />
+
+    <recreation-centers-school-card
+      v-if="subsection === 'Recreation Center'"
+      :item="item"
+    />
+
     <playstreets-school-card
       v-if="subsection === 'playstreets'"
       :item="item"
     />
 
-    <outdoor-site-card
-      v-if="section === 'outdoorMealSites'"
+    <nds-school-card
+      v-if="subsection === 'NDS'"
+      :item="item"
+    />
+
+    <General-site-card
+      v-if="section === 'GeneralMealSites'"
       :item="item"
     />
   </div>
@@ -117,8 +132,11 @@ import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
 import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
+import OtherSchoolCard from './OtherSchoolCard.vue';
+import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
-import OutdoorSiteCard from './OutdoorSiteCard.vue';
+import NdsSchoolCard from './NdsSchoolCard.vue';
+import GeneralSiteCard from './GeneralSiteCard.vue';
 
 export default {
   name: 'ExpandCollapseContent',
@@ -129,8 +147,11 @@ export default {
     PprSchoolCard,
     PsdSchoolCard,
     PhaSchoolCard,
+    OtherSchoolCard,
+    RecreationCentersSchoolCard,
     PlaystreetsSchoolCard,
-    OutdoorSiteCard,
+    NdsSchoolCard,
+    GeneralSiteCard,
   },
   props: {
     item: {
