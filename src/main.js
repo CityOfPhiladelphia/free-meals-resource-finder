@@ -137,7 +137,6 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      // 'Outdoor Meal Site': '#506D0A', //This is being rendered as General meal sites, but the dataset has not yet been updated
       'General Meal Site': '#506D0A',
     },
     weight: 0,
