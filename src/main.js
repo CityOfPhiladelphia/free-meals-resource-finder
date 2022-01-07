@@ -81,9 +81,9 @@ pinboard({
       //   value = item.CATEGORY_TYPE;
       // }
       
-      if (item.attributes.category_type == "Outdoor Meal Site") {
-        value = "General meal site";
-      } else
+      // if (item.attributes.category_type == "General Meal Site") {
+      //   console.log(item)
+      // } else
       if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -137,7 +137,8 @@ pinboard({
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
-      'Outdoor Meal Site': '#506D0A', //This is being rendered as General meal sites, but the dataset has not yet been updated
+      // 'Outdoor Meal Site': '#506D0A', //This is being rendered as General meal sites, but the dataset has not yet been updated
+      'General Meal Site': '#506D0A',
     },
     weight: 0,
     size: 16,
