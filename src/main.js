@@ -526,7 +526,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Temporary General sites',
+                  name: 'General sites',
                   pickupDetails: 'Days and times vary by site. One meal per resident.',
                 },
                 'Broad Street Ministry': {
@@ -696,7 +696,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Lugares temporales generales',
+                  name: 'Lugares de comidas generales',
                   pickupDetails: 'Los días y horarios varían según el lugar. 1 comida por residente',
                 },
               },
@@ -1022,7 +1022,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Các điểm ngoài trời tạm thời',
+                  name: 'Các Các địa điểm cung cấp suất ăn theo bữa',
                   pickupDetails: 'Ngày và giờ khác nhau giữa các điểm. 1 bữa ăn mỗi cư dân.',
                 },
               },
@@ -1184,7 +1184,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Временные пункты выдачи питания под открытым небом',
+                  name: 'Пункты выдачи еды',
                   pickupDetails: 'У каждого пункта свой график работы',
                 },
               },
@@ -1355,7 +1355,7 @@ pinboard({
               pickupDetails: '',
               subsections: {
                 'compiled': {
-                  name: 'Sites de restauration générale temporaires',
+                  name: 'Sites de restauration générale',
                   pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites. 1 repas par habitant.',
                 },
               },
