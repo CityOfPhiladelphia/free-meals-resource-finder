@@ -315,7 +315,7 @@ pinboard({
       title: 'General meal sites',
       titleSingular: 'General Meal Site',
       color: '#506D0A',
-      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly' ]],
+      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
     },
   },
   subsections: {
@@ -338,6 +338,7 @@ pinboard({
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
+    'Office of Homeless Services': 'generalMealSites',
     'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
@@ -540,6 +541,9 @@ pinboard({
                 },
                 'SEAMAAC South Philly': {
                   name: 'SEAMAAC South Philly',
+                },
+                'Office of Homeless Services': {
+                  name: 'Office of Homeless Services',
                 },
               },
             },
