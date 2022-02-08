@@ -81,9 +81,9 @@ pinboard({
       //   value = item.CATEGORY_TYPE;
       // }
       
-      // if (item.attributes.category_type == "General Meal Site") {
-      //   console.log(item)
-      // } else
+      if (item.attributes.category_type == "Senior Meal Site") {
+        value = "Older adult meal site";
+      } else
       if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -136,6 +136,7 @@ pinboard({
     circleColors: {
       'Food Site': '#0F4D90',
       'Senior Meal Site': '#D67D00',
+      // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
     },
@@ -305,9 +306,9 @@ pinboard({
       color: '#721817',
       subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other' ],
     },
-    seniorMealSites: {
-      title: 'Senior meal sites',
-      titleSingular: 'Senior Meal Site',
+    olderAdultSites: {
+      title: 'Older adult meal site',
+      titleSingular: 'Older Adult Meal Site',
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
@@ -331,10 +332,10 @@ pinboard({
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
     'PPR': 'foodSites',
     'PSD': 'studentMealSites',
-    'SENIOR SITE': 'seniorMealSites',
+    'SENIOR SITE': 'olderAdultSites',
     'SHARE FOOD PROGRAM': 'foodSites',
-    'PCA': 'seniorMealSites',
-    'PPR_Senior': 'seniorMealSites',
+    'PCA': 'olderAdultSites',
+    'PPR_Senior': 'olderAdultSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
@@ -368,7 +369,7 @@ pinboard({
           'General Meal Site': 'General meal site',
           'Food Site': 'Food site',
           'Student Meal Site': 'Student meal site',
-          'Senior Meal Site': 'Senior meal site',
+          'Older Adult Meal Site': 'Older adult meal site',
           eligibility: 'Eligibility',
           betaTag: 'Beta',
           pickupDetails: 'Pickup details',
@@ -477,12 +478,12 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
-              header: 'Senior meal sites',
+            olderAdultSites: {
+              header: 'Older Adult meal sites',
               eligibility: '\
                 Adults 60 and over are eligible at sites supported by the Philadelphia\
                 Corporation for Aging (PCA). \
-                <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+                <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
                 Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
                 No reservation necessary.\
               ',
@@ -493,13 +494,13 @@ pinboard({
                   eligibility: '\
                     Adults 60 and over are eligible at sites supported by the Philadelphia\
                     Corporation for Aging (PCA). \
-                    <i><b>Seniors must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+                    <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
                   ',
                   pickupDetails: "\
-                    Seniors can reserve 5 to 7 meals per week.<br>\
+                    Older adults can reserve 5 to 7 meals per week.<br>\
                     Pickup dates and times vary by site.\
                     For more information and to reserve meals, contact a specific site.\
-                    A senior's family may pick up meals, with prior arrangement.\
+                    An older adult's family may pick up meals, with prior arrangement.\
                     Meals may also be home delivered if needed.\
                     To get help in languages other than English, call the PCA helpline at\
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
@@ -512,11 +513,11 @@ pinboard({
                     No reservation necessary.\
                   ',
                   pickupDetails: '\
-                    Seniors can pick up 5 meals per week at most sites.\
+                    Older adults can pick up 5 meals per week at most sites.\
                   ',
                 },
                 'SENIOR SITE': {
-                  name: 'Senior site',
+                  name: 'Older adult site',
                 },
 
               },
@@ -567,7 +568,7 @@ pinboard({
           'General Meal Site': 'Lugares de comidas generales',
           'Food Site': 'Lugar de alimentos',
           'Student Meal Site': 'Lugar de comidas para estudiantes',
-          'Senior Meal Site': 'Lugar de comidas para adultos mayores',
+          'Older Adult Meal Site': 'Lugar de comidas para adultos mayores',
           eligibility: 'Elegibilidad',
           pickupDetails: 'Detalles y horarios de retiro',
           beforeYouGo: 'Antes de ir',
@@ -667,7 +668,7 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
+            olderAdultSites: {
               header: 'Lugares de comidas para adultos mayores',
               eligibility: 'Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA). <b><i>Los adultos mayores deben llamar para reservar la comida con anticipación antes de retirarla.</i></b>',
               pickupDetails: '',
@@ -676,20 +677,21 @@ pinboard({
                   name: 'Lugares patrocinados por la PCA',
                   eligibility: '\
                   Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA).\
-                  <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de retirarla.</b></i><br><br>\
+                  <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de recogerlas.</b></i><br><br>\
                 ',
                   pickupDetails: "\
-                  Los adultos mayores pueden llamar con anticipación y reservar de 5 a 7 comidas por semana. <br>\
-                  Los horarios de retiro varían según el lugar. Para obtener más información o reservar comidas, comuníquese con el lugar específico. <br>\
-                  Un familiar del adulto mayor puede retirar las comidas con previo acuerdo. Las comidas también se pueden enviar a domicilio si es necesario. <br>\
-                  Para recibir ayuda en otro idioma que no sea inglés, llame a la línea de ayuda de la PCA al <a class=\"underlined\" href=\"tel:+1 (215) 765-9040\">(215) 765-9040</a>.",
+                  Los adultos mayores pueden reservar de 5 a 7 comidas a la semana.\
+                  Las fechas y horarios de búsqueda varían según el sitio. Para obtener más información y reservar comidas,\
+                  comuníquese con un sitio específico. La familia de un adulto mayor puede recoger las comidas, previo aviso.\
+                  Para obtener ayuda en otros idiomas que no sean el inglés, llame a la línea de ayuda de la PCA al \
+                  <a class=\"underlined\" href=\"tel:+1 (215) 765-9040\">(215) 765-9040</a>.",
                 },
                 'PPR_Senior': {
                   name: 'centros para adultos mayores de Parques y Recreación',
                   eligibility: '\
                   Los adultos de 55 años o más son elegibles en los centros para adultos mayores de Parques y Recreación. <br>\
-                  No es necesario reservar.',
-                  pickupDetails: 'Los adultos mayores pueden retirar hasta 5 comidas por semana en la mayoría de los lugares.',
+                  No es necesario realizar una reserva.',
+                  pickupDetails: 'Los adultos mayores pueden recoger 5 comidas por semana en la mayoría de los sitios.',
                 },
               },
             },
@@ -724,7 +726,7 @@ pinboard({
           'General Meal Site': '常规餐食供应场所',
           'Food Site': '食品地点',
           'Student Meal Site': '学生用餐场所',
-          'Senior Meal Site': '年长者用餐场所',
+          'Older Adult Meal Site': '年长者用餐场所',
           eligibility: '合格标准',
           pickupDetails: '取餐详情及时间',
           beforeYouGo: '您出发前',
@@ -821,7 +823,7 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
+            olderAdultSites: {
               header: '年长者用餐场所',
               eligibility: '\
               60岁及60岁以上的成年人可去费城老龄者公司（PCA）支持的场所。\
@@ -834,25 +836,26 @@ pinboard({
                 'PCA': {
                   name: '费城老龄者公司（PCA）支持的场所',
                   eligibility: '\
-                  60岁及60岁以上的成年人可去费城老龄者公司（PCA）支持的场所。老年人需事先打电话预定餐点然后去取餐。 \
-                    <i><b>老年人需事先打电话预定餐点然后去取餐。</b></i><br><br>\
+                  60 岁及以上的长者有资格享受费城老龄公司 (Philadelphia Corporation for Aging, PCA) 支持站点提供的服务。 \
+                    <i><b> 长者需要在取餐前提前打电话预约餐食。</b></i><br><br>\
                   ',
                   pickupDetails: "\
-                  老龄者每周可先去电预订5到7餐。<br>\
-                  取餐时间根据每个地点而有所不同。 想获得更多信息和预订餐点，请与具体场所联系。<br>\
-                  如事先作好安排，老龄者的家人可以代为去取餐食。 如果需要，餐食也可被送上府。\
-                  如需帮助以得到用英语以外的语言来沟通，请去电费城老龄者公司的帮助热线\
+                  长者每周可预约 5-7 顿餐食。<br>\
+                  取餐日期和次数因站点而异。 \
+                  如需了解更多信息，或需要预约餐食，请联系具体站点。 \
+                  经事先安排，可由长者的亲属取餐。 \
+                  如需获得英语以外语言的帮助，请致电 PCA 帮助热线\
                   <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
                 },
                 'PPR_Senior': {
-                  name: '公园和娱乐中心的成人中心',
+                  name: '家费城公园与休闲老年人中心',
                   eligibility: '\
-                  55岁和55岁以上的成年人可去公园和娱乐中心的成人中心。 <br>\
-                    不需事先预订。\
+                  55 岁及以上的人群有资格享受公园与休闲老年人中心 (Parks & Recreation senior center) 提供的服务。 <br>\
+                    无需预约。\
                   ',
                   pickupDetails: '\
-                  在多数场所，老龄者每周可去取5餐。\
+                  大多数站点支持长者每周领取 5 顿餐食。\
                   ',
                 },
               },
@@ -887,7 +890,7 @@ pinboard({
           'General Meal Site': 'Các địa điểm cung cấp suất ăn theo bữa',
           'Food Site': 'Điểm phát thực phẩm',
           'Student Meal Site': 'Điểm phát bữa ăn học sinh',
-          'Senior Meal Site': 'Điểm phát bữa ăn cho người già',
+          'Older Adult Meal Site': 'Điểm phát bữa ăn cho người già',
           eligibility: 'Điều kiện hội đủ',
           pickupDetails: 'Chi tiết',
           beforeYouGo: 'Trước khi đi',
@@ -984,7 +987,7 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
+            olderAdultSites: {
               header: 'Các điểm phát bữa ăn cho người già',
               eligibility: '\
               Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
@@ -1050,7 +1053,7 @@ pinboard({
           'General Meal Site': 'Пункты выдачи еды',
           'Food Site': 'Пункт выдачи питания',
           'Student Meal Site': 'Пункт выдачи питания для учащихся',
-          'Senior Meal Site': 'Пункт выдачи питания для пожилых людей',
+          'Older Adult Meal Site': 'Пункт выдачи питания для пожилых людей',
           eligibility: 'Критерии получения помощи',
           pickupDetails: 'Информация о получении и время получения',
           beforeYouGo: 'Прежде чем идти',
@@ -1146,7 +1149,7 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
+            olderAdultSites: {
               header: 'Пункты выдачи питания для пожилых людей',
               eligibility: '\
               Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA). \
@@ -1212,7 +1215,7 @@ pinboard({
           'General Meal Site': 'Sites de restauration générale',
           'Food Site': 'Sites de distribution alimentaire',
           'Student Meal Site': 'Site de distribution de repas pour élèves',
-          'Senior Meal Site': 'Site de distribution de repas pour personnes âgées',
+          'Older Adult Meal Site': 'Site de distribution de repas pour personnes âgées',
           eligibility: 'Admissibilité au programme',
           pickupDetails: 'Détails de collecte',
           beforeYouGo: 'Avant de vous déplacer ',
@@ -1317,7 +1320,7 @@ pinboard({
                 ',
               },
             },
-            seniorMealSites: {
+            olderAdultSites: {
               header: 'Sites de distribution de repas pour personnes âgées',
               eligibility: '\
               Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging).\
