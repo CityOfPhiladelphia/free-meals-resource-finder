@@ -30,7 +30,7 @@ export default {
         'font-size': '10px',
         'background-color': '#0F4D90',
       },
-      'Senior Meal Sites': {
+      'Older Adult Meal Sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
