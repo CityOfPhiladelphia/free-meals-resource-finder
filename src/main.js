@@ -6,10 +6,10 @@
 // if that is not needed, we can move this info to main.js
 
 // turn off console logging in production
-const { hostname='' } = location;
-if (hostname !== 'localhost' && !hostname.match(/(\d+\.){3}\d+/)) {
+if (process.env.NODE_ENV === 'production') {
   console.log = console.info = console.debug = console.error = function () {};
 }
+console.log('main.js process.env.NODE_ENV:', process.env.NODE_ENV, 'process.env.VUE_APP_PUBLICPATH:', process.env.VUE_APP_PUBLICPATH);
 
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -57,7 +57,7 @@ pinboard({
     siteName: function(item, transforms) {
       // console.log('in locationInfo.siteName, transforms:', transforms);
       let value;
-      
+
       if (item._featureId.includes('covidFreeMealSites')) {
         value = item.attributes.site_name;
       } else if (item._featureId.includes('parksSites')) {
@@ -80,10 +80,11 @@ pinboard({
       // } else if (item.CATEGORY_TYPE) {
       //   value = item.CATEGORY_TYPE;
       // }
-      
+     
       if (item.attributes.category_type == "Senior Meal Site") {
         value = "Older adult meal site";
       } else
+
       if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -548,7 +549,7 @@ pinboard({
                 },
               },
             },
-           
+
             foodPantries: {
               header: 'Food pantries',
               intro: 'These sites supplement the existing food pantry network. To find a food pantry near you:',
