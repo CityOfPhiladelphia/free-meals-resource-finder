@@ -479,7 +479,7 @@ pinboard({
               },
             },
             olderAdultSites: {
-              header: 'Older Adult meal sites',
+              header: 'Older adult meal sites',
               eligibility: '\
                 Adults 60 and over are eligible at sites supported by the Philadelphia\
                 Corporation for Aging (PCA). \
@@ -670,7 +670,10 @@ pinboard({
             },
             olderAdultSites: {
               header: 'Lugares de comidas para adultos mayores',
-              eligibility: 'Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA). <b><i>Los adultos mayores deben llamar para reservar la comida con anticipación antes de retirarla.</i></b>',
+              eligibility: '  Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA).\
+              <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de recogerlas.</b></i><br><br>\
+              Los adultos de 55 años o más son elegibles en los centros para adultos mayores de Parques y Recreación. <br>\
+              No es necesario realizar una reserva.',
               pickupDetails: '',
               subsections: {
                 'PCA': {
@@ -678,7 +681,7 @@ pinboard({
                   eligibility: '\
                   Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA).\
                   <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de recogerlas.</b></i><br><br>\
-                ',
+                 ',
                   pickupDetails: "\
                   Los adultos mayores pueden reservar de 5 a 7 comidas a la semana.\
                   Las fechas y horarios de búsqueda varían según el sitio. Para obtener más información y reservar comidas,\
@@ -826,10 +829,10 @@ pinboard({
             olderAdultSites: {
               header: '年长者用餐场所',
               eligibility: '\
-              60岁及60岁以上的成年人可去费城老龄者公司（PCA）支持的场所。\
-                <i><b>老年人需事先打电话预定餐点然后去取餐。</b></i><br><br>\
-                55岁和55岁以上的成年人可去公园和娱乐中心的成人中心。 <br>\
-                不需事先预订。\
+              60 岁及以上的长者有资格享受费城老龄公司 (Philadelphia Corporation for Aging, PCA) 支持站点提供的服务。 \
+                <i><b>长者需要在取餐前提前打电话预约餐食。</b></i><br>\
+                55 岁及以上的人群有资格享受公园与休闲老年人中心 (Parks & Recreation senior center) 提供的服务。<br> \
+                无需预约。 \
               ',
               pickupDetails: '',
               subsections: {
@@ -837,7 +840,7 @@ pinboard({
                   name: '费城老龄者公司（PCA）支持的场所',
                   eligibility: '\
                   60 岁及以上的长者有资格享受费城老龄公司 (Philadelphia Corporation for Aging, PCA) 支持站点提供的服务。 \
-                    <i><b> 长者需要在取餐前提前打电话预约餐食。</b></i><br><br>\
+                  <i><b>长者需要在取餐前提前打电话预约餐食。</b></i><br>\
                   ',
                   pickupDetails: "\
                   长者每周可预约 5-7 顿餐食。<br>\
@@ -990,8 +993,8 @@ pinboard({
             olderAdultSites: {
               header: 'Các điểm phát bữa ăn cho người già',
               eligibility: '\
-              Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
-                <i><b>Người già phải gọi điện trước để đặt bữa ăn trước khi đến nhận.</b></i><br><br>\
+              Dành cho những người lớn từ 60 tuổi trở lên, tại các địa điểm được Hiệp Hội Người Cao Niên Philadelphia (Philadelphia Corporation for Aging, PCA) hỗ trợ. \
+                <i><b>Người cao niên phải gọi điện trước để đặt trước bữa ăn trước khi đến nhận bữa ăn.</b></i><br>\
                 Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
                 Không cần đặt trước.\
               ',
@@ -1000,25 +1003,25 @@ pinboard({
                 'PCA': {
                   name: 'Các điểm do PCA hỗ trợ',
                   eligibility: '\
-                  Người lớn từ 60 tuổi trở lên đủ điều kiện tại các điểm do Philadelphia Corporation for Aging (PCA) hỗ trợ.  \
-                    <i><b>Người già phải gọi điện trước để đặt bữa ăn trước khi đến nhận.</b></i><br><br>\
+                  Dành cho những người lớn từ 60 tuổi trở lên, tại các địa điểm được Hiệp Hội Người Cao Niên Philadelphia (Philadelphia Corporation for Aging, PCA) hỗ trợ. \
+                  <i><b>Người cao niên phải gọi điện trước để đặt trước bữa ăn trước khi đến nhận bữa ăn.</b></i><br>\
                   ',
                   pickupDetails: "\
-                  Người già có thể gọi điện trước và đặt trước 5 đến 7 bữa ăn mỗi tuần.\
-                  Giờ nhận khác nhau giữa các điểm. Để biết thêm thông tin và đặt trước bữa ăn, hãy liên hệ địa điểm cụ thể.<br>\
-                  Người nhà của người già có thể nhận bữa ăn hộ, nếu bố trí từ trước. Các bữa ăn cũng có thể được chuyển tận nhà nếu cần.\
-                  Để nhận trợ giúp ngôn ngữ ngoài Tiếng Anh, hãy gọi cho đường dây trợ giúp của PCA theo số \
+                  Người cao niên có thể đặt trước 5 đến 7 bữa ăn mỗi tuần.\
+                  Ngày và giờ đến lấy bữa ăn sẽ khác nhau tùy theo địa điểm. \
+                  Để biết thêm thông tin và đặt trước bữa ăn, vui lòng liên hệ với một địa điểm cụ thể.\
+                  Gia đình của người lớn tuổi có thể đến nhận bữa ăn, nếu có sắp xếp trước. Để được trợ giúp bằng các \
+                  ngôn ngữ khác ngoài tiếng Anh, hãy gọi đến đường dây trợ giúp của PCA theo số\
                     <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
                 },
                 'PPR_Senior': {
                   name: 'Các trung tâm dành cho người già của Parks & Recreation',
                   eligibility: '\
-                  Người lớn từ 55 tuổi trở lên đủ điều kiện tại các trung tâm dành cho người già của Parks & Recreation. <br>\
-                  Không cần đặt trước.\
+                  Dành cho những người lớn từ 55 tuổi trở lên, tại các Trung tâm giải trí & Công viên dành cho người cao niên. Không cần đặt trước.\
                   ',
                   pickupDetails: '\
-                  Người già có thể nhận năm bữa ăn mỗi tuần tại hầu hết các điểm.\
+                  Người lớn tuổi có thể đến nhận 5 bữa ăn mỗi tuần tại hầu hết các địa điểm.\
                   ',
                 },
               },
@@ -1152,35 +1155,37 @@ pinboard({
             olderAdultSites: {
               header: 'Пункты выдачи питания для пожилых людей',
               eligibility: '\
-              Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA). \
-                <i><b>Лица пожилого возраста должны позвонить заранее и заказать питание, прежде чем идти за ним.</b></i><br><br>\
-                Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
-                Предварительный заказ не требуется.\
+              Взрослые старше 60 лет могут получить питание на площадках, с которыми сотрудничает Philadelphia Corporation for Aging (PCA).\
+                <i><b>Чтобы получить питание, необходимо заранее позвонить представителям площадки и договориться о бронировании.</b></i><br>\
+                Люди старше 55 лет могут получить питание в центрах отдыха и прогулок для пожилых.\
+                Предварительное бронирование не требуется.\
               ',
               pickupDetails: '',
               subsections: {
                 'PCA': {
                   name: 'Пункты выдачи продуктов, поддерживаемые PCA',
                   eligibility: '\
-                  Взрослые в возрасте 60 лет и старше могут получить помощь в пунктах, поддерживаемых Корпорацией помощи пожилым жителям Филадельфии (Philadelphia Corporation for Aging, PCA).  \
-                    <i><b>Лица пожилого возраста должны позвонить заранее и заказать питание, прежде чем идти за ним.</b></i><br><br>\
+                  Взрослые старше 60 лет могут получить питание на площадках, с которыми сотрудничает Philadelphia Corporation for Aging (PCA).\
+                    <i><b>Чтобы получить питание, необходимо заранее позвонить представителям площадки и договориться о бронировании.</b></i><br>\
                   ',
                   pickupDetails: "\
-                  Лица пожилого возраста могут позвонить заранее и заказать 5-7 порций на неделю.<br>\
-                  В каждом пункте питания свое время выдачи. Чтобы получить дополнительную информацию или заказать питание, обращайтесь в конкретный пункт.<br>\
-                  По предварительной договоренности питание могут забрать родственники пожилого лица. В случае необходимости возможна доставка питания на дом.\
-                  Чтобы получить помощь не на английском языке, позвоните на горячую линию PCA по номеру \
-                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+                  которыми работает PCA\
+                  Пожилые могут забронировать 5–7 наборов питания в неделю.\
+                  Даты и время выдачи на разных площадках отличаются. Чтобы узнать подробности и забронировать набор питания,\
+                  свяжитесь с представителями площадки. Наборы питания, забронированные для пожилых,\
+                  могут забрать их родственники по предварительному согласованию. Если вы не говорите по-английски и вам нужна помощь,\
+                  позвоните в службу поддержки PCA по номеру\
+                  <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
                 },
                 'PPR_Senior': {
                   name: 'Парки и центры отдыха и развлечений для пожилых людей',
                   eligibility: '\
-                  Лица в возрасте 55 лет и старше могут получить помощь в пунктах, размещенных в парках и центрах отдыха и развлечений для пожилых людей. <br>\
-                  Предварительный заказ не требуется.\
+                  Люди старше 55 лет могут получить питание в центрах отдыха и прогулок для пожилых.\
+                  Предварительное бронирование не требуется.\
                   ',
                   pickupDetails: '\
-                  Лица пожилого возраста могут получить пять порций в неделю в большинстве пунктов. \
+                    На большинстве площадок пожилым предоставляется пять наборов питания в неделю. \
                   ',
                 },
               },
@@ -1323,35 +1328,38 @@ pinboard({
             olderAdultSites: {
               header: 'Sites de distribution de repas pour personnes âgées',
               eligibility: '\
-              Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging).\
-                <i><b>Les personnes âgées doivent appeler au préalable pour réserver les repas avant de venir les chercher.</b></i><br><br>\
-                Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
-                Aucune réservation exigée.\
+              Les adultes âgés de 60 ans et plus peuvent bénéficier de repas dans les sites soutenus par la Philadelphia Corporation for Aging (PCA).\
+                <i><b>Les personnes âgées doivent appeler à l\'avance pour réserver les repas avant de venir les chercher.</b></i><br><br>\
+                Les adultes âgés de 55 ans et plus peuvent bénéficier de repas dans les centres pour personnes âgées du Service\
+                 des parcs et loisirs (Parks & Recreation Department).\
+                Aucune réservation n\'est nécessaire.\
               ',
               pickupDetails: '',
               subsections: {
                 'PCA': {
                   name: 'sites parrainés par la PCA',
                   eligibility: '\
-                  Les adultes âgés de 60 ans et plus peuvent bénéficier du programme aux sites parrainés par la PCA (Philadelphia Corporation for Aging). \
-                    <i><b>Les personnes âgées doivent appeler au préalable pour réserver les repas avant de venir les chercher.</b></i><br><br>\
+                  Les adultes âgés de 60 ans et plus peuvent bénéficier de repas dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). \
+                    <i><b>Les personnes âgées doivent appeler à l\'avance pour réserver les repas avant de venir les chercher.</b></i><br><br>\
                   ',
                   pickupDetails: "\
-                  Les personnes âgées peuvent appeler au préalable pour réserver 5 à 7 repas par semaine.<br>\
-                  Les horaires de collecte varient en fonction du site. Pour obtenir de plus amples informations et réserver des repas, prière d’appeler un site particulier.\
-                  Un membre de la famille de la personne âgée peut venir chercher les repas en ayant préalablement pris des dispositions. Les repas peuvent aussi être livrés à domicile si besoin est.\
-                  Pour obtenir de l’aide dans des langues autres que l’anglais, prière d’appeler la ligne d’assistance de la PCA au \
-                    <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+                  Les personnes âgées peuvent réserver 5 à 7 repas par semaine.\
+                  Les dates et heures de retrait varient selon les sites.\
+                   Pour plus d'informations et pour réserver des repas, contactez un site spécifique. \
+                   La famille d'une personne âgée peut venir chercher ses repas, sous réserve d'un accord préalable. \
+                   Pour obtenir de l'aide dans des langues autres que l'anglais, appelez la ligne d'assistance téléphonique de la PCA au \
+                  <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
                   ",
                 },
                 'PPR_Senior': {
                   name: 'Centres des aînés du service des parcs et loisirs',
                   eligibility: '\
-                  Les adultes âgés de 55 ans et plus peuvent bénéficier du programme aux centres des aînés du service des parcs et loisirs. .<br>\
-                  Aucune réservation exigée.\
+                  Les adultes âgés de 55 ans et plus peuvent bénéficier de repas dans les centres pour personnes âgées du Service\
+                 des parcs et loisirs (Parks & Recreation Department).\
+                Aucune réservation n\'est nécessaire.\
                   ',
                   pickupDetails: '\
-                  Les personnes âgées peuvent recevoir jusqu’à 5 repas par semaine à la plupart des sites.\
+                  Les personnes âgées peuvent venir chercher 5 repas par semaine dans la plupart des sites.\
                   ',
                 },
               },
