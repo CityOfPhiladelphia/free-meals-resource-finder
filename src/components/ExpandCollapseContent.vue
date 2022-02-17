@@ -1,56 +1,45 @@
 <template>
-  <div class="grid-x grid-padding-x">
-    <div class="cell medium-12">
-      <!-- v-if="item.attributes.address" -->
-      <div
-        v-if="address"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="map-marker-alt" />
-        </div>
-        <div class="small-22">
-          <!-- {{ item.attributes.address }}<br> -->
-          {{ address }}<br>
-          <!-- Philadelphia, PA {{ item.attributes.ZIP2 }} -->
-          Philadelphia, PA {{ zipcode }}
-        </div>
-      </div>
-    </div>
-
-    <div class="cell medium-12">
-      <!-- v-if="getCategory(item)" -->
-      <div
-        v-if="item.attributes.CATEGORY"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="hand-holding-heart" />
-        </div>
+  <div>
+    <div class="columns is-marginless">
+      <div class="column">
         <div
-          class="small-22"
-          v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
-        />
-        <!-- v-html="$t('sections.' + section + '.subsections[\'' + getCategory(item) + '\'].name')" -->
+          v-if="address"
+          class="detail"
+        >
+          <font-awesome-icon icon="map-marker-alt" />
+          <span>
+            {{ address }}<br>
+            Philadelphia, PA {{ zipcode }}
+          </span>
+        </div>
       </div>
 
-      <div
-        v-if="item.attributes.phone_number"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="phone" />
+      <div class="column">
+        <div
+          v-if="item.attributes.CATEGORY"
+          class="detail"
+        >
+          <font-awesome-icon icon="hand-holding-heart" />
+          <span
+            v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+          />
         </div>
-        <div class="small-22">
-          {{ item.attributes.phone_number }}
+
+        <div
+          v-if="item.attributes.phone_number"
+          class="detail"
+        >
+          <font-awesome-icon icon="phone" />
+          <span>
+            {{ item.attributes.phone_number }}
+          </span>
         </div>
       </div>
     </div>
 
-    <!-- v-if="item.attributes.TEMPCLOSE !== null" -->
     <div
       v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE >= currentUnixDate"
-      class="grid-x temp-close-section"
+      class="temp-close-section"
     >
       <div class="card-exclamation-holder small-5">
         <font-awesome-icon
@@ -65,7 +54,7 @@
     </div>
 
     <senior-meal-site-card
-      v-if="section === 'seniorMealSites'"
+      v-if="section === 'olderAdultSites'"
       :item="item"
     />
 
@@ -225,75 +214,9 @@ export default {
 </script>
 
 <style lang="scss">
-.location-item {
-  position: relative;
-  border-bottom: 1px solid black;
-  height:100%;
 
-  &:hover::after {
-    color: white;
-  }
-
-  .temp-close-section {
-    width: 100%;
-  }
-
-  .card-exclamation-holder {
-    padding: 20px;
-    background-color: #CC3000;
-    text-align: center;
-  }
-
-  .fa-icon-class {
-    color: white;
-    text-align: center;
-  }
-
-  .card-exclamation-details {
-    padding: 10px;
-    background-color: #F5D6CC;
-  }
-
-  .location-title {
-    cursor: pointer;
-    padding: 1rem;
-    margin-bottom: 0;
-    &:hover{
-      background: #2176d2;
-      color: white;
-    }
-  }
-
-  &::after{
-    position: absolute;
-    right:1rem;
-    top: 0;
-    content: '+';
-    font-weight: 900;
-    font-size:1.5rem;
-    z-index: 100;
-    color: color(dark-ben-franklin)
-  }
-  &.open{
-    h2{
-      color:white;
-      background-color: color(ben-franklin-blue);
-      font-weight: 900;
-    }
-    &::after{
-      content: '-';
-      color:white;
-    }
-  }
-  .location-content{
-    overflow: hidden;
-    height:0;
-
-    &.location-open{
-      padding: 1rem;
-      height: 100%;
-      overflow: initial;
-    }
-  }
+.location-content {
+  font-size: 14px;
 }
+
 </style>

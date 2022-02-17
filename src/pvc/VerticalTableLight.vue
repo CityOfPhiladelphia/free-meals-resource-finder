@@ -233,6 +233,16 @@ export default {
     border-bottom: thin solid #444;
     padding-left:10px;
   }
+
+  .table-light tr:last-child th, .table-light tr:last-child td {
+    border-bottom-width: 0px !important;
+    border-bottom: none !important;
+  }
+
+  .table-light:last-child{
+    border-bottom-width: 0px;
+  }
+
   .table-light td {
     border: none;
   }

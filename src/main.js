@@ -50,11 +50,18 @@ pinboard({
   gtag: {
     category: 'rf-food',
   },
-  comboSearch: {
-    dropdown: [ 'address' ],
-  },
+  // comboSearch: {
+  //   dropdown: [ 'address' ],
+  // },
   searchBar: {
-    dropdown: [ 'address' ],
+    placeholder: 'Search by address',
+    searchTypes: [ 'address' ],
+    labelText:  {
+      address: 'Search by address',
+    },
+    placeholderText: {
+      address: 'Search by address',
+    },
   },
   locationInfo: {
     siteName: function(item, transforms) {
