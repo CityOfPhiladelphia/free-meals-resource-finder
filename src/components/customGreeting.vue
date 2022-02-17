@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid-y custom-greeting"
+    class="custom-greeting content"
   >
     <div class="exclamation-holder">
       <font-awesome-icon
@@ -15,14 +15,20 @@
       </div>
     </div>
 
-    <div class="open-list-div">
-      <!-- class="button open-list-button hide-for-medium" -->
+    <div class="has-text-centered container">
+      <button
+        class="button open-list-button is-primary"
+        @click="$emit('view-list')"
+        v-html="$t('app.viewList')"
+      />
+    </div>
+    <!-- <div class="open-list-div">
       <phila-button
         class="button open-list-button"
         @click.native="$emit('view-list')"
         v-html="$t('app.viewList')"
       />
-    </div>
+    </div> -->
 
     <!-- sections that rely on data -->
     <greeting-section
@@ -55,17 +61,13 @@
 
 import { parse, format } from 'date-fns';
 
-// import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
-import PhilaButton from '@phila/pinboard/src/components/PhilaButton.vue';
 import greetingSection from './greetingSection.vue';
 
 export default {
   name: 'CustomGreeting',
   components: {
     greetingSection,
-    PhilaButton,
   },
-  // mixins: [ TopicComponent ],
   props: {
     'message': {
       type: String,
