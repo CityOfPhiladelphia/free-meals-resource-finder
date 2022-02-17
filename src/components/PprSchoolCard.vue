@@ -1,23 +1,21 @@
 <template>
-  <section class="services grid-x grid-padding-x">
-    <div class="cell">
-      <vertical-table-light
-        class="print-padding"
-        :slots="mainVerticalTableSlots"
-        :options="mainVerticalTableOptions"
-      />
-      <!-- <div class="table-slot">
-          <div>
-            {{ $t('sections.' + section + '.pickupDetails') }}
-          </div>
-          <vertical-table-3-cells-light
-            class="print-padding"
-            :slots="componentVerticalTableSlots"
-            :options="componentVerticalTableOptions"
-          />
+  <section class="services">
+    <vertical-table-light
+      class="print-padding"
+      :slots="mainVerticalTableSlots"
+      :options="mainVerticalTableOptions"
+    />
+    <!-- <div class="table-slot">
+        <div>
+          {{ $t('sections.' + section + '.pickupDetails') }}
         </div>
-      </vertical-table-light> -->
-    </div>
+        <vertical-table-3-cells-light
+          class="print-padding"
+          :slots="componentVerticalTableSlots"
+          :options="componentVerticalTableOptions"
+        />
+      </div>
+    </vertical-table-light> -->
   </section>
 </template>
 
@@ -29,7 +27,7 @@ export default {
   name: 'PprSchoolCard',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-    VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTable3CellsLight.vue'),
+    // VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTable3CellsLight.vue'),
   },
   mixins: [ SharedFunctions ],
   props: {
@@ -56,14 +54,12 @@ export default {
           th: {
             'vertical-align': 'top',
             'font-size': '14px',
-            // 'width': '30%',
             'min-width': '40px !important',
             'max-width': '50px !important',
             'width': '10% !important',
           },
           td: {
             'font-size': '14px',
-            // 'width': '90%',
           },
         },
       };
@@ -159,62 +155,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-
-.services {
-  width: 100%;
-}
-
-// .location-item {
-//   position: relative;
-//   border-bottom: 1px solid black;
-//   height:100%;
-//
-//   &:hover::after {
-//     color: white;
-//   }
-//
-//   .location-title {
-//     cursor: pointer;
-//     padding: 1rem;
-//     margin-bottom: 0;
-//     &:hover{
-//       background: #2176d2;
-//       color: white;
-//     }
-//   }
-//
-//   &::after{
-//     position: absolute;
-//     right:1rem;
-//     top: 0;
-//     content: '+';
-//     font-weight: 900;
-//     font-size:1.5rem;
-//     z-index: 100;
-//     color: color(dark-ben-franklin)
-//   }
-//   &.open{
-//     h2{
-//       color:white;
-//       background-color: color(ben-franklin-blue);
-//       font-weight: 900;
-//     }
-//     &::after{
-//       content: '-';
-//       color:white;
-//     }
-//   }
-//   .location-content{
-//     overflow: hidden;
-//     height:0;
-//
-//     &.location-open{
-//       padding: 1rem;
-//       height: 100%;
-//       overflow: initial;
-//     }
-//   }
-// }
-</style>
