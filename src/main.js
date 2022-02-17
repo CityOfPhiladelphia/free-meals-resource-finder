@@ -83,7 +83,7 @@ pinboard({
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      // console.log('value is running, item:', item);
+      console.log('value is running, item:', item);
       let value;
       // if (item.category_type) {
       //   value = item.category_type;
@@ -93,6 +93,12 @@ pinboard({
 
       if (item.attributes.category_type == "Senior Meal Site") {
         value = "Older adult meal site";
+      } else if (item.attributes.category_type == "Food Site") {
+        value = "Food site";
+      } else if (item.attributes.category_type == "Student Meal Site") {
+        value = "Student meal site";
+      } else if (item.attributes.category_type == "General Meal Site") {
+        value = "General meal site";
       } else
 
       if (item.attributes.category_type) {
@@ -335,25 +341,25 @@ pinboard({
   sections: {
     foodSites: {
       title: 'Food sites',
-      titleSingular: 'Food Site',
+      titleSingular: 'Food site',
       color: '#0F4D90',
       subsections: [ 'none' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
-      titleSingular: 'Student Meal Site',
+      titleSingular: 'Student meal site',
       color: '#721817',
       subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other' ],
     },
     olderAdultSites: {
-      title: 'Older adult meal site',
-      titleSingular: 'Older Adult Meal Site',
+      title: 'Older adult meal sites',
+      titleSingular: 'Older adult meal site',
       color: '#D67D00',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
     generalMealSites: {
       title: 'General meal sites',
-      titleSingular: 'General Meal Site',
+      titleSingular: 'General meal site',
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
     },
@@ -405,10 +411,10 @@ pinboard({
             noResults: 'We\'re sorry, there are no results for that search. Adjust the filters you\'ve selected and try again.',
           },
           viewAccessible: 'View accessible list of site locations',
-          'General Meal Site': 'General meal site',
-          'Food Site': 'Food site',
-          'Student Meal Site': 'Student meal site',
-          'Older Adult Meal Site': 'Older adult meal site',
+          'General meal site': 'General meal site',
+          'Food site': 'Food site',
+          'Student meal site': 'Student meal site',
+          'Older adult meal site': 'Older adult meal site',
           eligibility: 'Eligibility',
           betaTag: 'Beta',
           pickupDetails: 'Pickup details',
@@ -604,10 +610,10 @@ pinboard({
             subtitle: 'Encuentre alimentos y comidas gratuitas',
             bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
           },
-          'General Meal Site': 'Lugares de comidas generales',
-          'Food Site': 'Lugar de alimentos',
-          'Student Meal Site': 'Lugar de comidas para estudiantes',
-          'Older Adult Meal Site': 'Lugar de comidas para adultos mayores',
+          'General meal site': 'Lugares de comidas generales',
+          'Food site': 'Lugar de alimentos',
+          'Student meal site': 'Lugar de comidas para estudiantes',
+          'Older adult meal site': 'Lugar de comidas para adultos mayores',
           eligibility: 'Elegibilidad',
           pickupDetails: 'Detalles y horarios de retiro',
           beforeYouGo: 'Antes de ir',
@@ -765,10 +771,10 @@ pinboard({
             subtitle: '查找免费的食品和用餐服务',
             bannerAlert: '今天很多地点均关闭。有关更多信息，请查看具体地点详细信息。',
           },
-          'General Meal Site': '常规餐食供应场所',
-          'Food Site': '食品地点',
-          'Student Meal Site': '学生用餐场所',
-          'Older Adult Meal Site': '年长者用餐场所',
+          'General meal site': '常规餐食供应场所',
+          'Food site': '食品地点',
+          'Student meal site': '学生用餐场所',
+          'Older adult meal site': '年长者用餐场所',
           eligibility: '合格标准',
           pickupDetails: '取餐详情及时间',
           beforeYouGo: '您出发前',
@@ -929,10 +935,10 @@ pinboard({
             subtitle: 'Tìm Thực Phẩm và Bữa Ăn Miễn Phí',
             bannerAlert: 'Hôm nay, nhiều địa điểm đóng cửa. Hãy kiểm tra các chi tiết về địa điểm cụ thể để biết thêm thông tin.',
           },
-          'General Meal Site': 'Các địa điểm cung cấp suất ăn theo bữa',
-          'Food Site': 'Điểm phát thực phẩm',
-          'Student Meal Site': 'Điểm phát bữa ăn học sinh',
-          'Older Adult Meal Site': 'Điểm phát bữa ăn cho người già',
+          'General meal site': 'Các địa điểm cung cấp suất ăn theo bữa',
+          'Food site': 'Điểm phát thực phẩm',
+          'Student meal site': 'Điểm phát bữa ăn học sinh',
+          'Older adult meal site': 'Điểm phát bữa ăn cho người già',
           eligibility: 'Điều kiện hội đủ',
           pickupDetails: 'Chi tiết',
           beforeYouGo: 'Trước khi đi',
@@ -1092,10 +1098,10 @@ pinboard({
             subtitle: 'Найдите бесплатное продовольствие и питание',
             bannerAlert: 'Многие места сегодня закрыты. Для получения более подробной информации о месте отдыха просмотрите дополнительные сведения.',
           },
-          'General Meal Site': 'Пункты выдачи еды',
-          'Food Site': 'Пункт выдачи питания',
-          'Student Meal Site': 'Пункт выдачи питания для учащихся',
-          'Older Adult Meal Site': 'Пункт выдачи питания для пожилых людей',
+          'General meal site': 'Пункты выдачи еды',
+          'Food site': 'Пункт выдачи питания',
+          'Student meal site': 'Пункт выдачи питания для учащихся',
+          'Older adult meal site': 'Пункт выдачи питания для пожилых людей',
           eligibility: 'Критерии получения помощи',
           pickupDetails: 'Информация о получении и время получения',
           beforeYouGo: 'Прежде чем идти',
@@ -1256,10 +1262,10 @@ pinboard({
             subtitle: 'Trouver un repas gratuit',
             bannerAlert: 'De nombreux sites sont fermés aujourd’hui. Consultez les détails spécifiques au site pour obtenir de plus amples informations.',
           },
-          'General Meal Site': 'Sites de restauration générale',
-          'Food Site': 'Sites de distribution alimentaire',
-          'Student Meal Site': 'Site de distribution de repas pour élèves',
-          'Older Adult Meal Site': 'Site de distribution de repas pour personnes âgées',
+          'General meal site': 'Sites de restauration générale',
+          'Food site': 'Sites de distribution alimentaire',
+          'Student meal site': 'Site de distribution de repas pour élèves',
+          'Older adult meal site': 'Site de distribution de repas pour personnes âgées',
           eligibility: 'Admissibilité au programme',
           pickupDetails: 'Détails de collecte',
           beforeYouGo: 'Avant de vous déplacer ',
