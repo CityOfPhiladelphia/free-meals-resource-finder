@@ -2,7 +2,7 @@
   <div
     class="custom-greeting content"
   >
-    <div class="exclamation-holder columns">
+    <div class="exclamation-holder columns is-mobile">
       <div class="column is-narrow">
         <font-awesome-icon
           icon="exclamation-triangle"
