@@ -2,14 +2,14 @@
   <div
     class="custom-greeting content"
   >
-    <div class="exclamation-holder">
-      <font-awesome-icon
-        icon="exclamation-triangle"
-        class="fa-3x fa-icon-class"
-      />
-      <div
-        class="grid-y exclamation-details small-19 medium-20"
-      >
+    <div class="exclamation-holder columns">
+      <div class="column is-narrow">
+        <font-awesome-icon
+          icon="exclamation-triangle"
+          class="fa-3x fa-icon-class"
+        />
+      </div>
+      <div class="column exclamation-details">
         <div><b>{{ $t('beforeYouGo') }}:</b></div>
         <div>{{ $t('checkSite') }}</div>
       </div>
@@ -22,13 +22,6 @@
         v-html="$t('app.viewList')"
       />
     </div>
-    <!-- <div class="open-list-div">
-      <phila-button
-        class="button open-list-button"
-        @click.native="$emit('view-list')"
-        v-html="$t('app.viewList')"
-      />
-    </div> -->
 
     <!-- sections that rely on data -->
     <greeting-section
@@ -81,15 +74,6 @@ export default {
       sections: {},
       subsections: {},
     };
-    // if (this.$props.options) {
-    //   data = {
-    //     greetingStyle: this.$props.options.style || {},
-    //   };
-    // } else {
-    //   data = {
-    //     greetingStyle: {},
-    //   };
-    // }
     return data;
   },
   computed: {
@@ -139,22 +123,12 @@ export default {
     },
   },
   mounted() {
-    // let currentYear = format(new Date(), 'yyyy');
-    // let currentMonth = format(new Date(), 'MM');
-    // let currentDay = format(new Date(), 'dd');
-    // // console.log('currentDate(yyyy)', currentDate('yyyy'));
-    // let dateStart = new Date(currentYear, currentMonth-1, currentDay);
-    // let testDate = new Date(2021, 1, 1);
-    // console.log('mounted, currentDate', currentYear, 'currentMonth:', currentMonth, 'currentDay:', currentDay, 'dateStart', dateStart, 'testDate:', testDate);
     this.sections = this.$config.sections;
-    // this.subsections = this.getCounts();
   },
   methods: {
     getCounts() {
       // console.log('customGreeting.vue getCounts is running');
       const refineData = this.database;
-      // const refineData = this.sources[this.$appType].data.rows;
-
       let service = '';
 
       // console.log('in getRefineSearchList, refineData:', refineData);
@@ -165,23 +139,12 @@ export default {
         } else if (arrayElem.attributes.CATEGORY) {
           service += `${arrayElem.attributes.CATEGORY},`;
         }
-        // } else if (arrayElem.CATEGORY) {
-        //   service += `${arrayElem.CATEGORY},`;
-        // }
       });
 
       // TODO: break this into smaller chunks
       // let serviceArray = service.split(/(,|;)/);
       let serviceArray = service.split(',');
       serviceArray = serviceArray.map(s => s.trim());
-
-      // const uniqArray = [ ...new Set(serviceArray) ];
-      // console.log('serviceArray:', serviceArray, 'uniqArray:', uniqArray);
-      //
-      // // clean up any dangling , or ;
-      // let uniq = uniqArray.filter(a => a.length > 2);
-      //
-      // uniq.filter(Boolean); // remove empties
 
       let countObject = serviceArray.reduce(function (acc, curr) {
         if (typeof acc[curr] == 'undefined') {
@@ -200,6 +163,10 @@ export default {
 
 <style scoped>
 
+  .custom-section {
+    font-size: 14px;
+  }
+
   .open-list-div {
     margin: 0 auto;
   }
@@ -215,10 +182,12 @@ export default {
   }
 
   .exclamation-holder {
-    display: flex;
-    align-items: center;
-    margin-top: 6px;
-    margin-bottom: 14px;
+    /* display: flex;
+    align-items: center; */
+    margin-top: 2px;
+    /* margin-bottom: 14px; */
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .fa-icon-class {

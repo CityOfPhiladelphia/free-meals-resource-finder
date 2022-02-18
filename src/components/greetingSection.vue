@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="greeting-section">
     <div
       class="section-header"
       :style="{ 'background-color': color }"
@@ -12,24 +12,10 @@
       :slots="mainVerticalTableSlots"
       :options="mainVerticalTableOptions"
     >
-      <!-- <template v-slot:component1>
-        <div class="table-slot">
-          <div
-            v-for="(subsection, key) in section.subsections"
-            :key="key"
-            class="subsection-content"
-          >
-            {{ $t('sections.' + header + '.subsection.' + subsection + '.eligibility') }}
-          </div>
-        </div>
-      </template> -->
-
       <template>
         <div class="table-slot">
           <!-- pickupDetails if there are no subsections -->
-          <div
-            v-html="$t('sections.' + header + '.pickupDetails')"
-          />
+          <div v-html="$t('sections.' + header + '.pickupDetails')" />
 
           <!-- subsections -->
           <div
@@ -38,11 +24,8 @@
             class="subsection-content"
           >
             <!-- subsections that are written out -->
-            <div
-              v-if="subsectionCountsFromProps[subsection]"
-            >
+            <div v-if="subsectionCountsFromProps[subsection]">
               <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
-              <!-- v-if="$t('sections.' + header + '.subsections.' + subsection + '.showPickupDetailsInGreeting')" -->
               <div
                 v-if="!$config.i18n.data.messages['en-US'].sections[header].subsections[subsection].hidePickupDetailsInGreeting"
                 v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
@@ -50,34 +33,17 @@
             </div>
 
             <!-- subsections that are compiled (because multiple subsubsections make 1 subsection) -->
-            <div
-              v-if="subsectionCountsFromProps.compiled"
-            >
+            <div v-if="subsectionCountsFromProps.compiled">
               <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
               <div
                 v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
               />
             </div>
           </div>
-
-          <!-- pickupDetails if there are no subsections -->
-          <!-- <div>
-            {{ $t('sections.' + header + '.pickupDetails') }}
-          </div> -->
         </div>
       </template>
-
-      <!-- <horizontal-table-light
-        class="print-padding"
-        :options="insideHorizontalTableOptions"
-        :slots="insideHorizontalTableSlots"
-      /> -->
-
-      <!-- <vertical-table-light
-        class="print-padding"
-        :slots="insideVerticalTableSlots"
-      /> -->
     </vertical-table-light>
+
     <div
       v-if="$config.i18n.data.messages['en-US'].sections[header].custom"
       class="custom-section"
@@ -96,15 +62,11 @@
 
 <script>
 
-// import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
-
 export default {
   name: 'GreetingSection',
   components: {
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-    // HorizontalTableLight: () => import(/* webpackChunkName: "pvc_HorizontalTableLight" */'@phila/vue-comps/src/components/HorizontalTableLight.vue'),
   },
-  // mixins: [ TopicComponent ],
   props: {
     'header': {
       type: String,
@@ -121,17 +83,6 @@ export default {
       },
     },
   },
-  // data() {
-  //   let data = {
-  //     subsectionsData: {},
-  //   };
-  //   return data;
-  // },
-  // watch: {
-  //   subsectionsFromStore(nextSubsections) {
-  //     this.$data.subsectionsData = nextSubsections;
-  //   }
-  // },
   computed: {
     i18nLocale() {
       return this.$i18n.locale;
@@ -161,13 +112,13 @@ export default {
         styles: {
           th: {
             'vertical-align': 'top',
-            'font-size': '14px',
+            // 'font-size': '14px',
             'min-width': '45px !important',
             'max-width': '50px !important',
             'width': '10% !important',
           },
           td: {
-            'font-size': '14px',
+            // 'font-size': '14px',
           },
         },
       };
@@ -194,79 +145,15 @@ export default {
       };
     },
 
-    // insideVerticalTableSlots() {
-    //   return {
-    //     id: 'insideTable',
-    //     fields: [
-    //       {
-    //         label: 'Monday',
-    //         value: 'test1',
-    //         value1: 'test2',
-    //         // value: function(state) {
-    //         //   return state.sources.covidFreeMealSites.data.features[0].attributes.MONDAY;
-    //         // },
-    //       },
-    //       {
-    //         label: 'Tuesday',
-    //         // valueType: 'i18n',
-    //         value: function(state) {
-    //           return state.sources.covidFreeMealSites.data.features[0].attributes.TUESDAY;
-    //         },
-    //       }
-    //     ]
-    //   }
-    // },
-    // insideHorizontalTableOptions() {
-    //   return {
-    //     id: 'daysAndHours',
-    //     showOnlyIfData: true,
-    //     limit: 5,
-    //     fields: [
-    //       {
-    //         label: 'Day',
-    //         value: function(state, item){
-    //           return item.attributes.CATEGORY;
-    //         },
-    //         nullValue: 'no date available',
-    //       },
-    //       {
-    //         label: 'Hours',
-    //         value: function(state, item){
-    //           return item.attributes.CATEGORY;
-    //         },
-    //         nullValue: 'no date available',
-    //       },
-    //       {
-    //         label: 'Info',
-    //         value: function(state, item){
-    //           return item.attributes.CATEGORY;
-    //         },
-    //         nullValue: 'no date available',
-    //       },
-    //     ]
-    //   }
-    // },
-    // insideHorizontalTableSlots() {
-    //   return {
-    //     // title: 'testtesttest',
-    //     items: function(state) {
-    //       let rows = {};
-    //       if (state.sources.covidFreeMealSites.data) {
-    //         var data = state.sources.covidFreeMealSites.data.features;
-    //         rows = data.map(function(row){
-    //           var itemRow = row;
-    //           return itemRow;
-    //         });
-    //       }
-    //       return rows;
-    //     },
-    //   }
-    // }
   },
 };
 </script>
 
 <style>
+
+  .greeting-section {
+    font-size: 14px;
+  }
 
   .section-header {
     background-color: #0f4d90;
