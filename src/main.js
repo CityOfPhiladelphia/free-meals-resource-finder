@@ -152,7 +152,8 @@ pinboard({
   circleMarkers:{
     circleColors: {
       'Food Site': '#0F4D90',
-      'Senior Meal Site': '#D67D00',
+      'Senior Meal Site': '#a86518',
+      // 'Senior Meal Site': '#D67D00',
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
@@ -354,7 +355,8 @@ pinboard({
     olderAdultSites: {
       title: 'Older adult meal sites',
       titleSingular: 'Older adult meal site',
-      color: '#D67D00',
+      // color: '#D67D00',
+      color: '#a86518',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
     generalMealSites: {
