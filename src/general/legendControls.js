@@ -37,7 +37,8 @@ export default {
         'width': '15px',
         'height': '15px',
         'font-size': '10px',
-        'background-color': '#D67D00',
+        'background-color': '#a86518',
+        // 'background-color': '#D67D00',
       },
       'Student Meal Sites': {
         'border-color': 'black',
