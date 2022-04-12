@@ -138,8 +138,8 @@ export default {
             labelType: 'i18n',
             value: hours,
             // valueType: 'i18n',
-            value1: 'oneMeal',
-            value1Type: 'i18n',
+            // value1: 'oneMeal',
+            // value1Type: 'i18n',
           };
           theFields.push(dayObject);
         }
