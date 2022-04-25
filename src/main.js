@@ -381,6 +381,7 @@ pinboard({
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultSites',
     'SHARE FOOD PROGRAM': 'foodSites',
+    'Nutritional Development Services': 'foodSites',
     'PCA': 'olderAdultSites',
     'PPR_Senior': 'olderAdultSites',
     'PPR_StudentMeals': 'studentMealSites',
@@ -460,7 +461,9 @@ pinboard({
                 },
                 'PPR': {
                   name: 'Philadelphia Parks & Recreation centers',
-                  pickupDetails: '',
+                },
+                'Nutritional Development Services': {
+                  name: 'Nutritional Development Services',
                 },
               },
             },
