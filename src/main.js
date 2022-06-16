@@ -377,6 +377,9 @@ pinboard({
     'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
+    'Philabundance Summer Meal Sites': 'studentMealSites',
+    'Caring for Friends': 'studentMealSites',
+    'Other Summer Meal Sites': 'studentMealSites',
     'PPR': 'foodSites',
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultSites',
@@ -503,7 +506,7 @@ pinboard({
                 'NDS': {
                   name: 'Nutritional Development Services',
                   hidePickupDetailsInGreeting: true,
-                  pickupDetails: 'Sites may provide daily meals or 7-day breakfast and lunch boxes. Contact Nutritional Development Services for more details.',
+                  pickupDetails: 'Meals must be eaten on site. Contact NDS for more details.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'Other': {
@@ -516,6 +519,24 @@ pinboard({
                   name: 'Recreation Centers',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Recreation Centers are open Monday to Friday between 9 a.m. to 3 p.m. Meal times vary by site. For more information, call or visit the Recreation Center.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Caring for Friends': {
+                  name: 'Caring for Friends',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Philabundance Summer Meal Sites': {
+                  name: 'Philabundance Summer Meal Sites',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Contact the site for more details.',
+                  eligibility: 'All children and youth are eligible. No ID is required.',
+                },
+                'Other Summer Meal Sites':{
+                  name: 'Other Summer Meal Sites',
+                  hidePickupDetailsInGreeting: true,
+                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
               },
