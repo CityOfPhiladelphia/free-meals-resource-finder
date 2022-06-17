@@ -483,7 +483,7 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Philadelphia Housing Authority (PHA) community centers',
-                  pickupDetails: 'Monday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM\
+                  pickupDetails: 'Monday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
                   Tuesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
                   Wednesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
                   Thursday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
@@ -521,19 +521,16 @@ pinboard({
                 },
                 'Recreation Center': {
                   name: 'Recreation Centers',
-                  hidePickupDetailsInGreeting: true,
-                  pickupDetails: 'Monday to Friday between 9 AM to 3 PM. Meal times vary by site. Meals must be eaten on site. For more information, call or visit the Recreation Center.',
+                  pickupDetails: 'Monday to Friday between 9AM to 3 PM. Meal times vary by site. Meals must be eaten on site. For more information, call or visit the Recreation Center.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'Caring for Friends': {
                   name: 'Caring for Friends',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Philabundance Summer Meal Sites',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Contact the site for more details.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
@@ -693,11 +690,11 @@ pinboard({
                 },
                 'PHA': {
                   name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
-                  pickupDetails: 'Lunes 9 :00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M.  \
-                  Martes 9 :00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-                  Miércoles 9 :00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-                  Jueves 9 :00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-                  Viernes 9 :00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+                  pickupDetails: 'Lunes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>  \
+                  Martes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+                  Miércoles 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+                  Jueves 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+                  Viernes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
                   Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
@@ -734,25 +731,21 @@ pinboard({
                 },
                 'Recreation Center': {
                   name: 'Centros recreativos',
-                  hidePickupDetailsInGreeting: true,
-                  pickupDetails: 'De lunes a viernes entre las 9 A.M. a 3 P.M.  Las comidas varían según el sitio. Las comidas se deben consumir en el lugar.Para obtener más información, llame o visite el Centro de Recreación.',
+                  pickupDetails: 'De lunes a viernes entre las 9A.M. a 3 P.M.  Las comidas varían según el sitio. Las comidas se deben consumir en el lugar.Para obtener más información, llame o visite el Centro de Recreación.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
                 'Caring for Friends': {
                   name: 'Caring for Friends',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Las comidas se deben consumir en el lugar. Comúniquese con los sitios para obtener más detalles. ',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Sitios de Comidas de Verano Philabundance ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Comúniquese con los sitios para obtener más detalles.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
                 },
                 'Other Summer Meal Sites':{
                   name: 'Other Summer Meal Sites',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Las comidas varían según el sitio. Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio de comidas de verano. ',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
                 },
@@ -914,24 +907,21 @@ pinboard({
                 },
                 'Recreation Center': {
                   name: '康乐中心',
-                  pickupDetails: '"周一至周五上午 9 点 – 下午 3 点。餐食供应时间因供应点而异。 餐食须在现场食用。欲了解更多信息，请致电或前往娱乐中心咨询。',
+                  pickupDetails: '"周一至周五上午 9点 – 下午 3 点。餐食供应时间因供应点而异。 餐食须在现场食用。欲了解更多信息，请致电或前往娱乐中心咨询。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'Caring for Friends': {
                   name: '关爱朋友机构 ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: '餐食须在现场食用。 请联系供应点了解更多详情。 ',
                   eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Philabundance 夏日餐食供应点  ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: '请联系供应点了解更多详情。',
                   eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
                 },
                 'Other Summer Meal Sites':{
                   name: '其他夏日餐食供应点 ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: '餐食供应时间因供应点而异。 餐食须在现场食用。 欲了解更多信息，请前往夏日餐食供应点咨询。 ',
                   eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
                 },
@@ -1101,24 +1091,21 @@ pinboard({
                 },
                 'Recreation Center': {
                   name: 'Trung tâm Giải trí',
-                  pickupDetails: 'Thứ Hai đến thứ Sáu, từ 9 giờ sáng đến 3 giờ chiều. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ.Để biết thêm thông tin, vui lòng gọi hoặc truy cập Trung tâm Giải trí. ',
+                  pickupDetails: 'Thứ Hai đến thứ Sáu, từ 9giờ sáng đến 3 giờ chiều. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ.Để biết thêm thông tin, vui lòng gọi hoặc truy cập Trung tâm Giải trí. ',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'Caring for Friends': {
                   name: 'Caring for Friends',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết. ',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Địa điểm phục vụ bữa ăn mùa hè Philabundance  ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Liên hệ địa điểm để biết thêm chi tiết.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
                 },
                 'Other Summer Meal Sites':{
                   name: 'Địa điểm phục vụ bữa ăn mùa hè khác',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ. Để biết thêm thông tin, xin tới địa điểm phục vụ bữa ăn mùa hè. ',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
                 },
@@ -1247,11 +1234,11 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
-                  pickupDetails: '"Понедельник:  9 :00 – 10:00 и 12:00 – 14:00<br>\
-                  Вторник:  9 :00 – 10:00 и 12:00 – 14:00<br>\
-                  Среда:  9 :00 – 10:00 и 12:00 – 14:00<br>\
-                  Четверг:  9 :00 – 10:00 и 12:00 – 14:00<br>\
-                  Пятница:  9 :00 – 10:00 и 12:00 – 14:00<br>\
+                  pickupDetails: '"Понедельник:  9:00 – 10:00 и 12:00 – 14:00<br>\
+                  Вторник:  9:00 – 10:00 и 12:00 – 14:00<br>\
+                  Среда:  9:00 – 10:00 и 12:00 – 14:00<br>\
+                  Четверг:  9:00 – 10:00 и 12:00 – 14:00<br>\
+                  Пятница:  9:00 – 10:00 и 12:00 – 14:00<br>\
                   Прием пищи должен осуществляться на месте. Для получения дополнительных сведений посетите пункт питания.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
 
@@ -1292,19 +1279,16 @@ pinboard({
                 },
                 'Caring for Friends': {
                   name: 'Caring for Friends',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Прием пищи должен осуществляться на месте. Для получения дополнительной информации обратитесь в пункт питания по контактным данным. ',
                   eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется.',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Philabundance Summer Meal Sites',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Для получения дополнительной информации обратитесь в пункт питания по контактным данным.',
                   eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется.',
                 },
                 'Other Summer Meal Sites':{
                   name: ' Другие пункты питания в летний период ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Время приема пищи может отличаться в зависимости от пункта питания. Прием пищи должен осуществляться на месте. Для получения дополнительных сведений приходите в пункты питания. ',
                   eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется.',
                 },
@@ -1488,19 +1472,16 @@ pinboard({
                 },
                 'Caring for Friends': {
                   name: 'Caring for Friends',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Les repas doivent être consommés sur place. Contactez le site pour plus d’informations. ',
                   eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
                 },
                 'Philabundance Summer Meal Sites': {
                   name: 'Sites de Philabundance qui servent des repas durant l’été  ',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Contactez le site pour plus d’informations.',
                   eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
                 },
                 'Other Summer Meal Sites':{
                   name: 'Autres sites servant des repas durant l\'été',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Les heures des repas varient selon le site. Les repas doivent être consommés sur place. Pour plus d’informations, rendez-vous sur le site qui sert des repas durant l’été. ',
                   eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
                 },
