@@ -350,7 +350,7 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student meal site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'PPR_StudentMeals', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
     },
     olderAdultSites: {
       title: 'Older adult meal sites',
@@ -504,7 +504,6 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
