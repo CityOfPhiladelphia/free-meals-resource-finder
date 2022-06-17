@@ -504,12 +504,12 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>',
+                  pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
+                  Playstreets serve lunch and a snack. Meals must be eaten on site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'NDS': {
                   name: 'Nutritional Development Services',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Meals must be eaten on site. Contact NDS for more details.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
@@ -542,10 +542,10 @@ pinboard({
               },
               custom: {
                 info: '\
-                To find more free summer meal sites for children and youth: \
-                <br>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.<br>   \
-                Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.<br> \
-                Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth. \
+                To find more free summer meal sites for children and youth: <br>\
+                <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+                <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
+                <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
                 ',
               },
             },
@@ -715,7 +715,8 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Playstreets está abierto de lunes a viernes entre las 10 a.m. y las 4 p.m. Las calles están cerradas al tráfico de automóviles. Las comidas varían según el sitio. Para obtener más información, visite el Playstreet.',
+                  pickupDetails: 'Playstreets está abierto de lunes a viernes entre las 10 a.m. y las 4 p.m. Las calles están cerradas al tráfico de automóviles. Las comidas varían según el sitio. Para obtener más información, visite el Playstreet.<br>\
+                  Playstreets sirve almuerzos y refrigerios. Las comidas se deben consumir en el lugar.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
                 'NDS': {
@@ -753,9 +754,9 @@ pinboard({
               custom: {
                 info: '\
                 Para encontrar más sitios de comidas de verano gratuitas para niños y jóvenes:  \
-                <br>Llame a la Línea Directa de Comidas de Verano al <a href="tel:215-770-4659">215-770-4659.</a><br>   \
-                Envíe “FOOD” o “COMIDA” al <a href="tel:304-304">304-304</a> para recibir una lista de sitios de comida cercanos.<br> \
-                Visite <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> para encontrar sitios de comidas de verano gratuitas y jóvenes. \
+                <br><ul><li>Llame a la Línea Directa de Comidas de Verano al <a href="tel:215-770-4659">215-770-4659.</a></li>   \
+                <li>Envíe “FOOD” o “COMIDA” al <a href="tel:304-304">304-304</a> para recibir una lista de sitios de comida cercanos.</li> \
+                <li>Visite <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> para encontrar sitios de comidas de verano gratuitas y jóvenes.</li></ul>\
                 ',
               },
             },
@@ -893,7 +894,8 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: '游乐街计划的开放时间为周一至周五上午 10 点 – 下午 4 点。街道禁止机动车驶入。 餐食供应时间因供应点而异。 欲了解更多信息，请前往游乐街计划咨询。',
+                  pickupDetails: '游乐街计划的开放时间为周一至周五上午 10 点 – 下午 4 点。街道禁止机动车驶入。 餐食供应时间因供应点而异。 欲了解更多信息，请前往游乐街计划咨询。<br>\
+                  游乐街计划供应午餐和一份点心。 餐食须在现场食用。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'NDS': {
@@ -930,9 +932,9 @@ pinboard({
               custom: {
                 info: '\
                 若要查找面向儿童和青少年的夏日免费餐食供应点：  \
-                <br>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。<br>   \
-                发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 <br> \
-                访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。  \
+                <br><ul><li>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。</li>   \
+                <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
+                <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
                 ',
               },
             },
@@ -1115,9 +1117,9 @@ pinboard({
               custom: {
                 info: '\
                 Để tìm thêm địa điểm phục vụ bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên: \
-                <br>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.<br>   \
-                Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. <br> \
-                Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên.  \
+                <br><ul><li>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+                <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
+                <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
                 ',
               },
             },
@@ -1299,9 +1301,9 @@ pinboard({
               custom: {
                 info: '\
                 Для того, чтобы найти больше пунктов бесплатного питания для детей и молодежи в летний период: \
-                <br>звоните на горячую линию пунктов питания в летний период по номеру <a href="tel:215-770-4659">215-770-4659</a>;<br>   \
-                отправьте сообщение с текстом "FOOD" или "COMIDA" на номер <a href="tel:304-304">304-304</a> для получения списка ближайших пунктов питания; <br> \
-                посетите веб сайт по адресу <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> для поиска площадок питания для молодежи в летний период.  \
+                <br><ul><li>звоните на горячую линию пунктов питания в летний период по номеру <a href="tel:215-770-4659">215-770-4659</a>;</li>   \
+                <li>отправьте сообщение с текстом "FOOD" или "COMIDA" на номер <a href="tel:304-304">304-304</a> для получения списка ближайших пунктов питания; </li> \
+                <li>посетите веб сайт по адресу <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> для поиска площадок питания для молодежи в летний период.</li></ul>  \
                 ',
               },
             },
@@ -1493,9 +1495,9 @@ pinboard({
               custom: {
                 info: '\
                 Pour trouver d\'autres sites qui servent des repas gratuits aux enfants et aux jeunes durant l’été:  \
-                <br>Appelez la Ligne d’assistance concernant les repas servis durant l’été au <a href="tel:215-770-4659">215-770-4659</a>.<br>   \
-                Écrivez « FOOD » ou « COMIDA » au <a href="tel:304-304">304-304</a> pour recevoir la liste des sites qui servent des repas à proximité.  <br> \
-                Visitez <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> pour trouver des repas servis gratuitement aux jeunes durant l’été. \
+                <br><ul><li>Appelez la Ligne d’assistance concernant les repas servis durant l’été au <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+                <li>Écrivez « FOOD » ou « COMIDA » au <a href="tel:304-304">304-304</a> pour recevoir la liste des sites qui servent des repas à proximité.  </li> \
+                <li>Visitez <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> pour trouver des repas servis gratuitement aux jeunes durant l’été. <li></ul>\
                 ',
               },
             },
