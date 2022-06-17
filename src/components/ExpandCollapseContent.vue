@@ -20,7 +20,17 @@
           class="detail"
         >
           <font-awesome-icon icon="hand-holding-heart" />
+          <a
+            v-if="item.attributes.Website"
+            target="_blank"
+            :href="item.attributes.Website"
+          >
+            <span
+              v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+            />
+          </a>
           <span
+            v-if="!item.attributes.Website"
             v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
           />
         </div>

@@ -48,6 +48,10 @@ export default {
     subsection() {
       return this.$props.item.attributes.CATEGORY;
     },
+    website() {
+      console.log(this.$props.item.attributes.Website);
+      return this.$props.item.attributes.Website;
+    },
     mainVerticalTableOptions() {
       return {
         styles: {
