@@ -473,7 +473,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Student meal sites',
-              eligibility: 'Check the specific site information.',
+              eligibility: 'All children and youth are eligible. No ID is required.',
               pickupDetails: '',
               subsections: {
                 'PSD': {
@@ -493,6 +493,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Philadelphia Parks & Recreation centers',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: '',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
@@ -536,7 +537,6 @@ pinboard({
                 },
                 'Other Summer Meal Sites':{
                   name: 'Other Summer Meal Sites',
-                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
@@ -544,7 +544,7 @@ pinboard({
               custom: {
                 info: '\
                 To find more free summer meal sites for children and youth: \
-                <br>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a><br>   \
+                <br>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.<br>   \
                 Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.<br> \
                 Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth. \
                 ',
@@ -679,7 +679,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Lugar de comidas para estudiantes',
-              eligibility: 'Verifique la información específica del lugar.',
+              eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
               pickupDetails: 'Los días y horarios varían según el lugar.',
               subsections: {
                 'PSD': {
@@ -707,6 +707,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Centros de Recreación',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Las comidas están disponibles:<br>\
                   Del 28 al 30 de dic, 3 de ene, 1 de feb, del 11 al 14 de abr.<br>\
                   Los horarios de los Centros de Recreación y de las comida varían según el sitio. Todas las comidas se deben consumir en el lugar. Para obtener más información, llame o visite el Centro de Recreación.',
@@ -859,7 +860,7 @@ pinboard({
             },
             studentMealSites: {
               header: '学生用餐场所',
-              eligibility: '查看特定场所的信息。',
+              eligibility: '所有儿童和青少年均有资格。 需要身份证号码。 ',
               pickupDetails: '日期和时间会根据场所而有所不同。',
               subsections: {
                 'PSD': {
@@ -885,6 +886,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: '费城公园和娱乐中心',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: '提供餐食： 12月28日-30日、1月3日、2月1日、4月11日-14日 <br>\
                   娱乐中心的开放时间和用餐时间因地点而异。 所用餐食须在现场食用。 欲了解更多信息，请联系或访问娱乐中心。 ',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
@@ -907,7 +909,7 @@ pinboard({
                 },
                 'Recreation Center': {
                   name: '康乐中心',
-                  pickupDetails: '"周一至周五上午 9点 – 下午 3 点。餐食供应时间因供应点而异。 餐食须在现场食用。欲了解更多信息，请致电或前往娱乐中心咨询。',
+                  pickupDetails: '周一至周五上午 9点 – 下午 3 点。餐食供应时间因供应点而异。 餐食须在现场食用。欲了解更多信息，请致电或前往娱乐中心咨询。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'Caring for Friends': {
@@ -1041,7 +1043,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Các điểm phát bữa ăn học sinh',
-              eligibility: 'Kiểm tra thông tin địa điểm cụ thể.',
+              eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể được phục vụ. Không cần giấy tờ tùy thân. ',
               pickupDetails: 'Ngày và giờ khác nhau giữa các điểm',
               subsections: {
                 'PSD': {
@@ -1051,7 +1053,7 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
-                  pickupDetails: '"Thứ Hai, 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+                  pickupDetails: 'Thứ Hai, 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
                   Thứ Ba 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
                   Thứ Tư 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
                   Thứ Năm 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
@@ -1068,6 +1070,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Các trung tâm của Philadelphia Parks & Recreation',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Các bữa ăn có sẵn:<br>\
                    28 - 30 tháng 12, 3 tháng 1, 1 tháng 2, 11 - 14 tháng 4. <br>\
                    Giờ ăn và giờ của Trung tâm Giải trí thay đổi tùy theo địa điểm. Tất cả các bữa ăn phải được ăn tại chỗ. Để biết thêm thông tin, vui lòng gọi hoặc truy cập Trung tâm Giải trí. ',
@@ -1224,7 +1227,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Пункты выдачи питания для учащихся',
-              eligibility: 'Pre-K –12th grade. Must have School District of Philadelphia student ID number. Student does not need to be present.',
+              eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется. ',
               pickupDetails: 'У каждого пункта свой график работы.',
               subsections: {
                 'PSD': {
@@ -1234,7 +1237,7 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Общественные центры Управления жилищного хозяйства Филадельфии (PHA)',
-                  pickupDetails: '"Понедельник:  9:00 – 10:00 и 12:00 – 14:00<br>\
+                  pickupDetails: 'Понедельник:  9:00 – 10:00 и 12:00 – 14:00<br>\
                   Вторник:  9:00 – 10:00 и 12:00 – 14:00<br>\
                   Среда:  9:00 – 10:00 и 12:00 – 14:00<br>\
                   Четверг:  9:00 – 10:00 и 12:00 – 14:00<br>\
@@ -1251,6 +1254,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Парки и центры отдыха и развлечений Филадельфии',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Питание предоставляется:<br>\
                   С 28 по 30 декабря, 3 января, 1 февраля, с 11 по 14 апреля. <br>\
                   Часы работы и время приема пищи в рекреационном центре зависят от конкретного места. Прием пищи должен осуществляться на месте. Для получения дополнительной информации звоните или приходите в рекреационный центр.',
@@ -1409,7 +1413,7 @@ pinboard({
             },
             studentMealSites: {
               header: 'Sites de distribution de repas pour élèves',
-              eligibility: 'Consulter les informations concernant le site donné.',
+              eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité. ',
               pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
               subsections: {
                 'PSD': {
@@ -1427,7 +1431,7 @@ pinboard({
                 },
                 'PHA': {
                   name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
-                  pickupDetails: '"Lundi 9h00 – 10h00 et 12h00 – 14h00<br>\
+                  pickupDetails: 'Lundi 9h00 – 10h00 et 12h00 – 14h00<br>\
                   Mardi 9h00 – 10h00 et 12h00 – 14h00<br>\
                   Mercredi 9h00 – 10h00 et 12h00 – 14h00<br>\
                   Jeudi 9h00 – 10h00 et 12h00 – 14h00<br>\
@@ -1444,6 +1448,7 @@ pinboard({
                 },
                 'PPR_StudentMeals': {
                   name: 'Centres du service des parcs et loisirs de Philadelphie',
+                  hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Des repas sont disponibles les jours suivants :<br>\
                   28 - 30 décembre, 3 janvier, 1erer février, 11 - 14 avril.<br>\
                   Les horaires des centres de loisirs et leurs heures de repas varient selon les sites. Tous les repas doivent être consommés sur place. Pour plus d\'informations, appelez le centre de loisirs ou rendez-vous sur place.',
