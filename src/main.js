@@ -514,7 +514,7 @@ pinboard({
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'Other': {
-                  name: 'Other Summer Meal Sites',
+                  name: 'Other',
                   hidePickupDetailsInGreeting: true,
                   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
@@ -536,7 +536,7 @@ pinboard({
                 },
                 'Other Summer Meal Sites':{
                   name: 'Other Summer Meal Sites',
-                  pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
+                  pickupDetails: 'Meal times vary by site. Meals must be eaten on site. For more information, visit the summer meal site. ',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
               },
@@ -1081,7 +1081,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets (Chơi trên đường phố)',
                   pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets<br>\
-                  Playstreets phục vụ bữa trưa và bữa ăn nhẹ. Phải ăn tại chỗ.',
+                  Playstreets phục vụ bữa trưa và bữa ăn nhẹ. Phải ăn tại chỗ.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'NDS': {
