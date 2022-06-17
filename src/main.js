@@ -1080,7 +1080,8 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets (Chơi trên đường phố)',
-                  pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets',
+                  pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets<br>\
+                  Playstreets phục vụ bữa trưa và bữa ăn nhẹ. Phải ăn tại chỗ.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'NDS': {
@@ -1264,7 +1265,8 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Улицы Playstreet',
-                  pickupDetails: 'Игровые улицы открыты с понедельника по пятницу с 10:00 до 16:00. Движение транспорта по улицам в это время закрыто. Время приема пищи может отличаться в зависимости от пункта питания. Для получения дополнительных сведений приходите на игровые улицы.',
+                  pickupDetails: 'Игровые улицы открыты с понедельника по пятницу с 10:00 до 16:00. Движение транспорта по улицам в это время закрыто. Время приема пищи может отличаться в зависимости от пункта питания. Для получения дополнительных сведений приходите на игровые улицы.<br>\
+                  На игровых улицах подаются обеды и закуски. Прием пищи должен осуществляться на месте.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
                 'NDS': {
@@ -1458,7 +1460,8 @@ pinboard({
                 },
                 'playstreets': {
                   name: 'Playstreets',
-                  pickupDetails: 'Les Playstreets sont ouverts du lundi au vendredi de 10h00 à 16h00. Les rues sont fermées à la circulation automobile. Les heures des repas varient selon le site. Pour plus d’informations, visitez le Playstreet.',
+                  pickupDetails: 'Les Playstreets sont ouverts du lundi au vendredi de 10h00 à 16h00. Les rues sont fermées à la circulation automobile. Les heures des repas varient selon le site. Pour plus d’informations, visitez le Playstreet.<br>\
+                  Les Playstreets servent le déjeuner et un goûter. Les repas doivent être consommés sur place.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
                 'NDS': {
