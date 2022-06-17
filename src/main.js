@@ -83,7 +83,7 @@ pinboard({
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      console.log('value is running, item:', item);
+      // console.log('value is running, item:', item);
       let value;
       // if (item.category_type) {
       //   value = item.category_type;
@@ -380,11 +380,12 @@ pinboard({
     'Philabundance Summer Meal Sites': 'studentMealSites',
     'Caring for Friends': 'studentMealSites',
     'Other Summer Meal Sites': 'studentMealSites',
+    'Student Meal Site': 'studentMealSites',
     'PPR': 'foodSites',
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultSites',
     'SHARE FOOD PROGRAM': 'foodSites',
-    'Nutritional Development Services': 'foodSites',
+    'Nutritional Development Services': 'studentMealSites',
     'PCA': 'olderAdultSites',
     'PPR_Senior': 'olderAdultSites',
     'PPR_StudentMeals': 'studentMealSites',
