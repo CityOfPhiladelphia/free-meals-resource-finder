@@ -3,6 +3,7 @@ export default {
   type: 'http-get',
   dependent: 'none',
   resettable: false,
+  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_FORTESTINGONLY/FeatureServer/0/query',
   url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_Free_Meal_Sites_PUBLICVIEW/FeatureServer/0/query',
   options: {
     params: {

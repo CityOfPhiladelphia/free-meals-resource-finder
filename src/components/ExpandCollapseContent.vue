@@ -79,7 +79,7 @@
     />
 
     <ppr-school-card
-      v-if="section === 'studentMealSites' && subsection === 'PPR_StudentMeals'"
+      v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
       :item="item"
     />
 
@@ -108,17 +108,17 @@
       :item="item"
     />
 
-    <general-site-card
+    <nds-school-card
       v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
       :item="item"
     />
 
-    <other-school-card
+    <nds-school-card
       v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
       :item="item"
     />
 
-    <other-school-card
+    <ppr-school-card
       v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
       :item="item"
     />
