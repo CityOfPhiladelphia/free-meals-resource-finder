@@ -121,9 +121,9 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: false,
-      header: 'Winter storm and site closures',
-      body: '<p>Several food sites will be closed on Thursday, December 17 due to the forecasted storm. Check your preferred location to see if it will be closed. Please note that last-minute closures may occur.</p>',
+      enabled: true,
+      header: 'Fourth of July closures',
+      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
       // header: 'Student meal sites',
       // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
