@@ -121,7 +121,7 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: true,
+      enabled: false,
       header: 'Fourth of July closures',
       body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
       // header: 'Student meal sites',
