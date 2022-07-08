@@ -344,7 +344,7 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ 'none' ],
+      subsections: [ 'Nutritional Development Services' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
@@ -385,7 +385,7 @@ pinboard({
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultSites',
     'SHARE FOOD PROGRAM': 'foodSites',
-    'Nutritional Development Services': 'studentMealSites',
+    'Nutritional Development Services': 'foodSites',
     'PCA': 'olderAdultSites',
     'PPR_Senior': 'olderAdultSites',
     'PPR_StudentMeals': 'studentMealSites',
