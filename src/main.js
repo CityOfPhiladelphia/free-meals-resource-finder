@@ -128,8 +128,8 @@ pinboard({
   alerts: {
     modal: {
       enabled: false,
-      header: 'Winter storm and site closures',
-      body: '<p>Several food sites will be closed on Thursday, December 17 due to the forecasted storm. Check your preferred location to see if it will be closed. Please note that last-minute closures may occur.</p>',
+      header: 'Fourth of July closures',
+      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
       // header: 'Student meal sites',
       // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
@@ -227,7 +227,7 @@ pinboard({
     },
     {
       type: "native",
-      href: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/support-for-the-community/services-and-support-for-residents/covid-19-food-distribution-sites/#/',
+      href: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
       text: "viewAccessible",
     },
   ],
@@ -350,7 +350,7 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ 'none' ],
+      subsections: [ 'Nutritional Development Services' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
@@ -391,7 +391,7 @@ pinboard({
     'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultSites',
     'SHARE FOOD PROGRAM': 'foodSites',
-    'Nutritional Development Services': 'studentMealSites',
+    'Nutritional Development Services': 'foodSites',
     'PCA': 'olderAdultSites',
     'PPR_Senior': 'olderAdultSites',
     'PPR_StudentMeals': 'studentMealSites',
