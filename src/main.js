@@ -468,6 +468,7 @@ pinboard({
                 },
                 'Nutritional Development Services': {
                   name: 'Nutritional Development Services',
+                  hidePickupDetailsInGreeting: true,
                 },
               },
             },
