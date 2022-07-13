@@ -344,7 +344,7 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ 'Nutritional Development Services' ],
+      subsections: [ ],
     },
     studentMealSites: {
       title: 'Student meal sites',
