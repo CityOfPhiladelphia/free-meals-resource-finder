@@ -506,7 +506,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
-                  Playstreets serve lunch and a snack. Meals must be eaten on site.',
+                  Playstreets serve lunch and a snack.',
                   eligibility: 'All children and youth are eligible. No ID is required.',
                 },
                 'NDS': {
@@ -717,7 +717,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Playstreets está abierto de lunes a viernes entre las 10 a.m. y las 4 p.m. Las calles están cerradas al tráfico de automóviles. Las comidas varían según el sitio. Para obtener más información, visite el Playstreet.<br>\
-                  Playstreets sirve almuerzos y refrigerios. Las comidas se deben consumir en el lugar.',
+                  Playstreets sirve almuerzos y refrigerios.',
                   eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
                 },
                 'NDS': {
@@ -896,7 +896,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: '游乐街计划的开放时间为周一至周五上午 10 点 – 下午 4 点。街道禁止机动车驶入。 餐食供应时间因供应点而异。 欲了解更多信息，请前往游乐街计划咨询。<br>\
-                  游乐街计划供应午餐和一份点心。 餐食须在现场食用。',
+                  游乐街计划供应午餐和一份点心。',
                   eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
                 },
                 'NDS': {
@@ -1082,7 +1082,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets (Chơi trên đường phố)',
                   pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets<br>\
-                  Playstreets phục vụ bữa trưa và bữa ăn nhẹ. Phải ăn tại chỗ.',
+                  Playstreets phục vụ bữa trưa và bữa ăn nhẹ.',
                   eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
                 },
                 'NDS': {
@@ -1267,7 +1267,7 @@ pinboard({
                 'playstreets': {
                   name: 'Улицы Playstreet',
                   pickupDetails: 'Игровые улицы открыты с понедельника по пятницу с 10:00 до 16:00. Движение транспорта по улицам в это время закрыто. Время приема пищи может отличаться в зависимости от пункта питания. Для получения дополнительных сведений приходите на игровые улицы.<br>\
-                  На игровых улицах подаются обеды и закуски. Прием пищи должен осуществляться на месте.',
+                  На игровых улицах подаются обеды и закуски.',
                   eligibility: 'Право на получение помощи есть у всех детей и подростков. Удостоверение личности не требуется.',
                 },
                 'NDS': {
@@ -1462,7 +1462,7 @@ pinboard({
                 'playstreets': {
                   name: 'Playstreets',
                   pickupDetails: 'Les Playstreets sont ouverts du lundi au vendredi de 10h00 à 16h00. Les rues sont fermées à la circulation automobile. Les heures des repas varient selon le site. Pour plus d’informations, visitez le Playstreet.<br>\
-                  Les Playstreets servent le déjeuner et un goûter. Les repas doivent être consommés sur place.',
+                  Les Playstreets servent le déjeuner et un goûter.',
                   eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
                 },
                 'NDS': {
