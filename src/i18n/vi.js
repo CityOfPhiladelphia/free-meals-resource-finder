@@ -85,7 +85,7 @@ export default {
         'playstreets': {
           name: 'Playstreets (Chơi trên đường phố)',
           pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets<br>\
-          Playstreets phục vụ bữa trưa và bữa ăn nhẹ. Phải ăn tại chỗ.',
+          Playstreets phục vụ bữa trưa và bữa ăn nhẹ.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'NDS': {
@@ -176,11 +176,15 @@ export default {
       },
     },
     foodPantries: {
-      header: 'Kho thực phẩm',
-      intro: 'Các điểm này bổ sung cho mạng lưới kho thực phẩm hiện có. Để tìm kho thực phẩm gần chỗ quý vị:',
-      li1: 'Gọi <b><a class="underlined" href="tel:+311">311</a></b>. Hãy nhớ gọi điện cho kho thực phẩm trước để xác nhận giờ làm việc của họ.',
-      li2: 'Hãy gọi đường dây nóng WhyHunger theo số <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> hoặc nhắn tin mã ZIP của quý vị cho <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a> để nhận một danh sách các kho thực phẩm gần đó.',
-      li3: '<b><a href="https://communityresourceconnects.org/" class="underlined">Truy cập trang web Community Resource Connects để tìm thực phẩm và các nguồn trợ giúp khác trong khu vực của quý vị.</a></b>',
+      header: 'Tìm thêm các nguồn thực phẩm miễn phí và các hỗ trợ khác: ',
+      intro: '',
+      li1: 'Gọi đến số <a href="tel:+311">311</a>. Gọi trước cho phòng pantry để xác nhận giờ của họ.',
+      li2: 'Trang  <a href="https://www.phila.gov/departments/office-of-homeless-services/">web của Office of Homeless Services</a> có liệt kê nhiều điểm phát bữa ăn miễn phí hơn. ',
+      li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> có thực phẩm và các nguồn lực khác.',
+      h2:'Nhận trợ giúp đăng ký các lợi ích: ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly </a> nhận trợ giúp đăng ký các lợi ích công cộng. Gọi đến số 1-844-848-4376. ',
+      li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger  </a>trợ giúp đăng ký SNAP. Gọi đến số 215-430-0556 ',
+      li23:'Đăng ký trước cho WIC ở <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC. </a> WIC giúp phụ nữ, trẻ sơ sinh và trẻ em dưới 5 tuổi nhận được thông tin về dinh dưỡng và thực phẩm lành mạnh.',
     },
   },
 };

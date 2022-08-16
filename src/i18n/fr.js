@@ -93,7 +93,7 @@ export default {
         'playstreets': {
           name: 'Playstreets',
           pickupDetails: 'Les Playstreets sont ouverts du lundi au vendredi de 10h00 à 16h00. Les rues sont fermées à la circulation automobile. Les heures des repas varient selon le site. Pour plus d’informations, visitez le Playstreet.<br>\
-          Les Playstreets servent le déjeuner et un goûter. Les repas doivent être consommés sur place.',
+          Les Playstreets servent le déjeuner et un goûter.',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
         },
         'NDS': {
@@ -187,11 +187,15 @@ export default {
       },
     },
     foodPantries: {
-      header: 'Banques alimentaires',
-      intro: 'Ces sites viennent compléter le réseau existant de banques alimentaires. Pour trouver une banque alimentaire près de chez vous :',
-      li1: 'appeler le <b><a class="underlined" href="tel:+311">311</a></b>. Assurez-vous d’appeler la banque alimentaire avant de vous y rendre afin de confirmer les heures d’ouverture.',
-      li2: '- Appelez la ligne d’assistance WhyHunger au <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> ou envoyez votre code postal par SMS au <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> pour recevoir une liste des banques alimentaires à proximité.',
-      li3: 'Consultez le site Web de <b><a href="https://communityresourceconnects.org/" class="underlined">Community Resource Connects</a></b> pour trouver de la nourriture et d’autres ressources dans votre quartier.',
+      header: 'Trouver d\'autres sources de nourriture gratuite et d\'aide:',
+      intro: '',
+      li1: 'Appelez le  <a href="tel:+311">311</a>. Appelez la banque alimentaire au préalable pour vérifier ses horaires.',
+      li2: '<a href="https://www.phila.gov/departments/office-of-homeless-services/">Le site Internet de l\'Office of Homeless Services (Bureau des services aux sans-abri)</a> recense d\'autres lieux offrant des repas gratuits. ',
+      li3: '<a href="https://communityresourceconnects.org/">Le site Community Resource Connects </a> propose de la nourriture et d\'autres ressources.',
+      h2:'Obtenir de l\'aide pour faire une demande de prestations: ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> peut vous aider à faire une demande de prestations publiques. Appelez le 1-844-848-4376.',
+      li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger</a> peut vous aider à faire une demande de prestations SNAP (programme d\'aide alimentaire). Appelez le 215-430-0556.',
+      li23:'Faites une demande préliminaire d\'aide alimentaire WIC (pour femmes, nourrissons et enfants) sur le site <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> Le programme WIC permet aux femmes, aux nourrissons et aux enfants de moins de 5 ans d\'accéder à une nourriture saine et à des informations nutritionnelles.',
     },
   },
 };

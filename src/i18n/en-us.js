@@ -96,7 +96,7 @@ export default {
         'playstreets': {
           name: 'Playstreets',
           pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
-          Playstreets serve lunch and a snack. Meals must be eaten on site.',
+          Playstreets serve lunch and a snack.',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'NDS': {
@@ -212,11 +212,15 @@ export default {
     },
 
     foodPantries: {
-      header: 'Food pantries',
-      intro: 'These sites supplement the existing food pantry network. To find a food pantry near you:',
-      li1: 'Call <b><a class="underlined" href="tel:+311">311</a></b>. Make sure to call the pantry in advance to confirm their hours.',
-      li2: 'Call the WhyHunger hotline at <b><a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b> or text your ZIP code to <b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b> to receive a list of nearby food pantries.',
-      li3: 'Visit the <b><a href="https://communityresourceconnects.org/" class="underlined">Community Resource Connects</a></b> website to find food and other resources in your area.',
+      header: 'Find more free food resources and other support:',
+      intro: '',
+      li1: 'Call <a href="tel:+311">311</a>. Call the pantry in advance to confirm their hours.',
+      li2: 'The <a href="https://www.phila.gov/departments/office-of-homeless-services/">Office of Homeless Services website</a> lists more free meal sites. ',
+      li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> has food and other resources.',
+      h2:'Get help applying for benefits: ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-844-848-4376. ',
+      li22:'<a href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
+      li23:'Pre-apply for WIC at <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
     },
   },
 };

@@ -83,7 +83,7 @@ export default {
         'playstreets': {
           name: 'Playstreets',
           pickupDetails: '游乐街计划的开放时间为周一至周五上午 10 点 – 下午 4 点。街道禁止机动车驶入。 餐食供应时间因供应点而异。 欲了解更多信息，请前往游乐街计划咨询。<br>\
-          游乐街计划供应午餐和一份点心。 餐食须在现场食用。',
+          游乐街计划供应午餐和一份点心。 ',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'NDS': {
@@ -175,11 +175,15 @@ export default {
       },
     },
     foodPantries: {
-      header: '食品分发站储藏室',
-      intro: '这些站点补充现有的食品分发站网络。 要寻找您附近的食品储藏室：',
-      li1: '拨打 <b><a class="underlined" href="tel:+311">311</a></b>. 请务必提前致电分发站以确认他们的工作时间。',
-      li2: '-打电话<a class="underlined" href="tel:+18005486479">1-800-5HUNGRY</a></b>给“为何要饥饿”热线，或把您的邮政编码发短信给<b><a class="underlined" href="tel:+18005486479">1-800-548-6479</a></b>以取得您附近的食品分发站的单子',
-      li3: '<b><a href="https://communityresourceconnects.org/" class="underlined">查阅“社区资源连接”网站，查找您所在地区的食物和其他资源。</a></b>',
+      header: '查找更多免费的食物资源和其他支持： ',
+      intro: '',
+      li1: '拨打 <a href="tel:+311">311</a>。 提前致电食品储藏室确认他们的工作时间。 ',
+      li2: '无家可归者服务办公室 <a href="https://www.phila.gov/departments/office-of-homeless-services/">(Office of Homeless Services)</a>  网站列出了更多的免费餐食供应场所。',
+      li3: '社区资源联络点  <a href="https://communityresourceconnects.org/">(Community Resource Connects) </a> h可提供食物和其他资源。',
+      h2:'获取协助以申请福利。  ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">费城福利 (BenePhilly) </a>  可协助申请公共福利。 欢迎致电 1-844-848-4376。 ',
+      li22:'<a href="https://www.hungercoalition.org/">反饥饿联盟 (Coalition Against Hunger) </a> 可协助申请 SNAP。 欢迎致电 215-430-0556。  ',
+      li23:'在 <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC </a>提前申请 WIC。WIC 可帮助妇女、婴儿和 5 岁以下儿童获得健康食品和营养信息。 ',
     },
   },
 };
