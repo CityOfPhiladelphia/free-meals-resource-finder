@@ -140,7 +140,7 @@ export default {
         ',
       },
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       header: 'Older adult meal sites',
       eligibility: '\
         Adults 60 and over are eligible at sites supported by the Philadelphia\

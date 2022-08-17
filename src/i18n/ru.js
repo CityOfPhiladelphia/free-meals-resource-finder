@@ -128,7 +128,7 @@ export default {
         ',
       },
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       header: 'Пункты выдачи питания для пожилых людей',
       eligibility: '\
       Взрослые старше 60 лет могут получить питание на площадках, с которыми сотрудничает Philadelphia Corporation for Aging (PCA).\

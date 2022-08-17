@@ -130,7 +130,7 @@ export default {
         ',
       },
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       header: 'Lugares de comidas para adultos mayores',
       eligibility: '  Los adultos de 60 años o más son elegibles en los lugares patrocinados por la Philadelphia Corporation for Aging (PCA).\
       <i><b>Los adultos mayores deben llamar para reservar la comida con anticipación  antes de recogerlas.</b></i><br><br>\

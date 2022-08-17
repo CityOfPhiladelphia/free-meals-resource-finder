@@ -128,7 +128,7 @@ export default {
         ',
       },
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       header: 'Các điểm phát bữa ăn cho người già',
       eligibility: '\
       Dành cho những người lớn từ 60 tuổi trở lên, tại các địa điểm được Hiệp Hội Người Cao Niên Philadelphia (Philadelphia Corporation for Aging, PCA) hỗ trợ. \

@@ -14,7 +14,7 @@
     "@fortawesome/pro-light-svg-icons": "5.15.4",
     "@fortawesome/pro-regular-svg-icons": "5.15.4",
     "@fortawesome/pro-solid-svg-icons": "5.15.4",
-    "@phila/pinboard": "1.1.28",
+    "@phila/pinboard": "1.1.31",
     "bulma": "^0.9.1",
     "core-js": "^3.3.3",
     "vue": "^2.6.10"

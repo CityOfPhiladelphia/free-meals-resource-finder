@@ -362,7 +362,7 @@ pinboard({
       color: '#721817',
       subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       title: 'Older adult meal sites',
       titleSingular: 'Older adult meal site',
       // color: '#D67D00',
@@ -393,11 +393,11 @@ pinboard({
     'Student Meal Site': 'studentMealSites',
     'PPR': 'foodSites',
     'PSD': 'studentMealSites',
-    'SENIOR SITE': 'olderAdultSites',
+    'SENIOR SITE': 'olderAdultMealSites',
     'SHARE FOOD PROGRAM': 'foodSites',
     'Nutritional Development Services': 'foodSites',
-    'PCA': 'olderAdultSites',
-    'PPR_Senior': 'olderAdultSites',
+    'PCA': 'olderAdultMealSites',
+    'PPR_Senior': 'olderAdultMealSites',
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',

@@ -126,7 +126,7 @@ export default {
         ',
       },
     },
-    olderAdultSites: {
+    olderAdultMealSites: {
       header: '年长者用餐场所',
       eligibility: '\
       60 岁及以上的长者有资格享受费城老龄公司 (Philadelphia Corporation for Aging, PCA) 支持站点提供的服务。 \
