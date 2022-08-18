@@ -218,7 +218,7 @@ pinboard({
     },
     {
       type: "native",
-      href: "#",
+      href: "https://www.phila.gov/food/",
       text: "about",
     },
     {
