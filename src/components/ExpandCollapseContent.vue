@@ -64,7 +64,7 @@
     </div>
 
     <senior-meal-site-card
-      v-if="section === 'olderAdultSites'"
+      v-if="section === 'olderAdultMealSites'"
       :item="item"
     />
 
