@@ -24,6 +24,8 @@ export default {
   FRIDAY: 'Thứ Sáu',
   SATURDAY: 'Thứ Bảy',
   SUNDAY: 'Chủ Nhật',
+  daysOfTheWeek: "Ngày trong tuần",
+  schedule: "Lịch hẹn",
   nonPerish: 'chỉ có đồ ăn không dễ ôi thiu',
   freshOnly: 'chỉ có nông sản tươi',
   breakfastLunch: 'bữa sáng và bữa trưa',
