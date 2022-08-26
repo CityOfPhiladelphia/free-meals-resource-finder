@@ -1,19 +1,5 @@
 <template>
   <section class="services">
-    <!-- <vertical-table-light
-      class="print-padding"
-      :slots="mainVerticalTableSlots"
-      :options="mainVerticalTableOptions"
-    >
-      <div class="table-slot">
-        <vertical-table-light
-          class="print-padding"
-          :slots="componentVerticalTableSlots"
-          :options="componentVerticalTableOptions"
-        />
-      </div>
-    </vertical-table-light> -->
-
     <h3>{{ $t('eligibility') }}</h3>
 
     <div class="table-intro">
@@ -22,9 +8,10 @@
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
-    <div class="table-intro">
-      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails') }}
-    </div>
+    <div
+      class="table-intro"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
+    />
 
     <vue-good-table
       :columns="pickupDetails.columns"
@@ -64,7 +51,6 @@ export default {
   name: 'NdsSchoolCard',
   components: {
     VueGoodTable,
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
   },
   mixins: [ SharedFunctions ],
   props: {
@@ -88,58 +74,6 @@ export default {
     subsection() {
       return this.$props.item.attributes.CATEGORY;
     },
-    // mainVerticalTableOptions() {
-    //   return {
-    //     styles: {
-    //       th: {
-    //         'vertical-align': 'top',
-    //         'font-size': '14px',
-    //         'min-width': '40px !important',
-    //         'max-width': '50px !important',
-    //         'width': '10% !important',
-    //       },
-    //       td: {
-    //         'font-size': '14px',
-    //       },
-    //     },
-    //   };
-    // },
-    // mainVerticalTableSlots() {
-    //   return {
-    //     id: 'mainTable',
-    //     fields: [
-    //       {
-    //         label: 'eligibility',
-    //         labelType: 'i18n',
-    //         value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
-    //         valueType: 'i18n',
-    //       },
-    //       {
-    //         label: 'pickupDetails',
-    //         labelType: 'i18n',
-    //         // value: 'sections.' + this.section + '.pickupDetails',
-    //         valueType: 'component',
-    //       },
-    //     ],
-    //   };
-    // },
-    // componentVerticalTableOptions() {
-    //   return {
-    //     styles: {
-    //       th: {
-    //         // 'vertical-align': 'top',
-    //         'font-size': '14px',
-    //         'min-width': '45px !important',
-    //         'max-width': '50px !important',
-    //         'width': '25% !important',
-    //       },
-    //       td: {
-    //         'font-size': '14px',
-    //         // 'width': '90%',
-    //       },
-    //     },
-    //   };
-    // },
     pickupDetails() {
       let columns = [
         {
@@ -197,13 +131,6 @@ export default {
         }
       }
 
-      // let summary = this.$config.i18n.data.messages[this.i18nLocale].sections[this.section].subsections[this.item.attributes.CATEGORY].pickupDetails;
-      // console.log('componentVerticalTableSlots, summary:', summary);
-      // return {
-      //   id: 'mainTable',
-      //   fields: theFields,
-      //   subtitle: summary,
-      // };
       return { columns, rows };
     },
   },
