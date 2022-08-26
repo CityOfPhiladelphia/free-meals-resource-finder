@@ -120,12 +120,14 @@ export default {
         },
       },
       custom: {
-        info: '\
-        Để tìm thêm địa điểm phục vụ bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên: \
-        <br><ul><li>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
-        <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
-        <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
-        ',
+        // info: '\
+        // Để tìm thêm địa điểm phục vụ bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên: \
+        // <br><ul><li>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+        // <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
+        // <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
+        // ',
+        info: 'Kiểm tra lại để biết thông tin cập nhật về hoạt động phân phối thực phẩm trong thời gian nghỉ ở trường.<br>\
+        Truy cập trang <a href="https://www.philasd.org/foodservices/">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh.</li></ul>',
       },
     },
     olderAdultMealSites: {
