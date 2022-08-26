@@ -132,12 +132,14 @@ export default {
         },
       },
       custom: {
-        info: '\
-        To find more free summer meal sites for children and youth: <br>\
-        <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
-        <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
-        <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
-        ',
+        // info: '\
+        // To find more free summer meal sites for children and youth: <br>\
+        // <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+        // <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
+        // <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
+        // ',
+        info: 'Check back for updates on food distribution during school breaks.<br>\
+        Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students</li></ul>',
       },
     },
     olderAdultMealSites: {
