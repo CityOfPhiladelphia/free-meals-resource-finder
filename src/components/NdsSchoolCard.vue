@@ -1,6 +1,6 @@
 <template>
   <section class="services">
-    <vertical-table-light
+    <!-- <vertical-table-light
       class="print-padding"
       :slots="mainVerticalTableSlots"
       :options="mainVerticalTableOptions"
@@ -12,17 +12,58 @@
           :options="componentVerticalTableOptions"
         />
       </div>
-    </vertical-table-light>
+    </vertical-table-light> -->
+
+    <h3>{{ $t('eligibility') }}</h3>
+
+    <div class="table-intro">
+      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }}
+    </div>
+
+    <h3>{{ $t('pickupDetails') }}</h3>
+
+    <div class="table-intro">
+      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails') }}
+    </div>
+
+    <vue-good-table
+      :columns="pickupDetails.columns"
+      :rows="pickupDetails.rows"
+      :sort-options="{ enabled: false }"
+      style-class="vgt-table condensed"
+    >
+      <template
+        slot="table-column"
+        slot-scope="props"
+      >
+        <span
+          v-if="props.column.label =='Days'"
+          class="table-header-text"
+        >
+          {{ $t(props.column.i18nLabel) }}
+        </span>
+        <span
+          v-if="props.column.label =='Schedule'"
+          class="table-header-text"
+        >
+          {{ $t(props.column.i18nLabel) }}
+        </span>
+      </template>
+    </vue-good-table>
   </section>
 </template>
 
 <script>
 
 import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
+import { VueGoodTable } from 'vue-good-table';
+import 'vue-good-table/dist/vue-good-table.css';
+import './mixins/table.css';
 
 export default {
   name: 'NdsSchoolCard',
   components: {
+    VueGoodTable,
     VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
   },
   mixins: [ SharedFunctions ],
@@ -35,11 +76,11 @@ export default {
     },
   },
   computed: {
-    subsections() {
-      return this.$config.subsections;
-    },
     i18nLocale() {
       return this.$i18n.locale;
+    },
+    subsections() {
+      return this.$config.subsections;
     },
     section() {
       return this.subsections[this.$props.item.attributes['CATEGORY']];
@@ -47,59 +88,74 @@ export default {
     subsection() {
       return this.$props.item.attributes.CATEGORY;
     },
-    mainVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '40px !important',
-            'max-width': '50px !important',
-            'width': '10% !important',
-          },
-          td: {
-            'font-size': '14px',
-          },
+    // mainVerticalTableOptions() {
+    //   return {
+    //     styles: {
+    //       th: {
+    //         'vertical-align': 'top',
+    //         'font-size': '14px',
+    //         'min-width': '40px !important',
+    //         'max-width': '50px !important',
+    //         'width': '10% !important',
+    //       },
+    //       td: {
+    //         'font-size': '14px',
+    //       },
+    //     },
+    //   };
+    // },
+    // mainVerticalTableSlots() {
+    //   return {
+    //     id: 'mainTable',
+    //     fields: [
+    //       {
+    //         label: 'eligibility',
+    //         labelType: 'i18n',
+    //         value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
+    //         valueType: 'i18n',
+    //       },
+    //       {
+    //         label: 'pickupDetails',
+    //         labelType: 'i18n',
+    //         // value: 'sections.' + this.section + '.pickupDetails',
+    //         valueType: 'component',
+    //       },
+    //     ],
+    //   };
+    // },
+    // componentVerticalTableOptions() {
+    //   return {
+    //     styles: {
+    //       th: {
+    //         // 'vertical-align': 'top',
+    //         'font-size': '14px',
+    //         'min-width': '45px !important',
+    //         'max-width': '50px !important',
+    //         'width': '25% !important',
+    //       },
+    //       td: {
+    //         'font-size': '14px',
+    //         // 'width': '90%',
+    //       },
+    //     },
+    //   };
+    // },
+    pickupDetails() {
+      let columns = [
+        {
+          label: 'Days',
+          i18nLabel: 'daysOfTheWeek',
+          field: 'label',
+          thClass: 'th-black-class',
         },
-      };
-    },
-    mainVerticalTableSlots() {
-      return {
-        id: 'mainTable',
-        fields: [
-          {
-            label: 'eligibility',
-            labelType: 'i18n',
-            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
-            valueType: 'i18n',
-          },
-          {
-            label: 'pickupDetails',
-            labelType: 'i18n',
-            // value: 'sections.' + this.section + '.pickupDetails',
-            valueType: 'component',
-          },
-        ],
-      };
-    },
-    componentVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            // 'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '45px !important',
-            'max-width': '50px !important',
-            'width': '25% !important',
-          },
-          td: {
-            'font-size': '14px',
-            // 'width': '90%',
-          },
+        {
+          label: 'Schedule',
+          i18nLabel: 'schedule',
+          field: 'value',
+          thClass: 'th-black-class',
         },
-      };
-    },
-    componentVerticalTableSlots() {
+      ];
+      let rows = [];
       let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
       let theFields = [];
       let days = {};
@@ -133,25 +189,22 @@ export default {
           }
 
           let dayObject = {
-            label: day,
-            labelType: 'i18n',
+            id: index,
+            label: this.$i18n.messages[this.i18nLocale][day],
             value: hours,
-            // valueType: 'i18n',
-            // value1: 'tenMeals',
-            // value1Type: 'i18n',
           };
-          theFields.push(dayObject);
+          rows.push(dayObject);
         }
       }
 
-      let summary = this.$config.i18n.data.messages[this.i18nLocale].sections[this.section].subsections[this.item.attributes.CATEGORY].pickupDetails;
+      // let summary = this.$config.i18n.data.messages[this.i18nLocale].sections[this.section].subsections[this.item.attributes.CATEGORY].pickupDetails;
       // console.log('componentVerticalTableSlots, summary:', summary);
-
-      return {
-        id: 'mainTable',
-        fields: theFields,
-        subtitle: summary,
-      };
+      // return {
+      //   id: 'mainTable',
+      //   fields: theFields,
+      //   subtitle: summary,
+      // };
+      return { columns, rows };
     },
   },
 };

@@ -24,6 +24,8 @@ export default {
   FRIDAY: '星期五',
   SATURDAY: '星期六',
   SUNDAY: '星期日',
+  daysOfTheWeek: "日期",
+  schedule: "安排",
   nonPerish: '仅为非易腐物品',
   freshOnly: '仅为新鲜农产品',
   breakfastLunch: '早餐和午餐',

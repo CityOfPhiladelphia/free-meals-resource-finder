@@ -24,6 +24,8 @@ export default {
   FRIDAY: 'Vendredi',
   SATURDAY: 'Samedi',
   SUNDAY: 'Dimanche',
+  daysOfTheWeek: "Jour de la semaine",
+  schedule: "Calendrier",
   nonPerish: 'articles non périssables seulement',
   freshOnly: 'produits frais seulement',
   breakfastLunch: 'petit déjeuner et déjeuner',
