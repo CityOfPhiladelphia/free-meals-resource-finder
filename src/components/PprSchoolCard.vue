@@ -1,21 +1,17 @@
 <template>
   <section class="services">
-    <vertical-table-light
-      class="print-padding"
-      :slots="mainVerticalTableSlots"
-      :options="mainVerticalTableOptions"
+    <h3>{{ $t('eligibility') }}</h3>
+
+    <div class="table-intro">
+      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }}
+    </div>
+
+    <h3>{{ $t('pickupDetails') }}</h3>
+
+    <div
+      class="table-intro"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
     />
-    <!-- <div class="table-slot">
-        <div>
-          {{ $t('sections.' + section + '.pickupDetails') }}
-        </div>
-        <vertical-table-3-cells-light
-          class="print-padding"
-          :slots="componentVerticalTableSlots"
-          :options="componentVerticalTableOptions"
-        />
-      </div>
-    </vertical-table-light> -->
   </section>
 </template>
 
@@ -25,10 +21,7 @@ import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctio
 
 export default {
   name: 'PprSchoolCard',
-  components: {
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-    // VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTable3CellsLight.vue'),
-  },
+  // components: {},
   mixins: [ SharedFunctions ],
   props: {
     item: {
@@ -47,109 +40,6 @@ export default {
     },
     subsection() {
       return this.$props.item.attributes.CATEGORY;
-    },
-    mainVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '40px !important',
-            'max-width': '50px !important',
-            'width': '10% !important',
-          },
-          td: {
-            'font-size': '14px',
-          },
-        },
-      };
-    },
-    mainVerticalTableSlots() {
-      return {
-        id: 'mainTable',
-        fields: [
-          {
-            label: 'eligibility',
-            labelType: 'i18n',
-            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
-            valueType: 'i18n',
-          },
-          {
-            label: 'pickupDetails',
-            labelType: 'i18n',
-            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY + '.pickupDetails',
-            valueType: 'i18n',
-          },
-        ],
-      };
-    },
-    componentVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            // 'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '45px !important',
-            'max-width': '50px !important',
-            'width': '25% !important',
-          },
-          td: {
-            'font-size': '14px',
-            // 'width': '90%',
-          },
-        },
-      };
-    },
-    componentVerticalTableSlots() {
-      let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let theFields = [];
-      let days = {};
-
-
-      let item = this.item;
-      let holidays = [];
-      let exceptions = [];
-      if (this.$config.holidays && this.$config.holidays.days) {
-        holidays = this.$config.holidays.days;
-      }
-      if (this.$config.holidays && this.$config.holidays.exceptions) {
-        exceptions = this.$config.holidays.exceptions;
-      }
-      let siteName = this.getSiteName(this.item);
-
-      for (let [ index, day ] of allDays.entries()) {
-        let normallyOpen = item.attributes[day] != null;
-        let holidayToday = holidays.includes(day);
-        let yesterday = allDays[index-1];
-        let normallyOpenYesterday = item.attributes[yesterday] != null;
-        let holidayYesterday = holidays.includes(yesterday);
-        let siteIsException = exceptions.includes(this.getSiteName(this.item));
-
-        if ((normallyOpen || (!siteIsException && holidayYesterday && normallyOpenYesterday)) && (!holidayToday || siteIsException)) {
-
-          let hours;
-          if ((normallyOpen && !holidayToday) || (normallyOpen && siteIsException)) {
-            hours = item.attributes[day];
-          } else if (!normallyOpen && holidayYesterday) {
-            hours = item.attributes[yesterday];
-          }
-
-          let dayObject = {
-            label: day,
-            labelType: 'i18n',
-            value: hours,
-            // valueType: 'i18n',
-            value1: 'breakfastLunch',
-            value1Type: 'i18n',
-          };
-          theFields.push(dayObject);
-        }
-      }
-
-      return {
-        id: 'mainTable',
-        fields: theFields,
-      };
     },
   },
 };
