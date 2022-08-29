@@ -2,15 +2,17 @@
   <section class="services">
     <h3>{{ $t('eligibility') }}</h3>
 
-    <div class="table-intro">
-      {{ $t('sections.foodSites.eligibility') }}
-    </div>
+    <div
+      class="table-intro"
+      v-html="$t('sections.foodSites.eligibility')"
+    />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
-    <div class="table-intro">
-      {{ $t('sections.foodSites.pickupDetails') }}
-    </div>
+    <div
+      class="table-intro"
+      v-html="$t('sections.foodSites.pickupDetails')"
+    />
 
     <vue-good-table
       :columns="pickupDetails.columns"
@@ -50,8 +52,6 @@ export default {
   name: 'FoodSiteCard',
   components: {
     VueGoodTable,
-    // VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-    // VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTable3CellsLight.vue'),
   },
   mixins: [ SharedFunctions ],
   props: {

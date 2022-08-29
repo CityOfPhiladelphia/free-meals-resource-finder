@@ -2,9 +2,10 @@
   <section class="services">
     <h3>{{ $t('eligibility') }}</h3>
 
-    <div class="table-intro">
-      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }}
-    </div>
+    <div
+      class="table-intro"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
+    />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
