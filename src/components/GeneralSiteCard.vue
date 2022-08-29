@@ -61,15 +61,15 @@ export default {
     i18nLocale() {
       return this.$i18n.locale;
     },
-    // subsections() {
-    //   return this.$config.subsections;
-    // },
+    subsections() {
+      return this.$config.subsections;
+    },
     section() {
       return this.subsections[this.$props.item.attributes['CATEGORY']];
     },
-    // subsection() {
-    //   return this.$props.item.attributes.CATEGORY;
-    // },
+    subsection() {
+      return this.$props.item.attributes.CATEGORY;
+    },
     pickupDetails() {
       let columns = [
         {
