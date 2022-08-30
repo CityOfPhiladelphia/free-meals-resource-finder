@@ -6,7 +6,7 @@
       <div class="column is-narrow">
         <font-awesome-icon
           icon="exclamation-triangle"
-          class="fa-3x fa-icon-class"
+          class="fa-3x"
         />
       </div>
       <div class="column exclamation-details">
@@ -167,14 +167,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
-  .custom-section {
-    font-size: 14px;
+  .custom-greeting {
+    margin: 1rem;
   }
 
-  .open-list-div {
-    margin: 0 auto;
+  .container {
+    margin-bottom: 1rem;
   }
 
   .open-list-button {
@@ -185,49 +185,20 @@ export default {
     padding-right: 32px;
     padding-top: 17px;
     padding-bottom: 17px;
-    margin-top: 6px;
-    margin-bottom: 14px;
-    width: 200px;
-  }
-
-  .custom-greeting {
-    padding: 12px;
   }
 
   .exclamation-holder {
-    /* display: flex;
-    align-items: center; */
-    margin-top: 2px;
-    /* margin-bottom: 14px; */
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .fa-icon-class {
-    margin: 0 auto;
-    display: block;
+    padding: 1rem;
+    margin-bottom: 0px;
   }
 
   .exclamation-details {
     margin-left: 14px;
-    font-size: 15px;
-  }
-
-  .mb-panel-topics-greeting {
-    padding-top: 20px;
-  }
-
-  .greeting {
-    font-size: 20px;
-    color: #444;
-    padding: 14px;
-  }
-
-  .greeting-error {
-    border-left-color: #ff0000;
+    font-size: 14px;
   }
 
   .custom-section {
+    font-size: 14px;
     margin-left: 8px;
     margin-top: 4px;
   }
@@ -237,13 +208,4 @@ export default {
     font-size: 14px;
   }
 
-  /*medium*/
-  @media screen and (min-width: 750px) {
-    .mb-panel-topics-greeting {
-      /*make this scroll on medium screens*/
-      /*REVIEW this is a little hacky. the 120px shouldn't be hard-coded.*/
-      height: calc(100vh - 120px);
-      overflow: auto;
-    }
-  }
 </style>
