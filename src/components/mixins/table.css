@@ -121,3 +121,7 @@ h3 {
 .description-paragraph {
   margin-bottom: 1rem;
 }
+
+tr:last-of-type > td {
+  border-bottom-width: 0px;
+}
