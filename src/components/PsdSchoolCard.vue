@@ -96,7 +96,6 @@ export default {
       ];
       let rows = [];
       let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let theFields = [];
       let days = {};
 
       let item = this.item;

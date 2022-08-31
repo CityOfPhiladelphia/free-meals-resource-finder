@@ -44,6 +44,7 @@
 <script>
 
 import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
+import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 import { VueGoodTable } from 'vue-good-table';
 import 'vue-good-table/dist/vue-good-table.css';
 
@@ -52,7 +53,10 @@ export default {
   components: {
     VueGoodTable,
   },
-  mixins: [ SharedFunctions ],
+  mixins: [
+    SharedFunctions,
+    LocalSharedFunctions,
+  ],
   props: {
     item: {
       type: Object,
@@ -75,70 +79,7 @@ export default {
       return this.$props.item.attributes.CATEGORY;
     },
     pickupDetails() {
-      let columns = [
-        {
-          label: 'Days',
-          i18nLabel: 'daysOfTheWeek',
-          field: 'label',
-          thClass: 'th-black-class',
-        },
-        {
-          label: 'Schedule',
-          i18nLabel: 'schedule',
-          field: 'value',
-          thClass: 'th-black-class',
-        },
-        {
-          label: 'Notes',
-          i18nLabel: 'notes',
-          field: 'notes',
-          thClass: 'th-black-class',
-        },
-      ];
-      let rows = [];
-      let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let theFields = [];
-      let days = {};
-
-      let item = this.item;
-      let holidays = [];
-      let exceptions = [];
-      if (this.$config.holidays && this.$config.holidays.days) {
-        holidays = this.$config.holidays.days;
-      }
-      if (this.$config.holidays && this.$config.holidays.exceptions) {
-        exceptions = this.$config.holidays.exceptions;
-      }
-      let siteName = this.getSiteName(this.item);
-
-      for (let [ index, day ] of allDays.entries()) {
-        let normallyOpen = item.attributes[day] != null && item.attributes[day] != 'NA';
-        let holidayToday = holidays.includes(day);
-        let yesterday = allDays[index-1];
-        let normallyOpenYesterday = item.attributes[yesterday] != null;
-        let holidayYesterday = holidays.includes(yesterday);
-        let siteIsException = exceptions.includes(this.getSiteName(this.item));
-
-        if ((normallyOpen || (!siteIsException && holidayYesterday && normallyOpenYesterday)) && (!holidayToday || siteIsException)) {
-
-          let hours;
-          if ((normallyOpen && !holidayToday) || (normallyOpen && siteIsException)) {
-            hours = item.attributes[day];
-          } else if (!normallyOpen && holidayYesterday) {
-            hours = item.attributes[yesterday];
-          }
-
-          let dayObject = {
-            id: index,
-            label: this.$i18n.messages[this.i18nLocale][day],
-            value: hours,
-            notes: this.$i18n.messages[this.i18nLocale]['breakfastLunch'],
-          };
-          rows.push(dayObject);
-        }
-      }
-
-      return { columns, rows };
+      return this.getPickupDetails();
     },
   },
 };
