@@ -8,12 +8,14 @@ export default {
           i18nLabel: 'daysOfTheWeek',
           field: 'label',
           thClass: 'th-black-class',
+          tdClass: 'table-text',
         },
         {
           label: 'Schedule',
           i18nLabel: 'schedule',
           field: 'value',
           thClass: 'th-black-class',
+          tdClass: 'table-text',
         },
       ];
       let rows = [];

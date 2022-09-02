@@ -8,6 +8,7 @@
     </div>
 
     <div
+      v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
       class="columns big-cell-pad"
     >
       <div
@@ -26,13 +27,17 @@
       class="columns big-cell-pad"
     >
       <div
+        v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
         class="column is-3 small-cell-pad"
         v-html="$t('pickupDetails')"
       />
       <div class="column small-cell-pad">
         <div class="table-slot">
           <!-- pickupDetails if there are no subsections -->
-          <div v-html="$t('sections.' + header + '.pickupDetails')" />
+          <div
+            v-html="$t('sections.' + header + '.pickupDetails')"
+          />
+          <!-- v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting" -->
 
           <!-- subsections -->
           <div
