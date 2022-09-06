@@ -1,11 +1,28 @@
 <script>
 export default {
   methods: {
-    createDays(item) {
+    getPickupDetails() {
+      let columns = [
+        {
+          label: 'Days',
+          i18nLabel: 'daysOfTheWeek',
+          field: 'label',
+          thClass: 'th-black-class',
+          tdClass: 'table-text',
+        },
+        {
+          label: 'Schedule',
+          i18nLabel: 'schedule',
+          field: 'value',
+          thClass: 'th-black-class',
+          tdClass: 'table-text',
+        },
+      ];
+      let rows = [];
       let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let theFields = [];
       let days = {};
 
+      let item = this.item;
       let holidays = [];
       let exceptions = [];
       if (this.$config.holidays && this.$config.holidays.days) {
@@ -16,31 +33,40 @@ export default {
       }
       let siteName = this.getSiteName(this.item);
 
-      this.$config.holidays;
       for (let [ index, day ] of allDays.entries()) {
-        // console.log('in days loop, siteName:', siteName, 'holidays:', holidays, 'exceptions:', exceptions, 'day:', day, 'index:', index);
-        if (!holidays.includes(day) || exceptions.includes(this.getSiteName(this.item)) && (this.item.attributes[day] != null || holidays.includes(allDays[index-1]))){
-        // if (this.item.attributes[day] != null){
+        let normallyOpen = item.attributes[day] != null;
+        let holidayToday = holidays.includes(day);
+        let yesterday = allDays[index-1];
+        let normallyOpenYesterday = item.attributes[yesterday] != null;
+        let holidayYesterday = holidays.includes(yesterday);
+        let siteIsException = exceptions.includes(this.getSiteName(this.item));
+
+        if ((normallyOpen || (!siteIsException && holidayYesterday && normallyOpenYesterday)) && (!holidayToday || siteIsException)) {
+
+          let hours;
+          if ((normallyOpen && !holidayToday) || (normallyOpen && siteIsException)) {
+            hours = item.attributes[day];
+          } else if (!normallyOpen && holidayYesterday) {
+            hours = item.attributes[yesterday];
+          }
+
+          // this section is vestigial, but left in in case it ever needs to be re-added
+          let details;
+          if (day === 'MONDAY' || (holidayYesterday && yesterday === 'MONDAY')) {
+            details = 'nonPerish';
+          } else {
+            details = 'freshOnly';
+          }
+
           let dayObject = {
-            label: day,
-            labelType: 'i18n',
-            value: function() {
-              // console.log('allDays:', allDays, 'day:', day, 'index:', index, 'item.attributes:', item.attributes);
-              let value;
-              if (!holidays.includes(allDays[index-1])) {
-                value = item.attributes[day];
-              } else {
-                value = item.attributes[allDays[index-1]];
-              }
-              return value;
-            },
-            // valueType: 'i18n',
+            id: index,
+            label: this.$i18n.messages[this.i18nLocale][day],
+            value: hours,
           };
-          theFields.push(dayObject);
+          rows.push(dayObject);
         }
       }
-
-      return theFields;
+      return { columns, rows };
     },
   },
 };

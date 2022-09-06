@@ -1,35 +1,62 @@
 <template>
   <section class="services">
-    <vertical-table-light
-      class="print-padding"
-      :slots="mainVerticalTableSlots"
-      :options="mainVerticalTableOptions"
+    <h3>{{ $t('eligibility') }}</h3>
+
+    <div
+      class="table-intro"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
+    />
+
+    <h3>{{ $t('pickupDetails') }}</h3>
+
+    <div
+      class="table-intro"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
+    />
+
+    <vue-good-table
+      :columns="pickupDetails.columns"
+      :rows="pickupDetails.rows"
+      :sort-options="{ enabled: false }"
+      style-class="vgt-table condensed"
     >
-      <div class="table-slot">
-        <!-- <div>
-          {{ $t('sections.' + this.section + '.pickupDetails') }}
-        </div> -->
-        <vertical-table-light
-          class="print-padding"
-          :slots="componentVerticalTableSlots"
-          :options="componentVerticalTableOptions"
-        />
-      </div>
-    </vertical-table-light>
+      <template
+        slot="table-column"
+        slot-scope="props"
+      >
+        <span
+          v-if="props.column.label =='Days'"
+          class="table-header-text"
+        >
+          {{ $t(props.column.i18nLabel) }}
+        </span>
+        <span
+          v-if="props.column.label =='Schedule'"
+          class="table-header-text"
+        >
+          {{ $t(props.column.i18nLabel) }}
+        </span>
+      </template>
+    </vue-good-table>
   </section>
 </template>
 
 <script>
 
 import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
+import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
+import { VueGoodTable } from 'vue-good-table';
+// import 'vue-good-table/dist/vue-good-table.css';
 
 export default {
   name: 'CharterSchoolCard',
   components: {
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-    VerticalTable3CellsLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTable3CellsLight.vue'),
+    VueGoodTable,
   },
-  mixins: [ SharedFunctions ],
+  mixins: [
+    SharedFunctions,
+    LocalSharedFunctions,
+  ],
   props: {
     item: {
       type: Object,
@@ -39,6 +66,9 @@ export default {
     },
   },
   computed: {
+    i18nLocale() {
+      return this.$i18n.locale;
+    },
     subsections() {
       return this.$config.subsections;
     },
@@ -48,105 +78,8 @@ export default {
     subsection() {
       return this.$props.item.attributes.CATEGORY;
     },
-    mainVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '40px !important',
-            'max-width': '50px !important',
-            'width': '10% !important',
-          },
-          td: {
-            'font-size': '14px',
-          },
-        },
-      };
-    },
-    mainVerticalTableSlots() {
-      return {
-        id: 'mainTable',
-        fields: [
-          {
-            label: 'eligibility',
-            labelType: 'i18n',
-            value: 'sections.' + this.section + '.subsections.' + this.item.attributes.CATEGORY +  '.eligibility',
-            valueType: 'i18n',
-          },
-          {
-            label: 'pickupDetails',
-            labelType: 'i18n',
-            // value: 'hoursVary',
-            valueType: 'component',
-          },
-        ],
-      };
-    },
-    componentVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            // 'vertical-align': 'top',
-            'font-size': '14px',
-            'min-width': '45px !important',
-            'max-width': '50px !important',
-            'width': '25% !important',
-          },
-          td: {
-            'font-size': '14px',
-            // 'width': '90%',
-          },
-        },
-      };
-    },
-    componentVerticalTableSlots() {
-      let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let theFields = [];
-      let days = {};
-
-      let item = this.item;
-      let holidays = [];
-      let exceptions = [];
-      if (this.$config.holidays && this.$config.holidays.days) {
-        holidays = this.$config.holidays.days;
-      }
-      if (this.$config.holidays && this.$config.holidays.exceptions) {
-        exceptions = this.$config.holidays.exceptions;
-      }
-      let siteName = this.getSiteName(this.item);
-
-      for (let [ index, day ] of allDays.entries()) {
-        let normallyOpen = item.attributes[day] != null;
-        let holidayToday = holidays.includes(day);
-        let yesterday = allDays[index-1];
-        let normallyOpenYesterday = item.attributes[yesterday] != null;
-        let holidayYesterday = holidays.includes(yesterday);
-        let siteIsException = exceptions.includes(this.getSiteName(this.item));
-
-        if ((normallyOpen || (!siteIsException && holidayYesterday && normallyOpenYesterday)) && (!holidayToday || siteIsException)) {
-
-          let hours;
-          if ((normallyOpen && !holidayToday) || (normallyOpen && siteIsException)) {
-            hours = item.attributes[day];
-          } else if (!normallyOpen && holidayYesterday) {
-            hours = item.attributes[yesterday];
-          }
-
-          let dayObject = {
-            label: day,
-            labelType: 'i18n',
-            // value: this.item.attributes[day],
-            value: hours,
-          };
-          theFields.push(dayObject);
-        }
-      }
-
-      return {
-        id: 'mainTable',
-        fields: theFields,
-      };
+    pickupDetails() {
+      return this.getPickupDetails();
     },
   },
 };

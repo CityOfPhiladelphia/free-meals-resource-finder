@@ -24,6 +24,8 @@ export default {
   FRIDAY: 'Пятница',
   SATURDAY: 'Суббота',
   SUNDAY: 'Воскресенье',
+  daysOfTheWeek: "День недели",
+  schedule: "Расписание",
   nonPerish: 'только продукты длительного хранения',
   freshOnly: 'только свежие продукты',
   breakfastLunch: 'завтрак и обед',

@@ -27,6 +27,8 @@ export default {
   FRIDAY: 'Friday',
   SATURDAY: 'Saturday',
   SUNDAY: 'Sunday',
+  daysOfTheWeek: "Day of the week",
+  schedule: "Schedule",
   nonPerish: 'non-perishable items only',
   freshOnly: 'fresh produce only',
   breakfastLunch: 'Breakfast and lunch',
@@ -64,6 +66,7 @@ export default {
     },
     studentMealSites: {
       header: 'Student meal sites',
+      hidePickupDetailsInGreeting: true,
       eligibility: 'All children and youth are eligible. No ID is required.',
       pickupDetails: '',
       subsections: {

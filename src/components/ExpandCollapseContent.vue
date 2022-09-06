@@ -1,132 +1,141 @@
 <template>
   <div>
-    <div class="columns is-marginless">
-      <div class="column">
-        <div
-          v-if="address"
-          class="detail"
-        >
-          <font-awesome-icon icon="map-marker-alt" />
-          <span>
-            {{ address }}<br>
-            Philadelphia, PA {{ zipcode }}
-          </span>
+    <div :class="isMobile ? 'main-content-mobile' : 'main-content'">
+      <div class="columns">
+        <div class="column is-6">
+          <div
+            v-if="address"
+            class="columns is-mobile"
+          >
+            <div class="column is-1">
+              <font-awesome-icon icon="map-marker-alt" />
+            </div>
+            <div class="column">
+              {{ address }}<br>
+              Philadelphia, PA {{ zipcode }}<br>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6">
+          <div
+            v-if="item.attributes.CATEGORY"
+            class="columns is-mobile"
+          >
+            <div class="column is-1">
+              <font-awesome-icon icon="hand-holding-heart" />
+            </div>
+            <div class="column is-11">
+              <a
+                v-if="item.attributes.Website"
+                target="_blank"
+                :href="item.attributes.Website"
+              >
+                {{ $t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name') }}
+                <font-awesome-icon icon="external-link-alt" />
+              </a>
+              <span
+                v-if="!item.attributes.Website"
+                v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+              />
+            </div>
+          </div>
+
+          <div
+            v-if="item.attributes.phone_number"
+            class="columns is-mobile"
+          >
+            <div class="column is-1">
+              <font-awesome-icon icon="phone" />
+            </div>
+            <div class="column">
+              {{ item.attributes.phone_number }}
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="column">
-        <div
-          v-if="item.attributes.CATEGORY"
-          class="detail"
-        >
-          <font-awesome-icon icon="hand-holding-heart" />
-          <a
-            v-if="item.attributes.Website"
-            target="_blank"
-            :href="item.attributes.Website"
-          >
-            <span
-              v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
-            />
-          </a>
-          <span
-            v-if="!item.attributes.Website"
-            v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+      <div
+        v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE >= currentUnixDate"
+        class="temp-close-section"
+      >
+        <div class="card-exclamation-holder small-5">
+          <font-awesome-icon
+            icon="exclamation-triangle"
+            class="fa-2x fa-icon-class"
           />
         </div>
-
-        <div
-          v-if="item.attributes.phone_number"
-          class="detail"
-        >
-          <font-awesome-icon icon="phone" />
-          <span>
-            {{ item.attributes.phone_number }}
-          </span>
+        <div class="grid-y card-exclamation-details small-19">
+          <div><b>{{ $t('change') }}:</b></div>
+          <div>{{ $t('closure') }}: {{ transforms.toLocaleDateString.transform(item.attributes.TEMPCLOSE) }}</div>
         </div>
       </div>
+
+      <senior-meal-site-card
+        v-if="section === 'olderAdultMealSites'"
+        :item="item"
+      />
+
+      <food-site-card
+        v-if="section === 'foodSites'"
+        :item="item"
+      />
+
+      <charter-school-card
+        v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
+        :item="item"
+      />
+
+      <ppr-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
+        :item="item"
+      />
+
+      <psd-school-card
+        v-if="section === 'studentMealSites' && subsection === 'PSD'"
+        :item="item"
+      />
+
+      <pha-school-card
+        v-if="section === 'studentMealSites' && subsection === 'PHA'"
+        :item="item"
+      />
+
+      <other-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Other'"
+        :item="item"
+      />
+
+      <playstreets-school-card
+        v-if="section === 'studentMealSites' && subsection === 'playstreets'"
+        :item="item"
+      />
+
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'NDS'"
+        :item="item"
+      />
+
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
+        :item="item"
+      />
+
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
+        :item="item"
+      />
+
+      <ppr-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
+        :item="item"
+      />
+
+      <general-site-card
+        v-if="section === 'generalMealSites'"
+        :item="item"
+      />
     </div>
-
-    <div
-      v-if="item.attributes.TEMPCLOSE !== null && item.attributes.TEMPCLOSE >= currentUnixDate"
-      class="temp-close-section"
-    >
-      <div class="card-exclamation-holder small-5">
-        <font-awesome-icon
-          icon="exclamation-triangle"
-          class="fa-2x fa-icon-class"
-        />
-      </div>
-      <div class="grid-y card-exclamation-details small-19">
-        <div><b>{{ $t('change') }}:</b></div>
-        <div>{{ $t('closure') }}: {{ transforms.toLocaleDateString.transform(item.attributes.TEMPCLOSE) }}</div>
-      </div>
-    </div>
-
-    <senior-meal-site-card
-      v-if="section === 'olderAdultMealSites'"
-      :item="item"
-    />
-
-    <food-site-card
-      v-if="section === 'foodSites'"
-      :item="item"
-    />
-
-    <charter-school-card
-      v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
-      :item="item"
-    />
-
-    <ppr-school-card
-      v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
-      :item="item"
-    />
-
-    <psd-school-card
-      v-if="section === 'studentMealSites' && subsection === 'PSD'"
-      :item="item"
-    />
-
-    <pha-school-card
-      v-if="section === 'studentMealSites' && subsection === 'PHA'"
-      :item="item"
-    />
-
-    <other-school-card
-      v-if="section === 'studentMealSites' && subsection === 'Other'"
-      :item="item"
-    />
-
-    <playstreets-school-card
-      v-if="section === 'studentMealSites' && subsection === 'playstreets'"
-      :item="item"
-    />
-
-    <nds-school-card
-      v-if="section === 'studentMealSites' && subsection === 'NDS'"
-      :item="item"
-    />
-
-    <nds-school-card
-      v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
-      :item="item"
-    />
-
-    <nds-school-card
-      v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
-      :item="item"
-    />
-
-    <ppr-school-card
-      v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
-      :item="item"
-    />
-
-    <general-site-card
-      v-if="section === 'generalMealSites'"
-      :item="item"
-    />
   </div>
 </template>
 
@@ -233,10 +242,11 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+// @import "../../node_modules/@phila/pinboard/src/assets/scss/expandCollapse.scss";
 
 .location-content {
-  font-size: 14px;
+  // font-size: 14px;
 }
 
 </style>

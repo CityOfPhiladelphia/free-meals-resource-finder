@@ -7,22 +7,44 @@
       <b>{{ $t('sections.' + header + '.header') }}</b>
     </div>
 
-    <vertical-table-light
-      class="print-padding"
-      :slots="mainVerticalTableSlots"
-      :options="mainVerticalTableOptions"
+    <div
+      v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
+      class="columns big-cell-pad"
     >
-      <template>
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div
+        class="column small-cell-pad"
+        v-html="$t('sections.' + header + '.eligibility')"
+      />
+    </div>
+
+    <hr class="no-margin">
+
+    <div
+      class="columns big-cell-pad"
+    >
+      <div
+        v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
+        class="column is-3 small-cell-pad"
+        v-html="$t('pickupDetails')"
+      />
+      <div class="column small-cell-pad">
         <div class="table-slot">
           <!-- pickupDetails if there are no subsections -->
-          <div v-html="$t('sections.' + header + '.pickupDetails')" />
+          <div
+            v-html="$t('sections.' + header + '.pickupDetails')"
+          />
+          <!-- v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting" -->
 
           <!-- subsections -->
           <div
             v-for="(subsection, key) in section.subsections"
             :key="key"
-            class="subsection-content"
           >
+            <!-- class="subsection-content" -->
             <!-- subsections that are written out -->
             <div v-if="subsectionCountsFromProps[subsection]">
               <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
@@ -41,12 +63,12 @@
             </div>
           </div>
         </div>
-      </template>
-    </vertical-table-light>
+      </div>
+    </div>
 
     <div
       v-if="$config.i18n.data.messages['en-US'].sections[header].custom"
-      class="custom-section"
+      class="custom-section big-cell-pad"
     >
       <div v-html="$t('sections.' + this.$props.header + '.custom.info')" />
       <ul class="custom-ul">
@@ -64,9 +86,7 @@
 
 export default {
   name: 'GreetingSection',
-  components: {
-    VerticalTableLight: () => import(/* webpackChunkName: "pvc_VerticalTable3CellsLight" */'../pvc/VerticalTableLight.vue'),
-  },
+  // components: {},
   props: {
     'header': {
       type: String,
@@ -107,44 +127,6 @@ export default {
       }
       return value || {};
     },
-    mainVerticalTableOptions() {
-      return {
-        styles: {
-          th: {
-            'vertical-align': 'top',
-            // 'font-size': '14px',
-            'min-width': '45px !important',
-            'max-width': '50px !important',
-            'width': '10% !important',
-          },
-          td: {
-            // 'font-size': '14px',
-          },
-        },
-      };
-    },
-    mainVerticalTableSlots() {
-      return {
-        id: 'mainTable',
-        fields: [
-          {
-            label: 'eligibility',
-            labelType: 'i18n',
-            value: 'sections.' + this.$props.header + '.eligibility',
-            valueType: 'i18n',
-            // valueType: 'component1',
-            // value: 'component value',
-          },
-          {
-            label: 'pickupDetails',
-            labelType: 'i18n',
-            valueType: 'component',
-            value: 'component value',
-          },
-        ],
-      };
-    },
-
   },
 };
 </script>
@@ -159,34 +141,28 @@ export default {
     background-color: #0f4d90;
     font-size: 16px;
     color: white;
-    margin-top: 4px;
-    margin-bottom: 4px;
     padding: 4px;
     padding-left: 8px;
-  }
-
-  .subsection-content{
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 
   .underlined {
     text-decoration: underline;
   }
 
-  .table-light table {
-    width: 100% !important;
-    margin-left: 0px !important;
+  .no-margin {
+    margin: 0px;
   }
 
-  /* .table-light th {
-    max-width: 50px !important;
-    width: 10% !important;
-  } */
+  .big-cell-pad {
+    padding: 4px;
+    margin: 0px !important;
+  }
 
-  .table-slot {
-    margin-left: 8px;
-    margin-top: 4px;
+  .small-cell-pad {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 0px;
   }
 
 </style>

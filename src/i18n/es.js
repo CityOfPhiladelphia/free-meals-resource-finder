@@ -24,6 +24,8 @@ export default {
   FRIDAY: 'Viernes',
   SATURDAY: 'Sábado',
   SUNDAY: 'Domingo',
+  daysOfTheWeek: "Día de la semana",
+  schedule: "Programar",
   nonPerish: 'únicamente alimentos no perecederos',
   freshOnly: 'únicamente productos frescos',
   breakfastLunch: 'desayuno y almuerzo',
