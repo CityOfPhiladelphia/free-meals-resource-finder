@@ -59,7 +59,6 @@
 <script>
 
 import { parse, format } from 'date-fns';
-
 import greetingSection from './greetingSection.vue';
 
 export default {
@@ -169,43 +168,17 @@ export default {
 
 <style lang="scss" scoped>
 
-  .custom-greeting {
-    margin: 1rem;
-  }
+@import "../../node_modules/@phila/pinboard/src/assets/scss/customGreeting.scss";
 
-  .container {
-    margin-bottom: 1rem;
-  }
+.custom-section {
+  font-size: 14px;
+  margin-left: 8px;
+  margin-top: 4px;
+}
 
-  .open-list-button {
-    text-transform: uppercase;
-    background-color: #0f4d90;
-    color: #ffffff;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-  }
-
-  .exclamation-holder {
-    padding: 1rem;
-    margin-bottom: 0px;
-  }
-
-  .exclamation-details {
-    margin-left: 14px;
-    font-size: 14px;
-  }
-
-  .custom-section {
-    font-size: 14px;
-    margin-left: 8px;
-    margin-top: 4px;
-  }
-
-  .custom-ul {
-    margin-left: 4rem;
-    font-size: 14px;
-  }
+.custom-ul {
+  margin-left: 4rem;
+  font-size: 14px;
+}
 
 </style>

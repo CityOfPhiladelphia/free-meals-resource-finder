@@ -242,10 +242,11 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+// @import "../../node_modules/@phila/pinboard/src/assets/scss/expandCollapse.scss";
 
 .location-content {
-  font-size: 14px;
+  // font-size: 14px;
 }
 
 </style>

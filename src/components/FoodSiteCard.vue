@@ -46,7 +46,8 @@
 import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
 import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 import { VueGoodTable } from 'vue-good-table';
-import 'vue-good-table/dist/vue-good-table.css';
+// import 'vue-good-table/dist/vue-good-table.css';
+// import '@phila/pinboard/src/assets/scss/expandCollapse.scss';
 
 export default {
   name: 'FoodSiteCard',
@@ -85,3 +86,10 @@ export default {
 };
 
 </script>
+
+<style lang="scss">
+
+// @import "../../node_modules/@phila/pinboard/src/assets/scss/expandCollapse.scss";
+// @import '../../node_modules/vue-good-table/dist/vue-good-table.css';
+
+</style>
