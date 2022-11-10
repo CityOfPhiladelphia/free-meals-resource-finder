@@ -64,6 +64,7 @@ export default {
         },
         'Small Things Philly': {
           name: 'Small Things Philly',
+          hidePickupDetailsInGreeting: true,
         },
       },
     },
