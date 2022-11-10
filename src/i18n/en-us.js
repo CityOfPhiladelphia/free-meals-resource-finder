@@ -62,6 +62,9 @@ export default {
           name: 'Nutritional Development Services',
           hidePickupDetailsInGreeting: true,
         },
+        'Small Things Philly': {
+          name: 'Small Things Philly',
+        },
       },
     },
     studentMealSites: {
