@@ -354,7 +354,7 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ ],
+      subsections: [ 'Small Things Philly' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
@@ -402,6 +402,7 @@ pinboard({
     'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
+    'Small Things Philly': 'foodSites',
     'Office of Homeless Services': 'generalMealSites',
     'Other': 'studentMealSites',
   },
