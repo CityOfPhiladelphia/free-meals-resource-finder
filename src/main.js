@@ -354,7 +354,7 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ 'Small Things Philly' ],
+      subsections: [ ],
     },
     studentMealSites: {
       title: 'Student meal sites',
