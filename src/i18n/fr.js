@@ -191,7 +191,7 @@ export default {
       li2: '<a href="https://www.phila.gov/departments/office-of-homeless-services/">Le site Internet de l\'Office of Homeless Services (Bureau des services aux sans-abri)</a> recense d\'autres lieux offrant des repas gratuits. ',
       li3: '<a href="https://communityresourceconnects.org/">Le site Community Resource Connects </a> propose de la nourriture et d\'autres ressources.',
       h2:'Obtenir de l\'aide pour faire une demande de prestations: ',
-      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> peut vous aider à faire une demande de prestations publiques. Appelez le 1-844-848-4376.',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> peut vous aider à faire une demande de prestations publiques. Appelez le 1-833-373-5868.',
       li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger</a> peut vous aider à faire une demande de prestations SNAP (programme d\'aide alimentaire). Appelez le 215-430-0556.',
       li23:'Faites une demande préliminaire d\'aide alimentaire WIC (pour femmes, nourrissons et enfants) sur le site <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> Le programme WIC permet aux femmes, aux nourrissons et aux enfants de moins de 5 ans d\'accéder à une nourriture saine et à des informations nutritionnelles.',
     },

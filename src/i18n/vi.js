@@ -186,7 +186,7 @@ export default {
       li2: 'Trang  <a href="https://www.phila.gov/departments/office-of-homeless-services/">web của Office of Homeless Services</a> có liệt kê nhiều điểm phát bữa ăn miễn phí hơn. ',
       li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> có thực phẩm và các nguồn lực khác.',
       h2:'Nhận trợ giúp đăng ký các lợi ích: ',
-      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly </a> nhận trợ giúp đăng ký các lợi ích công cộng. Gọi đến số 1-844-848-4376. ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly </a> nhận trợ giúp đăng ký các lợi ích công cộng. Gọi đến số 1-833-373-5868. ',
       li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger  </a>trợ giúp đăng ký SNAP. Gọi đến số 215-430-0556 ',
       li23:'Đăng ký trước cho WIC ở <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC. </a> WIC giúp phụ nữ, trẻ sơ sinh và trẻ em dưới 5 tuổi nhận được thông tin về dinh dưỡng và thực phẩm lành mạnh.',
     },

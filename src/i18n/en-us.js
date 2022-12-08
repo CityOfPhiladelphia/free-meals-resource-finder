@@ -227,7 +227,7 @@ export default {
       li2: 'The <a href="https://www.phila.gov/departments/office-of-homeless-services/">Office of Homeless Services website</a> lists more free meal sites. ',
       li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> has food and other resources.',
       h2:'Get help applying for benefits: ',
-      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-844-848-4376. ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-833-373-5868. ',
       li22:'<a href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
       li23:'Pre-apply for WIC at <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
     },
