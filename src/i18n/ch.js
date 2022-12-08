@@ -185,7 +185,7 @@ export default {
       li2: '无家可归者服务办公室 <a href="https://www.phila.gov/departments/office-of-homeless-services/">(Office of Homeless Services)</a>  网站列出了更多的免费餐食供应场所。',
       li3: '社区资源联络点  <a href="https://communityresourceconnects.org/">(Community Resource Connects) </a> h可提供食物和其他资源。',
       h2:'获取协助以申请福利。  ',
-      li21:'<a href="https://www.phila.gov/programs/benephilly/">费城福利 (BenePhilly) </a>  可协助申请公共福利。 欢迎致电 1-844-848-4376。 ',
+      li21:'<a href="https://www.phila.gov/programs/benephilly/">费城福利 (BenePhilly) </a>  可协助申请公共福利。 欢迎致电 1-833-373-5868。 ',
       li22:'<a href="https://www.hungercoalition.org/">反饥饿联盟 (Coalition Against Hunger) </a> 可协助申请 SNAP。 欢迎致电 215-430-0556。  ',
       li23:'在 <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC </a>提前申请 WIC。WIC 可帮助妇女、婴儿和 5 岁以下儿童获得健康食品和营养信息。 ',
     },
