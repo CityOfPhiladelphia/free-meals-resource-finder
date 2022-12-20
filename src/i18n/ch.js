@@ -51,8 +51,7 @@ export default {
     studentMealSites: {
       header: '学生用餐场所',
       eligibility: '所有儿童和青少年均有资格。 需要身份证号码。 ',
-      hidePickupDetailsInGreeting: true,
-      pickupDetails: '日期和时间会根据场所而有所不同。',
+      pickupDetails: '',
       subsections: {
         'PSD': {
           name: '费城学区',
