@@ -51,6 +51,7 @@ export default {
     studentMealSites: {
       header: 'Sites de distribution de repas pour élèves',
       eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité. ',
+      hidePickupDetailsInGreeting: true,
       pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
       subsections: {
         'PSD': {
