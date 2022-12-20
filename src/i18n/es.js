@@ -130,8 +130,9 @@ export default {
         // <li>Envíe “FOOD” o “COMIDA” al <a href="tel:304-304">304-304</a> para recibir una lista de sitios de comida cercanos.</li> \
         // <li>Visite <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> para encontrar sitios de comidas de verano gratuitas y jóvenes.</li></ul>\
         // ',
-        info: 'Vuelva a consultar las actualizaciones sobre la distribución de comida durante los recreos.<br>\
-        Visite la <a href="https://www.philasd.org/foodservices/">página del Servicio de Comida del Distrito Escolar de Filadelfia</a> y obtenga información sobre el servicio de comidas en la escuela para los estudiantes.</li></ul>',
+        info: ' Visite la <a href="https://www.philasd.org/foodservices/">página del Servicio de Comida del Distrito Escolar de Filadelfia</a> y obtenga información sobre el servicio de comidas en la escuela para los estudiantes.<br>\
+        Además, los programas de Horas Extraescolares ofrecen refrigerios y comidas a los jóvenes. \
+        Visite el <a href="https://www.phila.gov/ost/program-locator/#/">Localizador de Programas OST</a> para encontrar un programa y obtener más información.'
       },
     },
     olderAdultMealSites: {

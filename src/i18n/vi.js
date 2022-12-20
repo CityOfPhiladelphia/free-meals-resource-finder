@@ -128,8 +128,9 @@ export default {
         // <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
         // <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
         // ',
-        info: 'Kiểm tra lại để biết thông tin cập nhật về hoạt động phân phối thực phẩm trong thời gian nghỉ ở trường.<br>\
-        Truy cập trang <a href="https://www.philasd.org/foodservices/">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh.</li></ul>',
+        info: ' Truy cập trang <a href="https://www.philasd.org/foodservices/">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh. <br>\
+        Ngoài ra, các chương trình Ngoài Giờ Học còn phục vụ đồ ăn nhẹ và các bữa ăn cho thanh thiếu niên. \
+        Truy cập <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> để tìm một chương trình và tìm hiểu thêm.'
       },
     },
     olderAdultMealSites: {
