@@ -51,6 +51,7 @@ export default {
     studentMealSites: {
       header: 'Lugar de comidas para estudiantes',
       eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
+      hidePickupDetailsInGreeting: true,
       pickupDetails: 'Los días y horarios varían según el lugar.',
       subsections: {
         'PSD': {

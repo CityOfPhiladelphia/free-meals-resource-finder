@@ -51,6 +51,7 @@ export default {
     studentMealSites: {
       header: 'Пункты выдачи питания для учащихся',
       eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется. ',
+      hidePickupDetailsInGreeting: true,
       pickupDetails: 'У каждого пункта свой график работы.',
       subsections: {
         'PSD': {
