@@ -51,7 +51,7 @@ export default {
     studentMealSites: {
       header: '学生用餐场所',
       eligibility: '所有儿童和青少年均有资格。 需要身份证号码。 ',
-      pickupDetails: '日期和时间会根据场所而有所不同。',
+      pickupDetails: '',
       subsections: {
         'PSD': {
           name: '费城学区',
@@ -126,8 +126,9 @@ export default {
         // <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
         // <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
         // ',
-        info: '请在学校放假期间，再次查看关于食物分配的最新信息。 <br>\
-        访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。</li></ul>',
+        info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
+        此外，校外教育计划还向青少年提供点心和餐食。  \
+        请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。'
       },
     },
     olderAdultMealSites: {

@@ -51,7 +51,7 @@ export default {
     studentMealSites: {
       header: 'Sites de distribution de repas pour élèves',
       eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité. ',
-      pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
+      pickupDetails: '',
       subsections: {
         'PSD': {
           name: 'Écoles du district scolaire de Philadelphie',
@@ -130,8 +130,9 @@ export default {
         },
       },
       custom: {
-        info: 'Vérifiez les actualités concernant la distribution de repas pendant les vacances scolaires.<br>\
-        Visitez <a href="https://www.philasd.org/foodservices/">la page des services de restauration du district scolaire de Philadelphie</a> pour obtenir des informations sur le service de cantine scolaire pour les élèves.</li></ul>',
+        info: ' Visitez <a href="https://www.philasd.org/foodservices/">la page des services de restauration du district scolaire de Philadelphie</a> pour obtenir des informations sur le service de cantine scolaire pour les élèves. <br>\
+        Les programmes de Temps extra-scolaire (OST) servent aussi des collations et des repas aux jeunes.  \
+        Consultez le <a href="https://www.phila.gov/ost/program-locator/#/">Localisateur de programme OST</a> pour trouver un programme et en savoir plus.',
       },
     },
     olderAdultMealSites: {
