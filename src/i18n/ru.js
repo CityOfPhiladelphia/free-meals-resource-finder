@@ -51,8 +51,7 @@ export default {
     studentMealSites: {
       header: 'Пункты выдачи питания для учащихся',
       eligibility: 'Допускаются дети и молодежь. Удостоверение личности не требуется. ',
-      hidePickupDetailsInGreeting: true,
-      pickupDetails: 'У каждого пункта свой график работы.',
+      pickupDetails: '',
       subsections: {
         'PSD': {
           name: 'Школы школьного округа Филадельфии',

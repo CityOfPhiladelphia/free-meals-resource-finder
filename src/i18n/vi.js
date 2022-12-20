@@ -51,8 +51,7 @@ export default {
     studentMealSites: {
       header: 'Các điểm phát bữa ăn học sinh',
       eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể được phục vụ. Không cần giấy tờ tùy thân. ',
-      hidePickupDetailsInGreeting: true,
-      pickupDetails: 'Ngày và giờ khác nhau giữa các điểm',
+      pickupDetails: '',
       subsections: {
         'PSD': {
           name: 'Các trường của Học khu Philadelphia',

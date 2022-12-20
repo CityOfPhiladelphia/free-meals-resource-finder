@@ -71,7 +71,6 @@ export default {
     studentMealSites: {
       header: 'Student meal sites',
       eligibility: 'All children and youth are eligible. No ID is required.',
-      hidePickupDetailsInGreeting: true,
       pickupDetails: '',
       subsections: {
         'PSD': {
