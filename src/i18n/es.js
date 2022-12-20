@@ -132,7 +132,7 @@ export default {
         // ',
         info: ' Visite la <a href="https://www.philasd.org/foodservices/">página del Servicio de Comida del Distrito Escolar de Filadelfia</a> y obtenga información sobre el servicio de comidas en la escuela para los estudiantes.<br>\
         Además, los programas de Horas Extraescolares ofrecen refrigerios y comidas a los jóvenes. \
-        Visite el <a href="https://www.phila.gov/ost/program-locator/#/">Localizador de Programas OST</a> para encontrar un programa y obtener más información.'
+        Visite el <a href="https://www.phila.gov/ost/program-locator/#/">Localizador de Programas OST</a> para encontrar un programa y obtener más información.',
       },
     },
     olderAdultMealSites: {

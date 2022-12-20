@@ -147,7 +147,7 @@ export default {
         // ',
         info: 'Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students.<br>\
         Also, Out of School Time programs serve snacks and meals to youth. \
-        Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.'
+        Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.',
       },
     },
     olderAdultMealSites: {
