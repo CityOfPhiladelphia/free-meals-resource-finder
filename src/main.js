@@ -378,7 +378,7 @@ pinboard({
     },
     fridgeSites: {
       title: 'Community Refrigerators',
-      titleSingular: 'Community Refrigerators',
+      titleSingular: 'Community Refrigerator',
       color: '#AAAAAA',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
