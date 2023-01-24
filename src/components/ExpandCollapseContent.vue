@@ -136,7 +136,7 @@
         :item="item"
       />
 
-      <food-site-card
+      <general-site-card
         v-if="section === 'fridgeSites'"
         :item="item"
       />
