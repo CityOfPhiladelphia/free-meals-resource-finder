@@ -227,8 +227,8 @@ export default {
       Availability of food will vary based on donations. \
       Visit each Community Refrigerator website for more details.',
       subsections: {
-        'compiled': {
-          name: 'Community Refrigerators',
+        'Bebashi': {
+          name: 'Bebashi',
         },
         'East Falls Community Fridge': {
           name: 'East Falls Community Fridge',
