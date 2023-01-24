@@ -109,7 +109,7 @@ pinboard({
         value = "Student meal site";
       } else if (item.attributes.category_type == "General Meal Site") {
         value = "General meal site";
-      } else if (item.attributes.category_type == "Community Refrigerator") {
+      } else if (item.attributes.category_type == "Community Refrigerators") {
         value = "Community refrigerator";
       } else if (item.attributes.category_type) {
         value = item.attributes.category_type;
