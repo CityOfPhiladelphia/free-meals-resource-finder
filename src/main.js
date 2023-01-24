@@ -379,8 +379,8 @@ pinboard({
     fridgeSites: {
       title: 'Community Refrigerators',
       titleSingular: 'Community Refrigerators',
-      color: '#AAA',
-      subsections: [[ 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'ridges and Family' ]],
+      color: '#AAAAAA',
+      subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
   },
   subsections: {
@@ -411,11 +411,12 @@ pinboard({
     'Small Things Philly': 'foodSites',
     'Office of Homeless Services': 'generalMealSites',
     'Other': 'studentMealSites',
-    'Broad Street Ministry': 'fridgeSites',
-    'Muslims Serve': 'fridgeSites', 
-    'Kensington Meal Partners': 'fridgeSites', 
-    'SEAMAAC South Philly': 'fridgeSites', 
-    'Office of Homeless Services': 'fridgeSites' 
+    'Bebashi': 'fridgeSites',
+    'East Falls Community Fridge': 'fridgeSites',
+    'Germantown Community Fridge': 'fridgeSites', 
+    'South Philadelphia Community Fridge': 'fridgeSites', 
+    'Umoja Community Fridge': 'fridgeSites', 
+    'Fridges and Family': 'fridgeSites' 
   },
   pickupDetailsExceptions: {
     condition: function(item) {
