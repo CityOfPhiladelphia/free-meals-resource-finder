@@ -167,6 +167,7 @@ pinboard({
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
+      'Community Refrigerators': '#AAAAAA',
     },
     weight: 0,
     size: 16,
