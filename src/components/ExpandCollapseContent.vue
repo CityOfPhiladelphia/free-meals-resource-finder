@@ -135,6 +135,11 @@
         v-if="section === 'generalMealSites'"
         :item="item"
       />
+
+      <general-site-card
+        v-if="section === 'fridgeSites'"
+        :item="item"
+      />
     </div>
   </div>
 </template>
