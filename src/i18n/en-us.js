@@ -221,12 +221,16 @@ export default {
       },
     },
     communityRefrigerators: {
-      header:  'Community Refrigerators',
+      header:  'Community refrigerators',
       eligibility: 'Anyone can visit a Community Refrigerator to pick up food.',
       pickupDetails: 'Community Refrigerators are open 24 hours a day, 7 days a week and anyone can take the available food at any time. Community Refrigerators are run by community-based organizations and volunteers. \
       Availability of food will vary based on donations. \
       Visit each Community Refrigerator website for more details.',
       subsections: {
+        'compiled': {
+          name: 'Community refrigerators',
+          pickupDetails: '',
+        },
         'Bebashi': {
           name: 'Bebashi',
         },
