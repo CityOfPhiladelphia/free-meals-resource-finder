@@ -167,7 +167,7 @@ pinboard({
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
-      'Community Refrigerators': '#AAAAAA',
+      'Community Refrigerators': '#9400c6',
     },
     weight: 0,
     size: 16,
@@ -377,10 +377,10 @@ pinboard({
       color: '#506D0A',
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
     },
-    fridgeSites: {
+    communityRefrigerators: {
       title: 'Community Refrigerators',
       titleSingular: 'Community Refrigerator',
-      color: '#AAAAAA',
+      color: '#9400c6',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
   },
@@ -412,12 +412,12 @@ pinboard({
     'Small Things Philly': 'foodSites',
     'Office of Homeless Services': 'generalMealSites',
     'Other': 'studentMealSites',
-    'Bebashi': 'fridgeSites',
-    'East Falls Community Fridge': 'fridgeSites',
-    'Germantown Community Fridge': 'fridgeSites', 
-    'South Philadelphia Community Fridge': 'fridgeSites', 
-    'Umoja Community Fridge': 'fridgeSites', 
-    'Fridges and Family': 'fridgeSites' 
+    'Bebashi': 'communityRefrigerators',
+    'East Falls Community Fridge': 'communityRefrigerators',
+    'Germantown Community Fridge': 'communityRefrigerators', 
+    'South Philadelphia Community Fridge': 'communityRefrigerators', 
+    'Umoja Community Fridge': 'communityRefrigerators', 
+    'Fridges and Family': 'communityRefrigerators' 
   },
   pickupDetailsExceptions: {
     condition: function(item) {

@@ -137,7 +137,7 @@
       />
 
       <fridge-site-card
-        v-if="section === 'fridgeSites'"
+        v-if="section === 'communityRefrigerators'"
         :item="item"
       />
     </div>
