@@ -167,7 +167,7 @@ pinboard({
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
-      'Community Refrigerators': '#AAAAAA',
+      'Community Refrigerators': '#9400c6',
     },
     weight: 0,
     size: 16,
@@ -380,7 +380,7 @@ pinboard({
     communityRefrigerators: {
       title: 'Community Refrigerators',
       titleSingular: 'Community Refrigerator',
-      color: '#AAAAAA',
+      color: '#9400c6',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
   },
