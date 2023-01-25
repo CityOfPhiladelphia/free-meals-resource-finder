@@ -110,7 +110,7 @@ pinboard({
       } else if (item.attributes.category_type == "General Meal Site") {
         value = "General meal site";
       } else if (item.attributes.category_type == "Community Refrigerators") {
-        value = "Community refrigerator";
+        value = "Community refrigerators";
       } else if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
