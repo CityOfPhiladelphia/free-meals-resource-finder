@@ -10,6 +10,7 @@ export default {
   'Food site': 'Sites de distribution alimentaire',
   'Student meal site': 'Site de distribution de repas pour élèves',
   'Older adult meal site': 'Site de distribution de repas pour personnes âgées',
+  'Community Refrigerators': 'Réfrigérateurs communautaires ',
   eligibility: 'Admissibilité au programme',
   pickupDetails: 'Détails de collecte',
   beforeYouGo: 'Avant de vous déplacer ',
@@ -182,6 +183,38 @@ export default {
         'compiled': {
           name: 'Sites de restauration générale',
           pickupDetails: 'Les jours et les horaires peuvent varier en fonction des sites.',
+        },
+      },
+    },
+    communityRefrigerators: {
+      header:  'Réfrigérateurs communautaires ',
+      eligibility: 'Tout le monde peut se rendre dans un Réfrigérateur communautaire pour y prendre de la nourriture. ',
+      pickupDetails: 'Les Réfrigérateurs communautaires sont ouverts 24 heures sur 24, 7 jours sur 7, et tout le monde peut prendre les aliments disponibles à tout moment. \
+      Les Réfrigérateurs communautaires sont gérés par des organisations communautaires et des bénévoles. \
+      La disponibilité des aliments varie en fonction des dons. \
+      Visitez le site Web de chaque Réfrigérateur communautaire pour plus d’informations. ',
+      subsections: {
+        'compiled': {
+          name: 'Réfrigérateurs communautaires',
+          pickupDetails: '',
+        },
+        'Bebashi': {
+          name: 'Bebashi',
+        },
+        'East Falls Community Fridge': {
+          name: 'East Falls Community Fridge',
+        },
+        'Germantown Community Fridge': {
+          name: 'Germantown Community Fridge',
+        },
+        'South Philadelphia Community Fridge': {
+          name: 'South Philadelphia Community Fridge',
+        },
+        'Umoja Community Fridge': {
+          name: 'Umoja Community Fridge',
+        },
+        'Fridges and Family': {
+          name: 'Fridges and Family',
         },
       },
     },
