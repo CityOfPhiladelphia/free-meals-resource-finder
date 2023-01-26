@@ -65,7 +65,7 @@ export default {
         'width': '15px',
         'height': '15px',
         'font-size': '10px',
-        'background-color': '#9400c6',
+        'background-color': '#444444',
       },
     },
   },
