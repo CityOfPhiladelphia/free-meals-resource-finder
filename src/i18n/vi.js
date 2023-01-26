@@ -10,6 +10,7 @@ export default {
   'Food site': 'Điểm phát thực phẩm',
   'Student meal site': 'Điểm phát bữa ăn học sinh',
   'Older adult meal site': 'Điểm phát bữa ăn cho người già',
+  'Community Refrigerators': 'Tủ Lạnh Cộng Đồng',
   eligibility: 'Điều kiện hội đủ',
   pickupDetails: 'Chi tiết',
   beforeYouGo: 'Trước khi đi',
@@ -176,6 +177,38 @@ export default {
         'compiled': {
           name: 'Các Các địa điểm cung cấp suất ăn theo bữa',
           pickupDetails: 'Ngày và giờ khác nhau giữa các điểm. ',
+        },
+      },
+    },
+    communityRefrigerators: {
+      header:  'Tủ Lạnh Cộng Đồng',
+      eligibility: 'Bất cứ ai cũng có thể đến một Tủ Lạnh Cộng Đồng để lấy thực phẩm. ',
+      pickupDetails: 'Tủ Lạnh Cộng Đồng mở 24 giờ một ngày, 7 ngày một tuần và bất cứ ai cũng có thể lấy thực phẩm có sẵn bất kỳ lúc nào. \
+      Tủ Lạnh Cộng Đồng được điều hành bởi các tổ chức dựa trên cộng đồng và các tình nguyện viên. \
+      Tính sẵn có của thực phẩm sẽ thay đổi dựa vào đóng góp.  \
+      Hãy truy cập từng trang web Tủ Lạnh Cộng Đồng để biết thêm chi tiết. ',
+      subsections: {
+        'compiled': {
+          name: 'Tủ Lạnh Cộng Đồng',
+          pickupDetails: '',
+        },
+        'Bebashi': {
+          name: 'Bebashi',
+        },
+        'East Falls Community Fridge': {
+          name: 'East Falls Community Fridge',
+        },
+        'Germantown Community Fridge': {
+          name: 'Germantown Community Fridge',
+        },
+        'South Philadelphia Community Fridge': {
+          name: 'South Philadelphia Community Fridge',
+        },
+        'Umoja Community Fridge': {
+          name: 'Umoja Community Fridge',
+        },
+        'Fridges and Family': {
+          name: 'Fridges and Family',
         },
       },
     },

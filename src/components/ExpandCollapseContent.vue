@@ -135,6 +135,11 @@
         v-if="section === 'generalMealSites'"
         :item="item"
       />
+
+      <fridge-site-card
+        v-if="section === 'communityRefrigerators'"
+        :item="item"
+      />
     </div>
   </div>
 </template>
@@ -155,6 +160,7 @@ import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
+import FridgeSiteCard from './FridgeSiteCard.vue';
 
 export default {
   name: 'ExpandCollapseContent',
@@ -170,6 +176,7 @@ export default {
     PlaystreetsSchoolCard,
     NdsSchoolCard,
     GeneralSiteCard,
+    FridgeSiteCard,
   },
   props: {
     item: {

@@ -12,6 +12,7 @@ export default {
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
+  'Community Refrigerators': 'Community refrigerators',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
@@ -173,7 +174,6 @@ export default {
             Pickup dates and times vary by site.\
             For more information and to reserve meals, contact a specific site.\
             An older adult's family may pick up meals, with prior arrangement.\
-            Meals may also be home delivered if needed.\
             To get help in languages other than English, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
           ",
@@ -220,7 +220,38 @@ export default {
         },
       },
     },
-
+    communityRefrigerators: {
+      header:  'Community refrigerators',
+      eligibility: 'Anyone can visit a Community Refrigerator to pick up food.',
+      pickupDetails: 'Community Refrigerators are open 24 hours a day, 7 days a week and anyone can take the available food at any time. \
+      Community Refrigerators are run by community-based organizations and volunteers. \
+      Availability of food will vary based on donations. \
+      Visit each Community Refrigerator website for more details.',
+      subsections: {
+        'compiled': {
+          name: 'Community refrigerators',
+          pickupDetails: '',
+        },
+        'Bebashi': {
+          name: 'Bebashi',
+        },
+        'East Falls Community Fridge': {
+          name: 'East Falls Community Fridge',
+        },
+        'Germantown Community Fridge': {
+          name: 'Germantown Community Fridge',
+        },
+        'South Philadelphia Community Fridge': {
+          name: 'South Philadelphia Community Fridge',
+        },
+        'Umoja Community Fridge': {
+          name: 'Umoja Community Fridge',
+        },
+        'Fridges and Family': {
+          name: 'Fridges and Family',
+        },
+      },
+    },
     foodPantries: {
       header: 'Find more free food resources and other support:',
       intro: '',
