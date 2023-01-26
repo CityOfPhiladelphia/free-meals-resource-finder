@@ -10,6 +10,7 @@ export default {
   'Food site': 'Пункт выдачи питания',
   'Student meal site': 'Пункт выдачи питания для учащихся',
   'Older adult meal site': 'Пункт выдачи питания для пожилых людей',
+  'Community Refrigerators': 'Общественные холодильники',
   eligibility: 'Критерии получения помощи',
   pickupDetails: 'Информация о получении и время получения',
   beforeYouGo: 'Прежде чем идти',
@@ -179,6 +180,38 @@ export default {
         'compiled': {
           name: 'Пункты выдачи еды',
           pickupDetails: 'У каждого пункта свой график работы',
+        },
+      },
+    },
+    communityRefrigerators: {
+      header:  'Общественные холодильники',
+      eligibility: 'Общественные холодильники — это места, где каждый может взять немного еды.',
+      pickupDetails: 'Общественные холодильники доступны круглосуточно, семь дней в неделю. Взять продукты из холодильника можно в любой момент. \
+      Общественные холодильники обслуживаются общественными организациями и волонтерами. \
+      Количество и ассортимент продуктов могут меняться, так как еда приобретается за счет пожертвований. \
+      Для дополнительной информации посетите веб-сайт, посвященный интересующему вас холодильнику.',
+      subsections: {
+        'compiled': {
+          name: 'Общественные холодильники',
+          pickupDetails: '',
+        },
+        'Bebashi': {
+          name: 'Bebashi',
+        },
+        'East Falls Community Fridge': {
+          name: 'East Falls Community Fridge',
+        },
+        'Germantown Community Fridge': {
+          name: 'Germantown Community Fridge',
+        },
+        'South Philadelphia Community Fridge': {
+          name: 'South Philadelphia Community Fridge',
+        },
+        'Umoja Community Fridge': {
+          name: 'Umoja Community Fridge',
+        },
+        'Fridges and Family': {
+          name: 'Fridges and Family',
         },
       },
     },

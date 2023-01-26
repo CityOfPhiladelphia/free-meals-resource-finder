@@ -10,6 +10,7 @@ export default {
   'Food site': '食品地点',
   'Student meal site': '学生用餐场所',
   'Older adult meal site': '年长者用餐场所',
+  'Community Refrigerators': '社区冰箱',
   eligibility: '合格标准',
   pickupDetails: '取餐详情及时间',
   beforeYouGo: '您出发前',
@@ -128,7 +129,7 @@ export default {
         // ',
         info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
         此外，校外教育计划还向青少年提供点心和餐食。  \
-        请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。'
+        请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。',
       },
     },
     olderAdultMealSites: {
@@ -176,6 +177,38 @@ export default {
         'compiled': {
           name: '常规餐食供应场所',
           pickupDetails: '日期和时间会根据场所而有所不同。',
+        },
+      },
+    },
+    communityRefrigerators: {
+      header:  '社区冰箱',
+      eligibility: '任何人都可以访问社区冰箱，并从中自取食物。 ',
+      pickupDetails: '社区冰箱每周7天、每天24小时开放，任何人都可以随时从中自取食物。 \
+      社区冰箱由社区组织和志愿者负责运营。 \
+      其中的食品会因捐赠情况而有所不同。 \
+      欲了解更多信息，请访问每个社区冰箱网站。 ',
+      subsections: {
+        'compiled': {
+          name: '社区冰箱',
+          pickupDetails: '',
+        },
+        'Bebashi': {
+          name: 'Bebashi',
+        },
+        'East Falls Community Fridge': {
+          name: 'East Falls Community Fridge',
+        },
+        'Germantown Community Fridge': {
+          name: 'Germantown Community Fridge',
+        },
+        'South Philadelphia Community Fridge': {
+          name: 'South Philadelphia Community Fridge',
+        },
+        'Umoja Community Fridge': {
+          name: 'Umoja Community Fridge',
+        },
+        'Fridges and Family': {
+          name: 'Fridges and Family',
         },
       },
     },
