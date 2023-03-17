@@ -57,6 +57,8 @@ pinboard({
     type: 'covidFreeMealSites',
     // type: 'compiled',
   },
+  allowPrint: true,
+  showBuffers: true,
   gtag: {
     category: 'rf-food',
   },
@@ -93,7 +95,7 @@ pinboard({
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      // console.log('value is running, item:', item);
+      console.log('value is running, item:', item);
       let value;
       // if (item.category_type) {
       //   value = item.category_type;
@@ -110,7 +112,7 @@ pinboard({
       } else if (item.attributes.category_type == "General Meal Site") {
         value = "General meal site";
       } else if (item.attributes.category_type == "Community Refrigerators") {
-        value = "Community refrigerators";
+        value = "Community refrigerator";
       } else if (item.attributes.category_type) {
         value = item.attributes.category_type;
       } else if (item.attributes.CATEGORY_TYPE) {
@@ -378,8 +380,8 @@ pinboard({
       subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
     },
     communityRefrigerators: {
-      title: 'Community Refrigerators',
-      titleSingular: 'Community Refrigerator',
+      title: 'Community refrigerators',
+      titleSingular: 'Community refrigerator',
       color: '#444444',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },

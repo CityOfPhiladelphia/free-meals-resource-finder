@@ -10,7 +10,7 @@ export default {
   'Food site': 'Điểm phát thực phẩm',
   'Student meal site': 'Điểm phát bữa ăn học sinh',
   'Older adult meal site': 'Điểm phát bữa ăn cho người già',
-  'Community Refrigerators': 'Tủ Lạnh Cộng Đồng',
+  'Community refrigerator': 'Tủ Lạnh Cộng Đồng',
   eligibility: 'Điều kiện hội đủ',
   pickupDetails: 'Chi tiết',
   beforeYouGo: 'Trước khi đi',

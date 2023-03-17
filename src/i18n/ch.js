@@ -10,7 +10,7 @@ export default {
   'Food site': '食品地点',
   'Student meal site': '学生用餐场所',
   'Older adult meal site': '年长者用餐场所',
-  'Community Refrigerators': '社区冰箱',
+  'Community refrigerator': '社区冰箱',
   eligibility: '合格标准',
   pickupDetails: '取餐详情及时间',
   beforeYouGo: '您出发前',

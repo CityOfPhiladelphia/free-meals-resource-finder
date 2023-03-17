@@ -10,7 +10,7 @@ export default {
   'Food site': 'Lugar de alimentos',
   'Student meal site': 'Lugar de comidas para estudiantes',
   'Older adult meal site': 'Lugar de comidas para adultos mayores',
-  'Community Refrigerators': 'Refrigeradores comunitarios',
+  'Community refrigerator': 'Refrigeradores comunitarios',
   eligibility: 'Elegibilidad',
   pickupDetails: 'Detalles y horarios de retiro',
   beforeYouGo: 'Antes de ir',

@@ -10,7 +10,7 @@ export default {
   'Food site': 'Пункт выдачи питания',
   'Student meal site': 'Пункт выдачи питания для учащихся',
   'Older adult meal site': 'Пункт выдачи питания для пожилых людей',
-  'Community Refrigerators': 'Общественные холодильники',
+  'Community refrigerator': 'Общественные холодильники',
   eligibility: 'Критерии получения помощи',
   pickupDetails: 'Информация о получении и время получения',
   beforeYouGo: 'Прежде чем идти',
