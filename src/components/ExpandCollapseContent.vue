@@ -1,7 +1,11 @@
 <template>
   <div>
     <div :class="isMobile ? 'main-content-mobile' : 'main-content'">
-      <div class="columns">
+      <print-share-section
+        :item="item"
+      />
+      
+      <div class="columns top-section">
         <div class="column is-6">
           <div
             v-if="address"
@@ -162,6 +166,8 @@ import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 
+import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection';
+
 export default {
   name: 'ExpandCollapseContent',
   components: {
@@ -177,6 +183,7 @@ export default {
     NdsSchoolCard,
     GeneralSiteCard,
     FridgeSiteCard,
+    PrintShareSection,
   },
   props: {
     item: {

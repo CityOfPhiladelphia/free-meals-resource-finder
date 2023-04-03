@@ -194,13 +194,14 @@ pinboard({
   router: {
     enabled: false,
   },
-  projection: function(item) {
-    if (item._featureId.includes('covidFreeMealSites')) {
-      return '3857';
-    } else if (item._featureId.includes('parksSites')) {
-      return '2272';
-    }
-  },
+  // projection: function(item) {
+  //   if (item._featureId.includes('covidFreeMealSites')) {
+  //     return '3857';
+  //   } else if (item._featureId.includes('parksSites')) {
+  //     return '2272';
+  //   }
+  // },
+  projection: '3857',
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
