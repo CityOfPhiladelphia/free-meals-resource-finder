@@ -52,6 +52,7 @@ console.log('main.js i18n:', i18n);
 
 pinboard({
   i18n: i18n.i18n,
+  publicPath: '/free-meals/dev/food',
   app: {
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
