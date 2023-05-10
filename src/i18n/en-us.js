@@ -12,7 +12,7 @@ export default {
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
-  'Community Refrigerators': 'Community refrigerators',
+  'Community refrigerators': 'Community refrigerators',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
