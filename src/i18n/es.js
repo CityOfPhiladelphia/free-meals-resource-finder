@@ -61,18 +61,20 @@ export default {
       subsections: {
         'PSD': {
           name: 'escuelas del Distrito Escolar de Filadelfia',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
         },
         'PHA': {
           name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
-          // pickupDetails: 'Lunes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>  \
-          // Martes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          // Miércoles 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          // Jueves 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          // Viernes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio.',
+          hidePickupDetailsInGreeting: true,
+          pickupDetails: 'Lunes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>  \
+          Martes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          Miércoles 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          Jueves 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          Viernes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
         },
@@ -80,7 +82,7 @@ export default {
           name: 'escuelas charter',
           pickupDetails: '',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
-
+          hidePickupDetailsInGreeting: true,
         },
         'PPR_StudentMeals': {
           name: 'Centros de Recreación',
@@ -93,12 +95,14 @@ export default {
         },
         'playstreets': {
           name: 'Playstreets',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Playstreets está abierto de lunes a viernes entre las 10 a.m. y las 4 p.m. Las calles están cerradas al tráfico de automóviles. Las comidas varían según el sitio. Para obtener más información, visite el Playstreet.<br>\
           Playstreets sirve almuerzos y refrigerios.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
         },
         'NDS': {
           name: 'Servicios de Desarrollo Nutricional',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
         },
@@ -110,21 +114,25 @@ export default {
         },
         'Recreation Center': {
           name: 'Centros recreativos',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'De lunes a viernes entre las 9A.M. a 3 P.M.  Las comidas varían según el sitio. Las comidas se deben consumir en el lugar.Para obtener más información, llame o visite el Centro de Recreación.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
         },
         'Caring for Friends': {
           name: 'Caring for Friends',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Las comidas se deben consumir en el lugar. Comúniquese con los sitios para obtener más detalles. ',
           eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Sitios de Comidas de Verano Philabundance ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Comúniquese con los sitios para obtener más detalles.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
         },
         'Other Summer Meal Sites':{
           name: 'Other Summer Meal Sites',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Las comidas varían según el sitio. Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio de comidas de verano. ',
           eligibility: 'Todos los niños y jóvenes son elegibles. No es necesaria la identificación. ',
         },
