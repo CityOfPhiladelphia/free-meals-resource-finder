@@ -121,15 +121,15 @@ export default {
         },
       },
       custom: {
-        // info: '\
-        // 若要查找面向儿童和青少年的夏日免费餐食供应点：  \
-        // <br><ul><li>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。</li>   \
-        // <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
-        // <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
-        // ',
-        info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
-        此外，校外教育计划还向青少年提供点心和餐食。  \
-        请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。',
+        info: '\
+        若要查找面向儿童和青少年的夏日免费餐食供应点：  \
+        <br><ul><li>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。</li>   \
+        <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
+        <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
+        ',
+        // info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
+        // 此外，校外教育计划还向青少年提供点心和餐食。  \
+        // 请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。',
       },
     },
     olderAdultMealSites: {
