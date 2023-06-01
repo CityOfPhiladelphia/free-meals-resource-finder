@@ -1,11 +1,36 @@
 <template>
   <div>
+    <!-- <div :class="isMobile ? 'main-content-mobile' : 'main-content'"> -->
+      
+      
+    <!-- <div class="columns top-section">
+        <div class="column is-6">
+          <div
+            v-if="address"
+            class="columns is-mobile"
+          >
+            <div class="column is-1">
+              <font-awesome-icon icon="map-marker-alt" />
+            </div>
+            <div class="column">
+              {{ address }}<br>
+              Philadelphia, PA {{ zipcode }}<br>
+            </div>
+          </div>
+        </div> -->
+    <!-- <div> -->
     <div :class="isMobile ? 'main-content-mobile' : 'main-content'">
       <print-share-section
         :item="item"
       />
-      
-      <div class="columns top-section">
+
+      <callout
+        v-if="closureMessage != null"
+        :message="closureMessage"
+        type="warning"
+      />
+
+      <div class="columns">
         <div class="column is-6">
           <div
             v-if="address"
@@ -166,7 +191,11 @@ import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 
+
 import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection';
+import {
+  Callout,
+} from '@phila/phila-ui';
 
 export default {
   name: 'ExpandCollapseContent',
@@ -184,6 +213,7 @@ export default {
     GeneralSiteCard,
     FridgeSiteCard,
     PrintShareSection,
+    Callout,
   },
   props: {
     item: {
@@ -198,8 +228,72 @@ export default {
       let currentYear = format(new Date(), 'yyyy');
       let currentMonth = format(new Date(), 'MM');
       let currentDay = format(new Date(), 'dd');
-      let dateStart = new Date(currentYear, currentMonth-1, currentDay);
+      // let dateStart = new Date(currentYear, currentMonth-1, currentDay);
+      let dateStart = new Date(2023, 5, 8);
+      console.log('currentYear:', currentYear, 'currentMonth:', currentMonth, 'currentDay:', currentDay, 'dateStart:', dateStart, 'dateStartUnix:', parseInt(format(dateStart, 'T')));
       return parseInt(format(dateStart, 'T'));
+    },
+    // holidayWeek() {
+    //   if (this.item.attributes.close_holiday_start != null)
+    // },
+    futureHolidayClosure() {
+      if (this.item.attributes.close_holiday_start) {
+        if (this.currentUnixDate < this.item.attributes.close_holiday_start) {
+          return true;
+        } 
+        return false;
+        
+      } 
+      return false;
+      
+    },
+    currentHolidayClosure() {
+      if (this.item.attributes.close_holiday_start != null && this.item.attributes.close_holiday_end != null) {
+        if (this.currentUnixDate >= this.item.attributes.close_holiday_start && this.currentUnixDate <= this.item.attributes.close_holiday_end) {
+          return true;
+        } 
+        return false;
+        
+      } 
+      return false;
+      
+    },
+    currentWeatherClosure() {
+      if (this.item.attributes.close_weather_start != null && this.item.attributes.close_weather_end != null) {
+        if (this.currentUnixDate >= this.item.attributes.close_weather_start && this.currentUnixDate <= this.item.attributes.close_weather_end) {
+          return true;
+        } 
+        return false;
+        
+      } 
+      return false;
+      
+    },
+    currentTemporaryClosure() {
+      if (this.item.attributes.close_temporary_start != null && this.item.attributes.close_temporary_end != null) {
+        if (this.currentUnixDate >= this.item.attributes.close_temporary_start && this.currentUnixDate <= this.item.attributes.close_temporary_end) {
+          return true;
+        } 
+        return false;
+        
+      } 
+      return false;
+      
+    },
+    closureMessage() {
+      let message;
+      if (this.currentHolidayClosure) {
+        message = this.$t('holidayClosure');
+      } else if (this.futureHolidayClosure) {
+        message = this.$t('futureHolidayClosure') + transforms.toLocaleDateString.transform(this.item.attributes.close_holiday_start);
+      } else if (this.currentWeatherClosure) {
+        message = this.$t('weatherClosure');
+      } else if (this.currentTemporaryClosure) {
+        message = this.$t('temporaryClosure');
+      } else {
+        message = null;
+      }
+      return message;
     },
     transforms() {
       return transforms;
