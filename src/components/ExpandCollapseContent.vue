@@ -237,26 +237,34 @@ export default {
     //   if (this.item.attributes.close_holiday_start != null)
     // },
     futureHolidayClosure() {
-      if (this.item.attributes.close_holiday_start) {
-        if (this.currentUnixDate < this.item.attributes.close_holiday_start) {
-          return true;
-        } 
-        return false;
-        
+      let holiday = this.$store.state.holiday;
+      if (holiday.coming_soon) {
+        return true;
       } 
       return false;
       
+      // if (this.item.attributes.close_holiday_start) {
+      //   if (this.currentUnixDate < this.item.attributes.close_holiday_start) {
+      //     return true;
+      //   } 
+      //   return false;
+      // } 
+      // return false;
     },
     currentHolidayClosure() {
-      if (this.item.attributes.close_holiday_start != null && this.item.attributes.close_holiday_end != null) {
-        if (this.currentUnixDate >= this.item.attributes.close_holiday_start && this.currentUnixDate <= this.item.attributes.close_holiday_end) {
-          return true;
-        } 
-        return false;
-        
+      let holiday = this.$store.state.holiday;
+      if (holiday.current) {
+        return true;
       } 
       return false;
       
+      // if (this.item.attributes.close_holiday_start != null && this.item.attributes.close_holiday_end != null) {
+      //   if (this.currentUnixDate >= this.item.attributes.close_holiday_start && this.currentUnixDate <= this.item.attributes.close_holiday_end) {
+      //     return true;
+      //   } 
+      //   return false;
+      // } 
+      // return false;
     },
     currentWeatherClosure() {
       if (this.item.attributes.close_weather_start != null && this.item.attributes.close_weather_end != null) {
@@ -264,10 +272,8 @@ export default {
           return true;
         } 
         return false;
-        
       } 
       return false;
-      
     },
     currentTemporaryClosure() {
       if (this.item.attributes.close_temporary_start != null && this.item.attributes.close_temporary_end != null) {
@@ -275,17 +281,17 @@ export default {
           return true;
         } 
         return false;
-        
       } 
       return false;
-      
     },
     closureMessage() {
+      let holiday = this.$store.state.holiday;
       let message;
       if (this.currentHolidayClosure) {
         message = this.$t('holidayClosure');
       } else if (this.futureHolidayClosure) {
-        message = this.$t('futureHolidayClosure') + transforms.toLocaleDateString.transform(this.item.attributes.close_holiday_start);
+        message = this.$t('futureHolidayClosure') + holiday.holiday_label + ' ' + holiday.start_date;
+        // message = this.$t('futureHolidayClosure') + transforms.toLocaleDateString.transform(this.item.attributes.close_holiday_start);
       } else if (this.currentWeatherClosure) {
         message = this.$t('weatherClosure');
       } else if (this.currentTemporaryClosure) {

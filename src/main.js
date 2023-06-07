@@ -96,7 +96,7 @@ pinboard({
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      console.log('value is running, item:', item);
+      // console.log('value is running, item:', item);
       let value;
       // if (item.category_type) {
       //   value = item.category_type;
