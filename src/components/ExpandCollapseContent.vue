@@ -288,7 +288,7 @@ export default {
       let holiday = this.$store.state.holiday;
       let message;
       if (this.currentHolidayClosure) {
-        message = this.$t('holidayClosure');
+        message = this.$t('holidayClosure') + holiday.holiday_label + ' ' + holiday.start_date;
       } else if (this.futureHolidayClosure) {
         message = this.$t('futureHolidayClosure') + holiday.holiday_label + ' ' + holiday.start_date;
         // message = this.$t('futureHolidayClosure') + transforms.toLocaleDateString.transform(this.item.attributes.close_holiday_start);
