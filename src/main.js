@@ -132,11 +132,10 @@ pinboard({
   alerts: {
     modal: {
       enabled: false,
-      header: 'Fourth of July closures',
-      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
-      // header: 'Student meal sites',
-      // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
-
+      // header: 'Fourth of July closures',
+      // body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
+      header: 'Student meal sites',
+      body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
     },
     header: {
       type: 'alertBanner',
@@ -361,8 +360,9 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student meal site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      // subsections: [],
+      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      hideCounts: true,
     },
     olderAdultMealSites: {
       title: 'Older adult meal sites',
@@ -387,7 +387,7 @@ pinboard({
   subsections: {
     '': 'foodSites',
     'Broad Street Ministry': 'generalMealSites',
-    'CHARTER': 'studentMealSites',
+    // 'CHARTER': 'studentMealSites',
     'Kensington Meal Partners': 'generalMealSites',
     'Muslims Serve': 'generalMealSites',
     'NDS': 'studentMealSites',
@@ -400,7 +400,7 @@ pinboard({
     'Other Summer Meal Sites': 'studentMealSites',
     'Student Meal Site': 'studentMealSites',
     'PPR': 'foodSites',
-    'PSD': 'studentMealSites',
+    // 'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultMealSites',
     'SHARE FOOD PROGRAM': 'foodSites',
     'Nutritional Development Services': 'foodSites',

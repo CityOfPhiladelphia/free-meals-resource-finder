@@ -18,6 +18,7 @@ export default {
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
+  details: 'Details',
   beforeYouGo: 'Before you go',
   change: 'Schedule change',
   closure: 'Temporary closure',
@@ -77,12 +78,12 @@ export default {
       hidePickupDetailsInGreeting: false,
       pickupDetails: '',
       subsections: {
-        'PSD': {
-          name: 'Philadelphia School District schools',
-          hidePickupDetailsInGreeting: true,
-          pickupDetails: '',
-          eligibility: 'All children and youth are eligible. No ID is required.',
-        },
+        // 'PSD': {
+        //   name: 'Philadelphia School District schools',
+        //   hidePickupDetailsInGreeting: true,
+        //   pickupDetails: '',
+        //   eligibility: 'All children and youth are eligible. No ID is required.',
+        // },
         'PHA': {
           name: 'Philadelphia Housing Authority (PHA) community centers',
           hidePickupDetailsInGreeting: true,
@@ -100,12 +101,12 @@ export default {
           pickupDetails: '',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
-        'CHARTER': {
-          name: 'Charter schools',
-          hidePickupDetailsInGreeting: true,
-          pickupDetails: '',
-          eligibility: 'All children and youth are eligible. No ID is required.',
-        },
+        // 'CHARTER': {
+        //   name: 'Charter schools',
+        //   hidePickupDetailsInGreeting: true,
+        //   pickupDetails: '',
+        //   eligibility: 'All children and youth are eligible. No ID is required.',
+        // },
         'playstreets': {
           name: 'Playstreets',
           hidePickupDetailsInGreeting: true,
