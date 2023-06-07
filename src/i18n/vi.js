@@ -56,11 +56,13 @@ export default {
       subsections: {
         'PSD': {
           name: 'Các trường của Học khu Philadelphia',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'PHA': {
           name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Thứ Hai, 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
           Thứ Ba 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
           Thứ Tư 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
@@ -73,7 +75,7 @@ export default {
           name: 'Các trường công đặc quyền',
           pickupDetails: '',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
-
+          hidePickupDetailsInGreeting: true,
         },
         'PPR_StudentMeals': {
           name: 'Các trung tâm của Philadelphia Parks & Recreation',
@@ -86,51 +88,58 @@ export default {
         },
         'playstreets': {
           name: 'Playstreets (Chơi trên đường phố)',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Playstreets mở cửa từ Thứ Hai đến Thứ Sáu, từ 10 giờ sáng đến 4 giờ chiều. Cấm ô tô lưu thông ở đây. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, xin tới Playstreets<br>\
           Playstreets phục vụ bữa trưa và bữa ăn nhẹ.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'NDS': {
           name: 'Dịch vụ Phát triển Dinh dưỡng',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Các địa điểm có thể cung cấp bữa ăn hàng ngày hoặc bữa sáng và hộp ăn trưa 7 ngày. Liên hệ với Dịch vụ Phát triển Dinh dưỡng để biết thêm thông tin chi tiết.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'Other': {
           name: 'Các Địa điểm Bữa ăn Mùa hè Khác',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Giờ cung cấp bữa ăn thay đổi tùy theo địa điểm. Để biết thêm thông tin, hãy ghé thăm các địa điểm bữa ăn mùa hè.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'Recreation Center': {
           name: 'Trung tâm Giải trí',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Thứ Hai đến thứ Sáu, từ 9giờ sáng đến 3 giờ chiều. Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ.Để biết thêm thông tin, vui lòng gọi hoặc truy cập Trung tâm Giải trí. ',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'Caring for Friends': {
           name: 'Caring for Friends',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết. ',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Địa điểm phục vụ bữa ăn mùa hè Philabundance  ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Liên hệ địa điểm để biết thêm chi tiết.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
         },
         'Other Summer Meal Sites':{
           name: 'Địa điểm phục vụ bữa ăn mùa hè khác',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ. Để biết thêm thông tin, xin tới địa điểm phục vụ bữa ăn mùa hè. ',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều có thể tham gia. Không cần giấy tờ tùy thân.',
         },
       },
       custom: {
-        // info: '\
-        // Để tìm thêm địa điểm phục vụ bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên: \
-        // <br><ul><li>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
-        // <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
-        // <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
-        // ',
-        info: ' Truy cập trang <a href="https://www.philasd.org/foodservices/">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh. <br>\
-        Ngoài ra, các chương trình Ngoài Giờ Học còn phục vụ đồ ăn nhẹ và các bữa ăn cho thanh thiếu niên. \
-        Truy cập <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> để tìm một chương trình và tìm hiểu thêm.',
+        info: '\
+        Để tìm thêm địa điểm phục vụ bữa ăn mùa hè miễn phí cho trẻ em và thanh thiếu niên: \
+        <br><ul><li>Gọi cho Đường dây nóng Bữa ăn Mùa hè theo số <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+        <li>Soạn tin “FOOD” hoặc “COMIDA” gửi <a href="tel:304-304">304-304</a> để nhận danh sách các địa điểm phục vụ bữa ăn gần đó. </li> \
+        <li>Truy cập <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> để tìm các bữa ăn mùa hè miễn phí cho thanh thiếu niên. </li></ul> \
+        ',
+        // info: ' Truy cập trang <a href="https://www.philasd.org/foodservices/">Dịch Vụ Thực Phẩm của Học Khu Philadelphia</a> để biết thông tin về dịch vụ bữa ăn tại trường cho học sinh. <br>\
+        // Ngoài ra, các chương trình Ngoài Giờ Học còn phục vụ đồ ăn nhẹ và các bữa ăn cho thanh thiếu niên. \
+        // Truy cập <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> để tìm một chương trình và tìm hiểu thêm.',
       },
     },
     olderAdultMealSites: {

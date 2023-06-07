@@ -56,6 +56,7 @@ export default {
       subsections: {
         'PSD': {
           name: 'Écoles du district scolaire de Philadelphie',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'La collecte peut se faire dans toute école du district sur la carte pour les élèves de maternelle à la 12e année du district scolaire de Philadelphie.\
           Il en va de même pour les élèves inscrits dans les écoles privées sous contrat suivantes :\
             <ul><li>KIPP West Philadelphia Preparatory Charter School</li> \
@@ -69,6 +70,7 @@ export default {
         },
         'PHA': {
           name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Lundi 9h00 – 10h00 et 12h00 – 14h00<br>\
           Mardi 9h00 – 10h00 et 12h00 – 14h00<br>\
           Mercredi 9h00 – 10h00 et 12h00 – 14h00<br>\
@@ -82,7 +84,7 @@ export default {
           name: 'Écoles à charte',
           pickupDetails: '',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
-
+          hidePickupDetailsInGreeting: true,
         },
         'PPR_StudentMeals': {
           name: 'Centres du service des parcs et loisirs de Philadelphie',
@@ -95,45 +97,57 @@ export default {
         },
         'playstreets': {
           name: 'Playstreets',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Les Playstreets sont ouverts du lundi au vendredi de 10h00 à 16h00. Les rues sont fermées à la circulation automobile. Les heures des repas varient selon le site. Pour plus d’informations, visitez le Playstreet.<br>\
           Les Playstreets servent le déjeuner et un goûter.',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
         },
         'NDS': {
           name: 'Services de développement nutritionnel',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Los lugares podrán ofrecer comidas diarias o cajas de desayuno y almuerzo para 7 días. Contacte a los Servicios de Desarrollo Nutricional para obtener más información.',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
         },
         'Other': {
           name: 'Autres pôles repas d\'été',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Les heures des repas varient selon les sites. Pour obtenir plus d\'informations, rendez-vous au pôle repas d\'été.',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
         },
         'Recreation Center': {
           name: 'Centres aérés',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Du lundi au vendredi de 9h00 à 15h00.Les heures des repas varient selon le site. Les repas doivent être consommés sur place.Pour plus d\'informations, appelez le centre de loisirs ou rendez-vous sur place. ',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
         },
         'Caring for Friends': {
           name: 'Caring for Friends',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Les repas doivent être consommés sur place. Contactez le site pour plus d’informations. ',
           eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Sites de Philabundance qui servent des repas durant l’été  ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Contactez le site pour plus d’informations.',
           eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
         },
         'Other Summer Meal Sites':{
           name: 'Autres sites servant des repas durant l\'été',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Les heures des repas varient selon le site. Les repas doivent être consommés sur place. Pour plus d’informations, rendez-vous sur le site qui sert des repas durant l’été. ',
           eligibility: 'Les centres sont ouverts à tous les enfants et jeunes. Il n\'est pas nécessaire de présenter une pièce d\'identité.',
         },
       },
       custom: {
-        info: ' Visitez <a href="https://www.philasd.org/foodservices/">la page des services de restauration du district scolaire de Philadelphie</a> pour obtenir des informations sur le service de cantine scolaire pour les élèves. <br>\
-        Les programmes de Temps extra-scolaire (OST) servent aussi des collations et des repas aux jeunes.  \
-        Consultez le <a href="https://www.phila.gov/ost/program-locator/#/">Localisateur de programme OST</a> pour trouver un programme et en savoir plus.',
+        info: '\
+        Pour trouver d\'autres sites qui servent des repas gratuits aux enfants et aux jeunes durant l’été:  \
+        <br><ul><li>Appelez la Ligne d’assistance concernant les repas servis durant l’été au <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+        <li>Écrivez « FOOD » ou « COMIDA » au <a href="tel:304-304">304-304</a> pour recevoir la liste des sites qui servent des repas à proximité.  </li> \
+        <li>Visitez <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> pour trouver des repas servis gratuitement aux jeunes durant l’été. </li></ul>',
+        // info: ' Visitez <a href="https://www.philasd.org/foodservices/">la page des services de restauration du district scolaire de Philadelphie</a> pour obtenir des informations sur le service de cantine scolaire pour les élèves. <br>\
+        // Les programmes de Temps extra-scolaire (OST) servent aussi des collations et des repas aux jeunes.  \
+        // Consultez le <a href="https://www.phila.gov/ost/program-locator/#/">Localisateur de programme OST</a> pour trouver un programme et en savoir plus.',
       },
     },
     olderAdultMealSites: {
