@@ -131,32 +131,38 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: false,
-      header: 'Fourth of July closures',
-      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
-      // header: 'Student meal sites',
-      // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
-
+      enabled: true,
+      // header: 'Fourth of July closures',
+      // body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
+      header: 'Student meal sites',
+      body: '<ul class="alert-modal-list">\
+          <li>Find free summer meal sites here starting on 6/14.</li>\
+          <li>Encuentra sitios de comidas de verano gratis aquí a partir del 14 de junio.</li>\
+          <li>从 6 月 14 日开始，在这里找到免费的夏季餐饮网站。</li>\
+          <li>Tìm các trang web bữa ăn mùa hè miễn phí tại đây bắt đầu từ ngày 6/14.</li>\
+          <li>Найдите здесь сайты с бесплатными летними блюдами, начиная с 14 июня.</li>\
+          <li>Trouvez des sites de repas d\'été gratuits ici à partir du 14 juin.</li>\
+        </ul>',
     },
-    header: {
-      type: 'alertBanner',
-      enabled: function(state) {
-        return state.alertResponse === 'alertHours';
-      },
-      content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
-    },
-    alertChecks: [
+    // header: {
+    //   type: 'alertBanner',
+    //   enabled: function(state) {
+    //     return state.alertResponse === 'alertHours';
+    //   },
+    //   content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
+    // },
+    // alertChecks: [
     //   {
     //     type: 'alertHours',
     //     condition: [
     //       {
-    //         'day': 1,
+    //         'day': 4,
     //         'startTime': '1:00',
     //         'endTime': '23:59',
     //       },
     //     ],
     //   },
-    ],
+    // ],
   },
   markerType: 'circle-marker',
   circleMarkers:{
@@ -361,8 +367,9 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student meal site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      // subsections: [],
+      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      hideCounts: true,
     },
     olderAdultMealSites: {
       title: 'Older adult meal sites',
@@ -387,7 +394,7 @@ pinboard({
   subsections: {
     '': 'foodSites',
     'Broad Street Ministry': 'generalMealSites',
-    'CHARTER': 'studentMealSites',
+    // 'CHARTER': 'studentMealSites',
     'Kensington Meal Partners': 'generalMealSites',
     'Muslims Serve': 'generalMealSites',
     'NDS': 'studentMealSites',
@@ -400,7 +407,7 @@ pinboard({
     'Other Summer Meal Sites': 'studentMealSites',
     'Student Meal Site': 'studentMealSites',
     'PPR': 'foodSites',
-    'PSD': 'studentMealSites',
+    // 'PSD': 'studentMealSites',
     'SENIOR SITE': 'olderAdultMealSites',
     'SHARE FOOD PROGRAM': 'foodSites',
     'Nutritional Development Services': 'foodSites',

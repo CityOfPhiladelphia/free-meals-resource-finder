@@ -15,6 +15,7 @@ export default {
   'Community Refrigerator': 'Общественные холодильники',
   eligibility: 'Критерии получения помощи',
   pickupDetails: 'Информация о получении и время получения',
+  details: 'Подробности',
   beforeYouGo: 'Прежде чем идти',
   change: 'Изменение графика работы',
   closure: 'Временное закрытие',
