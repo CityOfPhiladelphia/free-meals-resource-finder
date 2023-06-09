@@ -12,10 +12,13 @@ export default {
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
-  'Community Refrigerators': 'Community refrigerators',
+  'Community refrigerators': 'Community refrigerators',
+  'Community refrigerator': 'Community refrigerator',
+  'Community Refrigerator': 'Community refrigerator',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
+  details: 'Details',
   beforeYouGo: 'Before you go',
   change: 'Schedule change',
   closure: 'Temporary closure',
@@ -72,16 +75,18 @@ export default {
     studentMealSites: {
       header: 'Student meal sites',
       eligibility: 'All children and youth are eligible. No ID is required.',
-      hidePickupDetailsInGreeting: true,
+      hidePickupDetailsInGreeting: false,
       pickupDetails: '',
       subsections: {
-        'PSD': {
-          name: 'Philadelphia School District schools',
-          pickupDetails: '',
-          eligibility: 'All children and youth are eligible. No ID is required.',
-        },
+        // 'PSD': {
+        //   name: 'Philadelphia School District schools',
+        //   hidePickupDetailsInGreeting: true,
+        //   pickupDetails: '',
+        //   eligibility: 'All children and youth are eligible. No ID is required.',
+        // },
         'PHA': {
           name: 'Philadelphia Housing Authority (PHA) community centers',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Monday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
           Tuesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
           Wednesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
@@ -96,13 +101,15 @@ export default {
           pickupDetails: '',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
-        'CHARTER': {
-          name: 'Charter schools',
-          pickupDetails: '',
-          eligibility: 'All children and youth are eligible. No ID is required.',
-        },
+        // 'CHARTER': {
+        //   name: 'Charter schools',
+        //   hidePickupDetailsInGreeting: true,
+        //   pickupDetails: '',
+        //   eligibility: 'All children and youth are eligible. No ID is required.',
+        // },
         'playstreets': {
           name: 'Playstreets',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
           Playstreets serve lunch and a snack.',
           eligibility: 'All children and youth are eligible. No ID is required.',
@@ -110,6 +117,7 @@ export default {
         'NDS': {
           name: 'Nutritional Development Services',
           pickupDetails: 'Meals must be eaten on site. Contact NDS for more details.',
+          hidePickupDetailsInGreeting: true,
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Other': {
@@ -120,35 +128,39 @@ export default {
         },
         'Recreation Center': {
           name: 'Recreation Centers',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Monday to Friday between 9AM to 3 PM. Meal times vary by site. Meals must be eaten on site. For more information, call or visit the Recreation Center.',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Caring for Friends': {
           name: 'Caring for Friends',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Philabundance Summer Meal Sites',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Contact the site for more details.',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Other Summer Meal Sites':{
           name: 'Other Summer Meal Sites',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: 'Meal times vary by site. Meals must be eaten on site. For more information, visit the summer meal site. ',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
       },
       custom: {
-        // info: '\
-        // To find more free summer meal sites for children and youth: <br>\
-        // <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
-        // <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
-        // <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
-        // ',
-        info: 'Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students.<br>\
-        Also, Out of School Time programs serve snacks and meals to youth. \
-        Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.',
+        info: '\
+        To find more free summer meal sites for children and youth: <br>\
+        <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+        <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
+        <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
+        ',
+        // info: 'Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students.<br>\
+        // Also, Out of School Time programs serve snacks and meals to youth. \
+        // Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.',
       },
     },
     olderAdultMealSites: {

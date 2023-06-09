@@ -10,9 +10,12 @@ export default {
   'Food site': '食品地点',
   'Student meal site': '学生用餐场所',
   'Older adult meal site': '年长者用餐场所',
-  'Community Refrigerators': '社区冰箱',
+  'Community refrigerators': '社区冰箱',
+  'Community refrigerator': '社区冰箱',
+  'Community Refrigerator': '社区冰箱',
   eligibility: '合格标准',
   pickupDetails: '取餐详情及时间',
+  details: '细节',
   beforeYouGo: '您出发前',
   change: '日程表变更',
   closure: '临时关闭',
@@ -56,11 +59,13 @@ export default {
       subsections: {
         'PSD': {
           name: '费城学区',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'PHA': {
           name: '费城住房管理局(PHA)社区中心',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '周一上午 9:00 – 10:00，中午 12:00 – 下午 2:00<br>\
           周二上午 9:00 – 10:00，中午 12:00 – 下午 2:00<br>\
           周三上午 9:00 – 10:00，中午 12:00 – 下午 2:00<br>\
@@ -71,9 +76,9 @@ export default {
         },
         'CHARTER': {
           name: '特许学校',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
-
         },
         'PPR_StudentMeals': {
           name: '费城公园和娱乐中心',
@@ -85,51 +90,58 @@ export default {
         },
         'playstreets': {
           name: 'Playstreets',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '游乐街计划的开放时间为周一至周五上午 10 点 – 下午 4 点。街道禁止机动车驶入。 餐食供应时间因供应点而异。 欲了解更多信息，请前往游乐街计划咨询。<br>\
           游乐街计划供应午餐和一份点心。 ',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'NDS': {
           name: '营养发育服务',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '餐饮场所可能供应一日三餐或一周七天的早餐和午餐餐盒。联系营养发育服务了解更多详情。',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'Other': {
           name: '其他夏季餐饮场所',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '各个场所的供餐时间可能不同。如需更多信息，请访问夏季餐饮场所。',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'Recreation Center': {
           name: '康乐中心',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '周一至周五上午 9点 – 下午 3 点。餐食供应时间因供应点而异。 餐食须在现场食用。欲了解更多信息，请致电或前往娱乐中心咨询。',
           eligibility: '所有儿童和青年人都合格。 不需要出示身份证件。',
         },
         'Caring for Friends': {
           name: '关爱朋友机构 ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '餐食须在现场食用。 请联系供应点了解更多详情。 ',
           eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Philabundance 夏日餐食供应点  ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '请联系供应点了解更多详情。',
           eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
         },
         'Other Summer Meal Sites':{
           name: '其他夏日餐食供应点 ',
+          hidePickupDetailsInGreeting: true,
           pickupDetails: '餐食供应时间因供应点而异。 餐食须在现场食用。 欲了解更多信息，请前往夏日餐食供应点咨询。 ',
           eligibility: '所有儿童和青少年均有资格。 需要身份证号码。',
         },
       },
       custom: {
-        // info: '\
-        // 若要查找面向儿童和青少年的夏日免费餐食供应点：  \
-        // <br><ul><li>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。</li>   \
-        // <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
-        // <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
-        // ',
-        info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
-        此外，校外教育计划还向青少年提供点心和餐食。  \
-        请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。',
+        info: '\
+        若要查找面向儿童和青少年的夏日免费餐食供应点：  \
+        <br><ul><li>拨打夏日餐食热线 <a href="tel:215-770-4659">215-770-4659</a>。</li>   \
+        <li>发送短信 “FOOD” 或 “COMIDA” 至 <a href="tel:304-304">304-304</a>，即可获取附近餐食供应点的清单。 </li> \
+        <li>访问 <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> 查找面向青少年供应的夏日免费餐食。</li></ul>  \
+        ',
+        // info: ' 访问 <a href="https://www.philasd.org/foodservices/">School District of Philadelphia（费城教育局）的 Food Services（食品服务）页面，</a> 了解关于学生在校用餐服务的信息。<br>\
+        // 此外，校外教育计划还向青少年提供点心和餐食。  \
+        // 请访问 <a href="https://www.phila.gov/ost/program-locator/#/">OST 计划定位服务</a> 查找计划并了解更多信息。',
       },
     },
     olderAdultMealSites: {

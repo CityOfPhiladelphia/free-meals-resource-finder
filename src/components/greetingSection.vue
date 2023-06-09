@@ -29,7 +29,7 @@
       <div
         v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
         class="column is-3 small-cell-pad"
-        v-html="$t('pickupDetails')"
+        v-html="$t('details')"
       />
       <div class="column small-cell-pad">
         <div class="table-slot">
@@ -46,8 +46,9 @@
           >
             <!-- class="subsection-content" -->
             <!-- subsections that are written out -->
-            <div v-if="subsectionCountsFromProps[subsection]">
-              <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
+            <!-- <div> -->
+            <div v-if="subsectionCountsFromProps[subsection] || section.title == 'Student meal sites'">
+              <b v-if="!section.hideCounts">{{ subsectionCountsFromProps[subsection] }} </b><b>{{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
               <div
                 v-if="!$config.i18n.data.messages['en-US'].sections[header].subsections[subsection].hidePickupDetailsInGreeting"
                 v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
