@@ -136,12 +136,12 @@ pinboard({
       // body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
       header: 'Student meal sites',
       body: '<ul class="alert-modal-list">\
-          <li>Find free summer meal sites here starting on 6/14.</li>\
-          <li>Encuentra sitios de comidas de verano gratis aquí a partir del 14 de junio.</li>\
-          <li>从 6 月 14 日开始，在这里找到免费的夏季餐饮网站。</li>\
-          <li>Tìm các trang web bữa ăn mùa hè miễn phí tại đây bắt đầu từ ngày 6/14.</li>\
-          <li>Найдите здесь сайты с бесплатными летними блюдами, начиная с 14 июня.</li>\
-          <li>Trouvez des sites de repas d\'été gratuits ici à partir du 14 juin.</li>\
+          <li>Find free summer meal sites here.</li>\
+          <li>Encuentra sitios de comidas de verano gratis aquí.</li>\
+          <li>在这里找到免费的夏季用餐网站。</li>\
+          <li>Tìm các trang web bữa ăn mùa hè miễn phí tại đây.</li>\
+          <li>Найдите здесь сайты с бесплатными летними блюдами.</li>\
+          <li>Trouvez des sites de repas d\'été gratuits ici.</li>\
         </ul>',
     },
     // header: {
