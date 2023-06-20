@@ -12,7 +12,6 @@
       <div class="column exclamation-details">
         <div><b>{{ $t('beforeYouGo') }}:</b></div>
         <div>{{ $t('checkSite') }}</div>
-        <div>{{ $t('holidayJuneteenth') }}</div>
       </div>
     </div>
 
