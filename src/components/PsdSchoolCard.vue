@@ -74,10 +74,10 @@ export default {
       return this.$config.subsections;
     },
     section() {
-      return this.subsections[this.$props.item.attributes['CATEGORY']];
+      return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
-      return this.$props.item.attributes.CATEGORY;
+      return this.$props.item.attributes.category;
     },
     pickupDetails() {
       let columns = [

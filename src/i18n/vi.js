@@ -65,12 +65,12 @@ export default {
         },
         'PHA': {
           name: 'Các trung tâm cộng đồng của Philadelphia Housing Authority (PHA)',
-          pickupDetails: 'Thứ Hai, 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
-          Thứ Ba 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
-          Thứ Tư 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
-          Thứ Năm 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
-          Thứ Sáu 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
-          Phải ăn tại chỗ. Để biết thêm thông tin, xin tới địa điểm.',
+          // pickupDetails: 'Thứ Hai, 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+          // Thứ Ba 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+          // Thứ Tư 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+          // Thứ Năm 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+          // Thứ Sáu 9:00 sáng – 10:00 sáng và 12:00 trưa – 2:00 chiều<br>\
+          pickupDetails: 'Phải ăn tại chỗ. Để biết thêm thông tin, xin tới địa điểm.',
           eligibility: 'Tất cả trẻ em và thanh thiếu niên đều đủ điều kiện. Không cần ID.',
         },
         'CHARTER': {

@@ -86,12 +86,12 @@ export default {
         },
         'PHA': {
           name: 'Philadelphia Housing Authority (PHA) community centers',
-          pickupDetails: 'Monday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
-          Tuesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
-          Wednesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
-          Thursday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
-          Friday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
-          Meals must be eaten on site. For more information, visit the site.',
+          // pickupDetails: 'Monday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
+          // Tuesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
+          // Wednesday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
+          // Thursday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
+          // Friday 9:00 AM – 10:00 AM and 12:00 PM – 2:00 PM<br>\
+          pickupDetails: 'Meals must be eaten on site. For more information, visit the site.',
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'PPR_StudentMeals': {

@@ -103,77 +103,93 @@
       <senior-meal-site-card
         v-if="section === 'olderAdultMealSites'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <food-site-card
         v-if="section === 'foodSites'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <charter-school-card
         v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <psd-school-card
         v-if="section === 'studentMealSites' && subsection === 'PSD'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <pha-school-card
         v-if="section === 'studentMealSites' && subsection === 'PHA'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <other-school-card
         v-if="section === 'studentMealSites' && subsection === 'Other'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <playstreets-school-card
         v-if="section === 'studentMealSites' && subsection === 'playstreets'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'NDS'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <general-site-card
         v-if="section === 'generalMealSites'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
 
       <fridge-site-card
         v-if="section === 'communityRefrigerators'"
         :item="item"
+        :pickup-details="pickupDetails"
       />
     </div>
   </div>
 </template>
 
 <script>
+
+import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 
 import transforms from '../general/transforms.js';
 import { format } from 'date-fns';
@@ -215,6 +231,10 @@ export default {
     PrintShareSection,
     Callout,
   },
+  mixins: [
+    // SharedFunctions,
+    LocalSharedFunctions,
+  ],
   props: {
     item: {
       type: Object,
@@ -330,6 +350,55 @@ export default {
         value = this.$props.item.attributes.ZIP_CODE;
       }
       return value;
+    },
+    daysKey() {
+      return {
+        'Monday': 'Monday',
+        'Tuesday': 'Tuesday',
+        'Wednesday': 'Wednesday',
+        'Thursday': 'Thursday',
+        'Friday': 'Friday',
+        'Saturday': 'Saturday',
+        'Sunday': 'Sunday',
+      };
+    },
+    exceptionsList() {
+      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      let exceptionsArray = [];
+      for (let day of days) {
+        let dayException = this.item.attributes[day + '_exceptions'];
+        if (dayException) {
+          exceptionsArray.push(dayException);
+        }
+      }
+      let exceptionsSet = new Set(exceptionsArray);
+      let exceptionsSetArray = [ ...exceptionsSet ];
+      return exceptionsSetArray;
+    },
+    exceptionsByDay() {
+      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      let exceptions = {};
+      for (let day of days) {
+        let dayException = this.item.attributes[day + '_exceptions'];
+        if (dayException) {
+          exceptions[day] = dayException;
+        }
+      }
+      return exceptions;
+    },
+    exceptionsWithCounter() {
+      let exceptionsWithCounter = {};
+      for (let day = 0; day < Object.keys(this.exceptionsByDay).length; day++) {
+        exceptionsWithCounter[Object.keys(this.exceptionsByDay)[day]] = {
+          value: Object.keys(this.exceptionsByDay)[day],
+          counter: 1+this.exceptionsList.indexOf(this.exceptionsByDay[Object.keys(this.exceptionsByDay)[day]]),
+        };
+      }
+      console.log('exceptionsWithCounter:', exceptionsWithCounter);
+      return exceptionsWithCounter;
+    },
+    pickupDetails() {
+      return this.getPickupDetails();
     },
   },
   methods: {

@@ -61,22 +61,21 @@
 
 <script>
 
-import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
-import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 import { VueGoodTable } from 'vue-good-table';
-// import 'vue-good-table/dist/vue-good-table.css';
 
 export default {
   name: 'NdsSchoolCard',
   components: {
     VueGoodTable,
   },
-  mixins: [
-    SharedFunctions,
-    LocalSharedFunctions,
-  ],
   props: {
     item: {
+      type: Object,
+      default: function(){
+        return {};
+      },
+    },
+    pickupDetails: {
       type: Object,
       default: function(){
         return {};
@@ -95,55 +94,6 @@ export default {
     },
     subsection() {
       return this.$props.item.attributes.category;
-    },
-    pickupDetails() {
-      return this.getPickupDetails();
-    },
-    daysKey() {
-      return {
-        'Monday': 'Monday',
-        'Tuesday': 'Tuesday',
-        'Wednesday': 'Wednesday',
-        'Thursday': 'Thursday',
-        'Friday': 'Friday',
-        'Saturday': 'Saturday',
-        'Sunday': 'Sunday',
-      };
-    },
-    exceptionsList() {
-      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
-      let exceptionsArray = [];
-      for (let day of days) {
-        let dayException = this.item.attributes[day + '_exceptions'];
-        if (dayException) {
-          exceptionsArray.push(dayException);
-        }
-      }
-      let exceptionsSet = new Set(exceptionsArray);
-      let exceptionsSetArray = [ ...exceptionsSet ];
-      return exceptionsSetArray;
-    },
-    exceptionsByDay() {
-      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
-      let exceptions = {};
-      for (let day of days) {
-        let dayException = this.item.attributes[day + '_exceptions'];
-        if (dayException) {
-          exceptions[day] = dayException;
-        }
-      }
-      return exceptions;
-    },
-    exceptionsWithCounter() {
-      let exceptionsWithCounter = {};
-      for (let day = 0; day < Object.keys(this.exceptionsByDay).length; day++) {
-        exceptionsWithCounter[Object.keys(this.exceptionsByDay)[day]] = {
-          value: Object.keys(this.exceptionsByDay)[day],
-          counter: 1+this.exceptionsList.indexOf(this.exceptionsByDay[Object.keys(this.exceptionsByDay)[day]]),
-        };
-      }
-      console.log('exceptionsWithCounter:', exceptionsWithCounter);
-      return exceptionsWithCounter;
     },
   },
 };

@@ -73,12 +73,12 @@ export default {
         },
         'PHA': {
           name: 'Centres communautaires de la Housing Authority de Philadelphie (PHA)',
-          pickupDetails: 'Lundi 9h00 – 10h00 et 12h00 – 14h00<br>\
-          Mardi 9h00 – 10h00 et 12h00 – 14h00<br>\
-          Mercredi 9h00 – 10h00 et 12h00 – 14h00<br>\
-          Jeudi 9h00 – 10h00 et 12h00 – 14h00<br>\
-          Vendredi 9h00 – 10h00 et 12h00 – 14h00<br>\
-          Les repas doivent être consommés sur place. Pour plus d’informations, visitez le site.',
+          // pickupDetails: 'Lundi 9h00 – 10h00 et 12h00 – 14h00<br>\
+          // Mardi 9h00 – 10h00 et 12h00 – 14h00<br>\
+          // Mercredi 9h00 – 10h00 et 12h00 – 14h00<br>\
+          // Jeudi 9h00 – 10h00 et 12h00 – 14h00<br>\
+          // Vendredi 9h00 – 10h00 et 12h00 – 14h00<br>\
+          pickupDetails: 'Les repas doivent être consommés sur place. Pour plus d’informations, visitez le site.',
           eligibility: 'Tous les enfants et les adolescents peuvent en bénéficier. Aucune pièce d’identité n’est demandée.',
 
         },
