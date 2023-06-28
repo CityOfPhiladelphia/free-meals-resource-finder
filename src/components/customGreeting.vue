@@ -45,6 +45,7 @@
         <li v-html="$t('sections.foodPantries.li1')" />
         <li v-html="$t('sections.foodPantries.li2')" />
         <li v-html="$t('sections.foodPantries.li3')" />
+        <li v-html="$t('sections.foodPantries.li4')" />
       </ul>
       {{ $t('sections.foodPantries.h2') }}
       <ul class="custom-ul">
