@@ -226,6 +226,7 @@ export default {
       li1: 'Позвоните по номеру <a href="tel:+311">311</a>. Позвоните в пункт выдачи питания, чтобы уточнить его график работы.',
       li2: 'Посетите сайт Службы помощи бездомным<a href="https://www.phila.gov/departments/office-of-homeless-services/"> (Office of Homeless Services)</a>, чтобы узнать адреса пунктов выдачи бесплатного питания. ',
       li3: 'Посетите сайт  <a href="https://communityresourceconnects.org/">Community Resource Connects</a>, чтобы ознакомиться с информацией о пунктах выдачи питания и прочих ресурсах в вашем регионе.',
+      li4: "Найдите фермерский рынок в приложении <a href='https://www.phila.gov/farmers-markets/' target='_blank'>Farmers' Market Finder</a> в Филадельфии.",
       h2:'Помощь в подаче заявлений на получение пособий и льгот ',
       li21:'Программа  <a href="https://www.phila.gov/programs/benephilly/">BenePhilly: </a> подача заявлений на получение социальных пособий. Чтобы связаться со специалистом программы, позвоните по номеру 1-833-373-5868.',
       li22:'Организация <a href="https://www.hungercoalition.org/">Coalition Against Hunger:</a>  подача заявления на пособие по программе льготной покупки продуктов SNAP. Чтобы связаться со специалистом, позвоните по номеру 215-430-0556.',

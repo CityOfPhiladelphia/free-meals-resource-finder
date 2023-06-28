@@ -221,6 +221,7 @@ export default {
       li1: 'Llame al <a href="tel:+311">311</a>. Llame a la despensa por anticipado para confirmar los horarios.',
       li2: 'El <a href="https://www.phila.gov/departments/office-of-homeless-services/">sitio web de la Oficina de Servicios para las Personas sin Hogar</a> contiene una lista de más sitios de comidas gratuitas.  ',
       li3: '<a href="https://communityresourceconnects.org/">Recursos Comunitarios Conecta</a> tiene alimentos y otros recursos. ',
+      li4: "Encuentre un mercado de agricultores en el buscador de mercados de <a href='https://www.phila.gov/farmers-markets/' target='_blank'>agricultores</a> de la ciudad de Filadelfia.",
       h2:'Obtenga ayuda para solicitar beneficios: ',
       li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> ayuda a solicitar beneficios públicos. Llame al 1-833-373-5868.  ',
       li22:'<a href="https://www.hungercoalition.org/">La Coalición contra el Hambre</a> ayuda a solicitar el SNAP. Llame al 215-430-0556 ',

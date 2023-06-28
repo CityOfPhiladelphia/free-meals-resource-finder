@@ -366,8 +366,9 @@ pinboard({
       title: 'Student meal sites',
       titleSingular: 'Student meal site',
       color: '#721817',
-      subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      // subsections: [],
+      // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      hideCounts: false,
     },
     olderAdultMealSites: {
       title: 'Older adult meal sites',

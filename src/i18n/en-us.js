@@ -263,6 +263,7 @@ export default {
       li1: 'Call <a href="tel:+311">311</a>. Call the pantry in advance to confirm their hours.',
       li2: 'The <a href="https://www.phila.gov/departments/office-of-homeless-services/">Office of Homeless Services website</a> lists more free meal sites. ',
       li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> has food and other resources.',
+      li4: "Find a farmers' market on the City of Philadelphia's <a href='https://www.phila.gov/farmers-markets/' target='_blank'>Farmers' Market Finder</a>.",
       h2:'Get help applying for benefits: ',
       li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-833-373-5868. ',
       li22:'<a href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
