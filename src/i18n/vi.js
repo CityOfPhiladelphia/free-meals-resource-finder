@@ -231,6 +231,7 @@ export default {
       li1: 'Gọi đến số <a href="tel:+311">311</a>. Gọi trước cho phòng pantry để xác nhận giờ của họ.',
       li2: 'Trang  <a href="https://www.phila.gov/departments/office-of-homeless-services/">web của Office of Homeless Services</a> có liệt kê nhiều điểm phát bữa ăn miễn phí hơn. ',
       li3: '<a href="https://communityresourceconnects.org/">Community Resource Connects</a> có thực phẩm và các nguồn lực khác.',
+      li4: "Tìm chợ nông sản trên Công cụ tìm chợ <a href='https://www.phila.gov/farmers-markets/' target='_blank'>nông</a> sản của Thành phố Philadelphia.",
       h2:'Nhận trợ giúp đăng ký các lợi ích: ',
       li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly </a> nhận trợ giúp đăng ký các lợi ích công cộng. Gọi đến số 1-833-373-5868. ',
       li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger  </a>trợ giúp đăng ký SNAP. Gọi đến số 215-430-0556 ',

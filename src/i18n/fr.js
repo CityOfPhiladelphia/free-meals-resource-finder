@@ -242,6 +242,7 @@ export default {
       li1: 'Appelez le  <a href="tel:+311">311</a>. Appelez la banque alimentaire au préalable pour vérifier ses horaires.',
       li2: '<a href="https://www.phila.gov/departments/office-of-homeless-services/">Le site Internet de l\'Office of Homeless Services (Bureau des services aux sans-abri)</a> recense d\'autres lieux offrant des repas gratuits. ',
       li3: '<a href="https://communityresourceconnects.org/">Le site Community Resource Connects </a> propose de la nourriture et d\'autres ressources.',
+      li4: "Trouvez un marché fermier sur l'outil de recherche des <a href='https://www.phila.gov/farmers-markets/' target='_blank'>marchés fermiers</a> de la ville de Philadelphie.",
       h2:'Obtenir de l\'aide pour faire une demande de prestations: ',
       li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> peut vous aider à faire une demande de prestations publiques. Appelez le 1-833-373-5868.',
       li22:'<a href="https://www.hungercoalition.org/">Coalition Against Hunger</a> peut vous aider à faire une demande de prestations SNAP (programme d\'aide alimentaire). Appelez le 215-430-0556.',

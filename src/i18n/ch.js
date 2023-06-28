@@ -231,6 +231,7 @@ export default {
       li1: '拨打 <a href="tel:+311">311</a>。 提前致电食品储藏室确认他们的工作时间。 ',
       li2: '无家可归者服务办公室 <a href="https://www.phila.gov/departments/office-of-homeless-services/">(Office of Homeless Services)</a>  网站列出了更多的免费餐食供应场所。',
       li3: '社区资源联络点  <a href="https://communityresourceconnects.org/">(Community Resource Connects) </a> h可提供食物和其他资源。',
+      li4: "在费城的农贸市场搜索器上<a href='https://www.phila.gov/farmers-markets/' target='_blank'>查找农贸市场</a>。",
       h2:'获取协助以申请福利。  ',
       li21:'<a href="https://www.phila.gov/programs/benephilly/">费城福利 (BenePhilly) </a>  可协助申请公共福利。 欢迎致电 1-833-373-5868。 ',
       li22:'<a href="https://www.hungercoalition.org/">反饥饿联盟 (Coalition Against Hunger) </a> 可协助申请 SNAP。 欢迎致电 215-430-0556。  ',

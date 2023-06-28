@@ -369,7 +369,7 @@ pinboard({
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
       subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      hideCounts: true,
+      hideCounts: false,
     },
     olderAdultMealSites: {
       title: 'Older adult meal sites',
