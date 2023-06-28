@@ -24,11 +24,11 @@
         :item="item"
       />
 
-      <callout
+      <!-- <callout
         v-if="closureMessage != null"
         :message="closureMessage"
         type="warning"
-      />
+      /> -->
 
       <div class="columns">
         <div class="column is-6">
@@ -48,7 +48,7 @@
 
         <div class="column is-6">
           <div
-            v-if="item.attributes.CATEGORY"
+            v-if="item.attributes.category"
             class="columns is-mobile"
           >
             <div class="column is-1">
@@ -60,12 +60,12 @@
                 target="_blank"
                 :href="item.attributes.Website"
               >
-                {{ $t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name') }}
+                {{ $t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name') }}
                 <font-awesome-icon icon="external-link-alt" />
               </a>
               <span
                 v-if="!item.attributes.Website"
-                v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.CATEGORY + '\'].name')"
+                v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name')"
               />
             </div>
           </div>
@@ -308,10 +308,10 @@ export default {
       return this.$config.subsections;
     },
     section() {
-      return this.subsections[this.$props.item.attributes['CATEGORY']];
+      return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
-      return this.$props.item.attributes.CATEGORY;
+      return this.$props.item.attributes.category;
     },
     address() {
       let value;
@@ -344,10 +344,10 @@ export default {
           value = this.$config.categoryExceptions.value;
           // console.log('getCategory is running, item:', item, 'value:', value);
         } else {
-          value = item.attributes.CATEGORY;
+          value = item.attributes.category;
         }
       } else {
-        value = item.attributes.CATEGORY;
+        value = item.attributes.category;
       }
       return value;
     },
