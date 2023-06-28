@@ -16,6 +16,7 @@ export default {
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
+  details: 'Details',
   beforeYouGo: 'Before you go',
   change: 'Schedule change',
   closure: 'Temporary closure',

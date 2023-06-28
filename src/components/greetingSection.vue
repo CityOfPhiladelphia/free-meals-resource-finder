@@ -29,7 +29,7 @@
       <div
         v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
         class="column is-3 small-cell-pad"
-        v-html="$t('pickupDetails')"
+        v-html="$t('details')"
       />
       <div class="column small-cell-pad">
         <div class="table-slot">

@@ -13,6 +13,7 @@ export default {
   'Community refrigerator': '社区冰箱',
   eligibility: '合格标准',
   pickupDetails: '取餐详情及时间',
+  details: '细节',
   beforeYouGo: '您出发前',
   change: '日程表变更',
   closure: '临时关闭',

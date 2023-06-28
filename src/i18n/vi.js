@@ -13,6 +13,7 @@ export default {
   'Community refrigerator': 'Tủ Lạnh Cộng Đồng',
   eligibility: 'Điều kiện hội đủ',
   pickupDetails: 'Chi tiết',
+  details: 'Thông tin chi tiết',
   beforeYouGo: 'Trước khi đi',
   change: 'Đổi lịch',
   closure: 'Đóng cửa tạm thời',

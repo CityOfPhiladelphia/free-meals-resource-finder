@@ -132,17 +132,17 @@ export default {
   },
   methods: {
     getCounts() {
-      // console.log('customGreeting.vue getCounts is running');
+      console.log('customGreeting.vue getCounts is running');
       const refineData = this.database;
       let service = '';
 
-      // console.log('in getRefineSearchList, refineData:', refineData);
+      console.log('in getRefineSearchList, refineData:', refineData);
       refineData.forEach((arrayElem) => {
         // console.log('arrayElem:', arrayElem);
         if (arrayElem.services_offered) {
           service += `${arrayElem.services_offered},`;
-        } else if (arrayElem.attributes.CATEGORY) {
-          service += `${arrayElem.attributes.CATEGORY},`;
+        } else if (arrayElem.attributes.category) {
+          service += `${arrayElem.attributes.category},`;
         }
       });
 

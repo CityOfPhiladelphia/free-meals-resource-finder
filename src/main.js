@@ -60,6 +60,7 @@ pinboard({
   },
   allowPrint: true,
   showBuffers: true,
+  retractableRefine: true,
   gtag: {
     category: 'rf-food',
   },
@@ -100,8 +101,8 @@ pinboard({
       let value;
       // if (item.category_type) {
       //   value = item.category_type;
-      // } else if (item.CATEGORY_TYPE) {
-      //   value = item.CATEGORY_TYPE;
+      // } else if (item.category_type) {
+      //   value = item.category_type;
       // }
 
       if (item.attributes.category_type == "Senior Meal Site") {
@@ -116,8 +117,8 @@ pinboard({
         value = "Community refrigerator";
       } else if (item.attributes.category_type) {
         value = item.attributes.category_type;
-      } else if (item.attributes.CATEGORY_TYPE) {
-        value = item.attributes.CATEGORY_TYPE;
+      } else if (item.attributes.category_type) {
+        value = item.attributes.category_type;
       }
       return value;
     },

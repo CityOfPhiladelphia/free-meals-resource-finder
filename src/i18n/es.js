@@ -13,6 +13,7 @@ export default {
   'Community refrigerator': 'Refrigeradores comunitarios',
   eligibility: 'Elegibilidad',
   pickupDetails: 'Detalles y horarios de retiro',
+  details: 'Detalles',
   beforeYouGo: 'Antes de ir',
   change: 'Cambio de horarios',
   closure: 'Cierre temporal',
