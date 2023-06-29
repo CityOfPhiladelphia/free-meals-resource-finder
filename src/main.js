@@ -95,33 +95,140 @@ pinboard({
   //
   // },
   refine: {
-    type: 'categoryField_value',
-    value: function(item) {
-      // console.log('value is running, item:', item);
-      let value;
-      // if (item.category_type) {
-      //   value = item.category_type;
-      // } else if (item.category_type) {
-      //   value = item.category_type;
-      // }
-
-      if (item.attributes.category_type == "Senior Meal Site") {
-        value = "Older adult meal site";
-      } else if (item.attributes.category_type == "Food Site") {
-        value = "Food site";
-      } else if (item.attributes.category_type == "Student Meal Site") {
-        value = "Student meal site";
-      } else if (item.attributes.category_type == "General Meal Site") {
-        value = "General meal site";
-      } else if (item.attributes.category_type == "Community Refrigerators") {
-        value = "Community refrigerator";
-      } else if (item.attributes.category_type) {
-        value = item.attributes.category_type;
-      } else if (item.attributes.category_type) {
-        value = item.attributes.category_type;
-      }
-      return value;
+    type: 'multipleFieldGroups',
+    columns: true,
+    multipleFieldGroups: {
+      categoryType: {
+        columns: 2,
+        radio: {
+          'foodSite': {
+            unique_key: 'categoryType_foodSite',
+            i18n_key: 'categoryType.foodSite',
+            value: function(item) {
+              return item.attributes.category_type == "Food Site";
+            },
+          },
+          'generalMealSite': {
+            unique_key: 'categoryType_generalMealSite',
+            i18n_key: 'categoryType.generalMealSite',
+            value: function(item) {
+              return item.attributes.category_type == "General Meal Site";
+            },
+          },
+          'studentMealSite': {
+            unique_key: 'categoryType_studentMealSite',
+            i18n_key: 'categoryType.studentMealSite',
+            value: function(item) {
+              return item.attributes.category_type == "Student Meal Site";
+            },
+          },
+          'olderAdultMealSite': {
+            unique_key: 'categoryType_olderAdultMealSite',
+            i18n_key: 'categoryType.olderAdultMealSite',
+            value: function(item) {
+              return item.attributes.category_type == "Older Adult Meal Site";
+            },
+          },
+          'communityRefrigerator': {
+            unique_key: 'categoryType_communityRefrigerator',
+            i18n_key: 'categoryType.communityRefrigerator',
+            value: function(item) {
+              return item.attributes.category_type == "Community Refrigerators";
+            },
+          },
+        },
+      },
+      weekday: {
+        columns: 2,
+        radio: {
+          'monday': {
+            unique_key: 'weekday_monday',
+            i18n_key: 'weekday.monday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Monday_start1 != null;
+              // console.log('monday, item.attributes.category_type:', item.attributes.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
+              return na_category_type || day;
+            },
+          },
+          'tuesday': {
+            unique_key: 'weekday_tuesday',
+            i18n_key: 'weekday.tuesday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Tuesday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'wednesday': {
+            unique_key: 'weekday_wednesday',
+            i18n_key: 'weekday.wednesday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Wednesday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'thursday': {
+            unique_key: 'weekday_thursday',
+            i18n_key: 'weekday.thursday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Thursday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'friday': {
+            unique_key: 'weekday_friday',
+            i18n_key: 'weekday.friday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Friday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'saturday': {
+            unique_key: 'weekday_saturday',
+            i18n_key: 'weekday.saturday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Saturday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'sunday': {
+            unique_key: 'weekday_sunday',
+            i18n_key: 'weekday.sunday',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Sunday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+        },
+      },
     },
+    // type: 'categoryField_value',
+    // value: function(item) {
+    //   // console.log('value is running, item:', item);
+    //   let value;
+    //   if (item.attributes.category_type == "Senior Meal Site") {
+    //     value = "Older adult meal site";
+    //   } else if (item.attributes.category_type == "Food Site") {
+    //     value = "Food site";
+    //   } else if (item.attributes.category_type == "Student Meal Site") {
+    //     value = "Student meal site";
+    //   } else if (item.attributes.category_type == "General Meal Site") {
+    //     value = "General meal site";
+    //   } else if (item.attributes.category_type == "Community Refrigerators") {
+    //     value = "Community refrigerator";
+    //   } else if (item.attributes.category_type) {
+    //     value = item.attributes.category_type;
+    //   } else if (item.attributes.category_type) {
+    //     value = item.attributes.category_type;
+    //   }
+    //   return value;
+    // },
   },
   holidays: {
     // days: [ 'MONDAY' ],
