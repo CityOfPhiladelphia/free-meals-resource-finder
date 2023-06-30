@@ -146,7 +146,7 @@ pinboard({
             i18n_key: 'weekday.monday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Monday_start1 != null;
+              let day = item.attributes.hours_mon_start1 != null;
               // console.log('monday, item.attributes.category_type:', item.attributes.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
               return na_category_type || day;
             },
@@ -156,7 +156,7 @@ pinboard({
             i18n_key: 'weekday.tuesday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Tuesday_start1 != null;
+              let day = item.attributes.hours_tues_start1 != null;
               return na_category_type || day;
             },
           },
@@ -165,7 +165,7 @@ pinboard({
             i18n_key: 'weekday.wednesday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Wednesday_start1 != null;
+              let day = item.attributes.hours_wed_start1 != null;
               return na_category_type || day;
             },
           },
@@ -174,7 +174,7 @@ pinboard({
             i18n_key: 'weekday.thursday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Thursday_start1 != null;
+              let day = item.attributes.hours_thurs_start1 != null;
               return na_category_type || day;
             },
           },
@@ -183,7 +183,7 @@ pinboard({
             i18n_key: 'weekday.friday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Friday_start1 != null;
+              let day = item.attributes.hours_fri_start1 != null;
               return na_category_type || day;
             },
           },
@@ -192,7 +192,7 @@ pinboard({
             i18n_key: 'weekday.saturday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Saturday_start1 != null;
+              let day = item.attributes.hours_sat_start1 != null;
               return na_category_type || day;
             },
           },
@@ -201,7 +201,7 @@ pinboard({
             i18n_key: 'weekday.sunday',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Sunday_start1 != null;
+              let day = item.attributes.hours_sun_start1 != null;
               return na_category_type || day;
             },
           },
@@ -218,7 +218,7 @@ pinboard({
               let startTimes1 = [];
               let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
               for (let day of days) {
-                startTimes1.push(item.attributes[day + '_start1']);
+                startTimes1.push(item.attributes['hours_' + day + '_start1']);
               }
               console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
               let day = true;
@@ -231,7 +231,7 @@ pinboard({
             i18n_key: 'time.afternoon',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Sunday_start1 != null;
+              let day = item.attributes.hours_sun_start1 != null;
               return na_category_type || day;
             },
           },
@@ -240,7 +240,7 @@ pinboard({
             i18n_key: 'time.evening',
             value: function(item) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.Sunday_start1 != null;
+              let day = item.attributes.hours_sun_start1 != null;
               return na_category_type || day;
             },
           },

@@ -353,17 +353,29 @@ export default {
     },
     daysKey() {
       return {
-        'Monday': 'Monday',
-        'Tuesday': 'Tuesday',
-        'Wednesday': 'Wednesday',
-        'Thursday': 'Thursday',
-        'Friday': 'Friday',
-        'Saturday': 'Saturday',
-        'Sunday': 'Sunday',
+        'mon': 'monday',
+        'tues': 'tuesday',
+        'wed': 'wednesday',
+        'thurs': 'thursday',
+        'fri': 'friday',
+        'sat': 'saturday',
+        'sun': 'sunday',
       };
     },
+    // daysKey() {
+    //   return {
+    //     'monday': 'mon',
+    //     'tuesday': 'tues',
+    //     'wednesday': 'wed',
+    //     'thursday': 'thurs',
+    //     'friday': 'fri',
+    //     'saturday': 'sat',
+    //     'sunday': 'sun',
+    //   };
+    // },
     exceptionsList() {
-      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      // let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
       let exceptionsArray = [];
       for (let day of days) {
         let dayException = this.item.attributes[day + '_exceptions'];
@@ -376,7 +388,8 @@ export default {
       return exceptionsSetArray;
     },
     exceptionsByDay() {
-      let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      // let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
       let exceptions = {};
       for (let day of days) {
         let dayException = this.item.attributes[day + '_exceptions'];

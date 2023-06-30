@@ -25,7 +25,9 @@ export default {
       ];
       let rows = [];
       // let allDays = [ 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY' ];
-      let allDays = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      // let allDays = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+      // let allDays = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
+      let allDays = [ 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat', 'sun' ];
       // let days = {};
 
       // let item = this.item;
@@ -74,13 +76,14 @@ export default {
       // }
 
       for (let [ index, day ] of allDays.entries()) {
-        // console.log('day:', day, 'index:', index);
-        let scheduleOrClosed = this.parseTimeRange(day, this.item.attributes[day+'_start1'], this.item.attributes[day+'_end1'], this.item.attributes[day+'_start2'], this.item.attributes[day+'_end2']);
+        console.log('day:', day, 'index:', index);
+        let scheduleOrClosed = this.parseTimeRange(day, this.item.attributes['hours_' + day + '_start1'], this.item.attributes['hours_' + day + '_end1'], this.item.attributes['hours_' + day + '_start2'], this.item.attributes['hours_' + day + '_end2']);
         // let scheduleOrClosed = this.parseTimeRange(day, this.item.attributes['hours_'+day+'_start'], this.item.attributes['hours_'+day+'_end']);
         if (scheduleOrClosed !== 'Closed') {
           rows.push({
             id: index + 1,
-            days: this.daysKey[day],
+            days: 'weekday.' + this.daysKey[day],
+            // days: day,
             schedule: scheduleOrClosed,
           });
         }
