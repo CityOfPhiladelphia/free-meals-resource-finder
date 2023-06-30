@@ -21,6 +21,7 @@ export default {
   closure: 'Đóng cửa tạm thời',
   checkSite: 'Kiểm tra thông tin địa điểm cụ thể. Giờ hoạt động có thể thay đổi.',
   holidayJuneteenth: 'Từ 6/17/2023 - 6/19/2023 các trang web có thể đóng cửa hoặc có giờ khác nhau cho Juneteenth.',
+  holidayJuly4: 'Các trang web có thể đóng cửa hoặc có giờ khác nhau cho ngày 4 tháng 7. Vui lòng liên hệ với trang web trước khi bạn đi.',
   hoursVary: 'Giờ hoạt động và mức sẵn có khác nhau.',
   MONDAY: 'Thứ Hai',
   TUESDAY: 'Thứ Ba',

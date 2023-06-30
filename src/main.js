@@ -120,6 +120,8 @@ pinboard({
     },
   },
   holidays: {
+    current: true,
+    holidayName: 'holidayJuly4',
     // days: [ 'MONDAY' ],
     // exceptions: [
     //   'Richard Allen Preparatory Charter School',

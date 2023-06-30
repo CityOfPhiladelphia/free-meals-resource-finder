@@ -21,6 +21,7 @@ export default {
   closure: '临时关闭',
   checkSite: '查看特定场所的信息。 时间有可能会变动。',
   holidayJuneteenth: '从 2023 年 6 月 17 日到 2023 年 6 月 19 日，网站可能会关闭，或者在 6 月 14 日有不同的开放时间。',
+  holidayJuly4: '7 月 4 日，网站可能会关闭或有不同的开放时间。出发前请联系该网站。',
   hoursVary: '时间和可用性各不相同。',
   MONDAY: '星期一',
   TUESDAY: '星期二',
