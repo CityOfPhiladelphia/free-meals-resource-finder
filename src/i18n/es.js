@@ -77,12 +77,12 @@ export default {
         'PHA': {
           name: 'centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)',
           hidePickupDetailsInGreeting: true,
-          pickupDetails: 'Lunes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>  \
-          Martes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          Miércoles 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          Jueves 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          Viernes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
-          Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio.',
+          // pickupDetails: 'Lunes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>  \
+          // Martes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          // Miércoles 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          // Jueves 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          // Viernes 9:00 A.M. – 10:00 A.M. y 12:00 P.M. – 2:00 P.M. <br>\
+          pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio.',
           eligibility: 'Todos los niños y jóvenes son elegibles. No se necesita identificación.',
 
         },

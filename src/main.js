@@ -207,6 +207,45 @@ pinboard({
           },
         },
       },
+      time: {
+        checkbox: {
+          'morning': {
+            unique_key: 'time_morning',
+            i18n_key: 'time.morning',
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let startTimes1 = [];
+              let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+              for (let day of days) {
+                startTimes1.push(item.attributes[day + '_start1']);
+              }
+              console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
+              let day = true;
+              // let day = 1 != null;
+              return na_category_type || day;
+            },
+          },
+          'afternoon': {
+            unique_key: 'time_afternoon',
+            i18n_key: 'time.afternoon',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Sunday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+          'evening': {
+            unique_key: 'time_evening',
+            i18n_key: 'time.evening',
+            value: function(item) {
+              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let day = item.attributes.Sunday_start1 != null;
+              return na_category_type || day;
+            },
+          },
+        },
+      },
     },
     // type: 'categoryField_value',
     // value: function(item) {
