@@ -208,40 +208,185 @@ pinboard({
         },
       },
       time: {
-        checkbox: {
+        radio: {
           'morning': {
             unique_key: 'time_morning',
             i18n_key: 'time.morning',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let startTimes1 = [];
-              let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
-              for (let day of days) {
-                startTimes1.push(item.attributes['hours_' + day + '_start1']);
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
               }
-              console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
-              let day = true;
+              if (dependentServices.length) {
+                let day = dependentServices[0]
+                days = {
+                  day: days[dependentServices[0]]
+                }
+              }
+
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let startTime1Split;
+                let st1;
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  // console.log('startTime1[0]:', startTime1[0], 'parseInt(startTime1[0]):', parseInt(startTime1[0]));
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (st1 < noon) {
+                  console.log('st1:', st1, 'noon:', noon);
+                  dayAndTime = true;
+                  break;
+                }
+                // console.log('noon:', noon, 'startTime1Split:', startTime1Split, 'd:', d, 'selectedDay:', selectedDay, "item.attributes['hours_' + selectedDay + '_start1']", item.attributes['hours_' + selectedDay + '_start1']);
+                // if (item.attributes['hours_' + selectedDay + '_start1'] );
+              }
+              // console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
               // let day = 1 != null;
-              return na_category_type || day;
+              return na_category_type || dayAndTime;
             },
           },
           'afternoon': {
             unique_key: 'time_afternoon',
             i18n_key: 'time.afternoon',
-            value: function(item) {
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.hours_sun_start1 != null;
-              return na_category_type || day;
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
+              }
+              if (dependentServices.length) {
+                let day = dependentServices[0]
+                days = {
+                  day: days[dependentServices[0]]
+                }
+              }
+
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+              let fivePm = new Date();
+              fivePm.setHours(17, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let endTime1 = item.attributes['hours_' + days[day] + '_end1'];
+                let startTime2 = item.attributes['hours_' + days[day] + '_start2'];
+                let endTime2 = item.attributes['hours_' + days[day] + '_end2'];
+                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
+                let st1, et1, st2, et2;
+
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
+                  endTime1Split = endTime1.split(':');
+                  et1 = new Date();
+                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
+                }
+                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
+                  startTime2Split = startTime2.split(':');
+                  st2 = new Date();
+                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
+                }
+                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
+                  endTime2Split = endTime2.split(':');
+                  et2 = new Date();
+                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
+                }
+
+                if (et1 > noon && et1 < fivePm || et2 > noon && et2 < fivePm || st1 > noon && st1 < fivePm || st2 > noon && st2 < fivePm) {
+                  dayAndTime = true;
+                  break;
+                }
+              }
+              return na_category_type || dayAndTime;
             },
           },
           'evening': {
             unique_key: 'time_evening',
             i18n_key: 'time.evening',
-            value: function(item) {
+            dependentGroups: [ 'weekday' ],
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
               let na_category_type = item.attributes.category_type == 'Community Refrigerators';
-              let day = item.attributes.hours_sun_start1 != null;
-              return na_category_type || day;
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
+              }
+              if (dependentServices.length) {
+                let day = dependentServices[0]
+                days = {
+                  day: days[dependentServices[0]]
+                }
+              }
+
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+              let fivePm = new Date();
+              fivePm.setHours(17, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let endTime1 = item.attributes['hours_' + days[day] + '_end1'];
+                let startTime2 = item.attributes['hours_' + days[day] + '_start2'];
+                let endTime2 = item.attributes['hours_' + days[day] + '_end2'];
+                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
+                let st1, et1, st2, et2;
+
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
+                  endTime1Split = endTime1.split(':');
+                  et1 = new Date();
+                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
+                }
+                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
+                  startTime2Split = startTime2.split(':');
+                  st2 = new Date();
+                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
+                }
+                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
+                  endTime2Split = endTime2.split(':');
+                  et2 = new Date();
+                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
+                }
+
+                if (et1 > fivePm || et2 > fivePm) {
+                  dayAndTime = true;
+                  break;
+                }
+              }
+              return na_category_type || dayAndTime;
             },
           },
         },
