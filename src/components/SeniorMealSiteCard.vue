@@ -28,6 +28,12 @@ export default {
         return {};
       },
     },
+    pickupDetails: {
+      type: Object,
+      default: function(){
+        return {};
+      },
+    },
   },
   computed: {
     subsections() {

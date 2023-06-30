@@ -224,12 +224,12 @@ pinboard({
                 'friday': 'fri',
                 'saturday': 'sat',
                 'sunday': 'sun',
-              }
+              };
               if (dependentServices.length) {
-                let day = dependentServices[0]
+                let day = dependentServices[0];
                 days = {
-                  day: days[dependentServices[0]]
-                }
+                  day: days[dependentServices[0]],
+                };
               }
 
               let noon = new Date();
@@ -273,12 +273,12 @@ pinboard({
                 'friday': 'fri',
                 'saturday': 'sat',
                 'sunday': 'sun',
-              }
+              };
               if (dependentServices.length) {
-                let day = dependentServices[0]
+                let day = dependentServices[0];
                 days = {
-                  day: days[dependentServices[0]]
-                }
+                  day: days[dependentServices[0]],
+                };
               }
 
               let noon = new Date();
@@ -339,12 +339,12 @@ pinboard({
                 'friday': 'fri',
                 'saturday': 'sat',
                 'sunday': 'sun',
-              }
+              };
               if (dependentServices.length) {
-                let day = dependentServices[0]
+                let day = dependentServices[0];
                 days = {
-                  day: days[dependentServices[0]]
-                }
+                  day: days[dependentServices[0]],
+                };
               }
 
               let noon = new Date();
