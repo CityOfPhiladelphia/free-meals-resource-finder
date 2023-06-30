@@ -24,6 +24,7 @@ export default {
   closure: 'Temporary closure',
   checkSite: 'Check the specific site information. Hours are subject to change.',
   holidayJuneteenth: 'From 6/17/2023 - 6/19/2023 sites may be closed or have different hours for Juneteenth.',
+  holidayJuly4: 'Sites may be closed or have different hours for July 4th. Please contact the site before you go.',
   hoursVary: 'Hours and availability varies.',
   MONDAY: 'Monday',
   TUESDAY: 'Tuesday',

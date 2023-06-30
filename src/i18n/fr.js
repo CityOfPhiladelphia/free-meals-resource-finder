@@ -21,6 +21,7 @@ export default {
   closure: 'Fermeture temporaire',
   checkSite: 'Consulter les informations concernant le site donné. Les horaires peuvent changers.',
   holidayJuneteenth: 'Du 17 juin 2023 au 19 juin 2023, les sites peuvent être fermés ou avoir des horaires différents le 19 juin.',
+  holidayJuly4: 'Les sites peuvent être fermés ou avoir des horaires différents le 4 juillet. Veuillez contacter le site avant de partir.',
   hoursVary: 'Les horaires et la disponibilité varient.',
   MONDAY: 'Lundi',
   TUESDAY: 'Mardi',
