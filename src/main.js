@@ -214,7 +214,8 @@ pinboard({
             i18n_key: 'time.morning',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -255,7 +256,7 @@ pinboard({
               }
               // console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
               // let day = 1 != null;
-              return na_category_type || dayAndTime;
+              return na_category || na_category_type || dayAndTime;
             },
           },
           'afternoon': {
@@ -263,7 +264,8 @@ pinboard({
             i18n_key: 'time.afternoon',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -320,16 +322,16 @@ pinboard({
                   break;
                 }
               }
-              return na_category_type || dayAndTime;
+              return na_category || na_category_type || dayAndTime;
             },
           },
           'evening': {
             unique_key: 'time_evening',
             i18n_key: 'time.evening',
             dependentGroups: [ 'weekday' ],
-            dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = false;
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -386,7 +388,7 @@ pinboard({
                   break;
                 }
               }
-              return na_category_type || dayAndTime;
+              return na_category || na_category_type || dayAndTime;
             },
           },
         },
