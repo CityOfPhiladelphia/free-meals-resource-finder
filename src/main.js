@@ -145,64 +145,71 @@ pinboard({
             unique_key: 'weekday_monday',
             i18n_key: 'weekday.monday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_mon_start1 != null;
               // console.log('monday, item.attributes.category_type:', item.attributes.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'tuesday': {
             unique_key: 'weekday_tuesday',
             i18n_key: 'weekday.tuesday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_tues_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'wednesday': {
             unique_key: 'weekday_wednesday',
             i18n_key: 'weekday.wednesday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_wed_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'thursday': {
             unique_key: 'weekday_thursday',
             i18n_key: 'weekday.thursday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_thurs_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'friday': {
             unique_key: 'weekday_friday',
             i18n_key: 'weekday.friday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = [ 'playstreets' ].includes(item.attributes.category);
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_fri_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'saturday': {
             unique_key: 'weekday_saturday',
             i18n_key: 'weekday.saturday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = false;
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_sat_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
           'sunday': {
             unique_key: 'weekday_sunday',
             i18n_key: 'weekday.sunday',
             value: function(item) {
-              let na_category_type = item.attributes.category_type == 'Community Refrigerators';
+              let na_category = false;
+              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
               let day = item.attributes.hours_sun_start1 != null;
-              return na_category_type || day;
+              return na_category || na_category_type || day;
             },
           },
         },
