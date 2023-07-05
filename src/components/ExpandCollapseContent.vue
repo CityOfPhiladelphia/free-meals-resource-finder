@@ -56,15 +56,15 @@
             </div>
             <div class="column is-11">
               <a
-                v-if="item.attributes.Website"
+                v-if="item.attributes.website"
                 target="_blank"
-                :href="item.attributes.Website"
+                :href="item.attributes.website"
               >
                 {{ $t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name') }}
                 <font-awesome-icon icon="external-link-alt" />
               </a>
               <span
-                v-if="!item.attributes.Website"
+                v-if="!item.attributes.website"
                 v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name')"
               />
             </div>
