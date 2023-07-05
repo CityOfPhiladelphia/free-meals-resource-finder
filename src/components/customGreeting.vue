@@ -12,7 +12,11 @@
       <div class="column exclamation-details">
         <div><b>{{ $t('beforeYouGo') }}:</b></div>
         <div>{{ $t('checkSite') }}</div>
-        <div>{{ $t('holidayJuly4') }}</div>
+        <div
+          v-if="$config.holidays.current"
+        >
+          {{ $t('holidayJuly4') }}
+        </div>
       </div>
     </div>
 
