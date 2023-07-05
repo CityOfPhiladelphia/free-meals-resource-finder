@@ -189,6 +189,12 @@
         :item="item"
         :pickup-details="pickupDetails"
       />
+
+      <benephilly-and-wic-site-card
+        v-if="section === 'benephillyAndWic'"
+        :item="item"
+        :pickup-details="pickupDetails"
+      />
     </div>
   </div>
 </template>
@@ -213,6 +219,7 @@ import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
+import BenephillyAndWicSiteCard from './BenephillyAndWicSiteCard.vue';
 
 
 import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection';
@@ -236,6 +243,7 @@ export default {
     NdsSchoolCard,
     GeneralSiteCard,
     FridgeSiteCard,
+    BenephillyAndWicSiteCard,
     PrintShareSection,
     Callout,
   },

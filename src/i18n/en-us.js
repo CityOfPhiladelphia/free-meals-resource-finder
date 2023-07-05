@@ -299,27 +299,35 @@ export default {
         },
         'WIC': {
           name: 'WIC',
+          hidePickupDetailsInGreeting: true,
         },
         'Catholic Social Services Southwest': {
           name: 'Catholic Social Services Southwest',
+          hidePickupDetailsInGreeting: true,
         },
         'Esperanza': {
           name: 'Esperanza',
+          hidePickupDetailsInGreeting: true,
         },
         'Impact Services': {
           name: 'Impact Services',
+          hidePickupDetailsInGreeting: true,
         },
         'Impact Services NW': {
           name: 'Impact Services NW',
+          hidePickupDetailsInGreeting: true,
         },
         'Philadelphia FIGHT': {
           name: 'Philadelphia FIGHT',
+          hidePickupDetailsInGreeting: true,
         },
         'Office of Community Empowerment and Opportunity': {
           name: 'Office of Community Empowerment and Opportunity',
+          hidePickupDetailsInGreeting: true,
         },
         'UESF': {
           name: 'UESF',
+          hidePickupDetailsInGreeting: true,
         },
       },
     },
