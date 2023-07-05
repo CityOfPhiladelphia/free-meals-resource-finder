@@ -15,12 +15,14 @@ export default {
     studentMealSite: 'Student meal site',
     olderAdultMealSite: 'Older adult meal site',
     communityRefrigerator: 'Community refrigerator',
+    benephillyAndWic: 'BenePhilly and WIC',
   },
   'General meal site': 'General meal site',
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
   'Community refrigerator': 'Community refrigerator',
+  'BenePhilly and WIC': 'BenePhilly and WIC',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
@@ -285,6 +287,41 @@ export default {
       li21:'<a href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-833-373-5868. ',
       li22:'<a href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
       li23:'Pre-apply for WIC at <a href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
+    },
+    benephillyAndWic: {
+      header: 'BenePhilly and WIC',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: 'BenePhilly and WIC',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+        },
+        'Catholic Social Services Southwest': {
+          name: 'Catholic Social Services Southwest',
+        },
+        'Esperanza': {
+          name: 'Esperanza',
+        },
+        'Impact Services': {
+          name: 'Impact Services',
+        },
+        'Impact Services NW': {
+          name: 'Impact Services NW',
+        },
+        'Philadelphia FIGHT': {
+          name: 'Philadelphia FIGHT',
+        },
+        'Office of Community Empowerment and Opportunity': {
+          name: 'Office of Community Empowerment and Opportunity',
+        },
+        'UESF': {
+          name: 'UESF',
+        },
+      },
     },
   },
 };

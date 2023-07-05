@@ -136,6 +136,13 @@ pinboard({
               return item.attributes.category_type == "Community Refrigerators";
             },
           },
+          'benephillyAndWic': {
+            unique_key: 'categoryType_benephillyAndWic',
+            i18n_key: 'categoryType.benephillyAndWic',
+            value: function(item) {
+              return item.attributes.category_type == "BenePhilly and WIC";
+            },
+          },
         },
       },
       weekday: {
@@ -472,6 +479,7 @@ pinboard({
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
       'Community Refrigerators': '#444444',
+      'BenePhilly and WIC': 'purple',
     },
     borderColor: 'white',
     weight: 1,
@@ -692,6 +700,12 @@ pinboard({
       color: '#444444',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
+    benephillyAndWic: {
+      title: 'Benephilly and WIC',
+      titleSingluar: 'Benephilly and WIC',
+      color: 'purple',
+      subsections: [ 'WIC', 'Catholic Social Services Southwest', 'Esperanza', 'Impact Services', 'Impact Services NW', 'Philadelphia FIGHT', 'Office of Community Empowerment and Opportunity', 'UESF' ],
+    },
   },
   subsections: {
     '': 'foodSites',
@@ -723,10 +737,18 @@ pinboard({
     'Other': 'studentMealSites',
     'Bebashi': 'communityRefrigerators',
     'East Falls Community Fridge': 'communityRefrigerators',
-    'Germantown Community Fridge': 'communityRefrigerators', 
-    'South Philadelphia Community Fridge': 'communityRefrigerators', 
-    'Umoja Community Fridge': 'communityRefrigerators', 
-    'Fridges and Family': 'communityRefrigerators', 
+    'Germantown Community Fridge': 'communityRefrigerators',
+    'South Philadelphia Community Fridge': 'communityRefrigerators',
+    'Umoja Community Fridge': 'communityRefrigerators',
+    'Fridges and Family': 'communityRefrigerators',
+    'WIC': 'benephillyAndWic',
+    'Catholic Social Services Southwest': 'benephillyAndWic',
+    'Esperanza': 'benephillyAndWic',
+    'Impact Services': 'benephillyAndWic',
+    'Impact Services NW': 'benephillyAndWic',
+    'Philadelphia FIGHT': 'benephillyAndWic',
+    'Office of Community Empowerment and Opportunity': 'benephillyAndWic',
+    'UESF': 'benephillyAndWic',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
