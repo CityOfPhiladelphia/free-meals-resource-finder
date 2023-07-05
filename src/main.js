@@ -126,7 +126,8 @@ pinboard({
             unique_key: 'categoryType_olderAdultMealSite',
             i18n_key: 'categoryType.olderAdultMealSite',
             value: function(item) {
-              return item.attributes.category_type == "Older Adult Meal Site";
+              // return item.attributes.category_type == "Older Adult Meal Site";
+              return item.attributes.category_type == "Senior Meal Site";
             },
           },
           'communityRefrigerator': {
@@ -702,7 +703,7 @@ pinboard({
     },
     benephillyAndWic: {
       title: 'Benephilly and WIC',
-      titleSingluar: 'Benephilly and WIC',
+      titleSingular: 'Benephilly and WIC',
       color: 'purple',
       subsections: [ 'WIC', 'Catholic Social Services Southwest', 'Esperanza', 'Impact Services', 'Impact Services NW', 'Philadelphia FIGHT', 'Office of Community Empowerment and Opportunity', 'UESF' ],
     },

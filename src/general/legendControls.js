@@ -67,6 +67,15 @@ export default {
         'font-size': '10px',
         'background-color': '#444444',
       },
+      'BenePhilly and WIC': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '10px',
+        'background-color': 'purple',
+      },
     },
   },
 };
