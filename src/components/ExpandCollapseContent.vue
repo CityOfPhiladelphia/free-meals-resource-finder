@@ -44,6 +44,18 @@
               Philadelphia, PA {{ zipcode }}<br>
             </div>
           </div>
+
+          <div
+            v-if="item.attributes.phone_number"
+            class="columns is-mobile"
+          >
+            <div class="column is-1">
+              <font-awesome-icon icon="phone" />
+            </div>
+            <div class="column">
+              {{ item.attributes.phone_number }}
+            </div>
+          </div>
         </div>
 
         <div class="column is-6">
@@ -55,30 +67,36 @@
               <font-awesome-icon icon="hand-holding-heart" />
             </div>
             <div class="column is-11">
-              <a
+              <!-- <a
                 v-if="item.attributes.website"
                 target="_blank"
                 :href="item.attributes.website"
               >
                 {{ $t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name') }}
                 <font-awesome-icon icon="external-link-alt" />
-              </a>
+              </a> -->
               <span
-                v-if="!item.attributes.website"
                 v-html="$t('sections.' + section + '.subsections[\'' + item.attributes.category + '\'].name')"
               />
+              <!-- v-if="!item.attributes.website" -->
             </div>
           </div>
 
           <div
-            v-if="item.attributes.phone_number"
-            class="columns is-mobile"
+            v-if="item.attributes.website"
+            class="columns is-mobile website-div"
           >
             <div class="column is-1">
-              <font-awesome-icon icon="phone" />
+              <font-awesome-icon icon="globe" />
             </div>
-            <div class="column">
-              {{ item.attributes.phone_number }}
+            <div class="column is-11">
+              <a
+                target="_blank"
+                :href="makeValidUrl(item.attributes.website)"
+              >
+                {{ item.attributes.website }}
+                <font-awesome-icon icon="external-link-alt" />
+              </a>
             </div>
           </div>
         </div>
@@ -448,6 +466,19 @@ export default {
         value = item.attributes.category;
       }
       return value;
+    },
+    makeValidUrl(url) {
+      let newUrl = window.decodeURIComponent(url);
+      newUrl = newUrl
+        .trim()
+        .replace(/\s/g, '');
+      if (/^(:\/\/)/.test(newUrl)) {
+        return `http${newUrl}`;
+      }
+      if (!/^(f|ht)tps?:\/\//i.test(newUrl)) {
+        return `http://${newUrl}`;
+      }
+      return newUrl;
     },
   },
 };
