@@ -137,11 +137,11 @@ pinboard({
               return item.attributes.category_type == "Community Refrigerators";
             },
           },
-          'benephillyAndWic': {
-            unique_key: 'categoryType_benephillyAndWic',
-            i18n_key: 'categoryType.benephillyAndWic',
+          'publicBenefits': {
+            unique_key: 'categoryType_publicBenefits',
+            i18n_key: 'categoryType.publicBenefits',
             value: function(item) {
-              return item.attributes.category_type == "BenePhilly and WIC";
+              return item.attributes.category_type == "Public Benefits";
             },
           },
         },
@@ -480,7 +480,7 @@ pinboard({
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
       'Community Refrigerators': '#444444',
-      'BenePhilly and WIC': 'purple',
+      'Public Benefits': 'purple',
     },
     borderColor: 'white',
     weight: 1,
@@ -701,11 +701,12 @@ pinboard({
       color: '#444444',
       subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
     },
-    benephillyAndWic: {
-      title: 'Benephilly and WIC',
-      titleSingular: 'Benephilly and WIC',
+    publicBenefits: {
+      title: 'Public Benefits',
+      titleSingular: 'Public Benefits',
       color: 'purple',
-      subsections: [ 'WIC', 'Catholic Social Services Southwest', 'Esperanza', 'Impact Services', 'Impact Services NW', 'Philadelphia FIGHT', 'Office of Community Empowerment and Opportunity', 'UESF' ],
+      subsections: [ 'WIC', 'BenePhilly' ],
+      // subsections: [ 'WIC', 'Catholic Social Services Southwest', 'Esperanza', 'Impact Services', 'Impact Services NW', 'Philadelphia FIGHT', 'Office of Community Empowerment and Opportunity', 'UESF' ],
     },
   },
   subsections: {
@@ -742,14 +743,15 @@ pinboard({
     'South Philadelphia Community Fridge': 'communityRefrigerators',
     'Umoja Community Fridge': 'communityRefrigerators',
     'Fridges and Family': 'communityRefrigerators',
-    'WIC': 'benephillyAndWic',
-    'Catholic Social Services Southwest': 'benephillyAndWic',
-    'Esperanza': 'benephillyAndWic',
-    'Impact Services': 'benephillyAndWic',
-    'Impact Services NW': 'benephillyAndWic',
-    'Philadelphia FIGHT': 'benephillyAndWic',
-    'Office of Community Empowerment and Opportunity': 'benephillyAndWic',
-    'UESF': 'benephillyAndWic',
+    'WIC': 'publicBenefits',
+    'BenePhilly': 'publicBenefits',
+    // 'Catholic Social Services Southwest': 'publicBenefits',
+    // 'Esperanza': 'publicBenefits',
+    // 'Impact Services': 'publicBenefits',
+    // 'Impact Services NW': 'publicBenefits',
+    // 'Philadelphia FIGHT': 'publicBenefits',
+    // 'Office of Community Empowerment and Opportunity': 'publicBenefits',
+    // 'UESF': 'publicBenefits',
   },
   pickupDetailsExceptions: {
     condition: function(item) {

@@ -67,7 +67,7 @@ export default {
         'font-size': '10px',
         'background-color': '#444444',
       },
-      'BenePhilly and WIC': {
+      'Public Benefits': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',

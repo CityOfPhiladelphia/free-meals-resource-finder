@@ -4,14 +4,14 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.benephillyAndWic.eligibility')"
+      v-html="$t('sections.publicBenefits.eligibility')"
     />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
     <div
       class="table-intro"
-      v-html="$t('sections.benephillyAndWic.pickupDetails')"
+      v-html="$t('sections.publicBenefits.pickupDetails')"
     />
 
     <vue-good-table
@@ -66,7 +66,7 @@ import { VueGoodTable } from 'vue-good-table';
 // import '@phila/pinboard/src/assets/scss/expandCollapse.scss';
 
 export default {
-  name: 'BenephillyAndWicSiteCard',
+  name: 'PublicBenefitsSiteCard',
   components: {
     VueGoodTable,
   },
