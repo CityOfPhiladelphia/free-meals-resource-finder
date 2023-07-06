@@ -13,12 +13,14 @@ export default {
     studentMealSite: 'Điểm phát bữa ăn học sinh',
     olderAdultMealSite: 'Điểm phát bữa ăn cho người già',
     communityRefrigerator: 'Tủ Lạnh Cộng Đồng',
+    publicBenefits: 'Lợi ích công cộng',
   },
   'General meal site': 'Các địa điểm cung cấp suất ăn theo bữa',
   'Food site': 'Điểm phát thực phẩm',
   'Student meal site': 'Điểm phát bữa ăn học sinh',
   'Older adult meal site': 'Điểm phát bữa ăn cho người già',
   'Community refrigerator': 'Tủ Lạnh Cộng Đồng',
+  'Public Benefits': 'Lợi ích công cộng',
   eligibility: 'Điều kiện hội đủ',
   pickupDetails: 'Chi tiết',
   details: 'Thông tin chi tiết',
@@ -245,6 +247,25 @@ export default {
       li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly </a> nhận trợ giúp đăng ký các lợi ích công cộng. Gọi đến số 1-833-373-5868. ',
       li22:'<a target="_blank" href="https://www.hungercoalition.org/">Coalition Against Hunger  </a>trợ giúp đăng ký SNAP. Gọi đến số 215-430-0556 ',
       li23:'Đăng ký trước cho WIC ở <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC. </a> WIC giúp phụ nữ, trẻ sơ sinh và trẻ em dưới 5 tuổi nhận được thông tin về dinh dưỡng và thực phẩm lành mạnh.',
+    },
+    publicBenefits: {
+      header: 'Lợi ích công cộng',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: 'Lợi ích công cộng',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+          hidePickupDetailsInGreeting: true,
+        },
+        'BenePhilly': {
+          name: 'BenePhilly',
+          hidePickupDetailsInGreeting: true,
+        },
+      },
     },
   },
 };

@@ -15,14 +15,14 @@ export default {
     studentMealSite: 'Student meal site',
     olderAdultMealSite: 'Older adult meal site',
     communityRefrigerator: 'Community refrigerator',
-    publicBenefits: 'Public Benefits',
+    publicBenefits: 'Public benefits',
   },
   'General meal site': 'General meal site',
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
   'Community refrigerator': 'Community refrigerator',
-  'Public Benefits': 'Public Benefits',
+  'Public Benefits': 'Public benefits',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
@@ -294,7 +294,7 @@ export default {
       pickupDetails: '',
       subsections: {
         'compiled': {
-          name: 'Public Benefits',
+          name: 'Public benefits',
           pickupDetails: '',
         },
         'WIC': {
@@ -305,34 +305,6 @@ export default {
           name: 'BenePhilly',
           hidePickupDetailsInGreeting: true,
         },
-        // 'Catholic Social Services Southwest': {
-        //   name: 'Catholic Social Services Southwest',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'Esperanza': {
-        //   name: 'Esperanza',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'Impact Services': {
-        //   name: 'Impact Services',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'Impact Services NW': {
-        //   name: 'Impact Services NW',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'Philadelphia FIGHT': {
-        //   name: 'Philadelphia FIGHT',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'Office of Community Empowerment and Opportunity': {
-        //   name: 'Office of Community Empowerment and Opportunity',
-        //   hidePickupDetailsInGreeting: true,
-        // },
-        // 'UESF': {
-        //   name: 'UESF',
-        //   hidePickupDetailsInGreeting: true,
-        // },
       },
     },
   },

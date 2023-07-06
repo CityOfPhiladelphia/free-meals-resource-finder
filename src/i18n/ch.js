@@ -13,12 +13,14 @@ export default {
     studentMealSite: '学生用餐场所',
     olderAdultMealSite: '年长者用餐场所',
     communityRefrigerator: '社区冰箱',
+    publicBenefits: '公共福利',
   },
   'General meal site': '常规餐食供应场所',
   'Food site': '食品地点',
   'Student meal site': '学生用餐场所',
   'Older adult meal site': '年长者用餐场所',
   'Community refrigerator': '社区冰箱',
+  'Public Benefits': '公共福利',
   eligibility: '合格标准',
   pickupDetails: '取餐详情及时间',
   details: '细节',
@@ -245,6 +247,25 @@ export default {
       li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">费城福利 (BenePhilly) </a>  可协助申请公共福利。 欢迎致电 1-833-373-5868。 ',
       li22:'<a target="_blank" href="https://www.hungercoalition.org/">反饥饿联盟 (Coalition Against Hunger) </a> 可协助申请 SNAP。 欢迎致电 215-430-0556。  ',
       li23:'在 <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC </a>提前申请 WIC。WIC 可帮助妇女、婴儿和 5 岁以下儿童获得健康食品和营养信息。 ',
+    },
+    publicBenefits: {
+      header: '公共福利',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: '公共福利',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+          hidePickupDetailsInGreeting: true,
+        },
+        'BenePhilly': {
+          name: 'BenePhilly',
+          hidePickupDetailsInGreeting: true,
+        },
+      },
     },
   },
 };

@@ -13,12 +13,14 @@ export default {
     studentMealSite: 'Lugar de comidas para estudiantes',
     olderAdultMealSite: 'Lugar de comidas para adultos mayores',
     communityRefrigerator: 'Refrigeradores comunitarios',
+    publicBenefits: 'Prestaciones públicas',
   },
   'General meal site': 'Lugares de comidas generales',
   'Food site': 'Lugar de alimentos',
   'Student meal site': 'Lugar de comidas para estudiantes',
   'Older adult meal site': 'Lugar de comidas para adultos mayores',
   'Community refrigerator': 'Refrigeradores comunitarios',
+  'Public Benefits': 'Prestaciones públicas',
   eligibility: 'Elegibilidad',
   pickupDetails: 'Detalles y horarios de retiro',
   details: 'Detalles',
@@ -242,6 +244,25 @@ export default {
       li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> ayuda a solicitar beneficios públicos. Llame al 1-833-373-5868.  ',
       li22:'<a target="_blank" href="https://www.hungercoalition.org/">La Coalición contra el Hambre</a> ayuda a solicitar el SNAP. Llame al 215-430-0556 ',
       li23:'Solicite el WIC por adelantado en <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> El programa WIC ayuda a mujeres, infantes y niños menores de 5 años a obtener alimentos saludables e información sobre nutrición.  ',
+    },
+    publicBenefits: {
+      header: 'Prestaciones públicas',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: 'Prestaciones públicas',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+          hidePickupDetailsInGreeting: true,
+        },
+        'BenePhilly': {
+          name: 'BenePhilly',
+          hidePickupDetailsInGreeting: true,
+        },
+      },
     },
   },
 };

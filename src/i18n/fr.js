@@ -13,12 +13,14 @@ export default {
     studentMealSite: 'Site de distribution de repas pour élèves',
     olderAdultMealSite: 'Site de distribution de repas pour personnes âgées',
     communityRefrigerator: 'Réfrigérateurs communautaires',
+    publicBenefits: 'Avantages pour le public',
   },
   'General meal site': 'Sites de restauration générale',
   'Food site': 'Sites de distribution alimentaire',
   'Student meal site': 'Site de distribution de repas pour élèves',
   'Older adult meal site': 'Site de distribution de repas pour personnes âgées',
   'Community refrigerator': 'Réfrigérateurs communautaires',
+  'Public Benefits': 'Avantages pour le public',
   eligibility: 'Admissibilité au programme',
   pickupDetails: 'Détails de collecte',
   details: 'Détails',
@@ -256,6 +258,25 @@ export default {
       li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> peut vous aider à faire une demande de prestations publiques. Appelez le 1-833-373-5868.',
       li22:'<a target="_blank" href="https://www.hungercoalition.org/">Coalition Against Hunger</a> peut vous aider à faire une demande de prestations SNAP (programme d\'aide alimentaire). Appelez le 215-430-0556.',
       li23:'Faites une demande préliminaire d\'aide alimentaire WIC (pour femmes, nourrissons et enfants) sur le site <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> Le programme WIC permet aux femmes, aux nourrissons et aux enfants de moins de 5 ans d\'accéder à une nourriture saine et à des informations nutritionnelles.',
+    },
+    publicBenefits: {
+      header: 'Avantages pour le public',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: 'Avantages pour le public',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+          hidePickupDetailsInGreeting: true,
+        },
+        'BenePhilly': {
+          name: 'BenePhilly',
+          hidePickupDetailsInGreeting: true,
+        },
+      },
     },
   },
 };

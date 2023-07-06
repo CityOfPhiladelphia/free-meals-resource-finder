@@ -13,12 +13,14 @@ export default {
     studentMealSite: 'Пункт выдачи питания для учащихся',
     olderAdultMealSite: 'Пункт выдачи питания для пожилых людей',
     communityRefrigerator: 'Общественные холодильники',
+    publicBenefits: 'Государственные пособия',
   },
   'General meal site': 'Пункты выдачи еды',
   'Food site': 'Пункт выдачи питания',
   'Student meal site': 'Пункт выдачи питания для учащихся',
   'Older adult meal site': 'Пункт выдачи питания для пожилых людей',
   'Community refrigerator': 'Общественные холодильники',
+  'Public Benefits': 'Государственные пособия',
   eligibility: 'Критерии получения помощи',
   pickupDetails: 'Информация о получении и время получения',
   details: 'Подробности',
@@ -248,6 +250,25 @@ export default {
       li21:'Программа  <a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly: </a> подача заявлений на получение социальных пособий. Чтобы связаться со специалистом программы, позвоните по номеру 1-833-373-5868.',
       li22:'Организация <a target="_blank" href="https://www.hungercoalition.org/">Coalition Against Hunger:</a>  подача заявления на пособие по программе льготной покупки продуктов SNAP. Чтобы связаться со специалистом, позвоните по номеру 215-430-0556.',
       li23:'Предварительная подача заявления на льготы по программе WIC в штате Пенсильвания.В рамках программы женщинам, младенцам и детям (до 5 лет) предоставляется здоровое питание и консультации по вопросам питания. <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a>  ',
+    },
+    publicBenefits: {
+      header: 'Государственные пособия',
+      eligibility: '',
+      pickupDetails: '',
+      subsections: {
+        'compiled': {
+          name: 'Государственные пособия',
+          pickupDetails: '',
+        },
+        'WIC': {
+          name: 'WIC',
+          hidePickupDetailsInGreeting: true,
+        },
+        'BenePhilly': {
+          name: 'BenePhilly',
+          hidePickupDetailsInGreeting: true,
+        },
+      },
     },
   },
 };
