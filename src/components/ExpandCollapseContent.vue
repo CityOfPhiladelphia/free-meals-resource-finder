@@ -119,16 +119,17 @@
       </div>
 
       <senior-meal-site-card
-        v-if="section === 'olderAdultMealSites' && subsection === 'PCA'"
+        v-if="section === 'olderAdultMealSites'"
         :item="item"
         :pickup-details="pickupDetails"
       />
+      <!-- v-if="section === 'olderAdultMealSites' && subsection === 'PCA'" -->
 
-      <senior-meal-site-ppr-card
+      <!-- <senior-meal-site-ppr-card
         v-if="section === 'olderAdultMealSites' && subsection === 'PPR_Senior'"
         :item="item"
         :pickup-details="pickupDetails"
-      />
+      /> -->
 
       <food-site-card
         v-if="section === 'foodSites'"
@@ -225,7 +226,7 @@ import transforms from '../general/transforms.js';
 import { format } from 'date-fns';
 
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
-import SeniorMealSitePprCard from './SeniorMealSitePprCard.vue';
+// import SeniorMealSitePprCard from './SeniorMealSitePprCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
 import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
@@ -249,7 +250,7 @@ export default {
   name: 'ExpandCollapseContent',
   components: {
     SeniorMealSiteCard,
-    SeniorMealSitePprCard,
+    // SeniorMealSitePprCard,
     FoodSiteCard,
     CharterSchoolCard,
     PprSchoolCard,
