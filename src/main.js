@@ -238,11 +238,11 @@ pinboard({
       },
       text: "feedback",
     },
-    {
-      type: "native",
-      href: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
-      text: "viewAccessible",
-    },
+    // {
+    //   type: "native",
+    //   href: 'https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/updates/how-you-can-help/covid-19-food-distribution-sites/#/',
+    //   text: "viewAccessible",
+    // },
   ],
   // footer: {
   //   'HowToUse': false,
