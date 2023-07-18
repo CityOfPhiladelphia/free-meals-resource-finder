@@ -15,14 +15,14 @@ export default {
     studentMealSite: 'Student meal site',
     olderAdultMealSite: 'Older adult meal site',
     communityRefrigerator: 'Community refrigerator',
-    publicBenefits: 'Public benefits',
+    publicBenefits: 'Food assistance and benefits',
   },
   'General meal site': 'General meal site',
   'Food site': 'Food site',
   'Student meal site': 'Student meal site',
   'Older adult meal site': 'Older adult meal site',
   'Community refrigerator': 'Community refrigerator',
-  'Public Benefits': 'Public benefits',
+  'Public Benefits': 'Food assistance and benefits',
   eligibility: 'Eligibility',
   betaTag: 'Beta',
   pickupDetails: 'Pickup details',
@@ -80,6 +80,10 @@ export default {
         },
         'Small Things Philly': {
           name: 'Small Things Philly',
+          hidePickupDetailsInGreeting: true,
+        },
+        'Community Refrigerators': {
+          name: 'Community Refrigerators',
           hidePickupDetailsInGreeting: true,
         },
       },
@@ -192,6 +196,7 @@ export default {
             Adults 60 and over are eligible at sites supported by the Philadelphia\
             Corporation for Aging (PCA). \
             <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+            Adults under 60 who are married to older adults over 60 are eligible for PCA funded meal program.\
           ',
           pickupDetails: "\
             Older adults can reserve 5 to 7 meals per week.<br>\
@@ -289,21 +294,40 @@ export default {
       li23:'Pre-apply for WIC at <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
     },
     publicBenefits: {
-      header: 'Public Benefits',
+      header: 'Food assistance and benefits',
       eligibility: '',
       pickupDetails: '',
       subsections: {
         'compiled': {
-          name: 'Public benefits',
+          name: 'Food assistance and benefits',
           pickupDetails: '',
         },
         'WIC': {
           name: 'WIC',
-          hidePickupDetailsInGreeting: true,
+          // hidePickupDetailsInGreeting: true,
+          eligibility: '\
+            WIC serves pregnant people, people who have recently had a baby, and children\
+            under five years old, including foster children. To receive WIC, you must meet\
+            <a href="https://pawic.com/IncomeGuidelines.aspx" target="_blank">the income guidelines</a>.\
+          ',
+          pickupDetails: "\
+            WIC provides nutrition services, breastfeeding support, and referrals for health\
+            care and social services. Through WIC, you can also receive benefits to help you\
+            purchase healthy foods. To get started, call the WIC office that you plan to visit.\
+          ",
         },
         'BenePhilly': {
           name: 'BenePhilly',
-          hidePickupDetailsInGreeting: true,
+          // hidePickupDetailsInGreeting: true,
+          eligibility: '\
+            Any resident is eligible to visit a BenePhilly center.\
+          ',
+          pickupDetails: "\
+            BenePhilly centers offer free one-on-one support to help residents enroll in public\
+            benefits. These programs can help you pay for groceries, medication, health insurance,\
+            and utilities. Days and hours vary by site.<br><br>Before you go, call the BenePhilly\
+            center that you plan to visit.\
+          ",
         },
       },
     },

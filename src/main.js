@@ -130,13 +130,6 @@ pinboard({
               return item.attributes.category_type == "Senior Meal Site";
             },
           },
-          'communityRefrigerator': {
-            unique_key: 'categoryType_communityRefrigerator',
-            i18n_key: 'categoryType.communityRefrigerator',
-            value: function(item) {
-              return item.attributes.category_type == "Community Refrigerators";
-            },
-          },
           'publicBenefits': {
             unique_key: 'categoryType_publicBenefits',
             i18n_key: 'categoryType.publicBenefits',
@@ -153,8 +146,8 @@ pinboard({
             unique_key: 'weekday_monday',
             i18n_key: 'weekday.monday',
             value: function(item) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_mon_start1 != null;
               // console.log('monday, item.attributes.category_type:', item.attributes.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
               return na_category || na_category_type || day;
@@ -164,8 +157,8 @@ pinboard({
             unique_key: 'weekday_tuesday',
             i18n_key: 'weekday.tuesday',
             value: function(item) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_tues_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -174,8 +167,8 @@ pinboard({
             unique_key: 'weekday_wednesday',
             i18n_key: 'weekday.wednesday',
             value: function(item) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_wed_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -184,8 +177,8 @@ pinboard({
             unique_key: 'weekday_thursday',
             i18n_key: 'weekday.thursday',
             value: function(item) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_thurs_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -194,8 +187,8 @@ pinboard({
             unique_key: 'weekday_friday',
             i18n_key: 'weekday.friday',
             value: function(item) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_fri_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -204,8 +197,9 @@ pinboard({
             unique_key: 'weekday_saturday',
             i18n_key: 'weekday.saturday',
             value: function(item) {
-              let na_category = false;
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_sat_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -214,8 +208,9 @@ pinboard({
             unique_key: 'weekday_sunday',
             i18n_key: 'weekday.sunday',
             value: function(item) {
-              let na_category = false;
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let day = item.attributes.hours_sun_start1 != null;
               return na_category || na_category_type || day;
             },
@@ -229,8 +224,8 @@ pinboard({
             i18n_key: 'time.morning',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -279,8 +274,8 @@ pinboard({
             i18n_key: 'time.afternoon',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category = [ 'playstreets' ].includes(item.attributes.category);
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              let na_category = [ 'playstreets', 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -345,8 +340,9 @@ pinboard({
             i18n_key: 'time.evening',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category = false;
-              let na_category_type = [ 'Community Refrigerators' ].includes(item.attributes.category_type);
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
               let dayAndTime =false;
               let days = {
                 'monday': 'mon',
@@ -479,7 +475,7 @@ pinboard({
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
-      'Community Refrigerators': '#444444',
+      // 'Community Refrigerators': '#444444',
       'Public Benefits': 'purple',
     },
     borderColor: 'white',
@@ -672,7 +668,13 @@ pinboard({
       title: 'Food sites',
       titleSingular: 'Food site',
       color: '#0F4D90',
-      subsections: [ ],
+      subsections: [ 'Community Refrigerators' ],
+    },
+    generalMealSites: {
+      title: 'General meal sites',
+      titleSingular: 'General meal site',
+      color: '#506D0A',
+      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
     },
     studentMealSites: {
       title: 'Student meal sites',
@@ -689,18 +691,12 @@ pinboard({
       color: '#a86518',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
-    generalMealSites: {
-      title: 'General meal sites',
-      titleSingular: 'General meal site',
-      color: '#506D0A',
-      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
-    },
-    communityRefrigerators: {
-      title: 'Community refrigerators',
-      titleSingular: 'Community refrigerator',
-      color: '#444444',
-      subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
-    },
+    // communityRefrigerators: {
+    //   title: 'Community refrigerators',
+    //   titleSingular: 'Community refrigerator',
+    //   color: '#444444',
+    //   subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
+    // },
     publicBenefits: {
       title: 'Public Benefits',
       titleSingular: 'Public Benefits',
@@ -737,12 +733,7 @@ pinboard({
     'Small Things Philly': 'foodSites',
     'Office of Homeless Services': 'generalMealSites',
     'Other': 'studentMealSites',
-    'Bebashi': 'communityRefrigerators',
-    'East Falls Community Fridge': 'communityRefrigerators',
-    'Germantown Community Fridge': 'communityRefrigerators',
-    'South Philadelphia Community Fridge': 'communityRefrigerators',
-    'Umoja Community Fridge': 'communityRefrigerators',
-    'Fridges and Family': 'communityRefrigerators',
+    'Community Refrigerators': 'foodSites',
     'WIC': 'publicBenefits',
     'BenePhilly': 'publicBenefits',
     // 'Catholic Social Services Southwest': 'publicBenefits',

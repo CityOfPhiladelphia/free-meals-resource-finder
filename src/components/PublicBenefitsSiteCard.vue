@@ -4,14 +4,14 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.publicBenefits.eligibility')"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
     />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
     <div
       class="table-intro"
-      v-html="$t('sections.publicBenefits.pickupDetails')"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
     />
 
     <vue-good-table
@@ -87,6 +87,15 @@ export default {
   computed: {
     i18nLocale() {
       return this.$i18n.locale;
+    },
+    subsections() {
+      return this.$config.subsections;
+    },
+    section() {
+      return this.subsections[this.$props.item.attributes['category']];
+    },
+    subsection() {
+      return this.$props.item.attributes.category;
     },
   },
 };

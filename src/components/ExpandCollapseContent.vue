@@ -132,7 +132,7 @@
       /> -->
 
       <food-site-card
-        v-if="section === 'foodSites'"
+        v-if="section === 'foodSites' && subsection !== 'Community Refrigerators'"
         :item="item"
         :pickup-details="pickupDetails"
       />
@@ -204,7 +204,7 @@
       />
 
       <fridge-site-card
-        v-if="section === 'communityRefrigerators'"
+        v-if="section === 'foodSites' && subsection === 'Community Refrigerators'"
         :item="item"
         :pickup-details="pickupDetails"
       />
@@ -239,7 +239,6 @@ import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
-
 
 import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection';
 import {
