@@ -332,4 +332,10 @@ export default {
       },
     },
   },
+  time: {
+    category: 'Time of day',
+    morning: 'Morning (before noon)',
+    afternoon: 'Afternoon (noon - 5:00 p.m.)',
+    evening: 'Evening (after 5:00 p.m.)',
+  },
 };

@@ -687,22 +687,14 @@ pinboard({
     olderAdultMealSites: {
       title: 'Older adult meal sites',
       titleSingular: 'Older adult meal site',
-      // color: '#D67D00',
       color: '#a86518',
       subsections: [ 'PCA', 'PPR_Senior' ],
     },
-    // communityRefrigerators: {
-    //   title: 'Community refrigerators',
-    //   titleSingular: 'Community refrigerator',
-    //   color: '#444444',
-    //   subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
-    // },
     publicBenefits: {
       title: 'Public Benefits',
       titleSingular: 'Public Benefits',
       color: 'purple',
       subsections: [ 'WIC', 'BenePhilly' ],
-      // subsections: [ 'WIC', 'Catholic Social Services Southwest', 'Esperanza', 'Impact Services', 'Impact Services NW', 'Philadelphia FIGHT', 'Office of Community Empowerment and Opportunity', 'UESF' ],
     },
   },
   subsections: {
@@ -736,13 +728,6 @@ pinboard({
     'Community Refrigerators': 'foodSites',
     'WIC': 'publicBenefits',
     'BenePhilly': 'publicBenefits',
-    // 'Catholic Social Services Southwest': 'publicBenefits',
-    // 'Esperanza': 'publicBenefits',
-    // 'Impact Services': 'publicBenefits',
-    // 'Impact Services NW': 'publicBenefits',
-    // 'Philadelphia FIGHT': 'publicBenefits',
-    // 'Office of Community Empowerment and Opportunity': 'publicBenefits',
-    // 'UESF': 'publicBenefits',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
