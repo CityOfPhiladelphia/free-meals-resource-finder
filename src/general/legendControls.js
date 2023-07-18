@@ -21,7 +21,7 @@ export default {
     },
     data: {
       // TODO give these an id instead of using the label as a key
-      'Food Sites': {
+      'Food sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -30,7 +30,7 @@ export default {
         'font-size': '10px',
         'background-color': '#0F4D90',
       },
-      'General Meal Sites': {
+      'General meal sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -39,7 +39,7 @@ export default {
         'font-size': '10px',
         'background-color': '#506D0A',
       },
-      'Older Adult Meal Sites': {
+      'Older adult meal sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -49,7 +49,7 @@ export default {
         'background-color': '#a86518',
         // 'background-color': '#D67D00',
       },
-      'Student Meal Sites': {
+      'Student meal sites': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
@@ -67,7 +67,7 @@ export default {
       //   'font-size': '10px',
       //   'background-color': '#444444',
       // },
-      'Public Benefits': {
+      'Food assistance and benefits': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
