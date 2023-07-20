@@ -9,6 +9,11 @@
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
+    <div
+      class="table-intro"
+      v-html="$t('sections.generalMealSites.pickupDetails.p1')"
+    />
+
     <vue-good-table
       :columns="pickupDetails.columns"
       :rows="pickupDetails.rows"

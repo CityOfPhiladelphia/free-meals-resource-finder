@@ -48,8 +48,9 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <div v-html="$t('sections.foodSites.pickupDetails.p1')" />
-        <div v-html="$t('sections.foodSites.pickupDetails.p2')" />
+        <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&nbsp;
+        <span v-html="$t('sections.foodSites.pickupDetails.p2')" />
+        <div v-html="$t('sections.foodSites.pickupDetails.p3')" />
         <ul>
           <li v-html="$t('sections.foodSites.pickupDetails.li1')" />
           <li v-html="$t('sections.foodSites.pickupDetails.li2')" />
@@ -84,7 +85,8 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <div v-html="$t('sections.generalMealSites.pickupDetails')" />
+        <span v-html="$t('sections.generalMealSites.pickupDetails.p1')" />&nbsp;
+        <span v-html="$t('sections.generalMealSites.pickupDetails.p2')" />
       </div>
     </div>
 

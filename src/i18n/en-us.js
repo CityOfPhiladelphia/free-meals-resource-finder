@@ -61,8 +61,9 @@ export default {
       header: 'Food sites',
       eligibility: 'Any resident is eligible. No ID or proof of income is required.',
       pickupDetails: {
-        p1: 'Food sites offer supplemental food and groceries. Days and times vary by site.',
-        p2: 'Depending on the location, residents may receive:',
+        p1: 'Food sites offer supplemental food and groceries.',
+        p2: 'Days and times vary by site.',
+        p3: 'Depending on the location, residents may receive:',
         li1: 'Prepacked boxes of food.',
         li2: 'Their choice of food from a pantry.',
         li3: 'Their choice of food from a community refrigerator.',
@@ -179,17 +180,17 @@ export default {
           eligibility: 'All children and youth are eligible. No ID is required.',
         },
       },
-      custom: {
-        info: '\
-        To find more free summer meal sites for children and youth: <br>\
-        <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
-        <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
-        <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
-        ',
-        // info: 'Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students.<br>\
-        // Also, Out of School Time programs serve snacks and meals to youth. \
-        // Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.',
-      },
+      // custom: {
+      //   info: '\
+      //   To find more free summer meal sites for children and youth: <br>\
+      //   <ul><li>Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.</li>   \
+      //   <li>Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a> to receive a list of nearby meal sites.</li>\
+      //   <li>Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a> to find free summer meals for youth.</li></ul>\
+      //   ',
+      //   // info: 'Visit the <a href="https://www.philasd.org/foodservices/">School District of Philadelphia\'s Food Services page</a> for information about in-school meal service for students.<br>\
+      //   // Also, Out of School Time programs serve snacks and meals to youth. \
+      //   // Visit the <a href="https://www.phila.gov/ost/program-locator/#/">OST Program Locator</a> to find a program and learn more.',
+      // },
     },
     olderAdultMealSites: {
       header: 'Older adult meal sites',
@@ -246,7 +247,10 @@ export default {
     generalMealSites: {
       header:  'General meal sites',
       eligibility: 'Any resident is eligible. No ID or proof of income is required.',
-      pickupDetails: 'General meal sites offer ready-to-eat meals. Days and times vary by site.',
+      pickupDetails: {
+        p1: 'General meal sites offer ready-to-eat meals.',
+        p2: 'Days and times vary by site.',
+      },
       subsections: {
         'compiled': {
           name: 'General sites',
