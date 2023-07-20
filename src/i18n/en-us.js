@@ -203,37 +203,46 @@ export default {
       // ',
       eligibility: {
         p1: 'Age of eligibility varies by site.',
-        li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
-        li2: 'Adults 55 and over are eligible at Parks & Recreation older adult centers.',
+        // li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+        // li2: 'Adults 55 and over are eligible at Parks & Recreation older adult centers.',
       },
       pickupDetails: {
-        p1: 'Older adult meal sites offer ready-to-eat meals. Days and times vary by site.',
-        p2: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
+        p1: 'Older adult meal sites offer ready-to-eat meals.',
+        p2: 'Days and times vary by site.',
+        p3: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
       },
       subsections: {
         'PCA': {
           name: 'PCA-supported sites',
-          eligibility: '\
-            Adults 60 and over are eligible at sites supported by the Philadelphia\
-            Corporation for Aging (PCA). \
-            <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
-            Adults under 60 who are married to older adults over 60 are eligible for PCA funded meal program.\
-          ',
-          pickupDetails: "\
-            Older adults can reserve 5 to 7 meals per week.<br>\
-            Pickup dates and times vary by site.\
-            For more information and to reserve meals, contact a specific site.\
-            An older adult's family may pick up meals, with prior arrangement.\
-            To get help in languages other than English, call the PCA helpline at\
-            <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
-          ",
+          eligibility: {
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            p2: "To get help in languages other than English, call the PCA helpline at\
+            <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          // eligibility: '\
+          //   Adults 60 and over are eligible at sites supported by the Philadelphia\
+          //   Corporation for Aging (PCA). \
+          //   <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+          //   Adults under 60 who are married to older adults over 60 are eligible for PCA funded meal program.\
+          // ',
+          // pickupDetails: "\
+          //   Older adults can reserve 5 to 7 meals per week.<br>\
+          //   Pickup dates and times vary by site.\
+          //   For more information and to reserve meals, contact a specific site.\
+          //   An older adult's family may pick up meals, with prior arrangement.\
+          //   To get help in languages other than English, call the PCA helpline at\
+          //   <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a></b>.\
+          // ",
         },
         'PPR_Senior': {
           name: 'Philadelphia Parks & Recreation older adult centers',
-          eligibility: '\
-            Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
-            No reservation necessary.\
-          ',
+          eligibility: {
+            li1: 'Adults 55 and over are eligible at Parks & Recreation older adult centers.',
+          },
+          // eligibility: '\
+          //   Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
+          //   No reservation necessary.\
+          // ',
           pickupDetails: '\
             Older adults can pick up 5 meals per week at most sites.\
           ',

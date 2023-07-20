@@ -106,8 +106,8 @@
       <div class="column small-cell-pad">
         <div v-html="$t('sections.olderAdultMealSites.eligibility.p1')" />
         <ul>
-          <li v-html="$t('sections.olderAdultMealSites.eligibility.li1')" />
-          <li v-html="$t('sections.olderAdultMealSites.eligibility.li2')" />
+          <li v-html="$t('sections.olderAdultMealSites.subsections.PCA.eligibility.li1')" />
+          <li v-html="$t('sections.olderAdultMealSites.subsections.PPR_Senior.eligibility.li1')" />
         </ul>
       </div>
     </div>
@@ -119,8 +119,9 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />
-        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p2')" />
+        <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&nbsp;
+        <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p2')" />
+        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p3')" />
       </div>
     </div>
 
