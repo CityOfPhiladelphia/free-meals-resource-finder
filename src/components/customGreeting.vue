@@ -10,8 +10,7 @@
         />
       </div>
       <div class="column exclamation-details">
-        <div><b>{{ $t('beforeYouGo') }}:</b></div>
-        <div>{{ $t('checkSite') }}</div>
+        <div>{{ $t('checkSite_02') }}</div>
       </div>
     </div>
 
@@ -23,36 +22,199 @@
       />
     </div>
 
-    <!-- sections that rely on data -->
-    <greeting-section
-      v-for="(section, key) in sections"
-      :key="key"
-      :header="key"
-      :section="$config.sections[key]"
-      :color="$config.sections[key].color"
-    />
+    <!-- foodSites -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': $config.sections.foodSites.color }"
+    >
+      <b>{{ $t('sections.foodSites.header') }}</b>
+    </div>
+    <!-- eligibility -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div
+        class="column small-cell-pad"
+        v-html="$t('sections.foodSites.eligibility')"
+      />
+    </div>
+    <hr class="no-margin">
+    <!-- pickup details -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('details')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.foodSites.pickupDetails.p1')" />
+        <div v-html="$t('sections.foodSites.pickupDetails.p2')" />
+        <ul>
+          <li v-html="$t('sections.foodSites.pickupDetails.li1')" />
+          <li v-html="$t('sections.foodSites.pickupDetails.li2')" />
+          <li v-html="$t('sections.foodSites.pickupDetails.li3')" />
+        </ul>
+      </div>
+    </div>
 
-    <!-- food pantries section -->
+    <!-- generalMealSites -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': $config.sections.generalMealSites.color }"
+    >
+      <b>{{ $t('sections.generalMealSites.header') }}</b>
+    </div>
+    <!-- eligibility -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div
+        class="column small-cell-pad"
+        v-html="$t('sections.generalMealSites.eligibility')"
+      />
+    </div>
+    <hr class="no-margin">
+    <!-- pickup details -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('details')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.generalMealSites.pickupDetails')" />
+      </div>
+    </div>
+
+    <!-- olderAdultMealSites -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': $config.sections.olderAdultMealSites.color }"
+    >
+      <b>{{ $t('sections.olderAdultMealSites.header') }}</b>
+    </div>
+    <!-- eligibility -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.olderAdultMealSites.eligibility.p1')" />
+        <ul>
+          <li v-html="$t('sections.olderAdultMealSites.eligibility.li1')" />
+          <li v-html="$t('sections.olderAdultMealSites.eligibility.li2')" />
+        </ul>
+      </div>
+    </div>
+    <hr class="no-margin">
+    <!-- pickup details -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('details')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />
+        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p2')" />
+      </div>
+    </div>
+
+    <!-- studentMealSites -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': $config.sections.studentMealSites.color }"
+    >
+      <b>{{ $t('sections.studentMealSites.header') }}</b>
+    </div>
+    <!-- eligibility -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.studentMealSites.eligibility')" />
+        <!-- <ul>
+          <li v-html="$t('sections.studentMealSites.eligibility.li1')"></li>
+          <li v-html="$t('sections.studentMealSites.eligibility.li2')"></li>
+        </ul> -->
+      </div>
+    </div>
+    <hr class="no-margin">
+    <!-- pickup details -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('details')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.studentMealSites.pickupDetails')" />
+      </div>
+    </div>
+    <hr class="no-margin">
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('otherResources')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.studentMealSites.otherResources.p1')" />
+        <ul>
+          <li v-html="$t('sections.studentMealSites.otherResources.li1')" />
+          <li v-html="$t('sections.studentMealSites.otherResources.li2')" />
+          <li v-html="$t('sections.studentMealSites.otherResources.li3')" />
+        </ul>
+      </div>
+    </div>
+
+    <!-- publicBenefits -->
+    <div
+      class="section-header"
+      :style="{ 'background-color': $config.sections.publicBenefits.color }"
+    >
+      <b>{{ $t('sections.publicBenefits.header') }}</b>
+    </div>
+    <!-- eligibility -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('eligibility')"
+      />
+      <div
+        class="column small-cell-pad"
+        v-html="$t('sections.publicBenefits.eligibility')"
+      />
+    </div>
+    <hr class="no-margin">
+    <!-- pickup details -->
+    <div class="columns big-cell-pad">
+      <div
+        class="column is-3 small-cell-pad"
+        v-html="$t('details')"
+      />
+      <div class="column small-cell-pad">
+        <div v-html="$t('sections.publicBenefits.pickupDetails.p1')" />
+        <ul>
+          <li v-html="$t('sections.publicBenefits.pickupDetails.li1')" />
+          <li v-html="$t('sections.publicBenefits.pickupDetails.li2')" />
+          <li v-html="$t('sections.publicBenefits.pickupDetails.li3')" />
+        </ul>
+        <div v-html="$t('sections.publicBenefits.pickupDetails.p2')" />
+      </div>
+    </div>
+
+    <!-- more resources section -->
     <div
       class="section-header"
       :style="{ 'background-color': '#F0F0F0', 'color': 'black' }"
     >
-      <b>{{ $t('sections.foodPantries.header') }}</b>
+      <b>{{ $t('sections.moreResources.header') }}</b>
     </div>
     <div class="custom-section">
-      {{ $t('sections.foodPantries.intro') }}
-      <ul class="custom-ul">
-        <li v-html="$t('sections.foodPantries.li1')" />
-        <li v-html="$t('sections.foodPantries.li2')" />
-        <li v-html="$t('sections.foodPantries.li3')" />
-        <li v-html="$t('sections.foodPantries.li4')" />
-      </ul>
-      {{ $t('sections.foodPantries.h2') }}
-      <ul class="custom-ul">
-        <li v-html="$t('sections.foodPantries.li21')" />
-        <li v-html="$t('sections.foodPantries.li22')" />
-        <li v-html="$t('sections.foodPantries.li23')" />
-      </ul>
+      <div v-html="$t('sections.moreResources.p1')" />
     </div>
   </div>
 </template>
@@ -60,12 +222,12 @@
 <script>
 
 import { parse, format } from 'date-fns';
-import greetingSection from './greetingSection.vue';
+// import greetingSection from './greetingSection.vue';
 
 export default {
   name: 'CustomGreeting',
   components: {
-    greetingSection,
+    // greetingSection,
   },
   props: {
     'message': {
@@ -174,6 +336,34 @@ export default {
 
 @import "../../node_modules/@phila/pinboard/src/assets/scss/customGreeting.scss";
 
+.section-header {
+    background-color: #0f4d90;
+    font-size: 16px;
+    color: white;
+    padding: 4px;
+    padding-left: 8px;
+  }
+
+  .underlined {
+    text-decoration: underline;
+  }
+
+  .no-margin {
+    margin: 0px;
+  }
+
+  .big-cell-pad {
+    font-size: 14px;
+    padding: 4px;
+    margin: 0px !important;
+  }
+
+  .small-cell-pad {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 0px;
+  }
 .custom-section {
   font-size: 14px;
   margin-left: 8px;

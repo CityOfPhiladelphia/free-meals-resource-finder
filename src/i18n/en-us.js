@@ -60,7 +60,13 @@ export default {
     foodSites: {
       header: 'Food sites',
       eligibility: 'Any resident is eligible. No ID or proof of income is required.',
-      pickupDetails: 'Residents can up pick supplemental food for their household.',
+      pickupDetails: {
+        p1: 'Food sites offer supplemental food and groceries. Days and times vary by site.',
+        p2: 'Depending on the location, residents may receive:',
+        li1: 'Prepacked boxes of food.',
+        li2: 'Their choice of food from a pantry.',
+        li3: 'Their choice of food from a community refrigerator.',
+      },
       subsections: {
         'PHILABUNDANCE': {
           name: 'Philabundance',
@@ -90,9 +96,15 @@ export default {
     },
     studentMealSites: {
       header: 'Student meal sites',
-      eligibility: 'All children and youth are eligible. No ID is required.',
       hidePickupDetailsInGreeting: false,
-      pickupDetails: '',
+      eligibility: 'Children and youth age 18 or under are eligible. No ID is required.',
+      pickupDetails: 'Student meal sites offer ready-to-eat meals. Days and times vary by site.',
+      otherResources: {
+        p1: 'To find more summer meals for young people:',
+        li1: 'Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.',
+        li2: 'Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a>.',
+        li3: 'Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a>.',
+      },
       subsections: {
         'PSD': {
           name: 'Philadelphia School District schools',
@@ -181,14 +193,22 @@ export default {
     },
     olderAdultMealSites: {
       header: 'Older adult meal sites',
-      eligibility: '\
-        Adults 60 and over are eligible at sites supported by the Philadelphia\
-        Corporation for Aging (PCA). \
-        <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
-        Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
-        No reservation necessary.\
-      ',
-      pickupDetails: '',
+      // eligibility: '\
+      //   Adults 60 and over are eligible at sites supported by the Philadelphia\
+      //   Corporation for Aging (PCA). \
+      //   <i><b>Older adults must call ahead to reserve meals prior to pickup.</b></i><br><br>\
+      //   Adults 55 and over are eligible at the Parks & Recreation older adult centers.<br>\
+      //   No reservation necessary.\
+      // ',
+      eligibility: {
+        p1: 'Age of eligibility varies by site.',
+        li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+        li2: 'Adults 55 and over are eligible at Parks & Recreation older adult centers.',
+      },
+      pickupDetails: {
+        p1: 'Older adult meal sites offer ready-to-eat meals. Days and times vary by site.',
+        p2: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
+      },
       subsections: {
         'PCA': {
           name: 'PCA-supported sites',
@@ -226,7 +246,7 @@ export default {
     generalMealSites: {
       header:  'General meal sites',
       eligibility: 'Any resident is eligible. No ID or proof of income is required.',
-      pickupDetails: '',
+      pickupDetails: 'General meal sites offer ready-to-eat meals. Days and times vary by site.',
       subsections: {
         'compiled': {
           name: 'General sites',
@@ -281,22 +301,28 @@ export default {
         },
       },
     },
-    foodPantries: {
-      header: 'Find more free food resources and other support:',
-      intro: '',
-      li1: 'Call <a href="tel:+311">311</a>. Call the pantry in advance to confirm their hours.',
-      li2: 'The <a target="_blank" href="https://www.phila.gov/departments/office-of-homeless-services/">Office of Homeless Services website</a> lists more free meal sites. ',
-      li3: '<a target="_blank" href="https://communityresourceconnects.org/">Community Resource Connects</a> has food and other resources.',
-      li4: "Find a farmers' market on the City of Philadelphia's <a target='_blank' href='https://www.phila.gov/farmers-markets/' target='_blank'>Farmers' Market Finder</a>.",
-      h2:'Get help applying for benefits: ',
-      li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-833-373-5868. ',
-      li22:'<a target="_blank" href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
-      li23:'Pre-apply for WIC at <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
-    },
+    // foodPantries: {
+    //   header: 'Find more free food resources and other support:',
+    //   intro: '',
+    //   li1: 'Call <a href="tel:+311">311</a>. Call the pantry in advance to confirm their hours.',
+    //   li2: 'The <a target="_blank" href="https://www.phila.gov/departments/office-of-homeless-services/">Office of Homeless Services website</a> lists more free meal sites. ',
+    //   li3: '<a target="_blank" href="https://communityresourceconnects.org/">Community Resource Connects</a> has food and other resources.',
+    //   li4: "Find a farmers' market on the City of Philadelphia's <a target='_blank' href='https://www.phila.gov/farmers-markets/' target='_blank'>Farmers' Market Finder</a>.",
+    //   h2:'Get help applying for benefits: ',
+    //   li21:'<a target="_blank" href="https://www.phila.gov/programs/benephilly/">BenePhilly</a> helps apply for public benefits. Call 1-833-373-5868. ',
+    //   li22:'<a target="_blank" href="https://www.hungercoalition.org/">The Coalition Against Hunger</a> helps apply for SNAP. Call 215-430-0556 ',
+    //   li23:'Pre-apply for WIC at <a target="_blank" href="https://www.pawic.com/OnlineApplication.aspx">PA WIC.</a> WIC helps women, infants, and children under 5 years old get healthy food and nutrition information.  ',
+    // },
     publicBenefits: {
       header: 'Food assistance and benefits',
-      eligibility: '',
-      pickupDetails: '',
+      eligibility: 'Eligibility varies by site.',
+      pickupDetails: {
+        p1: 'Depending on the location, residents may:',
+        li1: 'Learn about and enroll in public benefits.',
+        li2: 'Get nutrition services and support.',
+        li3: 'Get referrals to health care or social services.',
+        p2: 'Days, times, and services vary by site.',
+      },
       subsections: {
         'compiled': {
           name: 'Food assistance and benefits',
@@ -331,6 +357,10 @@ export default {
         },
       },
     },
+    moreResources: {
+      header: 'More resources',
+      p1: 'Want to learn more? Explore other options for getting <a href="https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/" target="_blank">free food and additional support</a> or for getting help with <a href="https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/" target="_blank">applying for public benefits</a>.',
+    },
   },
   time: {
     category: 'Time of day',
@@ -338,4 +368,6 @@ export default {
     afternoon: 'Afternoon (noon - 5:00 p.m.)',
     evening: 'Evening (after 5:00 p.m.)',
   },
+  checkSite_02: 'Site details are subject to change. Before you go, contact the site to confirm their hours and services.',
+  otherResources: 'Other resources',
 };

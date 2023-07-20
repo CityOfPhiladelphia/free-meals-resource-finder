@@ -11,7 +11,7 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.foodSites.pickupDetails')"
+      v-html="$t('sections.foodSites.pickupDetails.p1')"
     />
 
     <vue-good-table
