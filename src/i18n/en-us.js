@@ -16,6 +16,7 @@ export default {
     communityRefrigerator: 'Community refrigerator',
     publicBenefits: 'Food assistance and benefits',
   },
+  // 'Public Benefits': 'Food assistance and benefits',
   eligibility: 'Eligibility',
   pickupDetails: 'Pickup details',
   details: 'Details',
