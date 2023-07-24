@@ -10,7 +10,7 @@
         />
       </div>
       <div class="column exclamation-details">
-        <div>{{ $t('checkSite_02') }}</div>
+        <div>{{ $t('checkSite') }}</div>
       </div>
     </div>
 
@@ -49,7 +49,7 @@
       />
       <div class="column small-cell-pad">
         <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&nbsp;
-        <span v-html="$t('sections.foodSites.pickupDetails.p2')" />
+        <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.foodSites.pickupDetails.p3')" />
         <ul>
           <li v-html="$t('sections.foodSites.pickupDetails.li1')" />
@@ -86,7 +86,7 @@
       />
       <div class="column small-cell-pad">
         <span v-html="$t('sections.generalMealSites.pickupDetails.p1')" />&nbsp;
-        <span v-html="$t('sections.generalMealSites.pickupDetails.p2')" />
+        <span v-html="$t('daysAndTimesVaryBySite')" />
       </div>
     </div>
 
@@ -120,7 +120,7 @@
       />
       <div class="column small-cell-pad">
         <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&nbsp;
-        <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p2')" />
+        <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p3')" />
       </div>
     </div>
@@ -140,10 +140,6 @@
       />
       <div class="column small-cell-pad">
         <div v-html="$t('sections.studentMealSites.eligibility')" />
-        <!-- <ul>
-          <li v-html="$t('sections.studentMealSites.eligibility.li1')"></li>
-          <li v-html="$t('sections.studentMealSites.eligibility.li2')"></li>
-        </ul> -->
       </div>
     </div>
     <hr class="no-margin">
@@ -154,7 +150,8 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <div v-html="$t('sections.studentMealSites.pickupDetails')" />
+        <span v-html="$t('sections.studentMealSites.pickupDetails.p1')" />&nbsp;
+        <span v-html="$t('daysAndTimesVaryBySite')" />
       </div>
     </div>
     <hr class="no-margin">
@@ -224,7 +221,7 @@
 
 <script>
 
-import { parse, format } from 'date-fns';
+// import { parse, format } from 'date-fns';
 // import greetingSection from './greetingSection.vue';
 
 export default {

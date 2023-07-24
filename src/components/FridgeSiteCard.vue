@@ -4,14 +4,14 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.communityRefrigerators.eligibility')"
+      v-html="$t(`sections.foodSites.subsections['Community Refrigerators'].eligibility`)"
     />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
     <div
       class="table-intro"
-      v-html="$t('sections.communityRefrigerators.pickupDetails')"
+      v-html="$t(`sections.foodSites.subsections['Community Refrigerators'].pickupDetails`)"
     />
   </section>
 </template>

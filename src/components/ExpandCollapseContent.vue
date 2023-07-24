@@ -137,11 +137,11 @@
         :pickup-details="pickupDetails"
       />
 
-      <charter-school-card
+      <!-- <charter-school-card
         v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
         :item="item"
         :pickup-details="pickupDetails"
-      />
+      /> -->
 
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
@@ -149,11 +149,11 @@
         :pickup-details="pickupDetails"
       />
 
-      <psd-school-card
+      <!-- <psd-school-card
         v-if="section === 'studentMealSites' && subsection === 'PSD'"
         :item="item"
         :pickup-details="pickupDetails"
-      />
+      /> -->
 
       <pha-school-card
         v-if="section === 'studentMealSites' && subsection === 'PHA'"
@@ -161,11 +161,11 @@
         :pickup-details="pickupDetails"
       />
 
-      <other-school-card
+      <!-- <other-school-card
         v-if="section === 'studentMealSites' && subsection === 'Other'"
         :item="item"
         :pickup-details="pickupDetails"
-      />
+      /> -->
 
       <playstreets-school-card
         v-if="section === 'studentMealSites' && subsection === 'playstreets'"
@@ -226,19 +226,19 @@ import transforms from '../general/transforms.js';
 import { format } from 'date-fns';
 
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
-// import SeniorMealSitePprCard from './SeniorMealSitePprCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
-import CharterSchoolCard from './CharterSchoolCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
-import PsdSchoolCard from './PsdSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
-import OtherSchoolCard from './OtherSchoolCard.vue';
 import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
+// import SeniorMealSitePprCard from './SeniorMealSitePprCard.vue';
+// import CharterSchoolCard from './CharterSchoolCard.vue';
+// import PsdSchoolCard from './PsdSchoolCard.vue';
+// import OtherSchoolCard from './OtherSchoolCard.vue';
 
 import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection';
 import {
@@ -249,13 +249,9 @@ export default {
   name: 'ExpandCollapseContent',
   components: {
     SeniorMealSiteCard,
-    // SeniorMealSitePprCard,
     FoodSiteCard,
-    CharterSchoolCard,
     PprSchoolCard,
-    PsdSchoolCard,
     PhaSchoolCard,
-    OtherSchoolCard,
     RecreationCentersSchoolCard,
     PlaystreetsSchoolCard,
     NdsSchoolCard,
@@ -264,6 +260,10 @@ export default {
     PublicBenefitsSiteCard,
     PrintShareSection,
     Callout,
+    // SeniorMealSitePprCard,
+    // CharterSchoolCard,
+    // PsdSchoolCard,
+    // OtherSchoolCard,
   },
   mixins: [
     // SharedFunctions,

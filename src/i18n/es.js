@@ -5,6 +5,7 @@ export default {
     title: 'Lugares de distribución de alimentos',
     subtitle: 'Encuentre alimentos y comidas gratuitas',
     bannerAlert: 'Muchos lugares están cerrados hoy. Consulte los detalles específicos del lugar para obtener más información.',
+    noResults: "Spanish We're sorry, there are no results for that search. Adjust the filters you've selected and try again.",
   },
   categoryType: {
     category: 'Categoría',

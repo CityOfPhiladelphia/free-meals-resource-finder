@@ -35,9 +35,9 @@ import legendControls from './general/legendControls';
 // import distributionSites from './data-sources/distribution-sites';
 // import schoolMealSites from './data-sources/school-meal-sites';
 // import youthActivitySites from './data-sources/youth-activity-sites';
-import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 // import parksSites from './data-sources/parks-sites.js';
 // import compiled from './data-sources/compiled';
+import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
@@ -56,7 +56,6 @@ pinboard({
   app: {
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
-    // type: 'compiled',
   },
   allowPrint: true,
   showBuffers: true,
@@ -674,7 +673,8 @@ pinboard({
       title: 'General meal sites',
       titleSingular: 'General meal site',
       color: '#506D0A',
-      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
+      // subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
+      subsections: [ 'Broad Street Ministry', 'Office of Homeless Services' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
@@ -698,36 +698,36 @@ pinboard({
     },
   },
   subsections: {
-    '': 'foodSites',
-    'Broad Street Ministry': 'generalMealSites',
-    'CHARTER': 'studentMealSites',
-    'Kensington Meal Partners': 'generalMealSites',
-    'Muslims Serve': 'generalMealSites',
-    'NDS': 'studentMealSites',
-    'SEAMAAC South Philly': 'generalMealSites',
-    'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
+    'SHARE FOOD PROGRAM': 'foodSites',
+    'Nutritional Development Services': 'foodSites',
+    'Small Things Philly': 'foodSites',
+    'Community Refrigerators': 'foodSites',
+    'Office of Homeless Services': 'generalMealSites',
+    'Broad Street Ministry': 'generalMealSites',
+    'PCA': 'olderAdultMealSites',
+    'PPR_Senior': 'olderAdultMealSites',
+    'NDS': 'studentMealSites',
+    'PHA': 'studentMealSites',
     'Philabundance Summer Meal Sites': 'studentMealSites',
     'Caring for Friends': 'studentMealSites',
     'Other Summer Meal Sites': 'studentMealSites',
-    'Student Meal Site': 'studentMealSites',
-    'PPR': 'foodSites',
-    'PSD': 'studentMealSites',
-    'SENIOR SITE': 'olderAdultMealSites',
-    'SHARE FOOD PROGRAM': 'foodSites',
-    'Nutritional Development Services': 'foodSites',
-    'PCA': 'olderAdultMealSites',
-    'PPR_Senior': 'olderAdultMealSites',
-    'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
-    'Small Things Philly': 'foodSites',
-    'Office of Homeless Services': 'generalMealSites',
-    'Other': 'studentMealSites',
-    'Community Refrigerators': 'foodSites',
     'WIC': 'publicBenefits',
     'BenePhilly': 'publicBenefits',
+    // 'PPR': 'foodSites',
+    // '': 'foodSites',
+    // 'Student Meal Site': 'studentMealSites',
+    // 'SEAMAAC South Philly': 'generalMealSites',
+    // 'SENIOR SITE': 'olderAdultMealSites',
+    // 'PPR_StudentMeals': 'studentMealSites',
+    // 'Muslims Serve': 'generalMealSites',
+    // 'Kensington Meal Partners': 'generalMealSites',
+    // 'CHARTER': 'studentMealSites',
+    // 'PSD': 'studentMealSites',
+    // 'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
