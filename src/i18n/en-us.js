@@ -16,7 +16,6 @@ export default {
     communityRefrigerator: 'Community refrigerator',
     publicBenefits: 'Food assistance and benefits',
   },
-  // 'Public Benefits': 'Food assistance and benefits',
   eligibility: 'Eligibility',
   pickupDetails: 'Pickup details',
   details: 'Details',
@@ -74,9 +73,6 @@ export default {
           Availability of food will vary based on donations. \
           Visit each Community Refrigerator website for more details.',
         },
-        // 'PPR': {
-        //   name: 'Philadelphia Parks & Recreation centers',
-        // },
       },
     },
     generalMealSites: {
@@ -89,18 +85,6 @@ export default {
         'Office of Homeless Services': {
           name: 'Office of Homeless Services',
         },
-        'Broad Street Ministry': {
-          name: 'Broad Street Ministry',
-        },
-        // 'Kensington Meal Partners': {
-        //   name: 'Kensington Meal Partners',
-        // },
-        // 'Muslims Serve': {
-        //   name: 'Muslims Serve',
-        // },
-        // 'SEAMAAC South Philly': {
-        //   name: 'SEAMAAC South Philly',
-        // },
       },
     },
     olderAdultMealSites: {
@@ -130,9 +114,6 @@ export default {
             Older adults can pick up 5 meals per week at most sites.\
           ',
         },
-        // 'SENIOR SITE': {
-        //   name: 'Older adult site',
-        // },
       },
     },
     studentMealSites: {
@@ -151,59 +132,32 @@ export default {
         'PHA': {
           name: 'Philadelphia Housing Authority (PHA) community centers',
           pickupDetails: 'Meals must be eaten on site. For more information, visit the site.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'playstreets': {
           name: 'Playstreets',
-          pickupDetails: 'Playstreets are open Monday to Friday between 10 a.m. to 4 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
+          pickupDetails: 'Playstreets are open Monday to Friday between 10:00 a.m. to 4:00 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br>\
           Playstreets serve lunch and a snack.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'NDS': {
           name: 'Nutritional Development Services',
           pickupDetails: 'Meals must be eaten on site. Contact NDS for more details.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Recreation Center': {
           name: 'Recreation Centers',
-          pickupDetails: 'Monday to Friday between 9AM to 3 PM. Meal times vary by site. Meals must be eaten on site. For more information, call or visit the Recreation Center.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
+          pickupDetails: 'Monday to Friday between 9:00 a.m. to 3:00 p.m. Meal times vary by site. Meals must be eaten on site. For more information, call or visit the Recreation Center.',
         },
         'Caring for Friends': {
           name: 'Caring for Friends',
           pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Philabundance Summer Meal Sites': {
           name: 'Philabundance Summer Meal Sites',
           pickupDetails: 'Contact the site for more details.',
-          eligibility: 'All children and youth are eligible. No ID is required.',
         },
         'Other Summer Meal Sites':{
           name: 'Other Summer Meal Sites',
-          pickupDetails: 'Meal times vary by site. Meals must be eaten on site. For more information, visit the summer meal site. ',
-          eligibility: 'All children and youth are eligible. No ID is required.',
+          pickupDetails: 'Meal times vary by site. Meals must be eaten on site. For more information, visit the summer meal site.',
         },
-        // 'PSD': {
-        //   name: 'Philadelphia School District schools',
-        //   pickupDetails: '',
-        //   eligibility: 'All children and youth are eligible. No ID is required.',
-        // },
-        // 'PPR_StudentMeals': {
-        //   name: 'Philadelphia Parks & Recreation centers',
-        //   pickupDetails: '',
-        //   eligibility: 'All children and youth are eligible. No ID is required.',
-        // },
-        // 'CHARTER': {
-        //   name: 'Charter schools',
-        //   pickupDetails: '',
-        //   eligibility: 'All children and youth are eligible. No ID is required.',
-        // },
-        // 'Other': {
-        //   name: 'Other',
-        //   pickupDetails: 'Meal times vary by site. For more information, visit the summer meal site.',
-        //   eligibility: 'All children and youth are eligible. No ID is required.',
-        // },
       },
     },
     publicBenefits: {

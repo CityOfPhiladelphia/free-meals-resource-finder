@@ -4,8 +4,9 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
+      v-html="$t('sections.'+this.section+'.eligibility')"
     />
+    <!-- v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')" -->
 
     <h3>{{ $t('pickupDetails') }}</h3>
 

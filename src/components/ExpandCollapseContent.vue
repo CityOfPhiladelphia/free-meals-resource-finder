@@ -123,13 +123,6 @@
         :item="item"
         :pickup-details="pickupDetails"
       />
-      <!-- v-if="section === 'olderAdultMealSites' && subsection === 'PCA'" -->
-
-      <!-- <senior-meal-site-ppr-card
-        v-if="section === 'olderAdultMealSites' && subsection === 'PPR_Senior'"
-        :item="item"
-        :pickup-details="pickupDetails"
-      /> -->
 
       <food-site-card
         v-if="section === 'foodSites' && subsection !== 'Community Refrigerators'"
@@ -137,35 +130,17 @@
         :pickup-details="pickupDetails"
       />
 
-      <!-- <charter-school-card
-        v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
-        :item="item"
-        :pickup-details="pickupDetails"
-      /> -->
-
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Recreation Center'"
         :item="item"
         :pickup-details="pickupDetails"
       />
 
-      <!-- <psd-school-card
-        v-if="section === 'studentMealSites' && subsection === 'PSD'"
-        :item="item"
-        :pickup-details="pickupDetails"
-      /> -->
-
       <pha-school-card
         v-if="section === 'studentMealSites' && subsection === 'PHA'"
         :item="item"
         :pickup-details="pickupDetails"
       />
-
-      <!-- <other-school-card
-        v-if="section === 'studentMealSites' && subsection === 'Other'"
-        :item="item"
-        :pickup-details="pickupDetails"
-      /> -->
 
       <playstreets-school-card
         v-if="section === 'studentMealSites' && subsection === 'playstreets'"
@@ -214,6 +189,30 @@
         :item="item"
         :pickup-details="pickupDetails"
       />
+
+      <!-- <senior-meal-site-ppr-card
+        v-if="section === 'olderAdultMealSites' && subsection === 'PPR_Senior'"
+        :item="item"
+        :pickup-details="pickupDetails"
+      /> -->
+
+      <!-- <charter-school-card
+        v-if="section === 'studentMealSites' && subsection === 'CHARTER'"
+        :item="item"
+        :pickup-details="pickupDetails"
+      /> -->
+
+      <!-- <psd-school-card
+        v-if="section === 'studentMealSites' && subsection === 'PSD'"
+        :item="item"
+        :pickup-details="pickupDetails"
+      /> -->
+
+      <!-- <other-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Other'"
+        :item="item"
+        :pickup-details="pickupDetails"
+      /> -->
     </div>
   </div>
 </template>
@@ -229,12 +228,12 @@ import SeniorMealSiteCard from './SeniorMealSiteCard.vue';
 import FoodSiteCard from './FoodSiteCard.vue';
 import PprSchoolCard from './PprSchoolCard.vue';
 import PhaSchoolCard from './PhaSchoolCard.vue';
-import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 import PlaystreetsSchoolCard from './PlaystreetsSchoolCard.vue';
 import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
+// import RecreationCentersSchoolCard from './RecreationCentersSchoolCard.vue';
 // import SeniorMealSitePprCard from './SeniorMealSitePprCard.vue';
 // import CharterSchoolCard from './CharterSchoolCard.vue';
 // import PsdSchoolCard from './PsdSchoolCard.vue';
@@ -252,7 +251,6 @@ export default {
     FoodSiteCard,
     PprSchoolCard,
     PhaSchoolCard,
-    RecreationCentersSchoolCard,
     PlaystreetsSchoolCard,
     NdsSchoolCard,
     GeneralSiteCard,
@@ -260,6 +258,7 @@ export default {
     PublicBenefitsSiteCard,
     PrintShareSection,
     Callout,
+    // RecreationCentersSchoolCard,
     // SeniorMealSitePprCard,
     // CharterSchoolCard,
     // PsdSchoolCard,

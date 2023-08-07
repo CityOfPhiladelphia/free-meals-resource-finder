@@ -1,10 +1,10 @@
 
 import en from './en-us';
-import es from './es';
-import ch from './ch';
-import vi from './vi';
-import ru from './ru';
-import fr from './fr';
+import es from './es-us';
+import ch from './zh-cn';
+import vi from './vi-vn';
+import ru from './ru-ru';
+import fr from './fr-fr';
 
 let i18n = {
   i18n: {
