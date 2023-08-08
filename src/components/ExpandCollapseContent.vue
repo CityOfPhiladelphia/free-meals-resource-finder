@@ -377,8 +377,8 @@ export default {
     },
     zipcode() {
       let value;
-      if (this.$props.item.attributes.ZIP2) {
-        value = this.$props.item.attributes.ZIP2;
+      if (this.$props.item.attributes.zip_code) {
+        value = this.$props.item.attributes.zip_code;
       } else if (this.$props.item.attributes.ZIP_CODE) {
         value = this.$props.item.attributes.ZIP_CODE;
       }
