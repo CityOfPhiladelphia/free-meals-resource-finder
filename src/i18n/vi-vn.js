@@ -136,7 +136,7 @@ export default {
       },
       "otherResources": {
         "p1": "Để biết thêm về các suất ăn mùa hè dành cho thanh thiếu niên:",
-        "li1": "Gọi cho Đường dây nóng của Bữa ăn mùa hè theo số <a href=\"tel:215-770-4659\">215-770-4659</a>.",
+        "li1": "Gọi cho Đường dây nóng của Bữa ăn mùa hè theo số <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
         "li2": "Soạn tin nhắn “FOOD” hoặc “COMIDA” và gửi tới số <a href=\"tel:304-304\">304-304</a>.",
         "li3": "Truy cập <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
       },

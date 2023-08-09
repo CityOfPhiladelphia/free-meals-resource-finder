@@ -136,7 +136,7 @@ export default {
       },
       "otherResources": {
         "p1": "欲了解针对年轻人的更多夏季餐食援助：",
-        "li1": "请拨打夏季餐食援助热线（Summer Meals Hotline）：<a href=\"tel:215-770-4659\">215-770-4659</a>。",
+        "li1": "请拨打夏季餐食援助热线（Summer Meals Hotline）：<a href=\"tel:215-770-4659\">(215) 770-4659</a>。",
         "li2": "请发送短信“FOOD”或“COMIDA”至：<a href=\"tel:304-304\">304-304</a>。",
         "li3": "请访问：<a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>。",
       },

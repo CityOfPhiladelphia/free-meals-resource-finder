@@ -136,7 +136,7 @@ export default {
       },
       "otherResources": {
         "p1": "Pour trouver plus de repas servis durant l'été pour les jeunes :",
-        "li1": "Appelez la Ligne d’assistance concernant les repas servis durant l’été au <a href=\"tel:215-770-4659\">215-770-4659</a>.",
+        "li1": "Appelez la Ligne d’assistance concernant les repas servis durant l’été au <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
         "li2": "Envoyez par SMS « FOOD » ou « COMIDA » au <a href=\"tel:304-304\">304-304</a>.",
         "li3": "Rendez-vous sur <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
       },

@@ -22,7 +22,7 @@
       <!-- class="table-intro" -->
       <span
         v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails.p1')"
-      />&nbsp;
+      />&hairsp;
   
       <!-- class="table-intro" -->
       <span

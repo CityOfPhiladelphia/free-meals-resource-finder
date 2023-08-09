@@ -142,7 +142,7 @@ export default {
       },
       otherResources: {
         p1: 'To find more summer meals for young people:',
-        li1: 'Call the Summer Meals Hotline at <a href="tel:215-770-4659">215-770-4659</a>.',
+        li1: 'Call the Summer Meals Hotline at <a href="tel:215-770-4659">(215) 770-4659</a>.',
         li2: 'Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a>.',
         li3: 'Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a>.',
       },

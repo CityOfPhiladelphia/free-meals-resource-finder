@@ -136,7 +136,7 @@ export default {
       },
       "otherResources": {
         "p1": "Para encontrar más comidas de verano para personas jóvenes:",
-        "li1": "Llame a la Línea directa de Comidas de Verano al <a href=\"tel:215-770-4659\">215-770-4659</a>.",
+        "li1": "Llame a la Línea directa de Comidas de Verano al <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
         "li2": "Mensaje de texto “ALIMENTOS” o “COMIDA” al <a href=\"tel:304-304\">304-304</a>.",
         "li3": "Visite <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
       },
