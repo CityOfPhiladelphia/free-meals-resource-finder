@@ -48,7 +48,7 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&hairsp;
+        <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.foodSites.pickupDetails.p3')" />
         <ul>
@@ -85,7 +85,7 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <span v-html="$t('sections.generalMealSites.pickupDetails.p1')" />&hairsp;
+        <span v-html="$t('sections.generalMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
       </div>
     </div>
@@ -119,8 +119,8 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <!-- <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&hairsp; -->
-        <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&hairsp;
+        <!-- <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace; -->
+        <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p3')" />
       </div>
@@ -151,7 +151,7 @@
         v-html="$t('details')"
       />
       <div class="column small-cell-pad">
-        <span v-html="$t('sections.studentMealSites.pickupDetails.p1')" />&hairsp;
+        <span v-html="$t('sections.studentMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
       </div>
     </div>
