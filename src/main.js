@@ -688,7 +688,7 @@ pinboard({
       title: 'Older adult meal sites',
       titleSingular: 'olderAdultMealSite',
       color: '#a86518',
-      subsections: [ 'PCA', 'PPR_Senior' ],
+      subsections: [ 'PCA', 'specialPCA', 'PPR_Senior' ],
     },
     publicBenefits: {
       title: 'Public Benefits',
@@ -707,6 +707,7 @@ pinboard({
     'Office of Homeless Services': 'generalMealSites',
     'Broad Street Ministry': 'generalMealSites',
     'PCA': 'olderAdultMealSites',
+    'specialPCA': 'olderAdultMealSites',
     'PPR_Senior': 'olderAdultMealSites',
     'NDS': 'studentMealSites',
     'PHA': 'studentMealSites',

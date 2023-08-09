@@ -84,29 +84,47 @@ export default {
         },
       },
     },
-    "olderAdultMealSites": {
+    olderAdultMealSites: {
       header: "Sites de repas pour personnes âgées",
       eligibility: {
-        "p1": "L'âge d'éligibilité varie selon les sites.",
+        p1: "L'âge d'éligibilité varie selon les sites.",
       },
-      "pickupDetails": {
-        "p1": "Les sites de repas pour personnes âgées proposent des repas préparés.",
-        "p3": "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
+      pickupDetails: {
+        p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
+        p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
       },
       subsections: {
-        "PCA": {
+        'PCA': {
           name: "Sites soutenus par la PCA",
           eligibility: {
-            "li1": "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
-            "p2": "Pour obtenir de l'aide dans une langue autre que l'anglais, appelez le service d'assistance téléphonique de la PCA au              <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
+            p3: "Dans certains cas, les repas doivent être réservés à l'avance.",
           },
         },
-        "PPR_Senior": {
+        'specialPCA': {
+          eligibility: {
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
+            p3: "Les résidents peuvent se procurer cinq repas par semaine sur ce site. Les repas doivent être réservés à l'avance.",
+          },
+        },
+        'PPR_Senior': {
           name: "Centres pour personnes âgées des parcs et loisirs de Philadelphie",
           eligibility: {
-            "li1": "Les adultes de 55 ans et plus sont éligibles dans les centres pour adultes des parcs et loisirs de Philadelphie",
+            li1: "Les adultes de 55 ans et plus sont éligibles dans les centres pour adultes des parcs et loisirs de Philadelphie",
+            p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
-          "pickupDetails": "              Les personnes âgées peuvent prendre 5 repas par semaine dans la plupart des sites.            ",
+          pickupDetails: {
+            p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
+            p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites.",
+          },
         },
       },
     },

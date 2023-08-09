@@ -84,29 +84,47 @@ export default {
         },
       },
     },
-    "olderAdultMealSites": {
+    olderAdultMealSites: {
       header: "Establecimientos de comida para la tercera edad",
       eligibility: {
-        "p1": "La edad de elegibilidad varía según el establecimiento.",
+        p1: "La edad de elegibilidad varía según el establecimiento.",
       },
-      "pickupDetails": {
-        "p1": "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
-        "p3": "Los residentes pueden retirar cinco comidas por semana en la mayoría de los establecimientos. En algunos casos, se deben reservar las comidas con antelación.",
+      pickupDetails: {
+        p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
+        p3: "Los residentes pueden retirar cinco comidas por semana en la mayoría de los establecimientos. En algunos casos, se deben reservar las comidas con antelación.",
       },
       subsections: {
-        "PCA": {
+        'PCA': {
           name: "Establecimientos con apoyo de PCA",
           eligibility: {
-            "li1": "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
-            "p2": "Para obtener ayuda en un idioma que no sea inglés, llame a la línea de ayuda de PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
+            p3: "En algunos casos, se deben reservar las comidas con antelación.",
           },
         },
-        "PPR_Senior": {
+        'specialPCA': {
+          eligibility: {
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
+            p3: 'Los residentes pueden recoger cinco comidas por semana en este sitio. Las comidas deben reservarse con anticipación.',
+          },
+        },
+        'PPR_Senior': {
           name: "Centros para adultos mayores de Parques y Recreación de Filadelfia",
           eligibility: {
-            "li1": "Los adultos a partir de 55 años son aptos para los centros para adultos mayores de Parques y Recreación de Filadelfia.",
+            li1: "Los adultos a partir de 55 años son aptos para los centros para adultos mayores de Parques y Recreación de Filadelfia.",
+            p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
-          "pickupDetails": "Los adultos mayores pueden retirar 5 comidas por semana en la mayoría de los establecimientos.            ",
+          pickupDetails: {
+            p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
+            p3: "Los residentes pueden retirar cinco comidas por semana en la mayoría de los establecimientos.",
+          },
         },
       },
     },

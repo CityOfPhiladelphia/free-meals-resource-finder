@@ -84,29 +84,47 @@ export default {
         },
       },
     },
-    "olderAdultMealSites": {
+    olderAdultMealSites: {
       header: "Các địa điểm phục vụ bữa ăn cho người cao tuổi",
       eligibility: {
-        "p1": "Độ tuổi đủ điều kiện sẽ thay đổi tùy theo địa điểm.",
+        p1: "Độ tuổi đủ điều kiện sẽ thay đổi tùy theo địa điểm.",
       },
-      "pickupDetails": {
-        "p1": "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-        "p3": "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm. Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+      pickupDetails: {
+        p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
+        p3: "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm. Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
       },
       subsections: {
-        "PCA": {
+        'PCA': {
           name: "Các địa điểm được PCA hỗ trợ",
           eligibility: {
-            "li1": "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
-            "p2": "Để được trợ giúp bằng ngôn ngữ khác ngoài tiếng Anh, vui lòng gọi đến đường dây trợ giúp của PCA theo số              <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
+            p3: "Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
           },
         },
-        "PPR_Senior": {
+        'specialPCA': {
+          eligibility: {
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
+            p3: 'Cư dân có thể nhận năm bữa ăn mỗi tuần tại trang web này. Các bữa ăn phải được đặt trước.',
+          },
+        },
+        'PPR_Senior': {
           name: "Các trung tâm Công viên & Giải trí tại Philadelphia dành cho người cao tuổi",
           eligibility: {
-            "li1": "Người già trên 55 tuổi đủ điều kiện tham gia các trung tâm Công viên & Giải trí dành cho người cao tuổi.",
+            li1: "Người già trên 55 tuổi đủ điều kiện tham gia các trung tâm Công viên & Giải trí dành cho người cao tuổi.",
+            p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
-          "pickupDetails": "              Người cao tuổi có thể lấy 5 suất ăn hàng tuần tại đại đa số địa điểm.            ",
+          pickupDetails: {
+            p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
+            p3: "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm.",
+          },
         },
       },
     },

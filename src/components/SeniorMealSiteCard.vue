@@ -18,13 +18,22 @@
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
+    <div class="table-intro">
+      <!-- class="table-intro" -->
+      <span
+        v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails.p1')"
+      />&nbsp;
+  
+      <!-- class="table-intro" -->
+      <span
+        v-html="$t('daysAndTimesVaryBySite')"
+      />
+    </div>
+
     <div
+      v-if="$config.i18n.data.messages['en-US'].sections[this.section].subsections[this.subsection].pickupDetails.p3"
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.pickupDetails.p1')"
-    />
-    <div
-      class="table-intro"
-      v-html="$t('sections.'+this.section+'.pickupDetails.p3')"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails.p3')"
     />
   </section>
 </template>
@@ -56,6 +65,24 @@ export default {
       return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
+      let specialCases = [
+        'Southwest Senior Center',
+        'Firehouse Active Adult Center',
+        'Nativity Satellite Program',
+        'St. Edmonds Senior Community Center Catholic Housing and Community Services',
+        'Catholic Housing and Community Services Star Harbor Senior Center Satellite',
+        'Juniata Park Older Adult Center',
+        'Center in the Park',
+        'The Center at Journey’s Way',
+        'Northern Living Center',
+        'Marconi Older Adult Program',
+        'Lutheran Settlement House',
+        'West Philadelphia Senior Community Center',
+        'Peter Brassi NE Senior Center',
+      ];
+      if (specialCases.includes(this.$props.item.attributes['site_name'])) {
+        return 'specialPCA';
+      }
       return this.$props.item.attributes.category;
     },
   },

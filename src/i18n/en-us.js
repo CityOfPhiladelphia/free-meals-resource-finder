@@ -101,18 +101,36 @@ export default {
           name: 'PCA-supported sites',
           eligibility: {
             li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
-            p2: "To get help in languages other than English, call the PCA helpline at\
+            p2: "To learn about other services or to get help in another language, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: 'Older adult meal sites offer ready-to-eat meals.',
+            p3: 'In some cases, meals must be reserved in advance.',
+          },
+        },
+        'specialPCA': {
+          eligibility: {
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            p2: "To learn about other services or to get help in another language, call the PCA helpline at\
+            <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
+          },
+          pickupDetails: {
+            p1: 'Older adult meal sites offer ready-to-eat meals.',
+            p3: 'Residents can pick up five meals per week at this site. Meals must be reserved in advance.',
           },
         },
         'PPR_Senior': {
           name: 'Philadelphia Parks & Recreation older adult centers',
           eligibility: {
             li1: 'Adults 55 and over are eligible at Parks & Recreation older adult centers.',
+            p2: "To learn about other services or to get help in another language, call the PCA helpline at\
+            <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
-          pickupDetails: '\
-            Older adults can pick up 5 meals per week at most sites.\
-          ',
+          pickupDetails: {
+            p1: 'Older adult meal sites offer ready-to-eat meals.',
+            p3: 'Residents can pick up five meals per week at most locations.',
+          },
         },
       },
     },
