@@ -7,6 +7,7 @@
       <b>{{ $t('sections.' + header + '.header') }}</b>
     </div>
 
+    <!-- eligibility -->
     <div
       v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
       class="columns big-cell-pad"
@@ -23,6 +24,7 @@
 
     <hr class="no-margin">
 
+    <!-- pickup details -->
     <div
       class="columns big-cell-pad"
     >
@@ -40,29 +42,26 @@
           <!-- v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting" -->
 
           <!-- subsections -->
-          <div
+          <!-- <div
             v-for="(subsection, key) in section.subsections"
             :key="key"
           >
-            <!-- class="subsection-content" -->
-            <!-- subsections that are written out -->
-            <!-- <div> -->
-            <div v-if="subsectionCountsFromProps[subsection] || section.title == 'Student meal sites'">
-              <b v-if="!section.hideCounts">{{ subsectionCountsFromProps[subsection] }} </b><b>{{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
+            <div v-if="subsectionCountsFromProps[subsection]">
+              <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
               <div
                 v-if="!$config.i18n.data.messages['en-US'].sections[header].subsections[subsection].hidePickupDetailsInGreeting"
                 v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
               />
-            </div>
+            </div> -->
 
-            <!-- subsections that are compiled (because multiple subsubsections make 1 subsection) -->
-            <div v-if="subsectionCountsFromProps.compiled">
+          <!-- subsections that are compiled (because multiple subsubsections make 1 subsection) -->
+          <!-- <div v-if="subsectionCountsFromProps.compiled">
               <b>{{ subsectionCountsFromProps.compiled }} {{ $t('sections.' + header + '.subsections.compiled.name') }}</b>
               <div
                 v-html="$t('sections.' + header + '.subsections.compiled.pickupDetails')"
               />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

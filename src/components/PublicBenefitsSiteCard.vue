@@ -4,9 +4,8 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.eligibility')"
+      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
     />
-    <!-- v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')" -->
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
@@ -63,9 +62,11 @@
 <script>
 
 import { VueGoodTable } from 'vue-good-table';
+// import 'vue-good-table/dist/vue-good-table.css';
+// import '@phila/pinboard/src/assets/scss/expandCollapse.scss';
 
 export default {
-  name: 'NdsSchoolCard',
+  name: 'PublicBenefitsSiteCard',
   components: {
     VueGoodTable,
   },
@@ -100,3 +101,10 @@ export default {
 };
 
 </script>
+
+<style lang="scss">
+
+// @import "../../node_modules/@phila/pinboard/src/assets/scss/expandCollapse.scss";
+// @import '../../node_modules/vue-good-table/dist/vue-good-table.css';
+
+</style>

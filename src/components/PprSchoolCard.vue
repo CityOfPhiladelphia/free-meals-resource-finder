@@ -3,8 +3,9 @@
     <h3>{{ $t('eligibility') }}</h3>
 
     <div class="table-intro">
-      {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }}
+      {{ $t('sections.'+this.section+'.eligibility') }}
     </div>
+    <!-- {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }} -->
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
@@ -36,10 +37,10 @@ export default {
       return this.$config.subsections;
     },
     section() {
-      return this.subsections[this.$props.item.attributes['CATEGORY']];
+      return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
-      return this.$props.item.attributes.CATEGORY;
+      return this.$props.item.attributes.category;
     },
   },
 };
