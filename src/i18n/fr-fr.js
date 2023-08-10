@@ -3,7 +3,7 @@ export default {
   language: "Français",
   app: {
     title: "Recherche de nourriture et de repas",
-    subtitle: "Obtenir de la nourriture gratuite, des services de nutrition et des aides sociales",
+    subtitle: "Bénéficiez de nourriture, de services nutritionnels et d'avantages publics gratuits",
     "bannerAlert": "De nombreux sites sont fermés aujourd'hui. Pour plus d'informations, consultez les détails spécifiques du site.",
     "noResults": "Nous sommes désolés, mais cette recherche n'a donné aucun résultat. Modifiez les filtres que vous aviez sélectionnés et essayez à nouveau.",
   },

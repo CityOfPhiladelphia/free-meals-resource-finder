@@ -3,7 +3,7 @@ export default {
   language: 'English',
   app: {
     title: 'Food and meal finder',
-    subtitle: 'Get free food, nutrition services, and benefits',
+    subtitle: 'Get free food, nutrition services, and public benefits',
     bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
     noResults: "We're sorry, there are no results for that search. Adjust the filters you've selected and try again.",
   },

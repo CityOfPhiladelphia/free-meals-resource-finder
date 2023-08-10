@@ -3,7 +3,7 @@ export default {
   language: "Español",
   app: {
     title: "Buscador de comidas y alimentos",
-    subtitle: "Obtenga alimentos, servicios de nutrición y beneficios gratuitos",
+    subtitle: "Obtenga alimentos, servicios de nutrición y beneficios públicos gratuitos",
     "bannerAlert": "Muchos establecimientos están cerrados hoy. Consulte los detalles específicos del establecimiento para obtener más información.",
     "noResults": "Lo sentimos, no se han encontrado resultados para esa búsqueda. Ajuste los filtros que ha seleccionado y vuelva a intentarlo.",
   },

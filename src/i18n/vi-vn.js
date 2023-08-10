@@ -3,7 +3,7 @@ export default {
   language: "Tiếng Việt",
   app: {
     title: "Người tìm thực phẩm và suất ăn",
-    subtitle: "Nhận thực phẩm, dịch vụ dinh dưỡng và các lợi ích miễn phí",
+    subtitle: "Nhận thực phẩm miễn phí, dịch vụ dinh dưỡng và lợi ích công cộng",
     "bannerAlert": "Nhiều địa điểm đã đóng cửa trong hôm nay. Để biết thêm thông tin, vui lòng xem thông tin địa điểm cụ thể.",
     "noResults": "Chúng tôi xin lỗi, không có kết quả cho tìm kiếm này. Điều chỉnh bộ lọc mà bạn đã chọn và thử lại.",
   },
