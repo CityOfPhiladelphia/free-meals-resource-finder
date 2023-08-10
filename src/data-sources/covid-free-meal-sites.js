@@ -4,11 +4,6 @@ export default {
   dependent: 'none',
   resettable: false,
   url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_2_0_PUBLICVIEW/FeatureServer/0/query',
-  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_7_17_added_out/FeatureServer/0/query',
-  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_6_27_added_out/FeatureServer/0/query',
-  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_6_27_out/FeatureServer/0/query',
-  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_FreeMealSites_FORTESTINGONLY/FeatureServer/0/query',
-  // url: 'https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/COVID19_Free_Meal_Sites_PUBLICVIEW/FeatureServer/0/query',
   options: {
     params: {
       where: '1=1',
