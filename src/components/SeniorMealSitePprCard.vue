@@ -37,26 +37,37 @@
           {{ $t(props.column.i18nLabel) }}
         </span>
       </template>
+
+      <template
+        slot="table-row"
+        slot-scope="props"
+      >
+        <span
+          v-if="props.column.field == 'label'"
+          class="table-text"
+        >
+          {{ $t(props.row.days) }}
+        </span>
+        <div
+          v-if="props.column.field == 'value'"
+          class="table-text"
+        >
+          {{ props.row.schedule }}
+        </div>
+      </template>
     </vue-good-table>
   </section>
 </template>
 
 <script>
 
-import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
-import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 import { VueGoodTable } from 'vue-good-table';
-// import 'vue-good-table/dist/vue-good-table.css';
 
 export default {
-  name: 'CharterSchoolCard',
+  name: 'SeniorMealSiteCard',
   components: {
     VueGoodTable,
   },
-  mixins: [
-    SharedFunctions,
-    LocalSharedFunctions,
-  ],
   props: {
     item: {
       type: Object,
@@ -64,22 +75,22 @@ export default {
         return {};
       },
     },
+    pickupDetails: {
+      type: Object,
+      default: function(){
+        return {};
+      },
+    },
   },
   computed: {
-    i18nLocale() {
-      return this.$i18n.locale;
-    },
     subsections() {
       return this.$config.subsections;
     },
     section() {
-      return this.subsections[this.$props.item.attributes['CATEGORY']];
+      return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
-      return this.$props.item.attributes.CATEGORY;
-    },
-    pickupDetails() {
-      return this.getPickupDetails();
+      return this.$props.item.attributes.category;
     },
   },
 };

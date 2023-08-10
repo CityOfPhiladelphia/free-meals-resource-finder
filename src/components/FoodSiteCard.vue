@@ -11,7 +11,7 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.foodSites.pickupDetails')"
+      v-html="$t('sections.foodSites.pickupDetails.p1')"
     />
 
     <vue-good-table
@@ -37,14 +37,30 @@
           {{ $t(props.column.i18nLabel) }}
         </span>
       </template>
+
+      <template
+        slot="table-row"
+        slot-scope="props"
+      >
+        <span
+          v-if="props.column.field == 'label'"
+          class="table-text"
+        >
+          {{ $t(props.row.days) }}
+        </span>
+        <div
+          v-if="props.column.field == 'value'"
+          class="table-text"
+        >
+          {{ props.row.schedule }}
+        </div>
+      </template>
     </vue-good-table>
   </section>
 </template>
 
 <script>
 
-import SharedFunctions from '@phila/pinboard/src/components/mixins/SharedFunctions.vue';
-import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
 import { VueGoodTable } from 'vue-good-table';
 // import 'vue-good-table/dist/vue-good-table.css';
 // import '@phila/pinboard/src/assets/scss/expandCollapse.scss';
@@ -54,12 +70,14 @@ export default {
   components: {
     VueGoodTable,
   },
-  mixins: [
-    SharedFunctions,
-    LocalSharedFunctions,
-  ],
   props: {
     item: {
+      type: Object,
+      default: function(){
+        return {};
+      },
+    },
+    pickupDetails: {
       type: Object,
       default: function(){
         return {};
@@ -69,18 +87,6 @@ export default {
   computed: {
     i18nLocale() {
       return this.$i18n.locale;
-    },
-    // subsections() {
-    //   return this.$config.subsections;
-    // },
-    // section() {
-    //   return this.subsections[this.$props.item.attributes['CATEGORY']];
-    // },
-    // subsection() {
-    //   return this.$props.item.attributes.CATEGORY;
-    // },
-    pickupDetails() {
-      return this.getPickupDetails();
     },
   },
 };

@@ -1,12 +1,12 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: dev Push to S3
+name: testing Push to S3
 
 on:
   push:
     branches:
-      - main
+      - data-rearrange
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
       run: |
         printf "@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}" >> ~/.npmrc
         npm install
-        npm run build:development
+        npm run build:testing
       env:
         FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FA_AUTH_TOKEN }}
         VUE_APP_GATEKEEPER_KEY: ${{ secrets.VUE_APP_GATEKEEPER_KEY }}
@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to Dev s3, Set index headers
       env:
         AWS_DEFAULT_REGION: 'us-east-1'
-        AWS_S3_BUCKET: phila-resource-finder-v2/dev/food
+        AWS_S3_BUCKET: phila-resource-finder-v2/testing/food
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |

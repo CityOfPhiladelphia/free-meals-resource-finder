@@ -4,8 +4,9 @@
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
+      v-html="$t('sections.'+this.section+'.eligibility')"
     />
+    <!-- v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')" -->
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
@@ -34,10 +35,10 @@ export default {
       return this.$config.subsections;
     },
     section() {
-      return this.subsections[this.$props.item.attributes['CATEGORY']];
+      return this.subsections[this.$props.item.attributes['category']];
     },
     subsection() {
-      return this.$props.item.attributes.CATEGORY;
+      return this.$props.item.attributes.category;
     },
   },
 };

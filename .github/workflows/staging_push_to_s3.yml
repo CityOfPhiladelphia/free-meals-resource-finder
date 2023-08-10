@@ -6,7 +6,7 @@ name: dev Push to S3
 on:
   push:
     branches:
-      - main
+      - test
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to Dev s3, Set index headers
       env:
         AWS_DEFAULT_REGION: 'us-east-1'
-        AWS_S3_BUCKET: phila-resource-finder-v2/dev/food
+        AWS_S3_BUCKET: phila-resource-finder-v2/staging/food
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |

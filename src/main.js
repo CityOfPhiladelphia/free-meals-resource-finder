@@ -35,9 +35,9 @@ import legendControls from './general/legendControls';
 // import distributionSites from './data-sources/distribution-sites';
 // import schoolMealSites from './data-sources/school-meal-sites';
 // import youthActivitySites from './data-sources/youth-activity-sites';
-import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 // import parksSites from './data-sources/parks-sites.js';
 // import compiled from './data-sources/compiled';
+import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
@@ -52,11 +52,14 @@ console.log('main.js i18n:', i18n);
 
 pinboard({
   i18n: i18n.i18n,
+  publicPath: process.env.VUE_APP_PUBLICPATH,
   app: {
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
-    // type: 'compiled',
   },
+  allowPrint: true,
+  showBuffers: true,
+  retractableRefine: true,
   gtag: {
     category: 'rf-food',
   },
@@ -91,37 +94,339 @@ pinboard({
   //
   // },
   refine: {
-    type: 'categoryField_value',
-    value: function(item) {
-      // console.log('value is running, item:', item);
-      let value;
-      // if (item.category_type) {
-      //   value = item.category_type;
-      // } else if (item.CATEGORY_TYPE) {
-      //   value = item.CATEGORY_TYPE;
-      // }
+    type: 'multipleFieldGroups',
+    columns: true,
+    multipleFieldGroups: {
+      categoryType: {
+        columns: 2,
+        radio: {
+          'foodSite': {
+            unique_key: 'categoryType_foodSite',
+            i18n_key: 'categoryType.foodSite',
+            value: function(item) {
+              return item.attributes.category_type == "Food Site";
+            },
+          },
+          'generalMealSite': {
+            unique_key: 'categoryType_generalMealSite',
+            i18n_key: 'categoryType.generalMealSite',
+            value: function(item) {
+              return item.attributes.category_type == "General Meal Site";
+            },
+          },
+          'studentMealSite': {
+            unique_key: 'categoryType_studentMealSite',
+            i18n_key: 'categoryType.studentMealSite',
+            value: function(item) {
+              return item.attributes.category_type == "Student Meal Site";
+            },
+          },
+          'olderAdultMealSite': {
+            unique_key: 'categoryType_olderAdultMealSite',
+            i18n_key: 'categoryType.olderAdultMealSite',
+            value: function(item) {
+              // return item.attributes.category_type == "Older Adult Meal Site";
+              return item.attributes.category_type == "Senior Meal Site";
+            },
+          },
+          'publicBenefits': {
+            unique_key: 'categoryType_publicBenefits',
+            i18n_key: 'categoryType.publicBenefits',
+            value: function(item) {
+              return item.attributes.category_type == "Public Benefits";
+            },
+          },
+        },
+      },
+      weekday: {
+        columns: 2,
+        radio: {
+          'monday': {
+            unique_key: 'weekday_monday',
+            i18n_key: 'weekday.monday',
+            value: function(item) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_mon_start1 != null;
+              // console.log('monday, item.attributes.category_type:', item.attributes.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
+              return na_category || na_category_type || day;
+            },
+          },
+          'tuesday': {
+            unique_key: 'weekday_tuesday',
+            i18n_key: 'weekday.tuesday',
+            value: function(item) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_tues_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+          'wednesday': {
+            unique_key: 'weekday_wednesday',
+            i18n_key: 'weekday.wednesday',
+            value: function(item) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_wed_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+          'thursday': {
+            unique_key: 'weekday_thursday',
+            i18n_key: 'weekday.thursday',
+            value: function(item) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_thurs_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+          'friday': {
+            unique_key: 'weekday_friday',
+            i18n_key: 'weekday.friday',
+            value: function(item) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_fri_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+          'saturday': {
+            unique_key: 'weekday_saturday',
+            i18n_key: 'weekday.saturday',
+            value: function(item) {
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_sat_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+          'sunday': {
+            unique_key: 'weekday_sunday',
+            i18n_key: 'weekday.sunday',
+            value: function(item) {
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let day = item.attributes.hours_sun_start1 != null;
+              return na_category || na_category_type || day;
+            },
+          },
+        },
+      },
+      time: {
+        radio: {
+          'morning': {
+            unique_key: 'time_morning',
+            i18n_key: 'time.morning',
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
+              };
+              if (dependentServices.length) {
+                let day = dependentServices[0];
+                days = {
+                  day: days[dependentServices[0]],
+                };
+              }
 
-      if (item.attributes.category_type == "Senior Meal Site") {
-        value = "Older adult meal site";
-      } else if (item.attributes.category_type == "Food Site") {
-        value = "Food site";
-      } else if (item.attributes.category_type == "Student Meal Site") {
-        value = "Student meal site";
-      } else if (item.attributes.category_type == "General Meal Site") {
-        value = "General meal site";
-      } else if (item.attributes.category_type == "Community Refrigerators") {
-        value = "Community refrigerators";
-      } else if (item.attributes.category_type) {
-        value = item.attributes.category_type;
-      } else if (item.attributes.CATEGORY_TYPE) {
-        value = item.attributes.CATEGORY_TYPE;
-      }
-      return value;
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let startTime1Split;
+                let st1;
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  // console.log('startTime1[0]:', startTime1[0], 'parseInt(startTime1[0]):', parseInt(startTime1[0]));
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (st1 < noon) {
+                  console.log('st1:', st1, 'noon:', noon);
+                  dayAndTime = true;
+                  break;
+                }
+                // console.log('noon:', noon, 'startTime1Split:', startTime1Split, 'd:', d, 'selectedDay:', selectedDay, "item.attributes['hours_' + selectedDay + '_start1']", item.attributes['hours_' + selectedDay + '_start1']);
+                // if (item.attributes['hours_' + selectedDay + '_start1'] );
+              }
+              // console.log('site_name:', item.attributes.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
+              // let day = 1 != null;
+              return na_category || na_category_type || dayAndTime;
+            },
+          },
+          'afternoon': {
+            unique_key: 'time_afternoon',
+            i18n_key: 'time.afternoon',
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
+              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
+              };
+              if (dependentServices.length) {
+                let day = dependentServices[0];
+                days = {
+                  day: days[dependentServices[0]],
+                };
+              }
+
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+              let fivePm = new Date();
+              fivePm.setHours(17, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let endTime1 = item.attributes['hours_' + days[day] + '_end1'];
+                let startTime2 = item.attributes['hours_' + days[day] + '_start2'];
+                let endTime2 = item.attributes['hours_' + days[day] + '_end2'];
+                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
+                let st1, et1, st2, et2;
+
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
+                  endTime1Split = endTime1.split(':');
+                  et1 = new Date();
+                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
+                }
+                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
+                  startTime2Split = startTime2.split(':');
+                  st2 = new Date();
+                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
+                }
+                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
+                  endTime2Split = endTime2.split(':');
+                  et2 = new Date();
+                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
+                }
+
+                if (et1 > noon && et1 < fivePm || et2 > noon && et2 < fivePm || st1 > noon && st1 < fivePm || st2 > noon && st2 < fivePm) {
+                  dayAndTime = true;
+                  break;
+                }
+              }
+              return na_category || na_category_type || dayAndTime;
+            },
+          },
+          'evening': {
+            unique_key: 'time_evening',
+            i18n_key: 'time.evening',
+            dependentGroups: [ 'weekday' ],
+            value: function(item, dependentServices) {
+              // let na_category = false;
+              let na_category = [ 'Community Refrigerators' ].includes(item.attributes.category);
+              let na_category_type = [].includes(item.attributes.category_type);
+              let dayAndTime =false;
+              let days = {
+                'monday': 'mon',
+                'tuesday': 'tues',
+                'wednesday': 'wed',
+                'thursday': 'thurs',
+                'friday': 'fri',
+                'saturday': 'sat',
+                'sunday': 'sun',
+              };
+              if (dependentServices.length) {
+                let day = dependentServices[0];
+                days = {
+                  day: days[dependentServices[0]],
+                };
+              }
+
+              let noon = new Date();
+              noon.setHours(12, 0, 0, 0);
+              let fivePm = new Date();
+              fivePm.setHours(17, 0, 0, 0);
+
+              for (let day of Object.keys(days)) {
+                let startTime1 = item.attributes['hours_' + days[day] + '_start1'];
+                let endTime1 = item.attributes['hours_' + days[day] + '_end1'];
+                let startTime2 = item.attributes['hours_' + days[day] + '_start2'];
+                let endTime2 = item.attributes['hours_' + days[day] + '_end2'];
+                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
+                let st1, et1, st2, et2;
+
+                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
+                  startTime1Split = startTime1.split(':');
+                  st1 = new Date();
+                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
+                }
+                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
+                  endTime1Split = endTime1.split(':');
+                  et1 = new Date();
+                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
+                }
+                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
+                  startTime2Split = startTime2.split(':');
+                  st2 = new Date();
+                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
+                }
+                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
+                  endTime2Split = endTime2.split(':');
+                  et2 = new Date();
+                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
+                }
+
+                if (et1 > fivePm || et2 > fivePm) {
+                  dayAndTime = true;
+                  break;
+                }
+              }
+              return na_category || na_category_type || dayAndTime;
+            },
+          },
+        },
+      },
     },
+    // type: 'categoryField_value',
+    // value: function(item) {
+    //   // console.log('value is running, item:', item);
+    //   let value;
+    //   if (item.attributes.category_type == "Senior Meal Site") {
+    //     value = "Older adult meal site";
+    //   } else if (item.attributes.category_type == "Food Site") {
+    //     value = "Food site";
+    //   } else if (item.attributes.category_type == "Student Meal Site") {
+    //     value = "Student meal site";
+    //   } else if (item.attributes.category_type == "General Meal Site") {
+    //     value = "General meal site";
+    //   } else if (item.attributes.category_type == "Community Refrigerators") {
+    //     value = "Community refrigerator";
+    //   } else if (item.attributes.category_type) {
+    //     value = item.attributes.category_type;
+    //   } else if (item.attributes.category_type) {
+    //     value = item.attributes.category_type;
+    //   }
+    //   return value;
+    // },
   },
   holidays: {
-    current: false,
-    // holidayName: 'holidayJuly4',
     // days: [ 'MONDAY' ],
     // exceptions: [
     //   'Richard Allen Preparatory Charter School',
@@ -134,37 +439,31 @@ pinboard({
   alerts: {
     modal: {
       enabled: false,
-      // header: 'Fourth of July closures',
-      // body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
-      header: 'Student meal sites',
-      body: '<ul class="alert-modal-list">\
-          <li>Find free summer meal sites here.</li>\
-          <li>Encuentra sitios de comidas de verano gratis aquí.</li>\
-          <li>在这里找到免费的夏季用餐网站。</li>\
-          <li>Tìm các trang web bữa ăn mùa hè miễn phí tại đây.</li>\
-          <li>Найдите здесь сайты с бесплатными летними блюдами.</li>\
-          <li>Trouvez des sites de repas d\'été gratuits ici.</li>\
-        </ul>',
+      header: 'Fourth of July closures',
+      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
+      // header: 'Student meal sites',
+      // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
+
     },
-    // header: {
-    //   type: 'alertBanner',
-    //   enabled: function(state) {
-    //     return state.alertResponse === 'alertHours';
-    //   },
-    //   content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
-    // },
-    // alertChecks: [
+    header: {
+      type: 'alertBanner',
+      enabled: function(state) {
+        return state.alertResponse === 'alertHours';
+      },
+      content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
+    },
+    alertChecks: [
     //   {
     //     type: 'alertHours',
     //     condition: [
     //       {
-    //         'day': 4,
+    //         'day': 1,
     //         'startTime': '1:00',
     //         'endTime': '23:59',
     //       },
     //     ],
     //   },
-    // ],
+    ],
   },
   markerType: 'circle-marker',
   circleMarkers:{
@@ -175,9 +474,13 @@ pinboard({
       // 'Older Adult Meal Site': '#D67D00',
       'Student Meal Site': '#721817',
       'General Meal Site': '#506D0A',
-      'Community Refrigerators': '#444444',
+      // 'Community Refrigerators': '#444444',
+      'Public Benefits': '#444444',
     },
-    weight: 0,
+    borderColor: 'white',
+    weight: 1,
+    radius: 8,
+    mobileRadius: 12,
     size: 16,
     mobileSize: 20,
   },
@@ -200,13 +503,14 @@ pinboard({
   router: {
     enabled: false,
   },
-  projection: function(item) {
-    if (item._featureId.includes('covidFreeMealSites')) {
-      return '3857';
-    } else if (item._featureId.includes('parksSites')) {
-      return '2272';
-    }
-  },
+  // projection: function(item) {
+  //   if (item._featureId.includes('covidFreeMealSites')) {
+  //     return '3857';
+  //   } else if (item._featureId.includes('parksSites')) {
+  //     return '2272';
+  //   }
+  // },
+  projection: '3857',
   geocoder: {
     url(input) {
       const inputEncoded = encodeURIComponent(input);
@@ -361,13 +665,20 @@ pinboard({
   sections: {
     foodSites: {
       title: 'Food sites',
-      titleSingular: 'Food site',
+      titleSingular: 'foodSite',
       color: '#0F4D90',
-      subsections: [ ],
+      subsections: [ 'Community Refrigerators' ],
+    },
+    generalMealSites: {
+      title: 'General meal sites',
+      titleSingular: 'generalMealSite',
+      color: '#506D0A',
+      // subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
+      subsections: [ 'Broad Street Ministry', 'Office of Homeless Services' ],
     },
     studentMealSites: {
       title: 'Student meal sites',
-      titleSingular: 'Student meal site',
+      titleSingular: 'studentMealSite',
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
       subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
@@ -375,58 +686,49 @@ pinboard({
     },
     olderAdultMealSites: {
       title: 'Older adult meal sites',
-      titleSingular: 'Older adult meal site',
-      // color: '#D67D00',
+      titleSingular: 'olderAdultMealSite',
       color: '#a86518',
-      subsections: [ 'PCA', 'PPR_Senior' ],
+      subsections: [ 'PCA', 'specialPCA', 'PPR_Senior' ],
     },
-    generalMealSites: {
-      title: 'General meal sites',
-      titleSingular: 'General meal site',
-      color: '#506D0A',
-      subsections: [[ 'Broad Street Ministry', 'Muslims Serve', 'Kensington Meal Partners', 'SEAMAAC South Philly', 'Office of Homeless Services' ]],
-    },
-    communityRefrigerators: {
-      title: 'Community Refrigerators',
-      titleSingular: 'Community Refrigerator',
+    publicBenefits: {
+      title: 'Public Benefits',
+      titleSingular: 'publicBenefits',
       color: '#444444',
-      subsections: [[ 'Bebashi', 'East Falls Community Fridge', 'Germantown Community Fridge', 'South Philadelphia Community Fridge', 'Umoja Community Fridge', 'Fridges and Family' ]],
+      subsections: [ 'WIC', 'BenePhilly' ],
     },
   },
   subsections: {
-    '': 'foodSites',
-    'Broad Street Ministry': 'generalMealSites',
-    // 'CHARTER': 'studentMealSites',
-    'Kensington Meal Partners': 'generalMealSites',
-    'Muslims Serve': 'generalMealSites',
-    'NDS': 'studentMealSites',
-    'SEAMAAC South Philly': 'generalMealSites',
-    'PHA': 'studentMealSites',
     'PHILABUNDANCE': 'foodSites',
     'PHILABUNDANCE/SHARE FOOD PROGRAM': 'foodSites',
+    'SHARE FOOD PROGRAM': 'foodSites',
+    'Nutritional Development Services': 'foodSites',
+    'Small Things Philly': 'foodSites',
+    'Community Refrigerators': 'foodSites',
+    'Office of Homeless Services': 'generalMealSites',
+    'Broad Street Ministry': 'generalMealSites',
+    'PCA': 'olderAdultMealSites',
+    'specialPCA': 'olderAdultMealSites',
+    'PPR_Senior': 'olderAdultMealSites',
+    'NDS': 'studentMealSites',
+    'PHA': 'studentMealSites',
     'Philabundance Summer Meal Sites': 'studentMealSites',
     'Caring for Friends': 'studentMealSites',
     'Other Summer Meal Sites': 'studentMealSites',
-    'Student Meal Site': 'studentMealSites',
-    'PPR': 'foodSites',
-    // 'PSD': 'studentMealSites',
-    'SENIOR SITE': 'olderAdultMealSites',
-    'SHARE FOOD PROGRAM': 'foodSites',
-    'Nutritional Development Services': 'foodSites',
-    'PCA': 'olderAdultMealSites',
-    'PPR_Senior': 'olderAdultMealSites',
-    'PPR_StudentMeals': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
-    'Small Things Philly': 'foodSites',
-    'Office of Homeless Services': 'generalMealSites',
-    'Other': 'studentMealSites',
-    'Bebashi': 'communityRefrigerators',
-    'East Falls Community Fridge': 'communityRefrigerators',
-    'Germantown Community Fridge': 'communityRefrigerators', 
-    'South Philadelphia Community Fridge': 'communityRefrigerators', 
-    'Umoja Community Fridge': 'communityRefrigerators', 
-    'Fridges and Family': 'communityRefrigerators', 
+    'WIC': 'publicBenefits',
+    'BenePhilly': 'publicBenefits',
+    // 'PPR': 'foodSites',
+    // '': 'foodSites',
+    // 'Student Meal Site': 'studentMealSites',
+    // 'SEAMAAC South Philly': 'generalMealSites',
+    // 'SENIOR SITE': 'olderAdultMealSites',
+    // 'PPR_StudentMeals': 'studentMealSites',
+    // 'Muslims Serve': 'generalMealSites',
+    // 'Kensington Meal Partners': 'generalMealSites',
+    // 'CHARTER': 'studentMealSites',
+    // 'PSD': 'studentMealSites',
+    // 'Other': 'studentMealSites',
   },
   pickupDetailsExceptions: {
     condition: function(item) {
