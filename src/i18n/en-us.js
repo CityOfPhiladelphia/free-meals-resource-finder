@@ -28,7 +28,6 @@ export default {
   futureHolidayClosureAllSites: 'Sites may be closed or have different hours on ',
   weatherClosure: 'This site is currently temporarily closed due to weather.',
   temporaryClosure: 'This site is currently temporarily closed.',
-  // holidayLaborDay: 'Sites may be closed or have different hours for Labor Day. Please contact the site before you go.',
   schedule: 'Schedule',
   nonPerish: 'non-perishable items only',
   freshOnly: 'fresh produce only',

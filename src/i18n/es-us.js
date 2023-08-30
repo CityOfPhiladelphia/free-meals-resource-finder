@@ -24,6 +24,8 @@ export default {
   closure: "Cierre temporal",
   "holidayClosure": "Este sitio está temporalmente cerrado por ",
   "futureHolidayClosure": "Este sitio estará temporalmente cerrado por ",
+  holidayClosureAllSites: 'Es posible que los sitios estén cerrados actualmente o tengan horarios diferentes ',
+  futureHolidayClosureAllSites: 'Los sitios pueden estar cerrados o tener horarios diferentes ',
   "weatherClosure": "Este sitio está temporalmente cerrado debido al clima.",
   "temporaryClosure": "Este sitio está temporalmente cerrado.",
   schedule: "Programa",
