@@ -92,6 +92,7 @@ export default {
       header: 'Older adult meal sites',
       eligibility: {
         p1: 'Age of eligibility varies by site.',
+        p2: 'Spouses of eligible adults may also receive meals at these sites, regardless of their age.',
       },
       pickupDetails: {
         p1: 'Older adult meal sites offer ready-to-eat meals.',
@@ -101,7 +102,7 @@ export default {
         'PCA': {
           name: 'PCA-supported sites',
           eligibility: {
-            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA).',
             p2: "To learn about other services or to get help in another language, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
@@ -112,7 +113,7 @@ export default {
         },
         'specialPCA': {
           eligibility: {
-            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA).',
             p2: "To learn about other services or to get help in another language, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },

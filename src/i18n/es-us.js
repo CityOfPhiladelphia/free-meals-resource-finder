@@ -89,6 +89,7 @@ export default {
       header: "Establecimientos de comida para la tercera edad",
       eligibility: {
         p1: "La edad de elegibilidad varía según el establecimiento.",
+        p2: "Los cónyuges de adultos elegibles también pueden recibir comidas en estos sitios, independientemente de su edad.",
       },
       pickupDetails: {
         p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
@@ -98,7 +99,7 @@ export default {
         'PCA': {
           name: "Establecimientos con apoyo de PCA",
           eligibility: {
-            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA).",
             p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
@@ -108,7 +109,7 @@ export default {
         },
         'specialPCA': {
           eligibility: {
-            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA).",
             p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {

@@ -89,6 +89,7 @@ export default {
       header: "Sites de repas pour personnes âgées",
       eligibility: {
         p1: "L'âge d'éligibilité varie selon les sites.",
+        p2: "Les conjoints des adultes éligibles peuvent également recevoir des repas sur ces sites, quel que soit leur âge.",
       },
       pickupDetails: {
         p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
@@ -98,7 +99,7 @@ export default {
         'PCA': {
           name: "Sites soutenus par la PCA",
           eligibility: {
-            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA).",
             p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
@@ -108,7 +109,7 @@ export default {
         },
         'specialPCA': {
           eligibility: {
-            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA).",
             p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {

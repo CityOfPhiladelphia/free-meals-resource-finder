@@ -89,6 +89,7 @@ export default {
       header: "Các địa điểm phục vụ bữa ăn cho người cao tuổi",
       eligibility: {
         p1: "Độ tuổi đủ điều kiện sẽ thay đổi tùy theo địa điểm.",
+        p2: "Vợ/chồng của người lớn đủ điều kiện cũng có thể nhận được bữa ăn tại các địa điểm này, bất kể tuổi tác của họ.",
       },
       pickupDetails: {
         p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
@@ -98,7 +99,7 @@ export default {
         'PCA': {
           name: "Các địa điểm được PCA hỗ trợ",
           eligibility: {
-            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA).",
             p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
@@ -108,7 +109,7 @@ export default {
         },
         'specialPCA': {
           eligibility: {
-            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA).",
             p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
