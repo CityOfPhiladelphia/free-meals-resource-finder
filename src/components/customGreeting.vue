@@ -11,6 +11,7 @@
       </div>
       <div class="column exclamation-details">
         <div>{{ $t('checkSite') }}</div>
+        <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
       </div>
     </div>
 
