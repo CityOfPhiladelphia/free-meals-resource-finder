@@ -104,7 +104,9 @@ export default {
           },
           pickupDetails: {
             p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-            p3: "Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+            // p3: "Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+            p3: "Một cư dân có thể nhận được tối đa năm bữa ăn mỗi tuần tại địa điểm này. Các bữa ăn được phục vụ ngay trong khuôn viên.",
+            p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
           },
         },
         'specialPCA': {
@@ -114,7 +116,9 @@ export default {
           },
           pickupDetails: {
             p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-            p3: 'Cư dân có thể nhận năm bữa ăn mỗi tuần tại trang web này. Các bữa ăn phải được đặt trước.',
+            // p3: 'Cư dân có thể nhận năm bữa ăn mỗi tuần tại trang web này. Các bữa ăn phải được đặt trước.',
+            p3: "Một cư dân có thể nhận được tối đa bảy bữa ăn mỗi tuần tại địa điểm này. Điều này bao gồm sự kết hợp của các bữa ăn tại chỗ và các bữa ăn mang đi.",
+            p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
           },
         },
         'PPR_Senior': {

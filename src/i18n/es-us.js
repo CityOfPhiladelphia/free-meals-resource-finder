@@ -104,7 +104,9 @@ export default {
           },
           pickupDetails: {
             p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
-            p3: "En algunos casos, se deben reservar las comidas con antelación.",
+            // p3: "En algunos casos, se deben reservar las comidas con antelación.",
+            p3: "Un residente puede recibir hasta cinco comidas por semana en este lugar. Las comidas se sirven en el establecimiento.",
+            p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación. Llame al sitio para obtener más información y hacer una reserva.",
           },
         },
         'specialPCA': {
@@ -114,7 +116,9 @@ export default {
           },
           pickupDetails: {
             p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
-            p3: 'Los residentes pueden recoger cinco comidas por semana en este sitio. Las comidas deben reservarse con anticipación.',
+            // p3: 'Los residentes pueden recoger cinco comidas por semana en este sitio. Las comidas deben reservarse con anticipación.',
+            p3: "Un residente puede recibir hasta siete comidas por semana en este lugar. Esto incluye una combinación de comidas in situ y comidas para llevar.",
+            p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación. Llame al sitio para obtener más información y hacer una reserva.",
           },
         },
         'PPR_Senior': {

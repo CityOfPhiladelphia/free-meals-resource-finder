@@ -108,7 +108,9 @@ export default {
           },
           pickupDetails: {
             p1: 'Older adult meal sites offer ready-to-eat meals.',
-            p3: 'In some cases, meals must be reserved in advance.',
+            // p3: 'In some cases, meals must be reserved in advance.',
+            p3: 'A resident can get up to five meals per week at this location. Meals are served on site.',
+            p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
           },
         },
         'specialPCA': {
@@ -119,7 +121,9 @@ export default {
           },
           pickupDetails: {
             p1: 'Older adult meal sites offer ready-to-eat meals.',
-            p3: 'Residents can pick up five meals per week at this site. Meals must be reserved in advance.',
+            // p3: 'Residents can pick up five meals per week at this site. Meals must be reserved in advance.',
+            p3: 'A resident can get up to seven meals per week at this location. This includes a combination of on-site meals and to-go meals.',
+            p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
           },
         },
         'PPR_Senior': {
