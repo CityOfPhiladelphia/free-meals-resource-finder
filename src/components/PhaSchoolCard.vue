@@ -95,9 +95,9 @@ export default {
       },
     },
     exceptionsList: {
-      type: Object,
+      type: Array,
       default: function(){
-        return {};
+        return [];
       },
     },
   },

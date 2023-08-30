@@ -127,6 +127,7 @@
       <food-site-card
         v-if="section === 'foodSites' && subsection !== 'Community Refrigerators'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -152,18 +153,21 @@
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'NDS'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -176,6 +180,7 @@
       <general-site-card
         v-if="section === 'generalMealSites'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -188,6 +193,7 @@
       <public-benefits-site-card
         v-if="section === 'publicBenefits'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
