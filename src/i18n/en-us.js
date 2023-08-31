@@ -25,7 +25,7 @@ export default {
   holidayClosure: 'This site is currently temporarily closed for ',
   futureHolidayClosure: 'This site will by temporarily closed for ',
   holidayClosureAllSites: 'Sites may currently be closed or have different hours for ',
-  futureHolidayClosureAllSites: 'Sites may be closed or have different hours on ',
+  futureHolidayClosureAllSites: 'Sites may be closed or have different hours on the weekend and ',
   weatherClosure: 'This site is currently temporarily closed due to weather.',
   temporaryClosure: 'This site is currently temporarily closed.',
   schedule: 'Schedule',

@@ -25,7 +25,7 @@ export default {
   "holidayClosure": "Địa điểm này hiện đang tạm đóng vì ",
   "futureHolidayClosure": "Địa điểm này sẽ tạm đóng vì ",
   holidayClosureAllSites: 'Các trang web hiện có thể bị đóng cửa hoặc có giờ khác nhau để ',
-  futureHolidayClosureAllSites: 'Các trang web có thể bị đóng cửa hoặc có giờ khác nhau ',
+  futureHolidayClosureAllSites: 'Các trang web có thể đóng cửa hoặc có giờ khác nhau vào cuối tuần và ',
   "weatherClosure": "Địa điểm này hiện đang tạm đóng vì thời tiết xấu.",
   "temporaryClosure": "Địa điểm này hiện đang tạm đóng.",
   schedule: "Lịch hẹn",

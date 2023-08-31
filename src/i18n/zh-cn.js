@@ -25,7 +25,7 @@ export default {
   "holidayClosure": "出于以下原因本地点目前暂时关闭 ",
   "futureHolidayClosure": "出于以下原因本地点将暂时关闭 ",
   holidayClosureAllSites: '网站目前可能已关闭或有不同的开放时间 ',
-  futureHolidayClosureAllSites: '网站可能已关闭或开放时间不同 ',
+  futureHolidayClosureAllSites: '网站可能会关闭或在周末有不同的时间 ',
   "weatherClosure": "出于天气原因本地点目前暂时关闭。",
   "temporaryClosure": "本地点目前暂时关闭",
   schedule: "日程安排",
