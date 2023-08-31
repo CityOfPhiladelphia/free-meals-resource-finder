@@ -110,6 +110,7 @@
           <li v-html="$t('sections.olderAdultMealSites.subsections.PCA.eligibility.li1')" />
           <li v-html="$t('sections.olderAdultMealSites.subsections.PPR_Senior.eligibility.li1')" />
         </ul>
+        <div v-html="$t('sections.olderAdultMealSites.eligibility.p2')" />
       </div>
     </div>
     <hr class="no-margin">

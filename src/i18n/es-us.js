@@ -17,7 +17,8 @@ export default {
     "publicBenefits": "Asistencia alimentaria y beneficios",
   },
   eligibility: "Elegibilidad",
-  "pickupDetails": "Detalles de la recogida",
+  // "pickupDetails": "Detalles de la recogida",
+  pickupDetails: "Detalles",
   details: "Detalles",
   "beforeYouGo": "Antes de ir",
   change: "Programe el cambio",
@@ -90,6 +91,7 @@ export default {
       header: "Establecimientos de comida para la tercera edad",
       eligibility: {
         p1: "La edad de elegibilidad varía según el establecimiento.",
+        p2: "Los cónyuges de adultos elegibles también pueden recibir comidas en estos sitios, independientemente de su edad.",
       },
       pickupDetails: {
         p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
@@ -99,22 +101,26 @@ export default {
         'PCA': {
           name: "Establecimientos con apoyo de PCA",
           eligibility: {
-            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA).",
             p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
-            p3: "En algunos casos, se deben reservar las comidas con antelación.",
+            // p3: "En algunos casos, se deben reservar las comidas con antelación.",
+            p3: "Un residente puede recibir hasta cinco comidas por semana en este lugar. Las comidas se sirven en el establecimiento.",
+            p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación. Llame al sitio para obtener más información y hacer una reserva.",
           },
         },
         'specialPCA': {
           eligibility: {
-            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA). Sus cónyuges son aptos también, independientemente de su edad.",
+            li1: "Los adultos a partir de 60 años son aptos para los establecimientos que apoya la Philadelphia Corporation for Aging (PCA).",
             p2: "Para obtener información sobre otros servicios o para obtener ayuda en otro idioma, llame a la línea de ayuda de la PCA al <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
-            p3: 'Los residentes pueden recoger cinco comidas por semana en este sitio. Las comidas deben reservarse con anticipación.',
+            // p3: 'Los residentes pueden recoger cinco comidas por semana en este sitio. Las comidas deben reservarse con anticipación.',
+            p3: "Un residente puede recibir hasta siete comidas por semana en este lugar. Esto incluye una combinación de comidas in situ y comidas para llevar.",
+            p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación. Llame al sitio para obtener más información y hacer una reserva.",
           },
         },
         'PPR_Senior': {
