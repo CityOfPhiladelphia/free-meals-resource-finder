@@ -17,13 +17,16 @@ export default {
     "publicBenefits": "Aide alimentaire et aides sociales",
   },
   eligibility: "Admissibilité",
-  "pickupDetails": "Informations sur la collecte",
+  // "pickupDetails": "Informations sur la collecte",
+  pickupDetails: "Détails",
   details: "Détails",
   "beforeYouGo": "Avant de partir",
   change: "Modification des horaires",
   closure: "Fermeture temporaire",
   "holidayClosure": "À l'heure actuelle, ce site est fermé provisoirement pour ",
   "futureHolidayClosure": "Ce site sera fermé provisoirement pour ",
+  holidayClosureAllSites: 'Labor Day - Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
+  futureHolidayClosureAllSites: 'Labor Day - Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
   "weatherClosure": "À l'heure actuelle, ce site est fermé provisoirement en raison des conditions météorologiques.",
   "temporaryClosure": "À l'heure actuelle, ce site est fermé provisoirement.",
   schedule: "Calendrier",
@@ -88,31 +91,37 @@ export default {
       header: "Sites de repas pour personnes âgées",
       eligibility: {
         p1: "L'âge d'éligibilité varie selon les sites.",
+        p2: "Les conjoints des adultes éligibles peuvent également recevoir des repas sur ces sites, quel que soit leur âge.",
       },
       pickupDetails: {
         p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
-        p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
+        // p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
+        p4: "Il est préférable que les résidents réservent leurs repas au moins une semaine à l'avance. Appelez le site pour en savoir plus et faire une réservation.",
       },
       subsections: {
         'PCA': {
           name: "Sites soutenus par la PCA",
           eligibility: {
-            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA).",
             p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
-            p3: "Dans certains cas, les repas doivent être réservés à l'avance.",
+            // p3: "Dans certains cas, les repas doivent être réservés à l'avance.",
+            p3: "Un résident peut prendre jusqu'à cinq repas par semaine à cet endroit. Les repas sont servis sur place.",
+            p4: "Il est préférable que les résidents réservent leurs repas au moins une semaine à l'avance. Appelez le site pour en savoir plus et faire une réservation.",
           },
         },
         'specialPCA': {
           eligibility: {
-            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA). Leurs conjoints sont également éligibles, quel que soit leur âge.",
+            li1: "Les adultes de 60 ans et plus sont éligibles dans les sites soutenus par la Philadelphia Corporation for Aging (PCA).",
             p2: "Pour en savoir plus sur d'autres services ou pour obtenir de l'aide dans une autre langue, appelez la ligne d'assistance de la PCA à <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
-            p3: "Les résidents peuvent se procurer cinq repas par semaine sur ce site. Les repas doivent être réservés à l'avance.",
+            // p3: "Les résidents peuvent se procurer cinq repas par semaine sur ce site. Les repas doivent être réservés à l'avance.",
+            p3: "Un résident peut prendre jusqu'à sept repas par semaine à cet endroit. Cela comprend une combinaison de repas sur place et de plats à emporter.",
+            p4: "Il est préférable que les résidents réservent leurs repas au moins une semaine à l'avance. Appelez le site pour en savoir plus et faire une réservation.",
           },
         },
         'PPR_Senior': {

@@ -17,13 +17,16 @@ export default {
     "publicBenefits": "Hỗ trợ thực phẩm cùng các lợi ích",
   },
   eligibility: "Đủ điều kiện",
-  "pickupDetails": "Thông tin đưa đón",
+  // "pickupDetails": "Thông tin đưa đón",
+  pickupDetails: "Chi tiết",
   details: "Chi tiết",
   "beforeYouGo": "Trước khi đi",
   change: "Thay đổi lịch trình",
   closure: "Tạm thời đóng cửa",
   "holidayClosure": "Địa điểm này hiện đang tạm đóng vì ",
   "futureHolidayClosure": "Địa điểm này sẽ tạm đóng vì ",
+  holidayClosureAllSites: 'Labor Day - Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.',
+  futureHolidayClosureAllSites: 'Labor Day - Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.',
   "weatherClosure": "Địa điểm này hiện đang tạm đóng vì thời tiết xấu.",
   "temporaryClosure": "Địa điểm này hiện đang tạm đóng.",
   schedule: "Lịch hẹn",
@@ -88,31 +91,37 @@ export default {
       header: "Các địa điểm phục vụ bữa ăn cho người cao tuổi",
       eligibility: {
         p1: "Độ tuổi đủ điều kiện sẽ thay đổi tùy theo địa điểm.",
+        p2: "Vợ/chồng của người lớn đủ điều kiện cũng có thể nhận được bữa ăn tại các địa điểm này, bất kể tuổi tác của họ.",
       },
       pickupDetails: {
         p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-        p3: "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm. Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+        // p3: "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm. Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+        p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
       },
       subsections: {
         'PCA': {
           name: "Các địa điểm được PCA hỗ trợ",
           eligibility: {
-            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA).",
             p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-            p3: "Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+            // p3: "Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
+            p3: "Một cư dân có thể nhận được tối đa năm bữa ăn mỗi tuần tại địa điểm này. Các bữa ăn được phục vụ ngay trong khuôn viên.",
+            p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
           },
         },
         'specialPCA': {
           eligibility: {
-            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA). Vợ/chồng của những người này cũng đủ điều kiện, bất kể tuổi tác.",
+            li1: "Người già từ 60 tuổi trở lên đủ điều kiện tham gia tại các địa điểm được hỗ trợ bởi Hội Người Cao Tuổi Philadelphia (PCA).",
             p2: "Để tìm hiểu về các dịch vụ khác hoặc nhận trợ giúp bằng ngôn ngữ khác, hãy gọi đường dây trợ giúp của PCA theo số <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
-            p3: 'Cư dân có thể nhận năm bữa ăn mỗi tuần tại trang web này. Các bữa ăn phải được đặt trước.',
+            // p3: 'Cư dân có thể nhận năm bữa ăn mỗi tuần tại trang web này. Các bữa ăn phải được đặt trước.',
+            p3: "Một cư dân có thể nhận được tối đa bảy bữa ăn mỗi tuần tại địa điểm này. Điều này bao gồm sự kết hợp của các bữa ăn tại chỗ và các bữa ăn mang đi.",
+            p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
           },
         },
         'PPR_Senior': {

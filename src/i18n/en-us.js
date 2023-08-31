@@ -17,13 +17,16 @@ export default {
     publicBenefits: 'Food assistance and benefits',
   },
   eligibility: 'Eligibility',
-  pickupDetails: 'Pickup details',
+  // pickupDetails: 'Pickup details',
+  pickupDetails: 'Details',
   details: 'Details',
   beforeYouGo: 'Before you go',
   change: 'Schedule change',
   closure: 'Temporary closure',
   holidayClosure: 'This site is currently temporarily closed for ',
   futureHolidayClosure: 'This site will by temporarily closed for ',
+  holidayClosureAllSites: 'Labor Day - Hours may change during the holiday weekend. Contact the site before you go.',
+  futureHolidayClosureAllSites: 'Labor Day - Hours may change during the holiday weekend. Contact the site before you go.',
   weatherClosure: 'This site is currently temporarily closed due to weather.',
   temporaryClosure: 'This site is currently temporarily closed.',
   schedule: 'Schedule',
@@ -91,33 +94,39 @@ export default {
       header: 'Older adult meal sites',
       eligibility: {
         p1: 'Age of eligibility varies by site.',
+        p2: 'Spouses of eligible adults may also receive meals at these sites, regardless of their age.',
       },
       pickupDetails: {
         p1: 'Older adult meal sites offer ready-to-eat meals.',
-        p3: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
+        // p3: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
+        p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
       },
       subsections: {
         'PCA': {
           name: 'PCA-supported sites',
           eligibility: {
-            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA).',
             p2: "To learn about other services or to get help in another language, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: 'Older adult meal sites offer ready-to-eat meals.',
-            p3: 'In some cases, meals must be reserved in advance.',
+            // p3: 'In some cases, meals must be reserved in advance.',
+            p3: 'A resident can get up to five meals per week at this location. Meals are served on site.',
+            p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
           },
         },
         'specialPCA': {
           eligibility: {
-            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA). Their spouses are also eligible, regardless of their age.',
+            li1: 'Adults 60 and over are eligible at sites supported by the Philadelphia Corporation for Aging (PCA).',
             p2: "To learn about other services or to get help in another language, call the PCA helpline at\
             <b><a class='underlined' href='tel:+12157659040'>(215) 765-9040</a>.",
           },
           pickupDetails: {
             p1: 'Older adult meal sites offer ready-to-eat meals.',
-            p3: 'Residents can pick up five meals per week at this site. Meals must be reserved in advance.',
+            // p3: 'Residents can pick up five meals per week at this site. Meals must be reserved in advance.',
+            p3: 'A resident can get up to seven meals per week at this location. This includes a combination of on-site meals and to-go meals.',
+            p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
           },
         },
         'PPR_Senior': {

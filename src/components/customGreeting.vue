@@ -11,6 +11,7 @@
       </div>
       <div class="column exclamation-details">
         <div>{{ $t('checkSite') }}</div>
+        <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
       </div>
     </div>
 
@@ -109,6 +110,7 @@
           <li v-html="$t('sections.olderAdultMealSites.subsections.PCA.eligibility.li1')" />
           <li v-html="$t('sections.olderAdultMealSites.subsections.PPR_Senior.eligibility.li1')" />
         </ul>
+        <div v-html="$t('sections.olderAdultMealSites.eligibility.p2')" />
       </div>
     </div>
     <hr class="no-margin">
@@ -122,7 +124,7 @@
         <!-- <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace; -->
         <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
-        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p3')" />
+        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p4')" />
       </div>
     </div>
 
