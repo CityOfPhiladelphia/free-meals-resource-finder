@@ -427,6 +427,9 @@ pinboard({
     // },
   },
   holidays: {
+    showBanner: true,
+    // current: true,
+    // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
     // exceptions: [
     //   'Richard Allen Preparatory Charter School',
