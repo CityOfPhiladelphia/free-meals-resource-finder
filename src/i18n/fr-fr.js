@@ -95,7 +95,8 @@ export default {
       },
       pickupDetails: {
         p1: "Les sites de repas pour personnes âgées proposent des repas préparés.",
-        p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
+        // p3: "Les résidents peuvent recevoir cinq repas par semaine dans la plupart des sites. Dans certains cas, les repas doivent être réservés à l'avance.",
+        p4: "Il est préférable que les résidents réservent leurs repas au moins une semaine à l'avance. Appelez le site pour en savoir plus et faire une réservation.",
       },
       subsections: {
         'PCA': {

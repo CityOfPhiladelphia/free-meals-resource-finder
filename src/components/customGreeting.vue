@@ -124,7 +124,7 @@
         <!-- <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace; -->
         <span v-html="$t('sections.olderAdultMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
-        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p3')" />
+        <div v-html="$t('sections.olderAdultMealSites.pickupDetails.p4')" />
       </div>
     </div>
 
