@@ -99,7 +99,7 @@ export default {
       pickupDetails: {
         p1: 'Older adult meal sites offer ready-to-eat meals.',
         // p3: 'Residents can pick up five meals per week at most locations. In some cases, meals must be reserved in advance.',
-        p4: 'It is preferred that residents reserve meals at least one week in advance. Call the site to learn more and make a reservation.',
+        p4: 'It is preferred that residents reserve meals at least one week in advance.',
       },
       subsections: {
         'PCA': {

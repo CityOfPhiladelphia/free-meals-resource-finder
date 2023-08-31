@@ -96,7 +96,7 @@ export default {
       pickupDetails: {
         p1: "Los establecimientos de comida para adultos mayores ofrecen comidas listas para consumir.",
         // p3: "Los residentes pueden retirar cinco comidas por semana en la mayoría de los establecimientos. En algunos casos, se deben reservar las comidas con antelación.",
-        p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación. Llame al sitio para obtener más información y hacer una reserva.",
+        p4: "Se prefiere que los residentes reserven las comidas con al menos una semana de anticipación.",
       },
       subsections: {
         'PCA': {

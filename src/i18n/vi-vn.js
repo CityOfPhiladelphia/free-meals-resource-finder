@@ -96,7 +96,7 @@ export default {
       pickupDetails: {
         p1: "Các địa điểm phục vụ bữa ăn cho người cao tuổi sẽ cung cấp các suất ăn ăn liền.",
         // p3: "Cư dân có thể lấy năm suất ăn hàng tuần tại đại đa số địa điểm. Trong một vài trường hợp, các suất ăn phải được đăng ký trước.",
-        p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần. Gọi cho trang web để tìm hiểu thêm và đặt chỗ.",
+        p4: "Người dân nên đặt bữa ăn trước ít nhất một tuần.",
       },
       subsections: {
         'PCA': {
