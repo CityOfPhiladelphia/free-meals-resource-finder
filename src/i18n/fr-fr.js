@@ -139,6 +139,10 @@ export default {
     },
     "studentMealSites": {
       header: "Sites de repas pour étudiants",
+      offSeason: {
+        p1: `Tous les élèves du district scolaire de Philadelphie reçoivent le petit déjeuner et le déjeuner gratuits à l'école. Pour en savoir plus, consultez <a target="_blank" href="https://www.philasd.org/foodservices/">la page des services alimentaires du district.</a>`,
+        p2: 'Les jeunes peuvent également se procurer des collations ou des repas dans <a target="_blank" href="https://www.phila.gov/ost/program-locator/#/">le cadre des programmes extrascolaires.</a>',
+      },
       eligibility: "Les enfants et les jeunes âgés de 18 ans ou moins sont éligibles. Il n'est pas nécessaire de présenter une pièce d'identité.",
       "pickupDetails": {
         "p1": "Les sites de repas pour étudiants proposent des repas préparés.",

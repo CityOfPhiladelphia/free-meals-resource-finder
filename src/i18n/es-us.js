@@ -139,6 +139,10 @@ export default {
     },
     "studentMealSites": {
       header: "Establecimientos de comida para estudiantes",
+      offSeason: {
+        p1: 'Todos los estudiantes del Distrito Escolar de Filadelfia reciben desayuno y almuerzo gratis en la escuela. Para obtener más información, consulte <a target="_blank" href="https://www.philasd.org/foodservices/">la página de servicios de alimentación del distrito.',
+        p2: 'Los jóvenes también pueden obtener refrigerios o comidas en <a target="_blank" href="https://www.phila.gov/ost/program-locator/#/">los programas fuera del horario escolar.</a>',
+      },
       eligibility: "Los niños y los jóvenes hasta los 18 años inclusive son aptos. No es necesario tener identificación.",
       "pickupDetails": {
         "p1": "Los establecimientos de comida para estudiantes ofrecen comidas listas para consumir.",
