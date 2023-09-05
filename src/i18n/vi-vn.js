@@ -139,6 +139,10 @@ export default {
     },
     "studentMealSites": {
       header: "Các địa điểm phục vụ bữa ăn cho học sinh sinh viên",
+      offSeason: {
+        p1: 'Tất cả học sinh trong Học Khu Philadelphia được miễn phí bữa sáng và bữa trưa tại trường. Để tìm hiểu thêm, hãy xem <a target="_blank" href="https://www.philasd.org/foodservices/">trang dịch vụ thực phẩm của học khu.</a>',
+        p2: 'Những người trẻ tuổi cũng có thể nhận được đồ ăn nhẹ hoặc bữa ăn tại <a target="_blank" href="https://www.phila.gov/ost/program-locator/#/">Các chương trình ngoài giờ học.</a>',
+      },
       eligibility: "Trẻ em và thanh thiếu niên từ 18 tuổi trở xuống đủ điều kiện tham gia. Không cần giấy tờ tùy thân.",
       "pickupDetails": {
         "p1": "Các địa điểm phục vụ bữa ăn học sinh sinh viên sẽ cung cấp các suất ăn ăn liền.",

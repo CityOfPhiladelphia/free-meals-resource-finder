@@ -139,6 +139,10 @@ export default {
     },
     "studentMealSites": {
       header: "学生用餐地点",
+      offSeason: {
+        p1: '费城学区的所有学生均可在学校享受免费早餐和午餐。要了解更多信息，请参阅该<a target="_blank" href="https://www.philasd.org/foodservices/">地区的餐饮服务页面。</a>',
+        p2: '年轻人也可以在那里吃零食或饭菜<a target="_blank" href="https://www.phila.gov/ost/program-locator/#/">校外时间计划。</a>',
+      },
       eligibility: "18岁或以下的儿童和青少年有资格。 无需身份证号码。",
       "pickupDetails": {
         "p1": "学生用餐地点提供即食餐。",
