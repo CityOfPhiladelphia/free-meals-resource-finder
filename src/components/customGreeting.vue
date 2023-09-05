@@ -135,8 +135,15 @@
     >
       <b>{{ $t('sections.studentMealSites.header') }}</b>
     </div>
+
+    <!-- text from end of summer -->
+    <div class="custom-section">
+      <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
+      <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
+    </div>
+
     <!-- eligibility -->
-    <div class="columns big-cell-pad">
+    <!-- <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('eligibility')"
@@ -145,9 +152,9 @@
         <div v-html="$t('sections.studentMealSites.eligibility')" />
       </div>
     </div>
-    <hr class="no-margin">
+    <hr class="no-margin"> -->
     <!-- pickup details -->
-    <div class="columns big-cell-pad">
+    <!-- <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('details')"
@@ -171,7 +178,7 @@
           <li v-html="$t('sections.studentMealSites.otherResources.li3')" />
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <!-- publicBenefits -->
     <div
@@ -371,6 +378,8 @@ export default {
   font-size: 14px;
   margin-left: 8px;
   margin-top: 4px;
+  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 .custom-ul {

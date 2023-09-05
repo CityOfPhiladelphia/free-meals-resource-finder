@@ -145,6 +145,10 @@ export default {
     },
     studentMealSites: {
       header: 'Student meal sites',
+      offSeason: {
+        p1: 'All students in the School District of Philadelphia receive free breakfast and lunch at school. To learn more, see the <a target="_blank" href="https://www.philasd.org/foodservices/">district’s food services page.</a>',
+        p2: 'Young people can also get snacks or meals at <a target="_blank" href="https://www.phila.gov/ost/program-locator/#/">Out of School Time programs.</a>',
+      },
       eligibility: 'Children and youth age 18 or under are eligible. No ID is required.',
       pickupDetails: {
         p1: 'Student meal sites offer ready-to-eat meals.',
