@@ -41,7 +41,7 @@
     />
 
     <div
-      v-if="$config.i18n.data.messages['en-US'].sections[this.section].subsections[this.subsection].pickupDetails.p3"
+      v-if="$config.i18n.data.messages['en-US'].sections[this.section].subsections[this.subsection].pickupDetails.p4"
       class="table-intro"
       v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails.p4')"
     />
