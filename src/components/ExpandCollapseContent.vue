@@ -127,6 +127,7 @@
       <food-site-card
         v-if="section === 'foodSites' && subsection !== 'Community Refrigerators'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -139,6 +140,7 @@
       <pha-school-card
         v-if="section === 'studentMealSites' && subsection === 'PHA'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -151,18 +153,21 @@
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'NDS'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Philabundance Summer Meal Sites'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
       <nds-school-card
         v-if="section === 'studentMealSites' && subsection === 'Caring for Friends'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -175,6 +180,7 @@
       <general-site-card
         v-if="section === 'generalMealSites'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -187,6 +193,7 @@
       <public-benefits-site-card
         v-if="section === 'publicBenefits'"
         :item="item"
+        :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
       />
 
@@ -408,10 +415,11 @@ export default {
     // },
     exceptionsList() {
       // let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
-      let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
+      // let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
+      let days = [ 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat', 'sun' ];
       let exceptionsArray = [];
       for (let day of days) {
-        let dayException = this.item.attributes[day + '_exceptions'];
+        let dayException = this.item.attributes['hours_' + day + '_exceptions'];
         if (dayException) {
           exceptionsArray.push(dayException);
         }
@@ -422,10 +430,11 @@ export default {
     },
     exceptionsByDay() {
       // let days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
-      let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
+      // let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' ];
+      let days = [ 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat', 'sun' ];
       let exceptions = {};
       for (let day of days) {
-        let dayException = this.item.attributes[day + '_exceptions'];
+        let dayException = this.item.attributes['hours_' + day + '_exceptions'];
         if (dayException) {
           exceptions[day] = dayException;
         }

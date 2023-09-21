@@ -6,6 +6,9 @@ export default {
     subtitle: "Nhận thực phẩm miễn phí, dịch vụ dinh dưỡng và lợi ích công cộng",
     "bannerAlert": "Nhiều địa điểm đã đóng cửa trong hôm nay. Để biết thêm thông tin, vui lòng xem thông tin địa điểm cụ thể.",
     "noResults": "Chúng tôi xin lỗi, không có kết quả cho tìm kiếm này. Điều chỉnh bộ lọc mà bạn đã chọn và thử lại.",
+    searchPlaceholders: {
+      all: "Tìm kiếm theo địa chỉ hoặc mã zip",
+    },
   },
   "categoryType": {
     category: "Danh mục",
@@ -220,4 +223,22 @@ export default {
   },
   "checkSite": "Thông tin địa điểm có thể sẽ được thay đổi. Trước khi đi, hãy liên hệ địa điểm để xác nhận giờ hoạt động và các dịch vụ.",
   "otherResources": "Các tài nguyên khác",
+  exceptions: {
+    "Open on second and fourth Tuesday of the month": "Mở cửa vào thứ ba thứ hai và thứ tư của tháng",
+    "Open on first and third Saturday of the month": "Mở cửa vào thứ bảy đầu tiên và thứ ba của tháng",
+    "Open on second and fourth Monday of the month": "Mở cửa vào thứ Hai thứ hai và thứ tư của tháng",
+    "Open on first and third Wednesday of the month": "Mở cửa vào thứ Tư đầu tiên và thứ ba của tháng",
+    "Open on first Monday of the month": "Mở cửa vào thứ Hai đầu tiên của tháng",
+    "Open on first Tuesday of the month": "Mở cửa vào thứ Ba đầu tiên của tháng",
+    "Open on third Thursday of the month": "Mở cửa vào thứ Năm thứ ba của tháng",
+    "Open on third and fourth Saturday of the month": "Mở cửa vào thứ bảy thứ ba và thứ tư của tháng",
+    "Open on first and third Mondays of the month": "Mở cửa vào thứ Hai đầu tiên và thứ ba của tháng",
+    "Open on the last Thursday of the month": "Mở cửa vào thứ Năm cuối cùng của tháng",
+    "Open on first and third Friday of the month": "Mở cửa vào thứ Sáu đầu tiên và thứ ba của tháng",
+    "Open on second and fourth Saturday of the month": "Mở cửa vào thứ bảy thứ hai và thứ tư của tháng",
+    "Open on first Friday of the month": "Mở cửa vào thứ Sáu đầu tiên của tháng",
+    "Open on first and third Monday of the month": "Mở cửa vào thứ Hai đầu tiên và thứ ba của tháng",
+    "Open on third Saturday of the month": "Mở cửa vào thứ bảy thứ ba của tháng",
+    "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
+  },
 };

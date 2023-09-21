@@ -80,6 +80,18 @@ export default {
       }
       return value;
     },
+    parseException(exception, index) {
+      let parsedException = '';
+      for (let i=0; i<index; i++) {
+        parsedException += "*";
+      }
+      if (this.$i18n.messages[this.i18nLocale].exceptions && this.$i18n.messages[this.i18nLocale].exceptions[exception]) {
+        parsedException += ' ' + this.$i18n.messages[this.i18nLocale].exceptions[exception];
+      } else {
+        parsedException += ' ' + exception;
+      }
+      return parsedException;
+    },
   },
 };
 </script>

@@ -6,6 +6,9 @@ export default {
     subtitle: 'Get free food, nutrition services, and public benefits',
     bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
     noResults: "We're sorry, there are no results for that search. Adjust the filters you've selected and try again.",
+    searchPlaceholders: {
+      all: "Search by address or zipcode",
+    },
   },
   categoryType: {
     category: 'Category',
@@ -242,4 +245,22 @@ export default {
   },
   checkSite: 'Site details are subject to change. Before you go, contact the site to confirm their hours and services.',
   otherResources: 'Other resources',
+  exceptions: {
+    "Open on second and fourth Tuesday of the month": "Open on second and fourth Tuesday of the month",
+    "Open on first and third Saturday of the month": "Open on first and third Saturday of the month",
+    "Open on second and fourth Monday of the month": "Open on second and fourth Monday of the month",
+    "Open on first and third Wednesday of the month": "Open on first and third Wednesday of the month",
+    "Open on first Monday of the month": "Open on first Monday of the month",
+    "Open on first Tuesday of the month": "Open on first Tuesday of the month",
+    "Open on third Thursday of the month": "Open on third Thursday of the month",
+    "Open on third and fourth Saturday of the month": "Open on third and fourth Saturday of the month",
+    "Open on first and third Mondays of the month": "Open on first and third Mondays of the month",
+    "Open on the last Thursday of the month": "Open on the last Thursday of the month",
+    "Open on first and third Friday of the month": "Open on first and third Friday of the month",
+    "Open on second and fourth Saturday of the month": "Open on second and fourth Saturday of the month",
+    "Open on first Friday of the month": "Open on first Friday of the month",
+    "Open on first and third Monday of the month": "Open on first and third Monday of the month",
+    "Open on third Saturday of the month": "Open on third Saturday of the month",
+    "Open on second and fourth Wednesday of the month": "Open on second and fourth Wednesday of the month",
+  },
 };

@@ -6,6 +6,9 @@ export default {
     subtitle: "Получите бесплатную еду, услуги по питанию и государственные пособия",
     "bannerAlert": "Сегодня многие площадки закрыты. Проверьте сведения о конкретной площадке.",
     "noResults": "Результатов по этому запросу не найдено. Измените фильтры и повторите попытку.",
+    searchPlaceholders: {
+      all: "Поиск по адресу или почтовому индексу",
+    },
   },
   "categoryType": {
     category: "Категория",
@@ -219,4 +222,22 @@ export default {
   },
   "checkSite": "Информация о площадках может меняться. Прежде чем прийти на площадку, свяжитесь с ее персоналом и уточните часы работы и перечень услуг.",
   "otherResources": "Другие ресурсы",
+  exceptions: {
+    "Open on second and fourth Tuesday of the month": "Открыто во второй и четвертый вторник месяца",
+    "Open on first and third Saturday of the month": "Открыто в первую и третью субботу месяца",
+    "Open on second and fourth Monday of the month": "Открыто во второй и четвертый понедельник месяца",
+    "Open on first and third Wednesday of the month": "Открыто в первую и третью среду месяца",
+    "Open on first Monday of the month": "Открыто в первый понедельник месяца",
+    "Open on first Tuesday of the month": "Открыто в первый вторник месяца",
+    "Open on third Thursday of the month": "Открыто в третий четверг месяца",
+    "Open on third and fourth Saturday of the month": "Открыто в третью и четвертую субботу месяца",
+    "Open on first and third Mondays of the month": "Открыто в первый и третий понедельник месяца",
+    "Open on the last Thursday of the month": "Открыто в последний четверг месяца",
+    "Open on first and third Friday of the month": "Открыто в первую и третью пятницу месяца",
+    "Open on second and fourth Saturday of the month": "Открыто во вторую и четвертую субботу месяца",
+    "Open on first Friday of the month": "Открыто в первую пятницу месяца",
+    "Open on first and third Monday of the month": "Открыто в первый и третий понедельник месяца",
+    "Open on third Saturday of the month": "Открыто в третью субботу месяца",
+    "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
+  },
 };

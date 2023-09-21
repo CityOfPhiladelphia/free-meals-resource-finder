@@ -6,6 +6,9 @@ export default {
     subtitle: "获得免费食物、营养服务和公共福利",
     "bannerAlert": "今天许多食物分发点关门。 查看具体的地点信息，以了解详细情况。",
     "noResults": "很抱歉，没有针对该搜索的结果。 请调整所选的过滤器，然后重试。",
+    searchPlaceholders: {
+      all: "按地址或邮政编码搜索",
+    },
   },
   "categoryType": {
     category: "类别",
@@ -220,4 +223,22 @@ export default {
   },
   "checkSite": "地点的详细情况可能会有变动。 请在出发之前联系餐食援助地点，以确定他们的具体开放时间和服务内容。",
   "otherResources": "其他资源",
+  exceptions: {
+    "Open on second and fourth Tuesday of the month": "每月第二和第四个星期二开放",
+    "Open on first and third Saturday of the month": "在每月的第一个和第三个星期六开放",
+    "Open on second and fourth Monday of the month": "每月第二和第四个星期一开放",
+    "Open on first and third Wednesday of the month": "在每月的第一个和第三个星期三开放",
+    "Open on first Monday of the month": "在每月的第一个星期一开放",
+    "Open on first Tuesday of the month": "在每月的第一个星期二开放",
+    "Open on third Thursday of the month": "每月第三个星期四开放",
+    "Open on third and fourth Saturday of the month": "每月第三和第四个星期六开放",
+    "Open on first and third Mondays of the month": "每月的第一个和第三个星期一开放",
+    "Open on the last Thursday of the month": "每月最后一个星期四开放",
+    "Open on first and third Friday of the month": "在每月的第一个和第三个星期五开放",
+    "Open on second and fourth Saturday of the month": "在每月的第二个和第四个星期六开放",
+    "Open on first Friday of the month": "在每月的第一个星期五开放",
+    "Open on first and third Monday of the month": "在每月的第一个和第三个星期一开放",
+    "Open on third Saturday of the month": "每月第三个星期六开放",
+    "Open on second and fourth Wednesday of the month": "每月第二和第四个星期三开放",
+  },
 };

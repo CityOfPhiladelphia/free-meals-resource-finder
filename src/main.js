@@ -57,24 +57,18 @@ pinboard({
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
   },
+  anySearch: true,
+  allowZipcodeSearch: true,
   allowPrint: true,
   showBuffers: true,
+  resetDataOnGeocode: true,
   retractableRefine: true,
   gtag: {
     category: 'rf-food',
   },
-  // comboSearch: {
-  //   dropdown: [ 'address' ],
-  // },
   searchBar: {
-    placeholder: 'Search by address',
-    searchTypes: [ 'address' ],
-    labelText:  {
-      address: 'Search by address',
-    },
-    placeholderText: {
-      address: 'Search by address',
-    },
+    searchTypes: [ 'address', 'zipcode' ],
+    searchDistance: 1,
   },
   locationInfo: {
     siteName: function(item, transforms) {
