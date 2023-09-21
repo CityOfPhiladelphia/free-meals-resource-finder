@@ -270,6 +270,32 @@ export default {
       }
       return [];
     },
+    allExceptions() {
+      let exceptionsPreliminary = [];
+      let exceptionFields = [
+        'hours_mon_exceptions',
+        'hours_tues_exceptions',
+        'hours_wed_exceptions',
+        'hours_thurs_exceptions',
+        'hours_fri_exceptions',
+        'hours_sat_exceptions',
+        'hours_sun_exceptions',
+      ];
+      for (let location of this.database) {
+        if (location) {
+          // console.log('in loop, location:', location);
+          for (let field of exceptionFields) {
+            if (location.attributes[field]) {
+              exceptionsPreliminary.push(location.attributes[field]);
+            }
+          }
+        }
+      }
+      let exceptionsSet = new Set(exceptionsPreliminary);
+      let exceptionsArray = [ ...exceptionsSet ];
+
+      return exceptionsArray;
+    },
     hasError() {
       return this.$store.state.geocode.status === 'error';
     },

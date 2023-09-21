@@ -6,6 +6,9 @@ export default {
     subtitle: "Obtenga alimentos, servicios de nutrición y beneficios públicos gratuitos",
     "bannerAlert": "Muchos establecimientos están cerrados hoy. Consulte los detalles específicos del establecimiento para obtener más información.",
     "noResults": "Lo sentimos, no se han encontrado resultados para esa búsqueda. Ajuste los filtros que ha seleccionado y vuelva a intentarlo.",
+    searchPlaceholders: {
+      all: "Buscar por dirección o código postal",
+    },
   },
   "categoryType": {
     category: "Categoría",
@@ -220,4 +223,22 @@ export default {
   },
   "checkSite": "Los detalles del establecimiento están sujetos a cambios. Antes de ir, comuníquese con el establecimiento para confirmar los horarios y servicios.",
   "otherResources": "Otros recursos",
+  exceptions: {
+    "Open on second and fourth Tuesday of the month": "Abierto el segundo y cuarto martes del mes",
+    "Open on first and third Saturday of the month": "Abierto el primer y tercer sábado del mes",
+    "Open on second and fourth Monday of the month": "Abierto el segundo y cuarto lunes de cada mes",
+    "Open on first and third Wednesday of the month": "Abierto el primer y tercer miércoles de cada mes",
+    "Open on first Monday of the month": "Abierto el primer lunes de cada mes",
+    "Open on first Tuesday of the month": "Abierto el primer martes de cada mes",
+    "Open on third Thursday of the month": "Abierto el tercer jueves de cada mes",
+    "Open on third and fourth Saturday of the month": "Abierto el tercer y cuarto sábado de cada mes",
+    "Open on first and third Mondays of the month": "Abierto el primer y tercer lunes del mes",
+    "Open on the last Thursday of the month": "Abierto el último jueves del mes",
+    "Open on first and third Friday of the month": "Abierto el primer y tercer viernes de cada mes",
+    "Open on second and fourth Saturday of the month": "Abierto el segundo y cuarto sábado del mes",
+    "Open on first Friday of the month": "Abierto el primer viernes de cada mes",
+    "Open on first and third Monday of the month": "Abierto el primer y tercer lunes de cada mes",
+    "Open on third Saturday of the month": "Abierto el tercer sábado de cada mes",
+    "Open on second and fourth Wednesday of the month": "Abierto el segundo y cuarto miércoles de cada mes",
+  },
 };
