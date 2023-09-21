@@ -242,4 +242,8 @@ export default {
   },
   checkSite: 'Site details are subject to change. Before you go, contact the site to confirm their hours and services.',
   otherResources: 'Other resources',
+  exceptions: {
+    "every other Monday": "every other Monday",
+    "Third Tuesday of Month": "Third Tuesday of Month",
+  },
 };

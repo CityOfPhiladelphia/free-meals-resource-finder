@@ -56,12 +56,22 @@
         </div>
       </template>
     </vue-good-table>
+    <div class="exceptions-holder">
+      <div
+        v-for="(exception, index) of exceptionsList"
+        :key="index"
+      >
+        {{ parseException(exception, index+1) }}
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 
 import { VueGoodTable } from 'vue-good-table';
+import LocalSharedFunctions from './mixins/LocalSharedFunctions.vue';
+
 // import 'vue-good-table/dist/vue-good-table.css';
 
 export default {
@@ -69,6 +79,9 @@ export default {
   components: {
     VueGoodTable,
   },
+  mixins: [
+    LocalSharedFunctions,
+  ],
   props: {
     item: {
       type: Object,
@@ -80,6 +93,12 @@ export default {
       type: Object,
       default: function(){
         return {};
+      },
+    },
+    exceptionsList: {
+      type: Array,
+      default: function(){
+        return [];
       },
     },
   },
