@@ -91,6 +91,9 @@ export default {
         'Office of Homeless Services': {
           name: 'Office of Homeless Services',
         },
+        'STP': {
+          name: 'Small Things Philly',
+        },
       },
     },
     olderAdultMealSites: {

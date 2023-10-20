@@ -701,6 +701,7 @@ pinboard({
     'Nutritional Development Services': 'foodSites',
     'Small Things Philly': 'foodSites',
     'Community Refrigerators': 'foodSites',
+    'STP': 'generalMealSites',
     'Office of Homeless Services': 'generalMealSites',
     'Broad Street Ministry': 'generalMealSites',
     'PCA': 'olderAdultMealSites',
