@@ -421,7 +421,7 @@ pinboard({
     // },
   },
   holidays: {
-    forceBanner: true,
+    forceBanner: false,
     automaticBanner: false,
     // current: true,
     // holidayName: 'holidayLaborDay',
