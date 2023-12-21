@@ -421,7 +421,8 @@ pinboard({
     // },
   },
   holidays: {
-    forceBanner: false,
+    forceBanner: true,
+    forceBannerMessage: 'winterHolidayClosureAllSites',
     automaticBanner: false,
     // current: true,
     // holidayName: 'holidayLaborDay',
