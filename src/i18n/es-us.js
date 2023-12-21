@@ -29,6 +29,7 @@ export default {
   "holidayClosure": "Este sitio está temporalmente cerrado por ",
   "futureHolidayClosure": "Este sitio estará temporalmente cerrado por ",
   holidayClosureAllSites: 'El horario puede cambiar durante el fin de semana festivo. Póngase en contacto con el sitio antes de ir.',
+  winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Los horarios pueden cambiar durante las vacaciones de invierno. Póngase en contacto con el sitio antes de ir.",
   futureHolidayClosureAllSites: 'El horario puede cambiar durante el fin de semana festivo. Póngase en contacto con el sitio antes de ir.',
   "weatherClosure": "Este sitio está temporalmente cerrado debido al clima.",
   "temporaryClosure": "Este sitio está temporalmente cerrado.",

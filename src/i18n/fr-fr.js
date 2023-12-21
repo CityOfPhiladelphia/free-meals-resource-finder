@@ -29,6 +29,7 @@ export default {
   "holidayClosure": "À l'heure actuelle, ce site est fermé provisoirement pour ",
   "futureHolidayClosure": "Ce site sera fermé provisoirement pour ",
   holidayClosureAllSites: 'Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
+  winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Les horaires peuvent changer pendant les vacances d'hiver. Contactez le site avant de partir.",
   futureHolidayClosureAllSites: 'Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
   "weatherClosure": "À l'heure actuelle, ce site est fermé provisoirement en raison des conditions météorologiques.",
   "temporaryClosure": "À l'heure actuelle, ce site est fermé provisoirement.",

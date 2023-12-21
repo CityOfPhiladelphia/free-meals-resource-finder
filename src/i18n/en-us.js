@@ -29,6 +29,7 @@ export default {
   holidayClosure: 'This site is currently temporarily closed for ',
   futureHolidayClosure: 'This site will by temporarily closed for ',
   holidayClosureAllSites: 'Hours may change during the holiday weekend. Contact the site before you go.',
+  winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Hours may change during the winter holidays. Contact the site before you go.",
   futureHolidayClosureAllSites: 'Hours may change during the holiday weekend. Contact the site before you go.',
   weatherClosure: 'This site is currently temporarily closed due to weather.',
   temporaryClosure: 'This site is currently temporarily closed.',
