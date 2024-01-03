@@ -421,7 +421,7 @@ pinboard({
     // },
   },
   holidays: {
-    forceBanner: true,
+    forceBanner: false,
     forceBannerMessage: 'winterHolidayClosureAllSites',
     automaticBanner: false,
     // current: true,
