@@ -11,6 +11,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 console.log('main.js process.env.NODE_ENV:', process.env.NODE_ENV, 'process.env.VUE_APP_PUBLICPATH:', process.env.VUE_APP_PUBLICPATH);
 
+import './assets/style.css';
+
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
@@ -437,9 +439,18 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: false,
-      header: 'Fourth of July closures',
-      body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
+      enabled: true,
+      header: 'Student meal sites',
+      body: '<ul class="alert-modal-list">\
+          <li class="aml-odd">Starting on 6/17 use this app to find summer meals sites for youth.</li>\
+          <li class="aml-even">A partir del 17 de junio, utilice esta aplicación para encontrar sitios de comidas de verano para jóvenes.</li>\
+          <li class="aml-odd">从 6 月 17 日开始，使用此应用程序查找适合青少年的夏季聚餐网站.</li>\
+          <li class="aml-even">Bắt đầu từ ngày 6/17 sử dụng ứng dụng này để tìm các trang web bữa ăn mùa hè cho thanh thiếu niên.</li>\
+          <li class="aml-odd">Начиная с 17 июня используйте это приложение, чтобы найти сайты с летними блюдами для молодежи.</li>\
+          <li class="aml-even">À partir du 17 juin, utilisez cette application pour trouver des sites de repas d\'été pour les jeunes.</li>\
+        </ul>',
+      // header: 'Fourth of July closures',
+      // body: '<p>Most food and meal sites will be closed for the 4th of July. Please contact the site before you go to get the most up to date schedule.</p>',
       // header: 'Student meal sites',
       // body: '<ul><li>Effective September 3. Student ID is required.</li><li>To find additional food near you, text your zip code to <br>1 (800) 548-6479.</li></ul>',
 
