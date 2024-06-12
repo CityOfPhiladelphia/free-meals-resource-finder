@@ -171,6 +171,13 @@
         :pickup-details="pickupDetails"
       />
 
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'JSJ Food Bank'"
+        :item="item"
+        :exceptions-list="exceptionsList"
+        :pickup-details="pickupDetails"
+      />
+
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
         :item="item"

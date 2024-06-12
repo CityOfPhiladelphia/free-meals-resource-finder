@@ -691,7 +691,7 @@ pinboard({
       titleSingular: 'studentMealSite',
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
+      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends', 'JSJ Food Bank' ],
       hideCounts: false,
     },
     olderAdultMealSites: {
@@ -724,6 +724,7 @@ pinboard({
     'PHA': 'studentMealSites',
     'Philabundance Summer Meal Sites': 'studentMealSites',
     'Caring for Friends': 'studentMealSites',
+    'JSJ Food Bank': 'studentMealSites',
     'Other Summer Meal Sites': 'studentMealSites',
     'playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',

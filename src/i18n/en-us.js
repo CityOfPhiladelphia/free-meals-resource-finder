@@ -197,6 +197,10 @@ export default {
           name: 'Other Summer Meal Sites',
           pickupDetails: 'Meal times vary by site. Meals must be eaten on site. For more information, visit the summer meal site.',
         },
+        'JSJ Food Bank': {
+          name: 'JSJ Food Bank',
+          pickupDetails: 'Contact the site for more details.',
+        },
       },
     },
     publicBenefits: {
