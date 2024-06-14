@@ -173,9 +173,9 @@
       <div class="column small-cell-pad">
         <div v-html="$t('sections.studentMealSites.otherResources.p1')" />
         <ul>
-          <li v-html="$t('sections.studentMealSites.otherResources.li1')" />
+          <!-- <li v-html="$t('sections.studentMealSites.otherResources.li1')" /> -->
           <li v-html="$t('sections.studentMealSites.otherResources.li2')" />
-          <li v-html="$t('sections.studentMealSites.otherResources.li3')" />
+          <!-- <li v-html="$t('sections.studentMealSites.otherResources.li3')" /> -->
         </ul>
       </div>
     </div>
