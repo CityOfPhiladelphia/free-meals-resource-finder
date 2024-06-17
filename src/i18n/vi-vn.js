@@ -157,6 +157,7 @@ export default {
         "li1": "Gọi cho Đường dây nóng của Bữa ăn mùa hè theo số <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
         "li2": "Soạn tin nhắn “FOOD” hoặc “COMIDA” và gửi tới số <a href=\"tel:304-304\">304-304</a>.",
         "li3": "Truy cập <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
+        "li4": 'Truy cập <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder để tìm các bữa ăn mùa hè</a> miễn phí cho thanh thiếu niên.',
       },
       subsections: {
         "PHA": {

@@ -156,6 +156,7 @@ export default {
         "li1": "Позвоните на горячую линию летних пунктов питания по номеру <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
         "li2": "Отправьте сообщение с текстом FOOD или COMIDA на номер <a href=\"tel:304-304\">304-304</a>.",
         "li3": "Посетите сайт <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
+        "li4": 'Посетите <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">сайт www.fns.usda.gov/summer/sitefinder, чтобы найти бесплатные летние блюда</a> для молодежи.',
       },
       subsections: {
         "PHA": {

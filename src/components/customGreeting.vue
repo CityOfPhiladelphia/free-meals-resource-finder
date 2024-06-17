@@ -176,6 +176,7 @@
           <!-- <li v-html="$t('sections.studentMealSites.otherResources.li1')" /> -->
           <li v-html="$t('sections.studentMealSites.otherResources.li2')" />
           <!-- <li v-html="$t('sections.studentMealSites.otherResources.li3')" /> -->
+          <li v-html="$t('sections.studentMealSites.otherResources.li4')" />
         </ul>
       </div>
     </div>
