@@ -157,6 +157,7 @@ export default {
         "li1": "请拨打夏季餐食援助热线（Summer Meals Hotline）：<a href=\"tel:215-770-4659\">(215) 770-4659</a>。",
         "li2": "请发送短信“FOOD”或“COMIDA”至：<a href=\"tel:304-304\">304-304</a>。",
         "li3": "请访问：<a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>。",
+        "li4": '访问 <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>，为年轻人免费寻找夏日大餐。',
       },
       subsections: {
         "PHA": {
