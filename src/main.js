@@ -423,9 +423,9 @@ pinboard({
     // },
   },
   holidays: {
-    forceBanner: true,
-    forceBannerMessage: 'holidayClosureAllSites_juneteenth',
-    automaticBanner: false,
+    // forceBanner: true,
+    // forceBannerMessage: 'holidayClosureAllSites_juneteenth',
+    automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
@@ -439,7 +439,7 @@ pinboard({
   },
   alerts: {
     modal: {
-      enabled: true,
+      enabled: false,
       header: 'Student meal sites',
       body: '<ul class="alert-modal-list">\
           <li class="aml-odd">Starting on 6/17 use this app to find summer meals sites for youth.</li>\
