@@ -423,9 +423,9 @@ pinboard({
     // },
   },
   holidays: {
-    // forceBanner: true,
+    forceBanner: true,
     // forceBannerMessage: 'holidayClosureAllSites_juneteenth',
-    automaticBanner: true,
+    // automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
