@@ -30,6 +30,7 @@ export default {
   "futureHolidayClosure": "出于以下原因本地点将暂时关闭 ",
   holidayClosureAllSites_juneteenth: '6月19日——6月19日假期的时间可能会改变。出发前请联系该网站。',
   holidayClosureAllSites_weekend: '假日周末营业时间可能会发生变化。出发前请联系该网站。',
+  holidayClosureAllSites: '假日周末营业时间可能会发生变化。出发前请联系该网站。',
   winterHolidayClosureAllSites: "Christmas and New Year's Holidays - 寒假期间营业时间可能会有所变化。出发前请联系该网站。",
   futureHolidayClosureAllSites: '假日周末营业时间可能会发生变化。出发前请联系该网站。',
   "weatherClosure": "出于天气原因本地点目前暂时关闭。",
