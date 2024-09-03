@@ -137,13 +137,15 @@
     </div>
 
     <!-- text from end of summer -->
-    <!-- <div class="custom-section">
+    <br>
+    <div class="custom-section">
       <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
       <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
-    </div> -->
+    </div>
+    <br>
 
     <!-- eligibility -->
-    <div class="columns big-cell-pad">
+    <!-- <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('eligibility')"
@@ -152,9 +154,9 @@
         <div v-html="$t('sections.studentMealSites.eligibility')" />
       </div>
     </div>
-    <hr class="no-margin">
+    <hr class="no-margin"> -->
     <!-- pickup details -->
-    <div class="columns big-cell-pad">
+    <!-- <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('details')"
@@ -173,13 +175,11 @@
       <div class="column small-cell-pad">
         <div v-html="$t('sections.studentMealSites.otherResources.p1')" />
         <ul>
-          <!-- <li v-html="$t('sections.studentMealSites.otherResources.li1')" /> -->
           <li v-html="$t('sections.studentMealSites.otherResources.li2')" />
-          <!-- <li v-html="$t('sections.studentMealSites.otherResources.li3')" /> -->
           <li v-html="$t('sections.studentMealSites.otherResources.li4')" />
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <!-- publicBenefits -->
     <div
