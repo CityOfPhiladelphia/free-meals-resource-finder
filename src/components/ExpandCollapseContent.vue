@@ -60,7 +60,7 @@
 
         <div class="column is-6">
           <div
-            v-if="item.attributes.category"
+            v-if="item.attributes.category && item.attributes.category !== 'General Food Site'"
             class="columns is-mobile"
           >
             <div class="column is-1">

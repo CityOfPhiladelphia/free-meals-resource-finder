@@ -82,6 +82,9 @@ export default {
           Availability of food will vary based on donations. \
           Visit each Community Refrigerator website for more details.',
         },
+        'General Food Site': {
+          name: 'General Food Site',
+        },
       },
     },
     generalMealSites: {
@@ -273,5 +276,6 @@ export default {
     "Open on first and third Monday of the month": "Open on first and third Monday of the month",
     "Open on third Saturday of the month": "Open on third Saturday of the month",
     "Open on second and fourth Wednesday of the month": "Open on second and fourth Wednesday of the month",
+    "Open on second and fourth Saturdays of the month": "Open on second and fourth Saturdays of the month",
   },
 };

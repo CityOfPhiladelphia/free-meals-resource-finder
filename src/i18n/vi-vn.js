@@ -244,5 +244,6 @@ export default {
     "Open on first and third Monday of the month": "Mở cửa vào thứ Hai đầu tiên và thứ ba của tháng",
     "Open on third Saturday of the month": "Mở cửa vào thứ bảy thứ ba của tháng",
     "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
+    "Open on second and fourth Saturdays of the month": "Mở cửa vào thứ bảy thứ hai và thứ tư trong tháng",
   },
 };

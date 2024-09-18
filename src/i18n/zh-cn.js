@@ -244,5 +244,6 @@ export default {
     "Open on first and third Monday of the month": "在每月的第一个和第三个星期一开放",
     "Open on third Saturday of the month": "每月第三个星期六开放",
     "Open on second and fourth Wednesday of the month": "每月第二和第四个星期三开放",
+    "Open on second and fourth Saturdays of the month": "每月第二和第四个星期六开放",
   },
 };

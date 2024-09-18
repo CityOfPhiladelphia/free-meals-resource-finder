@@ -243,5 +243,6 @@ export default {
     "Open on first and third Monday of the month": "Открыто в первый и третий понедельник месяца",
     "Open on third Saturday of the month": "Открыто в третью субботу месяца",
     "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
+    "Open on second and fourth Saturdays of the month": "Открыто во вторую и четвертую субботу месяца",
   },
 };
