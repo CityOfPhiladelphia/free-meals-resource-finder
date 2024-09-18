@@ -244,5 +244,6 @@ export default {
     "Open on first and third Monday of the month": "Ouvert le premier et le troisième lundi du mois",
     "Open on third Saturday of the month": "Ouvert le troisième samedi du mois",
     "Open on second and fourth Wednesday of the month": "Ouvert les deuxième et quatrième mercredis du mois",
+    "Open on second and fourth Saturdays of the month": "Ouvert les deuxième et quatrième samedis du mois",
   },
 };
