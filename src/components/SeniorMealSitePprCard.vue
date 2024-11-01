@@ -1,3 +1,38 @@
+<script>
+
+import { useConfigStore } from '../../node_modules/@phila/pinboard/src/stores/ConfigStore.js';
+const ConfigStore = useConfigStore();
+const $config = ConfigStore.config;
+
+const props = defineProps({
+  item: {
+    type: Object,
+    default: function(){
+      return {};
+    },
+  },
+  pickupDetails: {
+    type: Object,
+    default: function(){
+      return {};
+    },
+  },
+});
+
+const subsections = computed(() => {
+  return $config.subsections;
+});
+
+const section = computed(() => {
+  return subsections.value[props.item.properties['category']];
+});
+
+const subsection = computed(() => {
+  return props.item.properties.category;
+});
+
+</script>
+
 <template>
   <section class="services">
     <h3>{{ $t('eligibility') }}</h3>
@@ -18,12 +53,9 @@
       :columns="pickupDetails.columns"
       :rows="pickupDetails.rows"
       :sort-options="{ enabled: false }"
-      style-class="vgt-table condensed"
+      style-class="table"
     >
-      <template
-        slot="table-column"
-        slot-scope="props"
-      >
+      <template #table-column="props">
         <span
           v-if="props.column.label =='Days'"
           class="table-header-text"
@@ -38,10 +70,7 @@
         </span>
       </template>
 
-      <template
-        slot="table-row"
-        slot-scope="props"
-      >
+      <template #table-row="props">
         <span
           v-if="props.column.field == 'label'"
           class="table-text"
@@ -58,41 +87,3 @@
     </vue-good-table>
   </section>
 </template>
-
-<script>
-
-import { VueGoodTable } from 'vue-good-table';
-
-export default {
-  name: 'SeniorMealSiteCard',
-  components: {
-    VueGoodTable,
-  },
-  props: {
-    item: {
-      type: Object,
-      default: function(){
-        return {};
-      },
-    },
-    pickupDetails: {
-      type: Object,
-      default: function(){
-        return {};
-      },
-    },
-  },
-  computed: {
-    subsections() {
-      return this.$config.subsections;
-    },
-    section() {
-      return this.subsections[this.$props.item.attributes['category']];
-    },
-    subsection() {
-      return this.$props.item.attributes.category;
-    },
-  },
-};
-
-</script>

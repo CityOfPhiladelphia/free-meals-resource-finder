@@ -6,7 +6,7 @@ name: dev Push to S3
 on:
   push:
     branches:
-      - npm-cache
+      - vue3-pinboard
 
 jobs:
   build:
@@ -15,26 +15,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Use Node.js 16.x
+    - name: Use Node.js 20.x
       uses: actions/setup-node@v3
       with:
-        node-version: '16.x'
+        node-version: '20.x'
         cache: 'npm'
-
-    - name: install npm 6
-      run: |
-        npm install -g npm@6
 
     - name: npm install, and build
       run: |
         printf "@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}" >> ~/.npmrc
-        git config --global url."https://".insteadOf ssh://
         npm ci
-        npm run build:development
+        npm run build
       env:
         FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FA_AUTH_TOKEN }}
-        VUE_APP_GATEKEEPER_KEY: ${{ secrets.VUE_APP_GATEKEEPER_KEY }}
+        VITE_GATEKEEPER_KEY: ${{ secrets.VUE_APP_GATEKEEPER_KEY }}
 
     - name: Deploy to Dev s3, Set index headers
       env:

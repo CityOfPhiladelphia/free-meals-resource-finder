@@ -8,7 +8,7 @@ export default {
     params: {
       where: '1=1',
       outFields: '*',
-      f: 'pjson',
+      f: 'geojson',
     },
   },
 };
