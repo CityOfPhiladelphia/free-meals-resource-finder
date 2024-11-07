@@ -1,16 +1,9 @@
 <script setup>
 
-import { useMainStore } from '../../node_modules/@phila/pinboard/src/stores/MainStore.js';
-import { useMapStore } from '../../node_modules/@phila/pinboard/src/stores/MapStore.js';
-import { useGeocodeStore } from '../../node_modules/@phila/pinboard/src/stores/GeocodeStore.js';
-import { useDataStore } from '../../node_modules/@phila/pinboard/src/stores/DataStore.js';
-import { useConfigStore } from '../../node_modules/@phila/pinboard/src/stores/ConfigStore.js';
-
-import { parse, format } from 'date-fns';
+// import { parse, format } from 'date-fns';
 import { onMounted, watch, ref, computed, defineEmits } from 'vue';
-const MainStore = useMainStore();
-const ConfigStore = useConfigStore();
-const $config = ConfigStore.config;
+
+import $config from '../main.js';
 
 const $emit = defineEmits(['view-list']);
 
@@ -95,7 +88,7 @@ watch(
     // let subsections = getCounts();
     subsections.value = getCounts();
     // $store.commit('setSubsections', subsections);
-    MainStore.subsections = subsections.value;
+    // MainStore.subsections = subsections.value;
   },
 );
 

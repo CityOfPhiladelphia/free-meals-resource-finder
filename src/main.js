@@ -5,6 +5,11 @@
 // (we might not need to use axios with new vue async tools)
 // if that is not needed, we can move this info to main.js
 
+import isMac from './util/is-mac';
+if (isMac()) {
+  import('./assets/mac-style.scss')
+}
+
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
@@ -15,14 +20,13 @@ import { faTimes as farTimes } from '@fortawesome/pro-regular-svg-icons';
 import { faPlus as farPlus } from '@fortawesome/pro-regular-svg-icons';
 import { faMinus as farMinus } from '@fortawesome/pro-regular-svg-icons';
 import { markRaw } from 'vue';
-
-// library.add(faExclamationTriangle, faHandHoldingHeart);
-// library.add(faExclamationTriangle, faHandHoldingHeart, farTimes, farPlus, farMinus);
 library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp, farTimes, farPlus, farMinus);
 
-// import pinboard
-import pinboard from '../node_modules/@phila/pinboard/src/main.js';
-if (import.meta.env.VITE_DEBUG) console.log('pinboard:', pinboard);
+import pinboard from '@phila/pinboard';
+// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
+if (import.meta.env.VITE_DEBUG) console.log('test pinboard:', pinboard);
+
+import '../node_modules/@phila/pinboard/dist/style.css';
 
 // import greeting from './general/greeting';
 import legendControls from './general/legendControls';
@@ -47,9 +51,7 @@ const customComps = markRaw({
 import i18n from './i18n/i18n';
 // if (import.meta.env.VITE_DEBUG) console.log('main.js i18n:', i18n);
 
-// pinboard();
-pinboard({
-// export default {
+let $config = {
   i18n: i18n.i18n,
   publicPath: import.meta.env.VITE_PUBLICPATH,
   app: {
@@ -658,4 +660,8 @@ pinboard({
       'circle-stroke-color': 'white',
     },
   },
-});
+};
+
+pinboard($config);
+export default $config;
+

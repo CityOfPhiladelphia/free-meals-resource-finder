@@ -1,9 +1,7 @@
 <script setup>
 
 import { computed } from 'vue';
-import { useConfigStore } from '../../node_modules/@phila/pinboard/src/stores/ConfigStore.js';
-const ConfigStore = useConfigStore();
-const $config = ConfigStore.config;
+import $config from '../main.js';
 
 const props = defineProps({
   item: {

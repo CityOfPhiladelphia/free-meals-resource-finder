@@ -1,9 +1,7 @@
 <script setup>
 
-import { useMainStore } from '@phila/pinboard/src/stores/MainStore.js';
-import { useConfigStore } from '@phila/pinboard/src/stores/ConfigStore.js';
 import { ref, computed, getCurrentInstance, onBeforeMount, onMounted, watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+// import { useRoute, useRouter } from 'vue-router';
 
 import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
 const { getPickupDetails, parseTimeRange, parseException } = useLocalSharedFunctions();
@@ -21,12 +19,7 @@ import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
 
-// import PrintShareSection from '../../node_modules/@phila/pinboard/src/components/PrintShareSection';
-import PrintShareSection from '@phila/pinboard/src/components/PrintShareSection.vue';
-
-const MainStore = useMainStore();
-const ConfigStore = useConfigStore();
-const $config = ConfigStore.config;
+import $config from '../main.js';
 
 const props = defineProps({
   item: {
@@ -37,9 +30,9 @@ const props = defineProps({
   }
 });
 
-const isMobile = computed(() => {
-  return MainStore.isMobileDevice;
-});
+// const isMobile = computed(() => {
+//   return MainStore.isMobileDevice;
+// });
 
 const currentUnixDate = computed (() => {
   let currentYear = format(new Date(), 'yyyy');
@@ -237,11 +230,8 @@ const makeValidUrl = (url) => {
 
 <template>
   <div>
-    <div :class="isMobile ? 'main-content-mobile' : 'main-content'">
-      <print-share-section
-        :item="item"
-      />
-
+    <!-- <div :class="isMobile ? 'main-content-mobile' : 'main-content'"> -->
+    <div>
       <div class="columns">
         <div class="column is-6">
           <div
@@ -444,7 +434,6 @@ const makeValidUrl = (url) => {
 </template>
 
 <style lang="scss" scoped>
-// @import "../../node_modules/@phila/pinboard/src/assets/scss/expandCollapse.scss";
 
 .location-content {
   // font-size: 14px;

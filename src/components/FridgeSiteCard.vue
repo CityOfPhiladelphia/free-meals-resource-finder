@@ -1,9 +1,7 @@
 <script setup>
 
 import { computed } from 'vue';
-import { useConfigStore } from '../../node_modules/@phila/pinboard/src/stores/ConfigStore.js';
-const ConfigStore = useConfigStore();
-const $config = ConfigStore.config;
+import $config from '../main.js';
   
 const props = defineProps({
   item: {
@@ -15,15 +13,15 @@ const props = defineProps({
 });
 
 const subsections = computed(() => {
-  return this.$config.subsections;
+  return $config.subsections;
 });
 
 const section = computed(() => {
-  return this.subsections[this.$props.item.properties['category']];
+  return subsections[props.item.properties['category']];
 });
 
 const subsection = computed(() => {
-  return this.$props.item.properties.category;
+  return props.item.properties.category;
 });
 
 </script>
