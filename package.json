@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@fortawesome/pro-regular-svg-icons": "^6.6.0",
-    "@phila/phila-ui-core": "^1.0.15",
     "@phila/pinboard": "2.0.50",
     "unplugin-auto-import": "^0.18.3",
     "unplugin-vue-router": "^0.10.8"
