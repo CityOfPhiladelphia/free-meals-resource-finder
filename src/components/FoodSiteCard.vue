@@ -3,8 +3,6 @@
 import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
 const { parseException } = useLocalSharedFunctions();
 
-// import '../../assets/expandCollapse.scss';
-
 const props = defineProps({
   item: {
     type: Object,
