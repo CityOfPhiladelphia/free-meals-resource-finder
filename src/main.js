@@ -507,8 +507,6 @@ pinboard({
   },
   dataSources: {
     covidFreeMealSites,
-    // parksSites,
-    // compiled,
   },
   router: {
     enabled: false,
