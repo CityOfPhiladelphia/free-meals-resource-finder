@@ -29,6 +29,7 @@ export default {
   "holidayClosure": "Este sitio está temporalmente cerrado por ",
   "futureHolidayClosure": "Este sitio estará temporalmente cerrado por ",
   holidayClosureAllSites_juneteenth: 'Diecinueve de junio: el horario puede cambiar para el feriado del 19 de junio. Póngase en contacto con el sitio antes de ir.',
+  holidayClosureAllSites_thanksgiving: 'Día de Acción de Gracias: el horario puede cambiar durante el fin de semana festivo. Póngase en contacto con el sitio antes de ir.',
   holidayClosureAllSites_weekend: 'El horario puede cambiar durante el fin de semana festivo. Póngase en contacto con el sitio antes de ir.',
   holidayClosureAllSites: 'El horario puede cambiar durante el fin de semana festivo. Póngase en contacto con el sitio antes de ir.',
   winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Los horarios pueden cambiar durante las vacaciones de invierno. Póngase en contacto con el sitio antes de ir.",
