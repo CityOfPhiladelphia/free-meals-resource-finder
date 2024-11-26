@@ -22,24 +22,17 @@ import { faMinus as farMinus } from '@fortawesome/pro-regular-svg-icons';
 import { markRaw } from 'vue';
 library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp, farTimes, farPlus, farMinus);
 
-import pinboard from '@phila/pinboard';
-// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
+// import pinboard from '@phila/pinboard';
+import pinboard from '../node_modules/@phila/pinboard/src/main.js';
 if (import.meta.env.VITE_DEBUG) console.log('test pinboard:', pinboard);
 
 import '../node_modules/@phila/pinboard/dist/style.css';
 
 // import greeting from './general/greeting';
-import legendControls from './general/legendControls';
+import legendControl from './general/legendControl';
 
 // data-sources
-// import seniorSites from './data-sources/senior-sites';
-// import distributionSites from './data-sources/distribution-sites';
-// import schoolMealSites from './data-sources/school-meal-sites';
-// import youthActivitySites from './data-sources/youth-activity-sites';
-// import parksSites from './data-sources/parks-sites.js';
-// import compiled from './data-sources/compiled';
 import covidFreeMealSites from './data-sources/covid-free-meal-sites';
-// var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
 import customGreeting from './components/customGreeting.vue';
@@ -71,6 +64,10 @@ let $config = {
   searchBar: {
     searchTypes: [ 'address', 'zipcode' ],
     searchDistance: 1,
+  },
+  fieldsUsed: {
+    section: 'category_type',
+    subsection: 'category',
   },
   locationInfo: {
     siteNameField: 'site_name',
@@ -495,8 +492,7 @@ let $config = {
     size: 16,
     mobileSize: 20,
   },
-  legendControls,
-  // baseConfig: BASE_CONFIG_URL,
+  legendControl,
   // cyclomedia: {
   //   enabled: false,
   //   measurementAllowed: false,
@@ -508,19 +504,10 @@ let $config = {
   // },
   dataSources: {
     covidFreeMealSites,
-    // parksSites,
-    // compiled,
   },
   router: {
     enabled: false,
   },
-  // projection: function(item) {
-  //   if (item._featureId.includes('covidFreeMealSites')) {
-  //     return '3857';
-  //   } else if (item._featureId.includes('parksSites')) {
-  //     return '2272';
-  //   }
-  // },
   projection: '3857',
   geocoder: {
     url(input) {
@@ -531,29 +518,6 @@ let $config = {
       include_units: true,
     },
   },
-  footer: [
-    {
-      type: "native",
-      href: "https://www.phila.gov/",
-      attrs: {
-        target: "_blank",
-      },
-      text: "app.cityOfPhiladelphia",
-    },
-    {
-      type: "native",
-      href: "https://www.phila.gov/food/",
-      text: "app.about",
-    },
-    {
-      type: "native",
-      href: "https://www.phila.gov/feedback/",
-      attrs: {
-        target: "_blank",
-      },
-      text: "app.feedback",
-    },
-  ],
   sections: {
     foodSites: {
       title: 'Food sites',
@@ -660,6 +624,29 @@ let $config = {
       'circle-stroke-color': 'white',
     },
   },
+  footer: [
+    {
+      type: "native",
+      href: "https://www.phila.gov/",
+      attrs: {
+        target: "_blank",
+      },
+      text: "app.cityOfPhiladelphia",
+    },
+    {
+      type: "native",
+      href: "https://www.phila.gov/food/",
+      text: "app.about",
+    },
+    {
+      type: "native",
+      href: "https://www.phila.gov/feedback/",
+      attrs: {
+        target: "_blank",
+      },
+      text: "app.feedback",
+    },
+  ],
 };
 
 pinboard($config);
