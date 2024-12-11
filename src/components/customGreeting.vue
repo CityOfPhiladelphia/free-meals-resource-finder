@@ -8,20 +8,17 @@ import $config from '../main.js';
 const $emit = defineEmits(['view-list']);
 
 const props = defineProps({
-  message: {
-    type: String,
-    default: function() {
-      return 'defaultMessage';
-    },
+  database: {
+    type: Array,
   },
-})
+  isMobile: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 const sections = ref({});
 const subsections = ref({});
-
-const database = computed(() => {
-  return DataStore.sources[DataStore.appType].data.rows || DataStore.sources[DataStore.appType].features || DataStore.sources[DataStore.appType].data;
-});
 
 const geocodeStatus = computed(() => {
   if (GeocodeStore.aisData.features && GeocodeStore.aisData.features.length) {
@@ -42,7 +39,7 @@ const allExceptions = computed(() => {
     'hours_sat_exceptions',
     'hours_sun_exceptions',
   ];
-  for (let location of database.value) {
+  for (let location of props.database) {
     if (location) {
       // console.log('in loop, location:', location);
       for (let field of exceptionFields) {
@@ -83,7 +80,7 @@ const errorMessage = computed(() => {
 });
 
 watch(
-  () => database,
+  () => props.database,
   async nextDatabase => {
     // let subsections = getCounts();
     subsections.value = getCounts();
@@ -99,7 +96,7 @@ onMounted(async () => {
 // METHODS
 const getCounts = () => {
   console.log('customGreeting.vue getCounts is running');
-  const refineData = database.value;
+  const refineData = props.database;
   let service = '';
 
   console.log('in getRefineSearchList, refineData:', refineData);
@@ -155,8 +152,14 @@ const getCounts = () => {
       <div class="has-text-centered container">
         <button
           class="button greeting-button"
-          v-html="$t('app.viewList')"
           @click="$emit('view-list')"
+          v-html="$t('app.viewList')"
+        />
+        <button
+          v-if="isMobile"
+          class="button greeting-button"
+          @click="$emit('view-map')"
+          v-html="$t('app.viewMap')"
         />
       </div>
     </div>
@@ -380,10 +383,11 @@ const getCounts = () => {
   font-size: 1rem;
   color: white;
   cursor: pointer;
+  margin: 1rem;
 }
 
 .greeting-button:hover {
-  border-color: #2176d2 !important;
+  background-color: #444444 !important;
 }
 
 .section-header {

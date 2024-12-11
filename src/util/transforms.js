@@ -1,18 +1,18 @@
-import { format, parseISO } from 'date-fns';
+// import { format, parseISO } from 'date-fns';
 
 export default {
-  date: {
-    transform: function (value) {
-      let valueTransformed;
-      // console.log('date transform running, value:', value, 'typeof value:', typeof value);
-      if (typeof value === 'string') {
-        valueTransformed = format(parseISO(value), 'MM/dd/yyyy');
-      } else {
-        valueTransformed = format(value, 'MM/dd/yyyy');
-      }
-      return valueTransformed;
-    },
-  },
+  // date: {
+  //   transform: function (value) {
+  //     let valueTransformed;
+  //     // console.log('date transform running, value:', value, 'typeof value:', typeof value);
+  //     if (typeof value === 'string') {
+  //       valueTransformed = format(parseISO(value), 'MM/dd/yyyy');
+  //     } else {
+  //       valueTransformed = format(value, 'MM/dd/yyyy');
+  //     }
+  //     return valueTransformed;
+  //   },
+  // },
   toLocaleDateString: {
     transform: function(epoch){
       // console.log('toLocaleDateString transform, epoch:', epoch, typeof epoch);

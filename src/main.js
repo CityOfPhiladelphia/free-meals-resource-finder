@@ -93,7 +93,6 @@ let $config = {
     columns: true,
     multipleFieldGroups: {
       categoryType: {
-        columns: 2,
         radio: {
           'foodSite': {
             unique_key: 'categoryType_foodSite',
@@ -131,9 +130,9 @@ let $config = {
             },
           },
         },
+        columns: 2,
       },
       weekday: {
-        columns: 2,
         radio: {
           'monday': {
             unique_key: 'weekday_monday',
@@ -209,6 +208,7 @@ let $config = {
             },
           },
         },
+        columns: 2,
       },
       time: {
         radio: {
