@@ -6,7 +6,7 @@ name: dev Push to S3
 on:
   push:
     branches:
-      - vue3-pinboard
+      - x
 
 jobs:
   build:
@@ -28,7 +28,6 @@ jobs:
         npm run build
       env:
         FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FA_AUTH_TOKEN }}
-        VITE_GATEKEEPER_KEY: ${{ secrets.VUE_APP_GATEKEEPER_KEY }}
 
     - name: Deploy to Dev s3, Set index headers
       env:
