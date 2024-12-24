@@ -22,13 +22,10 @@ import { faMinus as farMinus } from '@fortawesome/pro-regular-svg-icons';
 import { markRaw } from 'vue';
 library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp, farTimes, farPlus, farMinus);
 
-// import pinboard from '@phila/pinboard';
-import pinboard from '../node_modules/@phila/pinboard/src/main.js';
-if (import.meta.env.VITE_DEBUG) console.log('test pinboard:', pinboard);
-
+import pinboard from '@phila/pinboard';
+// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
 import '../node_modules/@phila/pinboard/dist/style.css';
 
-// import greeting from './general/greeting';
 import legendControl from './general/legendControl';
 
 // data-sources
