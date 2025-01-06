@@ -1,6 +1,5 @@
 <script setup>
 
-// import { parse, format } from 'date-fns';
 import { onMounted, watch, ref, computed, defineEmits } from 'vue';
 
 import $config from '../main.js';
@@ -193,7 +192,7 @@ const getCounts = () => {
         <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.foodSites.pickupDetails.p3')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.foodSites.pickupDetails.li1')" />
           <li v-html="$t('sections.foodSites.pickupDetails.li2')" />
           <li v-html="$t('sections.foodSites.pickupDetails.li3')" />
@@ -247,7 +246,7 @@ const getCounts = () => {
       />
       <div class="column small-cell-pad">
         <div v-html="$t('sections.olderAdultMealSites.eligibility.p1')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.olderAdultMealSites.subsections.PCA.eligibility.li1')" />
           <li v-html="$t('sections.olderAdultMealSites.subsections.PPR_Senior.eligibility.li1')" />
         </ul>
@@ -349,7 +348,7 @@ const getCounts = () => {
       />
       <div class="column small-cell-pad">
         <div v-html="$t('sections.publicBenefits.pickupDetails.p1')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.publicBenefits.pickupDetails.li1')" />
           <li v-html="$t('sections.publicBenefits.pickupDetails.li2')" />
           <li v-html="$t('sections.publicBenefits.pickupDetails.li3')" />
@@ -370,66 +369,3 @@ const getCounts = () => {
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-.main-greeting {
-  padding: 1rem;
-}
-
-.greeting-button {
-  background-color: #0f4d90 !important;
-  border-color: #0f4d90 !important;
-  font-size: 1rem;
-  color: white;
-  cursor: pointer;
-  margin: 1rem;
-}
-
-.greeting-button:hover {
-  background-color: #444444 !important;
-}
-
-.section-header {
-    background-color: #0f4d90;
-    font-size: 16px;
-    color: white;
-    padding: 4px;
-    padding-left: 8px;
-  }
-
-.underlined {
-  text-decoration: underline;
-}
-
-.no-margin {
-  margin: 0px;
-}
-
-.big-cell-pad {
-  font-size: 14px;
-  padding: 4px;
-  margin: 0px !important;
-}
-
-.small-cell-pad {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
-  padding-left: 0px;
-}
-
-.custom-section {
-  font-size: 14px;
-  margin-left: 8px;
-  margin-top: 4px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-}
-
-.custom-ul {
-  margin-left: 4rem;
-  font-size: 14px;
-}
-
-</style>

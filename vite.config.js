@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => {
       }
     },
     optimizeDeps: {
-      include: [ '@turf/jsts', 'maplibre-gl', 'concaveman' ],
+      // include: [ '@turf/jsts', 'maplibre-gl', 'concaveman' ],
       // exclude: [ '@phila/pinboard' ]
       // extensions: [".scss", ".sass"],
     }
