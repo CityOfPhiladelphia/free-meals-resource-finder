@@ -230,7 +230,7 @@ const makeValidUrl = (url) => {
 <template>
   <div>
     <!-- <div :class="isMobile ? 'main-content-mobile' : 'main-content'"> -->
-    <div>
+    <div class="main-ec-content">
       <div class="columns">
         <div class="column is-6">
           <div
@@ -431,11 +431,3 @@ const makeValidUrl = (url) => {
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-.location-content {
-  // font-size: 14px;
-}
-
-</style>
