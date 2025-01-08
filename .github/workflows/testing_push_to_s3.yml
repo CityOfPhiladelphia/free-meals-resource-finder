@@ -6,7 +6,7 @@ name: testing Push to S3
 on:
   push:
     branches:
-      - vue3-pinboard
+      - vue3-pinboard_x
 
 jobs:
   build:
