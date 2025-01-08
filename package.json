@@ -12,11 +12,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.1",
-    "@fortawesome/free-solid-svg-icons": "^6.7.1",
-    "@fortawesome/pro-regular-svg-icons": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/pro-regular-svg-icons": "^6.7.2",
     "@phila/phila-ui-core": "^1.0.18",
-    "@phila/pinboard": "^2.0.95",
+    "@phila/pinboard": "^2.0.100",
     "date-fns": "^4.1.0",
     "unplugin-auto-import": "^0.18.3",
     "unplugin-vue-router": "^0.10.8"
