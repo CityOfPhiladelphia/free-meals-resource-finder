@@ -1,26 +1,166 @@
+<script setup>
+
+import { onMounted, watch, ref, computed, defineEmits } from 'vue';
+
+import $config from '../main.js';
+
+const $emit = defineEmits(['view-list']);
+
+const props = defineProps({
+  database: {
+    type: Array,
+  },
+  isMobile: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const sections = ref({});
+const subsections = ref({});
+
+const geocodeStatus = computed(() => {
+  if (GeocodeStore.aisData.features && GeocodeStore.aisData.features.length) {
+    return 'success';
+  } else {
+    return 'error';
+  } 
+});
+
+const allExceptions = computed(() => {
+  let exceptionsPreliminary = [];
+  let exceptionFields = [
+    'hours_mon_exceptions',
+    'hours_tues_exceptions',
+    'hours_wed_exceptions',
+    'hours_thurs_exceptions',
+    'hours_fri_exceptions',
+    'hours_sat_exceptions',
+    'hours_sun_exceptions',
+  ];
+  for (let location of props.database) {
+    if (location) {
+      // console.log('in loop, location:', location);
+      for (let field of exceptionFields) {
+        if (location.properties[field]) {
+          exceptionsPreliminary.push(location.properties[field]);
+        }
+      }
+    }
+  }
+  let exceptionsSet = new Set(exceptionsPreliminary);
+  let exceptionsArray = [ ...exceptionsSet ];
+
+  return exceptionsArray;
+});
+
+const hasError = computed(() => {
+  return geocodeStatus.value === 'error';
+});
+
+const errorMessage = computed(() => {
+  const input = GeocodeStore.aisData;
+  return `
+      <p>
+        We couldn't find
+        ${input ? '<strong>' + input + '</strong>' : 'that address'}.
+        Are you sure everything was spelled correctly?
+      </p>
+      <p>
+        Here are some examples of things you can search for:
+      </p>
+      <ul>
+        <li>1234 Market St</li>
+        <li>1001 Pine Street #201</li>
+        <li>12th & Market</li>
+        <li>883309050 (an OPA number with no hyphens or other characters)</li>
+      </ul>
+    `;
+});
+
+watch(
+  () => props.database,
+  async nextDatabase => {
+    // let subsections = getCounts();
+    subsections.value = getCounts();
+    // $store.commit('setSubsections', subsections);
+    // MainStore.subsections = subsections.value;
+  },
+);
+
+onMounted(async () => {
+  sections.value = $config.sections;
+});
+
+// METHODS
+const getCounts = () => {
+  console.log('customGreeting.vue getCounts is running');
+  const refineData = props.database;
+  let service = '';
+
+  console.log('in getRefineSearchList, refineData:', refineData);
+  refineData.forEach((arrayElem) => {
+    // console.log('arrayElem:', arrayElem);
+    if (arrayElem.services_offered) {
+      service += `${arrayElem.services_offered},`;
+    } else if (arrayElem.properties.category) {
+      service += `${arrayElem.properties.category},`;
+    }
+  });
+
+  // TODO: break into smaller chunks
+  // let serviceArray = service.split(/(,|;)/);
+  let serviceArray = service.split(',');
+  serviceArray = serviceArray.map(s => s.trim());
+
+  let countObject = serviceArray.reduce(function (acc, curr) {
+    if (curr) {
+      if (typeof acc[curr] == 'undefined') {
+        // console.log('Object.keys(acc)', Object.keys(acc), 'curr', curr);
+        acc[curr] = 1;
+      } else {
+        acc[curr] += 1;
+      }
+    }
+    return acc;
+  }, {});
+
+  return countObject;
+}
+
+</script>
+
 <template>
   <div
-    class="custom-greeting content"
+    class="main-greeting"
   >
-    <div class="exclamation-holder columns is-mobile">
-      <div class="column is-narrow">
-        <font-awesome-icon
-          icon="exclamation-triangle"
-          class="fa-3x"
+    <div class="data-section">
+      <div class="exclamation-holder columns is-mobile">
+        <div class="column is-narrow">
+          <font-awesome-icon
+            icon="exclamation-triangle"
+            class="fa-3x"
+          />
+        </div>
+        <div class="column exclamation-details">
+          <div>{{ $t('checkSite') }}</div>
+          <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
+        </div>
+      </div>
+
+      <div class="has-text-centered container">
+        <button
+          class="button greeting-button"
+          @click="$emit('view-list')"
+          v-html="$t('app.viewList')"
+        />
+        <button
+          v-if="isMobile"
+          class="button greeting-button"
+          @click="$emit('view-map')"
+          v-html="$t('app.viewMap')"
         />
       </div>
-      <div class="column exclamation-details">
-        <div>{{ $t('checkSite') }}</div>
-        <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
-      </div>
-    </div>
-
-    <div class="has-text-centered container">
-      <button
-        class="button open-list-button"
-        @click="$emit('view-list')"
-        v-html="$t('app.viewList')"
-      />
     </div>
 
     <!-- foodSites -->
@@ -52,7 +192,7 @@
         <span v-html="$t('sections.foodSites.pickupDetails.p1')" />&ZeroWidthSpace;
         <span v-html="$t('daysAndTimesVaryBySite')" />
         <div v-html="$t('sections.foodSites.pickupDetails.p3')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.foodSites.pickupDetails.li1')" />
           <li v-html="$t('sections.foodSites.pickupDetails.li2')" />
           <li v-html="$t('sections.foodSites.pickupDetails.li3')" />
@@ -106,7 +246,7 @@
       />
       <div class="column small-cell-pad">
         <div v-html="$t('sections.olderAdultMealSites.eligibility.p1')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.olderAdultMealSites.subsections.PCA.eligibility.li1')" />
           <li v-html="$t('sections.olderAdultMealSites.subsections.PPR_Senior.eligibility.li1')" />
         </ul>
@@ -208,7 +348,7 @@
       />
       <div class="column small-cell-pad">
         <div v-html="$t('sections.publicBenefits.pickupDetails.p1')" />
-        <ul>
+        <ul class="bullet-list">
           <li v-html="$t('sections.publicBenefits.pickupDetails.li1')" />
           <li v-html="$t('sections.publicBenefits.pickupDetails.li2')" />
           <li v-html="$t('sections.publicBenefits.pickupDetails.li3')" />
@@ -229,189 +369,3 @@
     </div>
   </div>
 </template>
-
-<script>
-
-// import { parse, format } from 'date-fns';
-// import greetingSection from './greetingSection.vue';
-
-export default {
-  name: 'CustomGreeting',
-  components: {
-    // greetingSection,
-  },
-  props: {
-    'message': {
-      type: String,
-      default: function() {
-        return 'defaultMessage';
-      },
-    },
-  },
-  data() {
-    let data = {
-      sections: {},
-      subsections: {},
-    };
-    return data;
-  },
-  computed: {
-    i18nEnabled() {
-      if (this.$config.i18n) {
-        return true;
-      }
-      return false;
-
-    },
-    database() {
-      if (this.$store.state.sources[this.$appType]) {
-        if (this.$store.state.sources[this.$appType].data) {
-          return this.$store.state.sources[this.$appType].data.rows || this.$store.state.sources[this.$appType].data.features || this.$store.state.sources[this.$appType].data;
-        }
-      }
-      return [];
-    },
-    allExceptions() {
-      let exceptionsPreliminary = [];
-      let exceptionFields = [
-        'hours_mon_exceptions',
-        'hours_tues_exceptions',
-        'hours_wed_exceptions',
-        'hours_thurs_exceptions',
-        'hours_fri_exceptions',
-        'hours_sat_exceptions',
-        'hours_sun_exceptions',
-      ];
-      for (let location of this.database) {
-        if (location) {
-          // console.log('in loop, location:', location);
-          for (let field of exceptionFields) {
-            if (location.attributes[field]) {
-              exceptionsPreliminary.push(location.attributes[field]);
-            }
-          }
-        }
-      }
-      let exceptionsSet = new Set(exceptionsPreliminary);
-      let exceptionsArray = [ ...exceptionsSet ];
-
-      return exceptionsArray;
-    },
-    hasError() {
-      return this.$store.state.geocode.status === 'error';
-    },
-    errorMessage() {
-      const input = this.$store.state.geocode.input;
-      return `
-          <p>
-            We couldn't find
-            ${input ? '<strong>' + input + '</strong>' : 'that address'}.
-            Are you sure everything was spelled correctly?
-          </p>
-          <p>
-            Here are some examples of things you can search for:
-          </p>
-          <ul>
-            <li>1234 Market St</li>
-            <li>1001 Pine Street #201</li>
-            <li>12th & Market</li>
-            <li>883309050 (an OPA number with no hyphens or other characters)</li>
-          </ul>
-        `;
-    },
-  },
-  watch: {
-    database(nextDatabase) {
-      let subsections = this.getCounts();
-      this.subsections = subsections;
-      this.$store.commit('setSubsections', subsections);
-    },
-  },
-  mounted() {
-    this.sections = this.$config.sections;
-  },
-  methods: {
-    getCounts() {
-      console.log('customGreeting.vue getCounts is running');
-      const refineData = this.database;
-      let service = '';
-
-      console.log('in getRefineSearchList, refineData:', refineData);
-      refineData.forEach((arrayElem) => {
-        // console.log('arrayElem:', arrayElem);
-        if (arrayElem.services_offered) {
-          service += `${arrayElem.services_offered},`;
-        } else if (arrayElem.attributes.category) {
-          service += `${arrayElem.attributes.category},`;
-        }
-      });
-
-      // TODO: break this into smaller chunks
-      // let serviceArray = service.split(/(,|;)/);
-      let serviceArray = service.split(',');
-      serviceArray = serviceArray.map(s => s.trim());
-
-      let countObject = serviceArray.reduce(function (acc, curr) {
-        if (curr) {
-          if (typeof acc[curr] == 'undefined') {
-            // console.log('Object.keys(acc)', Object.keys(acc), 'curr', curr);
-            acc[curr] = 1;
-          } else {
-            acc[curr] += 1;
-          }
-        }
-        return acc;
-      }, {});
-
-      return countObject;
-    },
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-
-@import "../../node_modules/@phila/pinboard/src/assets/scss/customGreeting.scss";
-
-.section-header {
-    background-color: #0f4d90;
-    font-size: 16px;
-    color: white;
-    padding: 4px;
-    padding-left: 8px;
-  }
-
-  .underlined {
-    text-decoration: underline;
-  }
-
-  .no-margin {
-    margin: 0px;
-  }
-
-  .big-cell-pad {
-    font-size: 14px;
-    padding: 4px;
-    margin: 0px !important;
-  }
-
-  .small-cell-pad {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 4px;
-    padding-left: 0px;
-  }
-.custom-section {
-  font-size: 14px;
-  margin-left: 8px;
-  margin-top: 4px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-}
-
-.custom-ul {
-  margin-left: 4rem;
-  font-size: 14px;
-}
-
-</style>

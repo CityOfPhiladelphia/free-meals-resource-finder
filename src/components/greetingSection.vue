@@ -1,3 +1,53 @@
+<script setup>
+
+import $config from '../main.js';
+import { getCurrentInstance } from 'vue';
+
+const props = defineProps({
+  'header': {
+    type: String,
+    default: 'defaultTitle',
+  },
+  'color': {
+    type: String,
+    default: '#0F4D90',
+  },
+  'section': {
+    type: Object,
+    default: function(){
+      return {};
+    },
+  },
+});
+
+const instance = getCurrentInstance();
+
+const locale = computed(() => instance.appContext.config.globalProperties.$i18n.locale);
+
+const subsectionsData = computed(() => {
+  return $config.subsections || [];
+});
+
+const subsectionCountsFromProps = computed (() => {
+  let subsections = props.section.subsections || [];
+  let compiled = 0;
+  let value = {};
+  if (Array.isArray(subsections[0])) {
+    for (let subsubsection of subsections[0]) {
+      // console.log('subsubsection:', subsubsection, 'this.subsectionsData[subsubsection]:', this.subsectionsData[subsubsection]);
+      if (subsectionsData.value[subsubsection]) {
+        compiled += subsectionsData.value[subsubsection];
+      }
+    }
+    value.compiled = compiled;
+  } else {
+    value = subsectionsData.value;
+  }
+  return value || {};
+});
+
+</script>
+
 <template>
   <div class="greeting-section">
     <div
@@ -73,7 +123,7 @@
       <div v-html="$t('sections.' + this.$props.header + '.custom.info')" />
       <ul class="custom-ul">
         <li
-          v-for="item of $config.i18n.data.messages[i18nLocale].sections[header].custom.list"
+          v-for="item of $config.i18n.data.messages[locale].sections[header].custom.list"
           :key="item"
           v-html="item"
         />
@@ -81,55 +131,6 @@
     </div>
   </div>
 </template>
-
-<script>
-
-export default {
-  name: 'GreetingSection',
-  // components: {},
-  props: {
-    'header': {
-      type: String,
-      default: 'defaultTitle',
-    },
-    'color': {
-      type: String,
-      default: '#0F4D90',
-    },
-    'section': {
-      type: Object,
-      default: function(){
-        return {};
-      },
-    },
-  },
-  computed: {
-    i18nLocale() {
-      return this.$i18n.locale;
-    },
-    subsectionsData() {
-      return this.$store.state.subsections || [];
-    },
-    subsectionCountsFromProps() {
-      let subsections = this.$props.section.subsections || [];
-      let compiled = 0;
-      let value = {};
-      if (Array.isArray(subsections[0])) {
-        for (let subsubsection of subsections[0]) {
-          // console.log('subsubsection:', subsubsection, 'this.subsectionsData[subsubsection]:', this.subsectionsData[subsubsection]);
-          if (this.subsectionsData[subsubsection]) {
-            compiled += this.subsectionsData[subsubsection];
-          }
-        }
-        value.compiled = compiled;
-      } else {
-        value = this.subsectionsData;
-      }
-      return value || {};
-    },
-  },
-};
-</script>
 
 <style>
 

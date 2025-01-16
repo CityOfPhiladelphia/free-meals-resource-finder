@@ -1,0 +1,55 @@
+export default {
+  legend: {
+    options: {
+      showWithBaseMapOnly: true,
+      shape: 'circle',
+    },
+    data: {
+      'Food sites': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '12px',
+        'background-color': '#0F4D90',
+      },
+      'General meal sites': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '12px',
+        'background-color': '#506D0A',
+      },
+      'Older adult meal sites': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '12px',
+        'background-color': '#a86518',
+      },
+      'Student meal sites': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '12px',
+        'background-color': '#721817',
+      },
+      'Food assistance and benefits': {
+        'border-color': 'black',
+        'border-style': 'solid',
+        'border-weight': '0px',
+        'width': '15px',
+        'height': '15px',
+        'font-size': '12px',
+        'background-color': '#444444',
+      },
+    },
+  },
+};
