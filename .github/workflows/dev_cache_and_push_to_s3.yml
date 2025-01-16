@@ -1,9 +1,12 @@
-name: Testing caching with npm and push
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Development caching with npm and push
 
 on:
   push:
     branches:
-      - vue3-pinboard
+      - main
 
 jobs:
   build:
@@ -38,13 +41,13 @@ jobs:
         env:
           FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FA_AUTH_TOKEN }}
 
-      - name: Build for testing
-        run: npm run build:testing
+      - name: Build for development
+        run: npm run build:development
         
-      - name: Deploy to Testing s3, Set index headers
+      - name: Deploy to Dev s3, Set index headers
         env:
           AWS_DEFAULT_REGION: 'us-east-1'
-          AWS_S3_BUCKET: phila-resource-finder-v2/testing/food
+          AWS_S3_BUCKET: phila-resource-finder-v2/dev/food
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
