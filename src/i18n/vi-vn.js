@@ -29,6 +29,7 @@ export default {
   "holidayClosure": "Địa điểm này hiện đang tạm đóng vì ",
   "futureHolidayClosure": "Địa điểm này sẽ tạm đóng vì ",
   holidayClosureAllSites_juneteenth: '19 tháng 6 - Giờ có thể thay đổi cho kỳ nghỉ vào ngày 6/19. Liên hệ với trang web trước khi bạn đi.',
+  holidayClosureAllSites_thanksgiving: 'Lễ Tạ ơn - Giờ có thể thay đổi cho kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.',
   holidayClosureAllSites_weekend: 'Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.',
   holidayClosureAllSites: 'Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.',
   winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Giờ có thể thay đổi trong kỳ nghỉ đông. Liên hệ với trang web trước khi bạn đi.",

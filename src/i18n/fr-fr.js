@@ -29,6 +29,7 @@ export default {
   "holidayClosure": "À l'heure actuelle, ce site est fermé provisoirement pour ",
   "futureHolidayClosure": "Ce site sera fermé provisoirement pour ",
   holidayClosureAllSites_juneteenth: '19 juin - Les horaires peuvent changer pour les vacances du 19 juin. Contactez le site avant de partir.',
+  holidayClosureAllSites_thanksgiving: 'Thanksgiving - Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
   holidayClosureAllSites_weekend: 'Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
   holidayClosureAllSites: 'Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.',
   winterHolidayClosureAllSites: "Christmas and New Year's Holidays - Les horaires peuvent changer pendant les vacances d'hiver. Contactez le site avant de partir.",
