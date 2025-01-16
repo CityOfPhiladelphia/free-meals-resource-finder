@@ -22,9 +22,12 @@ import { faMinus as farMinus } from '@fortawesome/pro-regular-svg-icons';
 import { markRaw } from 'vue';
 library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp, farTimes, farPlus, farMinus);
 
+// use these if running off unlinked package
 import pinboard from '@phila/pinboard';
-// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
 import '../node_modules/@phila/pinboard/dist/style.css';
+// OR
+// use this if running off linked package
+// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
 
 import legendControl from './general/legendControl';
 
@@ -419,7 +422,7 @@ let $config = {
   },
   holidays: {
     forceBanner: false,
-    forceBannerMessage: 'holidayClosureAllSites_juneteenth',
+    forceBannerMessage: null,
     automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
