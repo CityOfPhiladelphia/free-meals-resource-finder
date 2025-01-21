@@ -1,40 +1,35 @@
-# free-meals-resource-finder (Food distribution sites)
+# food-finder
 
-This is the sourcecode for the [Food distribution sites](https://www.phila.gov/food/#/) app.
+This template should help get you started developing with Vue 3 in Vite.
 
-The app uses the framework [Pinboard](https://github.com/CityOfPhiladelphia/pinboard), in npm as [@phila/pinboard](https://www.npmjs.com/package/@phila/pinboard).
+## Recommended IDE Setup
 
-![Example](https://mapboard-images.s3.amazonaws.com/pinboard/free-meals-resource-finder.JPG)
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-![Example](https://mapboard-images.s3.amazonaws.com/pinboard/phone-free-meals-resource-finder.JPG)
+## Customize configuration
 
-Full instructions for how this repo uses the @phila/pinboard package can be found in the [Pinboard wiki](https://github.com/CityOfPhiladelphia/pinboard/wiki).
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-Basic instructions are here:
+## Project Setup
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+```sh
+npm install
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+### Compile and Hot-Reload for Development
 
-### Lints and fixes files
-```
-yarn run lint
+```sh
+npm run dev
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Compile and Minify for Production
 
-## Deployments
+```sh
+npm run build
+```
 
-Commits to the master branch will automatically deploy through travis.ci to an AWS S3 bucket.
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```

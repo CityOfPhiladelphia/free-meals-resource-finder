@@ -8,6 +8,32 @@ import fr from './fr-fr';
 
 let i18n = {
   i18n: {
+    languages: [
+      {
+        language: 'en-US',
+        title: 'English',
+      },
+      {
+        language: 'es',
+        title: 'Español',
+      },
+      {
+        language: 'ch',
+        title: '中文',
+      },
+      {
+        language: 'vi',
+        title: 'Tiếng Việt',
+      },
+      {
+        language: 'ru',
+        title: 'Русский',
+      },
+      {
+        language: 'fr',
+        title: 'Français'
+      },
+    ],
     header: 'inside',
     enabled: true,
     refinePanel: true,
