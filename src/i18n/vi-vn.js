@@ -246,5 +246,6 @@ export default {
     "Open on third Saturday of the month": "Mở cửa vào thứ bảy thứ ba của tháng",
     "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
     "Open on second and fourth Saturdays of the month": "Mở cửa vào thứ bảy thứ hai và thứ tư trong tháng",
+    "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Mở cửa phục vụ bữa sáng 7:00-8:30, Bữa trưa 12:00-1:30, và Bữa tối 4:00-5:30",
   },
 };

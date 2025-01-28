@@ -2,6 +2,13 @@
 
 import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
 const { parseException } = useLocalSharedFunctions();
+import { getCurrentInstance } from 'vue';
+
+const instance = getCurrentInstance();
+
+const i18nLocale = computed(() => {
+  return instance.appContext.config.globalProperties.$i18n.locale;
+});
 
 const props = defineProps({
   item: {
@@ -83,7 +90,7 @@ const props = defineProps({
         v-for="(exception, index) of exceptionsList"
         :key="index"
       >
-        {{ parseException(exception, index+1) }}
+        {{ parseException(exception, index+1, i18nLocale) }}
       </div>
     </div>
   </section>

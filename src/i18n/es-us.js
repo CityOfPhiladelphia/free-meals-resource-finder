@@ -246,5 +246,6 @@ export default {
     "Open on third Saturday of the month": "Abierto el tercer sábado de cada mes",
     "Open on second and fourth Wednesday of the month": "Abierto el segundo y cuarto miércoles de cada mes",
     "Open on second and fourth Saturdays of the month": "Abierto el segundo y cuarto sábado del mes",
+    "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Abierto para el desayuno de 7:00 a 8:30, el almuerzo de 12:00 a 1:30y la cena de 4:00 a 5:30",
   },
 };

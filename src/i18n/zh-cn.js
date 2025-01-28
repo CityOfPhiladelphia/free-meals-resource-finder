@@ -246,5 +246,6 @@ export default {
     "Open on third Saturday of the month": "每月第三个星期六开放",
     "Open on second and fourth Wednesday of the month": "每月第二和第四个星期三开放",
     "Open on second and fourth Saturdays of the month": "每月第二和第四个星期六开放",
+    "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "供应早餐 7:00-8:30、午餐 12:00-1:30 和晚餐 4:00-5:30",
   },
 };
