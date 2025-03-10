@@ -216,7 +216,7 @@ export default {
     },
     "moreResources": {
       header: "Другие ресурсы",
-      "p1": "Хотите узнать больше? Изучите другие варианты получения <a href=\"https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/\" target=\"_blank\">бесплатного питания и дополнительной поддержки</a> или помощи в <a href=\"https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/\" target=\"_blank\">подаче заявления на получение государственных льгот</a>.",
+      "p1": 'Хотите узнать больше? Изучите другие варианты <a href="https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/" target="_blank">бесплатного питания и дополнительной поддержки</a>. Если вам нужна помощь в <a href="https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/" target="_blank">подаче заявления на получение государственных пособий</a>, позвоните на горячую линию BenePhilly по телефону <a href="tel:8009945537">(800) 994-5537</a>.',
     },
   },
   time: {
