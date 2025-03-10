@@ -217,7 +217,7 @@ export default {
     },
     "moreResources": {
       header: "更多资源",
-      "p1": "希望了解更多？ 探索其他选项，获得<a href=\"https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/\" target=\"_blank\">免费食物和额外支持</a>，或获得<a href=\"https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/\" target=\"_blank\">申请公共福利</a>的协助。",
+      "p1": '你想了解更多吗？探索其他选项，获取<a href="https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/" target="_blank">免费食物和额外支持</a>。如果你在<a href="https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/" target="_blank">申请公共福利</a>时需要帮助，请拨打BenePhilly帮助热线<a href="tel:8009945537">（800）994-5537</a>。',
     },
   },
   time: {

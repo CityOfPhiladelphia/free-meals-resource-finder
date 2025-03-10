@@ -217,7 +217,7 @@ export default {
     },
     "moreResources": {
       header: "Autres ressources",
-      "p1": "Vous voulez en savoir plus ? Explorez d'autres options pour obtenir <a href=\"https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/\" target=\"_blank\">de la nourriture gratuitement et une aide supplémentaire</a> ou pour obtenir de l'aide dans votre <a href=\"https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/\" target=\"_blank\"> demande de prestations publiques</a>.",
+      "p1": `Vous souhaitez en savoir plus ? Explorez d'autres options pour obtenir de <a href="https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/" target="_blank">la nourriture gratuite et une assistance supplémentaire</a>. Si vous avez besoin d'aide <a href="https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/" target="_blank">pour faire une demande de prestations publiques</a>, appelez la ligne d'assistance BenePhilly au <a href="tel:8009945537">(800) 994-5537</a>.`,
     },
   },
   time: {

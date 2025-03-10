@@ -217,7 +217,7 @@ export default {
     },
     "moreResources": {
       header: "Các tài liệu thêm",
-      "p1": "Bạn muốn tìm hiểu thêm không? Tìm hiểu các lựa chọn khác về cách lấy <a href=\"https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/\" target=\"_blank\">thực phẩm miễn phí và trợ giúp bổ sung</a> hoặc để nhận trợ giúp từ việc <a href=\"https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/\" target=\"_blank\">đăng ký các lợi ích công cộng</a>.",
+      "p1": 'Bạn có muốn tìm hiểu thêm? Khám phá các tùy chọn khác để <a href="https://www.phila.gov/services/mental-physical-health/find-free-food-or-meals/" target="_blank">có thức ăn miễn phí và hỗ trợ bổ sung</a>. Nếu bạn cần trợ giúp <a href="https://www.phila.gov/services/payments-assistance-taxes/financial-services-for-residents/get-free-help-applying-for-public-benefits/" target="_blank">để xin trợ cấp công cộng, hãy</a> gọi đường dây trợ giúp BenePhilly theo số <a href="tel:8009945537">(800) 994-5537</a>.',
     },
   },
   time: {
