@@ -50,6 +50,7 @@ let $config = {
   app: {
     logoAlt: 'City of Philadelphia',
     type: 'covidFreeMealSites',
+    subtitle: 'i18n',
   },
   anySearch: true,
   allowZipcodeSearch: true,
