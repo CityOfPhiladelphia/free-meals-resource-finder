@@ -5,7 +5,7 @@
 import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
 const { getPickupDetails, parseTimeRange, parseException } = useLocalSharedFunctions();
 
-import transforms from '../general/transforms.js';
+import transforms from '../util/transforms.js';
 import { format } from 'date-fns';
 
 import SeniorMealSiteCard from './SeniorMealSiteCard.vue';

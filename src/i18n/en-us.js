@@ -6,9 +6,6 @@ export default {
     subtitle: 'Get free food, nutrition services, and public benefits',
     bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
     noResults: "We're sorry, there are no results for that search. Adjust the filters you've selected and try again.",
-    searchPlaceholders: {
-      all: "Search by address or zipcode",
-    },
   },
   categoryType: {
     category: 'Category',
