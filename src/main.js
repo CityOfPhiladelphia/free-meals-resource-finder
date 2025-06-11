@@ -54,10 +54,7 @@ let $config = {
   },
   anySearch: true,
   allowZipcodeSearch: true,
-  // allowZipcodeInDataSearch: false,
   allowPrint: true,
-  showBuffers: true,
-  resetDataOnGeocode: true,
   retractableRefine: true,
   gtag: {
     category: 'rf-food',
@@ -71,24 +68,10 @@ let $config = {
     subsection: 'category',
   },
   locationInfo: {
-    siteNameField: 'site_name',
     siteName: function(item) { return item.properties.site_name },
-    // siteName: function(item, transforms) {
-    //   // console.log('in locationInfo.siteName, transforms:', transforms);
-    //   let value;
-
-    //   if (item._featureId.includes('covidFreeMealSites')) {
-    //     value = item.properties.site_name;
-    //   } else if (item._featureId.includes('parksSites')) {
-    //     value = transforms.titleCase.transform(item.properties.site_name);
-    //   }
-    //   return value;
-    // },
+    siteNameField: 'site_name',
   },
   customComps,
-  // hiddenRefine: {
-  //
-  // },
   refine: {
     type: 'multipleFieldGroups',
     columns: true,
@@ -422,9 +405,9 @@ let $config = {
     // },
   },
   holidays: {
-    forceBanner: false,
-    forceBannerMessage: null,
-    automaticBanner: true,
+    forceBanner: true,
+    forceBannerMessage: 'newSites',
+    automaticBanner: false,
     // current: true,
     // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
@@ -456,9 +439,10 @@ let $config = {
     },
     header: {
       type: 'alertBanner',
-      enabled: function(state) {
-        return state.alertResponse === 'alertHours';
-      },
+      enabled: false,
+      // enabled: function(state) {
+      //   return state.alertResponse === 'alertHours';
+      // },
       content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
     },
     alertChecks: [
@@ -477,9 +461,6 @@ let $config = {
   legendControl,
   dataSources: {
     covidFreeMealSites,
-  },
-  router: {
-    enabled: false,
   },
   projection: '3857',
   geocoder: {

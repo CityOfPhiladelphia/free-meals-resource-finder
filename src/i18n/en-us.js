@@ -6,9 +6,6 @@ export default {
     subtitle: 'Get free food, nutrition services, and public benefits',
     bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
     noResults: "We're sorry, there are no results for that search. Adjust the filters you've selected and try again.",
-    searchPlaceholders: {
-      all: "Search by address or zipcode",
-    },
   },
   categoryType: {
     category: 'Category',
@@ -26,6 +23,7 @@ export default {
   beforeYouGo: 'Before you go',
   change: 'Schedule change',
   closure: 'Temporary closure',
+  newSites: 'Summer Meal Sites open on Monday 6/16/2025',
   holidayClosure: 'This site is currently temporarily closed for ',
   futureHolidayClosure: 'This site will by temporarily closed for ',
   holidayClosureAllSites_juneteenth: 'Juneteenth - Hours may change for the holiday on 6/19. Contact the site before you go.',
