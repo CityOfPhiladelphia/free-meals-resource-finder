@@ -25,6 +25,7 @@ export default {
   details: "Chi tiết",
   "beforeYouGo": "Trước khi đi",
   change: "Thay đổi lịch trình",
+  newSites: "Trang web bữa ăn mùa hè mở cửa vào Thứ Hai 6/16/2025",
   closure: "Tạm thời đóng cửa",
   "holidayClosure": "Địa điểm này hiện đang tạm đóng vì ",
   "futureHolidayClosure": "Địa điểm này sẽ tạm đóng vì ",

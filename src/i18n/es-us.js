@@ -25,6 +25,7 @@ export default {
   details: "Detalles",
   "beforeYouGo": "Antes de ir",
   change: "Programe el cambio",
+  newSites: "Los sitios de comidas de verano abren el lunes 16/06/2025",
   closure: "Cierre temporal",
   "holidayClosure": "Este sitio está temporalmente cerrado por ",
   "futureHolidayClosure": "Este sitio estará temporalmente cerrado por ",

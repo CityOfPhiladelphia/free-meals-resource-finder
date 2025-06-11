@@ -25,6 +25,7 @@ export default {
   details: "Détails",
   "beforeYouGo": "Avant de partir",
   change: "Modification des horaires",
+  newSites: "Les sites de restauration d'été seront ouverts le lundi 16 juin 2025",
   closure: "Fermeture temporaire",
   "holidayClosure": "À l'heure actuelle, ce site est fermé provisoirement pour ",
   "futureHolidayClosure": "Ce site sera fermé provisoirement pour ",

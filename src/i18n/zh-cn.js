@@ -25,6 +25,7 @@ export default {
   details: "详细信息",
   "beforeYouGo": "出发之前",
   change: "日程变更",
+  newSites: "夏季餐饮网站将于 2025 年 6 月 16 日星期一开放",
   closure: "暂时关闭",
   "holidayClosure": "出于以下原因本地点目前暂时关闭 ",
   "futureHolidayClosure": "出于以下原因本地点将暂时关闭 ",

@@ -405,9 +405,9 @@ let $config = {
     // },
   },
   holidays: {
-    forceBanner: false,
-    forceBannerMessage: null,
-    automaticBanner: true,
+    forceBanner: true,
+    forceBannerMessage: 'newSites',
+    automaticBanner: false,
     // current: true,
     // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
@@ -439,9 +439,10 @@ let $config = {
     },
     header: {
       type: 'alertBanner',
-      enabled: function(state) {
-        return state.alertResponse === 'alertHours';
-      },
+      enabled: false,
+      // enabled: function(state) {
+      //   return state.alertResponse === 'alertHours';
+      // },
       content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
     },
     alertChecks: [
