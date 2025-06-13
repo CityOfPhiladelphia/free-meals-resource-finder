@@ -191,6 +191,10 @@ export default {
           name: "Autres sites servant des repas durant l'été",
           "pickupDetails": "Les heures des repas varient selon le site. Les repas doivent être consommés sur place. Pour plus d’informations, rendez-vous sur le site qui sert des repas durant l’été.",
         },
+        'JSJ Food Bank': {
+          name: 'JSJ Food Bank Summer Meal Sites',
+          pickupDetails: "Les repas doivent être consommés sur place. Contactez le site pour plus d’informations.",
+        },
         'ITAVTFOC Summer Meal Sites': {
           name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: "Les repas doivent être consommés sur place. Contactez le site pour plus d’informations.",
