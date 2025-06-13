@@ -158,9 +158,9 @@ export default {
       "otherResources": {
         "p1": "Để biết thêm về các suất ăn mùa hè dành cho thanh thiếu niên:",
         "li1": "Gọi cho Đường dây nóng của Bữa ăn mùa hè theo số <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
-        "li2": "Soạn tin nhắn “FOOD” hoặc “COMIDA” và gửi tới số <a href=\"tel:304-304\">304-304</a>.",
+        "li2": "Soạn tin nhắn “FOOD” hoặc “COMIDA” và gửi tới số <a href=\"tel:914-342-7744\">914-342-7744</a>.",
         "li3": "Truy cập <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
-        "li4": 'Truy cập <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder để tìm các bữa ăn mùa hè</a> miễn phí cho thanh thiếu niên.',
+        "li4": 'Truy cập <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>.',
       },
       subsections: {
         "PHA": {
@@ -190,6 +190,14 @@ export default {
         "Other Summer Meal Sites": {
           name: "Các Địa Điểm Phục Vụ Bữa Ăn Mùa Hè Khác",
           "pickupDetails": "Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ. Để biết thêm thông tin, vui lòng tới địa điểm phục vụ bữa ăn mùa hè.",
+        },
+        'ITAVTFOC Summer Meal Sites': {
+          name: 'ITAVTFOC Summer Meal Sites',
+          pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
+        },
+        'Feeding Philly Summer Meal Sites': {
+          name: 'Feeding Philly Summer Meal Sites',
+          pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
         },
       },
     },

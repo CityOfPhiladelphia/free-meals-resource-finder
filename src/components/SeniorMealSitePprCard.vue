@@ -37,14 +37,14 @@ const subsection = computed(() => {
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility')"
+      v-html="$t('sections.'+section+'.subsections.'+subsection+'.eligibility')"
     />
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
+      v-html="$t('sections.'+section+'.subsections.'+subsection+'.pickupDetails')"
     />
 
     <vue-good-table

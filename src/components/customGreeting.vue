@@ -277,15 +277,15 @@ const getCounts = () => {
     </div>
 
     <!-- text from end of summer -->
-    <br>
+    <!-- <br>
     <div class="custom-section">
       <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
       <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
     </div>
-    <br>
+    <br> -->
 
     <!-- eligibility -->
-    <!-- <div class="columns big-cell-pad">
+    <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('eligibility')"
@@ -294,9 +294,9 @@ const getCounts = () => {
         <div v-html="$t('sections.studentMealSites.eligibility')" />
       </div>
     </div>
-    <hr class="no-margin"> -->
+    <hr class="no-margin">
     <!-- pickup details -->
-    <!-- <div class="columns big-cell-pad">
+    <div class="columns big-cell-pad">
       <div
         class="column is-3 small-cell-pad"
         v-html="$t('details')"
@@ -319,7 +319,7 @@ const getCounts = () => {
           <li v-html="$t('sections.studentMealSites.otherResources.li4')" />
         </ul>
       </div>
-    </div> -->
+    </div>
 
     <!-- publicBenefits -->
     <div

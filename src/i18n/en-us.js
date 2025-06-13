@@ -167,9 +167,9 @@ export default {
       otherResources: {
         p1: 'To find more summer meals for young people:',
         li1: 'Call the Summer Meals Hotline at <a href="tel:215-770-4659">(215) 770-4659</a>.',
-        li2: 'Text “FOOD” or “COMIDA” to <a href="tel:304-304">304-304</a>.',
+        li2: 'Text “FOOD” or “COMIDA” to <a href="tel:914-342-7744">914-342-7744</a>.',
         li3: 'Visit <a target="_blank" href="http://www.phillysummermeals.org">www.phillysummermeals.org</a>.',
-        li4: 'Visit <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a> to find free summer meals for youth.',
+        li4: 'Visit <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>.',
       },
       subsections: {
         'PHA': {
@@ -204,6 +204,14 @@ export default {
         'JSJ Food Bank': {
           name: 'JSJ Food Bank',
           pickupDetails: 'Contact the site for more details.',
+        },
+        'ITAVTFOC Summer Meal Sites': {
+          name: 'ITAVTFOC Summer Meal Sites',
+          pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
+        },
+        'Feeding Philly Summer Meal Sites': {
+          name: 'Feeding Philly Summer Meal Sites',
+          pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
         },
       },
     },

@@ -158,9 +158,9 @@ export default {
       "otherResources": {
         "p1": "Para encontrar más comidas de verano para personas jóvenes:",
         "li1": "Llame a la Línea directa de Comidas de Verano al <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
-        "li2": "Mensaje de texto “ALIMENTOS” o “COMIDA” al <a href=\"tel:304-304\">304-304</a>.",
+        "li2": "Mensaje de texto “ALIMENTOS” o “COMIDA” al <a href=\"tel:914-342-7744\">914-342-7744</a>.",
         "li3": "Visite <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
-        "li4": 'Visite <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a> para encontrar comidas de verano gratuitas para jóvenes.',
+        "li4": 'Visite <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>.',
       },
       subsections: {
         "PHA": {
@@ -190,6 +190,14 @@ export default {
         "Other Summer Meal Sites": {
           name: "Otros establecimientos de comida de verano",
           "pickupDetails": "Los horarios de las comidas varían según el establecimiento. Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio de comidas de verano.",
+        },
+        'ITAVTFOC Summer Meal Sites': {
+          name: 'ITAVTFOC Summer Meal Sites',
+          pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',
+        },
+        'Feeding Philly Summer Meal Sites': {
+          name: 'Feeding Philly Summer Meal Sites',
+          pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',
         },
       },
     },
