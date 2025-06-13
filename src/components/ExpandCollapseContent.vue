@@ -379,6 +379,20 @@ const makeValidUrl = (url) => {
         :pickup-details="pickupDetails"
       />
 
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'ITAVTFOC Summer Meal Sites'"
+        :item="item"
+        :exceptions-list="exceptionsList"
+        :pickup-details="pickupDetails"
+      />
+
+      <nds-school-card
+        v-if="section === 'studentMealSites' && subsection === 'Feed Philly Now Summer Meal Sites'"
+        :item="item"
+        :exceptions-list="exceptionsList"
+        :pickup-details="pickupDetails"
+      />
+
       <ppr-school-card
         v-if="section === 'studentMealSites' && subsection === 'Other Summer Meal Sites'"
         :item="item"

@@ -192,11 +192,11 @@ export default {
           "pickupDetails": "Les heures des repas varient selon le site. Les repas doivent être consommés sur place. Pour plus d’informations, rendez-vous sur le site qui sert des repas durant l’été.",
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: "Les repas doivent être consommés sur place. Contactez le site pour plus d’informations.",
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: "Les repas doivent être consommés sur place. Contactez le site pour plus d’informations.",
         },
       },

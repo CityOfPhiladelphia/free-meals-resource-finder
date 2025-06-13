@@ -192,11 +192,11 @@ export default {
           "pickupDetails": "用餐时间因地点而异。 餐食须在现场食用。 欲了解更多信息，请访问夏季餐食援助地点。",
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',
         },
       },
