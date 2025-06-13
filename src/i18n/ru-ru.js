@@ -191,11 +191,11 @@ export default {
           "pickupDetails": "Время приемов пищи на разных площадках может различаться. Употреблять пищу следует на территории площадки. Для дополнительных сведений посетите летний пункт питания, который вас интересует.",
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Употреблять пищу следует на территории площадки. Для дополнительной информации свяжитесь с персоналом площадки.',
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: 'Употреблять пищу следует на территории площадки. Для дополнительной информации свяжитесь с персоналом площадки.',
         },
       },

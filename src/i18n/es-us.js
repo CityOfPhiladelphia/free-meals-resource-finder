@@ -192,11 +192,11 @@ export default {
           "pickupDetails": "Los horarios de las comidas varían según el establecimiento. Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio de comidas de verano.",
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',
         },
       },

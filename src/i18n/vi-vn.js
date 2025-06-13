@@ -192,11 +192,11 @@ export default {
           "pickupDetails": "Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ. Để biết thêm thông tin, vui lòng tới địa điểm phục vụ bữa ăn mùa hè.",
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
         },
       },

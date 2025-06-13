@@ -206,11 +206,11 @@ export default {
           pickupDetails: 'Contact the site for more details.',
         },
         'ITAVTFOC Summer Meal Sites': {
-          name: 'ITAVTFOC Summer Meal Sites',
+          name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
         },
-        'Feeding Philly Summer Meal Sites': {
-          name: 'Feeding Philly Summer Meal Sites',
+        'Feed Philly Now Summer Meal Sites': {
+          name: 'Feed Philly Now Summer Meal Sites',
           pickupDetails: 'Meals must be eaten on site. Contact the site for more details.',
         },
       },
