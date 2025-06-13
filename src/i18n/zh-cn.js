@@ -191,6 +191,10 @@ export default {
           name: "其他夏季餐食援助地点",
           "pickupDetails": "用餐时间因地点而异。 餐食须在现场食用。 欲了解更多信息，请访问夏季餐食援助地点。",
         },
+        'JSJ Food Bank': {
+          name: 'JSJ Food Bank Summer Meal Sites',
+          pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',
+        },
         'ITAVTFOC Summer Meal Sites': {
           name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',

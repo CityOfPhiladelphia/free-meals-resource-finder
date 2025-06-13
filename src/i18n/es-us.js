@@ -191,6 +191,10 @@ export default {
           name: "Otros establecimientos de comida de verano",
           "pickupDetails": "Los horarios de las comidas varían según el establecimiento. Las comidas se deben consumir en el lugar. Para obtener más información, visite el sitio de comidas de verano.",
         },
+        'JSJ Food Bank': {
+          name: 'JSJ Food Bank Summer Meal Sites',
+          pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',
+        },
         'ITAVTFOC Summer Meal Sites': {
           name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Las comidas se deben consumir en el lugar. Para obtener más detalles, comuníquese con el establecimiento.',

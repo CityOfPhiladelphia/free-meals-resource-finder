@@ -191,6 +191,10 @@ export default {
           name: "Các Địa Điểm Phục Vụ Bữa Ăn Mùa Hè Khác",
           "pickupDetails": "Giờ phục vụ bữa ăn thay đổi tùy theo địa điểm. Phải ăn tại chỗ. Để biết thêm thông tin, vui lòng tới địa điểm phục vụ bữa ăn mùa hè.",
         },
+        'JSJ Food Bank': {
+          name: 'JSJ Food Bank Summer Meal Sites',
+          pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
+        },
         'ITAVTFOC Summer Meal Sites': {
           name: 'It Takes a Village to Feed One Child Summer Meal Sites',
           pickupDetails: 'Phải ăn tại chỗ. Liên hệ địa điểm để biết thêm chi tiết.',
