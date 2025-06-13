@@ -158,9 +158,9 @@ export default {
       "otherResources": {
         "p1": "欲了解针对年轻人的更多夏季餐食援助：",
         "li1": "请拨打夏季餐食援助热线（Summer Meals Hotline）：<a href=\"tel:215-770-4659\">(215) 770-4659</a>。",
-        "li2": "请发送短信“FOOD”或“COMIDA”至：<a href=\"tel:304-304\">304-304</a>。",
+        "li2": "请发送短信“FOOD”或“COMIDA”至：<a href=\"tel:914-342-7744\">914-342-7744</a>。",
         "li3": "请访问：<a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>。",
-        "li4": '访问 <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>，为年轻人免费寻找夏日大餐。',
+        "li4": '访问 <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>。',
       },
       subsections: {
         "PHA": {
@@ -190,6 +190,14 @@ export default {
         "Other Summer Meal Sites": {
           name: "其他夏季餐食援助地点",
           "pickupDetails": "用餐时间因地点而异。 餐食须在现场食用。 欲了解更多信息，请访问夏季餐食援助地点。",
+        },
+        'ITAVTFOC Summer Meal Sites': {
+          name: 'ITAVTFOC Summer Meal Sites',
+          pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',
+        },
+        'Feeding Philly Summer Meal Sites': {
+          name: 'Feeding Philly Summer Meal Sites',
+          pickupDetails: '餐食须在现场食用。 请联系该机构，以获得更多信息。',
         },
       },
     },

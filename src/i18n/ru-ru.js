@@ -157,9 +157,9 @@ export default {
       "otherResources": {
         "p1": "Как найти дополнительные летние пункты выдачи еды для молодежи",
         "li1": "Позвоните на горячую линию летних пунктов питания по номеру <a href=\"tel:215-770-4659\">(215) 770-4659</a>.",
-        "li2": "Отправьте сообщение с текстом FOOD или COMIDA на номер <a href=\"tel:304-304\">304-304</a>.",
+        "li2": "Отправьте сообщение с текстом FOOD или COMIDA на номер <a href=\"tel:914-342-7744\">914-342-7744</a>.",
         "li3": "Посетите сайт <a target=\"_blank\" href=\"http://www.phillysummermeals.org\">www.phillysummermeals.org</a>.",
-        "li4": 'Посетите <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">сайт www.fns.usda.gov/summer/sitefinder, чтобы найти бесплатные летние блюда</a> для молодежи.',
+        "li4": 'Посетите сайт <a target="_blank" href="https://www.fns.usda.gov/summer/sitefinder">www.fns.usda.gov/summer/sitefinder</a>.',
       },
       subsections: {
         "PHA": {
@@ -189,6 +189,14 @@ export default {
         "Other Summer Meal Sites": {
           name: "Другие пункты питания в летний период",
           "pickupDetails": "Время приемов пищи на разных площадках может различаться. Употреблять пищу следует на территории площадки. Для дополнительных сведений посетите летний пункт питания, который вас интересует.",
+        },
+        'ITAVTFOC Summer Meal Sites': {
+          name: 'ITAVTFOC Summer Meal Sites',
+          pickupDetails: 'Употреблять пищу следует на территории площадки. Для дополнительной информации свяжитесь с персоналом площадки.',
+        },
+        'Feeding Philly Summer Meal Sites': {
+          name: 'Feeding Philly Summer Meal Sites',
+          pickupDetails: 'Употреблять пищу следует на территории площадки. Для дополнительной информации свяжитесь с персоналом площадки.',
         },
       },
     },

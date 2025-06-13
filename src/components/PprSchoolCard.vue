@@ -31,15 +31,15 @@ const subsection = computed(() => {
     <h3>{{ $t('eligibility') }}</h3>
 
     <div class="table-intro">
-      {{ $t('sections.'+this.section+'.eligibility') }}
+      {{ $t('sections.'+section+'.eligibility') }}
     </div>
-    <!-- {{ $t('sections.'+this.section+'.subsections.'+this.subsection+'.eligibility') }} -->
+    <!-- {{ $t('sections.'+section+'.subsections.'+subsection+'.eligibility') }} -->
 
     <h3>{{ $t('pickupDetails') }}</h3>
 
     <div
       class="table-intro"
-      v-html="$t('sections.'+this.section+'.subsections.'+this.subsection+'.pickupDetails')"
+      v-html="$t('sections.'+section+'.subsections.'+subsection+'.pickupDetails')"
     />
   </section>
 </template>
