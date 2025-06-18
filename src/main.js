@@ -405,9 +405,9 @@ let $config = {
     // },
   },
   holidays: {
-    forceBanner: true,
-    forceBannerMessage: 'newSites',
-    automaticBanner: false,
+    forceBanner: false,
+    forceBannerMessage: 'holidayClosureAllSites_juneteenth',
+    automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
     // days: [ 'MONDAY' ],
