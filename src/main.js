@@ -71,17 +71,17 @@ let $config = {
     siteName: function(item) { return item.properties.site_name },
     siteNameField: 'site_name',
   },
-  hiddenRefine: {
-    Closed: function(item) {
-      return ![
-        'Queen Memorial Library',
-        'Greater Olney Library',
-        'Joseph E Coleman Branch Library',
-        'McPherson Free Library Of Philadelphia',
-        'Haverford Library',
-      ].includes(item.properties.site_name);
-    },
-  },
+  // hiddenRefine: {
+  //   Closed: function(item) {
+  //     return ![
+  //       'Queen Memorial Library',
+  //       'Greater Olney Library',
+  //       'Joseph E Coleman Branch Library',
+  //       'McPherson Free Library Of Philadelphia',
+  //       'Haverford Library',
+  //     ].includes(item.properties.site_name);
+  //   },
+  // },
   customComps,
   refine: {
     type: 'multipleFieldGroups',
