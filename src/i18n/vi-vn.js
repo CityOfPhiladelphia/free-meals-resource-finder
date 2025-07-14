@@ -260,5 +260,6 @@ export default {
     "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
     "Open on second and fourth Saturdays of the month": "Mở cửa vào thứ bảy thứ hai và thứ tư trong tháng",
     "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Mở cửa phục vụ bữa sáng 7:00-8:30, Bữa trưa 12:00-1:30, và Bữa tối 4:00-5:30",
+    "Open 1pm-3pm the first Tuesday of the month. Open 11am-1pm the second, third, fourth, and fifth Tuesdays of the month.": "Mở cửa từ 1 giờ chiều đến 3 giờ chiều vào thứ Ba đầu tiên của tháng. Mở cửa từ 11 giờ sáng đến 1 giờ chiều vào các thứ Ba thứ hai, thứ ba, thứ tư và thứ năm của tháng.",
   },
 };

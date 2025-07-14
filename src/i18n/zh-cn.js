@@ -260,5 +260,6 @@ export default {
     "Open on second and fourth Wednesday of the month": "每月第二和第四个星期三开放",
     "Open on second and fourth Saturdays of the month": "每月第二和第四个星期六开放",
     "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "供应早餐 7:00-8:30、午餐 12:00-1:30 和晚餐 4:00-5:30",
+    "Open 1pm-3pm the first Tuesday of the month. Open 11am-1pm the second, third, fourth, and fifth Tuesdays of the month.": "每月的第一个星期二开放时间为下午1点到3点。每月的第二、第三、第四和第五个星期二开放时间为上午11点到下午1点。",
   },
 };

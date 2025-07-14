@@ -259,5 +259,6 @@ export default {
     "Open on second and fourth Wednesday of the month": "Открыто во вторую и четвертую среду месяца",
     "Open on second and fourth Saturdays of the month": "Открыто во вторую и четвертую субботу месяца",
     "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Открыт на завтрак с 7:00 до 8:30, на обед с 12:00 до 13:30 и на ужин с 4:00 до 5:30",
+    "Open 1pm-3pm the first Tuesday of the month. Open 11am-1pm the second, third, fourth, and fifth Tuesdays of the month.": "Открыто с 1:00 до 3:00 в первый вторник месяца. Открыто с 11:00 до 13:00 во второй, третий, четвертый и пятый вторники месяца.",
   },
 };

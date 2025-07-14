@@ -260,5 +260,6 @@ export default {
     "Open on second and fourth Wednesday of the month": "Ouvert les deuxième et quatrième mercredis du mois",
     "Open on second and fourth Saturdays of the month": "Ouvert les deuxième et quatrième samedis du mois",
     "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Ouvert pour le petit déjeuner de 7h00 à 8h30, le déjeuner de 12h00 à 13h30 et le dîner de 4h00 à 17h30",
+    "Open 1pm-3pm the first Tuesday of the month. Open 11am-1pm the second, third, fourth, and fifth Tuesdays of the month.": "Ouvert de 13h00 à 15h00 le premier mardi du mois. Ouvert de 11h00 à 13h00 les deuxième, troisième, quatrième et cinquième mardis du mois.",
   },
 };

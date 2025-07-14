@@ -285,5 +285,6 @@ export default {
     "Open on second and fourth Wednesday of the month": "Open on second and fourth Wednesday of the month",
     "Open on second and fourth Saturdays of the month": "Open on second and fourth Saturdays of the month",
     "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30": "Open for Breakfast 7:00-8:30, Lunch 12:00-1:30, and Dinner 4:00-5:30",
+    "Open 1pm-3pm the first Tuesday of the month. Open 11am-1pm the second, third, fourth, and fifth Tuesdays of the month.": "Open 1:00 p.m. - 3:00 p.m. the first Tuesday of the month. Open 11:00 a.m. - 1:00 p.m. the second, third, fourth, and fifth Tuesdays of the month.",
   },
 };
