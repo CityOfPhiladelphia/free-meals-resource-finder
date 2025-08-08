@@ -53,6 +53,7 @@ export default {
     "foodSites": {
       header: "Establecimientos de distribución de alimentos",
       eligibility: "Cualquier residente es apto. No se requiere identificación o comprobante de ingresos.",
+      eligibilityZipCodeException: "No se requiere identificación ni comprobante de ingresos. Los residentes deben vivir en los siguientes códigos postales para ser elegibles: ",
       "pickupDetails": {
         "p1": "Los establecimientos de distribución de alimentos ofrecen alimentos y comestibles complementarios.",
         "p3": "Según la ubicación, los residentes pueden recibir:",
