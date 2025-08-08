@@ -53,6 +53,7 @@ export default {
     "foodSites": {
       header: "Sites alimentaires",
       eligibility: "Tout résident est éligible. Aucune pièce d'identité ou preuve de revenu n'est requise.",
+      eligibilityZipCodeException: "Aucune pièce d'identité ou preuve de revenus n'est requise. Les résidents doivent vivre dans les codes postaux suivants pour être éligibles: ",
       "pickupDetails": {
         "p1": "Les sites alimentaires proposent des denrées alimentaires complémentaires et des produits d'épicerie.",
         "p3": "Selon le lieu, les résidents peuvent recevoir :",

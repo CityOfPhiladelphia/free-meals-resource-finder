@@ -53,6 +53,7 @@ export default {
     "foodSites": {
       header: "Các địa điểm phục vụ thực phẩm",
       eligibility: "Tất cả cư dân đều đủ điều kiện tham gia. Không cần giấy tờ tùy thân hoặc chứng minh tài chính.",
+      eligibilityZipCodeException: "Không yêu cầu ID hoặc bằng chứng thu nhập. Cư dân phải sống trong các mã zip sau để đủ điều kiện: ",
       "pickupDetails": {
         "p1": "Các địa điểm phục vụ thực phẩm sẽ phát thực phẩm bổ sung và hàng tạp hóa.",
         "p3": "Tùy vào vị trí, các cư dân sẽ được nhận:",
