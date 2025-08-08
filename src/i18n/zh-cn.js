@@ -53,6 +53,7 @@ export default {
     "foodSites": {
       header: "食物分发点",
       eligibility: "任何居民都有资格。 无需身份证或收入证明。",
+      eligibilityZipCodeException: "不需要身份证或收入证明。居民必须居住在以下邮政编码中才有资格：",
       "pickupDetails": {
         "p1": "食物分发点提供提供额外食品和杂货。",
         "p3": "根据地点的不同，居民可能会收到：",

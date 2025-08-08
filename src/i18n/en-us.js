@@ -50,6 +50,7 @@ export default {
     foodSites: {
       header: 'Food sites',
       eligibility: 'Any resident is eligible. No ID or proof of income is required.',
+      eligibilityZipCodeException: 'No ID or proof of income is required. Residents must live in the following zipcodes to be eligible: ',
       pickupDetails: {
         p1: 'Food sites offer supplemental food and groceries.',
         p3: 'Depending on the location, residents may receive:',

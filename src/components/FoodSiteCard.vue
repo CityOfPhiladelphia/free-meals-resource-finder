@@ -10,6 +10,10 @@ const i18nLocale = computed(() => {
   return instance.appContext.config.globalProperties.$i18n.locale;
 });
 
+const zipcodesServed = computed(() => {
+  return props.item.properties.zip_code_exceptions;
+})
+
 const props = defineProps({
   item: {
     type: Object,
@@ -38,8 +42,14 @@ const props = defineProps({
     <h3>{{ $t('eligibility') }}</h3>
 
     <div
+      v-if="!zipcodesServed"
       class="table-intro"
       v-html="$t('sections.foodSites.eligibility')"
+    />
+    <div
+      v-else
+      class="table-intro"
+      v-html="$t('sections.foodSites.eligibilityZipCodeException') + zipcodesServed + '.'"
     />
 
     <h3>{{ $t('pickupDetails') }}</h3>
