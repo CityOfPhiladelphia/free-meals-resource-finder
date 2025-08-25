@@ -526,6 +526,7 @@ let $config = {
     'Small Things Philly': 'foodSites',
     'Community Refrigerators': 'foodSites',
     'General Food Site': 'foodSites',
+    'PHILABUNDANCE meal': 'generalMealSites',
     'STP': 'generalMealSites',
     'Office of Homeless Services': 'generalMealSites',
     'Broad Street Ministry': 'generalMealSites',

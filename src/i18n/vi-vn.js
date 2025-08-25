@@ -91,6 +91,9 @@ export default {
         "p1": "Các địa điểm phục vụ bữa ăn chung sẽ cung cấp các suất ăn ăn liền.",
       },
       subsections: {
+        "PHILABUNDANCE meal": {
+          name: "Philabundance",
+        },
         "Office of Homeless Services": {
           name: "Văn Phòng Dịch Vụ Người Vô Gia Cư",
         },
