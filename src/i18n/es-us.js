@@ -91,6 +91,9 @@ export default {
         "p1": "Los establecimientos de comida general ofrecen comidas listas para consumir.",
       },
       subsections: {
+        "PHILABUNDANCE meal": {
+          name: "Philabundance",
+        },
         "Office of Homeless Services": {
           name: "Oficina de Servicios para las Personas sin Hogar",
         },

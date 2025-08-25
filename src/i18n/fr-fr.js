@@ -91,6 +91,9 @@ export default {
         "p1": "Les sites de repas généraux proposent des repas préparés.",
       },
       subsections: {
+        "PHILABUNDANCE meal": {
+          name: "Philabundance",
+        },
         "Office of Homeless Services": {
           name: "Bureau des services aux sans-abri",
         },

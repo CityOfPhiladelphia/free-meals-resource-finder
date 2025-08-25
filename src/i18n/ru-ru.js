@@ -91,6 +91,9 @@ export default {
         "p1": "В общих пунктах питания можно получить готовые к употреблению блюда.",
       },
       subsections: {
+        "PHILABUNDANCE meal": {
+          name: "Программа Philabundance",
+        },
         "Office of Homeless Services": {
           name: "Отдел услуг для бездомных",
         },

@@ -91,6 +91,9 @@ export default {
         "p1": "普通用餐地点提供即食餐。",
       },
       subsections: {
+        "PHILABUNDANCE meal": {
+          name: "Philabundance食品援助组织",
+        },
         "Office of Homeless Services": {
           name: "无家可归者服务办公室（Office of Homeless Services）",
         },

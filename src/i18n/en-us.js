@@ -94,6 +94,9 @@ export default {
         p1: 'General meal sites offer ready-to-eat meals.',
       },
       subsections: {
+        'PHILABUNDANCE meal': {
+          name: 'Philabundance',
+        },
         'Office of Homeless Services': {
           name: 'Office of Homeless Services',
         },
