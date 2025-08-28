@@ -65,7 +65,7 @@ const subsection = computed(() => {
       v-html="$t('sections.'+section+'.eligibility.p2')"
     />
     <div
-      v-if="$config.i18n.data.messages['en-US'].sections[section].subsections[subsection].eligibility.p2"
+      v-if="$config.i18n.data.messages.en.sections[section].subsections[subsection].eligibility.p2"
       class="table-intro"
       v-html="$t('sections.'+section+'.subsections.'+subsection+'.eligibility.p2')"
     />
@@ -85,13 +85,13 @@ const subsection = computed(() => {
     </div>
 
     <div
-      v-if="$config.i18n.data.messages['en-US'].sections[section].subsections[subsection].pickupDetails.p3"
+      v-if="$config.i18n.data.messages.en.sections[section].subsections[subsection].pickupDetails.p3"
       class="table-intro"
       v-html="$t('sections.'+section+'.subsections.'+subsection+'.pickupDetails.p3')"
     />
 
     <div
-      v-if="$config.i18n.data.messages['en-US'].sections[section].subsections[subsection].pickupDetails.p4"
+      v-if="$config.i18n.data.messages.en.sections[section].subsections[subsection].pickupDetails.p4"
       class="table-intro"
       v-html="$t('sections.'+section+'.subsections.'+subsection+'.pickupDetails.p4')"
     />
