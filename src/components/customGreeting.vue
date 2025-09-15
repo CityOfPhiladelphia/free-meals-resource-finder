@@ -82,6 +82,7 @@ const getCounts = () => {
         </div>
         <div class="column exclamation-details">
           <div>{{ $t('checkSite') }}</div>
+          <div v-html="$t('snapLink')"></div>
           <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
         </div>
       </div>

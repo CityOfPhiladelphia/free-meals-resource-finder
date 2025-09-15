@@ -241,6 +241,7 @@ export default{
     "evening": "Soirée (après 17 h)"
   },
   "checkSite": "Les informations du site sont susceptibles d'être modifiées. Avant de partir, contactez le site pour confirmer leurs horaires et leurs services.",
+  "snapLink": "Découvrez <a href='https://www.phila.gov/2025-09-05-what-you-need-to-know-about-significant-changes-to-snap-benefits/' target='_blank'>ce que vous devez savoir sur les modifications importantes apportées aux avantages du SNAP</a>",
   "otherResources": "Autres ressources",
   "exceptions": {
     "Open on second and fourth Tuesday of the month": "Ouvert les deuxième et quatrième mardis du mois",

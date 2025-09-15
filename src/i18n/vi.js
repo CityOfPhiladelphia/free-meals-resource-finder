@@ -241,6 +241,7 @@ export default{
     "evening": "Buổi tối (sau 5:00 chiều)"
   },
   "checkSite": "Chi tiết trang web có thể thay đổi. Trước khi bạn đi, hãy liên hệ với trang web để xác nhận giờ và dịch vụ của họ.",
+  "snapLink": "Tìm hiểu <a href='https://www.phila.gov/2025-09-05-what-you-need-to-know-about-significant-changes-to-snap-benefits/' target='_blank'>những điều bạn cần biết về những thay đổi quan trọng đối với lợi ích SNAP</a>",
   "otherResources": "Tài nguyên khác",
   "exceptions": {
     "Open on second and fourth Tuesday of the month": "Mở cửa vào thứ Ba thứ hai và thứ tư trong tháng",
