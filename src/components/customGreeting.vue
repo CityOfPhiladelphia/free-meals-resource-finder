@@ -76,14 +76,15 @@ const getCounts = () => {
 <template>
   <div class="main-greeting">
     <div class="data-section">
-      <div class="exclamation-holder columns is-mobile">
+      <div class="exclamation-holder columns is-mobile is-vcentered">
         <div class="column is-narrow">
           <font-awesome-icon icon="exclamation-triangle" class="fa-3x" />
         </div>
         <div class="column exclamation-details">
-          <div>{{ $t('checkSite') }}</div>
-          <div v-html="$t('snapLink')"></div>
-          <!-- <div>{{ $t('holidayLaborDay') }}</div> -->
+          <ul class="bullet-list">
+            <li>{{ $t('checkSite') }}</li>
+            <li v-html="$t('snapLink')"></li>
+          </ul>
         </div>
       </div>
 
