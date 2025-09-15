@@ -172,7 +172,7 @@ const getCounts = () => {
 
     <!-- text from end of summer -->
     <template v-if="!isSummer">
-      <br>
+      <!-- <br> -->
       <div class="custom-section">
         <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
         <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
@@ -180,23 +180,24 @@ const getCounts = () => {
       <br>
     </template>
 
-    <!-- eligibility -->
-    <div class="columns big-cell-pad">
-      <div class="column is-3 small-cell-pad" v-html="$t('eligibility')" />
-      <div class="column small-cell-pad">
-        <div v-html="$t('sections.studentMealSites.eligibility')" />
-      </div>
-    </div>
-    <hr class="no-margin">
-    <!-- pickup details -->
-    <div class="columns big-cell-pad">
-      <div class="column is-3 small-cell-pad" v-html="$t('details')" />
-      <div class="column small-cell-pad">
-        <span v-html="$t('sections.studentMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
-        <span v-html="$t('daysAndTimesVaryBySite')" />
-      </div>
-    </div>
     <template v-if="isSummer">
+      <!-- eligibility -->
+      <div class="columns big-cell-pad">
+        <div class="column is-3 small-cell-pad" v-html="$t('eligibility')" />
+        <div class="column small-cell-pad">
+          <div v-html="$t('sections.studentMealSites.eligibility')" />
+        </div>
+      </div>
+      <hr class="no-margin">
+      <!-- pickup details -->
+      <div class="columns big-cell-pad">
+        <div class="column is-3 small-cell-pad" v-html="$t('details')" />
+        <div class="column small-cell-pad">
+          <span v-html="$t('sections.studentMealSites.pickupDetails.p1')" />&ZeroWidthSpace;
+          <span v-html="$t('daysAndTimesVaryBySite')" />
+        </div>
+      </div>
+
       <hr class="no-margin">
       <div class="columns big-cell-pad">
         <div class="column is-3 small-cell-pad" v-html="$t('otherResources')" />
@@ -242,3 +243,11 @@ const getCounts = () => {
     </div>
   </div>
 </template>
+
+<style scoped>
+
+.custom-section {
+  padding-top: .75rem;
+}
+
+</style>
