@@ -59,7 +59,7 @@ const subsectionCountsFromProps = computed (() => {
 
     <!-- eligibility -->
     <div
-      v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
+      v-if="!$config.i18n.data.messages.en.sections[header].hidePickupDetailsInGreeting"
       class="columns big-cell-pad"
     >
       <div
@@ -79,7 +79,7 @@ const subsectionCountsFromProps = computed (() => {
       class="columns big-cell-pad"
     >
       <div
-        v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting"
+        v-if="!$config.i18n.data.messages.en.sections[header].hidePickupDetailsInGreeting"
         class="column is-3 small-cell-pad"
         v-html="$t('details')"
       />
@@ -89,7 +89,7 @@ const subsectionCountsFromProps = computed (() => {
           <div
             v-html="$t('sections.' + header + '.pickupDetails')"
           />
-          <!-- v-if="!$config.i18n.data.messages['en-US'].sections[header].hidePickupDetailsInGreeting" -->
+          <!-- v-if="!$config.i18n.data.messages.en.sections[header].hidePickupDetailsInGreeting" -->
 
           <!-- subsections -->
           <!-- <div
@@ -99,7 +99,7 @@ const subsectionCountsFromProps = computed (() => {
             <div v-if="subsectionCountsFromProps[subsection]">
               <b>{{ subsectionCountsFromProps[subsection] }} {{ $t('sections.' + header + '.subsections.' + subsection + '.name') }}</b>
               <div
-                v-if="!$config.i18n.data.messages['en-US'].sections[header].subsections[subsection].hidePickupDetailsInGreeting"
+                v-if="!$config.i18n.data.messages.en.sections[header].subsections[subsection].hidePickupDetailsInGreeting"
                 v-html="$t('sections.' + header + '.subsections.' + subsection + '.pickupDetails')"
               />
             </div> -->
@@ -117,7 +117,7 @@ const subsectionCountsFromProps = computed (() => {
     </div>
 
     <div
-      v-if="$config.i18n.data.messages['en-US'].sections[header].custom"
+      v-if="$config.i18n.data.messages.en.sections[header].custom"
       class="custom-section big-cell-pad"
     >
       <div v-html="$t('sections.' + $props.header + '.custom.info')" />
