@@ -24,7 +24,7 @@ library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp,
 
 // use these if running off unlinked package
 import pinboard from '@phila/pinboard';
-import '../node_modules/@phila/pinboard/dist/style.css';
+import '../node_modules/@phila/pinboard/dist/index.css';
 // OR
 // use this if running off linked package
 // import pinboard from '../node_modules/@phila/pinboard/src/main.js';
