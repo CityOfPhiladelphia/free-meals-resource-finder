@@ -225,7 +225,6 @@ let $config = {
                 'sunday': 'sun',
               };
               if (dependentServices.length) {
-                let day = dependentServices[0];
                 days = {
                   day: days[dependentServices[0]],
                 };
@@ -240,20 +239,14 @@ let $config = {
                 let st1;
                 if (typeof(startTime1) !== "undefined" && startTime1 != null) {
                   startTime1Split = startTime1.split(':');
-                  // console.log('startTime1[0]:', startTime1[0], 'parseInt(startTime1[0]):', parseInt(startTime1[0]));
                   st1 = new Date();
                   st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
                 }
                 if (st1 < noon) {
-                  // console.log('st1:', st1, 'noon:', noon);
                   dayAndTime = true;
                   break;
                 }
-                // console.log('noon:', noon, 'startTime1Split:', startTime1Split, 'd:', d, 'selectedDay:', selectedDay, "item.properties['hours_' + selectedDay + '_start1']", item.properties['hours_' + selectedDay + '_start1']);
-                // if (item.properties['hours_' + selectedDay + '_start1'] );
               }
-              // console.log('site_name:', item.properties.site_name, 'dependentServices:', dependentServices, 'startTimes1:', startTimes1);
-              // let day = 1 != null;
               return na_category || na_category_type || dayAndTime;
             },
           },
@@ -275,7 +268,6 @@ let $config = {
                 'sunday': 'sun',
               };
               if (dependentServices.length) {
-                let day = dependentServices[0];
                 days = {
                   day: days[dependentServices[0]],
                 };
@@ -342,7 +334,6 @@ let $config = {
                 'sunday': 'sun',
               };
               if (dependentServices.length) {
-                let day = dependentServices[0];
                 days = {
                   day: days[dependentServices[0]],
                 };
@@ -526,6 +517,7 @@ let $config = {
     'Small Things Philly': 'foodSites',
     'Community Refrigerators': 'foodSites',
     'General Food Site': 'foodSites',
+    'PHILABUNDANCE meal': 'generalMealSites',
     'STP': 'generalMealSites',
     'Office of Homeless Services': 'generalMealSites',
     'Broad Street Ministry': 'generalMealSites',
@@ -618,4 +610,3 @@ let $config = {
 
 pinboard($config);
 export default $config;
-

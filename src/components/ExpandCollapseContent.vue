@@ -46,7 +46,7 @@ const futureHolidayClosure = computed (() => {
   let holiday = this.$store.state.holiday;
   if (holiday.coming_soon) {
     return true;
-  } 
+  }
   return false;
 });
 
@@ -54,7 +54,7 @@ const currentHolidayClosure = computed (() => {
   let holiday = this.$store.state.holiday;
   if (holiday.current) {
     return true;
-  } 
+  }
   return false;
 });
 
@@ -62,9 +62,9 @@ const currentWeatherClosure = computed (() => {
   if (this.item.properties.close_weather_start != null && this.item.properties.close_weather_end != null) {
     if (this.currentUnixDate >= this.item.properties.close_weather_start && this.currentUnixDate <= this.item.properties.close_weather_end) {
       return true;
-    } 
+    }
     return false;
-  } 
+  }
   return false;
 });
 
@@ -72,9 +72,9 @@ const currentTemporaryClosure = computed (() => {
   if (this.item.properties.close_temporary_start != null && this.item.properties.close_temporary_end != null) {
     if (this.currentUnixDate >= this.item.properties.close_temporary_start && this.currentUnixDate <= this.item.properties.close_temporary_end) {
       return true;
-    } 
+    }
     return false;
-  } 
+  }
   return false;
 });
 
