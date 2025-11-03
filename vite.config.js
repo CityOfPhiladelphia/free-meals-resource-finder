@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
       fs: {
         allow: [
           searchForWorkspaceRoot(process.cwd()),
-          'C:/Users/andy.rothwell/Projects/vue3-pinboard/node_modules/@fortawesome/fontawesome-pro/webfonts',
+          '../vue3-pinboard/node_modules/@fortawesome/fontawesome-pro/webfonts',
         ]
       }
     },
