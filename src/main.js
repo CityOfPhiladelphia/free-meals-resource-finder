@@ -124,6 +124,20 @@ let $config = {
               return item.properties.category_type == "Public Benefits";
             },
           },
+          'sharingExcess': {
+            unique_key: 'categoryType_sharingExcess',
+            i18n_key: 'categoryType.sharingExcess',
+            value: function(item) {
+              return item.properties.category_type == "Sharing Excess";
+            },
+          },
+          'freeGrocerySite': {
+            unique_key: 'categoryType_freeGrocerySite',
+            i18n_key: 'categoryType.freeGrocerySite',
+            value: function(item) {
+              return item.properties.category_type == "Free Grocery Site";
+            },
+          },
         },
         columns: 2,
       },
