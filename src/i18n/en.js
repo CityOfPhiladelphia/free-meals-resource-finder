@@ -78,7 +78,11 @@ export default {
         },
         "General Food Site": {
           "name": "General Food Site"
+        },
+        "Free Grocery Site": {
+          "name": "Free Grocery Site"
         }
+      }
     },
     "generalMealSites": {
       "header": "General meal sites",
