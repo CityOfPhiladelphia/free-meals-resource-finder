@@ -1,4 +1,4 @@
-export default{
+export default {
   "app": {
     "title": "Food and meal finder",
     "subtitle": "Get free food, nutrition services, and public benefits",
@@ -79,7 +79,6 @@ export default{
         "General Food Site": {
           "name": "General Food Site"
         }
-      }
     },
     "generalMealSites": {
       "header": "General meal sites",

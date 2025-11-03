@@ -123,21 +123,7 @@ let $config = {
             value: function(item) {
               return item.properties.category_type == "Public Benefits";
             },
-          },
-          'sharingExcess': {
-            unique_key: 'categoryType_sharingExcess',
-            i18n_key: 'categoryType.sharingExcess',
-            value: function(item) {
-              return item.properties.category_type == "Sharing Excess";
-            },
-          },
-          'freeGrocerySite': {
-            unique_key: 'categoryType_freeGrocerySite',
-            i18n_key: 'categoryType.freeGrocerySite',
-            value: function(item) {
-              return item.properties.category_type == "Free Grocery Site";
-            },
-          },
+          }
         },
         columns: 2,
       },
@@ -550,6 +536,7 @@ let $config = {
     'BenePhilly': 'publicBenefits',
     'ITAVTFOC Summer Meal Sites': 'studentMealSites',
     'Feed Philly Now Summer Meal Sites': 'studentMealSites',
+    'Free Grocery Site': 'foodSites',
     // 'PPR': 'foodSites',
     // '': 'foodSites',
     // 'Student Meal Site': 'studentMealSites',
