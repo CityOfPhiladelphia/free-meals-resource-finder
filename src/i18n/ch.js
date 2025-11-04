@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "通用食品网站"
+        },
+        "Free Grocery Site": {
+          "name": "免费杂货网站"
         }
       }
     },

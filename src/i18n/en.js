@@ -1,4 +1,4 @@
-export default {
+export default{
   "app": {
     "title": "Food and meal finder",
     "subtitle": "Get free food, nutrition services, and public benefits",

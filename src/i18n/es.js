@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "Sitio de alimentación general"
+        },
+        "Free Grocery Site": {
+          "name": "Sitio de abarrotes gratuito"
         }
       }
     },

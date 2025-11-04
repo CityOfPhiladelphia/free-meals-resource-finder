@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "Trang web thực phẩm chung"
+        },
+        "Free Grocery Site": {
+          "name": "Trang web tạp hóa miễn phí"
         }
       }
     },
