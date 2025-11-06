@@ -12,7 +12,7 @@ export default{
     "studentMealSite": "Student meal site",
     "olderAdultMealSite": "Older adult meal site",
     "communityRefrigerator": "Community refrigerator",
-    "publicBenefits": "Food assistance and benefits"
+    "publicBenefits": "Public benefits support"
   },
   "eligibility": "Eligibility",
   "pickupDetails": "Details",
@@ -207,7 +207,7 @@ export default{
       }
     },
     "publicBenefits": {
-      "header": "Food assistance and benefits",
+      "header": "Public benefits support",
       "eligibility": "Eligibility varies by site.",
       "pickupDetails": {
         "p1": "Depending on the location, residents may:",

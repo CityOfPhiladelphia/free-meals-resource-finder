@@ -41,7 +41,7 @@ export default {
         'font-size': '12px',
         'background-color': '#721817',
       },
-      'Food assistance and benefits': {
+      'Public benefits support': {
         'border-color': 'black',
         'border-style': 'solid',
         'border-weight': '0px',
