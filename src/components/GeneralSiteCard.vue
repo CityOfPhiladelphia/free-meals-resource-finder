@@ -65,6 +65,10 @@ const subsection = computed(() => {
       class="table-intro"
       v-html="$t('sections.generalMealSites.pickupDetails.p1')"
     />
+    <div
+      class="table-intro"
+      v-html="$t('checkSite')"
+    />
 
     <vue-good-table
       :columns="pickupDetails.columns"

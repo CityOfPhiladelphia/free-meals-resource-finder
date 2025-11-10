@@ -58,6 +58,10 @@ const props = defineProps({
       class="table-intro"
       v-html="$t('sections.foodSites.pickupDetails.p1')"
     />
+    <div
+      class="table-intro"
+      v-html="$t('checkSite')"
+    />
 
     <vue-good-table
       :columns="pickupDetails.columns"
