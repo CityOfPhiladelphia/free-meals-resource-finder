@@ -12,7 +12,7 @@ export default{
     "studentMealSite": "Site de repas pour étudiants",
     "olderAdultMealSite": "Site de repas pour personnes âgées",
     "communityRefrigerator": "Réfrigérateur communautaire",
-    "publicBenefits": "Aide alimentaire et prestations"
+    "publicBenefits": "Soutien aux avantages publics"
   },
   "eligibility": "Éligibilité",
   "pickupDetails": "Détails",
@@ -210,7 +210,7 @@ export default{
       }
     },
     "publicBenefits": {
-      "header": "Aide alimentaire et prestations",
+      "header": "Soutien aux avantages publics",
       "eligibility": "L'éligibilité varie d'un site à l'autre.",
       "pickupDetails": {
         "p1": "Selon le lieu, les résidents peuvent :",
@@ -303,6 +303,11 @@ export default{
     "Open on the first and third Saturdays of the month": "Ouvert les premier et troisième samedis du mois",
     "Open every other Saturday": "Ouvert un samedi sur deux",
     "Open on the fourth Sunday of the month": "Ouvert le quatrième dimanche du mois",
-    "Open third Sunday of the month": "Ouvert le troisième dimanche du mois"
+    "Open third Sunday of the month": "Ouvert le troisième dimanche du mois",
+    "First time participants must come at 9:00AM to sign up": "Les participants pour la première fois doivent se présenter à 9 h 00 pour s'inscrire",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Les participants doivent se présenter à 9h00 pour recevoir un billet leur permettant de recevoir de la nourriture",
+    "Participants must come between 7:00AM and 10:00AM to sign up": "Les participants doivent se présenter entre 7 h 00 et 10 h 00 pour s'inscrire",
+    "Participants must line up in vehicle to receive food": "Les participants doivent faire la queue dans le véhicule pour recevoir de la nourriture",
+    "Open on all but the last Friday of the month": "Ouvert tous les jours sauf le dernier vendredi du mois"
   }
 }
