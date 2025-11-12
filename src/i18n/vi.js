@@ -12,7 +12,7 @@ export default{
     "studentMealSite": "Trang web bữa ăn dành cho sinh viên",
     "olderAdultMealSite": "Trang web bữa ăn dành cho người lớn tuổi",
     "communityRefrigerator": "Tủ lạnh cộng đồng",
-    "publicBenefits": "Hỗ trợ thực phẩm và lợi ích"
+    "publicBenefits": "Hỗ trợ lợi ích công cộng"
   },
   "eligibility": "Tính đủ điều kiện",
   "pickupDetails": "Chi tiết",
@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "Trang web thực phẩm chung"
+        },
+        "Free Grocery Site": {
+          "name": "Trang web tạp hóa miễn phí"
         }
       }
     },
@@ -207,7 +210,7 @@ export default{
       }
     },
     "publicBenefits": {
-      "header": "Hỗ trợ thực phẩm và lợi ích",
+      "header": "Hỗ trợ lợi ích công cộng",
       "eligibility": "Tính đủ điều kiện khác nhau tùy theo trang web.",
       "pickupDetails": {
         "p1": "Tùy thuộc vào địa điểm, cư dân có thể:",
@@ -300,6 +303,11 @@ export default{
     "Open on the first and third Saturdays of the month": "Mở cửa vào thứ Bảy đầu tiên và thứ ba trong tháng",
     "Open every other Saturday": "Mở cửa vào thứ bảy hàng tuần",
     "Open on the fourth Sunday of the month": "Mở cửa vào Chủ nhật thứ tư của tháng",
-    "Open third Sunday of the month": "Mở cửa chủ nhật thứ ba trong tháng"
+    "Open third Sunday of the month": "Mở cửa chủ nhật thứ ba trong tháng",
+    "First time participants must come at 9:00AM to sign up": "Người tham gia lần đầu tiên phải đến lúc 9:00 sáng để đăng ký",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Người tham gia phải đến lúc 9:00 sáng để nhận vé cho thời gian nhận thức ăn",
+    "Participants must come between 7:00AM and 10:00AM to sign up": "Người tham gia phải đến từ 7:00 AM đến 10:00 AM để đăng ký",
+    "Participants must line up in vehicle to receive food": "Người tham gia phải xếp hàng trên xe để nhận thức ăn",
+    "Open on all but the last Friday of the month": "Mở cửa vào tất cả trừ thứ Sáu cuối cùng của tháng"
   }
 }

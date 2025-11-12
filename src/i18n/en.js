@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "General Food Site"
+        },
+        "Free Grocery Site": {
+          "name": "Free Grocery Site"
         }
       }
     },
@@ -300,6 +303,11 @@ export default{
     "Open on the first and third Saturdays of the month": "Open on the first and third Saturdays of the month",
     "Open every other Saturday": "Open every other Saturday",
     "Open on the fourth Sunday of the month": "Open on the fourth Sunday of the month",
-    "Open third Sunday of the month": "Open third Sunday of the month"
+    "Open third Sunday of the month": "Open third Sunday of the month",
+    "First time participants must come at 9:00AM to sign up": "First time participants must come at 9:00AM to sign up",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Participants must come at 9:00AM to receive ticket for their time to receive food",
+    "Participants must come between 7:00AM and 10:00AM to sign up": "Participants must come between 7:00AM and 10:00AM to sign up",
+    "Participants must line up in vehicle to receive food": "Participants must line up in vehicle to receive food",
+    "Open on all but the last Friday of the month": "Open on all but the last Friday of the month"
   }
 }

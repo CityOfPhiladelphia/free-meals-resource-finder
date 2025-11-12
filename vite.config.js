@@ -4,6 +4,7 @@ import { defineConfig, searchForWorkspaceRoot, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import AutoImport from 'unplugin-auto-import/vite'
+import Inspect from 'vite-plugin-inspect'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -22,13 +23,14 @@ export default defineConfig(({ mode }) => {
       fs: {
         allow: [
           searchForWorkspaceRoot(process.cwd()),
-          'C:/Users/andy.rothwell/Projects/vue3-pinboard/node_modules/@fortawesome/fontawesome-pro/webfonts',
+          '../vue3-pinboard/node_modules/@fortawesome/fontawesome-pro/webfonts',
         ]
       }
     },
     plugins: [
       vue(),
       vueDevTools(),
+      Inspect(),
       AutoImport({
         imports: [
           'vue',
