@@ -36,13 +36,14 @@ import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
 import customGreeting from './components/customGreeting.vue';
-const customComps = markRaw({
-  'expandCollapseContent': expandCollapseContent,
-  'customGreeting': customGreeting,
-});
 
 import i18n from './i18n/i18n';
 // if (import.meta.env.VITE_DEBUG) console.log('main.js i18n:', i18n);
+
+const customComps = markRaw({
+  'expandCollapseContent': expandCollapseContent,
+  'customGreeting': customGreeting
+});
 
 let $config = {
   i18n: i18n.i18n,
@@ -123,7 +124,7 @@ let $config = {
             value: function(item) {
               return item.properties.category_type == "Public Benefits";
             },
-          },
+          }
         },
         columns: 2,
       },
@@ -536,6 +537,7 @@ let $config = {
     'BenePhilly': 'publicBenefits',
     'ITAVTFOC Summer Meal Sites': 'studentMealSites',
     'Feed Philly Now Summer Meal Sites': 'studentMealSites',
+    'Free Grocery Site': 'foodSites',
     // 'PPR': 'foodSites',
     // '': 'foodSites',
     // 'Student Meal Site': 'studentMealSites',

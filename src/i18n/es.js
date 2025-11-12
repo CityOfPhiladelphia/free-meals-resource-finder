@@ -12,7 +12,7 @@ export default{
     "studentMealSite": "Sitio de comidas para estudiantes",
     "olderAdultMealSite": "Sitio de comidas para adultos mayores",
     "communityRefrigerator": "Refrigerador comunitario",
-    "publicBenefits": "Asistencia alimentaria y beneficios"
+    "publicBenefits": "Apoyo a las prestaciones públicas"
   },
   "eligibility": "Elegibilidad",
   "pickupDetails": "Detalles",
@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "Sitio de alimentación general"
+        },
+        "Free Grocery Site": {
+          "name": "Sitio de abarrotes gratuito"
         }
       }
     },
@@ -207,7 +210,7 @@ export default{
       }
     },
     "publicBenefits": {
-      "header": "Asistencia alimentaria y beneficios",
+      "header": "Apoyo a las prestaciones públicas",
       "eligibility": "La elegibilidad varía según el sitio.",
       "pickupDetails": {
         "p1": "Según la ubicación, los residentes pueden:",
@@ -300,6 +303,11 @@ export default{
     "Open on the first and third Saturdays of the month": "Abierto el primer y tercer sábado del mes",
     "Open every other Saturday": "Abierto cada dos sábados",
     "Open on the fourth Sunday of the month": "Abierto el cuarto domingo del mes",
-    "Open third Sunday of the month": "Abierto el tercer domingo del mes"
+    "Open third Sunday of the month": "Abierto el tercer domingo del mes",
+    "First time participants must come at 9:00AM to sign up": "Los participantes por primera vez deben venir a las 9:00 a.m. para inscribirse",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Los participantes deben venir a las 9:00 a.m. para recibir un boleto que les permita recibir comida",
+    "Participants must come between 7:00AM and 10:00AM to sign up": "Los participantes deben venir entre las 7:00 a.m. y las 10:00 a.m. para inscribirse",
+    "Participants must line up in vehicle to receive food": "Los participantes deben hacer fila en el vehículo para recibir comida",
+    "Open on all but the last Friday of the month": "Abierto todos los días excepto el último viernes del mes"
   }
 }

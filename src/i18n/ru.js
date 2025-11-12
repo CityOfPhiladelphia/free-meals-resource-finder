@@ -12,7 +12,7 @@ export default{
     "studentMealSite": "Сайт студенческого питания",
     "olderAdultMealSite": "Сайт питания для пожилых людей",
     "communityRefrigerator": "Общественный холодильник",
-    "publicBenefits": "Продовольственная помощь и пособия"
+    "publicBenefits": "Поддержка государственных пособий"
   },
   "eligibility": "Соответствие критериям",
   "pickupDetails": "Подробности",
@@ -78,6 +78,9 @@ export default{
         },
         "General Food Site": {
           "name": "Общий продуктовый сайт"
+        },
+        "Free Grocery Site": {
+          "name": "Бесплатный продуктовый сайт"
         }
       }
     },
@@ -207,7 +210,7 @@ export default{
       }
     },
     "publicBenefits": {
-      "header": "Продовольственная помощь и пособия",
+      "header": "Поддержка государственных пособий",
       "eligibility": "Соответствие критериям зависит от сайта.",
       "pickupDetails": {
         "p1": "В зависимости от местоположения жители могут:",
@@ -300,6 +303,11 @@ export default{
     "Open on the first and third Saturdays of the month": "Открыто в первую и третью субботу месяца",
     "Open every other Saturday": "Открыто каждую вторую субботу",
     "Open on the fourth Sunday of the month": "Открыто в четвертое воскресенье месяца",
-    "Open third Sunday of the month": "Открыто в третье воскресенье месяца"
+    "Open third Sunday of the month": "Открыто в третье воскресенье месяца",
+    "First time participants must come at 9:00AM to sign up": "Для регистрации участники, впервые приходящие на мероприятие, должны прийти в 9:00",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Участники должны прийти в 9:00 утра, чтобы получить билет на время получения еды",
+    "Participants must come between 7:00AM and 10:00AM to sign up": "Для регистрации участники должны прийти с 7:00 до 10:00",
+    "Participants must line up in vehicle to receive food": "Участники должны выстроиться в очередь в автомобиле, чтобы получить еду",
+    "Open on all but the last Friday of the month": "Открыт во все дни, кроме последней пятницы месяца"
   }
 }
