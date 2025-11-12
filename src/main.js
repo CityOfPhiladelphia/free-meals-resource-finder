@@ -36,13 +36,14 @@ import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
 import customGreeting from './components/customGreeting.vue';
-const customComps = markRaw({
-  'expandCollapseContent': expandCollapseContent,
-  'customGreeting': customGreeting,
-});
 
 import i18n from './i18n/i18n';
 // if (import.meta.env.VITE_DEBUG) console.log('main.js i18n:', i18n);
+
+const customComps = markRaw({
+  'expandCollapseContent': expandCollapseContent,
+  'customGreeting': customGreeting
+});
 
 let $config = {
   i18n: i18n.i18n,
