@@ -304,10 +304,10 @@ export default{
     "Open every other Saturday": "Abierto cada dos sábados",
     "Open on the fourth Sunday of the month": "Abierto el cuarto domingo del mes",
     "Open third Sunday of the month": "Abierto el tercer domingo del mes",
-    "First time participants must come at 9:00AM to sign up": "Los participantes por primera vez deben venir a las 9:00 a.m. para inscribirse",
-    "Participants must come at 9:00AM to receive ticket for their time to receive food": "Los participantes deben venir a las 9:00 a.m. para recibir un boleto que les permita recibir comida",
-    "Participants must come between 7:00AM and 10:00AM to sign up": "Los participantes deben venir entre las 7:00 a.m. y las 10:00 a.m. para inscribirse",
-    "Participants must line up in vehicle to receive food": "Los participantes deben hacer fila en el vehículo para recibir comida",
-    "Open on all but the last Friday of the month": "Abierto todos los días excepto el último viernes del mes"
+    "First time participants must come at 9:00AM to sign up.": "Los participantes por primera vez deben venir a las 9:00 a.m. para inscribirse",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food.": "Los participantes deben venir a las 9:00 a.m. para recibir el boleto correspondiente a su hora de recibir comida",
+    "Participants must come between 7:00AM and 10:00AM to sign up.": "Los participantes deben venir entre las 7:00 a.m. y las 10:00 a.m. para inscribirse",
+    "Participants must line up in vehicle to receive food.": "Los participantes deben hacer fila en el vehículo para recibir comida",
+    "Open on all but the last Friday of the month.": "Abierto todos los días excepto el último viernes del mes"
   }
 }

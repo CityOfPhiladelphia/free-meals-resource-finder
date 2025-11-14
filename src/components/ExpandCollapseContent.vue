@@ -1,9 +1,7 @@
 <script setup>
 
-// import { useRoute, useRouter } from 'vue-router';
-
 import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
-const { getPickupDetails, parseTimeRange, parseException } = useLocalSharedFunctions();
+const { getPickupDetails, parseTimeRange } = useLocalSharedFunctions();
 
 import transforms from '../util/transforms.js';
 import { format } from 'date-fns';
@@ -18,7 +16,8 @@ import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
 
-import $config from '../main.js';
+import { useConfigStore } from '@pinboard';
+const $config = useConfigStore().config;
 
 const props = defineProps({
   item: {

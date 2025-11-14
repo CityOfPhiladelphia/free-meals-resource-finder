@@ -6,7 +6,7 @@ name: Development caching with npm and push
 on:
   push:
     branches:
-      - snap-changes
+      - fix/circular-imports
 
 jobs:
   build:

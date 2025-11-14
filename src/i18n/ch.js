@@ -304,10 +304,10 @@ export default{
     "Open every other Saturday": "每隔一个星期六开放",
     "Open on the fourth Sunday of the month": "每月第四个星期日开放",
     "Open third Sunday of the month": "本月的第三个星期日开放",
-    "First time participants must come at 9:00AM to sign up": "首次参加者必须在上午 9:00 前来报名",
-    "Participants must come at 9:00AM to receive ticket for their time to receive food": "参与者必须在上午 9:00 到场领取门票，以便他们有时间领取食物",
-    "Participants must come between 7:00AM and 10:00AM to sign up": "参与者必须在上午 7:00 至上午 10:00 之间报名",
-    "Participants must line up in vehicle to receive food": "参与者必须在车辆上排队领取食物",
-    "Open on all but the last Friday of the month": "除本月最后一个星期五以外的所有时间开放"
+    "First time participants must come at 9:00AM to sign up.": "首次参加者必须在上午 9:00 前来报名",
+    "Participants must come at 9:00AM to receive ticket for their time to receive food.": "参与者必须在上午 9:00 到场领取门票，以便他们有时间领取食物",
+    "Participants must come between 7:00AM and 10:00AM to sign up.": "参与者必须在上午 7:00 至上午 10:00 之间报名",
+    "Participants must line up in vehicle to receive food.": "参与者必须在车辆上排队领取食物",
+    "Open on all but the last Friday of the month.": "除本月最后一个星期五以外的所有时间开放"
   }
 }

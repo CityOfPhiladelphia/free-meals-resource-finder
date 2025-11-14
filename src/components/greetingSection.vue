@@ -1,6 +1,7 @@
 <script setup>
 
-import $config from '../main.js';
+import { useConfigStore } from '@pinboard';
+const $config = useConfigStore().config;
 import { getCurrentInstance } from 'vue';
 
 const props = defineProps({

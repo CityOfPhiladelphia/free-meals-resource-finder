@@ -2,7 +2,8 @@
 
 import { onMounted, watch, ref, computed, defineEmits } from 'vue';
 
-import $config from '../main.js';
+import { useConfigStore } from '@pinboard';
+const $config = useConfigStore().config;
 
 const $emit = defineEmits(['view-list']);
 
