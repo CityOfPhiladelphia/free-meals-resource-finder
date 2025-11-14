@@ -1,5 +1,4 @@
 import { format, parseISO } from 'date-fns';
-import $config from '../main.js';
 
 export default function useLocalSharedFunctions() {
 
@@ -77,24 +76,9 @@ export default function useLocalSharedFunctions() {
     return value;
   };
 
-  const parseException = (exception, index, i18nLocale) => {
-    if (import.meta.env.VITE_DEBUG) console.log('i18nLocale', i18nLocale);
-    let parsedException = '';
-    for (let i=0; i<index; i++) {
-      parsedException += "*";
-    }
-    if ($config.i18n.data.messages[i18nLocale].exceptions && $config.i18n.data.messages[i18nLocale].exceptions[exception]) {
-      parsedException += ' ' + $config.i18n.data.messages[i18nLocale].exceptions[exception];
-    } else {
-      parsedException += ' ' + exception;
-    }
-    return parsedException;
-  };
-
   return {
     getPickupDetails,
     parseTimeRange,
-    parseException,
   };
 
 };

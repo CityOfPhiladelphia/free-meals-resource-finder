@@ -1,7 +1,8 @@
 <script setup>
 
 import { computed } from 'vue';
-import $config from '../main.js';
+import { useConfigStore } from '@pinboard';
+const $config = useConfigStore().config;
   
 const props = defineProps({
   item: {

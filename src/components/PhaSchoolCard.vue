@@ -1,12 +1,9 @@
 <script setup>
 
-import $config from '../main.js';
-
-import useLocalSharedFunctions from '../composables/useLocalSharedFunctions.js';
-const { parseException } = useLocalSharedFunctions();
+import { useConfigStore } from '@pinboard';
+const $config = useConfigStore().config;
 
 import { getCurrentInstance } from 'vue';
-
 const instance = getCurrentInstance();
 
 const i18nLocale = computed(() => {
@@ -45,6 +42,20 @@ const section = computed(() => {
 const subsection = computed(() => {
   return props.item.properties.category;
 });
+
+const parseException = (exception, index, i18nLocale) => {
+  if (import.meta.env.VITE_DEBUG) console.log('i18nLocale', i18nLocale);
+  let parsedException = '';
+  for (let i=0; i<index; i++) {
+    parsedException += "*";
+  }
+  if ($config.i18n.data.messages[i18nLocale].exceptions && $config.i18n.data.messages[i18nLocale].exceptions[exception]) {
+    parsedException += ' ' + $config.i18n.data.messages[i18nLocale].exceptions[exception];
+  } else {
+    parsedException += ' ' + exception;
+  }
+  return parsedException;
+};
 
 </script>
 

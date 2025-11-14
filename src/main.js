@@ -19,31 +19,28 @@ import { faAngleUp as farAngleUp } from '@fortawesome/pro-regular-svg-icons';
 import { faTimes as farTimes } from '@fortawesome/pro-regular-svg-icons';
 import { faPlus as farPlus } from '@fortawesome/pro-regular-svg-icons';
 import { faMinus as farMinus } from '@fortawesome/pro-regular-svg-icons';
-import { markRaw } from 'vue';
+
 library.add(faExclamationTriangle, faHandHoldingHeart, farAngleDown, farAngleUp, farTimes, farPlus, farMinus);
 
-// use these if running off unlinked package
-import pinboard from '@phila/pinboard';
 import '../node_modules/@phila/pinboard/dist/index.css';
-// OR
-// use this if running off linked package
-// import pinboard from '../node_modules/@phila/pinboard/src/main.js';
+import pinboard from '@pinboard';
 
 import legendControl from './general/legendControl';
 
 // data-sources
 import covidFreeMealSites from './data-sources/covid-free-meal-sites';
 
-import expandCollapseContent from './components/ExpandCollapseContent.vue';
+// console.log('customGreeting:', customGreeting);
 import customGreeting from './components/customGreeting.vue';
-
-import i18n from './i18n/i18n';
-// if (import.meta.env.VITE_DEBUG) console.log('main.js i18n:', i18n);
+import expandCollapseContent from './components/ExpandCollapseContent.vue';
 
 const customComps = markRaw({
+  'customGreeting': customGreeting,
   'expandCollapseContent': expandCollapseContent,
-  'customGreeting': customGreeting
 });
+
+import i18n from './i18n/i18n';
+console.log('main.js i18n:', i18n);
 
 let $config = {
   i18n: i18n.i18n,
