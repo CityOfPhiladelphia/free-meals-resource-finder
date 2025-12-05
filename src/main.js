@@ -535,6 +535,7 @@ let $config = {
     'ITAVTFOC Summer Meal Sites': 'studentMealSites',
     'Feed Philly Now Summer Meal Sites': 'studentMealSites',
     'Free Grocery Site': 'foodSites',
+    'Neighborhood Community Action Center': 'publicBenefits',
     // 'PPR': 'foodSites',
     // '': 'foodSites',
     // 'Student Meal Site': 'studentMealSites',

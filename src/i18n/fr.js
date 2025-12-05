@@ -229,6 +229,11 @@ export default{
           "name": "Bene Philly",
           "eligibility": "Tout résident peut se rendre dans un centre BenePhilly.",
           "pickupDetails": "Les centres BenePhilly offrent un soutien individuel gratuit pour aider les résidents à s'inscrire aux prestations publiques. Ces programmes peuvent vous aider à payer l'épicerie, les médicaments, l'assurance maladie et les services publics. Les jours et les heures varient selon les sites. <br><br>Avant de partir, appelez le centre BenePhilly que vous comptez visiter."
+        },
+        "Neighborhood Community Action Center": {
+          "name": "Centre d'action communautaire de quartier",
+          "eligibility": "Tout résident peut visiter un centre d'action communautaire de quartier.",
+          "pickupDetails": "Les centres d'action communautaire de quartier font office de mairies de quartier où les résidents peuvent obtenir de l'aide pour résoudre les problèmes liés à la ville, notamment en matière de connexion aux avantages publics. Les jours et les heures varient selon le site."
         }
       }
     },
