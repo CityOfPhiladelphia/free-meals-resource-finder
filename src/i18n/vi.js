@@ -229,6 +229,11 @@ export default{
           "name": "BenePhilly",
           "eligibility": "Bất kỳ cư dân nào cũng đủ điều kiện đến trung tâm BenePhilly.",
           "pickupDetails": "Các trung tâm BenePhilly cung cấp hỗ trợ trực tiếp miễn phí để giúp cư dân đăng ký nhận các quyền lợi công cộng. Những chương trình này có thể giúp bạn trả tiền cho hàng tạp hóa, thuốc men, bảo hiểm y tế và các tiện ích. Ngày và giờ khác nhau tùy theo trang web. <br><br>Trước khi bạn đi, hãy gọi cho trung tâm BenePhilly mà bạn dự định ghé thăm."
+        },
+        "Neighborhood Community Action Center": {
+          "name": "Trung tâm hành động cộng đồng khu phố",
+          "eligibility": "Bất kỳ cư dân nào cũng đủ điều kiện đến thăm Trung tâm Hành động Cộng đồng Khu phố.",
+          "pickupDetails": "Trung tâm Hành động Cộng đồng Khu phố đóng vai trò là tòa thị chính khu phố, nơi cư dân có thể nhận được sự giúp đỡ về các vấn đề liên quan đến Thành phố bao gồm kết nối với các lợi ích công cộng. Ngày và giờ khác nhau tùy theo trang web."
         }
       }
     },

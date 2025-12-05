@@ -15,6 +15,7 @@ import NdsSchoolCard from './NdsSchoolCard.vue';
 import GeneralSiteCard from './GeneralSiteCard.vue';
 import FridgeSiteCard from './FridgeSiteCard.vue';
 import PublicBenefitsSiteCard from './PublicBenefitsSiteCard.vue';
+import NeighborhoodCommunityActionCenterCard from './NeighborhoodCommunityActionCenterCard.vue';
 
 import { useConfigStore } from '@pinboard';
 const $config = useConfigStore().config;
@@ -412,7 +413,14 @@ const makeValidUrl = (url) => {
       />
 
       <public-benefits-site-card
-        v-if="section === 'publicBenefits'"
+        v-if="section === 'publicBenefits' && subsection !== 'Neighborhood Community Action Center'"
+        :item="item"
+        :exceptions-list="exceptionsList"
+        :pickup-details="pickupDetails"
+      />
+
+      <neighborhood-community-action-center-card
+        v-if="section === 'publicBenefits' && subsection === 'Neighborhood Community Action Center'"
         :item="item"
         :exceptions-list="exceptionsList"
         :pickup-details="pickupDetails"
