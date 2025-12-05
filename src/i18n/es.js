@@ -229,6 +229,11 @@ export default{
           "name": "BenePhilly",
           "eligibility": "Cualquier residente es elegible para visitar un centro de BenePhilly.",
           "pickupDetails": "Los centros BenePhilly ofrecen asistencia personalizada gratuita para ayudar a los residentes a inscribirse en los beneficios públicos. Estos programas pueden ayudarlo a pagar los alimentos, los medicamentos, el seguro médico y los servicios públicos. Los días y los horarios varían según el sitio. <br><br>Antes de ir, llame al centro BenePhilly que planea visitar."
+        },
+        "Neighborhood Community Action Center": {
+          "name": "Centro de acción comunitaria vecinal",
+          "eligibility": "Cualquier residente es elegible para visitar un Centro de Acción Comunitaria Vecinal.",
+          "pickupDetails": "Los centros de acción comunitaria vecinal funcionan como ayuntamientos vecinales donde los residentes pueden obtener ayuda con problemas relacionados con la ciudad, incluida la conexión con los beneficios públicos. Los días y horarios varían según el sitio."
         }
       }
     },

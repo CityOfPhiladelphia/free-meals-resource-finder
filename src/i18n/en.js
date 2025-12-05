@@ -229,6 +229,11 @@ export default{
           "name": "BenePhilly",
           "eligibility": "Any resident is eligible to visit a BenePhilly center.",
           "pickupDetails": "BenePhilly centers offer free one-on-one support to help residents enroll in public benefits. These programs can help you pay for groceries, medication, health insurance, and utilities. Days and hours vary by site.<br><br>Before you go, call the BenePhilly center that you plan to visit."
+        },
+        "Neighborhood Community Action Center": {
+          "name": "Neighborhood Community Action Center",
+          "eligibility": "Any resident is eligible to visit a Neighborhood Community Action Center.",
+          "pickupDetails": "Neighborhood Community Action Centers serve as neighborhood city halls where residents can get help with City-related issues including connecting to public benefits. Days and hours vary by site."
         }
       }
     },

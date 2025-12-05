@@ -229,6 +229,11 @@ export default{
           "name": "BenePhilly",
           "eligibility": "任何居民都有资格访问BenePhilly中心。",
           "pickupDetails": "BenePhilly中心提供免费的一对一支持，帮助居民注册公共福利。这些计划可以帮助您支付杂货、药物、健康保险和水电费。日期和时间因地点而异。<br><br>出发之前，请致电您计划访问的BenePhilly中心。"
+        },
+        "Neighborhood Community Action Center": {
+          "name": "邻里社区行动中心",
+          "eligibility": "任何居民都有资格访问邻里社区行动中心。",
+          "pickupDetails": "邻里社区行动中心充当社区市政厅，居民可以在那里获得有关城市问题的帮助，包括与公共福利相关的问题。日期和时间因地点而异。"
         }
       }
     },
