@@ -6,7 +6,7 @@ name: Development caching with npm and push
 on:
   push:
     branches:
-      - main
+      - feature/free-meal-sites
 
 jobs:
   build:
