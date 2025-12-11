@@ -99,6 +99,9 @@ export default{
         },
         "STP": {
           "name": "费城小东西"
+        },
+        "Free Meal Site": {
+          "name": "免费用餐网站"
         }
       }
     },
