@@ -99,6 +99,9 @@ export default{
         },
         "STP": {
           "name": "Small Things Filadelfia"
+        },
+        "Free Meal Site": {
+          "name": "Sitio de comidas gratis"
         }
       }
     },

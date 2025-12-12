@@ -99,6 +99,9 @@ export default{
         },
         "STP": {
           "name": "Small Things Philly"
+        },
+        "Free Meal Site": {
+          "name": "Free Meal Site"
         }
       }
     },
