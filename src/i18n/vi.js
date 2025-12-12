@@ -99,6 +99,9 @@ export default{
         },
         "STP": {
           "name": "Những điều nhỏ nhặt Philly"
+        },
+        "Free Meal Site": {
+          "name": "Trang web bữa ăn miễn phí"
         }
       }
     },
