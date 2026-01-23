@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "假日周末的营业时间可能会发生变化。出发前请联系该网站。",
   "winterHolidayClosureAllSites": "圣诞节和新年假期-寒假期间，时间可能会改变。出发前请联系该网站。",
   "futureHolidayClosureAllSites": "假日周末的营业时间可能会发生变化。出发前请联系该网站。",
+  "snowClosure": "冬季风暴可能会影响场地进度。出发前请联系该网站。",
   "weatherClosure": "由于天气原因，该网站目前暂时关闭。",
   "temporaryClosure": "该网站目前暂时关闭。",
   "schedule": "日程安排",
