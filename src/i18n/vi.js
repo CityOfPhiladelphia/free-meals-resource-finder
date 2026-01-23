@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.",
   "winterHolidayClosureAllSites": "Ngày lễ Giáng sinh và năm mới - Giờ có thể thay đổi trong kỳ nghỉ đông. Liên hệ với trang web trước khi bạn đi.",
   "futureHolidayClosureAllSites": "Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.",
+  "snowClosure": "Cơn bão mùa đông có thể ảnh hưởng đến lịch trình của địa điểm. Liên hệ với trang web trước khi bạn đi.",
   "weatherClosure": "Trang web này hiện đang tạm thời đóng cửa do thời tiết.",
   "temporaryClosure": "Trang web này hiện đang tạm thời đóng cửa.",
   "schedule": "Lịch trình",

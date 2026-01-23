@@ -405,8 +405,8 @@ let $config = {
     // },
   },
   holidays: {
-    forceBanner: false,
-    forceBannerMessage: 'holidayClosureAllSites_weekend',
+    forceBanner: true,
+    forceBannerMessage: 'snowClosure',
     automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
