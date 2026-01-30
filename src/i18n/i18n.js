@@ -5,6 +5,9 @@ import ch from './ch';
 import vi from './vi';
 import ru from './ru';
 import fr from './fr';
+import pt from './pt';
+import ht from './ht';
+import ar from './ar';
 
 let i18n = {
   i18n: {
@@ -33,6 +36,18 @@ let i18n = {
         language: 'fr',
         title: 'Français'
       },
+      {
+        language: 'pt',
+        title: 'Português'
+      },
+      {
+        language: 'ht',
+        title: 'Kreyòl Ayisyen'
+      },
+      {
+        language: 'ar',
+        title: 'العربية'
+      },
     ],
     header: 'inside',
     enabled: true,
@@ -48,6 +63,9 @@ let i18n = {
         vi: vi,
         ru: ru,
         fr: fr,
+        pt: pt,
+        ht: ht,
+        ar: ar,
       },
     },
   },
