@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "Sitios de comidas para estudiantes",
       "offSeason": {
+        "p0": "Las comidas de verano gratuitas para jóvenes de hasta 18 años estarán disponibles del lunes 15 de junio al viernes 21 de agosto. Los sitios de comidas de verano se agregarán al mapa cerca de la fecha de inicio. Para obtener más información sobre las comidas de verano gratuitas, EBT de verano y cómo convertirse en un sitio de comidas de verano, visite <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>.",
         "p1": "Todos los estudiantes del Distrito Escolar de Filadelfia reciben desayuno y almuerzo gratis en la escuela. Para obtener más información, consulte la página de servicios de alimentación del <a target='_blank' href='https://www.philasd.org/foodservices/'>distrito.</a>",
-        "p2": "Los jóvenes también pueden obtener refrigerios o comidas en los programas <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>Out of School Time.</a>"
+        "p2": "Los jóvenes también pueden obtener refrigerios o comidas en los programas <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time.</a>"
       },
       "eligibility": "Los niños y jóvenes menores de 18 años son elegibles. No se requiere ninguna identificación.",
       "pickupDetails": {

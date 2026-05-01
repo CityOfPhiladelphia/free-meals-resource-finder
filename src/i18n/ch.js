@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "学生就餐网站",
       "offSeason": {
+        "p0": "年龄在 18 岁及以下的青少年可在 6 月 15 日（星期一）至 8 月 21 日（星期五）期间享用免费暑期餐食。暑期餐食地点将在开始日期临近时添加到地图上。要了解有关免费暑期餐食、暑期 EBT 以及如何成为暑期餐食地点的更多信息，请访问 <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>。",
         "p1": "费城学区的所有学生在学校均可免费享用早餐和午餐。要了解更多信息，请参阅该<a target='_blank' href='https://www.philasd.org/foodservices/'>地区的餐饮服务页面。</a>",
-        "p2": "年轻人还可以在课<a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>外活动中获得零食或餐食。</a>"
+        "p2": "年轻人还可以在课<a target='_blank' href='https://www.phila.gov/ost/program-locator/'>外活动中获得零食或餐食。</a>"
       },
       "eligibility": "18 岁或以下的儿童和青少年符合资格。不需要身份证。",
       "pickupDetails": {

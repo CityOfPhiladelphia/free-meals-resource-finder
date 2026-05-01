@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "Trang web bữa ăn của sinh viên",
       "offSeason": {
+        "p0": "Bữa ăn mùa hè miễn phí cho thanh thiếu niên đến 18 tuổi sẽ có sẵn từ Thứ Hai, ngày 15 tháng 6 đến Thứ Sáu, ngày 21 tháng 8. Các Địa điểm Bữa ăn Mùa hè sẽ được thêm vào bản đồ gần ngày bắt đầu. Để tìm hiểu thêm về Bữa ăn Mùa hè miễn phí, EBT Mùa hè và cách trở thành địa điểm bữa ăn mùa hè, hãy truy cập <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>.",
         "p1": "Tất cả học sinh ở Học khu Philadelphia đều nhận được bữa sáng và bữa trưa miễn phí tại trường. Để tìm hiểu thêm, hãy xem trang dịch vụ ăn uống của <a target='_blank' href='https://www.philasd.org/foodservices/'>quận.</a>",
-        "p2": "Những người trẻ tuổi cũng có thể nhận đồ ăn nhẹ hoặc bữa ăn tại các chương trình <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>Out of School Time.</a>"
+        "p2": "Những người trẻ tuổi cũng có thể nhận đồ ăn nhẹ hoặc bữa ăn tại các chương trình <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time.</a>"
       },
       "eligibility": "Trẻ em và thanh thiếu niên từ 18 tuổi trở xuống đủ điều kiện. Không yêu cầu ID.",
       "pickupDetails": {
