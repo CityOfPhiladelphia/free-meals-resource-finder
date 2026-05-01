@@ -600,7 +600,7 @@ let $config = {
     },
     {
       type: "native",
-      href: "https://www.phila.gov/feedback/",
+      href: "https://phila.formstack.com/forms/food_and_meal_finder_feedback",
       attrs: {
         target: "_blank",
       },
