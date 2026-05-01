@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "Student meal sites",
       "offSeason": {
+        "p0": "Free summer meals for youth up to age 18 will be available from Monday, June 15th – Friday, August 21st. Summer Meal Sites will be added to the map closer to the start date. To learn more about free Summer Meals, Summer EBT, and how to become a summer meal site visit <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals.</a>",
         "p1": "All students in the School District of Philadelphia receive free breakfast and lunch at school. To learn more, see the <a target='_blank' href='https://www.philasd.org/foodservices/'>district’s food services page.</a>",
-        "p2": "Young people can also get snacks or meals at <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>Out of School Time programs.</a>"
+        "p2": "Young people can also get snacks or meals at <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time programs.</a>"
       },
       "eligibility": "Children and youth age 18 or under are eligible. No ID is required.",
       "pickupDetails": {

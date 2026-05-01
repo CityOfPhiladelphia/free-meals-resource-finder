@@ -29,8 +29,8 @@ watch(
 
 const isSummer = computed(() => {
   const today = new Date();
-  const summerMealsBegin = new Date("2025-06-18");
-  const summerMealsEnd = new Date("2025-08-29");
+  const summerMealsBegin = new Date("2026-06-15");
+  const summerMealsEnd = new Date("2026-08-21");
   return (summerMealsBegin < today) && (today < summerMealsEnd)
 });
 
@@ -175,6 +175,7 @@ const getCounts = () => {
     <template v-if="!isSummer">
       <!-- <br> -->
       <div class="custom-section">
+        <div v-html="$t('sections.studentMealSites.offSeason.p0')" />
         <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
         <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
       </div>
