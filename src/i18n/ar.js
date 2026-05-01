@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "مواقع وجبات الطلاب",
       "offSeason": {
+        "p0": "ستتوفر وجبات صيفية مجانية للشباب حتى سن 18 عامًا من يوم الاثنين 15 يونيو إلى يوم الجمعة 21 أغسطس. ستتم إضافة مواقع الوجبات الصيفية إلى الخريطة قرب تاريخ البدء. لمعرفة المزيد عن الوجبات الصيفية المجانية، وبطاقة EBT الصيفية، وكيفية أن تصبح موقعًا للوجبات الصيفية، تفضل بزيارة <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>.",
         "p1": "يحصل جميع الطلاب في منطقة فيلادلفيا التعليمية على وجبة إفطار وغداء مجانية في المدرسة. لمعرفة المزيد، راجع صفحة خدمات الطعام في <a target='_blank' href='https://www.philasd.org/foodservices/'>المنطقة.</a>",
-        "p2": "يمكن للشباب أيضًا الحصول على وجبات خفيفة أو وجبات في برامج <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>Out of School Time.</a>"
+        "p2": "يمكن للشباب أيضًا الحصول على وجبات خفيفة أو وجبات في برامج <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time.</a>"
       },
       "eligibility": "الأطفال والشباب الذين تبلغ أعمارهم 18 عامًا أو أقل مؤهلون. لا يوجد معرف مطلوب.",
       "pickupDetails": {
