@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "Sit repa elèv",
       "offSeason": {
+        "p0": "Manje ete gratis pou jèn jiska 18 lane pral disponib soti lendi 15 jen rive vandredi 21 out. Sit Manje Ete yo pral ajoute sou kat la pi pre dat kòmansman an. Pou aprann plis sou Manje Ete gratis, EBT Ete, ak ki jan pou vin yon sit manje ete vizite <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>.",
         "p1": "Tout elèv nan Distri Lekòl la nan Philadelphia resevwa manje maten gratis ak manje midi nan lekòl la. Pou aprann plis, gade paj <a target='_blank' href='https://www.philasd.org/foodservices/'>sèvis manje distri a.</a>",
-        "p2": "Jèn moun yo ka jwenn tou ti goute oswa manje nan pwogram <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>Soti nan Tan Lekòl la.</a>"
+        "p2": "Jèn moun yo ka jwenn tou ti goute oswa manje nan pwogram <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Soti nan Tan Lekòl la.</a>"
       },
       "eligibility": "Timoun ak jèn ki gen laj 18 oswa anba yo kalifye. Pa gen okenn ID obligatwa.",
       "pickupDetails": {

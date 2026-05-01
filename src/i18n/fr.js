@@ -156,8 +156,9 @@ export default{
     "studentMealSites": {
       "header": "Sites de restauration pour étudiants",
       "offSeason": {
+        "p0": "Des repas d'été gratuits pour les jeunes jusqu'à 18 ans seront disponibles du lundi 15 juin au vendredi 21 août. Les sites de repas d'été seront ajoutés à la carte plus près de la date de début. Pour en savoir plus sur les repas d'été gratuits, l'EBT d'été et comment devenir un site de repas d'été, visitez <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>.",
         "p1": "Tous les élèves du district scolaire de Philadelphie bénéficient du petit déjeuner et du déjeuner gratuits à l'école. Pour en savoir plus, consultez la page des services alimentaires du <a target='_blank' href='https://www.philasd.org/foodservices/'>district.</a>",
-        "p2": "Les jeunes peuvent également se procurer des collations ou des repas dans <a target='_blank' href='https://www.phila.gov/ost/program-locator/#/'>le cadre des programmes de temps non scolaire.</a>"
+        "p2": "Les jeunes peuvent également se procurer des collations ou des repas dans <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>le cadre des programmes de temps non scolaire.</a>"
       },
       "eligibility": "Les enfants et les jeunes âgés de 18 ans ou moins sont éligibles. Aucune pièce d'identité n'est requise.",
       "pickupDetails": {
