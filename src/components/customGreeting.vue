@@ -175,9 +175,11 @@ const getCounts = () => {
     <template v-if="!isSummer">
       <!-- <br> -->
       <div class="custom-section">
-        <div v-html="$t('sections.studentMealSites.offSeason.p0')" />
-        <div v-html="$t('sections.studentMealSites.offSeason.p1')" />
-        <div v-html="$t('sections.studentMealSites.offSeason.p2')" />
+        <ul>
+          <li v-html="$t('sections.studentMealSites.offSeason.p0')" />
+          <li v-html="$t('sections.studentMealSites.offSeason.p1')" />
+          <li v-html="$t('sections.studentMealSites.offSeason.p2')" />
+        </ul>
       </div>
       <br>
     </template>
@@ -250,6 +252,15 @@ const getCounts = () => {
 
 .custom-section {
   padding-top: .75rem;
+}
+
+.custom-section ul {
+  list-style: disc outside;
+  padding-left: 1.5rem;
+}
+
+.custom-section ul li {
+  margin-bottom: .5rem;
 }
 
 </style>
