@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Os horários podem mudar durante o fim de semana do feriado. Entre em contato com o site antes de ir.",
   "winterHolidayClosureAllSites": "Feriados de Natal e Ano Novo - Os horários podem mudar durante as férias de inverno. Entre em contato com o site antes de ir.",
   "futureHolidayClosureAllSites": "Os horários podem mudar durante o fim de semana do feriado. Entre em contato com o site antes de ir.",
+  "summerMealsOpening": "Os locais de refeições de verão gratuitos para jovens de até 18 anos abrirão na segunda-feira, 15 de junho.",
   "snowClosure": "A tempestade de inverno pode afetar os horários do local. Entre em contato com o site antes de ir.",
   "weatherClosure": "No momento, este site está temporariamente fechado devido ao clima.",
   "temporaryClosure": "No momento, este site está temporariamente fechado.",

@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Èdtan yo ka chanje pandan fen semèn jou ferye a. Kontakte sit la anvan ou ale.",
   "winterHolidayClosureAllSites": "Nwèl ak jou Ferye Nouvèl Ane a - Èdtan pouvwa chanje pandan jou ferye yo sezon fredi. Kontakte sit la anvan ou ale.",
   "futureHolidayClosureAllSites": "Èdtan yo ka chanje pandan fen semèn jou ferye a. Kontakte sit la anvan ou ale.",
+  "summerMealsOpening": "Sit Manje Ete gratis pou jèn jiska 18 lane ap louvri lendi 15 jen.",
   "snowClosure": "Tanpèt sezon fredi a ka gen enpak sou orè sit. Kontakte sit la anvan ou ale.",
   "weatherClosure": "Sit sa a se kounye a tanporèman fèmen akòz move tan.",
   "temporaryClosure": "Sit sa a se kounye a tanporèman fèmen.",

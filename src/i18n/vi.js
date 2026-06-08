@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.",
   "winterHolidayClosureAllSites": "Ngày lễ Giáng sinh và năm mới - Giờ có thể thay đổi trong kỳ nghỉ đông. Liên hệ với trang web trước khi bạn đi.",
   "futureHolidayClosureAllSites": "Giờ có thể thay đổi trong kỳ nghỉ cuối tuần. Liên hệ với trang web trước khi bạn đi.",
+  "summerMealsOpening": "Các Địa điểm Bữa ăn Mùa hè miễn phí cho thanh thiếu niên đến 18 tuổi sẽ mở cửa vào Thứ Hai, ngày 15 tháng 6.",
   "snowClosure": "Cơn bão mùa đông có thể ảnh hưởng đến lịch trình của địa điểm. Liên hệ với trang web trước khi bạn đi.",
   "weatherClosure": "Trang web này hiện đang tạm thời đóng cửa do thời tiết.",
   "temporaryClosure": "Trang web này hiện đang tạm thời đóng cửa.",
