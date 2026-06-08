@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "Сайты летнего питания Feed Philly Now",
           "pickupDetails": "Блюда должны быть съедены на месте. Свяжитесь с сайтом для получения более подробной информации."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "Сайты летнего питания CBS Food Program",
+          "pickupDetails": "Блюда должны быть съедены на месте. Свяжитесь с сайтом для получения более подробной информации."
         }
       }
     },

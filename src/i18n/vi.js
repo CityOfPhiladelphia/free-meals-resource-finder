@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "Trang web bữa ăn mùa hè cho Philly Now",
           "pickupDetails": "Các bữa ăn phải được ăn tại chỗ. Liên hệ với trang web để biết thêm chi tiết."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "Trang web bữa ăn mùa hè CBS Food Program",
+          "pickupDetails": "Các bữa ăn phải được ăn tại chỗ. Liên hệ với trang web để biết thêm chi tiết."
         }
       }
     },

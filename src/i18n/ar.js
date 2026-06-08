@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "مواقع إطعام فيلي ناو للوجبات الصيفية",
           "pickupDetails": "يجب تناول وجبات الطعام في الموقع. اتصل بالموقع لمزيد من التفاصيل."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "مواقع إطعام CBS Food Program للوجبات الصيفية",
+          "pickupDetails": "يجب تناول وجبات الطعام في الموقع. اتصل بالموقع لمزيد من التفاصيل."
         }
       }
     },

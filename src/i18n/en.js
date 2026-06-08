@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "Feed Philly Now Summer Meal Sites",
           "pickupDetails": "Meals must be eaten on site. Contact the site for more details."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "CBS Food Program Summer Meal Sites",
+          "pickupDetails": "Meals must be eaten on site. Contact the site for more details."
         }
       }
     },

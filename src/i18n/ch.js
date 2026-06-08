@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "立即为费城提供夏季餐饮网站",
           "pickupDetails": "必须在现场用餐。请联系该网站了解更多详情。"
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "CBS Food Program 夏季餐饮网站",
+          "pickupDetails": "必须在现场用餐。请联系该网站了解更多详情。"
         }
       }
     },

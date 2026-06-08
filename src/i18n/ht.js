@@ -211,6 +211,10 @@ export default{
         "Feed Philly Now Summer Meal Sites": {
           "name": "Feed Philly Now Ete Sit Repa",
           "pickupDetails": "Manje yo dwe manje sou sit. Kontakte sit la pou plis detay."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "CBS Food Program Ete Sit Repa",
+          "pickupDetails": "Manje yo dwe manje sou sit. Kontakte sit la pou plis detay."
         }
       }
     },
