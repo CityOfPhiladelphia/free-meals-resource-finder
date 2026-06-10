@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.",
   "winterHolidayClosureAllSites": "Vacances de Noël et du Nouvel An - Les horaires peuvent changer pendant les vacances d'hiver. Contactez le site avant de partir.",
   "futureHolidayClosureAllSites": "Les horaires peuvent changer pendant le week-end de vacances. Contactez le site avant de partir.",
+  "summerMealsOpening": "Les sites de repas d'été gratuits pour les jeunes jusqu'à 18 ans ouvriront le lundi 15 juin.",
   "snowClosure": "La tempête hivernale peut avoir une incidence sur les horaires du site. Contactez le site avant de partir.",
   "weatherClosure": "Ce site est actuellement temporairement fermé en raison des conditions météorologiques.",
   "temporaryClosure": "Ce site est actuellement temporairement fermé.",
@@ -210,6 +211,10 @@ export default{
         },
         "Feed Philly Now Summer Meal Sites": {
           "name": "Sites de repas d'été Feed Philly Now",
+          "pickupDetails": "Les repas doivent être pris sur place. Contactez le site pour plus de détails."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "Sites de repas d'été CBS Food Program",
           "pickupDetails": "Les repas doivent être pris sur place. Contactez le site pour plus de détails."
         }
       }

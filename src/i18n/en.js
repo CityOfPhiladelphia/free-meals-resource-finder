@@ -29,6 +29,7 @@ export default{
   "holidayClosureAllSites": "Hours may change during the holiday weekend. Contact the site before you go.",
   "winterHolidayClosureAllSites": "Christmas and New Year's Holidays - Hours may change during the winter holidays. Contact the site before you go.",
   "futureHolidayClosureAllSites": "Hours may change during the holiday weekend. Contact the site before you go.",
+  "summerMealsOpening": "Free summer meal sites for youth up to age 18 will open on Monday, June 15th",
   "snowClosure": "The winter storm may impact site schedules. Contact the site before you go.",
   "weatherClosure": "This site is currently temporarily closed due to weather.",
   "temporaryClosure": "This site is currently temporarily closed.",
@@ -210,6 +211,10 @@ export default{
         },
         "Feed Philly Now Summer Meal Sites": {
           "name": "Feed Philly Now Summer Meal Sites",
+          "pickupDetails": "Meals must be eaten on site. Contact the site for more details."
+        },
+        "CBS Food Program Summer Meal Sites": {
+          "name": "CBS Food Program Summer Meal Sites",
           "pickupDetails": "Meals must be eaten on site. Contact the site for more details."
         }
       }
