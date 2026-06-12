@@ -161,16 +161,15 @@ export default{
         "p1": "Todos os alunos do Distrito Escolar da Filadélfia recebem café da manhã e almoço gratuitos na escola. Para saber mais, consulte a página de serviços de alimentação do <a target='_blank' href='https://www.philasd.org/foodservices/'>distrito.</a>",
         "p2": "Os jovens também podem comer lanches ou refeições nos programas <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Fora do Horário Escolar.</a>"
       },
-      "eligibility": "Crianças e jovens com 18 anos ou menos são elegíveis. Nenhum documento de identidade é necessário.",
+      "eligibility": "Todas as crianças e jovens com 18 anos ou menos são elegíveis. Nenhum documento de identidade é necessário.",
       "pickupDetails": {
         "p1": "Os sites de refeições para estudantes oferecem refeições prontas para comer."
       },
       "otherResources": {
-        "p1": "Para encontrar mais refeições de verão para jovens:",
-        "li1": "Ligue para a Linha Direta de Refeições de Verão em <a href='tel:215-770-4659'>(215)</a> 770-4659.",
-        "li2": "Envie “FOOD” ou “COMIDA” para <a href='tel:914-342-7744'>914-342-7744</a>.",
-        "li3": "Visite <a target='_blank' href='http://www.phillysummermeals.org'>www.phillysummermeals.org</a>.",
-        "li4": "Visite <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>."
+        "p1": "Para encontrar mais locais de refeições de verão gratuitas para jovens:",
+        "li1": "Envie “SUMMER” para <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Visite <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Visite <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

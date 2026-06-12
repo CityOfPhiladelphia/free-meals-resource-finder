@@ -161,16 +161,15 @@ export default{
         "p1": "All students in the School District of Philadelphia receive free breakfast and lunch at school. To learn more, see the <a target='_blank' href='https://www.philasd.org/foodservices/'>district’s food services page.</a>",
         "p2": "Young people can also get snacks or meals at <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time programs.</a>"
       },
-      "eligibility": "Children and youth age 18 or under are eligible. No ID is required.",
+      "eligibility": "All children and youth age 18 or under are eligible. No ID is required.",
       "pickupDetails": {
         "p1": "Student meal sites offer ready-to-eat meals."
       },
       "otherResources": {
-        "p1": "To find more summer meals for young people:",
-        "li1": "Call the Summer Meals Hotline at <a href='tel:215-770-4659'>(215) 770-4659</a>.",
-        "li2": "Text “FOOD” or “COMIDA” to <a href='tel:914-342-7744'>914-342-7744</a>.",
-        "li3": "Visit <a target='_blank' href='http://www.phillysummermeals.org'>www.phillysummermeals.org</a>.",
-        "li4": "Visit <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>."
+        "p1": "To find more free summer meal sites for young people:",
+        "li1": "Text: “SUMMER” to <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Visit: <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Visit: <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

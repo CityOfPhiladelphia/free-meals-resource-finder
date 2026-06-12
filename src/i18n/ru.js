@@ -161,16 +161,15 @@ export default{
         "p1": "Все учащиеся школьного округа Филадельфии получают бесплатный завтрак и обед в школе. Чтобы узнать больше, посетите страницу общественного питания <a target='_blank' href='https://www.philasd.org/foodservices/'>округа.</a>",
         "p2": "Молодые люди также могут перекусить или поесть в <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>рамках программ «Вне школы».</a>"
       },
-      "eligibility": "Право на участие имеют дети и подростки в возрасте до 18 лет. Удостоверение личности не требуется.",
+      "eligibility": "Право на участие имеют все дети и подростки в возрасте до 18 лет. Удостоверение личности не требуется.",
       "pickupDetails": {
         "p1": "Сайты студенческого питания предлагают готовые к употреблению блюда."
       },
       "otherResources": {
-        "p1": "Чтобы найти больше летних блюд для молодежи:",
-        "li1": "Позвоните на горячую линию «Летнее питание» по телефону <a href='tel:215-770-4659'>(215) 770-4659</a>.",
-        "li2": "Отправьте сообщение «ЕДА» или «COMIDA» на номер <a href='tel:914-342-7744'>914-342-7744</a>.",
-        "li3": "Посетите сайт <a target='_blank' href='http://www.phillysummermeals.org'>www.phillysummermeals.org</a>.",
-        "li4": "Посетите сайт <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>."
+        "p1": "Чтобы найти больше бесплатных летних пунктов питания для молодежи:",
+        "li1": "Отправьте сообщение «SUMMER» на номер <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Посетите сайт <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Посетите сайт <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {
