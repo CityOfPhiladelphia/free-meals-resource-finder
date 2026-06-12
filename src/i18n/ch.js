@@ -215,6 +215,10 @@ export default{
         "CBS Food Program Summer Meal Sites": {
           "name": "CBS Food Program 夏季餐饮网站",
           "pickupDetails": "必须在现场用餐。请联系该网站了解更多详情。"
+        },
+        "Caring People Alliance Summer Meal Sites": {
+          "name": "Caring People Alliance 夏季餐饮网站",
+          "pickupDetails": "必须在现场用餐。请联系该网站了解更多详情。"
         }
       }
     },

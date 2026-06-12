@@ -491,7 +491,7 @@ let $config = {
       titleSingular: 'studentMealSite',
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends', 'JSJ Food Bank', 'ITAVTFOC Summer Meal Sites', 'Feed Philly Now Summer Meal Sites', 'CBS Food Program Summer Meal Sites' ],
+      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends', 'JSJ Food Bank', 'ITAVTFOC Summer Meal Sites', 'Feed Philly Now Summer Meal Sites', 'CBS Food Program Summer Meal Sites', 'Caring People Alliance Summer Meal Sites' ],
       hideCounts: false,
     },
     olderAdultMealSites: {
@@ -535,6 +535,7 @@ let $config = {
     'ITAVTFOC Summer Meal Sites': 'studentMealSites',
     'Feed Philly Now Summer Meal Sites': 'studentMealSites',
     'CBS Food Program Summer Meal Sites': 'studentMealSites',
+    'Caring People Alliance Summer Meal Sites': 'studentMealSites',
     'Free Grocery Site': 'foodSites',
     'Neighborhood Community Action Center': 'publicBenefits',
     'Free Meal Site': 'generalMealSites',
