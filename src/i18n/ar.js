@@ -161,16 +161,15 @@ export default{
         "p1": "يحصل جميع الطلاب في منطقة فيلادلفيا التعليمية على وجبة إفطار وغداء مجانية في المدرسة. لمعرفة المزيد، راجع صفحة خدمات الطعام في <a target='_blank' href='https://www.philasd.org/foodservices/'>المنطقة.</a>",
         "p2": "يمكن للشباب أيضًا الحصول على وجبات خفيفة أو وجبات في برامج <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time.</a>"
       },
-      "eligibility": "الأطفال والشباب الذين تبلغ أعمارهم 18 عامًا أو أقل مؤهلون. لا يوجد معرف مطلوب.",
+      "eligibility": "جميع الأطفال والشباب الذين تبلغ أعمارهم 18 عامًا أو أقل مؤهلون. لا يوجد معرف مطلوب.",
       "pickupDetails": {
         "p1": "تقدم مواقع وجبات الطلاب وجبات جاهزة للأكل."
       },
       "otherResources": {
-        "p1": "للعثور على المزيد من الوجبات الصيفية للشباب:",
-        "li1": "اتصل بالخط الساخن للوجبات الصيفية على <a href='tel:215-770-4659'>(215) 770-4659</a>.",
-        "li2": "أرسل كلمة «فود» أو «كوميدا» إلى <a href='tel:914-342-7744'>914-342-7744</a>.",
-        "li3": "قم بزيارة <a target='_blank' href='http://www.phillysummermeals.org'>الموقع الإلكتروني www.phillysummermeals.org</a>.",
-        "li4": "قم بزيارة <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>."
+        "p1": "للعثور على المزيد من مواقع الوجبات الصيفية المجانية للشباب:",
+        "li1": "أرسل كلمة «SUMMER» إلى <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "قم بزيارة <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "قم بزيارة <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

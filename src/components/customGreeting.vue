@@ -29,7 +29,7 @@ watch(
 
 const isSummer = computed(() => {
   const today = new Date();
-  const summerMealsBegin = new Date("2026-06-15");
+  const summerMealsBegin = new Date("2026-06-12");
   const summerMealsEnd = new Date("2026-08-21");
   return (summerMealsBegin < today) && (today < summerMealsEnd)
 });
@@ -208,8 +208,9 @@ const getCounts = () => {
         <div class="column small-cell-pad">
           <div v-html="$t('sections.studentMealSites.otherResources.p1')" />
           <ul>
+            <li v-html="$t('sections.studentMealSites.otherResources.li1')" />
             <li v-html="$t('sections.studentMealSites.otherResources.li2')" />
-            <li v-html="$t('sections.studentMealSites.otherResources.li4')" />
+            <li v-html="$t('sections.studentMealSites.otherResources.li3')" />
           </ul>
         </div>
       </div>

@@ -161,16 +161,15 @@ export default{
         "p1": "Tout elèv nan Distri Lekòl la nan Philadelphia resevwa manje maten gratis ak manje midi nan lekòl la. Pou aprann plis, gade paj <a target='_blank' href='https://www.philasd.org/foodservices/'>sèvis manje distri a.</a>",
         "p2": "Jèn moun yo ka jwenn tou ti goute oswa manje nan pwogram <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Soti nan Tan Lekòl la.</a>"
       },
-      "eligibility": "Timoun ak jèn ki gen laj 18 oswa anba yo kalifye. Pa gen okenn ID obligatwa.",
+      "eligibility": "Tout timoun ak jèn ki gen laj 18 oswa anba yo kalifye. Pa gen okenn ID obligatwa.",
       "pickupDetails": {
         "p1": "Sit repa elèv yo ofri manje pare pou manje."
       },
       "otherResources": {
-        "p1": "Pou jwenn plis manje ete pou jèn moun:",
-        "li1": "Rele liy dirèk Manje pandan ete a nan <a href='tel:215-770-4659'>(215) 77</a> 0-4659.",
-        "li2": "Tèks “FOOD” oswa “COMIDA” nan <a href='tel:914-342-7744'>9</a> 14-342-7744.",
-        "li3": "Vizite <a target='_blank' href='http://www.phillysummermeals.org'>www.ph</a> illysummermeals.org.",
-        "li4": "Vizite <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fn</a> s.usda.gov/summer/sitefinder."
+        "p1": "Pou jwenn plis sit manje ete gratis pou jèn moun:",
+        "li1": "Tèks: “SUMMER” nan <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Vizite <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Vizite <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

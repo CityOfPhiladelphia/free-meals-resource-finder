@@ -161,16 +161,15 @@ export default{
         "p1": "费城学区的所有学生在学校均可免费享用早餐和午餐。要了解更多信息，请参阅该<a target='_blank' href='https://www.philasd.org/foodservices/'>地区的餐饮服务页面。</a>",
         "p2": "年轻人还可以在课<a target='_blank' href='https://www.phila.gov/ost/program-locator/'>外活动中获得零食或餐食。</a>"
       },
-      "eligibility": "18 岁或以下的儿童和青少年符合资格。不需要身份证。",
+      "eligibility": "所有 18 岁或以下的儿童和青少年均符合资格。不需要身份证。",
       "pickupDetails": {
         "p1": "学生就餐网站提供即食餐点。"
       },
       "otherResources": {
-        "p1": "要为年轻人寻找更多夏季大餐，请执行以下操作：",
-        "li1": "拨打夏季膳食热线 <a href='tel:215-770-4659'>(215) 770-4659</a>。",
-        "li2": "发短信 “食物” 或 “COMIDA” 至 <a href='tel:914-342-7744'>9</a> 14-342-7744。",
-        "li3": "访问 <a target='_blank' href='http://www.phillysummermeals.org'>www.ph</a> illysummermeals.org。",
-        "li4": "访问 <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>。"
+        "p1": "要为年轻人寻找更多免费暑期餐食地点：",
+        "li1": "发送短信 “SUMMER” 至 <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "访问 <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "访问 <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

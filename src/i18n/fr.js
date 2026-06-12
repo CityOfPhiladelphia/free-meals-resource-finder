@@ -161,16 +161,15 @@ export default{
         "p1": "Tous les élèves du district scolaire de Philadelphie bénéficient du petit déjeuner et du déjeuner gratuits à l'école. Pour en savoir plus, consultez la page des services alimentaires du <a target='_blank' href='https://www.philasd.org/foodservices/'>district.</a>",
         "p2": "Les jeunes peuvent également se procurer des collations ou des repas dans <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>le cadre des programmes de temps non scolaire.</a>"
       },
-      "eligibility": "Les enfants et les jeunes âgés de 18 ans ou moins sont éligibles. Aucune pièce d'identité n'est requise.",
+      "eligibility": "Tous les enfants et les jeunes âgés de 18 ans ou moins sont éligibles. Aucune pièce d'identité n'est requise.",
       "pickupDetails": {
         "p1": "Les sites de restauration pour étudiants proposent des repas prêts à manger."
       },
       "otherResources": {
-        "p1": "Pour trouver d'autres repas d'été pour les jeunes :",
-        "li1": "Appelez la hotline des repas d'été au <a href='tel:215-770-4659'>(215) 770-4659</a>.",
-        "li2": "Envoyez « FOOD » ou « COMIDA » par SMS au <a href='tel:914-342-7744'>914-342-7744</a>.",
-        "li3": "Visitez le site <a target='_blank' href='http://www.phillysummermeals.org'>www.phillysummermeals.org</a>.",
-        "li4": "Rendez-vous sur <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>."
+        "p1": "Pour trouver d'autres sites de repas d'été gratuits pour les jeunes :",
+        "li1": "Envoyez « SUMMER » par SMS au <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Rendez-vous sur <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Rendez-vous sur <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {

@@ -161,16 +161,15 @@ export default{
         "p1": "Tất cả học sinh ở Học khu Philadelphia đều nhận được bữa sáng và bữa trưa miễn phí tại trường. Để tìm hiểu thêm, hãy xem trang dịch vụ ăn uống của <a target='_blank' href='https://www.philasd.org/foodservices/'>quận.</a>",
         "p2": "Những người trẻ tuổi cũng có thể nhận đồ ăn nhẹ hoặc bữa ăn tại các chương trình <a target='_blank' href='https://www.phila.gov/ost/program-locator/'>Out of School Time.</a>"
       },
-      "eligibility": "Trẻ em và thanh thiếu niên từ 18 tuổi trở xuống đủ điều kiện. Không yêu cầu ID.",
+      "eligibility": "Tất cả trẻ em và thanh thiếu niên từ 18 tuổi trở xuống đều đủ điều kiện. Không yêu cầu ID.",
       "pickupDetails": {
         "p1": "Các trang web bữa ăn dành cho sinh viên cung cấp các bữa ăn sẵn."
       },
       "otherResources": {
-        "p1": "Để tìm thêm bữa ăn mùa hè cho giới trẻ:",
-        "li1": "Gọi cho Đường dây nóng Bữa ăn Mùa hè theo <a href='tel:215-770-4659'>số (215) 770-4659</a>.",
-        "li2": "Nhắn tin “THỰC PHẨM” hoặc “COMIDA” đến <a href='tel:914-342-7744'>9</a> 14-342-7744.",
-        "li3": "Truy cập <a target='_blank' href='http://www.phillysummermeals.org'>www.ph</a> illysummermeals.org.",
-        "li4": "Truy cập <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fn</a> s.usda.gov/summer/sitefinder."
+        "p1": "Để tìm thêm địa điểm bữa ăn mùa hè miễn phí cho giới trẻ:",
+        "li1": "Nhắn tin “SUMMER” đến <a href='tel:914-342-7744'>914-342-7744</a>",
+        "li2": "Truy cập <a target='_blank' href='https://www.fns.usda.gov/summer/sitefinder'>www.fns.usda.gov/summer/sitefinder</a>",
+        "li3": "Truy cập <a target='_blank' href='https://www.phila.gov/summermeals'>www.phila.gov/summermeals</a>"
       },
       "subsections": {
         "PHA": {
