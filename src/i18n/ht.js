@@ -215,6 +215,10 @@ export default{
         "CBS Food Program Summer Meal Sites": {
           "name": "CBS Food Program Ete Sit Repa",
           "pickupDetails": "Manje yo dwe manje sou sit. Kontakte sit la pou plis detay."
+        },
+        "Caring People Alliance Summer Meal Sites": {
+          "name": "Caring People Alliance Ete Sit Repa",
+          "pickupDetails": "Manje yo dwe manje sou sit. Kontakte sit la pou plis detay."
         }
       }
     },

@@ -215,6 +215,10 @@ export default{
         "CBS Food Program Summer Meal Sites": {
           "name": "مواقع إطعام CBS Food Program للوجبات الصيفية",
           "pickupDetails": "يجب تناول وجبات الطعام في الموقع. اتصل بالموقع لمزيد من التفاصيل."
+        },
+        "Caring People Alliance Summer Meal Sites": {
+          "name": "مواقع إطعام Caring People Alliance للوجبات الصيفية",
+          "pickupDetails": "يجب تناول وجبات الطعام في الموقع. اتصل بالموقع لمزيد من التفاصيل."
         }
       }
     },
