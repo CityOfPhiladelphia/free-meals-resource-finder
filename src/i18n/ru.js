@@ -215,6 +215,10 @@ export default{
         "CBS Food Program Summer Meal Sites": {
           "name": "Сайты летнего питания CBS Food Program",
           "pickupDetails": "Блюда должны быть съедены на месте. Свяжитесь с сайтом для получения более подробной информации."
+        },
+        "Caring People Alliance Summer Meal Sites": {
+          "name": "Сайты летнего питания Caring People Alliance",
+          "pickupDetails": "Блюда должны быть съедены на месте. Свяжитесь с сайтом для получения более подробной информации."
         }
       }
     },
