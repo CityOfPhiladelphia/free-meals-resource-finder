@@ -176,7 +176,7 @@ export default{
           "name": "Centros comunitarios de la Autoridad de Vivienda de Filadelfia (PHA)",
           "pickupDetails": "Las comidas deben consumirse en el establecimiento. Para obtener más información, visite el sitio."
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "Juegue en las calles",
           "pickupDetails": "Playstreets abre de lunes a viernes entre las 10:00 a.m. y las 4:00 p.m. Las calles están cerradas al tráfico de automóviles. Los horarios de las comidas varían según el sitio. Para obtener más información, visita Playstreet. <br>Playstreets sirve almuerzos y refrigerios."
         },

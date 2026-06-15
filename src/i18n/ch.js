@@ -176,7 +176,7 @@ export default{
           "name": "费城住房管理局（PHA）社区中心",
           "pickupDetails": "必须在现场用餐。欲了解更多信息，请访问该网站。"
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "游乐街",
           "pickupDetails": "Playstreets的开放时间为周一至周五上午10点至下午4点。街道禁止汽车通行。用餐时间因地点而异。欲了解更多信息，请访问 Playstreet。<br>Playstreets 供应午餐和小吃。"
         },

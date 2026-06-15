@@ -176,7 +176,7 @@ export default{
           "name": "Philadelphia Housing Authority (PHA) community centers",
           "pickupDetails": "Meals must be eaten on site. For more information, visit the site."
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "Playstreets",
           "pickupDetails": "Playstreets are open Monday to Friday between 10:00 a.m. to 4:00 p.m. Streets are closed to automobile traffic. Meal times vary by site. For more information, visit the Playstreet.<br> Playstreets serve lunch and a snack."
         },

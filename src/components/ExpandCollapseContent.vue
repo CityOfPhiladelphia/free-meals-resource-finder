@@ -346,7 +346,7 @@ const makeValidUrl = (url) => {
       />
 
       <playstreets-school-card
-        v-if="section === 'studentMealSites' && subsection === 'playstreets'"
+        v-if="section === 'studentMealSites' && subsection === 'Playstreets'"
         :item="item"
         :pickup-details="pickupDetails"
       />

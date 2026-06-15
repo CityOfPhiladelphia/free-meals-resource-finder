@@ -131,7 +131,7 @@ let $config = {
             unique_key: 'weekday_monday',
             i18n_key: 'weekday.monday',
             value: function(item) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let day = item.properties.hours_mon_start1 != null;
               // console.log('monday, item.properties.category_type:', item.properties.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
@@ -142,7 +142,7 @@ let $config = {
             unique_key: 'weekday_tuesday',
             i18n_key: 'weekday.tuesday',
             value: function(item) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let day = item.properties.hours_tues_start1 != null;
               return na_category || na_category_type || day;
@@ -152,7 +152,7 @@ let $config = {
             unique_key: 'weekday_wednesday',
             i18n_key: 'weekday.wednesday',
             value: function(item) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let day = item.properties.hours_wed_start1 != null;
               return na_category || na_category_type || day;
@@ -162,7 +162,7 @@ let $config = {
             unique_key: 'weekday_thursday',
             i18n_key: 'weekday.thursday',
             value: function(item) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let day = item.properties.hours_thurs_start1 != null;
               return na_category || na_category_type || day;
@@ -172,7 +172,7 @@ let $config = {
             unique_key: 'weekday_friday',
             i18n_key: 'weekday.friday',
             value: function(item) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let day = item.properties.hours_fri_start1 != null;
               return na_category || na_category_type || day;
@@ -210,7 +210,7 @@ let $config = {
             i18n_key: 'time.morning',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let dayAndTime =false;
               let days = {
@@ -253,7 +253,7 @@ let $config = {
             i18n_key: 'time.afternoon',
             dependentGroups: [ 'weekday' ],
             value: function(item, dependentServices) {
-              let na_category = [ 'playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
+              let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
               let dayAndTime =false;
               let days = {
@@ -405,8 +405,8 @@ let $config = {
     // },
   },
   holidays: {
-    forceBanner: true,
-    forceBannerMessage: 'summerMealsOpening',
+    forceBanner: false,
+    forceBannerMessage: 'holidayClosureAllSites',
     automaticBanner: true,
     // current: true,
     // holidayName: 'holidayLaborDay',
@@ -491,7 +491,7 @@ let $config = {
       titleSingular: 'studentMealSite',
       color: '#721817',
       // subsections: [ 'PSD', 'PHA', 'CHARTER', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends' ],
-      subsections: [ 'PHA', 'Recreation Center', 'playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends', 'JSJ Food Bank', 'ITAVTFOC Summer Meal Sites', 'Feed Philly Now Summer Meal Sites', 'CBS Food Program Summer Meal Sites', 'Caring People Alliance Summer Meal Sites' ],
+      subsections: [ 'PHA', 'Recreation Center', 'Playstreets', 'NDS', 'Other Summer Meal Sites', 'Philabundance Summer Meal Sites', 'Caring for Friends', 'JSJ Food Bank', 'ITAVTFOC Summer Meal Sites', 'Feed Philly Now Summer Meal Sites', 'CBS Food Program Summer Meal Sites', 'Caring People Alliance Summer Meal Sites' ],
       hideCounts: false,
     },
     olderAdultMealSites: {
@@ -528,7 +528,7 @@ let $config = {
     'Caring for Friends': 'studentMealSites',
     'JSJ Food Bank': 'studentMealSites',
     'Other Summer Meal Sites': 'studentMealSites',
-    'playstreets': 'studentMealSites',
+    'Playstreets': 'studentMealSites',
     'Recreation Center': 'studentMealSites',
     'WIC': 'publicBenefits',
     'BenePhilly': 'publicBenefits',
