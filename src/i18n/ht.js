@@ -176,7 +176,7 @@ export default{
           "name": "Sant kominotè Philadelphia Housing Authority (PHA)",
           "pickupDetails": "Manje yo dwe manje sou sit. Pou plis enfòmasyon, vizite sit la."
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "Playstreet",
           "pickupDetails": "Playstreet yo louvri lendi a vandredi ant 10:00 a.m. rive 4:00 p.m. lari yo fèmen nan trafik otomobil. Fwa repa varye pa sit. Pou plis enfòmasyon, vizite Playstreet la. <br>Playstreet sèvi manje midi ak yon ti goute."
         },

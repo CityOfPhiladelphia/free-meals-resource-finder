@@ -176,7 +176,7 @@ export default{
           "name": "Centres communautaires de la Philadelphia Housing Authority (PHA)",
           "pickupDetails": "Les repas doivent être pris sur place. Pour plus d'informations, consultez le site."
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "Jouez dans les rues",
           "pickupDetails": "Les Playstreets sont ouvertes du lundi au vendredi de 10 h à 16 h. Les rues sont fermées à la circulation automobile. Les horaires des repas varient selon le site. Pour plus d'informations, rendez-vous sur Playstreet. <br>Playstreets sert le déjeuner et une collation."
         },
