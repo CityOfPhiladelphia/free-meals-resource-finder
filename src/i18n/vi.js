@@ -176,7 +176,7 @@ export default{
           "name": "Trung tâm cộng đồng Cơ quan Nhà ở Philadelphia (PHA)",
           "pickupDetails": "Các bữa ăn phải được ăn tại chỗ. Để biết thêm thông tin, hãy truy cập trang web."
         },
-        "playstreets": {
+        "Playstreets": {
           "name": "Playstreet",
           "pickupDetails": "Playstreet mở cửa từ thứ Hai đến thứ Sáu từ 10:00 sáng đến 4:00 chiều Đường phố đóng cửa cho giao thông ô tô. Thời gian bữa ăn khác nhau tùy theo địa điểm. Để biết thêm thông tin, hãy truy cập Playstreet. <br>Playstreets phục vụ bữa trưa và bữa ăn nhẹ."
         },
