@@ -176,7 +176,7 @@ const getCounts = () => {
       <!-- <br> -->
       <div class="custom-section">
         <ul>
-          <li v-html="$t('sections.studentMealSites.offSeason.p0')" />
+          <!-- <li v-html="$t('sections.studentMealSites.offSeason.p0')" /> -->
           <li v-html="$t('sections.studentMealSites.offSeason.p1')" />
           <li v-html="$t('sections.studentMealSites.offSeason.p2')" />
         </ul>
