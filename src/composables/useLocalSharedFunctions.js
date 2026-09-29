@@ -1,4 +1,5 @@
 import { format, parseISO } from 'date-fns';
+import isValidTime from '../util/is-valid-time';
 
 export default function useLocalSharedFunctions() {
 
@@ -46,16 +47,16 @@ export default function useLocalSharedFunctions() {
     // if (import.meta.env.VITEDEBUG) console.log('parseTimeRange, day:', day, 'exceptionDays:', exceptionDays, 'exceptionNumber:', exceptionNumber, 'rawStartTime:', rawStartTime, 'rawEndTime:', rawEndTime);
     // if (import.meta.env.VITEDEBUG) console.log("parseISO('2022-05-24T' + rawStartTime):", parseISO('2022-05-24T' + rawStartTime));
     let startTime, endTime, startTime2, endTime2, value;
-    if (rawStartTime) {
+    if (isValidTime(rawStartTime)) {
       startTime = format(parseISO('2022-05-24T' + rawStartTime), 'h:mm aaaa');
     }
-    if (rawEndTime) {
+    if (isValidTime(rawEndTime)) {
       endTime = format(parseISO('2022-05-24T' + rawEndTime), 'h:mm aaaa');
     }
-    if (rawStartTime2) {
+    if (isValidTime(rawStartTime2)) {
       startTime2 = format(parseISO('2022-05-24T' + rawStartTime2), 'h:mm aaaa');
     }
-    if (rawEndTime2) {
+    if (isValidTime(rawEndTime2)) {
       endTime2 = format(parseISO('2022-05-24T' + rawEndTime2), 'h:mm aaaa');
     }
     if (startTime && endTime) {
