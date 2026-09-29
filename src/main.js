@@ -6,6 +6,7 @@
 // if that is not needed, we can move this info to main.js
 
 import isMac from './util/is-mac';
+import isValidTime from './util/is-valid-time';
 if (isMac()) {
   import('./assets/mac-style.scss')
 }
@@ -133,7 +134,7 @@ let $config = {
             value: function(item) {
               let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_mon_start1 != null;
+              let day = isValidTime(item.properties.hours_mon_start1);
               // console.log('monday, item.properties.category_type:', item.properties.category_type, 'category_type:', category_type, 'category_type || day', category_type || day);
               return na_category || na_category_type || day;
             },
@@ -144,7 +145,7 @@ let $config = {
             value: function(item) {
               let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_tues_start1 != null;
+              let day = isValidTime(item.properties.hours_tues_start1);
               return na_category || na_category_type || day;
             },
           },
@@ -154,7 +155,7 @@ let $config = {
             value: function(item) {
               let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_wed_start1 != null;
+              let day = isValidTime(item.properties.hours_wed_start1);
               return na_category || na_category_type || day;
             },
           },
@@ -164,7 +165,7 @@ let $config = {
             value: function(item) {
               let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_thurs_start1 != null;
+              let day = isValidTime(item.properties.hours_thurs_start1);
               return na_category || na_category_type || day;
             },
           },
@@ -174,7 +175,7 @@ let $config = {
             value: function(item) {
               let na_category = [ 'Playstreets', 'Community Refrigerators', 'Recreation Center' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_fri_start1 != null;
+              let day = isValidTime(item.properties.hours_fri_start1);
               return na_category || na_category_type || day;
             },
           },
@@ -185,7 +186,7 @@ let $config = {
               // let na_category = false;
               let na_category = [ 'Community Refrigerators' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_sat_start1 != null;
+              let day = isValidTime(item.properties.hours_sat_start1);
               return na_category || na_category_type || day;
             },
           },
@@ -196,7 +197,7 @@ let $config = {
               // let na_category = false;
               let na_category = [ 'Community Refrigerators' ].includes(item.properties.category);
               let na_category_type = [].includes(item.properties.category_type);
-              let day = item.properties.hours_sun_start1 != null;
+              let day = isValidTime(item.properties.hours_sun_start1);
               return na_category || na_category_type || day;
             },
           },
