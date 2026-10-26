@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "موقع البقالة المجاني"
+        },
+        "Caring for Friends Food Site": {
+          "name": "رعاية الأصدقاء"
         }
       }
     },

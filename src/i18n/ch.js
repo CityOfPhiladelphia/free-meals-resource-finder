@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "免费杂货网站"
+        },
+        "Caring for Friends Food Site": {
+          "name": "关爱朋友"
         }
       }
     },

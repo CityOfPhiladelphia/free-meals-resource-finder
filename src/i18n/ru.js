@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "Бесплатный продуктовый сайт"
+        },
+        "Caring for Friends Food Site": {
+          "name": "Забота о друзьях"
         }
       }
     },

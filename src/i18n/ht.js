@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "Sit makèt gratis"
+        },
+        "Caring for Friends Food Site": {
+          "name": "K ap pran swen zanmi"
         }
       }
     },

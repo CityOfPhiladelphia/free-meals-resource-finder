@@ -478,7 +478,7 @@ let $config = {
       title: 'Food sites',
       titleSingular: 'foodSite',
       color: '#0F4D90',
-      subsections: [ 'Community Refrigerators', 'Free Grocery Site' ],
+      subsections: [ 'Community Refrigerators', 'Free Grocery Site', 'Caring for Friends Food Site' ],
     },
     generalMealSites: {
       title: 'General meal sites',
@@ -540,6 +540,7 @@ let $config = {
     'Free Grocery Site': 'foodSites',
     'Neighborhood Community Action Center': 'publicBenefits',
     'Free Meal Site': 'generalMealSites',
+    'Caring for Friends Food Site': 'foodSites',
     // 'PPR': 'foodSites',
     // '': 'foodSites',
     // 'Student Meal Site': 'studentMealSites',
