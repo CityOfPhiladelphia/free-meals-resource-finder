@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "Sitio de abarrotes gratuito"
+        },
+        "Caring for Friends Food Site": {
+          "name": "Cuidando a los amigos"
         }
       }
     },

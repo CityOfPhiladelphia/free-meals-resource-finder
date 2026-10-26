@@ -83,6 +83,9 @@ export default{
         },
         "Free Grocery Site": {
           "name": "Trang web tạp hóa miễn phí"
+        },
+        "Caring for Friends Food Site": {
+          "name": "Chăm sóc bạn bè"
         }
       }
     },
