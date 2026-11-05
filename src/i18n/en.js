@@ -26,7 +26,7 @@ export default{
   "holidayClosureAllSites_juneteenth": "Juneteenth - Hours may change for the holiday on 6/19. Contact the site before you go.",
   "holidayClosureAllSites_thanksgiving": "Thanksgiving - Hours may change for the holiday weekend. Contact the site before you go.",
   "holidayClosureAllSites_weekend": "Hours may change during the holiday weekend. Contact the site before you go.",
-  "holidayClosureAllSites": "Hours may change during the holiday weekend. Contact the site before you go.",
+  "holidayClosureAllSites": "Hours may change during the holiday. Contact the site before you go.",
   "winterHolidayClosureAllSites": "Christmas and New Year's Holidays - Hours may change during the winter holidays. Contact the site before you go.",
   "futureHolidayClosureAllSites": "Hours may change during the holiday weekend. Contact the site before you go.",
   "summerMealsOpening": "Free summer meal sites for youth up to age 18 will open on Monday, June 15th",

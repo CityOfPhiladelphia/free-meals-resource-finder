@@ -26,7 +26,7 @@ export default{
   "holidayClosureAllSites_juneteenth": "6 月 14 日-6 月 19 日假日的营业时间可能会有所变化。出发前请联系该网站。",
   "holidayClosureAllSites_thanksgiving": "感恩节-假日周末的时间可能会改变。出发前请联系该网站。",
   "holidayClosureAllSites_weekend": "假日周末的营业时间可能会发生变化。出发前请联系该网站。",
-  "holidayClosureAllSites": "假日周末的营业时间可能会发生变化。出发前请联系该网站。",
+  "holidayClosureAllSites": "假日期间的营业时间可能会发生变化。出发前请联系该网站。",
   "winterHolidayClosureAllSites": "圣诞节和新年假期-寒假期间，时间可能会改变。出发前请联系该网站。",
   "futureHolidayClosureAllSites": "假日周末的营业时间可能会发生变化。出发前请联系该网站。",
   "summerMealsOpening": "面向 18 岁及以下青少年的免费暑期餐食地点将于 6 月 15 日（星期一）开放。",

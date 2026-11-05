@@ -26,7 +26,7 @@ export default{
   "holidayClosureAllSites_juneteenth": "Décimo de junho - O horário pode mudar para o feriado em 19/06. Entre em contato com o site antes de ir.",
   "holidayClosureAllSites_thanksgiving": "Ação de Graças - O horário pode mudar no fim de semana do feriado. Entre em contato com o site antes de ir.",
   "holidayClosureAllSites_weekend": "Os horários podem mudar durante o fim de semana do feriado. Entre em contato com o site antes de ir.",
-  "holidayClosureAllSites": "Os horários podem mudar durante o fim de semana do feriado. Entre em contato com o site antes de ir.",
+  "holidayClosureAllSites": "Os horários podem mudar durante o feriado. Entre em contato com o site antes de ir.",
   "winterHolidayClosureAllSites": "Feriados de Natal e Ano Novo - Os horários podem mudar durante as férias de inverno. Entre em contato com o site antes de ir.",
   "futureHolidayClosureAllSites": "Os horários podem mudar durante o fim de semana do feriado. Entre em contato com o site antes de ir.",
   "summerMealsOpening": "Os locais de refeições de verão gratuitos para jovens de até 18 anos abrirão na segunda-feira, 15 de junho.",
