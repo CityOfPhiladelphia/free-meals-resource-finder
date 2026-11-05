@@ -26,7 +26,7 @@ export default{
   "holidayClosureAllSites_juneteenth": "Juneteenth - Èdtan yo ka chanje pou jou ferye a sou 6/19. Kontakte sit la anvan ou ale.",
   "holidayClosureAllSites_thanksgiving": "Thanksgiving - Èdtan yo ka chanje pou fen semèn nan jou ferye. Kontakte sit la anvan ou ale.",
   "holidayClosureAllSites_weekend": "Èdtan yo ka chanje pandan fen semèn jou ferye a. Kontakte sit la anvan ou ale.",
-  "holidayClosureAllSites": "Èdtan yo ka chanje pandan fen semèn jou ferye a. Kontakte sit la anvan ou ale.",
+  "holidayClosureAllSites": "Èdtan yo ka chanje pandan jou ferye a. Kontakte sit la anvan ou ale.",
   "winterHolidayClosureAllSites": "Nwèl ak jou Ferye Nouvèl Ane a - Èdtan pouvwa chanje pandan jou ferye yo sezon fredi. Kontakte sit la anvan ou ale.",
   "futureHolidayClosureAllSites": "Èdtan yo ka chanje pandan fen semèn jou ferye a. Kontakte sit la anvan ou ale.",
   "summerMealsOpening": "Sit Manje Ete gratis pou jèn jiska 18 lane ap louvri lendi 15 jen.",
