@@ -19,12 +19,11 @@
     "@fortawesome/pro-regular-svg-icons": "6.7.2",
     "@fortawesome/pro-solid-svg-icons": "6.7.2",
     "@phila/phila-ui-core": "^1.0.18",
-    "@phila/pinboard": "2.7.9",
+    "@phila/pinboard": "2.8.1",
     "accounting": "^0.4.1",
     "date-fns": "^3.6.0",
     "unplugin-auto-import": "^0.18.6",
-    "unplugin-vue-router": "^0.10.9",
-    "vue-i18n": "^11.1.2"
+    "unplugin-vue-router": "^0.10.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
@@ -32,7 +31,7 @@
     "eslint": "^9.38.0",
     "eslint-plugin-vue": "^10.5.1",
     "sass": "^1.74.1",
-    "vite": "^7.1.12",
+    "vite": "^8.3.8",
     "vite-plugin-inspect": "^11.3.3",
     "vite-plugin-vue-devtools": "^8.0.3"
   }
