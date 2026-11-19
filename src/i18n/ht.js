@@ -265,6 +265,7 @@ export default{
     "evening": "Aswè (apre 5:00 p.m.)"
   },
   "checkSite": "Detay sit yo sijè a chanjman. Anvan ou ale, kontakte sit la pou konfime èdtan yo ak sèvis yo.",
+  "holidayEventsLink": "Jwenn manje gratis pou fèt yo, distribisyon kado ak evènman kominotè sou <a target='_blank' href='https://healthymindsphilly.org/events/'>HealthyMindsPhilly.org/events</a>",
   "snapLink": "Aprann sa <a href='https://www.phila.gov/2025-09-05-what-you-need-to-know-about-significant-changes-to-snap-benefits/' target='_blank'>ou bezwen konnen sou chanjman siyifikatif nan benefis SNAP</a>",
   "otherResources": "Lòt resous",
   "exceptions": {
