@@ -84,6 +84,7 @@ const getCounts = () => {
         <div class="column exclamation-details">
           <ul class="bullet-list">
             <li>{{ $t('checkSite') }}</li>
+            <li v-html="$t('holidayEventsLink')"></li>
             <li v-html="$t('snapLink')"></li>
           </ul>
         </div>

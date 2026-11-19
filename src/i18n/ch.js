@@ -265,6 +265,7 @@ export default{
     "evening": "晚上（下午 5:00 之后）"
   },
   "checkSite": "网站详细信息可能会更改。出发之前，请联系该网站以确认他们的工作时间和服务。",
+  "holidayEventsLink": "在 <a target='_blank' href='https://healthymindsphilly.org/events/'>HealthyMindsPhilly.org/events</a> 查找免费节日餐食、赠品和社区活动",
   "snapLink": "了解<a href='https://www.phila.gov/2025-09-05-what-you-need-to-know-about-significant-changes-to-snap-benefits/' target='_blank'>您需要了解的有关 SNAP 福利重大变化的</a>信息",
   "otherResources": "其他资源",
   "exceptions": {

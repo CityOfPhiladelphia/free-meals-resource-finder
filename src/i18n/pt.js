@@ -265,6 +265,7 @@ export default{
     "evening": "Noite (depois das 17h)"
   },
   "checkSite": "Os detalhes do site estão sujeitos a alterações. Antes de ir, entre em contato com o site para confirmar seus horários e serviços.",
+  "holidayEventsLink": "Encontre refeições festivas gratuitas, distribuição de brindes e eventos comunitários em <a target='_blank' href='https://healthymindsphilly.org/events/'>HealthyMindsPhilly.org/events</a>",
   "snapLink": "Saiba <a href='https://www.phila.gov/2025-09-05-what-you-need-to-know-about-significant-changes-to-snap-benefits/' target='_blank'>o que você precisa saber sobre mudanças significativas nos benefícios do SNAP</a>",
   "otherResources": "Outros recursos",
   "exceptions": {
