@@ -25,7 +25,7 @@ export default function useLocalSharedFunctions() {
 
     for (let [ index, day ] of allDays.entries()) {
       // if (import.meta.env.VITEDEBUG) console.log('day:', day, 'index:', index);
-      let scheduleOrClosed = parseTimeRange(exceptions, day, item.properties['hours_' + day + '_start1'], item.properties['hours_' + day + '_end1'], item.properties['hours_' + day + '_start2'], item.properties['hours_' + day + '_end2']);
+      let scheduleOrClosed = parseTimeRange(exceptions, day, item.properties['hours_' + day + '_start1'], item.properties['hours_' + day + '_end1'], item.properties['hours_' + day + '_start2'], item.properties['hours_' + day + '_end2'], item.properties['hours_' + day + '_start3'], item.properties['hours_' + day + '_end3']);
       // let scheduleOrClosed = this.parseTimeRange(day, this.item.properties['hours_'+day+'_start'], this.item.properties['hours_'+day+'_end']);
       if (scheduleOrClosed !== 'Closed') {
         rows.push({
@@ -38,7 +38,7 @@ export default function useLocalSharedFunctions() {
     return { columns, rows };
   };
 
-  const parseTimeRange = (exceptions, day, rawStartTime, rawEndTime, rawStartTime2, rawEndTime2) => {
+  const parseTimeRange = (exceptions, day, rawStartTime, rawEndTime, rawStartTime2, rawEndTime2, rawStartTime3, rawEndTime3) => {
     let exceptionDays = Object.keys(exceptions);
     let exceptionNumber;
     if (exceptionDays.includes(day)) {
@@ -46,7 +46,7 @@ export default function useLocalSharedFunctions() {
     }
     // if (import.meta.env.VITEDEBUG) console.log('parseTimeRange, day:', day, 'exceptionDays:', exceptionDays, 'exceptionNumber:', exceptionNumber, 'rawStartTime:', rawStartTime, 'rawEndTime:', rawEndTime);
     // if (import.meta.env.VITEDEBUG) console.log("parseISO('2022-05-24T' + rawStartTime):", parseISO('2022-05-24T' + rawStartTime));
-    let startTime, endTime, startTime2, endTime2, value;
+    let startTime, endTime, startTime2, endTime2, startTime3, endTime3, value;
     if (isValidTime(rawStartTime)) {
       startTime = format(parseISO('2022-05-24T' + rawStartTime), 'h:mm aaaa');
     }
@@ -59,6 +59,12 @@ export default function useLocalSharedFunctions() {
     if (isValidTime(rawEndTime2)) {
       endTime2 = format(parseISO('2022-05-24T' + rawEndTime2), 'h:mm aaaa');
     }
+    if (isValidTime(rawStartTime3)) {
+      startTime3 = format(parseISO('2022-05-24T' + rawStartTime3), 'h:mm aaaa');
+    }
+    if (isValidTime(rawEndTime3)) {
+      endTime3 = format(parseISO('2022-05-24T' + rawEndTime3), 'h:mm aaaa');
+    }
     if (startTime && endTime) {
       value = startTime + ' - ' + endTime;
     } else {
@@ -67,6 +73,10 @@ export default function useLocalSharedFunctions() {
 
     if (startTime2 && endTime2) {
       value += ', ' + startTime2 + ' - ' + endTime2;
+    }
+
+    if (startTime3 && endTime3) {
+      value += ', ' + startTime3 + ' - ' + endTime3;
     }
 
     if (value && exceptionNumber) {

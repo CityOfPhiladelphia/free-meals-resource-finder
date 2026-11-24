@@ -7,6 +7,7 @@
 
 import isMac from './util/is-mac';
 import isValidTime from './util/is-valid-time';
+import timeToDate from './util/time-to-date';
 if (isMac()) {
   import('./assets/mac-style.scss')
 }
@@ -233,14 +234,7 @@ let $config = {
               noon.setHours(12, 0, 0, 0);
 
               for (let day of Object.keys(days)) {
-                let startTime1 = item.properties['hours_' + days[day] + '_start1'];
-                let startTime1Split;
-                let st1;
-                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
-                  startTime1Split = startTime1.split(':');
-                  st1 = new Date();
-                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
-                }
+                let st1 = timeToDate(item.properties['hours_' + days[day] + '_start1']);
                 if (st1 < noon) {
                   dayAndTime = true;
                   break;
@@ -278,35 +272,13 @@ let $config = {
               fivePm.setHours(17, 0, 0, 0);
 
               for (let day of Object.keys(days)) {
-                let startTime1 = item.properties['hours_' + days[day] + '_start1'];
-                let endTime1 = item.properties['hours_' + days[day] + '_end1'];
-                let startTime2 = item.properties['hours_' + days[day] + '_start2'];
-                let endTime2 = item.properties['hours_' + days[day] + '_end2'];
-                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
-                let st1, et1, st2, et2;
-
-                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
-                  startTime1Split = startTime1.split(':');
-                  st1 = new Date();
-                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
-                }
-                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
-                  endTime1Split = endTime1.split(':');
-                  et1 = new Date();
-                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
-                }
-                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
-                  startTime2Split = startTime2.split(':');
-                  st2 = new Date();
-                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
-                }
-                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
-                  endTime2Split = endTime2.split(':');
-                  et2 = new Date();
-                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
+                let times = [];
+                for (let slot of [ 1, 2, 3 ]) {
+                  times.push(timeToDate(item.properties['hours_' + days[day] + '_start' + slot]));
+                  times.push(timeToDate(item.properties['hours_' + days[day] + '_end' + slot]));
                 }
 
-                if (et1 > noon && et1 < fivePm || et2 > noon && et2 < fivePm || st1 > noon && st1 < fivePm || st2 > noon && st2 < fivePm) {
+                if (times.some(time => time > noon && time < fivePm)) {
                   dayAndTime = true;
                   break;
                 }
@@ -344,35 +316,9 @@ let $config = {
               fivePm.setHours(17, 0, 0, 0);
 
               for (let day of Object.keys(days)) {
-                let startTime1 = item.properties['hours_' + days[day] + '_start1'];
-                let endTime1 = item.properties['hours_' + days[day] + '_end1'];
-                let startTime2 = item.properties['hours_' + days[day] + '_start2'];
-                let endTime2 = item.properties['hours_' + days[day] + '_end2'];
-                let startTime1Split, endTime1Split, startTime2Split, endTime2Split;
-                let st1, et1, st2, et2;
+                let endTimes = [ 1, 2, 3 ].map(slot => timeToDate(item.properties['hours_' + days[day] + '_end' + slot]));
 
-                if (typeof(startTime1) !== "undefined" && startTime1 != null) {
-                  startTime1Split = startTime1.split(':');
-                  st1 = new Date();
-                  st1.setHours(parseInt(startTime1Split[0]), parseInt(startTime1Split[1]), 0, 0);
-                }
-                if (typeof(endTime1) !== "undefined" && endTime1 != null) {
-                  endTime1Split = endTime1.split(':');
-                  et1 = new Date();
-                  et1.setHours(parseInt(endTime1Split[0]), parseInt(endTime1Split[1]), 0, 0);
-                }
-                if (typeof(startTime2) !== "undefined" && startTime2 != null) {
-                  startTime2Split = startTime2.split(':');
-                  st2 = new Date();
-                  st2.setHours(parseInt(startTime2Split[0]), parseInt(startTime2Split[1]), 0, 0);
-                }
-                if (typeof(endTime2) !== "undefined" && endTime2 != null) {
-                  endTime2Split = endTime2.split(':');
-                  et2 = new Date();
-                  et2.setHours(parseInt(endTime2Split[0]), parseInt(endTime2Split[1]), 0, 0);
-                }
-
-                if (et1 > fivePm || et2 > fivePm) {
+                if (endTimes.some(endTime => endTime > fivePm)) {
                   dayAndTime = true;
                   break;
                 }
